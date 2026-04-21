@@ -1,5 +1,19 @@
 const EVENTS_DATA = [
   {
+    "title": "Editors\u2019 Picks: What To Do in Durham This Weekend",
+    "link": "https://durhammag.com/editors-picks-what-to-do-in-durham-this-weekend/",
+    "description": "From annual festivals to fundraisers and more, read on for everything fun you can eat, drink and do in Durham this weekend.\nThe post Editors&#8217; Picks: What To Do in Durham This Weekend appeared first on Durham Magazine.",
+    "pub_date": "2026-04-15T13:30:15+00:00",
+    "region": "Triangle NC",
+    "distance": "2h30min",
+    "source": "Durham Magazine",
+    "price": null,
+    "ev_score": 6,
+    "event_date": "2026-04-24",
+    "event_time": null,
+    "date_confidence": 1
+  },
+  {
     "title": "Centre Stage to host its \u2018Showstoppers\u2019 fundraiser event April 25",
     "link": "https://greenvillejournal.com/arts-culture/centre-stage-to-host-its-showstoppers-fundraiser-event-april-25/",
     "description": "Admission is $50 per ticket and includes a reserved seat for the performance, food and two drink tickets.\nThe post Centre Stage to host its \u2018Showstoppers\u2019 fundraiser event April 25 appeared first on GREENVILLE JOURNAL.",
@@ -56,6 +70,20 @@ const EVENTS_DATA = [
     "date_confidence": 0
   },
   {
+    "title": "Photos: Passport to Dance Benefit Gala at Westin Poinsett",
+    "link": "https://towncarolina.com/photos-passport-to-dance-benefit-gala-at-westin-poinsett/",
+    "description": "The fundraiser event included ballet performances by International Ballet members.\nThe post Photos: Passport to Dance Benefit Gala at Westin Poinsett appeared first on TOWN Carolina.",
+    "pub_date": "2026-04-14T19:52:47+00:00",
+    "region": "Greenville SC",
+    "distance": "1h30min",
+    "source": "Town Carolina",
+    "price": null,
+    "ev_score": 12,
+    "event_date": null,
+    "event_time": null,
+    "date_confidence": 0
+  },
+  {
     "title": "Indie Craft Parade invites artists, makers to apply for 2026 festival",
     "link": "https://greenvillejournal.com/arts-culture/indie-craft-parade-invites-artists-makers-to-apply-for-2026-festival/",
     "description": "Running from Sept. 11-13, the juried show at the historic Judson Mill District in Greenville will feature works by over 100 artists.\nThe post Indie Craft Parade invites artists, makers to apply for 2026 festival appeared first on GREENVILLE JOURNAL.",
@@ -93,6 +121,20 @@ const EVENTS_DATA = [
     "source": "Queen City Nerve",
     "price": null,
     "ev_score": 8,
+    "event_date": null,
+    "event_time": null,
+    "date_confidence": 0
+  },
+  {
+    "title": "Dynamic Pricing Is Pricing Out Concertgoers",
+    "link": "https://raleighmag.com/2026/03/27/dynamic-prices/",
+    "description": "Ticketmaster is already infamous for making it anything but easy to secure concert tickets, and now dynamic pricing is under scrutiny.  \nThe post Dynamic Pricing Is Pricing Out Concertgoers appeared first on Raleigh Magazine.",
+    "pub_date": "2026-03-27T12:00:00+00:00",
+    "region": "Triangle NC",
+    "distance": "2h30min",
+    "source": "Raleigh Magazine",
+    "price": null,
+    "ev_score": 7,
     "event_date": null,
     "event_time": null,
     "date_confidence": 0
@@ -154,6 +196,20 @@ const EVENTS_DATA = [
     "date_confidence": 0
   },
   {
+    "title": "Photos: First Look at American Voices: Lost and Found at Sigal Music Museum",
+    "link": "https://towncarolina.com/photos-first-look-of-american-voices-lost-and-found-first-at-sigal-music-museum/",
+    "description": "Guests experienced insights, tours, and music performances inspired by the founding era of the United States.\nThe post Photos: First Look at American Voices: Lost and Found at Sigal Music Museum appeared first on TOWN Carolina.",
+    "pub_date": "2026-04-06T21:30:25+00:00",
+    "region": "Greenville SC",
+    "distance": "1h30min",
+    "source": "Town Carolina",
+    "price": null,
+    "ev_score": 6,
+    "event_date": null,
+    "event_time": null,
+    "date_confidence": 0
+  },
+  {
     "title": "Click, tap, revolt: A new augmented-reality exhibit marks America\u2019s 250th",
     "link": "https://southparkmagazine.com/a-new-augmented-reality-exhibit-marks-americas-250th-anniversary/",
     "description": "Charlotte Museum of History brings video-game technology to American Revolution: The Augmented Exhibition.\nThe post Click, tap, revolt: A new augmented-reality exhibit marks America\u2019s 250th appeared first on SouthPark Magazine.",
@@ -182,6 +238,20 @@ const EVENTS_DATA = [
     "date_confidence": 0
   },
   {
+    "title": "Photos: Green Tie Gala Benefits Greenville Zoo",
+    "link": "https://towncarolina.com/photos-2026-green-tie-gala-benefits-greenville-zoo/",
+    "description": "The classic black tie event with a splash of green supports future projects of the Greenville Zoo.\nThe post Photos: Green Tie Gala Benefits Greenville Zoo appeared first on TOWN Carolina.",
+    "pub_date": "2026-04-14T20:04:30+00:00",
+    "region": "Greenville SC",
+    "distance": "1h30min",
+    "source": "Town Carolina",
+    "price": null,
+    "ev_score": 5,
+    "event_date": null,
+    "event_time": null,
+    "date_confidence": 0
+  },
+  {
     "title": "Groovers Listening Room Brings Dance Club Energy to South End",
     "link": "https://qcnerve.com/groovers-listening-room-charlotte-south-end-dance-club/",
     "description": "If you\u2019d told me at the outset of any given Friday that I\u2019d be sweating out my edges while standing completely still, wearing my full work bag at a bar &#8230;\nThe post Groovers Listening Room Brings Dance Club Energy to South End appeared first on Queen City Nerve.",
@@ -191,6 +261,20 @@ const EVENTS_DATA = [
     "source": "Queen City Nerve",
     "price": null,
     "ev_score": 5,
+    "event_date": null,
+    "event_time": null,
+    "date_confidence": 0
+  },
+  {
+    "title": "Does Raleigh Have the Resources to Maintain Music Festivals?",
+    "link": "https://raleighmag.com/2026/03/27/hopscotch-2026/",
+    "description": "Hopscotch is officially back for 2026, but the six-month late announcement begged the question: Does Raleigh have the resources to create a festival that lasts? \nThe post Does Raleigh Have the Resources to Maintain Music Festivals? appeared first on Raleigh Magazine.",
+    "pub_date": "2026-03-27T12:00:00+00:00",
+    "region": "Triangle NC",
+    "distance": "2h30min",
+    "source": "Raleigh Magazine",
+    "price": null,
+    "ev_score": 4,
     "event_date": null,
     "event_time": null,
     "date_confidence": 0

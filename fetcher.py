@@ -274,7 +274,7 @@ def run_fetch(
                        (sig, title, link, description, pub_date,
                         region, distance, source, tags,
                         price, ev_score, event_date, event_time, date_confidence, fetched_at, updated_at)
-                       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+                       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
                     (sig, item["title"], item["link"], item["desc"],
                      item["pub"], feed["region"], feed["distance"],
                      feed["name"], json.dumps(feed["tags"]),

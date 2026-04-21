@@ -1,23 +1,31 @@
 """
 feeds.py — Validated feed list, sorted by drive time from Charlotte NC.
 
-Dead/removed (tested 2026-04-21):
-  Charlotte on the Cheap  — ParseError (unclosed CDATA)
-  Queen City Nerve Events — HTTP 404 (category feed gone; switched to main feed)
-  CLT52 / Charlotte Five  — Timeout
-  QCity Metro             — HTTP 404
-  NoDa Neighborhood       — HTTP 404
-  South End CLT           — HTTP 410
-  Gaston Gazette          — HTTP 403
-  Triad City Beat Arts    — HTTP 404 (category feed; switched to main feed)
-  Triad Foodies           — HTTP 404
-  Mountain Xpress Events  — HTTP 403
-  AVL Today               — HTTP 404
-  Ashvegas                — ParseError (unclosed CDATA)
-  Free Times Columbia     — HTTP 429
-  Charlotte Magazine      — Dropped: 0% event ratio, avg score -0.2
-  Triad City Beat         — Dropped: spam (attorney directories, casino finance)
-  Arts & Science Council  — Dropped: only publishing job postings, not events
+Dead/removed (last checked 2026-04-21 via test_feeds.py):
+  Charlotte on the Cheap   — was ParseError (CDATA) → now FIXED, re-added
+  Charlotte Ledger         — HTTP 404 (Substack feed moved)
+  CLT52 / Charlotte Five   — Timeout
+  QCity Metro              — HTTP 404
+  NoDa Neighborhood        — HTTP 404
+  South End CLT            — HTTP 410
+  Gaston Gazette           — HTTP 403
+  Triad City Beat (main)   — Dropped: spam (attorney dirs, casino finance)
+  Triad City Beat Arts     — HTTP 404 → switched to Culture category feed
+  Triad Foodies            — HTTP 404
+  Mountain Xpress Events   — HTTP 403
+  AVL Today                — HTTP 404
+  Ashvegas                 — ParseError (unclosed CDATA)
+  Free Times Columbia      — HTTP 429
+  Charlotte Magazine       — Dropped: 0% event ratio, avg score -0.2
+  Arts & Science Council   — Dropped: only publishing job postings, not events
+  WFAE Local/Arts          — HTTP 404
+  WFDD Public Radio        — HTTP 404
+  WRAL Out & About         — HTTP 404
+  SECCA                    — HTTP 404
+  Triangle Arts & Ent      — HTTP 404
+  Charlotte Observer/N&O   — Timeout (paywalled McClatchy)
+  Blumenthal Arts          — HTTP 404 (blog/rss path moved)
+  Gantt Center             — PARSE_ERR (invalid XML)
 
 priority 1 = every 6h  (pure event / high signal)
 priority 2 = daily     (culture/events mix, good signal after filtering)
@@ -68,9 +76,31 @@ FEEDS = [
      "https://unpretentiouspalate.com/feed/",
      2, ["food", "culture"]),
 
+    ("Charlotte",     "0min",    "Charlotte on the Cheap",
+     "https://www.charlotteonthecheap.com/feed/",
+     1, ["events", "free", "community"]),
 
+    ("Charlotte",     "0min",    "Charlotte Is Creative",
+     "https://charlotteiscreative.com/feed/",
+     1, ["events", "arts", "culture"]),
 
-    # ── 1H 30MIN — Greenville SC ─────────────────────────────────────────
+    # ── 1H — Piedmont Triad ───────────────────────────────────────────────
+    ("Triad",         "1h",      "Triad City Beat (Culture)",
+     "https://triad-city-beat.com/category/culture/feed/",
+     1, ["events", "culture", "arts"]),
+
+    ("Triad",         "1h",      "WStoday (6AM City)",
+     "https://wstoday.6amcity.com/index.rss",
+     2, ["events", "news", "culture"]),
+
+    ("Triad",         "1h",      "Greensboro.com Entertainment",
+     "https://greensboro.com/search/?f=rss&t=article&c=entertainment&l=50&s=start_time&sd=desc",
+     2, ["events", "entertainment", "culture"]),
+
+    ("Triad",         "1h",      "Reynolda House",
+     "https://reynolda.org/feed/",
+     2, ["events", "arts", "culture"]),
+
     ("Greenville SC", "1h30min", "Greenville Journal (Events)",
      "https://greenvillejournal.com/category/events/feed/",
      1, ["events", "arts", "culture"]),
@@ -83,6 +113,14 @@ FEEDS = [
      "https://gvltoday.6amcity.com/index.rss",
      2, ["events", "news", "culture"]),
 
+    ("Greenville SC", "1h30min", "Town Carolina",
+     "https://towncarolina.com/feed/",
+     2, ["events", "culture", "community"]),
+
+    ("Greenville SC", "2h",      "COLAtoday (6AM City)",
+     "https://colatoday.6amcity.com/index.rss",
+     2, ["events", "news", "culture"]),
+
     # ── 2H — Asheville / WNC ─────────────────────────────────────────────
     ("Asheville",     "2h",      "Mountain Xpress",
      "https://mountainx.com/feed/",
@@ -92,6 +130,18 @@ FEEDS = [
     ("Triangle NC",   "2h30min", "Walter Magazine",
      "https://www.waltermagazine.com/feed/",
      1, ["events", "culture", "arts"]),
+
+    ("Triangle NC",   "2h30min", "Triangle on the Cheap",
+     "https://triangleonthecheap.com/feed/",
+     1, ["events", "free", "community"]),
+
+    ("Triangle NC",   "2h30min", "Raleigh Magazine",
+     "https://raleighmag.com/feed/",
+     2, ["events", "culture", "arts"]),
+
+    ("Triangle NC",   "2h30min", "Durham Magazine",
+     "https://durhammag.com/feed/",
+     2, ["events", "culture", "arts"]),
 
     ("Triangle NC",   "2h30min", "INDY Week",
      "https://indyweek.com/feed",

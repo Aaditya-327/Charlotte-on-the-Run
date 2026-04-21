@@ -228,6 +228,102 @@
     ]
   },
   {
+    "region": "Triad",
+    "distance": "1h",
+    "name": "Triad City Beat (Culture)",
+    "url": "https://triad-city-beat.com/category/culture/feed/",
+    "priority": 1,
+    "tags": [
+      "events",
+      "culture",
+      "arts"
+    ],
+    "total_items": 12,
+    "event_items": 6,
+    "event_ratio": 0.5,
+    "avg_event_score": 2.25,
+    "new_sigs": 12,
+    "sample_titles": [
+      "On Saturday, Cirque de la Symphonie and the Winston-Salem Symphony will fuse movement, music and magic",
+      "\u2018Hot Mess Express\u2019 transforms lives \u2014 one Swiffer at a time",
+      "In \u2018Becoming More,\u2019 a trans musician tells their story, inspires others in upcoming one-night only show",
+      "\u2018It\u2019s like an adult slumber party\u2019: Moms Unhinged to bring relatable comedy shows to the Triad",
+      "Winston-Salem\u2019s a/perture cinema surpasses its fundraising goal"
+    ]
+  },
+  {
+    "region": "Triad",
+    "distance": "1h",
+    "name": "WStoday (6AM City)",
+    "url": "https://wstoday.6amcity.com/index.rss",
+    "priority": 2,
+    "tags": [
+      "events",
+      "news",
+      "culture"
+    ],
+    "total_items": 11,
+    "event_items": 8,
+    "event_ratio": 0.727,
+    "avg_event_score": 2.45,
+    "new_sigs": 8,
+    "sample_titles": [
+      "What to know about attending the Piedmont Earth Day Fair at the Winston-Salem Fairgrounds",
+      "What to know about attending the Piedmont Earth Day Fair at the Winston-Salem Fairgrounds",
+      "Things you didn't know are illegal in Winston-Salem",
+      "Where to take adult classes in Winston-Salem",
+      "Farmers markets to explore around Winston-Salem"
+    ]
+  },
+  {
+    "region": "Triad",
+    "distance": "1h",
+    "name": "Greensboro.com Entertainment",
+    "url": "https://greensboro.com/search/?f=rss&t=article&c=entertainment&l=50&s=start_time&sd=desc",
+    "priority": 2,
+    "tags": [
+      "events",
+      "entertainment",
+      "culture"
+    ],
+    "total_items": 50,
+    "event_items": 21,
+    "event_ratio": 0.42,
+    "avg_event_score": 1.44,
+    "new_sigs": 50,
+    "sample_titles": [
+      "6 craft beers to get in line for at summer concerts",
+      "A pipe dream no more: As National Comedy Center turns 5, its collection and reputation keep growing",
+      "Actor Julian Sands died while hiking on California mountain, authorities confirm",
+      "What if things could turn out differently? How the multiverse got into our heads and didn\u2019t let go",
+      "There'll be no raining on the parade at the Pride Winston Salem Festival on Saturday - at least not figuratively speaking"
+    ]
+  },
+  {
+    "region": "Triad",
+    "distance": "1h",
+    "name": "Reynolda House",
+    "url": "https://reynolda.org/feed/",
+    "priority": 2,
+    "tags": [
+      "events",
+      "arts",
+      "culture"
+    ],
+    "total_items": 10,
+    "event_items": 5,
+    "event_ratio": 0.5,
+    "avg_event_score": 2.6,
+    "new_sigs": 10,
+    "sample_titles": [
+      "Reynolda Volunteers on the Town, Part One",
+      "A Newbie\u2019s First Community Day",
+      "Camel City Member Events",
+      "New Reynolda Online Ticketing and Membership Portal",
+      "Reynolda Gardens\u2019 Annual Fundraiser"
+    ]
+  },
+  {
     "region": "Greenville SC",
     "distance": "1h30min",
     "name": "Greenville Journal (Events)",
@@ -298,6 +394,52 @@
     ]
   },
   {
+    "region": "Greenville SC",
+    "distance": "1h30min",
+    "name": "Town Carolina",
+    "url": "https://towncarolina.com/feed/",
+    "priority": 2,
+    "tags": [
+      "events",
+      "culture",
+      "community"
+    ],
+    "total_items": 10,
+    "event_items": 4,
+    "event_ratio": 0.4,
+    "avg_event_score": 2.6,
+    "new_sigs": 10,
+    "sample_titles": [
+      "Photos: Green Tie Gala Benefits Greenville Zoo",
+      "Photos: Passport to Dance Benefit Gala at Westin Poinsett",
+      "Photos: Greenville Theatre 100th Anniversary Gala",
+      "Photos: First Look at American Voices: Lost and Found at Sigal Music Museum"
+    ]
+  },
+  {
+    "region": "Greenville SC",
+    "distance": "2h",
+    "name": "COLAtoday (6AM City)",
+    "url": "https://colatoday.6amcity.com/index.rss",
+    "priority": 2,
+    "tags": [
+      "events",
+      "news",
+      "culture"
+    ],
+    "total_items": 11,
+    "event_items": 4,
+    "event_ratio": 0.364,
+    "avg_event_score": 1.0,
+    "new_sigs": 8,
+    "sample_titles": [
+      "Farmers markets in Columbia",
+      "Farmers markets in Columbia",
+      "Voting is officially open for COLAtoday's Best",
+      "If you\u2019re running out of gift ideas, the Tinggly Experience box is here to save you \u2014 now $50 off"
+    ]
+  },
+  {
     "region": "Asheville",
     "distance": "2h",
     "name": "Mountain Xpress",
@@ -343,6 +485,53 @@
       "10 Outdoor Shows and Series to Put On Your Radar this Spring",
       "The Whirl: Smash Ribbon Cutting",
       "The Whirl: New Year\u2019s Eve Celebration"
+    ]
+  },
+  {
+    "region": "Triangle NC",
+    "distance": "2h30min",
+    "name": "Raleigh Magazine",
+    "url": "https://raleighmag.com/feed/",
+    "priority": 2,
+    "tags": [
+      "events",
+      "culture",
+      "arts"
+    ],
+    "total_items": 10,
+    "event_items": 5,
+    "event_ratio": 0.5,
+    "avg_event_score": 1.8,
+    "new_sigs": 10,
+    "sample_titles": [
+      "Get Your Green on for Earth Week",
+      "Big Cat Bows on Brookside Drive",
+      "Does Raleigh Have the Resources to Maintain Music Festivals?",
+      "Dynamic Pricing Is Pricing Out Concertgoers",
+      "RDU\u2019s Early Alcohol Sales Goes Permanent"
+    ]
+  },
+  {
+    "region": "Triangle NC",
+    "distance": "2h30min",
+    "name": "Durham Magazine",
+    "url": "https://durhammag.com/feed/",
+    "priority": 2,
+    "tags": [
+      "events",
+      "culture",
+      "arts"
+    ],
+    "total_items": 10,
+    "event_items": 4,
+    "event_ratio": 0.4,
+    "avg_event_score": 1.4,
+    "new_sigs": 10,
+    "sample_titles": [
+      "Editors\u2019 Picks: What To Do in Durham This Weekend",
+      "Del Norte Tortillas Brings Handmade Flavor to the Triangle",
+      "Best Family Activities in Durham: 25+ Kid-Friendly Attractions, Parks & Farms",
+      "Durham Drag Artist, Educator and Community Builder Shines On and Off Stage"
     ]
   },
   {
