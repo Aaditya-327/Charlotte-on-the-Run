@@ -1,12 +1,21 @@
 #!/usr/bin/env python3
 """
-daily_guide.py — Fetch AI-generated daily event guides for Charlotte using
-Gemini 2.0 Flash with Google Search grounding.
+daily_guide.py — Fetch AI-generated daily activity cards for Charlotte using
+Gemini 2.5 Flash with Google Search grounding.
 
-Runs the 4 budget-tier prompts, saves results to docs/daily_guide.json,
-and pushes updated docs/events_data.js + daily_guide.json to git.
+Gemini is asked to return a JSON array of activity objects — no markdown blobs.
+Each activity:
+  {
+    "title":       "Short activity name",
+    "description": "2-3 sentence description with specifics",
+    "day":         "today" | "tomorrow",
+    "period":      "morning" | "afternoon" | "evening" | "night",
+    "location":    "Venue name, Neighborhood",
+    "cost":        "Free" | "$X" | "$X–$Y",
+    "tags":        ["outdoor", "food", "queer-friendly", ...]
+  }
 
-Schedule: run via launchd at 7 AM ET daily (see com.charlotteontherun.guide.plist)
+Schedule: launchd at 7 AM ET (com.charlotteontherun.guide.plist)
 Usage:    python daily_guide.py [--no-push]
 """
 
@@ -23,77 +32,122 @@ API_KEY  = os.getenv("GEMINI_API_KEY")
 OUT_FILE = Path(__file__).parent / "docs" / "daily_guide.json"
 
 TIERS = [
-    {
-        "id":    "free",
-        "label": "Free",
-        "emoji": "🆓",
-    },
-    {
-        "id":    "under20",
-        "label": "Under $20",
-        "emoji": "💵",
-    },
-    {
-        "id":    "under50",
-        "label": "Under $50",
-        "emoji": "🍸",
-    },
-    {
-        "id":    "splurge",
-        "label": "Splurge",
-        "emoji": "🌟",
-    },
+    {"id": "free",    "label": "Free",       "emoji": "🆓", "max_cost": "Free"},
+    {"id": "under20", "label": "Under $20",  "emoji": "💵", "max_cost": "$20"},
+    {"id": "under50", "label": "Under $50",  "emoji": "🍸", "max_cost": "$50"},
+    {"id": "splurge", "label": "Splurge",    "emoji": "🌟", "max_cost": "no limit"},
 ]
 
-def make_prompt(tier_id: str, today: str, tomorrow: str, today_dow: str, tomorrow_dow: str) -> str:
+# ── JSON schema embedded in prompt ────────────────────────────────────────────
+SCHEMA = """{
+  "title":       "string — short activity name (≤60 chars)",
+  "description": "string — 2-3 sentences with specific details (venue, what to expect, why it's worth it)",
+  "day":         "today | tomorrow",
+  "period":      "morning | afternoon | evening | night",
+  "location":    "string — venue name + neighborhood (e.g. 'Optimist Hall, NoDa')",
+  "cost":        "string — e.g. 'Free', '$12', '$8–$15'",
+  "tags":        ["array of 2-4 strings from: outdoor, food, drinks, music, art, queer-friendly, nightlife, fitness, culture, shopping, sports, nature"]
+}"""
+
+def make_prompt(tier: dict, today_dow: str, today: str,
+                tomorrow_dow: str, tomorrow: str) -> str:
+    tier_id   = tier["id"]
+    max_cost  = tier["max_cost"]
+    tier_name = tier["label"]
+
     if tier_id == "free":
-        return (
-            f"Act as a specialized local city guide for Charlotte, NC. "
-            f"Generate a highly detailed and comprehensive itinerary of completely free things to do "
-            f"for a 27-year-old gay man in Charlotte today ({today_dow}, {today}) and tomorrow ({tomorrow_dow}, {tomorrow}). "
-            f"Search the live web for specific free events happening on these exact dates. "
-            f"Include free queer-friendly spaces, parks, neighborhood walks, no-cover venues, and community meetups. "
-            f"Break down the recommendations by morning, afternoon, and evening for both days. "
-            f"Provide a very long response. Do not include any activities that require an entry fee or a mandatory purchase."
+        focus = (
+            "completely free activities — no entry fees, no mandatory purchases. "
+            "Include: queer-friendly spaces, parks, neighborhood walks, no-cover bars/cafes, "
+            "free gallery openings, free outdoor concerts, community meetups."
         )
     elif tier_id == "under20":
-        return (
-            f"Act as a specialized local city guide for Charlotte, NC. "
-            f"Generate a highly detailed and comprehensive itinerary of activities costing $20 or less "
-            f"for a 27-year-old gay man in Charlotte today ({today_dow}, {today}) and tomorrow ({tomorrow_dow}, {tomorrow}). "
-            f"Search the live web for specific events happening on these exact dates. "
-            f"Focus on cheap eats, local coffee shops, brewery run clubs or trivia nights, dive bars, and low-cover events or gallery shows. "
-            f"Break down the recommendations by morning, afternoon, and evening for both days, providing estimated costs for each item. "
-            f"Provide a very long response."
+        focus = (
+            "activities costing $20 or less per person. "
+            "Include: cheap eats, local coffee shops, brewery trivia nights, run clubs, "
+            "dive bars, low-cover events, gallery shows, happy hour deals."
         )
     elif tier_id == "under50":
-        return (
-            f"Act as a specialized local city guide for Charlotte, NC. "
-            f"Generate a highly detailed and comprehensive itinerary of activities costing up to $50 "
-            f"for a 27-year-old gay man in Charlotte today ({today_dow}, {today}) and tomorrow ({tomorrow_dow}, {tomorrow}). "
-            f"Search the live web for specific events happening on these exact dates. "
-            f"Include mid-range dining, craft cocktail bars, ticketed local music shows, drag performances, "
-            f"and activities at venues like the US National Whitewater Center or Camp North End. "
-            f"Break down the recommendations by morning, afternoon, and evening for both days, providing estimated costs for each item. "
-            f"Provide a very long response."
+        focus = (
+            "activities costing up to $50 per person. "
+            "Include: mid-range dining, craft cocktail bars, ticketed music shows, "
+            "drag performances, Camp North End events, US National Whitewater Center."
         )
-    else:  # splurge
-        return (
-            f"Act as a specialized local city guide for Charlotte, NC. "
-            f"Generate a highly detailed and comprehensive itinerary of premium activities with no strict budget limit "
-            f"for a 27-year-old gay man in Charlotte today ({today_dow}, {today}) and tomorrow ({tomorrow_dow}, {tomorrow}). "
-            f"Search the live web for specific premium events happening on these exact dates. "
-            f"Include high-end dining reservations, VIP nightlife experiences, major concert or theater tickets, "
-            f"upscale cocktail lounges, and exclusive events. "
-            f"Break down the recommendations by morning, afternoon, and evening for both days. "
-            f"Provide a very long response."
+    else:
+        focus = (
+            "premium experiences with no budget limit. "
+            "Include: high-end dining (reservation required), VIP nightlife, "
+            "major concert or theater tickets, upscale cocktail lounges, exclusive pop-ups."
         )
 
+    return f"""You are a local city guide for Charlotte, NC, with deep knowledge of the queer social scene.
 
-def fetch_tier(client: genai.Client, tier_id: str, today: str, tomorrow: str,
-               today_dow: str, tomorrow_dow: str, retries: int = 3) -> dict:
-    prompt = make_prompt(tier_id, today, tomorrow, today_dow, tomorrow_dow)
+Search the web for specific events and activities happening in Charlotte on {today_dow} {today} and {tomorrow_dow} {tomorrow}.
+
+Generate 5–7 activities for EACH day (today and tomorrow), covering morning, afternoon, evening, and night time slots.
+Focus on: {focus}
+
+Target audience: 27-year-old gay man, social, adventurous, familiar with Charlotte.
+
+IMPORTANT: Respond ONLY with a valid JSON array. No explanation, no markdown, no prose — just the raw JSON array.
+Each element must match this exact schema:
+{SCHEMA}
+
+Example of the expected output format (shortened):
+[
+  {{"title": "Morning Run at Freedom Park", "description": "Join the free Saturday morning run group...", "day": "today", "period": "morning", "location": "Freedom Park, Myers Park", "cost": "Free", "tags": ["outdoor", "fitness", "queer-friendly"]}},
+  {{"title": "Brunch at The Fig Tree", "description": "...", "day": "today", "period": "morning", "location": "The Fig Tree, Elizabeth", "cost": "$18–$25", "tags": ["food"]}}
+]
+
+Now generate the full array for {today_dow} {today} and {tomorrow_dow} {tomorrow} (tier: {tier_name}, max cost per activity: {max_cost}):"""
+
+
+# ── JSON extractor ─────────────────────────────────────────────────────────────
+def extract_json(text: str) -> list:
+    """Extract a JSON array from model output, handling fenced code blocks."""
+    # Strip ```json ... ``` fences
+    text = re.sub(r"^```(?:json)?\s*", "", text.strip(), flags=re.MULTILINE)
+    text = re.sub(r"\s*```$", "", text.strip(), flags=re.MULTILINE)
+    text = text.strip()
+
+    # Find first [ ... ] block
+    start = text.find("[")
+    end   = text.rfind("]")
+    if start == -1 or end == -1:
+        raise ValueError("No JSON array found in response")
+    raw = text[start:end+1]
+    data = json.loads(raw)
+    if not isinstance(data, list):
+        raise ValueError("Expected JSON array at top level")
+    return data
+
+
+def validate_card(card: dict, tier_id: str) -> dict | None:
+    """Normalise and validate a single activity card. Returns None if invalid."""
+    required = ("title", "description", "day", "period", "location", "cost")
+    if not all(k in card for k in required):
+        return None
+    if card.get("day") not in ("today", "tomorrow"):
+        return None
+    if card.get("period") not in ("morning", "afternoon", "evening", "night"):
+        card["period"] = "afternoon"  # safe default
+    card.setdefault("tags", [])
+    card["tier"] = tier_id
+    # Trim overlong fields
+    card["title"]       = str(card["title"])[:80]
+    card["description"] = str(card["description"])[:400]
+    card["location"]    = str(card["location"])[:80]
+    card["cost"]        = str(card["cost"])[:20]
+    return card
+
+
+# ── Fetch one tier ─────────────────────────────────────────────────────────────
+def fetch_tier(client: genai.Client, tier: dict, today_dow: str, today: str,
+               tomorrow_dow: str, tomorrow: str, retries: int = 3) -> dict:
+    tier_id = tier["id"]
+    prompt  = make_prompt(tier, today_dow, today, tomorrow_dow, tomorrow)
     print(f"  Fetching {tier_id}…", flush=True)
+
     for attempt in range(retries):
         try:
             response = client.models.generate_content(
@@ -101,10 +155,12 @@ def fetch_tier(client: genai.Client, tier_id: str, today: str, tomorrow: str,
                 contents=prompt,
                 config=types.GenerateContentConfig(
                     tools=[types.Tool(google_search=types.GoogleSearch())],
-                    temperature=0.7,
+                    temperature=0.4,   # lower = more deterministic JSON
                 ),
             )
             text = response.text or ""
+
+            # Extract grounding sources
             sources = []
             try:
                 for chunk in response.candidates[0].grounding_metadata.grounding_chunks:
@@ -112,30 +168,53 @@ def fetch_tier(client: genai.Client, tier_id: str, today: str, tomorrow: str,
                         sources.append({"title": chunk.web.title, "url": chunk.web.uri})
             except Exception:
                 pass
-            return {"id": tier_id, "content": text, "sources": sources, "error": None}
+
+            # Parse JSON
+            raw_cards = extract_json(text)
+            activities = [c for c in (validate_card(c, tier_id) for c in raw_cards) if c]
+
+            today_n    = sum(1 for c in activities if c["day"] == "today")
+            tomorrow_n = sum(1 for c in activities if c["day"] == "tomorrow")
+            print(f"    ✓ {len(activities)} cards "
+                  f"(today={today_n}, tomorrow={tomorrow_n}) | "
+                  f"{len(sources)} sources")
+            return {
+                "id":         tier_id,
+                "label":      tier["label"],
+                "emoji":      tier["emoji"],
+                "activities": activities,
+                "sources":    sources,
+                "error":      None,
+            }
+
         except Exception as e:
             msg = str(e)
             if "429" in msg and attempt < retries - 1:
-                # Extract retryDelay seconds from error message
                 m = re.search(r"retryDelay.*?(\d+)s", msg)
                 wait = int(m.group(1)) + 5 if m else 60
-                print(f"    Rate limited — waiting {wait}s before retry {attempt+2}/{retries}…")
+                print(f"    Rate limited — waiting {wait}s (retry {attempt+2}/{retries})…")
                 time.sleep(wait)
                 continue
-            print(f"    ERROR: {msg[:120]}", file=sys.stderr)
-            return {"id": tier_id, "content": "", "sources": [], "error": msg[:200]}
+            print(f"    ERROR [{tier_id}]: {msg[:160]}", file=sys.stderr)
+            return {
+                "id":         tier_id,
+                "label":      tier["label"],
+                "emoji":      tier["emoji"],
+                "activities": [],
+                "sources":    [],
+                "error":      msg[:300],
+            }
 
 
+# ── Export events_data.js ─────────────────────────────────────────────────────
 def export_events_data():
-    """Re-export docs/events_data.js from the SQLite DB."""
     import sqlite3
-    from datetime import date, timedelta
     db_path = os.getenv("DB_PATH", "events.db")
     if not Path(db_path).exists():
         return
     db = sqlite3.connect(db_path)
     db.row_factory = sqlite3.Row
-    today = date.today().isoformat()
+    today  = date.today().isoformat()
     cutoff = (date.today() - timedelta(days=30)).isoformat()
     rows = db.execute("""
         SELECT title, link, description, pub_date, region, distance,
@@ -157,59 +236,63 @@ def export_events_data():
         f.write("const EVENTS_DATA = ")
         json.dump(events, f, default=str, indent=2)
         f.write(";\n")
-    print(f"  events_data.js: {len(events)} events exported")
+    print(f"  events_data.js: {len(events)} events")
 
 
-def git_push():
+# ── Git push ──────────────────────────────────────────────────────────────────
+def git_push(today_iso: str):
     repo = Path(__file__).parent
     try:
-        subprocess.run(["git", "add", "docs/daily_guide.json", "docs/events_data.js"],
-                       cwd=repo, check=True, capture_output=True)
-        result = subprocess.run(
-            ["git", "diff", "--cached", "--quiet"], cwd=repo, capture_output=True
+        subprocess.run(
+            ["git", "add", "docs/daily_guide.json",
+             "docs/daily_guide_data.js", "docs/events_data.js"],
+            cwd=repo, check=True, capture_output=True,
         )
-        if result.returncode != 0:
+        changed = subprocess.run(
+            ["git", "diff", "--cached", "--quiet"], cwd=repo, capture_output=True
+        ).returncode != 0
+        if changed:
             subprocess.run(
-                ["git", "commit", "-m", f"auto: daily guide + events {date.today()}"],
+                ["git", "commit", "-m", f"auto: daily guide (JSON cards) + events {today_iso}"],
                 cwd=repo, check=True, capture_output=True,
             )
             subprocess.run(["git", "push"], cwd=repo, check=True, capture_output=True)
             print("  Git: pushed.")
         else:
-            print("  Git: nothing changed, skipping push.")
+            print("  Git: nothing changed.")
     except subprocess.CalledProcessError as e:
         print(f"  Git error: {e.stderr.decode()}", file=sys.stderr)
 
 
+# ── Main ──────────────────────────────────────────────────────────────────────
 def main():
     no_push = "--no-push" in sys.argv
 
-    today    = date.today()
-    tomorrow = today + timedelta(days=1)
-    dow      = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
+    today      = date.today()
+    tomorrow   = today + timedelta(days=1)
+    dow        = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
     today_s    = today.strftime("%B %d, %Y")
     tomorrow_s = tomorrow.strftime("%B %d, %Y")
     today_dow    = dow[today.weekday()]
     tomorrow_dow = dow[tomorrow.weekday()]
 
-    print(f"Charlotte On The Run — Daily Guide")
-    print(f"Today: {today_dow}, {today_s}  |  Tomorrow: {tomorrow_dow}, {tomorrow_s}")
-    print()
+    print("Charlotte On The Run — Daily Guide (JSON cards)")
+    print(f"Today: {today_dow} {today_s}  |  Tomorrow: {tomorrow_dow} {tomorrow_s}\n")
 
     if not API_KEY:
         print("ERROR: GEMINI_API_KEY not set in .env", file=sys.stderr)
         sys.exit(1)
 
-    client = genai.Client(api_key=API_KEY)
+    client  = genai.Client(api_key=API_KEY)
     results = []
 
     for tier in TIERS:
-        result = fetch_tier(client, tier["id"], today_s, tomorrow_s, today_dow, tomorrow_dow)
-        result["label"] = tier["label"]
-        result["emoji"] = tier["emoji"]
+        result = fetch_tier(
+            client, tier,
+            today_dow, today_s,
+            tomorrow_dow, tomorrow_s,
+        )
         results.append(result)
-        preview = result["content"][:120].replace("\n", " ")
-        print(f"    ✓ {len(result['content'])} chars | {len(result['sources'])} sources | {preview}…")
 
     output = {
         "generated_at": today.isoformat(),
@@ -220,12 +303,13 @@ def main():
         "tiers":        results,
     }
 
+    # Save JSON
     OUT_FILE.parent.mkdir(exist_ok=True)
     with open(OUT_FILE, "w") as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
-    print(f"Saved → {OUT_FILE}")
+    print(f"\nSaved → {OUT_FILE}")
 
-    # Also write JS module so the static site can load it without CORS
+    # Save JS module
     js_file = OUT_FILE.parent / "daily_guide_data.js"
     with open(js_file, "w") as f:
         f.write("const DAILY_GUIDE_DATA = ")
@@ -233,12 +317,22 @@ def main():
         f.write(";\n")
     print(f"Saved → {js_file}")
 
+    # Print summary
+    total = sum(len(r["activities"]) for r in results)
+    print(f"\nTotal activity cards: {total}")
+    for r in results:
+        today_n    = sum(1 for c in r["activities"] if c["day"] == "today")
+        tomorrow_n = sum(1 for c in r["activities"] if c["day"] == "tomorrow")
+        print(f"  {r['emoji']} {r['label']:12} {len(r['activities'])} cards "
+              f"(today={today_n}, tomorrow={tomorrow_n})"
+              + (f" ⚠ {r['error'][:60]}" if r["error"] else ""))
+
     print("\nExporting events_data.js…")
     export_events_data()
 
     if not no_push:
         print("\nPushing to GitHub…")
-        git_push()
+        git_push(today.isoformat())
 
     print("\nDone.")
 
