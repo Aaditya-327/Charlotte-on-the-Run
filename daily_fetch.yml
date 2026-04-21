@@ -1,0 +1,136 @@
+name: Daily Events Fetch
+
+on:
+  schedule:
+    # Priority-1 feeds (pure event calendars) — every 6 hours
+    - cron: "0 */6 * * *"
+    # Full fetch (all feeds) — 7 AM and 7 PM ET daily
+    - cron: "0 11,23 * * *"
+  workflow_dispatch:
+    inputs:
+      priority:
+        description: "Max priority to fetch (1=must-fetch, 2=daily, 3=all)"
+        default: "2"
+      region:
+        description: "Filter to one region (leave blank for all)"
+        default: ""
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Restore the SQLite DB between runs so events accumulate across days.
+      # Key rotates daily so we keep a rolling 1-day checkpoint.
+      - name: Restore events DB
+        uses: actions/cache@v4
+        with:
+          path: events.db
+          key: events-db-${{ github.run_number }}
+          restore-keys: events-db-
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch feeds
+        env:
+          DB_PATH: events.db
+          FEEDS_FILE: feeds_live.json
+          EVENT_SCORE_MIN: "1"
+        run: |
+          PRIORITY="${{ github.event.inputs.priority || '2' }}"
+          REGION="${{ github.event.inputs.region || '' }}"
+          python3 - <<EOF
+          import os
+          from fetcher import run_fetch
+          p = int(os.getenv("PRIORITY", "2"))
+          r = os.getenv("REGION") or None
+          t = run_fetch(priority_filter=p, region_filter=r)
+          print(f"::notice::new={t['new']} skipped={t['skipped']} dropped={t['dropped']} errors={t['errors']}")
+          EOF
+        env:
+          PRIORITY: ${{ github.event.inputs.priority || '2' }}
+          REGION: ${{ github.event.inputs.region || '' }}
+
+      - name: Export digest JSON
+        env:
+          DB_PATH: events.db
+        run: |
+          python3 - <<'EOF'
+          import json, datetime
+          from fetcher import query_events, get_stats
+
+          stats  = get_stats()
+          events = query_events(limit=100)
+
+          digest = {
+            "generated":   datetime.datetime.utcnow().isoformat() + "Z",
+            "stats":       stats,
+            "events":      events,
+          }
+          with open("digest_latest.json", "w") as f:
+              json.dump(digest, f, indent=2, default=str)
+          print(f"Exported {len(events)} events → digest_latest.json")
+          EOF
+
+      - name: Commit digest
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add digest_latest.json
+          git diff --cached --quiet \
+            || git commit -m "chore: event digest $(date -u +%Y-%m-%dT%H:%M)Z"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Send Telegram digest
+        if: ${{ env.TELEGRAM_TOKEN != '' && env.TELEGRAM_CHAT_ID != '' }}
+        env:
+          TELEGRAM_TOKEN:   ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          DB_PATH: events.db
+        run: |
+          python3 - <<'EOF'
+          import os, json, urllib.request
+          from fetcher import query_events, get_stats
+
+          token   = os.environ["TELEGRAM_TOKEN"]
+          chat_id = os.environ["TELEGRAM_CHAT_ID"]
+          stats   = get_stats()
+          top     = query_events(limit=5)
+
+          lines = [
+            f"🗓 *Event digest* — {stats['last_fetch']}",
+            f"{stats['total']} events stored  |  +{stats['last_new']} new this run\n",
+          ]
+          for i, e in enumerate(top, 1):
+              pr = f"  _{e['price']}_" if e.get("price") else ""
+              lines.append(f"{i}. {e['title'][:60]}{pr}")
+              lines.append(f"   _{e['region']} · {e['source']}_")
+          lines.append("\nType /events for the full list")
+
+          body = json.dumps({
+            "chat_id":                  chat_id,
+            "text":                     "\n".join(lines),
+            "parse_mode":               "Markdown",
+            "disable_web_page_preview": True,
+          }).encode()
+          req = urllib.request.Request(
+            f"https://api.telegram.org/bot{token}/sendMessage",
+            data=body,
+            headers={"Content-Type": "application/json"},
+          )
+          urllib.request.urlopen(req)
+          print("Telegram summary sent.")
+          EOF

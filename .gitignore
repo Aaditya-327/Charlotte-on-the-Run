@@ -1,0 +1,7 @@
+.env
+events.db
+feeds_dead.json
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
