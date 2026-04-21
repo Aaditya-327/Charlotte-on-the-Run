@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.charlotteontherun.guide</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/aadi/Documents/Charlotte On The Run/.venv/bin/python</string>
+        <string>/Users/aadi/Documents/Charlotte On The Run/daily_guide.py</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/aadi/Documents/Charlotte On The Run</string>
+
+    <!-- Run at 7:00 AM every day -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>7</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>/Users/aadi/Documents/Charlotte On The Run/logs/daily_guide.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/Users/aadi/Documents/Charlotte On The Run/logs/daily_guide_err.log</string>
+
+    <!-- Run if Mac was asleep/off at scheduled time -->
+    <key>RunAtLoad</key>
+    <false/>
+</dict>
+</plist>
