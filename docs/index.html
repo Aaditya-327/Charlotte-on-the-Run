@@ -650,11 +650,12 @@ function openCard(ev){
       </div>`;
   }
 
-  const desc    = ev._ai ? (ev.description||'') : cleanDesc(ev.description);
-  const dateStr = ev._ai ? (ev.day==='today'?'Today':'Tomorrow') : (formatDate(ev)||'Date TBD');
-  const tags    = (ev.tags||[]);
-  const link    = ev._ai ? buildDDGUrl(ev) : (ev.link||null);
+  const desc      = ev._ai ? (ev.description||'') : cleanDesc(ev.description);
+  const dateStr   = ev._ai ? (ev.day==='today'?'Today':'Tomorrow') : (formatDate(ev)||'Date TBD');
+  const tags      = (ev.tags||[]);
+  const link      = ev._ai ? buildDDGUrl(ev) : (ev.link||null);
   const linkLabel = ev._ai ? 'Search DuckDuckGo' : 'Open article';
+  _currentCard    = ev;
 
   modal.innerHTML = `
     ${topHtml}
@@ -662,15 +663,21 @@ function openCard(ev){
     ${ev.location ? `<div style="font-size:12px;color:var(--ink-3);font-family:var(--font-mono)">📍 ${ev.location}</div>` : ''}
     <div class="modal-desc">${desc}</div>
     ${tags.length ? `<div style="display:flex;gap:6px;flex-wrap:wrap">${tags.map(t=>`<span style="font-size:11px;color:var(--ink-3);font-family:var(--font-mono)">#${t}</span>`).join('')}</div>` : ''}
-    <div style="display:flex;align-items:center;gap:10px;margin-top:4px;flex-wrap:wrap">
+    <div style="display:flex;align-items:center;gap:8px;margin-top:4px;flex-wrap:wrap">
       <div class="card-date ${ev._ai?'no-date':''}" style="font-size:12px">
         <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${ev._ai?'<circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>':'<rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>'}</svg>
         ${dateStr}
       </div>
-      ${link ? `<a href="${link}" target="_blank" rel="noopener noreferrer" class="modal-open-link" onclick="event.stopPropagation()" style="margin-left:auto">
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-        ${linkLabel}
-      </a>` : ''}
+      <div style="margin-left:auto;display:flex;gap:8px;align-items:center">
+        <button onclick="shareCard()" class="modal-open-link" style="background:var(--paper-2);color:var(--ink-1);border-color:var(--border-soft)">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+          Share
+        </button>
+        ${link ? `<a href="${link}" target="_blank" rel="noopener noreferrer" class="modal-open-link" onclick="event.stopPropagation()">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          ${linkLabel}
+        </a>` : ''}
+      </div>
     </div>
   `;
 
@@ -683,6 +690,167 @@ function closeCard(){
   document.getElementById('card-overlay').classList.remove('open');
   document.getElementById('card-modal').classList.remove('open');
   document.body.style.overflow = '';
+}
+
+// ── Card share (canvas → Web Share API → iMessage) ───────────────────────────
+let _currentCard = null;
+
+function _rrPath(ctx, x, y, w, h, r){
+  ctx.beginPath();
+  ctx.moveTo(x+r, y);
+  ctx.lineTo(x+w-r, y); ctx.quadraticCurveTo(x+w, y, x+w, y+r);
+  ctx.lineTo(x+w, y+h-r); ctx.quadraticCurveTo(x+w, y+h, x+w-r, y+h);
+  ctx.lineTo(x+r, y+h); ctx.quadraticCurveTo(x, y+h, x, y+h-r);
+  ctx.lineTo(x, y+r); ctx.quadraticCurveTo(x, y, x+r, y);
+  ctx.closePath();
+}
+
+function _wrapText(ctx, text, x, y, maxW, lh){
+  if(!text) return 0;
+  const words = text.split(' ');
+  let line = '', rows = [];
+  for(const w of words){
+    const t = line + w + ' ';
+    if(ctx.measureText(t).width > maxW && line){ rows.push(line.trimEnd()); line = w + ' '; }
+    else line = t;
+  }
+  if(line.trim()) rows.push(line.trimEnd());
+  rows.forEach((r,i) => ctx.fillText(r, x, y + i*lh));
+  return rows.length * lh;
+}
+
+async function shareCard(){
+  const ev = _currentCard;
+  if(!ev) return;
+
+  const S = 2, PAD = 28, W = 560;
+  const isWild = ev._ai && ev.tier === 'wildcard';
+  const accentA = isWild ? '#fb923c' : '#8b5cf6';
+  const accentB = isWild ? '#fbbf24' : '#a78bfa';
+  const desc  = ev._ai ? (ev.description||'') : cleanDesc(ev.description);
+  const tags  = (ev.tags||[]).slice(0,4);
+  const inner = W - PAD*2;
+
+  // ── Measure pass ──────────────────────────────────────────────────────────
+  const mc = document.createElement('canvas');
+  mc.width = W; mc.height = 1;
+  const mx = mc.getContext('2d');
+  function countLines(font, text, mw){
+    mx.font = font;
+    const words = text.split(' '); let line='', n=1;
+    for(const w of words){ const t=line+w+' '; if(mx.measureText(t).width>mw&&line){n++;line=w+' ';}else line=t; }
+    return n;
+  }
+  const titleLines = countLines('700 17px system-ui', ev.title||'', inner);
+  const descLines  = countLines('400 13px system-ui', desc, inner);
+
+  let H = PAD + 18 + 10                  // top + source row + gap
+        + titleLines*23 + 10             // title
+        + (ev.location ? 20 : 0)         // location
+        + 6 + descLines*20 + 10          // description
+        + (tags.length ? 20 + 6 : 0)     // tags
+        + 1 + 16 + 20 + PAD;             // separator + footer + bottom
+
+  // ── Draw pass ─────────────────────────────────────────────────────────────
+  const cv = document.createElement('canvas');
+  cv.width = W*S; cv.height = H*S;
+  const cx = cv.getContext('2d');
+  cx.scale(S, S);
+
+  // Background
+  cx.fillStyle = '#111111';
+  _rrPath(cx, 0, 0, W, H, 14); cx.fill();
+
+  // Top accent bar
+  const g = cx.createLinearGradient(0,0,W*.65,0);
+  g.addColorStop(0, accentA); g.addColorStop(0.8, accentB); g.addColorStop(1,'transparent');
+  cx.fillStyle = g; cx.fillRect(0, 0, W, 3);
+  // Round the top corners of the bar
+  cx.fillStyle = '#111111'; cx.fillRect(0, 3, W, 1);
+
+  let cy = PAD;
+
+  // Source label
+  cx.font = '500 10px system-ui,sans-serif';
+  cx.fillStyle = '#555555';
+  cx.textBaseline = 'middle';
+  const sourceLabel = ev._ai
+    ? ('✦ AI Guide' + (ev.period ? ' · ' + ev.period : ''))
+    : (ev.source || '');
+  cx.fillText(sourceLabel.toUpperCase(), PAD, cy + 9);
+
+  // Cost / tier badge (right-aligned)
+  const badgeText = ev._ai ? (ev.cost||ev.tier_label||'') : (ev.price==='free'?'FREE':(ev.price||ev.region||''));
+  if(badgeText){
+    cx.font = '500 10px system-ui,sans-serif';
+    const bw = cx.measureText(badgeText).width + 14;
+    cx.fillStyle = '#1e1e1e';
+    _rrPath(cx, W-PAD-bw, cy, bw, 18, 4); cx.fill();
+    cx.fillStyle = '#777777';
+    cx.textAlign = 'center';
+    cx.fillText(badgeText, W-PAD-bw/2, cy+9);
+    cx.textAlign = 'left';
+  }
+  cy += 28;
+
+  // Title
+  cx.font = '700 17px system-ui,sans-serif';
+  cx.fillStyle = '#f0f0f0';
+  cy += _wrapText(cx, ev.title||'', PAD, cy, inner, 23);
+  cy += 10;
+
+  // Location
+  if(ev.location){
+    cx.font = '400 11px ui-monospace,monospace';
+    cx.fillStyle = '#4a4a4a';
+    cx.fillText('📍 ' + ev.location, PAD, cy);
+    cy += 20;
+  }
+  cy += 4;
+
+  // Description
+  cx.font = '400 13px system-ui,sans-serif';
+  cx.fillStyle = '#888888';
+  cy += _wrapText(cx, desc, PAD, cy, inner, 20);
+  cy += 12;
+
+  // Tags
+  if(tags.length){
+    cx.font = '400 11px ui-monospace,monospace';
+    cx.fillStyle = '#3a3a3a';
+    cx.fillText(tags.map(t=>'#'+t).join('   '), PAD, cy);
+    cy += 20;
+  }
+
+  // Separator
+  cx.strokeStyle = '#222222'; cx.lineWidth = 1;
+  cx.beginPath(); cx.moveTo(PAD, cy); cx.lineTo(W-PAD, cy); cx.stroke();
+  cy += 14;
+
+  // Footer: date left, branding right
+  cx.font = '500 11px system-ui,sans-serif';
+  const dateStr = ev._ai ? (ev.day==='today'?'Today':'Tomorrow') : (formatDate(ev)||'Date TBD');
+  cx.fillStyle = accentA;
+  cx.fillText(dateStr, PAD, cy);
+  cx.textAlign = 'right';
+  cx.fillStyle = '#333333';
+  cx.fillText('Charlotte On The Run 🏃', W-PAD, cy);
+  cx.textAlign = 'left';
+
+  // ── Share / fallback ──────────────────────────────────────────────────────
+  cv.toBlob(async blob => {
+    const file = new File([blob], 'event-card.png', { type:'image/png' });
+    if(navigator.share && navigator.canShare && navigator.canShare({ files:[file] })){
+      try{ await navigator.share({ files:[file], title: ev.title }); }
+      catch(e){ if(e.name!=='AbortError') console.warn(e); }
+    } else {
+      // Desktop fallback: download the image
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = 'event-card.png'; a.click();
+      setTimeout(()=>URL.revokeObjectURL(url), 1000);
+    }
+  }, 'image/png');
 }
 
 // ── Section divider helpers ───────────────────────────────────────────────────
