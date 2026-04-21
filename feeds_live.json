@@ -5,23 +5,11 @@
     "name": "Scoop Charlotte",
     "url": "https://scoopcharlotte.com/feed/",
     "priority": 1,
-    "tags": [
-      "events",
-      "culture",
-      "arts"
-    ],
+    "tags": ["events", "culture", "arts"],
     "total_items": 50,
     "event_items": 28,
     "event_ratio": 0.56,
-    "avg_event_score": 2.4,
-    "new_sigs": 50,
-    "sample_titles": [
-      "What to wear to the Truist Championship golf tournament, according to a personal stylist",
-      "Home Tour: This Figure Eight home shows the power and serenity of restraint",
-      "Longtime Charlotte restaurant owners dish on legacy, new menu",
-      "Charlotte homebuyers are picky\u2014here\u2019s how to win them over & get the offer",
-      "AM Routine: Wake up like the founder of Dew Lily, a kid-safe skincare line"
-    ]
+    "avg_event_score": 2.4
   },
   {
     "region": "Charlotte",
@@ -29,115 +17,51 @@
     "name": "Queen City Nerve",
     "url": "https://qcnerve.com/feed/",
     "priority": 1,
-    "tags": [
-      "events",
-      "arts",
-      "culture"
-    ],
+    "tags": ["events", "arts", "culture"],
     "total_items": 10,
     "event_items": 5,
     "event_ratio": 0.5,
-    "avg_event_score": 2.3,
-    "new_sigs": 10,
-    "sample_titles": [
-      "Townhomes in Cotswold, Shuffletown, West Sugar Creek Come to Council",
-      "NC Cannabis Report: Shut Off Kids\u2019 Access, Allow \u2018Regulated Adult Market\u2019",
-      "Groovers Listening Room Brings Dance Club Energy to South End",
-      "Bush, Mammoth Rock Skyla to Open the Season",
-      "My Trip Through the Introductory Improv Class at CATCh"
-    ]
+    "avg_event_score": 2.3
   },
   {
     "region": "Charlotte",
     "distance": "0min",
-    "name": "Charlotte Ballet",
-    "url": "https://charlotteballet.org/feed/",
+    "name": "Charlotte Is Creative",
+    "url": "https://charlotteiscreative.com/feed/",
     "priority": 1,
-    "tags": [
-      "events",
-      "arts",
-      "performance"
-    ],
-    "total_items": 10,
-    "event_items": 4,
-    "event_ratio": 0.4,
-    "avg_event_score": 1.2,
-    "new_sigs": 10,
-    "sample_titles": [
-      "The 2026 Dancing with the Stars of Charlotte Gala!",
-      "Your 2026 Star Dancers",
-      "The 2025 Dancing with the Stars of Charlotte Gala!",
-      "Your 2025 Star Dancers"
-    ]
+    "tags": ["events", "arts", "culture"]
+  },
+  {
+    "region": "Charlotte",
+    "distance": "0min",
+    "name": "Charlotte on the Cheap",
+    "url": "https://www.charlotteonthecheap.com/feed/",
+    "priority": 1,
+    "tags": ["events", "free", "community"]
   },
   {
     "region": "Charlotte",
     "distance": "0min",
     "name": "SouthPark Magazine",
     "url": "https://southparkmagazine.com/feed/",
-    "priority": 1,
-    "tags": [
-      "events",
-      "culture",
-      "arts"
-    ],
+    "priority": 2,
+    "tags": ["events", "culture", "arts"],
     "total_items": 10,
     "event_items": 4,
     "event_ratio": 0.4,
-    "avg_event_score": 1.5,
-    "new_sigs": 10,
-    "sample_titles": [
-      "Click, tap, revolt: A new augmented-reality exhibit marks America\u2019s 250th",
-      "SWIRL: Party pictures",
-      "Going all in: A total home renovation in Myers Park",
-      "Easter brunch roundup"
-    ]
+    "avg_event_score": 1.5
   },
   {
     "region": "Charlotte",
     "distance": "0min",
     "name": "Charlotte Pride",
     "url": "https://charlottepride.org/feed/",
-    "priority": 1,
-    "tags": [
-      "events",
-      "community",
-      "lgbtq"
-    ],
+    "priority": 2,
+    "tags": ["events", "community", "lgbtq"],
     "total_items": 10,
     "event_items": 4,
     "event_ratio": 0.4,
-    "avg_event_score": 2.0,
-    "new_sigs": 10,
-    "sample_titles": [
-      "Access 21 VOD Coverage of the 2024 Charlotte Pride Festival",
-      "Charlotte Pride\u2019s Statement on North Carolina\u2019s Proposed \u201cParents Bill of Rights\u201d",
-      "Charlotte Pride: A Family Holiday",
-      "Release: Charlotte Pride Festival & Parade to return to Uptown in 2022"
-    ]
-  },
-  {
-    "region": "Charlotte",
-    "distance": "0min",
-    "name": "Charlotte Parent",
-    "url": "https://www.charlotteparent.com/feed/",
-    "priority": 2,
-    "tags": [
-      "events",
-      "family"
-    ],
-    "total_items": 10,
-    "event_items": 8,
-    "event_ratio": 0.8,
-    "avg_event_score": 3.4,
-    "new_sigs": 10,
-    "sample_titles": [
-      "TRAVEL: Princess Grand Jamaica",
-      "Improving Dinner Time Conversation",
-      "THRIVE: Traditions That Make Room for Everyone",
-      "ASK A MOM: YouTube Learning Hubs, Holiday Finances, and Thumb-Sucking",
-      "FESTIVE READS: 7 Holiday Books for Kids"
-    ]
+    "avg_event_score": 2.0
   },
   {
     "region": "Charlotte",
@@ -145,21 +69,11 @@
     "name": "CLTtoday (6AM City)",
     "url": "https://clttoday.6amcity.com/index.rss",
     "priority": 2,
-    "tags": [
-      "events",
-      "news",
-      "culture"
-    ],
+    "tags": ["events", "news", "culture"],
     "total_items": 11,
     "event_items": 3,
     "event_ratio": 0.273,
-    "avg_event_score": 0.82,
-    "new_sigs": 11,
-    "sample_titles": [
-      "Charlotte's Stars and Stripes to take over Truist Field for July Fourth",
-      "Raise a glass to Charlotte's beer scene",
-      "If you\u2019re running out of gift ideas, the Tinggly Experience box is here to save you \u2014 now $50 off"
-    ]
+    "avg_event_score": 0.82
   },
   {
     "region": "Charlotte",
@@ -167,65 +81,11 @@
     "name": "QNotes Carolinas",
     "url": "https://qnotescarolinas.com/feed/",
     "priority": 2,
-    "tags": [
-      "events",
-      "lgbtq",
-      "community"
-    ],
+    "tags": ["events", "lgbtq", "community"],
     "total_items": 50,
     "event_items": 16,
     "event_ratio": 0.32,
-    "avg_event_score": 0.64,
-    "new_sigs": 50,
-    "sample_titles": [
-      "Trump admin agrees to keep flag flying at New York\u2019s Stonewall monument",
-      "Asexual people report declining acceptance in new survey",
-      "Out on Film: An interview with Gina Gershon",
-      "Reaction from faith leaders to Supreme Court decision on conversion therapy ban",
-      "Dudley\u2019s Place drag brunch keeps giving back"
-    ]
-  },
-  {
-    "region": "Charlotte",
-    "distance": "0min",
-    "name": "Mint Museum",
-    "url": "https://mintmuseum.org/feed/",
-    "priority": 2,
-    "tags": [
-      "events",
-      "arts",
-      "culture"
-    ],
-    "total_items": 10,
-    "event_items": 2,
-    "event_ratio": 0.2,
-    "avg_event_score": 0.9,
-    "new_sigs": 10,
-    "sample_titles": [
-      "The Mint Museum turns November admissions into meals for the community",
-      "Southeastern Museums Conference awards The Mint Museum for outstanding design in publications, technology, and exhibitions"
-    ]
-  },
-  {
-    "region": "Charlotte",
-    "distance": "0min",
-    "name": "Unpretentious Palate",
-    "url": "https://unpretentiouspalate.com/feed/",
-    "priority": 2,
-    "tags": [
-      "food",
-      "culture"
-    ],
-    "total_items": 10,
-    "event_items": 3,
-    "event_ratio": 0.3,
-    "avg_event_score": 0.6,
-    "new_sigs": 10,
-    "sample_titles": [
-      "Thai Taste to get \u201cresidency bar\u201d",
-      "Behind the Stick: Dana Jordan, Seaboy",
-      "Q&A: Filling a meat freezer, spring menu items"
-    ]
+    "avg_event_score": 0.64
   },
   {
     "region": "Triad",
@@ -233,23 +93,11 @@
     "name": "Triad City Beat (Culture)",
     "url": "https://triad-city-beat.com/category/culture/feed/",
     "priority": 1,
-    "tags": [
-      "events",
-      "culture",
-      "arts"
-    ],
+    "tags": ["events", "culture", "arts"],
     "total_items": 12,
     "event_items": 6,
     "event_ratio": 0.5,
-    "avg_event_score": 2.25,
-    "new_sigs": 12,
-    "sample_titles": [
-      "On Saturday, Cirque de la Symphonie and the Winston-Salem Symphony will fuse movement, music and magic",
-      "\u2018Hot Mess Express\u2019 transforms lives \u2014 one Swiffer at a time",
-      "In \u2018Becoming More,\u2019 a trans musician tells their story, inspires others in upcoming one-night only show",
-      "\u2018It\u2019s like an adult slumber party\u2019: Moms Unhinged to bring relatable comedy shows to the Triad",
-      "Winston-Salem\u2019s a/perture cinema surpasses its fundraising goal"
-    ]
+    "avg_event_score": 2.25
   },
   {
     "region": "Triad",
@@ -257,23 +105,11 @@
     "name": "WStoday (6AM City)",
     "url": "https://wstoday.6amcity.com/index.rss",
     "priority": 2,
-    "tags": [
-      "events",
-      "news",
-      "culture"
-    ],
+    "tags": ["events", "news", "culture"],
     "total_items": 11,
     "event_items": 8,
     "event_ratio": 0.727,
-    "avg_event_score": 2.45,
-    "new_sigs": 8,
-    "sample_titles": [
-      "What to know about attending the Piedmont Earth Day Fair at the Winston-Salem Fairgrounds",
-      "What to know about attending the Piedmont Earth Day Fair at the Winston-Salem Fairgrounds",
-      "Things you didn't know are illegal in Winston-Salem",
-      "Where to take adult classes in Winston-Salem",
-      "Farmers markets to explore around Winston-Salem"
-    ]
+    "avg_event_score": 2.45
   },
   {
     "region": "Triad",
@@ -281,47 +117,11 @@
     "name": "Greensboro.com Entertainment",
     "url": "https://greensboro.com/search/?f=rss&t=article&c=entertainment&l=50&s=start_time&sd=desc",
     "priority": 2,
-    "tags": [
-      "events",
-      "entertainment",
-      "culture"
-    ],
+    "tags": ["events", "entertainment", "culture"],
     "total_items": 50,
     "event_items": 21,
     "event_ratio": 0.42,
-    "avg_event_score": 1.44,
-    "new_sigs": 50,
-    "sample_titles": [
-      "6 craft beers to get in line for at summer concerts",
-      "A pipe dream no more: As National Comedy Center turns 5, its collection and reputation keep growing",
-      "Actor Julian Sands died while hiking on California mountain, authorities confirm",
-      "What if things could turn out differently? How the multiverse got into our heads and didn\u2019t let go",
-      "There'll be no raining on the parade at the Pride Winston Salem Festival on Saturday - at least not figuratively speaking"
-    ]
-  },
-  {
-    "region": "Triad",
-    "distance": "1h",
-    "name": "Reynolda House",
-    "url": "https://reynolda.org/feed/",
-    "priority": 2,
-    "tags": [
-      "events",
-      "arts",
-      "culture"
-    ],
-    "total_items": 10,
-    "event_items": 5,
-    "event_ratio": 0.5,
-    "avg_event_score": 2.6,
-    "new_sigs": 10,
-    "sample_titles": [
-      "Reynolda Volunteers on the Town, Part One",
-      "A Newbie\u2019s First Community Day",
-      "Camel City Member Events",
-      "New Reynolda Online Ticketing and Membership Portal",
-      "Reynolda Gardens\u2019 Annual Fundraiser"
-    ]
+    "avg_event_score": 1.44
   },
   {
     "region": "Greenville SC",
@@ -329,23 +129,11 @@
     "name": "Greenville Journal (Events)",
     "url": "https://greenvillejournal.com/category/events/feed/",
     "priority": 1,
-    "tags": [
-      "events",
-      "arts",
-      "culture"
-    ],
+    "tags": ["events", "arts", "culture"],
     "total_items": 15,
     "event_items": 8,
     "event_ratio": 0.533,
-    "avg_event_score": 1.73,
-    "new_sigs": 15,
-    "sample_titles": [
-      "iMAGINE Upstate STEAM Festival returns April 4",
-      "Artisphere unveils 2026 visual arts exhibitors",
-      "FAVOR Upstate raises over $519k at annual luncheon",
-      "Holiday Fair returns to Greenville Convention Center in December",
-      "Hispanic Heritage Festival returns to Greenville\u2019s Fluor Field Sept. 14"
-    ]
+    "avg_event_score": 1.73
   },
   {
     "region": "Greenville SC",
@@ -353,22 +141,11 @@
     "name": "Greenville Journal (Arts)",
     "url": "https://greenvillejournal.com/category/arts-culture/feed/",
     "priority": 2,
-    "tags": [
-      "arts",
-      "culture"
-    ],
+    "tags": ["arts", "culture"],
     "total_items": 15,
     "event_items": 12,
     "event_ratio": 0.8,
-    "avg_event_score": 6.07,
-    "new_sigs": 15,
-    "sample_titles": [
-      "Art and Light Gallery to host \u2018Verdant Paths\u2019 exhibition",
-      "Wynton Marsalis takes final bow as leader of famed jazz orchestra at Peace Center",
-      "Artisphere announces music lineup for 2026 festival",
-      "Indie Craft Parade invites artists, makers to apply for 2026 festival",
-      "Centre Stage to host its \u2018Showstoppers\u2019 fundraiser event April 25"
-    ]
+    "avg_event_score": 6.07
   },
   {
     "region": "Greenville SC",
@@ -376,22 +153,11 @@
     "name": "GVLtoday (6AM City)",
     "url": "https://gvltoday.6amcity.com/index.rss",
     "priority": 2,
-    "tags": [
-      "events",
-      "news",
-      "culture"
-    ],
+    "tags": ["events", "news", "culture"],
     "total_items": 11,
     "event_items": 4,
     "event_ratio": 0.364,
-    "avg_event_score": 1.09,
-    "new_sigs": 8,
-    "sample_titles": [
-      "Leave your mark along the Swamp Rabbit Trail",
-      "Farmers markets in Greenville",
-      "Farmers markets in Greenville",
-      "If you\u2019re running out of gift ideas, the Tinggly Experience box is here to save you \u2014 now $50 off"
-    ]
+    "avg_event_score": 1.09
   },
   {
     "region": "Greenville SC",
@@ -399,22 +165,11 @@
     "name": "Town Carolina",
     "url": "https://towncarolina.com/feed/",
     "priority": 2,
-    "tags": [
-      "events",
-      "culture",
-      "community"
-    ],
+    "tags": ["events", "culture", "community"],
     "total_items": 10,
     "event_items": 4,
     "event_ratio": 0.4,
-    "avg_event_score": 2.6,
-    "new_sigs": 10,
-    "sample_titles": [
-      "Photos: Green Tie Gala Benefits Greenville Zoo",
-      "Photos: Passport to Dance Benefit Gala at Westin Poinsett",
-      "Photos: Greenville Theatre 100th Anniversary Gala",
-      "Photos: First Look at American Voices: Lost and Found at Sigal Music Museum"
-    ]
+    "avg_event_score": 2.6
   },
   {
     "region": "Greenville SC",
@@ -422,22 +177,11 @@
     "name": "COLAtoday (6AM City)",
     "url": "https://colatoday.6amcity.com/index.rss",
     "priority": 2,
-    "tags": [
-      "events",
-      "news",
-      "culture"
-    ],
+    "tags": ["events", "news", "culture"],
     "total_items": 11,
     "event_items": 4,
     "event_ratio": 0.364,
-    "avg_event_score": 1.0,
-    "new_sigs": 8,
-    "sample_titles": [
-      "Farmers markets in Columbia",
-      "Farmers markets in Columbia",
-      "Voting is officially open for COLAtoday's Best",
-      "If you\u2019re running out of gift ideas, the Tinggly Experience box is here to save you \u2014 now $50 off"
-    ]
+    "avg_event_score": 1.0
   },
   {
     "region": "Asheville",
@@ -445,23 +189,11 @@
     "name": "Mountain Xpress",
     "url": "https://mountainx.com/feed/",
     "priority": 2,
-    "tags": [
-      "events",
-      "arts",
-      "culture",
-      "food"
-    ],
+    "tags": ["events", "arts", "culture", "food"],
     "total_items": 21,
     "event_items": 4,
     "event_ratio": 0.19,
-    "avg_event_score": 0.71,
-    "new_sigs": 21,
-    "sample_titles": [
-      "In photos: First look at renovated HomeTrust Park ahead of home opener",
-      "Letter: UNCA should change course on urban forest",
-      "From trails to rivers, Western North Carolina encourages eco-friendly visits",
-      "Smart Bets: Redemption Time"
-    ]
+    "avg_event_score": 0.71
   },
   {
     "region": "Triangle NC",
@@ -469,23 +201,19 @@
     "name": "Walter Magazine",
     "url": "https://www.waltermagazine.com/feed/",
     "priority": 1,
-    "tags": [
-      "events",
-      "culture",
-      "arts"
-    ],
+    "tags": ["events", "culture", "arts"],
     "total_items": 10,
     "event_items": 8,
     "event_ratio": 0.8,
-    "avg_event_score": 3.4,
-    "new_sigs": 10,
-    "sample_titles": [
-      "A Guide to the Triangle\u2019s Spring & Summer Spectator Sports",
-      "What to do in May 2026 In and Around Raleigh",
-      "10 Outdoor Shows and Series to Put On Your Radar this Spring",
-      "The Whirl: Smash Ribbon Cutting",
-      "The Whirl: New Year\u2019s Eve Celebration"
-    ]
+    "avg_event_score": 3.4
+  },
+  {
+    "region": "Triangle NC",
+    "distance": "2h30min",
+    "name": "Triangle on the Cheap",
+    "url": "https://triangleonthecheap.com/feed/",
+    "priority": 1,
+    "tags": ["events", "free", "community"]
   },
   {
     "region": "Triangle NC",
@@ -493,23 +221,11 @@
     "name": "Raleigh Magazine",
     "url": "https://raleighmag.com/feed/",
     "priority": 2,
-    "tags": [
-      "events",
-      "culture",
-      "arts"
-    ],
+    "tags": ["events", "culture", "arts"],
     "total_items": 10,
     "event_items": 5,
     "event_ratio": 0.5,
-    "avg_event_score": 1.8,
-    "new_sigs": 10,
-    "sample_titles": [
-      "Get Your Green on for Earth Week",
-      "Big Cat Bows on Brookside Drive",
-      "Does Raleigh Have the Resources to Maintain Music Festivals?",
-      "Dynamic Pricing Is Pricing Out Concertgoers",
-      "RDU\u2019s Early Alcohol Sales Goes Permanent"
-    ]
+    "avg_event_score": 1.8
   },
   {
     "region": "Triangle NC",
@@ -517,22 +233,11 @@
     "name": "Durham Magazine",
     "url": "https://durhammag.com/feed/",
     "priority": 2,
-    "tags": [
-      "events",
-      "culture",
-      "arts"
-    ],
+    "tags": ["events", "culture", "arts"],
     "total_items": 10,
     "event_items": 4,
     "event_ratio": 0.4,
-    "avg_event_score": 1.4,
-    "new_sigs": 10,
-    "sample_titles": [
-      "Editors\u2019 Picks: What To Do in Durham This Weekend",
-      "Del Norte Tortillas Brings Handmade Flavor to the Triangle",
-      "Best Family Activities in Durham: 25+ Kid-Friendly Attractions, Parks & Farms",
-      "Durham Drag Artist, Educator and Community Builder Shines On and Off Stage"
-    ]
+    "avg_event_score": 1.4
   },
   {
     "region": "Triangle NC",
@@ -540,21 +245,11 @@
     "name": "INDY Week",
     "url": "https://indyweek.com/feed",
     "priority": 2,
-    "tags": [
-      "events",
-      "culture",
-      "arts"
-    ],
+    "tags": ["events", "culture", "arts"],
     "total_items": 10,
     "event_items": 3,
     "event_ratio": 0.3,
-    "avg_event_score": 0.1,
-    "new_sigs": 10,
-    "sample_titles": [
-      "The Filmmakers Behind \u201cThe Great Experiment\u201d On Resisting Tidy Narratives",
-      "\u201cA Little Part of Everyone Somewhere in Her Story\u201d: Talking to Filmmaker Alan Berliner About BENITA",
-      "Why Raleigh City Leaders Won\u2019t Commit to a $200 Million Affordable Housing Bond"
-    ]
+    "avg_event_score": 0.1
   },
   {
     "region": "Triangle NC",
@@ -562,21 +257,10 @@
     "name": "RALtoday (6AM City)",
     "url": "https://raltoday.6amcity.com/index.rss",
     "priority": 2,
-    "tags": [
-      "events",
-      "news",
-      "culture"
-    ],
+    "tags": ["events", "news", "culture"],
     "total_items": 11,
     "event_items": 4,
     "event_ratio": 0.364,
-    "avg_event_score": 0.91,
-    "new_sigs": 8,
-    "sample_titles": [
-      "Mansion Monday: Modern retreat at Umstead State Park",
-      "Mansion Monday: Modern retreat at Umstead State Park",
-      "Find fresh design inspo at next week\u2019s Spring Home Tour",
-      "If you\u2019re running out of gift ideas, the Tinggly Experience box is here to save you \u2014 now $50 off"
-    ]
+    "avg_event_score": 0.91
   }
 ]

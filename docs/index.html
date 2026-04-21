@@ -249,6 +249,11 @@ footer{border-top:1px solid var(--border-faint);padding:20px 24px;text-align:cen
         <button class="chip" data-time="dated" onclick="setTime('dated')">Has Date</button>
       </div>
     </div>
+
+    <div class="control-row" id="cat-row" style="display:none">
+      <span class="chip-label">Category</span>
+      <div class="chips" id="cat-chips"></div>
+    </div>
   </div>
 
   <!-- Grid -->
@@ -272,6 +277,7 @@ let activeTime   = 'all';
 let freeOnly     = false;
 let aiOnly       = false;
 let activeTier   = 'free';
+let activeCats   = new Set();
 let searchQ      = '';
 
 const TODAY = new Date();
@@ -289,6 +295,25 @@ function getWeekend(){
 function getWeekEnd(){ const d = new Date(TODAY); d.setDate(TODAY.getDate()+6); return d; }
 
 // ── Parse AI guide cards (structured JSON from Gemini) ─────────────────────
+const CATEGORIES = [
+  { id:'music',     label:'🎵 Music' },
+  { id:'food',      label:'🍽 Food' },
+  { id:'drinks',    label:'🍺 Drinks' },
+  { id:'arts',      label:'🎨 Arts' },
+  { id:'outdoors',  label:'🌿 Outdoors' },
+  { id:'nightlife', label:'🌃 Nightlife' },
+  { id:'comedy',    label:'😂 Comedy' },
+  { id:'sports',    label:'⚡ Sports' },
+  { id:'theater',   label:'🎭 Theater' },
+  { id:'fitness',   label:'🏃 Fitness' },
+  { id:'market',    label:'🛍 Market' },
+  { id:'drag',      label:'💅 Drag' },
+  { id:'film',      label:'🎬 Film' },
+  { id:'weird',     label:'🎪 Weird' },
+  { id:'family',    label:'👨‍👩‍👧 Family' },
+];
+const CAT_MAP = Object.fromEntries(CATEGORIES.map(c => [c.id, c]));
+
 const TIER_META = {
   free:     { label: '🆓 Free',       color: 'var(--good-500)' },
   under20:  { label: '💵 Under $20',  color: 'var(--warn-500)' },
@@ -313,6 +338,7 @@ function parseGuideCards() {
         location:    act.location || '',
         cost:        act.cost || '',
         tags:        act.tags || [],
+        category:    act.category || [],
         day:         act.day,
         period:      act.period,
         source:      'AI Guide',
@@ -369,6 +395,27 @@ function setActiveTier(t){
   activeTier = t;
   document.querySelectorAll('.ai-tier-tab').forEach(el => el.classList.toggle('active', el.dataset.tier===t));
   render();
+}
+function toggleCat(cat){
+  if(activeCats.has(cat)) activeCats.delete(cat);
+  else activeCats.add(cat);
+  document.querySelectorAll('[data-cat]').forEach(el => el.classList.toggle('active', activeCats.has(el.dataset.cat)));
+  render();
+}
+function initCategoryChips(){
+  const present = new Set(AI_CARDS.flatMap(c => c.category || []));
+  const row = document.getElementById('cat-row');
+  const container = document.getElementById('cat-chips');
+  if(present.size === 0){ row.style.display='none'; return; }
+  row.style.display='';
+  CATEGORIES.filter(c => present.has(c.id)).forEach(cat => {
+    const b = document.createElement('button');
+    b.className = 'chip';
+    b.dataset.cat = cat.id;
+    b.textContent = cat.label;
+    b.onclick = () => toggleCat(cat.id);
+    container.appendChild(b);
+  });
 }
 
 document.getElementById('search-input').addEventListener('input', e => {
@@ -491,6 +538,11 @@ function buildAICard(ev){
   const costBadge   = ev.cost
     ? `<span class="badge" style="background:var(--paper-2);color:var(--ink-2);border-color:var(--border-soft)">${ev.cost}</span>`
     : '';
+  const catHtml = (ev.category || []).slice(0,3).map(c => {
+    const meta = CAT_MAP[c];
+    const isWeird = c === 'weird';
+    return `<span class="badge" style="background:var(--paper-2);color:${isWeird?'#fb923c':'var(--ink-3)'};border-color:${isWeird?'rgba(251,146,60,.3)':'var(--border-faint)'}">${meta ? meta.label : c}</span>`;
+  }).join('');
   const tagsHtml = (ev.tags || []).slice(0, 3).map(t =>
     `<span style="font-size:10px;color:var(--ink-3);font-family:var(--font-mono)">#${t}</span>`
   ).join(' ');
@@ -503,6 +555,7 @@ function buildAICard(ev){
         <span class="badge" style="background:var(--paper-2);color:${ev.tier_color};border-color:var(--border-soft)">${ev.tier_label}</span>
       </div>
     </div>
+    ${catHtml ? `<div style="display:flex;gap:4px;flex-wrap:wrap;margin:-4px 0 0">${catHtml}</div>` : ''}
     <div class="card-title">${ev.title}</div>
     ${ev.location ? `<div style="font-size:11px;color:var(--ink-3);margin:-2px 0 2px;font-family:var(--font-mono)">📍 ${ev.location}</div>` : ''}
     <div class="card-desc" style="-webkit-line-clamp:3">${ev.description}</div>
@@ -565,7 +618,10 @@ function render(){
 
   // ── AI-only mode ────────────────────────────────────────────────────────────
   if(aiOnly){
-    const tierCards = AI_CARDS.filter(c => c.tier === activeTier);
+    const tierCards = AI_CARDS.filter(c =>
+      c.tier === activeTier &&
+      (activeCats.size === 0 || (c.category||[]).some(cat => activeCats.has(cat)))
+    );
 
     // Tier selector bar
     const bar = document.createElement('div');
@@ -603,8 +659,9 @@ function render(){
 
   // Pick today's AI cards from cheapest available tier + wild card
   const mixTier  = ['free','under20','under50','splurge'].find(t => AI_CARDS.some(c => c.tier === t)) || 'free';
-  const mixAI    = AI_CARDS.filter(c => c.tier === mixTier && c.day === 'today');
-  const mixWild  = AI_CARDS.filter(c => c.tier === 'wildcard' && c.day === 'today');
+  const catOK    = c => activeCats.size === 0 || (c.category||[]).some(cat => activeCats.has(cat));
+  const mixAI    = AI_CARDS.filter(c => c.tier === mixTier && c.day === 'today' && catOK(c));
+  const mixWild  = AI_CARDS.filter(c => c.tier === 'wildcard' && c.day === 'today' && catOK(c));
 
   if(filtered.length === 0 && mixAI.length === 0 && mixWild.length === 0){
     grid.style.display='none'; empty.style.display='block';
@@ -679,6 +736,7 @@ function initRunCost(){
 // ── Init ──────────────────────────────────────────────────────────────────────
 initStats();
 initRunCost();
+initCategoryChips();
 render();
 </script>
 </body>

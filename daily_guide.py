@@ -25,6 +25,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 from google import genai
 from google.genai import types
+from fetcher import run_fetch
 
 load_dotenv()
 
@@ -39,6 +40,13 @@ TIERS = [
     {"id": "wildcard", "label": "Wild Card",  "emoji": "🎪", "max_cost": "any"},
 ]
 
+# ── Predefined categories (used in schema + frontend filter) ──────────────────
+VALID_CATS = {
+    "music", "food", "drinks", "arts", "outdoors", "nightlife",
+    "comedy", "sports", "theater", "fitness", "market", "drag",
+    "film", "weird", "family",
+}
+
 # ── JSON schema embedded in prompt ────────────────────────────────────────────
 SCHEMA = """{
   "title":       "string — short activity name (≤60 chars)",
@@ -47,7 +55,8 @@ SCHEMA = """{
   "period":      "morning | afternoon | evening | night",
   "location":    "string — venue name + neighborhood (e.g. 'Optimist Hall, NoDa')",
   "cost":        "string — e.g. 'Free', '$12', '$8–$15'",
-  "tags":        ["array of 2-4 strings from: outdoor, food, drinks, music, art, queer-friendly, nightlife, fitness, culture, shopping, sports, nature"]
+  "category":    ["1-3 strings chosen ONLY from: music, food, drinks, arts, outdoors, nightlife, comedy, sports, theater, fitness, market, drag, film, weird, family"],
+  "tags":        ["2-4 specific detail tags like 'dog-friendly', 'rooftop', 'BYOB', 'all-ages', 'queer-friendly'"]
 }"""
 
 def make_prompt(tier: dict, today_dow: str, today: str,
@@ -98,12 +107,16 @@ def make_prompt(tier: dict, today_dow: str, today: str,
     if tier_id == "wildcard":
         audience = "anyone who wants something genuinely memorable, weird, or surprising — not a typical night out"
         schema_note = (
-            "Tags can include any descriptive words — e.g. 'wrestling', 'weird', 'comedy', "
-            "'novelty', 'campy', 'experience', 'sports', in addition to the standard list."
+            'For "category", use "weird" for all wildcard cards, plus any other applicable categories. '
+            "Tags should be specific descriptors like 'campy', 'novelty', 'one-night-only', 'audience-participation'."
         )
     else:
         audience = "27-year-old gay man, social, adventurous, familiar with Charlotte"
-        schema_note = "Use tags from: outdoor, food, drinks, music, art, queer-friendly, nightlife, fitness, culture, shopping, sports, nature"
+        schema_note = (
+            'For "category", pick 1-3 from ONLY: music, food, drinks, arts, outdoors, nightlife, '
+            "comedy, sports, theater, fitness, market, drag, film, weird, family. "
+            "Tags should be specific details like 'dog-friendly', 'rooftop', 'BYOB', 'queer-friendly', 'all-ages'."
+        )
 
     return f"""You are a local city guide for Charlotte, NC, with deep knowledge of local events across all categories.
 
@@ -156,14 +169,21 @@ def validate_card(card: dict, tier_id: str) -> dict | None:
     if card.get("day") not in ("today", "tomorrow"):
         return None
     if card.get("period") not in ("morning", "afternoon", "evening", "night"):
-        card["period"] = "afternoon"  # safe default
+        card["period"] = "afternoon"
     card.setdefault("tags", [])
     card["tier"] = tier_id
-    # Trim overlong fields
     card["title"]       = str(card["title"])[:80]
     card["description"] = str(card["description"])[:400]
     card["location"]    = str(card["location"])[:80]
     card["cost"]        = str(card["cost"])[:20]
+    # Normalize category to fixed vocabulary
+    raw = card.get("category", [])
+    if isinstance(raw, str):
+        raw = [raw]
+    card["category"] = [c.lower() for c in raw if c.lower() in VALID_CATS][:3]
+    # Wildcard tier always gets "weird" category
+    if tier_id == "wildcard" and "weird" not in card["category"]:
+        card["category"].insert(0, "weird")
     return card
 
 
@@ -312,6 +332,15 @@ def main():
 
     print("Charlotte On The Run — Daily Guide (JSON cards)")
     print(f"Today: {today_dow} {today_s}  |  Tomorrow: {tomorrow_dow} {tomorrow_s}\n")
+
+    # ── Step 1: refresh RSS feeds before generating guide or exporting ────────
+    print("Fetching RSS feeds…")
+    try:
+        stats = run_fetch(priority_filter=2)
+        print(f"  Feeds: +{stats['new']} new  |  {stats['skipped']} skipped  "
+              f"|  {stats['dropped']} dropped  |  {stats['errors']} errors\n")
+    except Exception as e:
+        print(f"  Feed fetch error (continuing): {e}\n", file=sys.stderr)
 
     if not API_KEY:
         print("ERROR: GEMINI_API_KEY not set in .env", file=sys.stderr)
