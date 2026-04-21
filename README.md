@@ -1,227 +1,259 @@
-# Charlotte On The Run
+# Charlotte On The Run 🏃‍♂️
 
-Telegram bot that surfaces upcoming events in Charlotte NC and surrounding areas (up to ~2.5h drive). Pulls 20 curated RSS feeds, deduplicates via SHA-256, filters out non-event content by keyword scoring, extracts event dates from article text, and only shows you things that haven't happened yet — or started in the last hour so you can still catch them.
+> A precision-focused, AI-augmented local event discovery portal for Charlotte, NC and surrounding regions — built for people who actually want to *do things*.
+
+**Live site →** [aaditya-327.github.io/Charlotte-on-the-Run](https://aaditya-327.github.io/Charlotte-on-the-Run)
 
 ---
 
-## How it works
+## What Is This?
+
+Charlotte On The Run is a personal event dashboard that aggregates **real local event signals** from 25 curated RSS feeds across 5 regions, then layers on **Gemini AI-generated activity guides** (with live Google Search grounding) — all rendered as a fast, zero-dependency static site hosted on GitHub Pages.
+
+The goal is simple: open the site on any given day and immediately know what's worth doing in Charlotte and up to 2.5 hours away — without wading through job boards, real estate listings, or recycled press releases.
+
+---
+
+## Goals
+
+| Goal | Status |
+|------|--------|
+| Aggregate high-signal local events from RSS (not just news) | ✅ |
+| Filter out junk: jobs, attorney spam, real estate, finance | ✅ |
+| Extract specific event dates with confidence scoring | ✅ |
+| Serve a clean, fast static site with zero dependencies | ✅ |
+| Add AI-generated daily activity guides by budget tier | ✅ |
+| Automate daily refresh via GitHub Actions + local launchd | ✅ |
+| Cover Charlotte, Triad, Greenville SC, Asheville, Triangle NC | ✅ |
+
+---
+
+## Architecture
 
 ```
-validate_feeds.py   →   feeds_live.json   →   fetcher.py   →   events.db   →   bot.py
-    (run once)           (commit this)       (run on schedule)   (SQLite)      (always on)
+┌─────────────────────────────────────────────────────────────┐
+│                        Data Pipeline                         │
+│                                                             │
+│   feeds.py          25 curated RSS feeds                    │
+│       │                 (5 regions, 3 priority tiers)       │
+│       ▼                                                     │
+│   fetcher.py        Fetch → Score → Filter → Store          │
+│       │              • TITLE_BLOCKLIST (pre-filter junk)    │
+│       │              • EVENT_SCORE_MIN = 4                  │
+│       │              • Date extraction (regex + NLP)        │
+│       │              • SQLite (events.db)                   │
+│       ▼                                                     │
+│   export_site_data  → docs/events_data.js                   │
+│                                                             │
+│   daily_guide.py    Gemini 2.5 Flash + Google Search        │
+│       │              • 4 budget tiers (Free/$20/$50/Splurge)│
+│       │              • Structured JSON cards per activity   │
+│       │              → docs/daily_guide_data.js             │
+│       ▼                                                     │
+│   GitHub Actions / launchd → git push → GitHub Pages        │
+└─────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────┐
+│                     Static Frontend                          │
+│   docs/index.html   Pure HTML + Vanilla JS + CSS            │
+│                      • Filter by Region, Time, Free          │
+│                      • Search across all events             │
+│                      • ✦ AI Guide mode (4 budget tiers)     │
+│                      • AI cards mixed into RSS grid          │
+└─────────────────────────────────────────────────────────────┘
 ```
 
-1. `validate_feeds.py` probes every feed URL, scores event signal, and writes the live ones to `feeds_live.json`.
-2. `fetcher.py` reads `feeds_live.json`, fetches each feed, scores items, extracts event dates/times from text, and inserts new-only rows to `events.db`.
-3. `bot.py` queries `events.db` on each Telegram command, filtering to events that are upcoming or started ≤1h ago, sorted soonest-first.
+---
+
+## Current State (as of April 21, 2026)
+
+| Metric | Value |
+|--------|-------|
+| Live RSS feeds | **25** |
+| Events in DB | **60** |
+| Events with confirmed dates | **26** |
+| Regions covered | **5** |
+| AI activity cards (today + tomorrow) | **47** |
+| AI tiers | Free · Under $20 · Under $50 · Splurge |
+| Dead feeds (probed & catalogued) | **53** |
 
 ---
 
-## AI usage and cost
-
-There is no active AI or LLM usage in the current codebase.
-
-- Feed filtering in `fetcher.py` is local keyword scoring, not an AI classifier.
-- Date/time extraction in `fetcher.py` is local regex parsing, not an AI parser.
-- Telegram responses in `bot.py` are formatted from SQLite query results, not AI-generated.
-- `GEMINI_API_KEY` appears only as a placeholder for a future feature and is not currently read or used by the application.
-
-### Current cost estimate
-
-Because the app does not send any requests to Gemini, OpenAI, Anthropic, or any other model API right now:
-
-- Approximate AI input tokens: `0`
-- Approximate AI output tokens: `0`
-- Approximate total AI API cost: `$0`
-
-That means the current running cost is just normal hosting/runtime cost for Python, SQLite, Telegram polling, and RSS HTTP requests.
-
----
-
-## Project layout
+## Project Structure
 
 ```
 Charlotte On The Run/
-├── feeds.py              # All feed definitions, sorted by drive time from Charlotte
-├── validate_feeds.py     # Run once locally — probes feeds, writes feeds_live.json
-├── fetcher.py            # Fetch → dedup → score → extract dates → SQLite
-├── bot.py                # Telegram bot
-├── test_feeds.py         # Ad-hoc feed tester for evaluating new candidates
-├── feeds_live.json       # Generated by validate_feeds.py
-├── events.db             # SQLite database (auto-created on first fetch)
-├── .env                  # Secrets (never commit)
-├── start.command         # Double-click to start bot (macOS)
-├── stop.command          # Double-click to stop bot (macOS)
-└── daily_fetch.yml       # GitHub Actions workflow (optional)
+│
+├── feeds.py                 Feed registry — 25 live feeds with region/distance/priority
+├── fetcher.py               Core engine: fetch → score → blocklist → date-extract → store
+├── daily_guide.py           Gemini AI daily guide — structured JSON card output
+├── validate_feeds.py        Probe all feeds, emit feeds_live.json / feeds_dead.json
+├── test_feeds.py            Concurrent probe of 100 candidate feeds with event scoring
+├── backfill_dates.py        One-off: purge junk events, re-extract dates from DB
+│
+├── utils/
+│   ├── scoring.py           Event keyword scoring (37 signals, weighted)
+│   └── date_extractor.py    Regex + NLP date extraction with confidence levels
+│
+├── docs/                    GitHub Pages static site root
+│   ├── index.html           Single-page app (filters, search, AI guide, event grid)
+│   ├── events_data.js       Exported events array (auto-generated)
+│   ├── daily_guide.json     Raw AI guide output (JSON)
+│   └── daily_guide_data.js  AI guide as JS module (auto-generated)
+│
+├── feeds_live.json          Validated live feed list
+├── feeds_dead.json          Dead feeds from latest probe
+├── events.db                SQLite event store
+│
+├── bot.py                   Telegram bot for push notifications
+├── daily_fetch.yml          GitHub Actions workflow (daily 9 AM ET)
+├── com.charlotteontherun.guide.plist  macOS launchd job (7 AM ET)
+│
+├── run.sh / start.command / stop.command   Local dev helpers
+├── what2improve.md          Living audit doc: feed scores, UX issues, roadmap
+└── .env                     API keys (not committed)
 ```
+
+---
+
+## Key Design Decisions
+
+### 1. Score-then-filter, not keyword-search
+Every RSS item is scored against 37 event-intent keywords (`festival`, `tickets`, `admission`, `rsvp`, etc.) weighted by title vs. body position. Items below `EVENT_SCORE_MIN = 4` are dropped before hitting the database. This keeps the DB clean rather than filtering at render time.
+
+### 2. Hard blocklist before scoring
+A `TITLE_BLOCKLIST` in `fetcher.py` catches non-event content patterns (job postings, attorney directories, real estate listings, sponsored finance content) *before* the scoring loop runs — a cheap, fast pre-filter that prevents score gaming.
+
+### 3. Gemini returns structured JSON, not prose
+`daily_guide.py` instructs Gemini to return a raw JSON array of activity objects (title, description, location, cost, period, tags) — not markdown. This means cards are parsed directly with `json.loads()`, no text splitting, no heuristic day-detection. Each card is a discrete unit the frontend renders immediately.
+
+### 4. Static site, no server
+`docs/events_data.js` and `docs/daily_guide_data.js` are committed JS modules — the site has no API, no server, no build step. GitHub Pages serves them as-is. Filters and search run entirely in the browser. Load time < 100ms.
+
+### 5. Two-layer automation
+- **GitHub Actions** (`daily_fetch.yml`): runs `fetcher.py` + `daily_guide.py` + git push daily at 9 AM ET on the server.
+- **launchd** (`com.charlotteontherun.guide.plist`): same pipeline at 7 AM ET locally, ensuring the site updates even if Actions is down.
+
+---
+
+## Feed Coverage
+
+Feeds are validated weekly via `test_feeds.py`, which probes all 100 candidate URLs concurrently and scores each by event-keyword density.
+
+### Active Feeds by Region
+
+| Region | Drive Time | Key Sources |
+|--------|-----------|-------------|
+| **Charlotte** | 0 min | Charlotte on the Cheap, Charlotte Is Creative, Queen City Nerve, Scoop Charlotte, QNotes Carolinas, Charlotte Pride, Mint Museum, Charlotte Ballet, CLTtoday |
+| **Triad** | ~1 hr | Triad City Beat (Culture), WStoday, Greensboro.com Entertainment, Reynolda House, Triad Moms on Main |
+| **Greenville SC** | ~1h 30m | Greenville Journal (Events + Arts), GVLtoday, Town Carolina |
+| **Asheville** | ~2 hr | Mountain Xpress, Asheville Art Museum |
+| **Triangle NC** | ~2h 30m | Walter Magazine, Triangle on the Cheap, Raleigh Magazine, Durham Magazine, INDY Week, RALtoday |
+
+### Probed & Catalogued as Dead (53 feeds)
+Full register in `what2improve.md`. Notable failures: Charlotte Observer / N&O (McClatchy paywall timeout), Blumenthal Arts (404), WFAE (404), Gantt Center (XML parse error), all Journal Now / Yes! Weekly / Free Times properties (HTTP 429 rate-limiting).
+
+---
+
+## AI Daily Guide
+
+`daily_guide.py` runs four Gemini 2.5 Flash queries (with Google Search grounding) every morning, one per budget tier:
+
+| Tier | Emoji | Focus |
+|------|-------|-------|
+| Free | 🆓 | No-cost events, queer-friendly spaces, parks, no-cover venues |
+| Under $20 | 💵 | Cheap eats, trivia nights, brewery run clubs, gallery shows |
+| Under $50 | 🍸 | Craft cocktail bars, ticketed music, drag shows, Camp North End |
+| Splurge | 🌟 | High-end dining, VIP nightlife, theater, upscale lounges |
+
+Each tier yields ~10–13 structured activity cards covering **today** and **tomorrow**, each with:
+- `title`, `description`, `location` (venue + neighborhood)
+- `cost`, `period` (morning/afternoon/evening/night), `tags`
+
+In the site, clicking **✦ AI Guide** switches to AI-only mode with a tier selector. In the default mixed view, AI cards from the Free tier are interleaved into the RSS grid every 4 cards.
 
 ---
 
 ## Setup
 
-### 1 — Install dependencies
+### Prerequisites
+- Python 3.11+
+- `pip install -r requirements.txt` (or install individually: `feedparser`, `python-dotenv`, `requests`, `google-genai`)
+- SQLite (built into Python)
 
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install "python-telegram-bot>=20.0" python-dotenv
-```
-
-### 2 — Configure `.env`
-
+### `.env` file
 ```env
-TELEGRAM_TOKEN=your_bot_token_from_botfather
-TELEGRAM_OWNER_ID=your_telegram_user_id
+TELEGRAM_TOKEN=...
+TELEGRAM_OWNER_ID=...
 DB_PATH=events.db
 FEEDS_FILE=feeds_live.json
-EVENT_SCORE_MIN=1
+EVENT_SCORE_MIN=4
+GEMINI_API_KEY=...
 ```
 
-Get your token from [@BotFather](https://t.me/BotFather). Get your user ID by messaging [@userinfobot](https://t.me/userinfobot).
-
-### 3 — Validate feeds (run once)
-
+### Run manually
 ```bash
-python3 validate_feeds.py
+# Activate venv
+source .venv/bin/activate
+
+# Validate all feeds and regenerate feeds_live.json
+python validate_feeds.py
+
+# Fetch new events from all live feeds
+python fetcher.py
+
+# Generate today's AI activity guide (requires paid Gemini API)
+python daily_guide.py --no-push
+
+# Probe all 100 candidate feeds for signal quality
+python test_feeds.py
 ```
 
-Probes all feeds, prints a ranked table showing live/dead status and event signal quality, and writes `feeds_live.json`. Re-run whenever you add feeds to `feeds.py`.
+### Local site preview
+Open `docs/index.html` directly in a browser — no server needed.
 
-### 4 — First fetch
+### Automation (macOS)
 
+Install the launchd job to run at 7 AM daily:
 ```bash
-python3 fetcher.py
+cp com.charlotteontherun.guide.plist ~/Library/LaunchAgents/
+launchctl load ~/Library/LaunchAgents/com.charlotteontherun.guide.plist
 ```
 
-Populates `events.db`. Run again anytime to pull new items (already-seen items are skipped).
-
-### 5 — Start the bot
-
-```bash
-python3 bot.py
-```
-
-Or double-click `start.command` on macOS. Send `/help` to your bot on Telegram to verify it's running.
+Logs: `logs/daily_guide.log` / `logs/daily_guide_err.log`
 
 ---
 
-## Telegram commands
+## Scoring System
 
-### By time
-| Command | Description |
-|---|---|
-| `/events` | All upcoming events across every region, soonest first |
-| `/today` | Only events with a confirmed date of today |
-| `/tonight` | Today's events at 5 PM or later |
-| `/weekend` | This Friday through Sunday |
+Event scoring is in `utils/scoring.py`. Every RSS item title + description is scanned against a weighted keyword list:
 
-### By place
-| Command | Description |
-|---|---|
-| `/nearby` | Charlotte metro and suburbs (≤30 min drive) |
-| `/charlotte` | Charlotte metro |
-| `/triad` | Greensboro / Winston-Salem |
-| `/greenville` | Greenville SC |
-| `/asheville` | Asheville / WNC |
-| `/triangle` | Raleigh / Durham / Chapel Hill |
+**Tier 1 keywords** (weight 3): `festival`, `concert`, `tickets`, `admission`, `rsvp`, `register`, `screening`, `exhibit opens`
 
-### Filter
-| Command | Description |
-|---|---|
-| `/free` | Free events, all regions |
-| `/search <keyword>` | Search titles and descriptions |
+**Tier 2 keywords** (weight 2): `event`, `show`, `performance`, `opening`, `reception`, `fundraiser`, `workshop`, `tour`
 
-### Info
-| Command | Description |
-|---|---|
-| `/stats` | Total events in DB, how many have specific dates, last fetch |
-| `/refresh` | Manually re-pull all feeds *(owner only)* |
-| `/help` | Show all commands |
+**Tier 3 keywords** (weight 1): `music`, `art`, `food`, `beer`, `pride`, `drag`, `run`, `market`, `free`
 
-Events with extracted dates are sorted soonest-first. Events where no specific date was found (recently published articles about upcoming things) appear after the dated ones, sorted by publish date.
-
-Important limitation: region views such as `/charlotte` can still show irrelevant recommendations/results when a feed item looks event-related enough to pass keyword scoring but is actually an article, venue feature, hiring post, shopping link, or general local news item.
+Minimum score to enter DB: **4 points**. Title matches count 2× body matches.
 
 ---
 
-## How filtering works
+## Roadmap
 
-**Only upcoming events are shown.** At query time:
-
-- An event with a known date is included if `event_date >= today`.
-- An event where today's date matches and a start time is known is included only if `event_time >= now − 1h` (so you can still catch something that just started).
-- An article with no extracted date is included if it was published within the last 30 days.
-- Anything older than 30 days is always excluded.
-
-**Event date extraction** scans each article's title and description for patterns like "April 25", "Sat May 3", "June 27th", etc. and stores the result in the DB as `event_date` (YYYY-MM-DD) and `event_time` (HH:MM, when found).
-
-### Known problem: irrelevant recommendations
-
-The bot currently has a real precision problem in broad region queries like `/charlotte`, `/triad`, and `/events`.
-
-- If an item gets a score above `EVENT_SCORE_MIN`, it is stored even when it is not a true event listing.
-- If no date is extracted, that item can still remain eligible for up to 30 days based on publish date alone.
-- As a result, the bot can recommend irrelevant content such as feature articles, restaurant news, trend pieces, shopping posts, staffing/job posts, or other local-interest coverage.
-
-Examples of this failure mode include results like development stories, cannabis policy coverage, restaurant business news, shopping/gift guides, profile pieces, and job postings appearing in the Charlotte results even though they are not events.
-
-Root cause: the current system is recall-oriented and rule-based. It relies on keyword scoring plus simple date parsing, so it is good at not missing possible events, but weak at rejecting event-adjacent editorial content from mixed feeds.
+- [ ] **Telegram push notifications** — daily digest to bot at 8 AM
+- [ ] **Category tags** — Music / Food / Art / Sports filter chips on the site
+- [ ] **Asheville expansion** — add Mountain Xpress Events category feed + AVLtoday once feed stabilizes
+- [ ] **Deeper SC coverage** — COLAtoday (Columbia) already in feeds, explore Visit Greenville SC direct scrape
+- [ ] **LLM re-ranking** — optional Gemini pass to classify "event" vs "event-adjacent news" on borderline items
+- [ ] **Event deduplication** — fuzzy-match titles across sources to collapse cross-posted items
+- [ ] **Map view** — plot confirmed-date events on a Leaflet map by venue geocode
 
 ---
 
-## How deduplication works
+## Contributing
 
-Every RSS item gets a signature:
-
-```python
-sig = sha256(title.lower() + pub_date[:10])[:16]
-```
-
-- **Sig exists → skip.** No write.
-- **Sig exists, new price found → UPDATE price only.**
-- **New sig, score < threshold → drop.** Filters crime/weather/obituaries from mixed-content feeds.
-- **New sig, score ≥ threshold → INSERT** with extracted event date/time.
+This is a personal tool, but PRs for new high-signal RSS feeds are welcome. Run `test_feeds.py` to score any feed before proposing it, and add it to `feeds.py` with the correct `region`, `distance`, and `priority`.
 
 ---
 
-## Feed list (20 active)
-
-| Drive | Region | Feed | Priority |
-|---|---|---|---|
-| 0 min | Charlotte | Scoop Charlotte | 1 |
-| 0 min | Charlotte | Queen City Nerve | 1 |
-| 0 min | Charlotte | Charlotte Ballet | 1 |
-| 0 min | Charlotte | SouthPark Magazine | 1 |
-| 0 min | Charlotte | Charlotte Pride | 1 |
-| 0 min | Charlotte | Arts & Science Council | 1 |
-| 0 min | Charlotte | Charlotte Parent | 2 |
-| 0 min | Charlotte | CLTtoday (6AM City) | 2 |
-| 0 min | Charlotte | QNotes Carolinas | 2 |
-| 0 min | Charlotte | Mint Museum | 2 |
-| 0 min | Charlotte | Unpretentious Palate | 2 |
-| 0 min | Charlotte | Charlotte Magazine | 3 |
-| 1h | Triad | Triad City Beat | 2 |
-| 1h 30m | Greenville SC | Greenville Journal (Events) | 1 |
-| 1h 30m | Greenville SC | Greenville Journal (Arts) | 2 |
-| 1h 30m | Greenville SC | GVLtoday (6AM City) | 2 |
-| 2h | Asheville | Mountain Xpress | 2 |
-| 2h 30m | Triangle NC | Walter Magazine | 1 |
-| 2h 30m | Triangle NC | INDY Week | 2 |
-| 2h 30m | Triangle NC | RALtoday (6AM City) | 2 |
-
-Priority 1 feeds are pure event calendars or high-signal sources. Priority 2 are culture/lifestyle mixes. Priority 3 are background feeds with low event density.
-
-To add or remove feeds: edit `feeds.py`, then re-run `validate_feeds.py` to regenerate `feeds_live.json`.
-
----
-
-## Environment variables
-
-| Variable | Default | Description |
-|---|---|---|
-| `TELEGRAM_TOKEN` | *(required)* | Bot token from BotFather |
-| `TELEGRAM_OWNER_ID` | *(optional)* | Locks `/refresh` to this user ID |
-| `DB_PATH` | `events.db` | SQLite database path |
-| `FEEDS_FILE` | `feeds_live.json` | Feed list from validate step |
-| `EVENT_SCORE_MIN` | `1` | Drop items scoring below this |
-| `GEMINI_API_KEY` | *(optional)* | Currently unused placeholder for a future AI feature |
+*Built in Charlotte. Updated daily.*
