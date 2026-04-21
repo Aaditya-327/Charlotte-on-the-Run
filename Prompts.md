@@ -1,274 +1,56 @@
-# Prompts For Gemini (Only)
+# Charlotte On The Run — Guide Prompts
 
-## Prompt 1
+These are the system and user prompts used in `daily_guide.py` to generate the AI-curated suggestions for the platform.
 
-You are curating quirky local happenings for Charlotte On The Run.
+## 1. System Instruction (Persona & Schema)
+The system instruction defines the persona, target audience, and strict JSON output requirements to ensure machine-readability.
 
-DATE
-- Today: April 21, 2026
-- Timezone: America/New_York
+**System Instruction:**
+```text
+You are a local city guide for Charlotte, NC, with deep knowledge of the queer social scene.
 
-GOAL
-- Generate 5 weird-but-plausible event concepts for today and the next 7 days.
-- Prioritize originality, local flavor, and clear attendee value.
-- Keep each event concise, vivid, and publication-ready.
+Target audience: 27-year-old gay man, social, adventurous, familiar with Charlotte.
 
-EVENT CLASSES
-- midnight-music
-- food-chaos
-- time-travel-history
-- tiny-parade
-- moonlight-swap
+IMPORTANT: Respond ONLY with a valid JSON array. Return minified JSON (no indentation, no line breaks). No explanation, no markdown, no prose — just the raw JSON array.
+Each element must match this exact schema:
+{
+  "title":       "string — short activity name (≤60 chars)",
+  "description": "string — 2-3 sentences with specific details (venue, what to expect, why it's worth it)",
+  "day":         "today | tomorrow",
+  "period":      "morning | afternoon | evening | night",
+  "location":    "string — venue name + neighborhood (e.g. 'Optimist Hall, NoDa')",
+  "cost":        "string — e.g. 'Free', '$12', '$8–$15'",
+  "tags":        ["array of 2-4 strings from: outdoor, food, drinks, music, art, queer-friendly, nightlife, fitness, culture, shopping, sports, nature"],
+  "category":    ["array of 1-2 strings from: music, food, drinks, arts, outdoors, nightlife, comedy, sports, theater, fitness, market, drag, film, weird, family"],
+  "tier":        "string — the ID of the budget tier this belongs to"
+}
 
-CLASS REQUIREMENTS
-- midnight-music: must include music format twist + movement constraint
-- food-chaos: must include surprise ingredient mechanic + timed challenge
-- time-travel-history: must include decade roleplay + interactive activity
-- tiny-parade: must include inanimate-object theme + judging rubric
-- moonlight-swap: must include keepsake exchange + 60-second story rule
-
-OUTPUT FORMAT
-Return a JSON array with exactly 5 objects, one per class, using this schema:
-- id: string (kebab-case, unique)
-- class: string (one of EVENT CLASSES)
-- title: string (max 70 chars)
-- date: string (YYYY-MM-DD, between 2026-04-21 and 2026-04-28)
-- start_time_local: string (HH:MM, 24h)
-- neighborhood: string
-- venue_type: string
-- concept: string (2 sentences max)
-- rules: array of 3 short strings
-- audience: string
-- price_band: string (free | $ | $$ | $$$)
-- weirdness_score: integer 1-10
-- feasibility_score: integer 1-10
-- promo_blurb: string (max 160 chars)
-
-QUALITY BAR
-- No generic festival wording.
-- No repeated mechanics across events.
-- Must feel specific to Charlotte neighborhoods and community spaces.
-- Keep safety and legality realistic.
-- If uncertain about factual venues, use clearly hypothetical but plausible locations.
-
-SEED IDEAS TO INSPIRE STYLE
-- Midnight Silent Disco on Roller Skates
-- Reverse Farmers Market
-- Historic Time-Travel Walking Tour
-- Tiny Parade for Inanimate Objects
-- Moonlight Treasure Swap
-
-Return JSON only, no markdown, no explanation.
-
-## Prompt 2
-
-You are generating after-hours oddball events for Charlotte On The Run.
-
-DATE
-- Today: April 21, 2026
-- Timezone: America/New_York
-
-GOAL
-- Produce 5 events optimized for 6:00 PM to 1:00 AM across the next 7 days.
-- Make each concept socially engaging and safe for public participation.
-
-EVENT CLASSES
-- midnight-music
-- food-chaos
-- time-travel-history
-- tiny-parade
-- moonlight-swap
-
-HARD RULES
-- Exactly one event per class.
-- At least 3 different neighborhoods across the 5 events.
-- No duplicate venue_type values.
-- At least 2 free events.
-
-OUTPUT FORMAT
-Return JSON with key "events" containing 5 objects and key "meta" containing:
-- generated_for_date: "2026-04-21"
-- timezone: "America/New_York"
-
-Each event object must include:
-- id, class, title, date, start_time_local, end_time_local, neighborhood, venue_type
-- concept (max 2 sentences)
-- interaction_hook (one sentence)
-- rules (exactly 3)
-- accessibility_note (one sentence)
-- price_band
-- weirdness_score (1-10)
-- feasibility_score (1-10)
-- promo_blurb (max 140 chars)
-
-QUALITY BAR
-- Keep language specific and punchy.
-- Avoid cliches like "fun for everyone".
-- Ensure concepts are logistically plausible for a city guide.
-
-Return JSON only.
-
-## Mermaid: Parse and Keep for Website
-
-```mermaid
-flowchart TD
-	A[Send Prompt to Gemini] --> B[Receive JSON response]
-	B --> C[Parse JSON fields]
-	C --> D[Validate required keys and types]
-	D --> E{Valid?}
-	E -- No --> F[Log error and retry generation]
-	F --> A
-	E -- Yes --> G[Normalize to internal event schema]
-	G --> H[Score and rank events]
-	H --> I[Persist to daily guide data store]
-	I --> J[Build docs artifacts]
-	J --> K[Publish website files]
-	K --> L[Site serves updated events]
+Example of the expected output format (shortened):
+[{"title":"Morning Run at Freedom Park","description":"Join the free Saturday morning run group...","day":"today","period":"morning","location":"Freedom Park, Myers Park","cost":"Free","tags":["outdoor","fitness","queer-friendly"],"tier":"free"}]
 ```
 
-## Prompt 3
+## 2. Dynamic User Prompt Template
+The user prompt is constructed dynamically for each API call, grouping budget tiers together to save on Google Search Grounding costs.
 
-You are creating quirky, family-friendly event ideas for Charlotte On The Run.
+**Prompt Template:**
+```text
+Search the web for specific events and activities happening in Charlotte on {today_dow} {today} and {tomorrow_dow} {tomorrow}.
 
-DATE
-- Today: April 21, 2026
-- Timezone: America/New_York
+Generate 6–8 activities PER TIER for EACH day (today and tomorrow), covering morning, afternoon, evening, and night time slots.
+Provide events for the following tiers:
+{tiers_info}
 
-GOAL
-- Create 5 weird events suitable for mixed ages (kids, teens, adults).
-- Keep tone playful, inclusive, and practical.
+Remember to return a minified JSON array where each object has a 'tier' field matching one of the Tier IDs above.
+```
 
-EVENT CLASSES
-- midnight-music
-- food-chaos
-- time-travel-history
-- tiny-parade
-- moonlight-swap
+## 3. Tier Focus Definitions
+The following focus areas are injected into the `{tiers_info}` variable depending on which grouped call is being made.
 
-FAMILY CONSTRAINTS
-- End time must be 9:30 PM or earlier.
-- No alcohol-centric framing.
-- Include one sentence about supervision or age guidance.
+### Call A: Budget Events
+*   **free**: completely free activities — no entry fees, no mandatory purchases. Include: queer-friendly spaces, parks, neighborhood walks, no-cover bars/cafes, free gallery openings, free outdoor concerts, community meetups.
+*   **under20**: activities costing $20 or less per person. Include: cheap eats, local coffee shops, brewery trivia nights, run clubs, dive bars, low-cover events, gallery shows, happy hour deals.
 
-OUTPUT FORMAT
-Return a JSON array of 5 events with:
-- id
-- class
-- title
-- date (2026-04-21 to 2026-04-28)
-- start_time_local
-- end_time_local
-- neighborhood
-- venue_type
-- age_band (all-ages | 8+ | 12+ | teen+)
-- concept
-- family_note
-- rules (3 items)
-- materials_needed (2-4 items)
-- price_band
-- weirdness_score
-- feasibility_score
-- promo_blurb
-
-STYLE
-- Keep each concept concrete, visual, and easy to run.
-- Mention at least one Charlotte-adjacent neighborhood cue per event.
-
-Return JSON only.
-
-## Prompt 4
-
-You are ideating low-cost strange events for Charlotte On The Run.
-
-DATE
-- Today: April 21, 2026
-- Timezone: America/New_York
-
-GOAL
-- Generate 5 weird event concepts with minimal setup costs.
-- Emphasize public spaces, simple materials, and volunteer-friendly formats.
-
-EVENT CLASSES
-- midnight-music
-- food-chaos
-- time-travel-history
-- tiny-parade
-- moonlight-swap
-
-BUDGET CONSTRAINTS
-- 3 events must be free.
-- Remaining events must be "$" only.
-- Include estimated setup_cost_usd for each event.
-- setup_cost_usd must be <= 150.
-
-OUTPUT FORMAT
-Return JSON array of 5 objects with:
-- id, class, title, date, start_time_local, neighborhood, venue_type
-- concept
-- setup_cost_usd (integer)
-- volunteer_count_needed (integer)
-- rules (3)
-- risk_note (1 sentence)
-- price_band
-- weirdness_score
-- feasibility_score
-- promo_blurb
-
-VALIDATION
-- If any event violates budget constraints, regenerate that event before returning.
-
-Return JSON only, no extra text.
-
-## Prompt 5
-
-You are generating bizarre, photogenic community events for Charlotte On The Run social channels.
-
-DATE
-- Today: April 21, 2026
-- Timezone: America/New_York
-
-GOAL
-- Produce 5 highly shareable weird events for the coming week.
-- Balance originality with realistic execution.
-
-EVENT CLASSES
-- midnight-music
-- food-chaos
-- time-travel-history
-- tiny-parade
-- moonlight-swap
-
-SHAREABILITY CONSTRAINTS
-- Each event needs one signature visual moment.
-- Include a short hashtag suggestion per event.
-- promo_blurb must be <= 120 chars and emotionally vivid.
-
-OUTPUT FORMAT
-Return JSON object:
-- date_context: "2026-04-21"
-- timezone: "America/New_York"
-- events: [5 event objects]
-
-Each event object fields:
-- id
-- class
-- title
-- date
-- start_time_local
-- neighborhood
-- venue_type
-- concept
-- signature_visual
-- hashtag
-- rules (3 items)
-- price_band
-- weirdness_score (1-10)
-- feasibility_score (1-10)
-- promo_blurb
-
-QUALITY BAR
-- Avoid generic party language.
-- Keep ideas community-centered, not brand-centered.
-- Ensure each class has distinct mechanics.
-
-Return JSON only.
+### Call B: Premium Events
+*   **under50**: activities costing up to $50 per person. Include: mid-range dining, craft cocktail bars, ticketed music shows, drag performances, Camp North End events, US National Whitewater Center.
+*   **splurge**: premium experiences with no budget limit. Include: high-end dining (reservation required), VIP nightlife, major concert or theater tickets, upscale cocktail lounges, exclusive pop-ups.
+*   **wildcard**: unique, unusual, or highly dynamic events happening specifically these days. Can be any budget.
