@@ -3,20 +3,10 @@
 daily_guide.py — Fetch AI-generated daily activity cards for Charlotte using
 Gemini 2.5 Flash with Google Search grounding.
 
-Gemini is asked to return a JSON array of activity objects — no markdown blobs.
-Each activity:
-  {
-    "title":       "Short activity name",
-    "description": "2-3 sentence description with specifics",
-    "day":         "today" | "tomorrow",
-    "period":      "morning" | "afternoon" | "evening" | "night",
-    "location":    "Venue name, Neighborhood",
-    "cost":        "Free" | "$X" | "$X–$Y",
-    "tags":        ["outdoor", "food", "queer-friendly", ...]
-  }
-
-Schedule: launchd at 7 AM ET (com.charlotteontherun.guide.plist)
-Usage:    python daily_guide.py [--no-push]
+Restructured to make only 2 API calls to save Search Grounding costs:
+Call A: Budget (Free, Under $20)
+Call B: Premium (Under $50, Splurge, Wildcard)
+Baseline: Evergreen events (Zero API cost)
 """
 
 import json, os, re, subprocess, sys, time
@@ -25,131 +15,118 @@ from pathlib import Path
 from dotenv import load_dotenv
 from google import genai
 from google.genai import types
-from fetcher import run_fetch
 
 load_dotenv()
 
 API_KEY  = os.getenv("GEMINI_API_KEY")
 OUT_FILE = Path(__file__).parent / "docs" / "daily_guide.json"
 
-TIERS = [
-    {"id": "free",     "label": "Free",       "emoji": "🆓", "max_cost": "Free"},
-    {"id": "under20",  "label": "Under $20",  "emoji": "💵", "max_cost": "$20"},
-    {"id": "under50",  "label": "Under $50",  "emoji": "🍸", "max_cost": "$50"},
-    {"id": "splurge",  "label": "Splurge",    "emoji": "🌟", "max_cost": "no limit"},
-    {"id": "wildcard", "label": "Wild Card",  "emoji": "🎪", "max_cost": "any"},
-]
-
-# ── Predefined categories (used in schema + frontend filter) ──────────────────
-VALID_CATS = {
-    "music", "food", "drinks", "arts", "outdoors", "nightlife",
-    "comedy", "sports", "theater", "fitness", "market", "drag",
-    "film", "weird", "family",
+# ── Baseline Activities ────────────────────────────────────────────────────────
+BASELINE_ACTIVITIES = {
+    "Monday": [
+        {"title": "Morning Run at Freedom Park", "description": "Start the week with a 3-mile loop around Freedom Park. The paved trails are perfect for a brisk morning jog before the crowds arrive.", "period": "morning", "location": "Freedom Park, Myers Park", "cost": "Free", "tags": ["outdoor", "fitness"]},
+        {"title": "Coffee at Smelly Cat", "description": "Grab a locally roasted cold brew and a breakfast sandwich. A cozy spot in NoDa to read a book or people-watch.", "period": "morning", "location": "Smelly Cat Coffeehouse, NoDa", "cost": "Under $10", "tags": ["food", "drinks", "queer-friendly"]},
+        {"title": "Explore the Mint Museum Uptown", "description": "Browse incredible modern art and craft exhibits. It's a quiet, reflective way to spend a weekday afternoon.", "period": "afternoon", "location": "Mint Museum, Uptown", "cost": "$15", "tags": ["art", "culture", "indoor"]},
+        {"title": "Evening Walk on the Rail Trail", "description": "Take a sunset stroll along the South End Rail Trail. Great views of the skyline and plenty of spots to stop for a quick bite or drink.", "period": "evening", "location": "Rail Trail, South End", "cost": "Free", "tags": ["outdoor", "fitness", "queer-friendly"]},
+        {"title": "Dinner at Optimist Hall", "description": "Grab a casual bite from one of the many food stalls. Harriet's Hamburgers or Dumpling Lady are solid choices for a relaxed Monday night.", "period": "night", "location": "Optimist Hall, Optimist Park", "cost": "$15–$25", "tags": ["food", "casual"]}
+    ],
+    "Tuesday": [
+        {"title": "Yoga at USNWC", "description": "Head out to the Whitewater Center for morning yoga. It's a peaceful way to start the day surrounded by nature.", "period": "morning", "location": "USNWC, West Charlotte", "cost": "Free (parking $6)", "tags": ["fitness", "outdoor", "nature"]},
+        {"title": "Lunch at Common Market", "description": "Grab a massive deli sandwich and sit on the eclectic patio. Always a good mix of locals and a very welcoming vibe.", "period": "afternoon", "location": "Common Market, Plaza Midwood", "cost": "$12", "tags": ["food", "queer-friendly", "casual"]},
+        {"title": "Trivia Night at Legion Brewing", "description": "Join the lively Tuesday trivia crowd. Bring some friends, grab a Juicy Jay IPA, and test your random knowledge.", "period": "evening", "location": "Legion Brewing, Plaza Midwood", "cost": "Free (drinks extra)", "tags": ["drinks", "nightlife", "social"]},
+        {"title": "Late Night Slice at Benny Pennello's", "description": "End the night with a massive, foldable slice of pizza. Open late and always hits the spot.", "period": "night", "location": "Benny Pennello's, NoDa", "cost": "$6", "tags": ["food", "late-night"]}
+    ],
+    "Wednesday": [
+        {"title": "Greenway Bike Ride", "description": "Rent a bike and hit the Little Sugar Creek Greenway. A smooth, scenic ride that connects several neighborhoods.", "period": "morning", "location": "Little Sugar Creek Greenway", "cost": "Free", "tags": ["outdoor", "fitness"]},
+        {"title": "Lunch at Camp North End", "description": "Grab some food from the food stalls and explore the massive, historic industrial campus. Great spots for photos and walking.", "period": "afternoon", "location": "Camp North End, North End", "cost": "$15", "tags": ["food", "outdoor", "culture"]},
+        {"title": "Half-Price Wine Night", "description": "Take advantage of Wednesday wine specials. Dilworth Tasting Room has a gorgeous patio and half-price select bottles.", "period": "evening", "location": "Dilworth Tasting Room, Dilworth", "cost": "$20–$40", "tags": ["drinks", "social", "outdoor"]},
+        {"title": "Comedy Show at The Comedy Zone", "description": "Catch a midweek stand-up show. It's a fun, low-pressure way to break up the work week with some laughs.", "period": "night", "location": "The Comedy Zone, NC Music Factory", "cost": "$25", "tags": ["nightlife", "culture"]}
+    ],
+    "Thursday": [
+        {"title": "Coffee and Pastries at Amelie's", "description": "Start the day at the iconic French bakery. The salted caramel brownie is legendary, and the eclectic decor is uniquely Charlotte.", "period": "morning", "location": "Amelie's French Bakery, NoDa", "cost": "$8", "tags": ["food", "drinks", "indoor"]},
+        {"title": "Bechtler Museum of Modern Art", "description": "Check out the impressive mid-century modern art collection. Don't forget to take a photo with the Firebird sculpture out front.", "period": "afternoon", "location": "Bechtler Museum, Uptown", "cost": "$9", "tags": ["art", "culture", "indoor"]},
+        {"title": "River Jam at USNWC", "description": "Head to the Whitewater Center for live music by the river. A quintessential Charlotte summer/fall experience.", "period": "evening", "location": "USNWC, West Charlotte", "cost": "Free (parking $6)", "tags": ["music", "outdoor", "social"]},
+        {"title": "Cocktails at Idlewild", "description": "There is no menu here—just tell the bartenders what flavors you like and they'll craft something custom. A perfect, intimate Thursday night spot.", "period": "night", "location": "Idlewild, NoDa", "cost": "$16", "tags": ["drinks", "nightlife", "queer-friendly"]}
+    ],
+    "Friday": [
+        {"title": "Breakfast at Famous Toastery", "description": "Start Friday strong with a hearty breakfast. It's a local favorite with great options.", "period": "morning", "location": "Uptown", "cost": "$15", "tags": ["food", "casual"]},
+        {"title": "Gallery Crawl in South End", "description": "Explore the local art galleries that often host open houses on Friday afternoons/evenings. A great way to support local artists.", "period": "afternoon", "location": "South End", "cost": "Free", "tags": ["art", "culture", "social"]},
+        {"title": "Dinner at Supperland", "description": "Kick off the weekend with a splurge dinner in a restored mid-century church. Incredible Southern steakhouse menu and gorgeous ambiance.", "period": "evening", "location": "Supperland, Plaza Midwood", "cost": "$60+", "tags": ["food", "drinks"]},
+        {"title": "Dancing at The Scorpio", "description": "Hit up Charlotte's longest-running LGBTQ+ nightclub. Great music, drag shows, and a fun, welcoming crowd to dance the night away.", "period": "night", "location": "The Scorpio, West Charlotte", "cost": "$10 cover", "tags": ["nightlife", "queer-friendly", "music"]}
+    ],
+    "Saturday": [
+        {"title": "South End Farmers Market", "description": "Stroll through the bustling farmers market at Atherton Mill. Pick up some fresh produce, local crafts, and grab a coffee.", "period": "morning", "location": "Atherton Mill, South End", "cost": "Free", "tags": ["food", "outdoor", "shopping"]},
+        {"title": "Brewery Hopping in LoSo", "description": "Spend the afternoon exploring the Lower South End breweries. OMB, Sugar Creek, and Brewers at 4001 Yancey are all within walking distance.", "period": "afternoon", "location": "LoSo", "cost": "$20–$40", "tags": ["drinks", "social", "outdoor"]},
+        {"title": "Dinner in Plaza Midwood", "description": "Grab dinner at Soul Gastrolounge or another trendy spot along Central Ave. Great people-watching and vibrant neighborhood energy.", "period": "evening", "location": "Plaza Midwood", "cost": "$30", "tags": ["food", "social", "queer-friendly"]},
+        {"title": "Barcade Night at Super Abari", "description": "Relive your childhood with vintage arcade games and pinball. Grab a drink and challenge your friends to some nostalgic gaming.", "period": "night", "location": "Super Abari Game Bar, Belmont", "cost": "$15", "tags": ["nightlife", "social", "drinks"]}
+    ],
+    "Sunday": [
+        {"title": "Sunday Drag Brunch", "description": "Reserve a spot for a lively drag brunch. Great food, flowing mimosas, and incredible performances to cap off the weekend.", "period": "morning", "location": "Various locations", "cost": "$35", "tags": ["food", "queer-friendly", "entertainment"]},
+        {"title": "Relaxing at Romare Bearden Park", "description": "Bring a blanket and lay out in the park with a direct view of the Uptown skyline. A perfect lazy Sunday afternoon activity.", "period": "afternoon", "location": "Romare Bearden Park, Uptown", "cost": "Free", "tags": ["outdoor", "nature", "relaxing"]},
+        {"title": "Sunset Views at Fahrenheit", "description": "Head up to the rooftop bar for a drink and the best view of the Charlotte skyline at sunset. Great for photos.", "period": "evening", "location": "Fahrenheit, Uptown", "cost": "$20", "tags": ["drinks", "scenic"]},
+        {"title": "Movie Night at Independent Picture House", "description": "Catch an indie film or documentary at Charlotte's dedicated arthouse cinema. A low-key way to end the weekend.", "period": "night", "location": "Independent Picture House, NoDa", "cost": "$12", "tags": ["culture", "indoor", "entertainment"]}
+    ]
 }
 
+CALLS = [
+    {
+        "name": "Budget Events",
+        "tiers": [
+            {"id": "free", "label": "Free", "emoji": "🆓", "max_cost": "Free", "focus": "completely free activities — no entry fees, no mandatory purchases. Include: queer-friendly spaces, parks, neighborhood walks, no-cover bars/cafes, free gallery openings, free outdoor concerts, community meetups."},
+            {"id": "under20", "label": "Under $20", "emoji": "💵", "max_cost": "$20", "focus": "activities costing $20 or less per person. Include: cheap eats, local coffee shops, brewery trivia nights, run clubs, dive bars, low-cover events, gallery shows, happy hour deals."}
+        ]
+    },
+    {
+        "name": "Premium Events",
+        "tiers": [
+            {"id": "under50", "label": "Under $50", "emoji": "🍸", "max_cost": "$50", "focus": "activities costing up to $50 per person. Include: mid-range dining, craft cocktail bars, ticketed music shows, drag performances, Camp North End events, US National Whitewater Center."},
+            {"id": "splurge", "label": "Splurge", "emoji": "🌟", "max_cost": "no limit", "focus": "premium experiences with no budget limit. Include: high-end dining (reservation required), VIP nightlife, major concert or theater tickets, upscale cocktail lounges, exclusive pop-ups."},
+            {"id": "wildcard", "label": "Wildcard", "emoji": "🃏", "max_cost": "varies", "focus": "unique, unusual, or highly dynamic events happening specifically these days. Can be any budget."}
+        ]
+    }
+]
+
 # ── JSON schema embedded in prompt ────────────────────────────────────────────
-SCHEMA = """{
+SYSTEM_INSTRUCTION = """You are a local city guide for Charlotte, NC, with deep knowledge of the queer social scene.
+
+Target audience: 27-year-old gay man, social, adventurous, familiar with Charlotte.
+
+IMPORTANT: Respond ONLY with a valid JSON array. Return minified JSON (no indentation, no line breaks). No explanation, no markdown, no prose — just the raw JSON array.
+Each element must match this exact schema:
+{
   "title":       "string — short activity name (≤60 chars)",
   "description": "string — 2-3 sentences with specific details (venue, what to expect, why it's worth it)",
   "day":         "today | tomorrow",
   "period":      "morning | afternoon | evening | night",
   "location":    "string — venue name + neighborhood (e.g. 'Optimist Hall, NoDa')",
   "cost":        "string — e.g. 'Free', '$12', '$8–$15'",
-  "category":    ["1-3 strings chosen ONLY from: music, food, drinks, arts, outdoors, nightlife, comedy, sports, theater, fitness, market, drag, film, weird, family"],
-  "tags":        ["2-4 specific detail tags like 'dog-friendly', 'rooftop', 'BYOB', 'all-ages', 'queer-friendly'"]
-}"""
-
-def make_prompt(tier: dict, today_dow: str, today: str,
-                tomorrow_dow: str, tomorrow: str) -> str:
-    tier_id   = tier["id"]
-    max_cost  = tier["max_cost"]
-    tier_name = tier["label"]
-
-    if tier_id == "free":
-        focus = (
-            "completely free activities — no entry fees, no mandatory purchases. "
-            "Include: queer-friendly spaces, parks, neighborhood walks, no-cover bars/cafes, "
-            "free gallery openings, free outdoor concerts, community meetups."
-        )
-    elif tier_id == "under20":
-        focus = (
-            "activities costing $20 or less per person. "
-            "Include: cheap eats, local coffee shops, brewery trivia nights, run clubs, "
-            "dive bars, low-cover events, gallery shows, happy hour deals."
-        )
-    elif tier_id == "under50":
-        focus = (
-            "activities costing up to $50 per person. "
-            "Include: mid-range dining, craft cocktail bars, ticketed music shows, "
-            "drag performances, Camp North End events, US National Whitewater Center."
-        )
-    elif tier_id == "splurge":
-        focus = (
-            "premium experiences with no budget limit. "
-            "Include: high-end dining (reservation required), VIP nightlife, "
-            "major concert or theater tickets, upscale cocktail lounges, exclusive pop-ups."
-        )
-    else:  # wildcard
-        focus = (
-            "bizarre, unexpected, and one-of-a-kind events — the weirder the better. "
-            "Search specifically for: pro wrestling (WWE, AEW, indie wrestling), "
-            "demolition derbies, monster truck shows, roller derby bouts, "
-            "competitive eating contests, arm wrestling competitions, "
-            "burlesque shows, drag racing, oddities markets, fringe theater, "
-            "murder mystery dinners, paranormal tours, taxidermy workshops, "
-            "ax throwing leagues, goat yoga, adult game shows, hypnotist shows, "
-            "professional wrestling, midget wrestling, comedy roasts, "
-            "anything campy, kitschy, cult-classic, or genuinely surprising. "
-            "DO NOT include normal bars, restaurants, standard live music, or typical city-guide content. "
-            "Every single card must be something a person would say 'wait, that's actually happening?' about."
-        )
-
-    if tier_id == "wildcard":
-        audience = "anyone who wants something genuinely memorable, weird, or surprising — not a typical night out"
-        schema_note = (
-            'For "category", use "weird" for all wildcard cards, plus any other applicable categories. '
-            "Tags should be specific descriptors like 'campy', 'novelty', 'one-night-only', 'audience-participation'."
-        )
-    else:
-        audience = "27-year-old gay man, social, adventurous, familiar with Charlotte"
-        schema_note = (
-            'For "category", pick 1-3 from ONLY: music, food, drinks, arts, outdoors, nightlife, '
-            "comedy, sports, theater, fitness, market, drag, film, weird, family. "
-            "Tags should be specific details like 'dog-friendly', 'rooftop', 'BYOB', 'queer-friendly', 'all-ages'."
-        )
-
-    return f"""You are a local city guide for Charlotte, NC, with deep knowledge of local events across all categories.
-
-Search the web for specific events and activities happening in Charlotte (and within 30 miles) on {today_dow} {today} and {tomorrow_dow} {tomorrow}.
-
-Generate 5–7 activities for EACH day (today and tomorrow), covering morning, afternoon, evening, and night time slots.
-Focus on: {focus}
-
-Target audience: {audience}.
-
-IMPORTANT: Respond ONLY with a valid JSON array. No explanation, no markdown, no prose — just the raw JSON array.
-Each element must match this exact schema:
-{SCHEMA}
-{schema_note}
+  "tags":        ["array of 2-4 strings from: outdoor, food, drinks, music, art, queer-friendly, nightlife, fitness, culture, shopping, sports, nature"],
+  "tier":        "string — the ID of the budget tier this belongs to"
+}
 
 Example of the expected output format (shortened):
-[
-  {{"title": "Morning Run at Freedom Park", "description": "Join the free Saturday morning run group...", "day": "today", "period": "morning", "location": "Freedom Park, Myers Park", "cost": "Free", "tags": ["outdoor", "fitness", "queer-friendly"]}},
-  {{"title": "Brunch at The Fig Tree", "description": "...", "day": "today", "period": "morning", "location": "The Fig Tree, Elizabeth", "cost": "$18–$25", "tags": ["food"]}}
-]
+[{"title":"Morning Run at Freedom Park","description":"Join the free Saturday morning run group...","day":"today","period":"morning","location":"Freedom Park, Myers Park","cost":"Free","tags":["outdoor","fitness","queer-friendly"],"tier":"free"}]"""
 
-Now generate the full array for {today_dow} {today} and {tomorrow_dow} {tomorrow} (tier: {tier_name}, max cost per activity: {max_cost}):"""
+def make_prompt(call_def: dict, today_dow: str, today: str, tomorrow_dow: str, tomorrow: str) -> str:
+    tiers_info = ""
+    for t in call_def["tiers"]:
+        tiers_info += f"- Tier ID: '{t['id']}' (Max cost: {t['max_cost']}). Focus on: {t['focus']}\n"
 
+    return f"""Search the web for specific events and activities happening in Charlotte on {today_dow} {today} and {tomorrow_dow} {tomorrow}.
+
+Generate 6–8 activities PER TIER for EACH day (today and tomorrow), covering morning, afternoon, evening, and night time slots.
+Provide events for the following tiers:
+{tiers_info}
+
+Remember to return a minified JSON array where each object has a 'tier' field matching one of the Tier IDs above."""
 
 # ── JSON extractor ─────────────────────────────────────────────────────────────
 def extract_json(text: str) -> list:
     """Extract a JSON array from model output, handling fenced code blocks."""
-    # Strip ```json ... ``` fences
     text = re.sub(r"^```(?:json)?\s*", "", text.strip(), flags=re.MULTILINE)
     text = re.sub(r"\s*```$", "", text.strip(), flags=re.MULTILINE)
     text = text.strip()
 
-    # Find first [ ... ] block
     start = text.find("[")
     end   = text.rfind("]")
     if start == -1 or end == -1:
@@ -160,39 +137,33 @@ def extract_json(text: str) -> list:
         raise ValueError("Expected JSON array at top level")
     return data
 
-
-def validate_card(card: dict, tier_id: str) -> dict | None:
+def validate_card(card: dict, allowed_tiers: list) -> dict | None:
     """Normalise and validate a single activity card. Returns None if invalid."""
-    required = ("title", "description", "day", "period", "location", "cost")
+    required = ("title", "description", "day", "period", "location", "cost", "tier")
     if not all(k in card for k in required):
         return None
     if card.get("day") not in ("today", "tomorrow"):
         return None
     if card.get("period") not in ("morning", "afternoon", "evening", "night"):
-        card["period"] = "afternoon"
+        card["period"] = "afternoon"  # safe default
+    if card.get("tier") not in allowed_tiers:
+        return None
+        
     card.setdefault("tags", [])
-    card["tier"] = tier_id
     card["title"]       = str(card["title"])[:80]
     card["description"] = str(card["description"])[:400]
     card["location"]    = str(card["location"])[:80]
     card["cost"]        = str(card["cost"])[:20]
-    # Normalize category to fixed vocabulary
-    raw = card.get("category", [])
-    if isinstance(raw, str):
-        raw = [raw]
-    card["category"] = [c.lower() for c in raw if c.lower() in VALID_CATS][:3]
-    # Wildcard tier always gets "weird" category
-    if tier_id == "wildcard" and "weird" not in card["category"]:
-        card["category"].insert(0, "weird")
     return card
 
-
-# ── Fetch one tier ─────────────────────────────────────────────────────────────
-def fetch_tier(client: genai.Client, tier: dict, today_dow: str, today: str,
+# ── Fetch Grouped Tiers ─────────────────────────────────────────────────────────────
+def fetch_grouped_tiers(client: genai.Client, call_def: dict, today_dow: str, today: str,
                tomorrow_dow: str, tomorrow: str, retries: int = 3) -> dict:
-    tier_id = tier["id"]
-    prompt  = make_prompt(tier, today_dow, today, tomorrow_dow, tomorrow)
-    print(f"  Fetching {tier_id}…", flush=True)
+    call_name = call_def["name"]
+    prompt  = make_prompt(call_def, today_dow, today, tomorrow_dow, tomorrow)
+    allowed_tiers = [t["id"] for t in call_def["tiers"]]
+    
+    print(f"  Fetching {call_name}…", flush=True)
 
     for attempt in range(retries):
         try:
@@ -200,8 +171,9 @@ def fetch_tier(client: genai.Client, tier: dict, today_dow: str, today: str,
                 model="gemini-2.5-flash",
                 contents=prompt,
                 config=types.GenerateContentConfig(
+                    system_instruction=SYSTEM_INSTRUCTION,
                     tools=[types.Tool(google_search=types.GoogleSearch())],
-                    temperature=0.4,   # lower = more deterministic JSON
+                    temperature=0.2,   # lower = more deterministic JSON
                 ),
             )
             text = response.text or ""
@@ -217,45 +189,30 @@ def fetch_tier(client: genai.Client, tier: dict, today_dow: str, today: str,
 
             # Parse JSON
             raw_cards = extract_json(text)
-            activities = [c for c in (validate_card(c, tier_id) for c in raw_cards) if c]
+            activities = [c for c in (validate_card(c, allowed_tiers) for c in raw_cards) if c]
 
-            # Token usage
-            um = response.usage_metadata
-            in_tok  = getattr(um, "prompt_token_count",     0) or 0
-            out_tok = getattr(um, "candidates_token_count", 0) or 0
-
-            today_n    = sum(1 for c in activities if c["day"] == "today")
-            tomorrow_n = sum(1 for c in activities if c["day"] == "tomorrow")
-            print(f"    ✓ {len(activities)} cards "
-                  f"(today={today_n}, tomorrow={tomorrow_n}) | "
-                  f"{len(sources)} sources | "
-                  f"{in_tok:,}in {out_tok:,}out tokens")
+            print(f"    ✓ {len(activities)} total cards | {len(sources)} sources")
             return {
-                "id":         tier_id,
-                "label":      tier["label"],
-                "emoji":      tier["emoji"],
                 "activities": activities,
                 "sources":    sources,
-                "usage":      {"input_tokens": in_tok, "output_tokens": out_tok},
                 "error":      None,
             }
 
         except Exception as e:
             msg = str(e)
-            if "429" in msg and attempt < retries - 1:
-                m = re.search(r"retryDelay.*?(\d+)s", msg)
-                wait = int(m.group(1)) + 5 if m else 60
-                print(f"    Rate limited — waiting {wait}s (retry {attempt+2}/{retries})…")
+            if attempt < retries - 1:
+                wait = 60
+                if "429" in msg:
+                    m = re.search(r"retryDelay.*?(\d+)s", msg)
+                    if m: wait = int(m.group(1)) + 5
+                print(f"    Error/Rate limited — waiting {wait}s (retry {attempt+2}/{retries}). Error: {msg[:60]}")
                 time.sleep(wait)
                 continue
-            print(f"    ERROR [{tier_id}]: {msg[:160]}", file=sys.stderr)
+            
+            print(f"    ERROR [{call_name}]: {msg[:160]}", file=sys.stderr)
             return {
-                "id":         tier_id,
-                "label":      tier["label"],
-                "emoji":      tier["emoji"],
                 "activities": [],
                 "sources":    [],
-                "usage":      {"input_tokens": 0, "output_tokens": 0},
                 "error":      msg[:300],
             }
 
@@ -333,49 +290,78 @@ def main():
     print("Charlotte On The Run — Daily Guide (JSON cards)")
     print(f"Today: {today_dow} {today_s}  |  Tomorrow: {tomorrow_dow} {tomorrow_s}\n")
 
-    # ── Step 1: refresh RSS feeds before generating guide or exporting ────────
-    print("Fetching RSS feeds…")
-    try:
-        stats = run_fetch(priority_filter=2)
-        print(f"  Feeds: +{stats['new']} new  |  {stats['skipped']} skipped  "
-              f"|  {stats['dropped']} dropped  |  {stats['errors']} errors\n")
-    except Exception as e:
-        print(f"  Feed fetch error (continuing): {e}\n", file=sys.stderr)
-
     if not API_KEY:
         print("ERROR: GEMINI_API_KEY not set in .env", file=sys.stderr)
         sys.exit(1)
 
     client  = genai.Client(api_key=API_KEY)
-    results = []
+    
+    all_activities = []
+    all_sources = []
+    errors = []
 
-    for tier in TIERS:
-        result = fetch_tier(
-            client, tier,
+    # Fetch dynamic tiers
+    for call_def in CALLS:
+        result = fetch_grouped_tiers(
+            client, call_def,
             today_dow, today_s,
             tomorrow_dow, tomorrow_s,
         )
-        results.append(result)
+        all_activities.extend(result["activities"])
+        all_sources.extend(result["sources"])
+        if result["error"]:
+            errors.append(f"{call_def['name']}: {result['error']}")
 
-    # ── Cost calculation (Gemini 2.5 Flash + Search grounding) ──────────────────
-    # Prices: $0.075/1M input · $0.30/1M output · $0.035/search call
-    PRICE_IN  = 0.075 / 1_000_000
-    PRICE_OUT = 0.30  / 1_000_000
-    PRICE_SEARCH = 0.035          # per grounding call (one per tier)
+    # Add Baseline
+    baseline_today = BASELINE_ACTIVITIES.get(today_dow, [])
+    for a in baseline_today:
+        a = a.copy()
+        a["day"] = "today"
+        a["tier"] = "baseline"
+        all_activities.append(a)
+        
+    baseline_tomorrow = BASELINE_ACTIVITIES.get(tomorrow_dow, [])
+    for a in baseline_tomorrow:
+        a = a.copy()
+        a["day"] = "tomorrow"
+        a["tier"] = "baseline"
+        all_activities.append(a)
 
-    total_in  = sum(r["usage"]["input_tokens"]  for r in results)
-    total_out = sum(r["usage"]["output_tokens"] for r in results)
-    search_calls = len([r for r in results if not r["error"]])
-    approx_usd = (total_in * PRICE_IN) + (total_out * PRICE_OUT) + (search_calls * PRICE_SEARCH)
+    print(f"  Added {len(baseline_today) + len(baseline_tomorrow)} baseline activities.")
 
-    run_cost = {
-        "input_tokens":  total_in,
-        "output_tokens": total_out,
-        "search_calls":  search_calls,
-        "approx_usd":    round(approx_usd, 4),
-    }
-    print(f"\nCost: {total_in:,} in + {total_out:,} out tokens | "
-          f"{search_calls} search calls | ~${approx_usd:.4f}")
+    # Deduplicate by (title, location) pair
+    deduped_activities = []
+    seen = set()
+    for act in all_activities:
+        key = (act["title"].lower().strip(), act["location"].lower().strip())
+        if key not in seen:
+            seen.add(key)
+            deduped_activities.append(act)
+    
+    dup_count = len(all_activities) - len(deduped_activities)
+    if dup_count > 0:
+        print(f"  Removed {dup_count} duplicate activities.")
+
+    # Organize into tier outputs
+    tier_defs = [
+        {"id": "baseline", "label": "Staples", "emoji": "📍"}
+    ]
+    for c in CALLS:
+        tier_defs.extend(c["tiers"])
+        
+    results = []
+    for tdef in tier_defs:
+        t_acts = [a for a in deduped_activities if a["tier"] == tdef["id"]]
+        if not t_acts and tdef["id"] != "baseline":
+            continue # skip empty tiers unless baseline
+        results.append({
+            "id": tdef["id"],
+            "label": tdef["label"],
+            "emoji": tdef.get("emoji", "📍"),
+            "activities": t_acts,
+            "sources": all_sources, # pass all sources for now
+            "error": " | ".join(errors) if errors else None
+        })
 
     output = {
         "generated_at": today.isoformat(),
@@ -384,7 +370,6 @@ def main():
         "tomorrow":     tomorrow_s,
         "tomorrow_dow": tomorrow_dow,
         "tiers":        results,
-        "run_cost":     run_cost,
     }
 
     # Save JSON
@@ -409,7 +394,7 @@ def main():
         tomorrow_n = sum(1 for c in r["activities"] if c["day"] == "tomorrow")
         print(f"  {r['emoji']} {r['label']:12} {len(r['activities'])} cards "
               f"(today={today_n}, tomorrow={tomorrow_n})"
-              + (f" ⚠ {r['error'][:60]}" if r["error"] else ""))
+              + (f" ⚠ {r['error'][:60]}" if r.get("error") else ""))
 
     print("\nExporting events_data.js…")
     export_events_data()
@@ -419,7 +404,6 @@ def main():
         git_push(today.isoformat())
 
     print("\nDone.")
-
 
 if __name__ == "__main__":
     main()
