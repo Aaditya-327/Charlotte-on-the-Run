@@ -1,6 +1,7 @@
 # Charlotte On The Run — What to Improve
 
-> Audit: April 21, 2026 · 56 items in DB · 3 with real dates · ~35% actual events
+> Audit: April 21, 2026 · **19 events in DB (post-cleanup)** · 3 with dates · ~90% genuine events
+> *(was: 56 items, ~35% genuine, 81 junk rows deleted)*
 
 ---
 
@@ -170,10 +171,47 @@ jobs:
 
 | Metric | Now | After fixes |
 |--------|-----|-------------|
-| Items shown | 56 | ~20–30 (higher quality) |
-| Items with dates | 3 (5%) | ~15–20 (50–70%) |
-| Genuine events | ~18 (~32%) | ~18–25 (~80–90%) |
-| Spam / noise | ~38 (~68%) | <5 |
+| Items shown | 56 → **19** | 40–60 (with daily fetch) |
+| Items with dates | 3 (5%) → **3 (16%)** | >50% |
+| Genuine events | ~35% → **~90%** | >95% |
+| Spam / noise | ~68% → **<10%** | <5% |
 | Data freshness | Frozen (Apr 20) | Daily auto-update |
 
 The goal is fewer items, all real, all with dates. 20 great events beats 56 random articles every time.
+
+---
+
+## 🖥️ Site-Specific Issues
+
+The static site at `docs/index.html` has these specific problems beyond just data quality:
+
+### What's broken or missing on the site
+
+| Issue | Detail | Fix |
+|-------|--------|-----|
+| **Dated vs undated mixed** | Events with confirmed dates and "Date TBD" items appear interleaved with no visual separation | Add a divider section header between dated and undated groups |
+| **"Date TBD" is dominant** | 16 of 19 cards say "Date TBD" — the date field is the primary info a user wants | Bold/highlight the 3 that have dates; grey out or de-emphasise TBD ones |
+| **No drive time on cards** | Cards show region name but not how far ("1h 30m") — user has to know Greenville = 1.5h | Add the `distance` field as a small badge on each card |
+| **Source name is eyebrow text** | "Greenville Journal (Arts)" reads as the publisher not the type of event | Consider showing event type/category (arts, music, food) as the eyebrow instead |
+| **Description has RSS boilerplate** | Many cards end with "The post X appeared first on GREENVILLE JOURNAL" — ugly | Strip this in `buildCard()` with a regex before rendering |
+| **Stats bar is misleading** | "With Dates: 3" next to "Total Events: 19" looks broken, not like a data quality signal | Rename to "Confirmed Date" and add a tooltip explaining the rest are article-based |
+| **Free only button is almost always empty** | Currently 0 free events. Button is visible and clickable but produces nothing | Hide or disable it when count is 0 |
+| **No link to the Telegram bot** | Site has no mention that there's a real-time Telegram bot version | Add a CTA: "Get live updates → Telegram" |
+| **GitHub link in footer is wrong repo** | Footer still points to an old placeholder URL | ✅ Already fixed in latest push |
+| **Data never refreshes** | Site data is a static snapshot — users see the same events indefinitely | GitHub Actions workflow (Step 5 above) |
+
+### Quick wins (CSS/JS only, no backend needed)
+
+```js
+// 1. Strip RSS boilerplate from descriptions
+const clean = (s) => (s || '').replace(/The post .+ appeared first on .+\./, '').trim();
+
+// 2. Separate dated vs undated with a divider
+const dated   = filtered.filter(e => e.event_date);
+const undated = filtered.filter(e => !e.event_date);
+// Render dated first, insert a <hr> label, then undated
+
+// 3. Add distance badge to card HTML
+`<span class="badge badge-dist">${ev.distance}</span>`
+```
+

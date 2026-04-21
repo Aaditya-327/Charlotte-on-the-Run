@@ -18,7 +18,27 @@ from utils import scoring, date_extractor
 DB_PATH    = os.getenv("DB_PATH",    "events.db")
 FEEDS_FILE = os.getenv("FEEDS_FILE", "feeds_live.json")
 HEADERS    = {"User-Agent": "Mozilla/5.0 (compatible; CLT-Events-Bot/1.0)"}
-EVENT_SCORE_THRESHOLD = int(os.getenv("EVENT_SCORE_MIN", "1"))
+EVENT_SCORE_THRESHOLD = int(os.getenv("EVENT_SCORE_MIN", "4"))
+
+# ── Blocklist — hard-reject before scoring ────────────────────────────────────
+
+TITLE_BLOCKLIST = [
+    "workers compensation", "attorney", "mortgage", "non-agency loan",
+    "virtual currency", "social casino", "gift idea", "tinggly",
+    "mansion monday", "home tour", "home renovation",
+    "real estate", "homebuyer",
+    "job description", "hiring", "part-time", "executive director",
+    "director of marketing", "marketing coordinator",
+    "federal budget", "cannabis report",
+    "proposed budget", "budget targets",
+    "travel:", "miles from charlotte",
+    "letter:", "opinion:",
+]
+
+def is_blocked(title: str) -> bool:
+    """Return True if title matches any blocklist pattern."""
+    t = title.lower()
+    return any(kw in t for kw in TITLE_BLOCKLIST)
 
 # ── Scoring ───────────────────────────────────────────────────────────────────
 
@@ -236,6 +256,10 @@ def run_fetch(
                         db.execute("UPDATE events SET price=?, updated_at=? WHERE sig=?",
                                    (price, now, sig))
                 skip_c += 1
+                continue
+
+            if is_blocked(item["title"]):
+                drop_c += 1
                 continue
 
             if ev < EVENT_SCORE_THRESHOLD:

@@ -15,6 +15,9 @@ Dead/removed (tested 2026-04-21):
   AVL Today               — HTTP 404
   Ashvegas                — ParseError (unclosed CDATA)
   Free Times Columbia     — HTTP 429
+  Charlotte Magazine      — Dropped: 0% event ratio, avg score -0.2
+  Triad City Beat         — Dropped: spam (attorney directories, casino finance)
+  Arts & Science Council  — Dropped: only publishing job postings, not events
 
 priority 1 = every 6h  (pure event / high signal)
 priority 2 = daily     (culture/events mix, good signal after filtering)
@@ -43,9 +46,7 @@ FEEDS = [
      "https://charlottepride.org/feed/",
      1, ["events", "community", "lgbtq"]),
 
-    ("Charlotte",     "0min",    "Arts & Science Council",
-     "https://artsandscience.org/feed/",
-     1, ["events", "arts", "culture"]),
+
 
     ("Charlotte",     "0min",    "Charlotte Parent",
      "https://www.charlotteparent.com/feed/",
@@ -67,14 +68,7 @@ FEEDS = [
      "https://unpretentiouspalate.com/feed/",
      2, ["food", "culture"]),
 
-    ("Charlotte",     "0min",    "Charlotte Magazine",
-     "https://www.charlottemagazine.com/feed/",
-     3, ["culture", "dining"]),
 
-    # ── 1H — Piedmont Triad ───────────────────────────────────────────────
-    ("Triad",         "1h",      "Triad City Beat",
-     "https://triad-city-beat.com/feed/",
-     2, ["events", "culture", "arts"]),
 
     # ── 1H 30MIN — Greenville SC ─────────────────────────────────────────
     ("Greenville SC", "1h30min", "Greenville Journal (Events)",

@@ -119,30 +119,6 @@
   {
     "region": "Charlotte",
     "distance": "0min",
-    "name": "Arts & Science Council",
-    "url": "https://artsandscience.org/feed/",
-    "priority": 1,
-    "tags": [
-      "events",
-      "arts",
-      "culture"
-    ],
-    "total_items": 10,
-    "event_items": 5,
-    "event_ratio": 0.5,
-    "avg_event_score": 1.5,
-    "new_sigs": 10,
-    "sample_titles": [
-      "Director of Marketing and Communications \u2013 Charlotte Ballet",
-      "Marketing Coordinator (Part-time) \u2013 Gambrell Center at Queens University",
-      "The Return of Midnight Marathon",
-      "Blumenthal Arts \u2013 Technical Production Manager",
-      "Hickory Choral Society \u2013 Executive Director"
-    ]
-  },
-  {
-    "region": "Charlotte",
-    "distance": "0min",
     "name": "Charlotte Parent",
     "url": "https://www.charlotteparent.com/feed/",
     "priority": 2,
@@ -249,47 +225,6 @@
       "Thai Taste to get \u201cresidency bar\u201d",
       "Behind the Stick: Dana Jordan, Seaboy",
       "Q&A: Filling a meat freezer, spring menu items"
-    ]
-  },
-  {
-    "region": "Charlotte",
-    "distance": "0min",
-    "name": "Charlotte Magazine",
-    "url": "https://www.charlottemagazine.com/feed/",
-    "priority": 3,
-    "tags": [
-      "culture",
-      "dining"
-    ],
-    "total_items": 10,
-    "event_items": 0,
-    "event_ratio": 0.0,
-    "avg_event_score": -0.2,
-    "new_sigs": 10,
-    "sample_titles": []
-  },
-  {
-    "region": "Triad",
-    "distance": "1h",
-    "name": "Triad City Beat",
-    "url": "https://triad-city-beat.com/feed/",
-    "priority": 2,
-    "tags": [
-      "events",
-      "culture",
-      "arts"
-    ],
-    "total_items": 12,
-    "event_items": 5,
-    "event_ratio": 0.417,
-    "avg_event_score": 1.42,
-    "new_sigs": 12,
-    "sample_titles": [
-      "Best Workers Compensation Attorneys in Illinois",
-      "Best Workers Compensation Attorneys in Chicago",
-      "Understanding Non-Agency Loans: Key Factors Borrowers Must Consider",
-      "Prepare Triad Shops for High Point Market Buyers",
-      "Why Virtual Currency Drives Revenue in Social Casinos"
     ]
   },
   {

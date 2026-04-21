@@ -134,6 +134,7 @@ main{flex:1;max-width:1100px;margin:0 auto;width:100%;padding:32px 24px 64px}
 .badge-price{background:var(--warn-50);color:var(--warn-500)}
 .badge-conf-high{background:var(--info-50);color:var(--info-500)}
 .badge-conf-low{background:var(--paper-2);color:var(--ink-3);border-color:var(--border-faint)}
+.badge-dist{background:var(--paper-2);color:var(--ink-3);border-color:var(--border-faint);font-family:var(--font-mono)}
 
 .card-title{font-size:14px;font-weight:600;color:var(--ink-0);line-height:1.35;letter-spacing:-.01em}
 .card-desc{font-size:12px;color:var(--ink-2);line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
@@ -353,6 +354,11 @@ const REGION_COLORS = {
   'Triangle NC':  '#f472b6',
 };
 
+// Strip RSS boilerplate: "The post X appeared first on Y."
+function cleanDesc(s){
+  return (s || '').replace(/The post .+? appeared first on .+?\./g, '').trim();
+}
+
 function buildCard(ev){
   const card = document.createElement('a');
   card.className = 'event-card';
@@ -361,27 +367,26 @@ function buildCard(ev){
   card.rel = 'noopener noreferrer';
 
   const dateStr = formatDate(ev);
+  const desc    = cleanDesc(ev.description);
   const priceBadge = ev.price === 'free'
     ? `<span class="badge badge-free">FREE</span>`
     : ev.price
       ? `<span class="badge badge-price">${ev.price}</span>`
       : '';
-  const confBadge = ev.date_confidence >= 3
-    ? `<span class="badge badge-conf-high">NER</span>`
-    : '';
   const regionColor = REGION_COLORS[ev.region] || 'var(--ink-3)';
+  const distLabel = (ev.distance || '').replace('min',' min').replace('h30min','h 30m').replace(/^0min$/,'local');
 
   card.innerHTML = `
     <div class="card-top">
       <div class="card-source">${ev.source}</div>
       <div class="card-badges">
         ${priceBadge}
-        ${confBadge}
+        <span class="badge badge-dist">${distLabel}</span>
         <span class="badge badge-region" style="color:${regionColor}">${ev.region}</span>
       </div>
     </div>
     <div class="card-title">${ev.title}</div>
-    ${ev.description ? `<div class="card-desc">${ev.description}</div>` : ''}
+    ${desc ? `<div class="card-desc">${desc}</div>` : ''}
     <div class="card-footer">
       <div class="card-date ${dateStr?'':'no-date'}">
         <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
@@ -393,12 +398,26 @@ function buildCard(ev){
   return card;
 }
 
+// ── Section divider helper ────────────────────────────────────────────────────
+function makeDivider(label){
+  const d = document.createElement('div');
+  d.style.cssText = 'grid-column:1/-1;display:flex;align-items:center;gap:10px;padding:4px 0 2px';
+  d.innerHTML = `<span style="font-size:10px;font-weight:500;color:var(--ink-3);text-transform:uppercase;letter-spacing:.08em;font-family:var(--font-mono);white-space:nowrap">${label}</span><span style="flex:1;height:1px;background:var(--border-faint)"></span>`;
+  return d;
+}
+
 // ── Render ────────────────────────────────────────────────────────────────────
 function render(){
   const filtered = filterEvents();
-  const grid = document.getElementById('events-grid');
+  const grid  = document.getElementById('events-grid');
   const empty = document.getElementById('empty-state');
   const count = document.getElementById('results-count');
+  const btnFree = document.getElementById('btn-free');
+
+  const dated   = filtered.filter(e => e.event_date);
+  const undated = filtered.filter(e => !e.event_date);
+  const freeCount = EVENTS_DATA.filter(e => e.price === 'free').length;
+  btnFree.style.display = freeCount === 0 ? 'none' : '';
 
   grid.innerHTML = '';
   if(filtered.length === 0){
@@ -407,7 +426,14 @@ function render(){
   } else {
     grid.style.display='grid';
     empty.style.display='none';
-    filtered.forEach(ev => grid.appendChild(buildCard(ev)));
+    if(dated.length){
+      grid.appendChild(makeDivider(`${dated.length} confirmed date${dated.length===1?'':'s'}`));
+      dated.forEach(ev => grid.appendChild(buildCard(ev)));
+    }
+    if(undated.length){
+      grid.appendChild(makeDivider(`${undated.length} article${undated.length===1?'':'s'} — date TBD`));
+      undated.forEach(ev => grid.appendChild(buildCard(ev)));
+    }
   }
   count.textContent = `${filtered.length} event${filtered.length===1?'':'s'}`;
 }
