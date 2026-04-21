@@ -952,32 +952,50 @@ function render(){
       return;
     }
     grid.style.display='grid'; empty.style.display='none';
-    const t = cards.filter(c => c.day === 'today');
-    const tm = cards.filter(c => c.day === 'tomorrow');
+    const showAI = c => {
+      if(!catOK(c)) return false;
+      if(activeTime === 'today' && c.day !== 'today') return false;
+      return true;
+    };
+    const t = cards.filter(c => c.day === 'today' && showAI(c));
+    const tm = cards.filter(c => c.day === 'tomorrow' && showAI(c));
     if(t.length){  grid.appendChild(makeWildDivider('Today'));    t.forEach(c => grid.appendChild(buildAICard(c))); }
     if(tm.length){ grid.appendChild(makeWildDivider('Tomorrow')); tm.forEach(c => grid.appendChild(buildAICard(c))); }
-    count.textContent = `${cards.length} weird pick${cards.length===1?'':'s'}`;
+    count.textContent = `${t.length + tm.length} weird pick${(t.length + tm.length)===1?'':'s'}`;
     return;
   }
 
   // ── Free mode ──────────────────────────────────────────────────────────────
   if(activeMode === 'free'){
     const filtered   = filterEvents().filter(e => e.price === 'free');
-    const freeAI     = AI_CARDS.filter(c => c.tier === 'free'     && c.day === 'today' && catOK(c));
-    const baselineAI = AI_CARDS.filter(c => c.tier === 'baseline' && c.day === 'today' && catOK(c));
+    const showAI = c => {
+      if(!catOK(c)) return false;
+      if(activeTime === 'today' && c.day !== 'today') return false;
+      return true;
+    };
+    const freeAI_t     = AI_CARDS.filter(c => c.tier === 'free'     && c.day === 'today' && showAI(c));
+    const freeAI_tm    = AI_CARDS.filter(c => c.tier === 'free'     && c.day === 'tomorrow' && showAI(c));
+    const baselineAI_t  = AI_CARDS.filter(c => c.tier === 'baseline' && c.day === 'today' && showAI(c));
+    const baselineAI_tm = AI_CARDS.filter(c => c.tier === 'baseline' && c.day === 'tomorrow' && showAI(c));
+    
     const dated      = filtered.filter(e => e.event_date);
     const undated    = filtered.filter(e => !e.event_date);
-    if(filtered.length === 0 && freeAI.length === 0 && baselineAI.length === 0){
+    if(filtered.length === 0 && freeAI_t.length === 0 && freeAI_tm.length === 0 && baselineAI_t.length === 0 && baselineAI_tm.length === 0){
       grid.style.display='none'; empty.style.display='block';
       count.textContent = '0 free events';
       return;
     }
     grid.style.display='grid'; empty.style.display='none';
     if(dated.length){ grid.appendChild(makeDivider(`${dated.length} confirmed free events`)); dated.forEach(ev => grid.appendChild(buildCard(ev))); }
-    if(freeAI.length){ grid.appendChild(makeAIDivider('✦ AI Free Picks · Today')); freeAI.forEach(c => grid.appendChild(buildAICard(c))); }
-    if(baselineAI.length){ grid.appendChild(makeBaselineDivider('Staples · Always Good')); baselineAI.forEach(c => grid.appendChild(buildAICard(c))); }
+    
+    if(freeAI_t.length){ grid.appendChild(makeAIDivider('✦ AI Free Picks · Today')); freeAI_t.forEach(c => grid.appendChild(buildAICard(c))); }
+    if(baselineAI_t.length){ grid.appendChild(makeBaselineDivider('Staples · Today')); baselineAI_t.forEach(c => grid.appendChild(buildAICard(c))); }
+    
+    if(freeAI_tm.length){ grid.appendChild(makeAIDivider('✦ AI Free Picks · Tomorrow')); freeAI_tm.forEach(c => grid.appendChild(buildAICard(c))); }
+    if(baselineAI_tm.length){ grid.appendChild(makeBaselineDivider('Staples · Tomorrow')); baselineAI_tm.forEach(c => grid.appendChild(buildAICard(c))); }
+
     if(undated.length){ grid.appendChild(makeDivider(`${undated.length} free — date TBD`)); undated.forEach(ev => grid.appendChild(buildCard(ev))); }
-    count.textContent = `${filtered.length + freeAI.length + baselineAI.length} free`;
+    count.textContent = `${filtered.length + freeAI_t.length + freeAI_tm.length + baselineAI_t.length + baselineAI_tm.length} free`;
     return;
   }
 
@@ -985,11 +1003,17 @@ function render(){
   const filtered = filterEvents();
   const dated    = filtered.filter(e => e.event_date);
   const undated  = filtered.filter(e => !e.event_date);
-  const mixTier  = ['free','under20','under50','splurge'].find(t => AI_CARDS.some(c => c.tier === t)) || 'free';
-  const mixAI    = AI_CARDS.filter(c => c.tier === mixTier && c.day === 'today' && catOK(c));
-  const mixWild  = AI_CARDS.filter(c => c.tier === 'wildcard' && c.day === 'today' && catOK(c));
 
-  if(filtered.length === 0 && mixAI.length === 0 && mixWild.length === 0){
+  const showAI = c => {
+    if(!catOK(c)) return false;
+    if(activeTime === 'today' && c.day !== 'today') return false;
+    // For weekend/week, we show all since AI only has today/tomorrow
+    return true;
+  };
+  const todayAI    = AI_CARDS.filter(c => c.day === 'today' && showAI(c));
+  const tomorrowAI = AI_CARDS.filter(c => c.day === 'tomorrow' && showAI(c));
+
+  if(filtered.length === 0 && todayAI.length === 0 && tomorrowAI.length === 0){
     grid.style.display='none'; empty.style.display='block';
     count.textContent = '0 events';
     return;
@@ -1000,20 +1024,23 @@ function render(){
     grid.appendChild(makeDivider(`${dated.length} confirmed date${dated.length===1?'':'s'}`));
     dated.forEach(ev => grid.appendChild(buildCard(ev)));
   }
-  if(mixAI.length){
-    grid.appendChild(makeAIDivider('AI Picks · Today'));
-    mixAI.forEach(c => grid.appendChild(buildAICard(c)));
+  
+  if(todayAI.length){
+    grid.appendChild(makeAIDivider('Today\'s Suggested Guide'));
+    todayAI.forEach(c => grid.appendChild(buildAICard(c)));
   }
-  if(mixWild.length){
-    grid.appendChild(makeWildDivider('Wild Card · Weird &amp; Novel'));
-    mixWild.forEach(c => grid.appendChild(buildAICard(c)));
+
+  if(tomorrowAI.length){
+    grid.appendChild(makeAIDivider('Tomorrow\'s Suggested Guide'));
+    tomorrowAI.forEach(c => grid.appendChild(buildAICard(c)));
   }
+
   if(undated.length){
     grid.appendChild(makeDivider(`${undated.length} article${undated.length===1?'':'s'} — date TBD`));
     undated.forEach(ev => grid.appendChild(buildCard(ev)));
   }
-  const aiCount = mixAI.length + mixWild.length;
-  count.textContent = `${filtered.length} event${filtered.length===1?'':'s'} · ${aiCount} AI`;
+  const aiCount = todayAI.length + tomorrowAI.length;
+  count.textContent = `${filtered.length} event${filtered.length===1?'':'s'} · ${aiCount} suggestions`;
 }
 
 // ── Stats ─────────────────────────────────────────────────────────────────────
