@@ -215,3 +215,148 @@ const undated = filtered.filter(e => !e.event_date);
 `<span class="badge badge-dist">${ev.distance}</span>`
 ```
 
+---
+
+## 🔬 Feed Probe Audit — April 21, 2026
+
+Ran `python test_feeds.py` against all 100 candidate URLs.
+**Result: 47 live · 53 dead**
+
+Score = event-keyword density across first 10 items (higher = more event content).
+
+---
+
+### ✅ Live Feeds — Ranked by Event Signal
+
+| Score | Items | Region | Feed | URL |
+|-------|-------|--------|------|-----|
+| 0.51 | 100 | Charlotte | Charlotte on the Cheap | https://www.charlotteonthecheap.com/feed/ |
+| 0.51 | 20 | Asheville | Haywood County Press | https://www.hcpress.com/feed |
+| 0.49 | 30 | Charlotte | Charlotte Is Creative | https://charlotteiscreative.com/feed/ |
+| 0.49 | 10 | Asheville | NC Health News | https://www.northcarolinahealthnews.org/feed/ |
+| 0.46 | 100 | Triangle NC | Triangle on the Cheap | https://triangleonthecheap.com/feed/ |
+| 0.46 | 50 | Charlotte | QNotes Carolinas | https://qnotescarolinas.com/feed/ |
+| 0.38 | 5 | Asheville | Carolina Public Press | https://carolinapublicpress.org/feed/ |
+| 0.32 | 10 | Triangle NC | INDY Week | https://indyweek.com/feed/ |
+| 0.30 | 10 | Triangle NC | Walter Magazine | https://www.waltermagazine.com/feed/ |
+| 0.24 | 10 | Greenville SC | Town Carolina | https://towncarolina.com/feed/ |
+| 0.22 | 50 | Charlotte | Scoop Charlotte | https://scoopcharlotte.com/feed/ |
+| 0.22 | 10 | Asheville | Asheville Art Museum | https://www.ashevilleart.org/feed/ |
+| 0.19 | 12 | Triad | Triad City Beat Culture | https://triad-city-beat.com/category/culture/feed/ |
+| 0.19 | 11 | Triad | WStoday (6AM City) | https://wstoday.6amcity.com/index.rss |
+| 0.19 | 10 | Triad | Reynolda House | https://reynolda.org/feed/ |
+| 0.19 | 10 | Charlotte | Queen City Nerve | https://qcnerve.com/feed/ |
+| 0.16 | 10 | Triad | Triad Moms on Main | https://triadmomsonmain.com/feed/ |
+| 0.16 | 10 | Charlotte | Charlotte Pride | https://charlottepride.org/feed/ |
+| 0.14 | 15 | Greenville SC | Greenville Journal | https://greenvillejournal.com/feed/ |
+| 0.14 | 10 | Triangle NC | Raleigh Magazine | https://raleighmag.com/feed/ |
+| 0.14 | 10 | Triangle NC | Durham Magazine | https://durhammag.com/feed/ |
+| 0.14 | 10 | Charlotte | SouthPark Magazine | https://southparkmagazine.com/feed/ |
+| 0.14 | 10 | Asheville | The Laurel of Asheville | https://thelaurelofasheville.com/feed/ |
+| 0.11 | 50 | Triad | Greensboro.com Entertainment | https://greensboro.com/search/?f=rss&t=article&c=entertainment&l=50&s=start_time&sd=desc |
+| 0.11 | 11 | Greenville SC | GVLtoday (6AM City) | https://gvltoday.6amcity.com/index.rss |
+| 0.11 | 11 | Greenville SC | COLAtoday (6AM City) | https://colatoday.6amcity.com/index.rss |
+| 0.11 | 11 | Asheville | AVLtoday (6AM City) | https://avltoday.6amcity.com/index.rss |
+| 0.11 | 10 | Charlotte | Charlotte Ballet | https://charlotteballet.org/feed/ |
+| 0.08 | 11 | Charlotte | CLTtoday (6AM City) | https://clttoday.6amcity.com/index.rss |
+| 0.08 | 10 | Charlotte | Unpretentious Palate | https://unpretentiouspalate.com/feed/ |
+| 0.08 | 10 | Charlotte | Charlotte Magazine | https://www.charlottemagazine.com/feed/ |
+| 0.08 | 10 | Asheville | Mountain Xpress | https://mountainx.com/feed/ |
+| 0.08 | 10 | Asheville | Edible Asheville | https://edibleasheville.com/feed/ |
+| 0.05 | 11 | Triangle NC | RALtoday (6AM City) | https://raltoday.6amcity.com/index.rss |
+| 0.05 | 10 | Asheville | Watauga Democrat | https://www.wataugademocrat.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc |
+| 0.05 | 10 | Triangle NC | Chapel Hill Magazine | https://chapelhillmagazine.com/feed/ |
+| 0.05 | 10 | Charlotte | PFLAG Charlotte | https://pflagcharlotte.org/feed/ |
+| 0.05 | 10 | Charlotte | Mint Museum | https://mintmuseum.org/feed/ |
+| 0.03 | 15 | Greenville SC | Upstate Business Journal | https://upstatebusinessjournal.com/feed/ |
+| 0.03 | 10 | Charlotte | Arts & Science Council | https://artsandscience.org/feed/ |
+| 0.03 | 50 | Charlotte | WBTV News | https://www.wbtv.com/arc/outboundfeeds/rss/?outputType=xml |
+| 0.03 | 10 | Triad | The Carolinian (UNCG) | https://carolinianuncg.com/feed/ |
+| 0.03 | 20 | Triad | High Point Discovered | https://highpointdiscovered.org/feed/ |
+| 0.00 | 10 | Charlotte | Business NC | https://businessnc.com/feed/ |
+| 0.00 | 5 | Asheville | Ashvegas | https://ashvegas.com/feed/ |
+| 0.00 | 20 | Triad | Triad Foodies | https://triadfoodies.com/feed/ |
+| 0.00 | 10 | Charlotte | Charlotte Is Creative *(see above)* | — |
+
+---
+
+### ❌ Dead Feeds — Full Register
+
+| Status | Region | Feed | URL |
+|--------|--------|------|-----|
+| TIMEOUT | Charlotte | Charlotte Observer Local | https://www.charlotteobserver.com/news/local/?service=rss |
+| TIMEOUT | Charlotte | Charlotte Observer Entertainment | https://www.charlotteobserver.com/entertainment/?service=rss |
+| TIMEOUT | Triangle NC | News & Observer Entertainment | https://www.newsobserver.com/entertainment/?service=rss |
+| TIMEOUT | Greenville SC | The State Entertainment | https://www.thestate.com/entertainment/?service=rss |
+| HTTP-404 | Charlotte | Charlotte Ledger (Substack) | https://charlotteledger.substack.com/feed |
+| HTTP-404 | Charlotte | QCity Metro | https://qcitymetro.com/feed/ |
+| HTTP-404 | Charlotte | WFAE Local News | https://www.wfae.org/local-news/index.rss |
+| HTTP-404 | Charlotte | WFAE Arts & Culture | https://www.wfae.org/arts-culture/index.rss |
+| HTTP-404 | Charlotte | WSOC-TV Local | https://www.wsoctv.com/arc/outboundfeeds/rss/category/news/local/ |
+| HTTP-404 | Charlotte | NoDa Neighborhood | https://noda.org/feed/ |
+| HTTP-404 | Charlotte | QC Foodie | https://qcfoodie.com/feed/ |
+| HTTP-404 | Charlotte | Blumenthal Arts | https://www.blumenthalarts.org/blog/rss |
+| HTTP-404 | Charlotte | McColl Center | https://mccollcenter.org/feed/ |
+| HTTP-404 | Charlotte | Charlotte Black Pride | https://charlotteblackpride.org/feed/ |
+| HTTP-404 | Charlotte | Charlotte Symphony | https://charlottesymphony.org/feed/ |
+| HTTP-404 | Charlotte | Bechtler Museum | https://bechtler.org/feed/ |
+| HTTP-404 | Charlotte | Work For Your Beer | https://www.workforyourbeer.com/feed/ |
+| HTTP-404 | Charlotte | Restaurant Traffic | http://restauranttraffic.com/feed/ |
+| HTTP-404 | Triad | WFDD Public Radio | https://www.wfdd.org/rss.xml |
+| HTTP-404 | Triad | SECCA | https://secca.org/feed/ |
+| HTTP-404 | Triangle NC | WRAL Out & About | https://www.wral.com/entertainment/out_and_about/rss/58/ |
+| HTTP-404 | Triangle NC | Discover Durham | https://www.discoverdurham.com/blog/rss/ |
+| HTTP-404 | Triangle NC | Triangle Arts & Ent | https://triangleartsandentertainment.org/feed/ |
+| HTTP-404 | Asheville | Explore Asheville Blog | https://www.exploreasheville.com/blog/rss/ |
+| HTTP-404 | Asheville | Romantic Asheville Blog | https://www.romanticasheville.com/blog/feed |
+| HTTP-404 | Asheville | Asheville Downtown Assoc | https://ashevilledowntown.org/feed/ |
+| HTTP-404 | Greenville SC | Edible Upcountry | https://edibleupcountry.com/feed/ |
+| HTTP-404 | Greenville SC | Hub City (Spartanburg) | https://www.hubcity.org/feed |
+| HTTP-404 | Greenville SC | Visit Greenville SC | https://www.visitgreenvillesc.com/blog/rss/ |
+| HTTP-404 | Greenville SC | Experience Columbia SC | https://www.experiencecolumbiasc.com/blog/rss/ |
+| HTTP-404 | Greenville SC | Columbia Museum of Art | https://www.columbiamuseum.org/feed |
+| HTTP-403 | Charlotte | Biz Journals Charlotte | https://www.bizjournals.com/charlotte/rss |
+| HTTP-403 | Asheville | Asheville Citizen-Times Ent | https://rssfeeds.citizen-times.com/asheville/entertainment |
+| HTTP-403 | Greenville SC | Greenville Online | https://rssfeeds.greenvilleonline.com/greenville/home |
+| HTTP-410 | Charlotte | South End CLT | https://southendclt.org/feed/ |
+| HTTP-429 | Triad | Journal Now Local | https://journalnow.com/search/?f=rss&t=article&c=news/local&l=50 |
+| HTTP-429 | Triad | Journal Now Entertainment | https://journalnow.com/search/?f=rss&t=article&c=entertainment&l=50 |
+| HTTP-429 | Triad | Yes! Weekly | https://yesweekly.com/search/?f=rss&t=article&l=50 |
+| HTTP-429 | Greenville SC | Free Times (P&C) | https://www.postandcourier.com/free-times/search/?f=rss |
+| HTTP-503 | Triangle NC | Bites of Bull City | https://bitesofbullcity.com/feed/ |
+| PARSE_ERR | Charlotte | Gantt Center | https://ganttcenter.org/feed/ |
+| PARSE_ERR | Triad | Winston-Salem Monthly | https://www.winstonsalemmonthly.com/feed/ |
+| EMPTY | Charlotte | Plaza Midwood | https://plazamidwood.org/feed/ |
+| EMPTY | Charlotte | NC Beer Guys | https://ncbeerguys.com/feed/ |
+| EMPTY | Charlotte | Charlotte Gaymers Network | https://www.charlottegaymersnetwork.com/feed/ |
+| EMPTY | Asheville | Blue Ridge Public Radio | https://www.bpr.org/index.rss |
+| EMPTY | Triangle NC | WUNC Public Radio | https://www.wunc.org/index.rss |
+| EMPTY | Greenville SC | SC Public Radio | https://www.southcarolinapublicradio.org/index.rss |
+| URL-ERR | Charlotte | Beer Me Charlotte | https://beermecharlotte.com/feed/ |
+| URL-ERR | Charlotte | Charlotte Coffee Culture | https://charlottecoffeeculture.com/feed/ |
+| URL-ERR | Triad | Piedmont Parent | https://www.piedmontparent.com/feed/ |
+| URL-ERR | Greenville SC | GoUpstate (Spartanburg) | https://rssfeeds.goupstate.com/spartanburg/home |
+| URL-ERR | Triangle NC | Carolina Parent | https://www.carolinaparent.com/feed/ |
+
+---
+
+### 🟢 Recommended New Additions to feeds.py
+
+These are live, event-relevant, and not already in the active feed list:
+
+| Priority | Feed | Region | Reason |
+|----------|------|--------|--------|
+| **High** | Charlotte on the Cheap | Charlotte | 100 items, highest event score, free/cheap focus |
+| **High** | Triangle on the Cheap | Triangle NC | 100 items, same model for Triangle |
+| **High** | Charlotte Is Creative | Charlotte | Arts/creative events, decent volume |
+| **High** | Triad City Beat Culture | Triad | Category feed — much cleaner than main Triad City Beat |
+| **High** | WStoday (6AM City) | Triad | Fills the Triad gap left by removing Triad City Beat |
+| Med | Greensboro.com Entertainment | Triad | 50 items entertainment category |
+| Med | Raleigh Magazine | Triangle NC | Lifestyle/events mix |
+| Med | Durham Magazine | Triangle NC | Cultural events |
+| Med | Town Carolina | Greenville SC | SC local events |
+| Med | Reynolda House | Triad | Museum/arts events Winston-Salem |
+| Med | Asheville Art Museum | Asheville | Pure arts events |
+| Low | Haywood County Press | Asheville | Local Waynesville, broader WNC coverage |
+| Low | The Laurel of Asheville | Asheville | Arts/culture magazine |
+| Low | COLAtoday (6AM City) | Greenville SC | Columbia SC, extends SC coverage |
