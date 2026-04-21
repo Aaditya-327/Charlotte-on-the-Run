@@ -348,5 +348,19 @@ const EVENTS_DATA = [
     "event_date": null,
     "event_time": null,
     "date_confidence": 0
+  },
+  {
+    "title": "Live Nation unveils new green space, dining options at Truliant Amphitheater",
+    "link": "https://clttoday.6amcity.com/business/new-space-dining-options-truliant-amphitheater-skyla-charlotte-nc",
+    "description": "What to expect at two of Charlotte\u2019s outdoor venues ahead of concert season.",
+    "pub_date": "2026-04-21T18:32:57+00:00",
+    "region": "Charlotte",
+    "distance": "0min",
+    "source": "CLTtoday (6AM City)",
+    "price": null,
+    "ev_score": 4,
+    "event_date": null,
+    "event_time": null,
+    "date_confidence": 0
   }
 ];
