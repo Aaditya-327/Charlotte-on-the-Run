@@ -10,15 +10,20 @@
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
 <style>
 :root {
-  --paper-0:#1C1814; --paper-1:#252019; --paper-2:#2F2920; --paper-3:#3D3528;
-  --ink-0:#F4EADA; --ink-1:#E1D6C3; --ink-2:#A89E8A; --ink-3:#6E6555; --ink-4:#4A4335;
-  --rust-50:#3A2317; --rust-100:#5A3520; --rust-300:#B96B38;
-  --rust-500:#E18A4C; --rust-600:#F0A06A; --rust-700:#F8BE8F;
-  --good-500:#A8C27A; --good-50:#2A2E1D;
-  --warn-500:#E3B85A; --warn-50:#35291A;
-  --bad-500:#E06A52;  --bad-50:#3A1F1A;
-  --info-500:#7FA5B8; --info-50:#1E2A30;
-  --border-faint:#2F2920; --border-soft:#3D3528; --border-strong:#554A38;
+  /* Pure black surfaces */
+  --paper-0:#0a0a0a; --paper-1:#111111; --paper-2:#181818; --paper-3:#222222;
+  /* Clean white ink */
+  --ink-0:#ffffff; --ink-1:#e8e8e8; --ink-2:#999999; --ink-3:#555555; --ink-4:#333333;
+  /* Accent: electric violet-blue — clean, modern */
+  --rust-50:rgba(139,92,246,.12); --rust-100:rgba(139,92,246,.2); --rust-300:#7c3aed;
+  --rust-500:#8b5cf6; --rust-600:#a78bfa; --rust-700:#c4b5fd;
+  /* Semantic */
+  --good-500:#4ade80; --good-50:rgba(74,222,128,.1);
+  --warn-500:#fbbf24; --warn-50:rgba(251,191,36,.1);
+  --bad-500:#f87171;  --bad-50:rgba(248,113,113,.1);
+  --info-500:#60a5fa; --info-50:rgba(96,165,250,.1);
+  /* Borders */
+  --border-faint:#1a1a1a; --border-soft:#262626; --border-strong:#333333;
   --font-sans:'Geist',-apple-system,BlinkMacSystemFont,'Inter',system-ui,sans-serif;
   --font-mono:'Geist Mono',ui-monospace,'SF Mono',Menlo,monospace;
   --ease-out:cubic-bezier(.2,0,0,1);
@@ -31,7 +36,7 @@ body{min-height:100vh;display:flex;flex-direction:column}
 /* ── Layout ── */
 .site-header{
   position:sticky;top:0;z-index:50;
-  background:rgba(28,24,20,.92);
+  background:rgba(10,10,10,.92);
   backdrop-filter:blur(12px);
   border-bottom:1px solid var(--border-faint);
   padding:0 24px;
@@ -234,7 +239,7 @@ footer{border-top:1px solid var(--border-faint);padding:20px 24px;text-align:cen
 
 </main>
 
-<footer id="footer">Charlotte On The Run · Built with 20 curated RSS feeds · <a href="https://github.com/aadi-254/charlotte-on-the-run" style="color:var(--rust-500);text-decoration:none">GitHub</a></footer>
+<footer id="footer">Charlotte On The Run · Built with 20 curated RSS feeds · <a href="https://github.com/Aaditya-327/Charlotte-on-the-Run" style="color:var(--rust-500);text-decoration:none">GitHub</a></footer>
 
 <script src="events_data.js"></script>
 <script>
@@ -341,11 +346,11 @@ function formatDate(ev){
 }
 
 const REGION_COLORS = {
-  'Charlotte':   '#E18A4C',
-  'Triad':       '#7FA5B8',
-  'Greenville SC':'#A8C27A',
-  'Asheville':   '#E3B85A',
-  'Triangle NC': '#B096D4',
+  'Charlotte':    '#8b5cf6',
+  'Triad':        '#60a5fa',
+  'Greenville SC':'#4ade80',
+  'Asheville':    '#fbbf24',
+  'Triangle NC':  '#f472b6',
 };
 
 function buildCard(ev){
