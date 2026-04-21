@@ -67,7 +67,7 @@ main{flex:1;max-width:1100px;margin:0 auto;width:100%;padding:32px 24px 64px}
 .stat-sub{font-size:11px;color:var(--ink-3)}
 
 /* ── Controls ── */
-.controls{display:flex;flex-direction:column;gap:12px;margin-bottom:24px}
+.controls{display:flex;flex-direction:column;gap:10px;margin-bottom:24px}
 .control-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .search-wrap{position:relative;flex:1;min-width:200px}
 .search-wrap svg{position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--ink-3);pointer-events:none}
@@ -78,6 +78,21 @@ main{flex:1;max-width:1100px;margin:0 auto;width:100%;padding:32px 24px 64px}
 }
 .search-input::placeholder{color:var(--ink-3)}
 .search-input:focus{border-color:var(--rust-500);box-shadow:0 0 0 2px var(--rust-50)}
+.results-count{font-size:11px;color:var(--ink-3);font-family:var(--font-mono)}
+
+/* Mode selector */
+.mode-row{display:flex;gap:4px;flex-wrap:wrap;align-items:center}
+.mode-chip{
+  font-size:12px;font-weight:500;padding:6px 14px;border-radius:6px;
+  border:1px solid var(--border-soft);background:var(--paper-1);color:var(--ink-2);
+  cursor:pointer;transition:all var(--dur-fast) var(--ease-out);white-space:nowrap;font-family:var(--font-sans);
+}
+.mode-chip:hover{background:var(--paper-3);color:var(--ink-0);border-color:var(--border-strong)}
+.mode-chip.active{color:#fff;font-weight:600}
+.mode-chip[data-mode="all"].active{background:var(--rust-500);border-color:var(--rust-500)}
+.mode-chip[data-mode="free"].active{background:#4ade80;border-color:#4ade80;color:var(--paper-0)}
+.mode-chip[data-mode="ai"].active{background:#a78bfa;border-color:#a78bfa;color:var(--paper-0)}
+.mode-chip[data-mode="weird"].active{background:#fb923c;border-color:#fb923c;color:var(--paper-0)}
 
 /* Filter chips */
 .chips{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
@@ -89,18 +104,14 @@ main{flex:1;max-width:1100px;margin:0 auto;width:100%;padding:32px 24px 64px}
 }
 .chip:hover{background:var(--paper-3);color:var(--ink-0);border-color:var(--border-strong)}
 .chip.active{background:var(--rust-500);color:var(--paper-0);border-color:var(--rust-500);font-weight:600}
-
-/* Sort / view controls */
-.btn{
-  font-size:12px;font-weight:500;padding:6px 12px;border-radius:5px;
-  border:1px solid var(--border-soft);background:var(--paper-1);color:var(--ink-1);
-  cursor:pointer;display:inline-flex;align-items:center;gap:6px;
-  transition:all var(--dur-fast) var(--ease-out);font-family:var(--font-sans);white-space:nowrap;
+/* Tier chips (inside AI mode) */
+.tier-chip{
+  font-size:11px;font-weight:500;padding:4px 11px;border-radius:6px;
+  border:1px solid var(--border-soft);background:var(--paper-2);color:var(--ink-2);
+  cursor:pointer;transition:all var(--dur-fast) var(--ease-out);white-space:nowrap;font-family:var(--font-sans);
 }
-.btn:hover{background:var(--paper-3);color:var(--ink-0)}
-.btn.accent{background:var(--rust-500);color:var(--paper-0);border-color:var(--rust-500)}
-.btn.accent:hover{background:var(--rust-600)}
-.results-count{font-size:11px;color:var(--ink-3);font-family:var(--font-mono);margin-left:auto}
+.tier-chip:hover{background:var(--paper-3);color:var(--ink-0)}
+.tier-chip.active{background:rgba(139,92,246,.15);color:var(--rust-600);border-color:rgba(139,92,246,.4);font-weight:600}
 
 /* ── Grid ── */
 .events-grid{
@@ -145,13 +156,6 @@ main{flex:1;max-width:1100px;margin:0 auto;width:100%;padding:32px 24px 64px}
 .event-card.wild-card{border-color:rgba(251,146,60,.35);box-shadow:0 0 14px rgba(251,146,60,.08)}
 .event-card.wild-card::before{background:linear-gradient(90deg,#fb923c,#fbbf24,transparent);opacity:.5}
 .event-card.wild-card:hover{border-color:rgba(251,146,60,.6);box-shadow:0 8px 28px rgba(251,146,60,.2);transform:translateY(-1px)}
-.ai-tier-bar{grid-column:1/-1;display:flex;align-items:center;gap:8px;padding:4px 0 2px;flex-wrap:wrap}
-.ai-tier-tab{
-  font-size:11px;font-weight:500;padding:4px 12px;border-radius:999px;
-  border:1px solid var(--border-soft);background:var(--paper-2);color:var(--ink-2);
-  cursor:pointer;transition:all var(--dur-fast) var(--ease-out);
-}
-.ai-tier-tab.active{background:var(--rust-500);color:#fff;border-color:var(--rust-500)}
 
 .card-title{font-size:14px;font-weight:600;color:var(--ink-0);line-height:1.35;letter-spacing:-.01em}
 .card-desc{font-size:12px;color:var(--ink-2);line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
@@ -245,42 +249,50 @@ footer{border-top:1px solid var(--border-faint);padding:20px 24px;text-align:cen
 
   <!-- Controls -->
   <div class="controls">
+
+    <!-- Row 1: Search -->
     <div class="control-row">
       <div class="search-wrap">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         <input class="search-input" id="search-input" type="text" placeholder="Search events, venues, keywords…" autocomplete="off" spellcheck="false"/>
       </div>
-      <button class="btn" id="btn-free" onclick="toggleFree()">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        Free only
-      </button>
-      <button class="btn" id="btn-ai" onclick="toggleAI()">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L9.5 8.5 3 9.27l5 4.87L6.82 21 12 17.77 17.18 21 16 14.14l5-4.87-6.5-.77L12 2z"/></svg>
-        AI Guide
-      </button>
       <span class="results-count" id="results-count"></span>
     </div>
 
+    <!-- Row 2: Mode selector -->
     <div class="control-row">
-      <span class="chip-label">Region</span>
-      <div class="chips" id="region-chips"></div>
-    </div>
-
-    <div class="control-row">
-      <span class="chip-label">Time</span>
-      <div class="chips" id="time-chips">
-        <button class="chip active" data-time="all" onclick="setTime('all')">All</button>
-        <button class="chip" data-time="today" onclick="setTime('today')">Today</button>
-        <button class="chip" data-time="weekend" onclick="setTime('weekend')">This Weekend</button>
-        <button class="chip" data-time="week" onclick="setTime('week')">This Week</button>
-        <button class="chip" data-time="dated" onclick="setTime('dated')">Has Date</button>
+      <div class="mode-row">
+        <button class="mode-chip active" data-mode="all"   onclick="setMode('all')">All</button>
+        <button class="mode-chip"        data-mode="free"  onclick="setMode('free')">🆓 Free</button>
+        <button class="mode-chip"        data-mode="ai"    onclick="setMode('ai')">✦ AI Guide</button>
+        <button class="mode-chip"        data-mode="weird" onclick="setMode('weird')">🎪 Weird</button>
       </div>
     </div>
 
+    <!-- Row 3: AI tier — only visible in AI mode -->
+    <div class="control-row" id="tier-row" style="display:none">
+      <span class="chip-label">Tier</span>
+      <div class="chips" id="tier-chips"></div>
+    </div>
+
+    <!-- Row 4: Time + Region -->
+    <div class="control-row">
+      <div class="chips" id="time-chips">
+        <button class="chip active" data-time="all"     onclick="setTime('all')">All time</button>
+        <button class="chip"        data-time="today"   onclick="setTime('today')">Today</button>
+        <button class="chip"        data-time="weekend" onclick="setTime('weekend')">Weekend</button>
+        <button class="chip"        data-time="week"    onclick="setTime('week')">This week</button>
+      </div>
+      <span style="width:1px;height:16px;background:var(--border-soft);flex-shrink:0;margin:0 2px"></span>
+      <div class="chips" id="region-chips"></div>
+    </div>
+
+    <!-- Row 5: Category (dynamic, only when AI cards have categories) -->
     <div class="control-row" id="cat-row" style="display:none">
       <span class="chip-label">Category</span>
       <div class="chips" id="cat-chips"></div>
     </div>
+
   </div>
 
   <!-- Grid -->
@@ -304,8 +316,7 @@ footer{border-top:1px solid var(--border-faint);padding:20px 24px;text-align:cen
 // ── State ─────────────────────────────────────────────────────────────────────
 let activeRegion = 'all';
 let activeTime   = 'all';
-let freeOnly     = false;
-let aiOnly       = false;
+let activeMode   = 'all';   // 'all' | 'free' | 'ai' | 'weird'
 let activeTier   = 'free';
 let activeCats   = new Set();
 let searchQ      = '';
@@ -388,16 +399,29 @@ const AI_CARDS = parseGuideCards();
 
 
 // ── Region chips ──────────────────────────────────────────────────────────────
-const REGIONS = ['all', ...['Charlotte','Triad','Greenville SC','Asheville','Triangle NC']];
+const REGIONS = ['all','Charlotte','Triad','Greenville SC','Asheville','Triangle NC'];
 const regionChips = document.getElementById('region-chips');
 REGIONS.forEach(r => {
   const b = document.createElement('button');
   b.className = 'chip' + (r==='all'?' active':'');
   b.dataset.region = r;
-  b.textContent = r === 'all' ? 'All Regions' : r;
+  b.textContent = r === 'all' ? 'All regions' : r;
   b.onclick = () => setRegion(r);
   regionChips.appendChild(b);
 });
+
+// ── Tier chips (built once, shown/hidden by mode) ─────────────────────────────
+function initTierChips(){
+  const container = document.getElementById('tier-chips');
+  Object.entries(TIER_META).filter(([id]) => id !== 'wildcard').forEach(([id, meta]) => {
+    const b = document.createElement('button');
+    b.className = 'tier-chip' + (id === activeTier ? ' active' : '');
+    b.dataset.tier = id;
+    b.textContent  = meta.label;
+    b.onclick = () => setActiveTier(id);
+    container.appendChild(b);
+  });
+}
 
 function setRegion(r){
   activeRegion = r;
@@ -409,21 +433,15 @@ function setTime(t){
   document.querySelectorAll('[data-time]').forEach(el => el.classList.toggle('active', el.dataset.time===t));
   render();
 }
-function toggleFree(){
-  freeOnly = !freeOnly;
-  if(freeOnly) { aiOnly = false; document.getElementById('btn-ai').classList.remove('accent'); }
-  document.getElementById('btn-free').classList.toggle('accent', freeOnly);
-  render();
-}
-function toggleAI(){
-  aiOnly = !aiOnly;
-  if(aiOnly) { freeOnly = false; document.getElementById('btn-free').classList.remove('accent'); }
-  document.getElementById('btn-ai').classList.toggle('accent', aiOnly);
+function setMode(m){
+  activeMode = m;
+  document.querySelectorAll('[data-mode]').forEach(el => el.classList.toggle('active', el.dataset.mode===m));
+  document.getElementById('tier-row').style.display = m === 'ai' ? '' : 'none';
   render();
 }
 function setActiveTier(t){
   activeTier = t;
-  document.querySelectorAll('.ai-tier-tab').forEach(el => el.classList.toggle('active', el.dataset.tier===t));
+  document.querySelectorAll('.tier-chip').forEach(el => el.classList.toggle('active', el.dataset.tier===t));
   render();
 }
 function toggleCat(cat){
@@ -707,56 +725,70 @@ function render(){
   const grid  = document.getElementById('events-grid');
   const empty = document.getElementById('empty-state');
   const count = document.getElementById('results-count');
-  const btnFree = document.getElementById('btn-free');
-  const freeCount = EVENTS_DATA.filter(e => e.price === 'free').length;
-  btnFree.style.display = freeCount === 0 ? 'none' : '';
-
   grid.innerHTML = '';
 
-  // ── AI-only mode ────────────────────────────────────────────────────────────
-  if(aiOnly){
+  const catOK = c => activeCats.size === 0 || (c.category||[]).some(cat => activeCats.has(cat));
+
+  // ── AI mode ────────────────────────────────────────────────────────────────
+  if(activeMode === 'ai'){
     const tierCards = AI_CARDS.filter(c =>
-      c.tier === activeTier &&
-      (activeCats.size === 0 || (c.category||[]).some(cat => activeCats.has(cat)))
+      c.tier === activeTier && catOK(c)
     );
-
-    // Tier selector bar
-    const bar = document.createElement('div');
-    bar.className = 'ai-tier-bar';
-    Object.entries(TIER_META).forEach(([id, meta]) => {
-      const btn = document.createElement('button');
-      btn.className = 'ai-tier-tab' + (id === activeTier ? ' active' : '');
-      btn.dataset.tier = id;
-      btn.textContent  = meta.label;
-      btn.onclick = () => setActiveTier(id);
-      bar.appendChild(btn);
-    });
-    grid.appendChild(bar);
-
     if(tierCards.length === 0){
       grid.style.display='none'; empty.style.display='block';
-      count.textContent = '0 AI suggestions';
+      count.textContent = '0 suggestions';
       return;
     }
     grid.style.display='grid'; empty.style.display='none';
-
-    // Today / Tomorrow sections
     const todayAI    = tierCards.filter(c => c.day === 'today');
     const tomorrowAI = tierCards.filter(c => c.day === 'tomorrow');
     if(todayAI.length){    grid.appendChild(makeAIDivider('Today'));    todayAI.forEach(c => grid.appendChild(buildAICard(c))); }
     if(tomorrowAI.length){ grid.appendChild(makeAIDivider('Tomorrow')); tomorrowAI.forEach(c => grid.appendChild(buildAICard(c))); }
-    count.textContent = `${tierCards.length} AI suggestion${tierCards.length===1?'':'s'}`;
+    count.textContent = `${tierCards.length} suggestion${tierCards.length===1?'':'s'}`;
     return;
   }
 
-  // ── Mixed mode (default) ─────────────────────────────────────────────────────
+  // ── Weird mode ─────────────────────────────────────────────────────────────
+  if(activeMode === 'weird'){
+    const cards = AI_CARDS.filter(c => c.tier === 'wildcard');
+    if(cards.length === 0){
+      grid.style.display='none'; empty.style.display='block';
+      count.textContent = '0 weird picks';
+      return;
+    }
+    grid.style.display='grid'; empty.style.display='none';
+    const t = cards.filter(c => c.day === 'today');
+    const tm = cards.filter(c => c.day === 'tomorrow');
+    if(t.length){  grid.appendChild(makeWildDivider('Today'));    t.forEach(c => grid.appendChild(buildAICard(c))); }
+    if(tm.length){ grid.appendChild(makeWildDivider('Tomorrow')); tm.forEach(c => grid.appendChild(buildAICard(c))); }
+    count.textContent = `${cards.length} weird pick${cards.length===1?'':'s'}`;
+    return;
+  }
+
+  // ── Free mode ──────────────────────────────────────────────────────────────
+  if(activeMode === 'free'){
+    const filtered = filterEvents().filter(e => e.price === 'free');
+    const freeAI   = AI_CARDS.filter(c => c.tier === 'free' && c.day === 'today' && catOK(c));
+    const dated    = filtered.filter(e => e.event_date);
+    const undated  = filtered.filter(e => !e.event_date);
+    if(filtered.length === 0 && freeAI.length === 0){
+      grid.style.display='none'; empty.style.display='block';
+      count.textContent = '0 free events';
+      return;
+    }
+    grid.style.display='grid'; empty.style.display='none';
+    if(dated.length){ grid.appendChild(makeDivider(`${dated.length} free — confirmed date`)); dated.forEach(ev => grid.appendChild(buildCard(ev))); }
+    if(freeAI.length){ grid.appendChild(makeAIDivider('AI Free Picks · Today')); freeAI.forEach(c => grid.appendChild(buildAICard(c))); }
+    if(undated.length){ grid.appendChild(makeDivider(`${undated.length} free — date TBD`)); undated.forEach(ev => grid.appendChild(buildCard(ev))); }
+    count.textContent = `${filtered.length + freeAI.length} free`;
+    return;
+  }
+
+  // ── All / mixed mode ────────────────────────────────────────────────────────
   const filtered = filterEvents();
   const dated    = filtered.filter(e => e.event_date);
   const undated  = filtered.filter(e => !e.event_date);
-
-  // Pick today's AI cards from cheapest available tier + wild card
   const mixTier  = ['free','under20','under50','splurge'].find(t => AI_CARDS.some(c => c.tier === t)) || 'free';
-  const catOK    = c => activeCats.size === 0 || (c.category||[]).some(cat => activeCats.has(cat));
   const mixAI    = AI_CARDS.filter(c => c.tier === mixTier && c.day === 'today' && catOK(c));
   const mixWild  = AI_CARDS.filter(c => c.tier === 'wildcard' && c.day === 'today' && catOK(c));
 
@@ -767,32 +799,24 @@ function render(){
   }
   grid.style.display='grid'; empty.style.display='none';
 
-  // 1 — Confirmed dated events (highest priority)
   if(dated.length){
     grid.appendChild(makeDivider(`${dated.length} confirmed date${dated.length===1?'':'s'}`));
     dated.forEach(ev => grid.appendChild(buildCard(ev)));
   }
-
-  // 2 — AI picks for today
   if(mixAI.length){
     grid.appendChild(makeAIDivider('AI Picks · Today'));
     mixAI.forEach(c => grid.appendChild(buildAICard(c)));
   }
-
-  // 3 — Wild card: weird & novel
   if(mixWild.length){
     grid.appendChild(makeWildDivider('Wild Card · Weird &amp; Novel'));
     mixWild.forEach(c => grid.appendChild(buildAICard(c)));
   }
-
-  // 4 — Undated articles (date TBD)
   if(undated.length){
     grid.appendChild(makeDivider(`${undated.length} article${undated.length===1?'':'s'} — date TBD`));
     undated.forEach(ev => grid.appendChild(buildCard(ev)));
   }
-
   const aiCount = mixAI.length + mixWild.length;
-  count.textContent = `${filtered.length} event${filtered.length===1?'':'s'} + ${aiCount} AI`;
+  count.textContent = `${filtered.length} event${filtered.length===1?'':'s'} · ${aiCount} AI`;
 }
 
 // ── Stats ─────────────────────────────────────────────────────────────────────
@@ -834,6 +858,7 @@ function initRunCost(){
 document.addEventListener('keydown', e => { if(e.key === 'Escape') closeCard(); });
 initStats();
 initRunCost();
+initTierChips();
 initCategoryChips();
 render();
 </script>
