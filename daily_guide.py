@@ -10,6 +10,7 @@ Baseline: Evergreen events (Zero API cost)
 """
 
 import json, os, re, subprocess, sys, time
+from json_repair import repair_json
 from datetime import date, timedelta
 from pathlib import Path
 from dotenv import load_dotenv
@@ -122,17 +123,22 @@ Remember to return a minified JSON array where each object has a 'tier' field ma
 
 # ── JSON extractor ─────────────────────────────────────────────────────────────
 def extract_json(text: str) -> list:
-    """Extract a JSON array from model output, handling fenced code blocks."""
+    """Extract a JSON array from model output, repairing malformed LLM output."""
     text = re.sub(r"^```(?:json)?\s*", "", text.strip(), flags=re.MULTILINE)
     text = re.sub(r"\s*```$", "", text.strip(), flags=re.MULTILINE)
     text = text.strip()
 
     start = text.find("[")
-    end   = text.rfind("]")
-    if start == -1 or end == -1:
+    if start == -1:
         raise ValueError("No JSON array found in response")
-    raw = text[start:end+1]
-    data = json.loads(raw)
+    raw = text[start:]
+
+    try:
+        data = json.loads(raw)
+    except json.JSONDecodeError:
+        print("    ⚠ Malformed JSON — attempting repair…", flush=True)
+        data = json.loads(repair_json(raw))
+
     if not isinstance(data, list):
         raise ValueError("Expected JSON array at top level")
     return data
