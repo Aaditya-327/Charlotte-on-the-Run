@@ -401,6 +401,13 @@ def main():
               f"(today={today_n}, tomorrow={tomorrow_n})"
               + (f" ⚠ {r['error'][:60]}" if r.get("error") else ""))
 
+    print("\nEnriching Charlotte on the Cheap…")
+    try:
+        import enrich_cotc
+        enrich_cotc.main()
+    except Exception as e:
+        print(f"  enrich_cotc error: {e}", file=sys.stderr)
+
     print("\nExporting events_data.js…")
     export_events_data()
 
