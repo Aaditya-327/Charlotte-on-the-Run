@@ -135,6 +135,19 @@ main{flex:1;max-width:1100px;margin:0 auto;width:100%;padding:32px 24px 64px}
 .badge-conf-high{background:var(--info-50);color:var(--info-500)}
 .badge-conf-low{background:var(--paper-2);color:var(--ink-3);border-color:var(--border-faint)}
 .badge-dist{background:var(--paper-2);color:var(--ink-3);border-color:var(--border-faint);font-family:var(--font-mono)}
+.badge-ai{background:rgba(139,92,246,.18);color:var(--rust-600);border-color:rgba(139,92,246,.3)}
+
+/* AI card variant */
+.event-card.ai-card{border-color:rgba(139,92,246,.2)}
+.event-card.ai-card::before{background:linear-gradient(90deg,var(--rust-500),#a78bfa,transparent)}
+.event-card.ai-card:hover{border-color:rgba(139,92,246,.5);box-shadow:0 8px 24px rgba(139,92,246,.15)}
+.ai-tier-bar{grid-column:1/-1;display:flex;align-items:center;gap:8px;padding:4px 0 2px;flex-wrap:wrap}
+.ai-tier-tab{
+  font-size:11px;font-weight:500;padding:4px 12px;border-radius:999px;
+  border:1px solid var(--border-soft);background:var(--paper-2);color:var(--ink-2);
+  cursor:pointer;transition:all var(--dur-fast) var(--ease-out);
+}
+.ai-tier-tab.active{background:var(--rust-500);color:#fff;border-color:var(--rust-500)}
 
 .card-title{font-size:14px;font-weight:600;color:var(--ink-0);line-height:1.35;letter-spacing:-.01em}
 .card-desc{font-size:12px;color:var(--ink-2);line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
@@ -210,6 +223,10 @@ footer{border-top:1px solid var(--border-faint);padding:20px 24px;text-align:cen
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
         Free only
       </button>
+      <button class="btn" id="btn-ai" onclick="toggleAI()">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L9.5 8.5 3 9.27l5 4.87L6.82 21 12 17.77 17.18 21 16 14.14l5-4.87-6.5-.77L12 2z"/></svg>
+        AI Guide
+      </button>
       <span class="results-count" id="results-count"></span>
     </div>
 
@@ -243,11 +260,14 @@ footer{border-top:1px solid var(--border-faint);padding:20px 24px;text-align:cen
 <footer id="footer">Charlotte On The Run · Built with 20 curated RSS feeds · <a href="https://github.com/Aaditya-327/Charlotte-on-the-Run" style="color:var(--rust-500);text-decoration:none">GitHub</a></footer>
 
 <script src="events_data.js"></script>
+<script src="daily_guide_data.js"></script>
 <script>
 // ── State ─────────────────────────────────────────────────────────────────────
 let activeRegion = 'all';
 let activeTime   = 'all';
 let freeOnly     = false;
+let aiOnly       = false;
+let activeTier   = 'free';
 let searchQ      = '';
 
 const TODAY = new Date();
@@ -256,18 +276,74 @@ TODAY.setHours(0,0,0,0);
 function isoToDate(s){ if(!s) return null; const [y,m,d]=s.split('-').map(Number); return new Date(y,m-1,d); }
 
 function getWeekend(){
-  const wd = TODAY.getDay(); // 0=Sun,6=Sat
+  const wd = TODAY.getDay();
   const fri = new Date(TODAY); fri.setDate(TODAY.getDate() + ((5-wd+7)%7 || 7));
   const sun = new Date(fri); sun.setDate(fri.getDate()+2);
-  // if today is already fri/sat/sun, start from today
   const start = (wd>=5||wd===0) ? TODAY : fri;
   return {start, end: sun};
 }
+function getWeekEnd(){ const d = new Date(TODAY); d.setDate(TODAY.getDate()+6); return d; }
 
-function getWeekEnd(){
-  const d = new Date(TODAY); d.setDate(TODAY.getDate()+6);
-  return d;
+// ── Parse AI guide into cards ─────────────────────────────────────────────────
+const TIER_META = {
+  free:    { label: '🆓 Free',      color: 'var(--good-500)' },
+  under20: { label: '💵 Under $20', color: 'var(--warn-500)' },
+  under50: { label: '🍸 Under $50', color: 'var(--rust-600)' },
+  splurge: { label: '🌟 Splurge',   color: '#f472b6' },
+};
+
+function parseGuideCards() {
+  if(typeof DAILY_GUIDE_DATA === 'undefined') return [];
+  const cards = [];
+  const todayStr    = DAILY_GUIDE_DATA.today    || '';
+  const tomorrowStr = DAILY_GUIDE_DATA.tomorrow || '';
+
+  for(const tier of DAILY_GUIDE_DATA.tiers) {
+    if(!tier.content) continue;
+    // Split on ### headings (Morning / Afternoon / Evening / Day headers)
+    const sections = tier.content.split(/\n(?=###\s)/);
+    for(const section of sections) {
+      const lines = section.trim().split('\n');
+      const heading = lines[0].replace(/^#+\s*/, '').trim();
+      if(!heading || heading.length < 3) continue;
+      const body = lines.slice(1).join('\n').trim();
+      if(body.length < 30) continue;
+
+      // Determine day from context in heading or surrounding text
+      const lh = heading.toLowerCase();
+      let day = 'today';
+      if(lh.includes('tomorrow') ||
+         (tomorrowStr && (section.includes(tomorrowStr.split(',')[0]) ||
+          lh.includes('wednesday') || lh.includes('thursday') || lh.includes('friday') ||
+          lh.includes('saturday') || lh.includes('sunday') || lh.includes('monday') ||
+          lh.includes('tuesday') && !section.includes(todayStr.split(',')[0])))) {
+        day = 'tomorrow';
+      }
+
+      // Clean up markdown bold/headers from body
+      const cleanBody = body
+        .replace(/\*\*(.*?)\*\*/g, '$1')
+        .replace(/^#+\s*/gm, '')
+        .replace(/^[\*\-]\s+/gm, '')
+        .split('\n').filter(l => l.trim()).slice(0, 4).join(' ');
+
+      cards.push({
+        _ai: true,
+        tier: tier.id,
+        tier_label: TIER_META[tier.id]?.label || tier.label,
+        tier_color: TIER_META[tier.id]?.color || 'var(--rust-500)',
+        title: heading,
+        description: cleanBody,
+        day,
+        source: 'AI Guide',
+        link: null,
+      });
+    }
+  }
+  return cards;
 }
+
+const AI_CARDS = parseGuideCards();
 
 // ── Region chips ──────────────────────────────────────────────────────────────
 const REGIONS = ['all', ...['Charlotte','Triad','Greenville SC','Asheville','Triangle NC']];
@@ -293,7 +369,19 @@ function setTime(t){
 }
 function toggleFree(){
   freeOnly = !freeOnly;
+  if(freeOnly) { aiOnly = false; document.getElementById('btn-ai').classList.remove('accent'); }
   document.getElementById('btn-free').classList.toggle('accent', freeOnly);
+  render();
+}
+function toggleAI(){
+  aiOnly = !aiOnly;
+  if(aiOnly) { freeOnly = false; document.getElementById('btn-free').classList.remove('accent'); }
+  document.getElementById('btn-ai').classList.toggle('accent', aiOnly);
+  render();
+}
+function setActiveTier(t){
+  activeTier = t;
+  document.querySelectorAll('.ai-tier-tab').forEach(el => el.classList.toggle('active', el.dataset.tier===t));
   render();
 }
 
@@ -360,6 +448,7 @@ function cleanDesc(s){
 }
 
 function buildCard(ev){
+  if(ev._ai) return buildAICard(ev);
   const card = document.createElement('a');
   card.className = 'event-card';
   card.href = ev.link || '#';
@@ -398,6 +487,31 @@ function buildCard(ev){
   return card;
 }
 
+function buildAICard(ev){
+  const card = document.createElement('div');
+  card.className = 'event-card ai-card';
+  card.style.cursor = 'default';
+  const dayLabel = ev.day === 'today' ? 'Today' : 'Tomorrow';
+  card.innerHTML = `
+    <div class="card-top">
+      <div class="card-source">AI Guide</div>
+      <div class="card-badges">
+        <span class="badge badge-ai">✦ AI</span>
+        <span class="badge" style="background:var(--paper-2);color:${ev.tier_color};border-color:var(--border-soft)">${ev.tier_label}</span>
+      </div>
+    </div>
+    <div class="card-title">${ev.title}</div>
+    <div class="card-desc" style="-webkit-line-clamp:3">${ev.description}</div>
+    <div class="card-footer">
+      <div class="card-date no-date">
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        ${dayLabel}
+      </div>
+    </div>
+  `;
+  return card;
+}
+
 // ── Section divider helper ────────────────────────────────────────────────────
 function makeDivider(label){
   const d = document.createElement('div');
@@ -408,34 +522,87 @@ function makeDivider(label){
 
 // ── Render ────────────────────────────────────────────────────────────────────
 function render(){
-  const filtered = filterEvents();
   const grid  = document.getElementById('events-grid');
   const empty = document.getElementById('empty-state');
   const count = document.getElementById('results-count');
   const btnFree = document.getElementById('btn-free');
-
-  const dated   = filtered.filter(e => e.event_date);
-  const undated = filtered.filter(e => !e.event_date);
   const freeCount = EVENTS_DATA.filter(e => e.price === 'free').length;
   btnFree.style.display = freeCount === 0 ? 'none' : '';
 
   grid.innerHTML = '';
-  if(filtered.length === 0){
-    grid.style.display='none';
-    empty.style.display='block';
-  } else {
-    grid.style.display='grid';
-    empty.style.display='none';
-    if(dated.length){
-      grid.appendChild(makeDivider(`${dated.length} confirmed date${dated.length===1?'':'s'}`));
-      dated.forEach(ev => grid.appendChild(buildCard(ev)));
+
+  // ── AI-only mode ────────────────────────────────────────────────────────────
+  if(aiOnly){
+    const tierCards = AI_CARDS.filter(c => c.tier === activeTier);
+
+    // Tier selector bar
+    const bar = document.createElement('div');
+    bar.className = 'ai-tier-bar';
+    Object.entries(TIER_META).forEach(([id, meta]) => {
+      const btn = document.createElement('button');
+      btn.className = 'ai-tier-tab' + (id === activeTier ? ' active' : '');
+      btn.dataset.tier = id;
+      btn.textContent  = meta.label;
+      btn.onclick = () => setActiveTier(id);
+      bar.appendChild(btn);
+    });
+    grid.appendChild(bar);
+
+    if(tierCards.length === 0){
+      grid.style.display='none'; empty.style.display='block';
+      count.textContent = '0 AI suggestions';
+      return;
     }
-    if(undated.length){
-      grid.appendChild(makeDivider(`${undated.length} article${undated.length===1?'':'s'} — date TBD`));
-      undated.forEach(ev => grid.appendChild(buildCard(ev)));
-    }
+    grid.style.display='grid'; empty.style.display='none';
+
+    // Today / Tomorrow sections
+    const todayAI    = tierCards.filter(c => c.day === 'today');
+    const tomorrowAI = tierCards.filter(c => c.day === 'tomorrow');
+    if(todayAI.length){    grid.appendChild(makeDivider('Today'));    todayAI.forEach(c => grid.appendChild(buildAICard(c))); }
+    if(tomorrowAI.length){ grid.appendChild(makeDivider('Tomorrow')); tomorrowAI.forEach(c => grid.appendChild(buildAICard(c))); }
+    count.textContent = `${tierCards.length} AI suggestion${tierCards.length===1?'':'s'}`;
+    return;
   }
-  count.textContent = `${filtered.length} event${filtered.length===1?'':'s'}`;
+
+  // ── Mixed mode (default) ─────────────────────────────────────────────────────
+  const filtered = filterEvents();
+  const dated    = filtered.filter(e => e.event_date);
+  const undated  = filtered.filter(e => !e.event_date);
+
+  // Pick AI cards for today (cheapest tier with content)
+  const mixTier    = ['free','under20','under50','splurge'].find(t => AI_CARDS.some(c => c.tier === t)) || 'free';
+  const mixAI      = AI_CARDS.filter(c => c.tier === mixTier && c.day === 'today').slice(0, 3);
+
+  if(filtered.length === 0 && mixAI.length === 0){
+    grid.style.display='none'; empty.style.display='block';
+    count.textContent = '0 events';
+    return;
+  }
+  grid.style.display='grid'; empty.style.display='none';
+
+  if(dated.length){
+    grid.appendChild(makeDivider(`${dated.length} confirmed date${dated.length===1?'':'s'}`));
+    dated.forEach(ev => grid.appendChild(buildCard(ev)));
+  }
+  if(undated.length){
+    grid.appendChild(makeDivider(`${undated.length} article${undated.length===1?'':'s'} — date TBD`));
+    // Interleave AI card every 4 RSS cards
+    undated.forEach((ev, i) => {
+      if(i > 0 && i % 4 === 0 && mixAI[Math.floor(i/4)-1]){
+        grid.appendChild(buildAICard(mixAI[Math.floor(i/4)-1]));
+      }
+      grid.appendChild(buildCard(ev));
+    });
+    // Append remaining AI cards at the end
+    const used = Math.floor(undated.length / 4);
+    mixAI.slice(used).forEach(c => grid.appendChild(buildAICard(c)));
+  } else if(mixAI.length){
+    grid.appendChild(makeDivider('AI suggestions for today'));
+    mixAI.forEach(c => grid.appendChild(buildAICard(c)));
+  }
+
+  const total = filtered.length + mixAI.length;
+  count.textContent = `${filtered.length} event${filtered.length===1?'':'s'} + ${mixAI.length} AI`;
 }
 
 // ── Stats ─────────────────────────────────────────────────────────────────────

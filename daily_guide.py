@@ -97,7 +97,7 @@ def fetch_tier(client: genai.Client, tier_id: str, today: str, tomorrow: str,
     for attempt in range(retries):
         try:
             response = client.models.generate_content(
-                model="gemini-2.0-flash",
+                model="gemini-2.5-flash",
                 contents=prompt,
                 config=types.GenerateContentConfig(
                     tools=[types.Tool(google_search=types.GoogleSearch())],
@@ -223,7 +223,15 @@ def main():
     OUT_FILE.parent.mkdir(exist_ok=True)
     with open(OUT_FILE, "w") as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
-    print(f"\nSaved → {OUT_FILE}")
+    print(f"Saved → {OUT_FILE}")
+
+    # Also write JS module so the static site can load it without CORS
+    js_file = OUT_FILE.parent / "daily_guide_data.js"
+    with open(js_file, "w") as f:
+        f.write("const DAILY_GUIDE_DATA = ")
+        json.dump(output, f, ensure_ascii=False)
+        f.write(";\n")
+    print(f"Saved → {js_file}")
 
     print("\nExporting events_data.js…")
     export_events_data()
