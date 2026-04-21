@@ -138,9 +138,9 @@ main{flex:1;max-width:1100px;margin:0 auto;width:100%;padding:32px 24px 64px}
 .badge-ai{background:rgba(139,92,246,.18);color:var(--rust-600);border-color:rgba(139,92,246,.3)}
 
 /* AI card variant */
-.event-card.ai-card{border-color:rgba(139,92,246,.2)}
-.event-card.ai-card::before{background:linear-gradient(90deg,var(--rust-500),#a78bfa,transparent)}
-.event-card.ai-card:hover{border-color:rgba(139,92,246,.5);box-shadow:0 8px 24px rgba(139,92,246,.15)}
+.event-card.ai-card{border-color:rgba(139,92,246,.3);box-shadow:0 0 14px rgba(139,92,246,.07)}
+.event-card.ai-card::before{background:linear-gradient(90deg,var(--rust-500),#a78bfa,transparent);opacity:.5}
+.event-card.ai-card:hover{border-color:rgba(139,92,246,.6);box-shadow:0 8px 28px rgba(139,92,246,.22);transform:translateY(-1px)}
 .ai-tier-bar{grid-column:1/-1;display:flex;align-items:center;gap:8px;padding:4px 0 2px;flex-wrap:wrap}
 .ai-tier-tab{
   font-size:11px;font-weight:500;padding:4px 12px;border-radius:999px;
@@ -515,11 +515,23 @@ function buildAICard(ev){
   return card;
 }
 
-// ── Section divider helper ────────────────────────────────────────────────────
+// ── Section divider helpers ───────────────────────────────────────────────────
 function makeDivider(label){
   const d = document.createElement('div');
   d.style.cssText = 'grid-column:1/-1;display:flex;align-items:center;gap:10px;padding:4px 0 2px';
   d.innerHTML = `<span style="font-size:10px;font-weight:500;color:var(--ink-3);text-transform:uppercase;letter-spacing:.08em;font-family:var(--font-mono);white-space:nowrap">${label}</span><span style="flex:1;height:1px;background:var(--border-faint)"></span>`;
+  return d;
+}
+
+function makeAIDivider(label){
+  const d = document.createElement('div');
+  d.style.cssText = 'grid-column:1/-1;display:flex;align-items:center;gap:10px;padding:6px 0 4px';
+  d.innerHTML = `
+    <span style="font-size:10px;font-weight:600;color:var(--rust-600);text-transform:uppercase;letter-spacing:.08em;font-family:var(--font-mono);white-space:nowrap;display:flex;align-items:center;gap:5px">
+      <span style="font-size:12px">✦</span>${label}
+    </span>
+    <span style="flex:1;height:1px;background:linear-gradient(90deg,rgba(139,92,246,.35),transparent)"></span>
+  `;
   return d;
 }
 
@@ -561,8 +573,8 @@ function render(){
     // Today / Tomorrow sections
     const todayAI    = tierCards.filter(c => c.day === 'today');
     const tomorrowAI = tierCards.filter(c => c.day === 'tomorrow');
-    if(todayAI.length){    grid.appendChild(makeDivider('Today'));    todayAI.forEach(c => grid.appendChild(buildAICard(c))); }
-    if(tomorrowAI.length){ grid.appendChild(makeDivider('Tomorrow')); tomorrowAI.forEach(c => grid.appendChild(buildAICard(c))); }
+    if(todayAI.length){    grid.appendChild(makeAIDivider('Today'));    todayAI.forEach(c => grid.appendChild(buildAICard(c))); }
+    if(tomorrowAI.length){ grid.appendChild(makeAIDivider('Tomorrow')); tomorrowAI.forEach(c => grid.appendChild(buildAICard(c))); }
     count.textContent = `${tierCards.length} AI suggestion${tierCards.length===1?'':'s'}`;
     return;
   }
@@ -572,9 +584,9 @@ function render(){
   const dated    = filtered.filter(e => e.event_date);
   const undated  = filtered.filter(e => !e.event_date);
 
-  // Pick AI cards for today (cheapest tier with content)
-  const mixTier    = ['free','under20','under50','splurge'].find(t => AI_CARDS.some(c => c.tier === t)) || 'free';
-  const mixAI      = AI_CARDS.filter(c => c.tier === mixTier && c.day === 'today').slice(0, 3);
+  // Pick today's AI cards from cheapest available tier
+  const mixTier = ['free','under20','under50','splurge'].find(t => AI_CARDS.some(c => c.tier === t)) || 'free';
+  const mixAI   = AI_CARDS.filter(c => c.tier === mixTier && c.day === 'today');
 
   if(filtered.length === 0 && mixAI.length === 0){
     grid.style.display='none'; empty.style.display='block';
@@ -583,28 +595,24 @@ function render(){
   }
   grid.style.display='grid'; empty.style.display='none';
 
+  // 1 — Confirmed dated events (highest priority)
   if(dated.length){
     grid.appendChild(makeDivider(`${dated.length} confirmed date${dated.length===1?'':'s'}`));
     dated.forEach(ev => grid.appendChild(buildCard(ev)));
   }
-  if(undated.length){
-    grid.appendChild(makeDivider(`${undated.length} article${undated.length===1?'':'s'} — date TBD`));
-    // Interleave AI card every 4 RSS cards
-    undated.forEach((ev, i) => {
-      if(i > 0 && i % 4 === 0 && mixAI[Math.floor(i/4)-1]){
-        grid.appendChild(buildAICard(mixAI[Math.floor(i/4)-1]));
-      }
-      grid.appendChild(buildCard(ev));
-    });
-    // Append remaining AI cards at the end
-    const used = Math.floor(undated.length / 4);
-    mixAI.slice(used).forEach(c => grid.appendChild(buildAICard(c)));
-  } else if(mixAI.length){
-    grid.appendChild(makeDivider('AI suggestions for today'));
+
+  // 2 — AI picks for today (above TBD noise)
+  if(mixAI.length){
+    grid.appendChild(makeAIDivider('AI Picks · Today'));
     mixAI.forEach(c => grid.appendChild(buildAICard(c)));
   }
 
-  const total = filtered.length + mixAI.length;
+  // 3 — Undated articles (date TBD)
+  if(undated.length){
+    grid.appendChild(makeDivider(`${undated.length} article${undated.length===1?'':'s'} — date TBD`));
+    undated.forEach(ev => grid.appendChild(buildCard(ev)));
+  }
+
   count.textContent = `${filtered.length} event${filtered.length===1?'':'s'} + ${mixAI.length} AI`;
 }
 
