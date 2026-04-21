@@ -39,20 +39,6 @@
           "tier": "baseline"
         },
         {
-          "title": "Trivia Night at Legion Brewing",
-          "description": "Join the lively Tuesday trivia crowd. Bring some friends, grab a Juicy Jay IPA, and test your random knowledge.",
-          "period": "evening",
-          "location": "Legion Brewing, Plaza Midwood",
-          "cost": "Free (drinks extra)",
-          "tags": [
-            "drinks",
-            "nightlife",
-            "social"
-          ],
-          "day": "today",
-          "tier": "baseline"
-        },
-        {
           "title": "Late Night Slice at Benny Pennello's",
           "description": "End the night with a massive, foldable slice of pizza. Open late and always hits the spot.",
           "period": "night",
@@ -120,57 +106,8 @@
           "tier": "baseline"
         }
       ],
-      "sources": [
-        {
-          "title": "fun4charlottekids.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwpdhji3uNPA4Fg2V8iCbRqvkC6Og1trB1Ywef8LUnt__zswrbmZKnxMaYhXTs8q60QMjtA96zYEiUiHcqptT3Sd9RtGElcM89tvQ7stCWy-f1l9sL8LImocBz1jM20jNv8QJlOB8vBVunAZ6eFw2bgf8="
-        },
-        {
-          "title": "clgbtcc.org",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFGavW9EA0QWhnI3azKJeMcZLznEcqlbeYDBVXqQ7YPXwjcb-rjnG2JQkzpQ3wQI_zS5tmW0I8DjcRWbHr0MkkiJavfN8759JMjoQRDGZVkLyuLFOqMENMGIGpbkGbPNKMqP-EgcTlwXeVoshKRqsuSksLyKaOv_JSg4F0u5wT5PxD14KU5MLgf2md93lJKO8aJrX2JuqINKExp6NRrm6DgekhAoTR7dKqeO7Dw0hZxDKVM80E="
-        },
-        {
-          "title": "cardinalpine.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpOztA3zHeiyI3iWTU_q3Fk8ywfLs8WIgcFPbJqmV6snJnZ72vevwAAf05_KAX1TTHJJL1utCNsYsTIfhODP9tBxq_7WSSk9ReZvwc-PWl4HetqRRuH6tdBsIw10Qi8qZdlek4wzCrZX1qV7ToK_XVO67VHaizgLx4T9OSEYYa0wrXKOQEkzui_3WH"
-        },
-        {
-          "title": "charlottesgotalot.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGKl50Q5kmpH_UxtcuJ_17bryjS0_7AeGftfIQcpeSmW2uIugaG1J7fbFqD8dHswvPn0yKrpOFiNy482m_AdxmM9NQ--GvBErtIN6_Jkogi7Ngkw0W71pNWjnVMhpGnWZ-WDtRJshUR8QRE6rm9oG9p5ZHmJ4qpcq2x7zIKzmn7FcflJIfh8UEY6Qc0Ugv3rDBGDTHNmmrTpD1MFg=="
-        },
-        {
-          "title": "meetup.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvCDaEi_jANOXzqWx0d5MAUVywFXJWHYiXW9vExZ32kaRepT6mtzTOo45a1QFD1nmi5NuuupJLvLRYUkKj0V6clflcha7dupG-fDXtCKR81f7FXD_ziGpBJ3r3YrSm-FNxxmpRaUvzdxo="
-        },
-        {
-          "title": "charlotteonthecheap.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFLgn5zGxex_K59rWR9NCxj5O7OWCoJJ7xgLOHq6sPT-_ao4FyyC9Xs1rIy13gvsdeERMy0MoYnk47lqyiapr_TR5t8BmpvU_gD2HedUxNkZOPx8Aj4pNcUraXTSws4hiHku_6rEhA="
-        },
-        {
-          "title": "charlotteonthecheap.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFq-AVXplc79773HQBkV-IP2Q7d081DeGTYUeDenXIGVXefWoUJTvljVUB-JQw5UaPaL8t6SsEmwUwunjpeN1YpUJXr7raAbm106mgZ8ebIiLIUaDpDssC1lh-PG88BSVCflFJuugdYhKgGuHMKDQ=="
-        },
-        {
-          "title": "charlottenc.gov",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGcqEhibi8Jfi_wCrT364DjddGKZWsnL146wMz-iOm--xuJs4TTqlSjMXHGBF9hQLc7BDVdCXUErir0nsQ569dy5oL3Of1C37lqqGhWP_y_7ssWq-WPXvzXyF1AsfdqZaKJ17AQthlVmKjB33nCYzi9hvFg6zOE"
-        },
-        {
-          "title": "axios.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFmZB6TfA1slZuIM6yg5vnisOTelzhrLqnhDSyJYXG6hwXxcdXbptmBhQwr36MWCc0K1mjWuCL5TrlnvBTHDbh52W1scak_LRzLY_1h4ubL9nZcekXPBUFDi_ZuYC90"
-        },
-        {
-          "title": "charlottesgotalot.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGqbLs4YdQcVi7hYvNtNXG7X2HgHVGDxh5wA4-fXI65f4tUd0TiSZ_A_tP8BzjHPiLcht2zj1p1Kog03tywrZok3oE_-GsNf8m93B07YR1v9NMfgVRSNzOdPqkV6BSucFVEYLE="
-        },
-        {
-          "title": "concerts50.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGXojxmV50Or292XHG8Gkv7FXWMKpUuzL9LCI4GjpKy8YRfmHzWXb_z8upYco0BrJUY4ycd9iTnzfSNakZIUnT4HJp8WPC7msw9YRoWb94ZfTLwmtEoPZAODCOWzEyw6i5dxCBOWsZF8_xJunP8gPMT4t5gSAsW_nSSuDaFwsI="
-        },
-        {
-          "title": "chaserscharlotte.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHdwnmOR2OsEu7NLemhz6MWfmUFko-_PH0M1lOeFZakWVoOQOIbuGKjVMNsx8rMc-LH-IPZcf9lNx_XlmuO5IPyLpk5kiCfma6AZGiNTCUrvezLJOTbGiJv1GjpSA=="
-        }
-      ],
-      "error": "Premium Events: Expecting ',' delimiter: line 1 column 4923 (char 4922)"
+      "sources": [],
+      "error": null
     },
     {
       "id": "free",
@@ -178,8 +115,23 @@
       "emoji": "🆓",
       "activities": [
         {
-          "title": "Freedom Park Morning Stroll",
-          "description": "Start your day with a refreshing walk or run through Freedom Park, a beautiful urban oasis. It's a great spot for people-watching and enjoying nature, often frequented by diverse crowds.",
+          "title": "Little Sugar Creek Greenway Walk",
+          "description": "Enjoy a peaceful morning stroll or run along the scenic Little Sugar Creek Greenway, offering a refreshing start to your day. It's a great way to get some fresh air and exercise in the heart of the city.",
+          "day": "today",
+          "period": "morning",
+          "location": "Little Sugar Creek Greenway, Midtown",
+          "cost": "Free",
+          "tags": [
+            "outdoor",
+            "fitness",
+            "nature",
+            "queer-friendly"
+          ],
+          "tier": "free"
+        },
+        {
+          "title": "Freedom Park Exploration",
+          "description": "Wander through Freedom Park, one of Charlotte's most beloved green spaces. You can walk around the pond, enjoy the public art, or simply relax on a bench for a serene morning.",
           "day": "today",
           "period": "morning",
           "location": "Freedom Park, Myers Park",
@@ -187,31 +139,88 @@
           "tags": [
             "outdoor",
             "nature",
-            "queer-friendly",
-            "fitness"
+            "queer-friendly"
           ],
           "tier": "free"
         },
         {
-          "title": "Charlotte Pride In Aging Professionals",
-          "description": "Attend this networking event for professionals supporting the LGBTQ+ elder community. It's a great opportunity to connect and learn, happening every 3rd Tuesday.",
-          "day": "today",
-          "period": "morning",
-          "location": "Various (check CLGBTCC for specific venue)",
-          "cost": "Free",
-          "tags": [
-            "culture",
-            "community",
-            "queer-friendly",
-            "networking"
-          ],
-          "tier": "free"
-        },
-        {
-          "title": "Camp North End Art Walk",
-          "description": "Explore the vibrant murals and art installations at Camp North End. This creative hub is always evolving and offers plenty of visual stimulation in a queer-friendly environment.",
+          "title": "McColl Center for Art + Innovation",
+          "description": "Explore the studios of resident artists and view current exhibitions at the McColl Center. It's a fantastic opportunity to engage with contemporary art and often free to browse.",
           "day": "today",
           "period": "afternoon",
+          "location": "McColl Center for Art + Innovation, Uptown",
+          "cost": "Free",
+          "tags": [
+            "art",
+            "culture",
+            "queer-friendly"
+          ],
+          "tier": "free"
+        },
+        {
+          "title": "Optimist Hall Window Shopping",
+          "description": "Take a leisurely walk through Optimist Hall, soaking in the vibrant atmosphere and checking out the various vendors. It's a great spot for people-watching and discovering new local businesses without spending a dime.",
+          "day": "today",
+          "period": "afternoon",
+          "location": "Optimist Hall, NoDa",
+          "cost": "Free",
+          "tags": [
+            "food",
+            "shopping",
+            "queer-friendly"
+          ],
+          "tier": "free"
+        },
+        {
+          "title": "Plaza Midwood Mural Tour",
+          "description": "Discover the colorful street art and murals scattered throughout the eclectic Plaza Midwood neighborhood. It's a self-guided tour that offers great photo opportunities and a feel for the local culture.",
+          "day": "today",
+          "period": "evening",
+          "location": "Plaza Midwood, Plaza Midwood",
+          "cost": "Free",
+          "tags": [
+            "art",
+            "culture",
+            "outdoor",
+            "queer-friendly"
+          ],
+          "tier": "free"
+        },
+        {
+          "title": "NoDa Arts District Stroll",
+          "description": "Wander through the NoDa Arts District, admiring the unique shops, galleries, and street art. Many galleries are free to enter, and the neighborhood itself is a vibrant, queer-friendly space.",
+          "day": "today",
+          "period": "evening",
+          "location": "NoDa Arts District, NoDa",
+          "cost": "Free",
+          "tags": [
+            "art",
+            "culture",
+            "shopping",
+            "queer-friendly"
+          ],
+          "tier": "free"
+        },
+        {
+          "title": "Sidelines Sports Bar (No Cover)",
+          "description": "Head to Sidelines Sports Bar, a popular queer-friendly spot, for a relaxed evening. There's typically no cover charge, making it a great place to hang out and socialize without breaking the bank.",
+          "day": "today",
+          "period": "night",
+          "location": "Sidelines Sports Bar, South End",
+          "cost": "Free",
+          "tags": [
+            "drinks",
+            "nightlife",
+            "queer-friendly",
+            "sports"
+          ],
+          "tier": "free"
+        },
+        {
+          "title": "Camp North End Exploration",
+          "description": "Experience the unique industrial-chic vibe of Camp North End. Evenings are great for walking around, seeing the public art installations, and enjoying the open-air atmosphere.",
+          "day": "today",
+          "period": "night",
           "location": "Camp North End, North End",
           "cost": "Free",
           "tags": [
@@ -223,109 +232,84 @@
           "tier": "free"
         },
         {
-          "title": "Plaza Midwood Window Shopping",
-          "description": "Take a leisurely stroll through Plaza Midwood, known for its eclectic shops, vintage boutiques, and vibrant, inclusive atmosphere. Discover unique finds and soak in the neighborhood's charm.",
-          "day": "today",
-          "period": "afternoon",
-          "location": "Plaza Midwood",
-          "cost": "Free",
-          "tags": [
-            "shopping",
-            "culture",
-            "queer-friendly"
-          ],
-          "tier": "free"
-        },
-        {
-          "title": "Ballantyne Evening Hike",
-          "description": "Join a moderate 5-mile evening hike in the Ballantyne area. It's a great way to get some exercise and enjoy the outdoors as the day winds down.",
-          "day": "today",
-          "period": "evening",
-          "location": "Ballantyne's Backyard, Ballantyne",
-          "cost": "Free",
-          "tags": [
-            "outdoor",
-            "fitness",
-            "nature"
-          ],
-          "tier": "free"
-        },
-        {
-          "title": "Comedy Open Mic Night",
-          "description": "Catch some laughs at a free comedy open mic night. It's a chance to see local talent and enjoy a relaxed evening out.",
-          "day": "today",
-          "period": "evening",
-          "location": "Starlight on 22nd, NoDa",
-          "cost": "Free",
-          "tags": [
-            "music",
-            "nightlife",
-            "queer-friendly"
-          ],
-          "tier": "free"
-        },
-        {
-          "title": "Pub Trivia at Petty Thieves Brewing Co.",
-          "description": "Test your knowledge at a lively pub trivia night. Grab a seat early, enjoy the atmosphere, and compete for bragging rights.",
-          "day": "today",
-          "period": "night",
-          "location": "Petty Thieves Brewing Co., NoDa",
-          "cost": "Free",
-          "tags": [
-            "drinks",
-            "nightlife",
-            "queer-friendly"
-          ],
-          "tier": "free"
-        },
-        {
-          "title": "UNC Charlotte Botanical Gardens Visit",
-          "description": "Wander through the beautiful and diverse collections at the UNC Charlotte Botanical Gardens. Admission is always free, offering a peaceful escape into nature.",
+          "title": "Romare Bearden Park Stroll",
+          "description": "Enjoy a peaceful morning walk through Romare Bearden Park in Uptown, offering beautiful city views and public art. It's a serene urban oasis perfect for reflection and a fresh start to your day.",
           "day": "tomorrow",
           "period": "morning",
-          "location": "UNC Charlotte Botanical Gardens, University City",
+          "location": "Romare Bearden Park, Uptown",
           "cost": "Free",
           "tags": [
             "outdoor",
             "nature",
-            "culture"
+            "art",
+            "queer-friendly"
           ],
           "tier": "free"
         },
         {
-          "title": "Earth Day Free Transit Ride",
-          "description": "Celebrate Earth Day by taking advantage of complimentary public transit across all CATS modes. It's a fantastic way to explore different parts of the city sustainably.",
+          "title": "Little Sugar Creek Greenway Run",
+          "description": "Start your day with an invigorating run along the Little Sugar Creek Greenway. It's a fantastic way to get some exercise and enjoy Charlotte's natural beauty, perfect for an active morning.",
           "day": "tomorrow",
           "period": "morning",
-          "location": "Charlotte Area Transit System (CATS)",
-          "cost": "Free",
-          "tags": [
-            "culture",
-            "travel",
-            "outdoor"
-          ],
-          "tier": "free"
-        },
-        {
-          "title": "Little Sugar Creek Greenway Walk",
-          "description": "Enjoy a scenic walk or bike ride along the Little Sugar Creek Greenway. It's a beautiful urban trail perfect for outdoor activity and connecting with nature.",
-          "day": "tomorrow",
-          "period": "afternoon",
           "location": "Little Sugar Creek Greenway, Midtown",
           "cost": "Free",
           "tags": [
             "outdoor",
             "fitness",
-            "nature"
+            "nature",
+            "queer-friendly"
           ],
           "tier": "free"
         },
         {
-          "title": "Wednesday Night Live at Levine Center",
-          "description": "Experience free admission to the Mint Museum Uptown, Bechtler Museum of Modern Art, and Harvey B. Gantt Center for African-American Arts + Culture. Enjoy art and culture with live programming.",
+          "title": "UNC Charlotte Botanical Gardens",
+          "description": "Explore the diverse plant collections and serene landscapes at the UNC Charlotte Botanical Gardens. Entry is completely free, offering a peaceful escape from the city bustle and a chance to connect with nature.",
           "day": "tomorrow",
           "period": "afternoon",
-          "location": "Levine Center for the Arts, Uptown",
+          "location": "UNC Charlotte Botanical Gardens, University City",
+          "cost": "Free",
+          "tags": [
+            "outdoor",
+            "nature",
+            "culture",
+            "queer-friendly"
+          ],
+          "tier": "free"
+        },
+        {
+          "title": "Main Library (Uptown) Visit",
+          "description": "Spend some time browsing books, magazines, or simply enjoying the quiet atmosphere at the Charlotte Mecklenburg Main Library in Uptown. It's a great spot for some free culture and relaxation.",
+          "day": "tomorrow",
+          "period": "afternoon",
+          "location": "Charlotte Mecklenburg Main Library, Uptown",
+          "cost": "Free",
+          "tags": [
+            "culture",
+            "art",
+            "queer-friendly"
+          ],
+          "tier": "free"
+        },
+        {
+          "title": "Free Live Music at a Local Spot",
+          "description": "Check out a local bar or brewery that might host free acoustic sets or open mic nights on Wednesdays. Places like The Evening Muse sometimes have free entry early in the evening, offering great local talent.",
+          "day": "tomorrow",
+          "period": "evening",
+          "location": "Various locations (e.g., The Evening Muse), Charlotte",
+          "cost": "Free",
+          "tags": [
+            "music",
+            "drinks",
+            "queer-friendly"
+          ],
+          "tier": "free"
+        },
+        {
+          "title": "South End Gallery Crawl",
+          "description": "Many art galleries in South End offer free admission and stay open later on certain evenings. Take a self-guided tour to admire local and regional art, perfect for an evening of culture.",
+          "day": "tomorrow",
+          "period": "evening",
+          "location": "South End Arts District, South End",
           "cost": "Free",
           "tags": [
             "art",
@@ -335,100 +319,36 @@
           "tier": "free"
         },
         {
-          "title": "Midweek Mixtape at Camp North End",
-          "description": "Head to the Boileryard for Midweek Mixtape, featuring free live local bands. It's a great way to enjoy diverse music in a cool, industrial setting.",
+          "title": "Marshall Park City Skyline View",
+          "description": "Head to Marshall Park for a stunning, unobstructed view of the Charlotte skyline at night. It's a perfect, free activity to end your evening with a picturesque backdrop and great photo opportunities.",
           "day": "tomorrow",
-          "period": "evening",
-          "location": "Camp North End, North End",
-          "cost": "Free",
-          "tags": [
-            "music",
-            "food",
-            "drinks",
-            "queer-friendly"
-          ],
-          "tier": "free"
-        },
-        {
-          "title": "Mallard Creek / UNCC Botanical Walk",
-          "description": "Join a guided or self-guided walk through the Mallard Creek area and UNCC Botanical Gardens. It's an easy way to enjoy local flora and get some fresh air.",
-          "day": "tomorrow",
-          "period": "evening",
-          "location": "Mallard Creek / UNCC Botanical Gardens, University City",
+          "period": "night",
+          "location": "Marshall Park, Uptown",
           "cost": "Free",
           "tags": [
             "outdoor",
             "nature",
-            "fitness"
+            "queer-friendly"
           ],
           "tier": "free"
         },
         {
-          "title": "Plaza Midwood Evening Stroll",
-          "description": "Take an evening walk through Plaza Midwood, enjoying the unique shops, vibrant street art, and lively atmosphere. It's a popular spot for the queer community.",
+          "title": "Stroll through Birkdale Village",
+          "description": "Take a leisurely evening walk through Birkdale Village in Huntersville. While a bit north, it's a charming outdoor shopping area with a pleasant atmosphere, perfect for window shopping and people-watching.",
           "day": "tomorrow",
           "period": "night",
-          "location": "Plaza Midwood",
+          "location": "Birkdale Village, Huntersville",
           "cost": "Free",
           "tags": [
-            "culture",
-            "nightlife",
+            "shopping",
+            "outdoor",
             "queer-friendly"
           ],
           "tier": "free"
         }
       ],
-      "sources": [
-        {
-          "title": "fun4charlottekids.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwpdhji3uNPA4Fg2V8iCbRqvkC6Og1trB1Ywef8LUnt__zswrbmZKnxMaYhXTs8q60QMjtA96zYEiUiHcqptT3Sd9RtGElcM89tvQ7stCWy-f1l9sL8LImocBz1jM20jNv8QJlOB8vBVunAZ6eFw2bgf8="
-        },
-        {
-          "title": "clgbtcc.org",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFGavW9EA0QWhnI3azKJeMcZLznEcqlbeYDBVXqQ7YPXwjcb-rjnG2JQkzpQ3wQI_zS5tmW0I8DjcRWbHr0MkkiJavfN8759JMjoQRDGZVkLyuLFOqMENMGIGpbkGbPNKMqP-EgcTlwXeVoshKRqsuSksLyKaOv_JSg4F0u5wT5PxD14KU5MLgf2md93lJKO8aJrX2JuqINKExp6NRrm6DgekhAoTR7dKqeO7Dw0hZxDKVM80E="
-        },
-        {
-          "title": "cardinalpine.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpOztA3zHeiyI3iWTU_q3Fk8ywfLs8WIgcFPbJqmV6snJnZ72vevwAAf05_KAX1TTHJJL1utCNsYsTIfhODP9tBxq_7WSSk9ReZvwc-PWl4HetqRRuH6tdBsIw10Qi8qZdlek4wzCrZX1qV7ToK_XVO67VHaizgLx4T9OSEYYa0wrXKOQEkzui_3WH"
-        },
-        {
-          "title": "charlottesgotalot.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGKl50Q5kmpH_UxtcuJ_17bryjS0_7AeGftfIQcpeSmW2uIugaG1J7fbFqD8dHswvPn0yKrpOFiNy482m_AdxmM9NQ--GvBErtIN6_Jkogi7Ngkw0W71pNWjnVMhpGnWZ-WDtRJshUR8QRE6rm9oG9p5ZHmJ4qpcq2x7zIKzmn7FcflJIfh8UEY6Qc0Ugv3rDBGDTHNmmrTpD1MFg=="
-        },
-        {
-          "title": "meetup.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvCDaEi_jANOXzqWx0d5MAUVywFXJWHYiXW9vExZ32kaRepT6mtzTOo45a1QFD1nmi5NuuupJLvLRYUkKj0V6clflcha7dupG-fDXtCKR81f7FXD_ziGpBJ3r3YrSm-FNxxmpRaUvzdxo="
-        },
-        {
-          "title": "charlotteonthecheap.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFLgn5zGxex_K59rWR9NCxj5O7OWCoJJ7xgLOHq6sPT-_ao4FyyC9Xs1rIy13gvsdeERMy0MoYnk47lqyiapr_TR5t8BmpvU_gD2HedUxNkZOPx8Aj4pNcUraXTSws4hiHku_6rEhA="
-        },
-        {
-          "title": "charlotteonthecheap.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFq-AVXplc79773HQBkV-IP2Q7d081DeGTYUeDenXIGVXefWoUJTvljVUB-JQw5UaPaL8t6SsEmwUwunjpeN1YpUJXr7raAbm106mgZ8ebIiLIUaDpDssC1lh-PG88BSVCflFJuugdYhKgGuHMKDQ=="
-        },
-        {
-          "title": "charlottenc.gov",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGcqEhibi8Jfi_wCrT364DjddGKZWsnL146wMz-iOm--xuJs4TTqlSjMXHGBF9hQLc7BDVdCXUErir0nsQ569dy5oL3Of1C37lqqGhWP_y_7ssWq-WPXvzXyF1AsfdqZaKJ17AQthlVmKjB33nCYzi9hvFg6zOE"
-        },
-        {
-          "title": "axios.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFmZB6TfA1slZuIM6yg5vnisOTelzhrLqnhDSyJYXG6hwXxcdXbptmBhQwr36MWCc0K1mjWuCL5TrlnvBTHDbh52W1scak_LRzLY_1h4ubL9nZcekXPBUFDi_ZuYC90"
-        },
-        {
-          "title": "charlottesgotalot.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGqbLs4YdQcVi7hYvNtNXG7X2HgHVGDxh5wA4-fXI65f4tUd0TiSZ_A_tP8BzjHPiLcht2zj1p1Kog03tywrZok3oE_-GsNf8m93B07YR1v9NMfgVRSNzOdPqkV6BSucFVEYLE="
-        },
-        {
-          "title": "concerts50.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGXojxmV50Or292XHG8Gkv7FXWMKpUuzL9LCI4GjpKy8YRfmHzWXb_z8upYco0BrJUY4ycd9iTnzfSNakZIUnT4HJp8WPC7msw9YRoWb94ZfTLwmtEoPZAODCOWzEyw6i5dxCBOWsZF8_xJunP8gPMT4t5gSAsW_nSSuDaFwsI="
-        },
-        {
-          "title": "chaserscharlotte.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHdwnmOR2OsEu7NLemhz6MWfmUFko-_PH0M1lOeFZakWVoOQOIbuGKjVMNsx8rMc-LH-IPZcf9lNx_XlmuO5IPyLpk5kiCfma6AZGiNTCUrvezLJOTbGiJv1GjpSA=="
-        }
-      ],
-      "error": "Premium Events: Expecting ',' delimiter: line 1 column 4923 (char 4922)"
+      "sources": [],
+      "error": null
     },
     {
       "id": "under20",
@@ -436,252 +356,868 @@
       "emoji": "💵",
       "activities": [
         {
-          "title": "Coffee & Pastry at Amelie's",
-          "description": "Indulge in a delicious coffee and a French pastry at Amelie's, a beloved Charlotte institution known for its quirky decor and late-night hours. It's a perfect morning treat.",
+          "title": "Central Coffee Co. (Plaza Midwood)",
+          "description": "Grab a delicious coffee and a pastry at Central Coffee Co., a beloved local spot known for its cozy atmosphere. It's a perfect way to kickstart your day in a queer-friendly neighborhood for under $10.",
           "day": "today",
           "period": "morning",
-          "location": "Amelie's French Bakery & Cafe, NoDa",
+          "location": "Central Coffee Co., Plaza Midwood",
+          "cost": "$5–$10",
+          "tags": [
+            "food",
+            "drinks",
+            "queer-friendly"
+          ],
+          "tier": "under20"
+        },
+        {
+          "title": "Run Club with Charlotte Running Club",
+          "description": "Join a local run club for a morning jog; many groups meet at various locations and are free to join the run itself. Afterwards, grab a post-run coffee with new friends, usually under $10.",
+          "day": "today",
+          "period": "morning",
+          "location": "Various locations (check CRC website), Charlotte",
+          "cost": "$5–$10",
+          "tags": [
+            "fitness",
+            "outdoor",
+            "queer-friendly"
+          ],
+          "tier": "under20"
+        },
+        {
+          "title": "NoDa Brewing Co. Happy Hour",
+          "description": "Enjoy a refreshing craft beer during happy hour at NoDa Brewing Co., a popular brewery with a great outdoor space. You can usually find a good pint for under $8.",
+          "day": "today",
+          "period": "afternoon",
+          "location": "NoDa Brewing Co., NoDa",
+          "cost": "$6–$10",
+          "tags": [
+            "drinks",
+            "food",
+            "queer-friendly"
+          ],
+          "tier": "under20"
+        },
+        {
+          "title": "Lunch at a Local Taco Spot",
+          "description": "Indulge in some delicious and affordable tacos at a local favorite like RuRu's Tacos & Tequila or a food truck. You can easily get a satisfying lunch for under $15.",
+          "day": "today",
+          "period": "afternoon",
+          "location": "Various locations, Charlotte",
+          "cost": "$10–$15",
+          "tags": [
+            "food",
+            "queer-friendly"
+          ],
+          "tier": "under20"
+        },
+        {
+          "title": "Trivia Night at Resident Culture Brewing",
+          "description": "Test your knowledge at a lively trivia night at Resident Culture Brewing in Plaza Midwood. It's free to play, and you can enjoy a couple of craft beers for under $20.",
+          "day": "today",
+          "period": "evening",
+          "location": "Resident Culture Brewing, Plaza Midwood",
+          "cost": "$12–$18",
+          "tags": [
+            "drinks",
+            "music",
+            "queer-friendly"
+          ],
+          "tier": "under20"
+        },
+        {
+          "title": "Drag Bingo at Chasers",
+          "description": "Head to Chasers for their popular Drag Bingo night. While entry might be free, a few drinks will keep you under the $20 limit, and it's a guaranteed fun, queer-centric experience.",
+          "day": "today",
+          "period": "evening",
+          "location": "Chasers, North Charlotte",
+          "cost": "$10–$20",
+          "tags": [
+            "drinks",
+            "nightlife",
+            "music",
+            "queer-friendly"
+          ],
+          "tier": "under20"
+        },
+        {
+          "title": "Drinks at Petra's",
+          "description": "Enjoy a few drinks at Petra's, a long-standing dive bar known for its eclectic crowd and live music. It's a great spot for a casual night out, and drinks are reasonably priced.",
+          "day": "today",
+          "period": "night",
+          "location": "Petra's, Plaza Midwood",
+          "cost": "$10–$20",
+          "tags": [
+            "drinks",
+            "music",
+            "nightlife",
+            "queer-friendly"
+          ],
+          "tier": "under20"
+        },
+        {
+          "title": "Craft Beer at Legion Brewing (Plaza Midwood)",
+          "description": "Grab a couple of craft beers at Legion Brewing, a popular local brewery in the heart of Plaza Midwood. It's a great place to unwind and enjoy the local brew scene for under $20.",
+          "day": "today",
+          "period": "night",
+          "location": "Legion Brewing, Plaza Midwood",
+          "cost": "$12–$18",
+          "tags": [
+            "drinks",
+            "food",
+            "queer-friendly"
+          ],
+          "tier": "under20"
+        },
+        {
+          "title": "Breakfast at Midnight Diner (Uptown)",
+          "description": "Enjoy a classic diner breakfast at the iconic Midnight Diner, known for its hearty portions and retro vibe. You can easily get a satisfying meal for under $15 to start your day.",
+          "day": "tomorrow",
+          "period": "morning",
+          "location": "Midnight Diner, Uptown",
+          "cost": "$10–$15",
+          "tags": [
+            "food",
+            "queer-friendly"
+          ],
+          "tier": "under20"
+        },
+        {
+          "title": "Group Run with a Local Club",
+          "description": "Join a morning run with a local group like the NoDa Brewing Run Club. The run is free, and you can grab a coffee or a cheap breakfast afterward with new friends, usually under $10.",
+          "day": "tomorrow",
+          "period": "morning",
+          "location": "Various locations (e.g., NoDa Brewing), Charlotte",
+          "cost": "$5–$10",
+          "tags": [
+            "fitness",
+            "outdoor",
+            "queer-friendly"
+          ],
+          "tier": "under20"
+        },
+        {
+          "title": "Brewery Tour/Tasting at Olde Mecklenburg Brewery",
+          "description": "Take a tour of Olde Mecklenburg Brewery and enjoy a flight of their German-style beers. A flight usually costs around $10-$15, offering a great value and a taste of local brews.",
+          "day": "tomorrow",
+          "period": "afternoon",
+          "location": "Olde Mecklenburg Brewery, South End",
+          "cost": "$10–$15",
+          "tags": [
+            "drinks",
+            "food",
+            "culture",
+            "queer-friendly"
+          ],
+          "tier": "under20"
+        },
+        {
+          "title": "Food Truck Lunch at Sycamore Brewing",
+          "description": "Grab a delicious and diverse lunch from one of the many food trucks often parked at Sycamore Brewing in South End. You can enjoy a tasty meal for under $15 in a lively outdoor setting.",
+          "day": "tomorrow",
+          "period": "afternoon",
+          "location": "Sycamore Brewing, South End",
+          "cost": "$10–$15",
+          "tags": [
+            "food",
+            "drinks",
+            "queer-friendly"
+          ],
+          "tier": "under20"
+        },
+        {
+          "title": "Open Mic Night at The Evening Muse (NoDa)",
+          "description": "Catch an open mic night at The Evening Muse, a beloved live music venue in NoDa. There's often a small cover charge (under $10) or it's free with a drink purchase, showcasing local talent.",
+          "day": "tomorrow",
+          "period": "evening",
+          "location": "The Evening Muse, NoDa",
           "cost": "$5–$15",
           "tags": [
-            "food",
+            "music",
             "drinks",
             "queer-friendly"
           ],
           "tier": "under20"
         },
         {
-          "title": "Lunch Special in NoDa",
-          "description": "Grab an affordable and tasty lunch special at one of NoDa's many casual eateries or breweries. You can find great deals on diverse cuisines.",
-          "day": "today",
-          "period": "afternoon",
-          "location": "Various in NoDa",
-          "cost": "$10–$18",
+          "title": "Karaoke at The Scorpio (NoDa)",
+          "description": "Sing your heart out at karaoke night at The Scorpio, Charlotte's oldest gay club. Entry is usually free, and you can enjoy a few drinks for under $20, making for a fun and lively night.",
+          "day": "tomorrow",
+          "period": "evening",
+          "location": "The Scorpio, NoDa",
+          "cost": "$10–$20",
           "tags": [
-            "food",
             "drinks",
+            "music",
+            "nightlife",
             "queer-friendly"
           ],
           "tier": "under20"
         },
         {
-          "title": "Brewery Tasting in South End",
-          "description": "Explore the craft beer scene in South End with a flight or a couple of pints at a local brewery like Sycamore or Olde Mecklenburg Brewery. Many offer happy hour deals.",
-          "day": "today",
-          "period": "afternoon",
-          "location": "Various Breweries, South End",
+          "title": "Craft Beer at Suffolk Punch (South End)",
+          "description": "Enjoy a couple of craft beers at Suffolk Punch, a popular brewery and restaurant in South End. Their extensive tap list offers great options for under $20, perfect for a relaxed evening.",
+          "day": "tomorrow",
+          "period": "night",
+          "location": "Suffolk Punch, South End",
+          "cost": "$12–$18",
+          "tags": [
+            "drinks",
+            "food",
+            "queer-friendly"
+          ],
+          "tier": "under20"
+        },
+        {
+          "title": "Cheap Eats & Drinks at a Dive Bar",
+          "description": "Explore a local dive bar like Thirsty Beaver Saloon for cheap drinks and a no-frills atmosphere. You can easily enjoy a couple of beers and maybe a snack for under $20, experiencing a true local gem.",
+          "day": "tomorrow",
+          "period": "night",
+          "location": "Thirsty Beaver Saloon, Plaza Midwood",
           "cost": "$10–$20",
           "tags": [
             "drinks",
             "food",
+            "nightlife",
             "queer-friendly"
           ],
           "tier": "under20"
+        }
+      ],
+      "sources": [],
+      "error": null
+    },
+    {
+      "id": "under50",
+      "label": "Under $50",
+      "emoji": "🍸",
+      "activities": [
+        {
+          "title": "Queer-Friendly Brunch at Snooze",
+          "description": "Start your Tuesday with a vibrant brunch at Snooze, known for its creative breakfast dishes and lively atmosphere. It's a popular spot in Plaza Midwood, perfect for a social morning.",
+          "day": "today",
+          "period": "morning",
+          "location": "Snooze, an A.M. Eatery, Plaza Midwood",
+          "cost": "$20–$35",
+          "tags": [
+            "food",
+            "queer-friendly",
+            "social"
+          ],
+          "tier": "under50"
         },
         {
-          "title": "Indoor Pickleball Session",
-          "description": "Join an indoor pickleball session for some active fun. It's a great way to get exercise and meet new people, with a small fee for court time.",
+          "title": "Whitewater Center Flatwater Kayaking",
+          "description": "Enjoy the afternoon paddling on the Catawba River or Flatwater Lake at the US National Whitewater Center. A great way to get active outdoors and enjoy nature.",
           "day": "today",
-          "period": "evening",
-          "location": "Peak Pickleball, South Charlotte",
-          "cost": "$12",
+          "period": "afternoon",
+          "location": "US National Whitewater Center, West Charlotte",
+          "cost": "$35–$45 (day pass)",
           "tags": [
+            "outdoor",
             "fitness",
+            "nature",
             "sports"
           ],
-          "tier": "under20"
+          "tier": "under50"
         },
         {
-          "title": "Board Games & Beers",
-          "description": "Spend your evening playing board games at a local brewery or dedicated board game cafe. Enjoy a few craft beers while engaging in friendly competition.",
+          "title": "Dinner & Drinks at Optimist Hall",
+          "description": "Explore the diverse culinary options at Optimist Hall, a bustling food hall with something for every taste. Grab dinner and a craft cocktail from one of the many vendors.",
           "day": "today",
           "period": "evening",
-          "location": "Hi-Wire Brewing Charlotte, South End",
-          "cost": "$5–$15",
+          "location": "Optimist Hall, NoDa",
+          "cost": "$30–$50",
           "tags": [
+            "food",
             "drinks",
-            "community",
+            "social",
             "queer-friendly"
           ],
-          "tier": "under20"
+          "tier": "under50"
         },
         {
-          "title": "Drag Bingo Night",
-          "description": "Head to a queer-friendly bar for a lively drag bingo night. Expect fabulous performances, hilarious hosts, and a chance to win some fun prizes.",
+          "title": "Camp North End Taco Tuesday Rally",
+          "description": "Head to Camp North End for their lively Taco Tuesday event, featuring various food trucks, local vendors, and a great community vibe. It's a casual and fun evening out.",
           "day": "today",
-          "period": "night",
-          "location": "Chasers, NoDa",
-          "cost": "$5–$15",
+          "period": "evening",
+          "location": "Camp North End, North Charlotte",
+          "cost": "$15–$30",
           "tags": [
-            "nightlife",
-            "music",
+            "food",
+            "social",
             "queer-friendly",
-            "drinks"
+            "culture"
           ],
-          "tier": "under20"
+          "tier": "under50"
         },
         {
-          "title": "Drinks at Bar Argon",
-          "description": "Enjoy a relaxed night out at Bar Argon, Charlotte's premier LGBTQ+ video bar. There's no cover, so you can enjoy the atmosphere and grab a few drinks.",
+          "title": "Craft Cocktails at The Crunkleton",
+          "description": "Indulge in expertly crafted cocktails at The Crunkleton, an upscale yet inviting speakeasy-style bar. Their extensive menu and knowledgeable bartenders make for a sophisticated night.",
           "day": "today",
           "period": "night",
-          "location": "Bar Argon, NoDa",
+          "location": "The Crunkleton, Elizabeth",
+          "cost": "$25–$50",
+          "tags": [
+            "drinks",
+            "nightlife",
+            "social"
+          ],
+          "tier": "under50"
+        },
+        {
+          "title": "Drag Bingo at Petra's",
+          "description": "Join the fun and fabulous Drag Bingo night at Petra's, a beloved queer-friendly bar in Plaza Midwood. Expect laughs, great music, and fierce performances.",
+          "day": "today",
+          "period": "night",
+          "location": "Petra's, Plaza Midwood",
           "cost": "$10–$20",
           "tags": [
-            "drinks",
             "nightlife",
-            "queer-friendly"
+            "music",
+            "queer-friendly",
+            "social"
           ],
-          "tier": "under20"
+          "tier": "under50"
         },
         {
-          "title": "Breakfast Burrito & Coffee",
-          "description": "Grab a hearty breakfast burrito and a fresh coffee from a local spot like Rhino Market & Deli. It's a quick, delicious, and affordable start to your day.",
+          "title": "Live Music at Evening Muse",
+          "description": "Catch a performance by a local or touring artist at The Evening Muse, an intimate music venue in NoDa. Check their schedule for a diverse range of genres.",
+          "day": "today",
+          "period": "evening",
+          "location": "The Evening Muse, NoDa",
+          "cost": "$15–$30",
+          "tags": [
+            "music",
+            "nightlife",
+            "social"
+          ],
+          "tier": "under50"
+        },
+        {
+          "title": "Coffee & Co-working at Amelie's French Bakery",
+          "description": "Start your Wednesday with a delicious coffee and pastry at Amelie's French Bakery, a charming and queer-friendly spot. It's a great place for casual co-working or meeting friends.",
           "day": "tomorrow",
           "period": "morning",
-          "location": "Rhino Market & Deli, South End",
-          "cost": "$8–$15",
+          "location": "Amelie's French Bakery, NoDa",
+          "cost": "$10–$20",
           "tags": [
             "food",
-            "drinks"
+            "queer-friendly",
+            "social"
           ],
-          "tier": "under20"
+          "tier": "under50"
         },
         {
-          "title": "Food Truck Lunch in South End",
-          "description": "Seek out one of the many popular food trucks often found in South End, especially near breweries or the Rail Trail. Enjoy a diverse and delicious lunch for under $20.",
+          "title": "Brewery Tour & Tasting at Sycamore Brewing",
+          "description": "Spend your afternoon exploring Sycamore Brewing, one of Charlotte's most popular breweries. Take a tour, learn about their craft, and enjoy a tasting flight on their spacious patio.",
           "day": "tomorrow",
           "period": "afternoon",
-          "location": "Various locations, South End",
-          "cost": "$10–$18",
-          "tags": [
-            "food",
-            "outdoor"
-          ],
-          "tier": "under20"
-        },
-        {
-          "title": "Happy Hour at Snug Harbor",
-          "description": "Enjoy happy hour specials at Snug Harbor, a beloved dive bar in Plaza Midwood known for its eclectic crowd and live music. It's a great spot for cheap drinks and good vibes.",
-          "day": "tomorrow",
-          "period": "afternoon",
-          "location": "Snug Harbor, Plaza Midwood",
-          "cost": "$5–$15",
+          "location": "Sycamore Brewing, South End",
+          "cost": "$15–$30",
           "tags": [
             "drinks",
-            "music",
-            "queer-friendly"
+            "social",
+            "food"
           ],
-          "tier": "under20"
+          "tier": "under50"
         },
         {
-          "title": "Edging Concert at The Milestone Club",
-          "description": "Catch the queer punk band Edging, known for their saxophone-driven hardcore sound, at the iconic Milestone Club. It's a unique and energetic live music experience.",
+          "title": "Dinner at Soul Gastrolounge",
+          "description": "Enjoy an eclectic dinner at Soul Gastrolounge, known for its creative small plates, sushi, and vibrant atmosphere. It's a popular spot in Plaza Midwood for a lively evening.",
           "day": "tomorrow",
           "period": "evening",
-          "location": "The Milestone Club, West Charlotte",
-          "cost": "$15–$20",
+          "location": "Soul Gastrolounge, Plaza Midwood",
+          "cost": "$30–$50",
           "tags": [
-            "music",
-            "nightlife",
+            "food",
+            "drinks",
+            "social",
             "queer-friendly"
           ],
-          "tier": "under20"
+          "tier": "under50"
         },
         {
-          "title": "Karaoke Night at Chasers",
-          "description": "Belt out your favorite tunes at Karaoke Night at Chasers, a popular LGBTQ+ bar in NoDa. It's a fun, inclusive environment to sing and socialize.",
+          "title": "Mid-Week Dance Party at Bar Argon",
+          "description": "Hit the dance floor for a mid-week party at Bar Argon, Charlotte's premier gay nightclub. Enjoy great music, drinks, and a welcoming atmosphere to let loose.",
           "day": "tomorrow",
-          "period": "evening",
-          "location": "Chasers, NoDa",
-          "cost": "$5–$15",
+          "period": "night",
+          "location": "Bar Argon, South End",
+          "cost": "$5–$15 (cover)",
           "tags": [
-            "music",
             "nightlife",
+            "music",
             "queer-friendly",
             "drinks"
           ],
-          "tier": "under20"
+          "tier": "under50"
         },
         {
-          "title": "Casual Soccer Pickup Game",
-          "description": "Join a casual soccer pickup game for some active fun and a chance to meet new people. Check local parks or community groups for Wednesday evening games.",
+          "title": "USNWC Ropes Course Adventure",
+          "description": "Challenge yourself with a ropes course adventure at the US National Whitewater Center. Choose from various difficulty levels for an exciting and active afternoon outdoors.",
+          "day": "tomorrow",
+          "period": "afternoon",
+          "location": "US National Whitewater Center, West Charlotte",
+          "cost": "$35–$45 (day pass)",
+          "tags": [
+            "outdoor",
+            "fitness",
+            "adventure",
+            "sports"
+          ],
+          "tier": "under50"
+        },
+        {
+          "title": "Trivia Night at Legion Brewing",
+          "description": "Gather your friends for a fun and competitive trivia night at Legion Brewing in Plaza Midwood. Enjoy craft beers and delicious food while testing your knowledge.",
           "day": "tomorrow",
           "period": "evening",
-          "location": "Various Parks, Charlotte",
-          "cost": "Free–$10",
-          "tags": [
-            "sports",
-            "fitness",
-            "outdoor"
-          ],
-          "tier": "under20"
-        },
-        {
-          "title": "Hiker Hang Celebration",
-          "description": "Connect with fellow outdoor enthusiasts at a Hiker Hang Celebration. Enjoy a relaxed evening with drinks and conversation after a day of activities.",
-          "day": "tomorrow",
-          "period": "night",
-          "location": "Monday Night Brewing, South End",
-          "cost": "$5–$15",
+          "location": "Legion Brewing, Plaza Midwood",
+          "cost": "$10–$25",
           "tags": [
             "drinks",
-            "community",
+            "food",
+            "social",
+            "queer-friendly"
+          ],
+          "tier": "under50"
+        },
+        {
+          "title": "Stand-Up Comedy Open Mic at The Comedy Zone",
+          "description": "Catch some rising talent at the Stand-Up Comedy Open Mic night at The Comedy Zone. It's a great way to discover new comedians and enjoy a night of laughs.",
+          "day": "tomorrow",
+          "period": "night",
+          "location": "The Comedy Zone, AvidXchange Music Factory",
+          "cost": "$10–$20",
+          "tags": [
+            "culture",
+            "social",
+            "nightlife"
+          ],
+          "tier": "under50"
+        }
+      ],
+      "sources": [],
+      "error": null
+    },
+    {
+      "id": "splurge",
+      "label": "Splurge",
+      "emoji": "🌟",
+      "activities": [
+        {
+          "title": "Dinner Reservation at Fig Tree Restaurant",
+          "description": "Experience fine dining at Fig Tree Restaurant, set in a beautifully restored 1913 Craftsman bungalow. Enjoy their exquisite European-inspired cuisine and extensive wine list for a memorable evening.",
+          "day": "today",
+          "period": "evening",
+          "location": "Fig Tree Restaurant, Elizabeth",
+          "cost": "$100+",
+          "tags": [
+            "food",
+            "drinks",
+            "culture",
+            "social"
+          ],
+          "tier": "splurge"
+        },
+        {
+          "title": "VIP Table Service at Bazal Gallery & Nightclub",
+          "description": "Elevate your night out with VIP table service at Bazal Gallery & Nightclub, offering a high-energy atmosphere and top DJs. Enjoy exclusive access and personalized attention in Uptown.",
+          "day": "today",
+          "period": "night",
+          "location": "Bazal Gallery & Nightclub, Uptown",
+          "cost": "$200+",
+          "tags": [
+            "nightlife",
+            "music",
+            "drinks",
+            "social"
+          ],
+          "tier": "splurge"
+        },
+        {
+          "title": "Blumenthal Performing Arts Show",
+          "description": "Attend a captivating performance at one of Blumenthal Performing Arts' venues, such as a Broadway touring show or a major concert. Check their schedule for today's featured event.",
+          "day": "today",
+          "period": "evening",
+          "location": "Blumenthal Performing Arts, Uptown",
+          "cost": "$75+",
+          "tags": [
+            "culture",
+            "art",
+            "music",
+            "social"
+          ],
+          "tier": "splurge"
+        },
+        {
+          "title": "Upscale Cocktails at Cloud Bar by David Burke",
+          "description": "Sip on sophisticated cocktails with breathtaking city views from Cloud Bar by David Burke, located atop the Le Méridien hotel. It's a perfect spot for a luxurious evening.",
+          "day": "today",
+          "period": "night",
+          "location": "Cloud Bar by David Burke, Uptown",
+          "cost": "$40–$70",
+          "tags": [
+            "drinks",
+            "nightlife",
+            "social"
+          ],
+          "tier": "splurge"
+        },
+        {
+          "title": "Private Chef's Tasting Menu Experience",
+          "description": "Indulge in a bespoke culinary journey with a private chef preparing a multi-course tasting menu. This exclusive experience can be arranged at a unique venue or even your own space.",
+          "day": "today",
+          "period": "evening",
+          "location": "Various (private arrangement)",
+          "cost": "$300+",
+          "tags": [
+            "food",
+            "culture",
+            "social"
+          ],
+          "tier": "splurge"
+        },
+        {
+          "title": "Luxury Spa Treatment at The Ritz-Carlton Spa",
+          "description": "Unwind and rejuvenate with a luxurious spa treatment at The Ritz-Carlton Spa. Choose from a range of massages, facials, and body treatments for ultimate relaxation.",
+          "day": "today",
+          "period": "afternoon",
+          "location": "The Ritz-Carlton Spa, Uptown",
+          "cost": "$150+",
+          "tags": [
+            "fitness",
+            "culture",
+            "wellness"
+          ],
+          "tier": "splurge"
+        },
+        {
+          "title": "Exclusive Wine Tasting at a Private Cellar",
+          "description": "Participate in an exclusive wine tasting event at a high-end wine shop or private cellar, featuring rare and premium selections. Learn from a sommelier and expand your palate.",
+          "day": "today",
+          "period": "evening",
+          "location": "Various upscale wine shops/cellars",
+          "cost": "$100+",
+          "tags": [
+            "drinks",
+            "culture",
+            "social"
+          ],
+          "tier": "splurge"
+        },
+        {
+          "title": "Chef's Tasting Menu at Counter-",
+          "description": "Indulge in an extraordinary culinary experience with the chef's tasting menu at Counter-, known for its innovative dishes and immersive dining. Reservations are essential for this unique experience.",
+          "day": "tomorrow",
+          "period": "evening",
+          "location": "Counter-, West Charlotte",
+          "cost": "$150+",
+          "tags": [
+            "food",
+            "culture",
+            "social"
+          ],
+          "tier": "splurge"
+        },
+        {
+          "title": "Exclusive Speakeasy Experience at Dot Dot Dot",
+          "description": "Seek out the hidden gem, Dot Dot Dot, for an exclusive speakeasy experience. Enjoy expertly crafted cocktails in a sophisticated, members-only (or reservation-required) atmosphere.",
+          "day": "tomorrow",
+          "period": "night",
+          "location": "Dot Dot Dot, Plaza Midwood",
+          "cost": "$50–$100",
+          "tags": [
+            "drinks",
+            "nightlife",
+            "social"
+          ],
+          "tier": "splurge"
+        },
+        {
+          "title": "Major Concert at Spectrum Center",
+          "description": "Attend a major concert or event at the Spectrum Center, Charlotte's premier arena. Check their schedule for a big-name artist or touring show happening tonight.",
+          "day": "tomorrow",
+          "period": "evening",
+          "location": "Spectrum Center, Uptown",
+          "cost": "$75+",
+          "tags": [
+            "music",
+            "culture",
+            "social"
+          ],
+          "tier": "splurge"
+        },
+        {
+          "title": "Bottle Service at World Nightclub",
+          "description": "Experience VIP treatment with bottle service at World Nightclub, a high-energy venue in Uptown. Enjoy exclusive seating and personalized service for a memorable night out.",
+          "day": "tomorrow",
+          "period": "night",
+          "location": "World Nightclub, Uptown",
+          "cost": "$200+",
+          "tags": [
+            "nightlife",
+            "music",
+            "drinks",
+            "social"
+          ],
+          "tier": "splurge"
+        },
+        {
+          "title": "Private Golf Lesson at a Top Charlotte Course",
+          "description": "Improve your swing with a private golf lesson at one of Charlotte's prestigious golf courses. Receive personalized coaching from a pro for a refined experience.",
+          "day": "tomorrow",
+          "period": "afternoon",
+          "location": "Various upscale golf clubs",
+          "cost": "$100+",
+          "tags": [
+            "sports",
+            "outdoor",
+            "fitness"
+          ],
+          "tier": "splurge"
+        },
+        {
+          "title": "Hot Air Balloon Ride over Charlotte",
+          "description": "Soar above Charlotte on a breathtaking hot air balloon ride, typically at sunset. Enjoy panoramic views of the city and surrounding landscapes for an unforgettable adventure.",
+          "day": "tomorrow",
+          "period": "evening",
+          "location": "Various launch sites (outside Charlotte)",
+          "cost": "$250+",
+          "tags": [
+            "outdoor",
+            "adventure",
+            "nature",
+            "culture"
+          ],
+          "tier": "splurge"
+        },
+        {
+          "title": "High-End Whiskey Tasting at The Ballantyne Hotel",
+          "description": "Savor a selection of premium whiskeys at a curated tasting event at The Ballantyne Hotel. Learn about different distilleries and flavor profiles in a luxurious setting.",
+          "day": "tomorrow",
+          "period": "evening",
+          "location": "The Ballantyne Hotel, Ballantyne",
+          "cost": "$75–$150",
+          "tags": [
+            "drinks",
+            "culture",
+            "social"
+          ],
+          "tier": "splurge"
+        }
+      ],
+      "sources": [],
+      "error": null
+    },
+    {
+      "id": "wildcard",
+      "label": "Wildcard",
+      "emoji": "🃏",
+      "activities": [
+        {
+          "title": "Queer-Led Yoga & Meditation in Freedom Park",
+          "description": "Find your zen with a queer-led outdoor yoga and meditation session in the serene setting of Freedom Park. Connect with community and nature for a refreshing start to your day.",
+          "day": "today",
+          "period": "morning",
+          "location": "Freedom Park, Myers Park",
+          "cost": "$15–$25",
+          "tags": [
+            "outdoor",
+            "fitness",
+            "queer-friendly",
+            "nature"
+          ],
+          "tier": "wildcard"
+        },
+        {
+          "title": "Axe Throwing at Axe Club of America",
+          "description": "Unleash your inner lumberjack with an exhilarating axe throwing session at Axe Club of America. It's a unique and competitive activity perfect for a fun afternoon with friends.",
+          "day": "today",
+          "period": "afternoon",
+          "location": "Axe Club of America, South End",
+          "cost": "$30–$45",
+          "tags": [
+            "sports",
+            "social",
+            "adventure"
+          ],
+          "tier": "wildcard"
+        },
+        {
+          "title": "'Queer History of Charlotte' Walking Tour",
+          "description": "Discover the hidden stories and significant landmarks of Charlotte's vibrant queer past on a guided walking tour. Learn about the pioneers and places that shaped the LGBTQ+ community.",
+          "day": "today",
+          "period": "evening",
+          "location": "Uptown/Plaza Midwood (various starting points)",
+          "cost": "$25–$40",
+          "tags": [
+            "culture",
+            "history",
+            "queer-friendly",
             "outdoor"
           ],
-          "tier": "under20"
+          "tier": "wildcard"
+        },
+        {
+          "title": "Themed Karaoke Night at Seoul Food Meat Company",
+          "description": "Sing your heart out at a themed karaoke night in a private room at Seoul Food Meat Company. Enjoy delicious Korean BBQ and cocktails while belting out your favorite tunes.",
+          "day": "today",
+          "period": "night",
+          "location": "Seoul Food Meat Company, South End",
+          "cost": "$15–$30 (room fee + ",
+          "tags": [
+            "music",
+            "food",
+            "social",
+            "nightlife"
+          ],
+          "tier": "wildcard"
+        },
+        {
+          "title": "Pottery Painting Workshop at Clayworks",
+          "description": "Unleash your creativity at a pottery painting workshop at Clayworks. Choose a piece and decorate it to your heart's content, a relaxing and artistic afternoon activity.",
+          "day": "today",
+          "period": "afternoon",
+          "location": "Clayworks, South End",
+          "cost": "$25–$50",
+          "tags": [
+            "art",
+            "culture",
+            "social"
+          ],
+          "tier": "wildcard"
+        },
+        {
+          "title": "Stargazing Event at McDowell Nature Preserve",
+          "description": "Escape the city lights for a special stargazing event at McDowell Nature Preserve. Join local astronomers to observe constellations and celestial wonders.",
+          "day": "today",
+          "period": "evening",
+          "location": "McDowell Nature Preserve, South Charlotte",
+          "cost": "Free–$10",
+          "tags": [
+            "nature",
+            "outdoor",
+            "culture"
+          ],
+          "tier": "wildcard"
+        },
+        {
+          "title": "Pop-Up Art Gallery Opening",
+          "description": "Immerse yourself in the local art scene by attending a pop-up art gallery opening. Discover new artists and mingle with art enthusiasts. Check local gallery listings for specific events.",
+          "day": "today",
+          "period": "night",
+          "location": "Various galleries (e.g., Shain Gallery, Dilworth)",
+          "cost": "Free",
+          "tags": [
+            "art",
+            "culture",
+            "social"
+          ],
+          "tier": "wildcard"
+        },
+        {
+          "title": "Guided Mountain Biking at Sherman Branch Nature Preserve",
+          "description": "Hit the trails for a guided mountain biking adventure at Sherman Branch Nature Preserve. Explore challenging terrain and enjoy the natural beauty of the area.",
+          "day": "tomorrow",
+          "period": "morning",
+          "location": "Sherman Branch Nature Preserve, Mint Hill",
+          "cost": "$30–$50 (rental + gu",
+          "tags": [
+            "outdoor",
+            "fitness",
+            "nature",
+            "sports"
+          ],
+          "tier": "wildcard"
+        },
+        {
+          "title": "Escape Room Challenge at Breakout Games",
+          "description": "Test your wits and teamwork at Breakout Games with an immersive escape room challenge. Choose from various themed rooms for an exciting and brain-teasing afternoon.",
+          "day": "tomorrow",
+          "period": "afternoon",
+          "location": "Breakout Games, South End",
+          "cost": "$30–$40",
+          "tags": [
+            "social",
+            "adventure",
+            "culture"
+          ],
+          "tier": "wildcard"
+        },
+        {
+          "title": "Outdoor Movie Night in Romare Bearden Park",
+          "description": "Enjoy a relaxing outdoor movie night under the stars at Romare Bearden Park. Bring a blanket and snacks for a casual and enjoyable evening in Uptown.",
+          "day": "tomorrow",
+          "period": "evening",
+          "location": "Romare Bearden Park, Uptown",
+          "cost": "Free",
+          "tags": [
+            "outdoor",
+            "social",
+            "culture"
+          ],
+          "tier": "wildcard"
+        },
+        {
+          "title": "'Queer Storytelling' Open Mic Night",
+          "description": "Share your own stories or listen to others at a 'Queer Storytelling' open mic night. Check local independent bookstores or cafes for this intimate and community-focused event.",
+          "day": "tomorrow",
+          "period": "night",
+          "location": "Various (e.g., That's Novel Books, Camp North End)",
+          "cost": "Free–$10",
+          "tags": [
+            "culture",
+            "social",
+            "queer-friendly"
+          ],
+          "tier": "wildcard"
+        },
+        {
+          "title": "Urban Scavenger Hunt",
+          "description": "Embark on an urban scavenger hunt through one of Charlotte's vibrant neighborhoods. Solve clues and discover hidden gems for a fun and interactive afternoon adventure.",
+          "day": "tomorrow",
+          "period": "afternoon",
+          "location": "Various neighborhoods (e.g., South End, NoDa)",
+          "cost": "$20–$35",
+          "tags": [
+            "outdoor",
+            "social",
+            "adventure",
+            "culture"
+          ],
+          "tier": "wildcard"
+        },
+        {
+          "title": "DIY Cocktail Class at Bob & Pete's",
+          "description": "Learn to craft your own delicious cocktails at a DIY class at Bob & Pete's, a popular NoDa bar. Get hands-on experience and impress your friends with new mixology skills.",
+          "day": "tomorrow",
+          "period": "evening",
+          "location": "Bob & Pete's, NoDa",
+          "cost": "$40–$60",
+          "tags": [
+            "drinks",
+            "social",
+            "culture"
+          ],
+          "tier": "wildcard"
+        },
+        {
+          "title": "Late-Night Dessert & Coffee at Crave Dessert Bar",
+          "description": "Satisfy your sweet tooth with a late-night visit to Crave Dessert Bar. Enjoy decadent desserts, specialty coffees, and cocktails in a chic Uptown setting.",
+          "day": "tomorrow",
+          "period": "night",
+          "location": "Crave Dessert Bar, Uptown",
+          "cost": "$15–$30",
+          "tags": [
+            "food",
+            "drinks",
+            "social"
+          ],
+          "tier": "wildcard"
         }
       ],
-      "sources": [
-        {
-          "title": "fun4charlottekids.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwpdhji3uNPA4Fg2V8iCbRqvkC6Og1trB1Ywef8LUnt__zswrbmZKnxMaYhXTs8q60QMjtA96zYEiUiHcqptT3Sd9RtGElcM89tvQ7stCWy-f1l9sL8LImocBz1jM20jNv8QJlOB8vBVunAZ6eFw2bgf8="
-        },
-        {
-          "title": "clgbtcc.org",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFGavW9EA0QWhnI3azKJeMcZLznEcqlbeYDBVXqQ7YPXwjcb-rjnG2JQkzpQ3wQI_zS5tmW0I8DjcRWbHr0MkkiJavfN8759JMjoQRDGZVkLyuLFOqMENMGIGpbkGbPNKMqP-EgcTlwXeVoshKRqsuSksLyKaOv_JSg4F0u5wT5PxD14KU5MLgf2md93lJKO8aJrX2JuqINKExp6NRrm6DgekhAoTR7dKqeO7Dw0hZxDKVM80E="
-        },
-        {
-          "title": "cardinalpine.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpOztA3zHeiyI3iWTU_q3Fk8ywfLs8WIgcFPbJqmV6snJnZ72vevwAAf05_KAX1TTHJJL1utCNsYsTIfhODP9tBxq_7WSSk9ReZvwc-PWl4HetqRRuH6tdBsIw10Qi8qZdlek4wzCrZX1qV7ToK_XVO67VHaizgLx4T9OSEYYa0wrXKOQEkzui_3WH"
-        },
-        {
-          "title": "charlottesgotalot.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGKl50Q5kmpH_UxtcuJ_17bryjS0_7AeGftfIQcpeSmW2uIugaG1J7fbFqD8dHswvPn0yKrpOFiNy482m_AdxmM9NQ--GvBErtIN6_Jkogi7Ngkw0W71pNWjnVMhpGnWZ-WDtRJshUR8QRE6rm9oG9p5ZHmJ4qpcq2x7zIKzmn7FcflJIfh8UEY6Qc0Ugv3rDBGDTHNmmrTpD1MFg=="
-        },
-        {
-          "title": "meetup.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvCDaEi_jANOXzqWx0d5MAUVywFXJWHYiXW9vExZ32kaRepT6mtzTOo45a1QFD1nmi5NuuupJLvLRYUkKj0V6clflcha7dupG-fDXtCKR81f7FXD_ziGpBJ3r3YrSm-FNxxmpRaUvzdxo="
-        },
-        {
-          "title": "charlotteonthecheap.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFLgn5zGxex_K59rWR9NCxj5O7OWCoJJ7xgLOHq6sPT-_ao4FyyC9Xs1rIy13gvsdeERMy0MoYnk47lqyiapr_TR5t8BmpvU_gD2HedUxNkZOPx8Aj4pNcUraXTSws4hiHku_6rEhA="
-        },
-        {
-          "title": "charlotteonthecheap.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFq-AVXplc79773HQBkV-IP2Q7d081DeGTYUeDenXIGVXefWoUJTvljVUB-JQw5UaPaL8t6SsEmwUwunjpeN1YpUJXr7raAbm106mgZ8ebIiLIUaDpDssC1lh-PG88BSVCflFJuugdYhKgGuHMKDQ=="
-        },
-        {
-          "title": "charlottenc.gov",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGcqEhibi8Jfi_wCrT364DjddGKZWsnL146wMz-iOm--xuJs4TTqlSjMXHGBF9hQLc7BDVdCXUErir0nsQ569dy5oL3Of1C37lqqGhWP_y_7ssWq-WPXvzXyF1AsfdqZaKJ17AQthlVmKjB33nCYzi9hvFg6zOE"
-        },
-        {
-          "title": "axios.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFmZB6TfA1slZuIM6yg5vnisOTelzhrLqnhDSyJYXG6hwXxcdXbptmBhQwr36MWCc0K1mjWuCL5TrlnvBTHDbh52W1scak_LRzLY_1h4ubL9nZcekXPBUFDi_ZuYC90"
-        },
-        {
-          "title": "charlottesgotalot.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGqbLs4YdQcVi7hYvNtNXG7X2HgHVGDxh5wA4-fXI65f4tUd0TiSZ_A_tP8BzjHPiLcht2zj1p1Kog03tywrZok3oE_-GsNf8m93B07YR1v9NMfgVRSNzOdPqkV6BSucFVEYLE="
-        },
-        {
-          "title": "concerts50.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGXojxmV50Or292XHG8Gkv7FXWMKpUuzL9LCI4GjpKy8YRfmHzWXb_z8upYco0BrJUY4ycd9iTnzfSNakZIUnT4HJp8WPC7msw9YRoWb94ZfTLwmtEoPZAODCOWzEyw6i5dxCBOWsZF8_xJunP8gPMT4t5gSAsW_nSSuDaFwsI="
-        },
-        {
-          "title": "chaserscharlotte.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHdwnmOR2OsEu7NLemhz6MWfmUFko-_PH0M1lOeFZakWVoOQOIbuGKjVMNsx8rMc-LH-IPZcf9lNx_XlmuO5IPyLpk5kiCfma6AZGiNTCUrvezLJOTbGiJv1GjpSA=="
-        }
-      ],
-      "error": "Premium Events: Expecting ',' delimiter: line 1 column 4923 (char 4922)"
+      "sources": [],
+      "error": null
     }
   ]
 }

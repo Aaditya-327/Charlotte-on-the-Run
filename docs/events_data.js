@@ -280,20 +280,6 @@ const EVENTS_DATA = [
     "date_confidence": 0
   },
   {
-    "title": "\u201cA Little Part of Everyone Somewhere in Her Story\u201d: Talking to Filmmaker Alan Berliner About BENITA",
-    "link": "https://indyweek.com/news/culture/benita-raphan-documentary-interview-full-frame/",
-    "description": "The documentary, a posthumous portrait of experimental filmmaker Benita Raphan, explores creativity, loneliness, and mental health. It screens at Durham's Full Frame Documentary Film Festival this week.",
-    "pub_date": "2026-04-15T12:12:37+00:00",
-    "region": "Triangle NC",
-    "distance": "2h30min",
-    "source": "INDY Week",
-    "price": null,
-    "ev_score": 4,
-    "event_date": null,
-    "event_time": null,
-    "date_confidence": 0
-  },
-  {
     "title": "Artisphere announces music lineup for 2026 festival",
     "link": "https://greenvillejournal.com/arts-culture/artisphere-announces-music-lineup-for-2026-festival/",
     "description": "Eleven artists from across the country will perform at the Broad Street Main Stage, sponsored by WYFF4, during the annual arts and culture festival.\nThe post Artisphere announces music lineup for 2026 festival appeared first on GREENVILLE JOURNAL.",
@@ -301,20 +287,6 @@ const EVENTS_DATA = [
     "region": "Greenville SC",
     "distance": "1h30min",
     "source": "Greenville Journal (Arts)",
-    "price": null,
-    "ev_score": 4,
-    "event_date": null,
-    "event_time": null,
-    "date_confidence": 0
-  },
-  {
-    "title": "Behind the Stick: Dana Jordan, Seaboy",
-    "link": "https://unpretentiouspalate.com/behind-the-stick-dana-jordan-seaboy/",
-    "description": "Muscian/bartender combines creativity, skill, and performance into her craft",
-    "pub_date": "2026-04-16T14:50:50+00:00",
-    "region": "Charlotte",
-    "distance": "0min",
-    "source": "Unpretentious Palate",
     "price": null,
     "ev_score": 4,
     "event_date": null,
