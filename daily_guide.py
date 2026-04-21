@@ -107,6 +107,7 @@ Each element must match this exact schema:
   "location":    "string — venue name + neighborhood (e.g. 'Optimist Hall, NoDa')",
   "cost":        "string — e.g. 'Free', '$12', '$8–$15'",
   "tags":        ["array of 2-4 strings from: outdoor, food, drinks, music, art, queer-friendly, nightlife, fitness, culture, shopping, sports, nature"],
+  "category":    ["array of 1-2 strings from: music, food, drinks, arts, outdoors, nightlife, comedy, sports, theater, fitness, market, drag, film, weird, family"],
   "tier":        "string — the ID of the budget tier this belongs to"
 }
 
@@ -156,6 +157,7 @@ def validate_card(card: dict, allowed_tiers: list) -> dict | None:
         return None
         
     card.setdefault("tags", [])
+    card.setdefault("category", [])
     card["title"]       = str(card["title"])[:80]
     card["description"] = str(card["description"])[:400]
     card["location"]    = str(card["location"])[:80]
