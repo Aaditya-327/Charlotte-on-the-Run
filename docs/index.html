@@ -284,66 +284,47 @@ function getWeekend(){
 }
 function getWeekEnd(){ const d = new Date(TODAY); d.setDate(TODAY.getDate()+6); return d; }
 
-// ── Parse AI guide into cards ─────────────────────────────────────────────────
+// ── Parse AI guide cards (structured JSON from Gemini) ─────────────────────
 const TIER_META = {
   free:    { label: '🆓 Free',      color: 'var(--good-500)' },
   under20: { label: '💵 Under $20', color: 'var(--warn-500)' },
   under50: { label: '🍸 Under $50', color: 'var(--rust-600)' },
   splurge: { label: '🌟 Splurge',   color: '#f472b6' },
 };
+const PERIOD_ORDER = { morning: 0, afternoon: 1, evening: 2, night: 3 };
 
 function parseGuideCards() {
-  if(typeof DAILY_GUIDE_DATA === 'undefined') return [];
+  if (typeof DAILY_GUIDE_DATA === 'undefined') return [];
   const cards = [];
-  const todayStr    = DAILY_GUIDE_DATA.today    || '';
-  const tomorrowStr = DAILY_GUIDE_DATA.tomorrow || '';
-
-  for(const tier of DAILY_GUIDE_DATA.tiers) {
-    if(!tier.content) continue;
-    // Split on ### headings (Morning / Afternoon / Evening / Day headers)
-    const sections = tier.content.split(/\n(?=###\s)/);
-    for(const section of sections) {
-      const lines = section.trim().split('\n');
-      const heading = lines[0].replace(/^#+\s*/, '').trim();
-      if(!heading || heading.length < 3) continue;
-      const body = lines.slice(1).join('\n').trim();
-      if(body.length < 30) continue;
-
-      // Determine day from context in heading or surrounding text
-      const lh = heading.toLowerCase();
-      let day = 'today';
-      if(lh.includes('tomorrow') ||
-         (tomorrowStr && (section.includes(tomorrowStr.split(',')[0]) ||
-          lh.includes('wednesday') || lh.includes('thursday') || lh.includes('friday') ||
-          lh.includes('saturday') || lh.includes('sunday') || lh.includes('monday') ||
-          lh.includes('tuesday') && !section.includes(todayStr.split(',')[0])))) {
-        day = 'tomorrow';
-      }
-
-      // Clean up markdown bold/headers from body
-      const cleanBody = body
-        .replace(/\*\*(.*?)\*\*/g, '$1')
-        .replace(/^#+\s*/gm, '')
-        .replace(/^[\*\-]\s+/gm, '')
-        .split('\n').filter(l => l.trim()).slice(0, 4).join(' ');
-
+  for (const tier of DAILY_GUIDE_DATA.tiers) {
+    for (const act of (tier.activities || [])) {
       cards.push({
-        _ai: true,
-        tier: tier.id,
-        tier_label: TIER_META[tier.id]?.label || tier.label,
-        tier_color: TIER_META[tier.id]?.color || 'var(--rust-500)',
-        title: heading,
-        description: cleanBody,
-        day,
-        source: 'AI Guide',
-        link: null,
+        _ai:         true,
+        tier:        tier.id,
+        tier_label:  TIER_META[tier.id]?.label || tier.label,
+        tier_color:  TIER_META[tier.id]?.color || 'var(--rust-500)',
+        title:       act.title,
+        description: act.description,
+        location:    act.location || '',
+        cost:        act.cost || '',
+        tags:        act.tags || [],
+        day:         act.day,
+        period:      act.period,
+        source:      'AI Guide',
+        link:        null,
       });
     }
   }
+  // Sort: today first, then by time of day
+  cards.sort((a, b) => {
+    if (a.day !== b.day) return a.day === 'today' ? -1 : 1;
+    return (PERIOD_ORDER[a.period] ?? 9) - (PERIOD_ORDER[b.period] ?? 9);
+  });
   return cards;
 }
 
 const AI_CARDS = parseGuideCards();
+
 
 // ── Region chips ──────────────────────────────────────────────────────────────
 const REGIONS = ['all', ...['Charlotte','Triad','Greenville SC','Asheville','Triangle NC']];
@@ -491,18 +472,30 @@ function buildAICard(ev){
   const card = document.createElement('div');
   card.className = 'event-card ai-card';
   card.style.cursor = 'default';
-  const dayLabel = ev.day === 'today' ? 'Today' : 'Tomorrow';
+
+  const dayLabel    = ev.day === 'today' ? 'Today' : 'Tomorrow';
+  const periodEmoji = { morning:'🌅', afternoon:'☀️', evening:'🌆', night:'🌙' }[ev.period] || '🕐';
+  const periodLabel = ev.period ? (ev.period.charAt(0).toUpperCase() + ev.period.slice(1)) : '';
+  const costBadge   = ev.cost
+    ? `<span class="badge" style="background:var(--paper-2);color:var(--ink-2);border-color:var(--border-soft)">${ev.cost}</span>`
+    : '';
+  const tagsHtml = (ev.tags || []).slice(0, 3).map(t =>
+    `<span style="font-size:10px;color:var(--ink-3);font-family:var(--font-mono)">#${t}</span>`
+  ).join(' ');
+
   card.innerHTML = `
     <div class="card-top">
-      <div class="card-source">AI Guide</div>
+      <div class="card-source">✦ AI Guide · ${periodEmoji} ${periodLabel}</div>
       <div class="card-badges">
-        <span class="badge badge-ai">✦ AI</span>
+        ${costBadge}
         <span class="badge" style="background:var(--paper-2);color:${ev.tier_color};border-color:var(--border-soft)">${ev.tier_label}</span>
       </div>
     </div>
     <div class="card-title">${ev.title}</div>
+    ${ev.location ? `<div style="font-size:11px;color:var(--ink-3);margin:-2px 0 2px;font-family:var(--font-mono)">📍 ${ev.location}</div>` : ''}
     <div class="card-desc" style="-webkit-line-clamp:3">${ev.description}</div>
     <div class="card-footer">
+      <div style="display:flex;gap:6px;flex-wrap:wrap">${tagsHtml}</div>
       <div class="card-date no-date">
         <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
         ${dayLabel}
