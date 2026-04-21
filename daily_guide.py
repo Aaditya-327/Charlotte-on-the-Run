@@ -137,33 +137,42 @@ def extract_json(text: str) -> list:
         raise ValueError("Expected JSON array at top level")
     return data
 
-def validate_card(card: dict, allowed_tiers: list) -> dict | None:
+def validate_card(card: dict, allowed_tiers: list, today_iso: str, tomorrow_iso: str) -> dict | None:
     """Normalise and validate a single activity card. Returns None if invalid."""
-    required = ("title", "description", "day", "period", "location", "cost", "tier")
+    # Translate ISO date → day label when model ignores schema
+    if "day" not in card and "date" in card:
+        d = str(card["date"])[:10]
+        if d == today_iso:
+            card["day"] = "today"
+        elif d == tomorrow_iso:
+            card["day"] = "tomorrow"
+
+    required = ("title", "description", "day", "location", "cost", "tier")
     if not all(k in card for k in required):
         return None
     if card.get("day") not in ("today", "tomorrow"):
         return None
     if card.get("period") not in ("morning", "afternoon", "evening", "night"):
-        card["period"] = "afternoon"  # safe default
+        card["period"] = "afternoon"
     if card.get("tier") not in allowed_tiers:
         return None
-        
+
     card.setdefault("tags", [])
     card.setdefault("category", [])
     card["title"]       = str(card["title"])[:80]
-    card["description"] = str(card["description"])[:400]
+    card["description"] = str(card.get("description") or "")[:400]
     card["location"]    = str(card["location"])[:80]
     card["cost"]        = str(card["cost"])[:20]
     return card
 
 # ── Fetch Grouped Tiers ─────────────────────────────────────────────────────────────
 def fetch_grouped_tiers(client: genai.Client, call_def: dict, today_dow: str, today: str,
-               tomorrow_dow: str, tomorrow: str, retries: int = 3) -> dict:
+               tomorrow_dow: str, tomorrow: str, today_iso: str, tomorrow_iso: str,
+               retries: int = 3) -> dict:
     call_name = call_def["name"]
     prompt  = make_prompt(call_def, today_dow, today, tomorrow_dow, tomorrow)
     allowed_tiers = [t["id"] for t in call_def["tiers"]]
-    
+
     print(f"  Fetching {call_name}…", flush=True)
 
     for attempt in range(retries):
@@ -174,7 +183,7 @@ def fetch_grouped_tiers(client: genai.Client, call_def: dict, today_dow: str, to
                 config=types.GenerateContentConfig(
                     system_instruction=SYSTEM_INSTRUCTION,
                     tools=[types.Tool(google_search=types.GoogleSearch())],
-                    temperature=0.2,   # lower = more deterministic JSON
+                    temperature=0.2,
                 ),
             )
             text = response.text or ""
@@ -190,7 +199,7 @@ def fetch_grouped_tiers(client: genai.Client, call_def: dict, today_dow: str, to
 
             # Parse JSON
             raw_cards = extract_json(text)
-            activities = [c for c in (validate_card(c, allowed_tiers) for c in raw_cards) if c]
+            activities = [c for c in (validate_card(c, allowed_tiers, today_iso, tomorrow_iso) for c in raw_cards) if c]
 
             print(f"    ✓ {len(activities)} total cards | {len(sources)} sources")
             return {
@@ -307,6 +316,7 @@ def main():
             client, call_def,
             today_dow, today_s,
             tomorrow_dow, tomorrow_s,
+            today.isoformat(), tomorrow.isoformat(),
         )
         all_activities.extend(result["activities"])
         all_sources.extend(result["sources"])
