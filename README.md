@@ -8,7 +8,7 @@
 
 ## What Is This?
 
-Charlotte On The Run is a personal event dashboard that aggregates **real local event signals** from 25 curated RSS feeds across 5 regions, then layers on **Gemini AI-generated activity guides** (with live Google Search grounding) — all rendered as a fast, zero-dependency static site hosted on GitHub Pages.
+Charlotte On The Run is a personal event dashboard that aggregates **real local event signals** from 23 curated RSS feeds across 5 regions, then layers on **Gemini AI-generated activity guides** (with live Google Search grounding) — all rendered as a fast, zero-dependency static site hosted on GitHub Pages.
 
 The goal is simple: open the site on any given day and immediately know what's worth doing in Charlotte and up to 2.5 hours away — without wading through job boards, real estate listings, or recycled press releases.
 
@@ -34,7 +34,7 @@ The goal is simple: open the site on any given day and immediately know what's w
 ┌─────────────────────────────────────────────────────────────┐
 │                        Data Pipeline                         │
 │                                                             │
-│   feeds.py          25 curated RSS feeds                    │
+│   feeds.py          23 curated RSS feeds                    │
 │       │                 (5 regions, 3 priority tiers)       │
 │       ▼                                                     │
 │   fetcher.py        Fetch → Score → Filter → Store          │
@@ -69,13 +69,13 @@ The goal is simple: open the site on any given day and immediately know what's w
 
 | Metric | Value |
 |--------|-------|
-| Live RSS feeds | **25** |
+| Live RSS feeds | **23** |
 | Events in DB | **60** |
 | Events with confirmed dates | **26** |
 | Regions covered | **5** |
 | AI activity cards (today + tomorrow) | **47** |
 | AI tiers | Free · Under $20 · Under $50 · Splurge |
-| Dead feeds (probed & catalogued) | **53** |
+| Dead feeds (probed & catalogued) | **58** |
 
 ---
 
@@ -144,14 +144,14 @@ Feeds are validated weekly via `test_feeds.py`, which probes all 100 candidate U
 
 | Region | Drive Time | Key Sources |
 |--------|-----------|-------------|
-| **Charlotte** | 0 min | Charlotte on the Cheap, Charlotte Is Creative, Queen City Nerve, Scoop Charlotte, QNotes Carolinas, Charlotte Pride, Mint Museum, Charlotte Ballet, CLTtoday |
-| **Triad** | ~1 hr | Triad City Beat (Culture), WStoday, Greensboro.com Entertainment, Reynolda House, Triad Moms on Main |
-| **Greenville SC** | ~1h 30m | Greenville Journal (Events + Arts), GVLtoday, Town Carolina |
-| **Asheville** | ~2 hr | Mountain Xpress, Asheville Art Museum |
+| **Charlotte** | 0 min | Charlotte on the Cheap, Charlotte Is Creative, Queen City Nerve, Scoop Charlotte, QNotes Carolinas, Charlotte Pride, SouthPark Magazine, CLTtoday |
+| **Triad** | ~1 hr | Triad City Beat (Culture), WStoday, Greensboro.com Entertainment |
+| **Greenville SC** | ~1h 30m | Greenville Journal (Events + Arts), GVLtoday, Town Carolina, COLAtoday |
+| **Asheville** | ~2 hr | Mountain Xpress |
 | **Triangle NC** | ~2h 30m | Walter Magazine, Triangle on the Cheap, Raleigh Magazine, Durham Magazine, INDY Week, RALtoday |
 
-### Probed & Catalogued as Dead (53 feeds)
-Full register in `what2improve.md`. Notable failures: Charlotte Observer / N&O (McClatchy paywall timeout), Blumenthal Arts (404), WFAE (404), Gantt Center (XML parse error), all Journal Now / Yes! Weekly / Free Times properties (HTTP 429 rate-limiting).
+### Dropped Feeds (58 total)
+Full register in `what2improve.md` and `feeds.py` header. Notable removals: Charlotte Observer / N&O (McClatchy paywall timeout), Blumenthal Arts (404), WFAE (404), Gantt Center (XML parse error), all Journal Now / Yes! Weekly / Free Times properties (HTTP 429 rate-limiting), Charlotte Ballet / Mint Museum / Reynolda House (single-venue org feeds), Charlotte Parent (niche demographic, low event signal), Unpretentious Palate (food blog).
 
 ---
 

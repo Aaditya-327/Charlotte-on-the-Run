@@ -26,6 +26,11 @@ Dead/removed (last checked 2026-04-21 via test_feeds.py):
   Charlotte Observer/N&O   — Timeout (paywalled McClatchy)
   Blumenthal Arts          — HTTP 404 (blog/rss path moved)
   Gantt Center             — PARSE_ERR (invalid XML)
+  Charlotte Ballet         — Dropped: single-venue org feed, low editorial breadth
+  Mint Museum              — Dropped: single-venue org feed, low editorial breadth
+  Reynolda House           — Dropped: single-venue org feed, low editorial breadth
+  Charlotte Parent         — Dropped: single-demographic niche, low event signal
+  Unpretentious Palate     — Dropped: food blog, not an events source
 
 priority 1 = every 6h  (pure event / high signal)
 priority 2 = daily     (culture/events mix, good signal after filtering)
@@ -42,23 +47,21 @@ FEEDS = [
      "https://qcnerve.com/feed/",
      1, ["events", "arts", "culture"]),
 
-    ("Charlotte",     "0min",    "Charlotte Ballet",
-     "https://charlotteballet.org/feed/",
-     1, ["events", "arts", "performance"]),
+    ("Charlotte",     "0min",    "Charlotte Is Creative",
+     "https://charlotteiscreative.com/feed/",
+     1, ["events", "arts", "culture"]),
+
+    ("Charlotte",     "0min",    "Charlotte on the Cheap",
+     "https://www.charlotteonthecheap.com/feed/",
+     1, ["events", "free", "community"]),
 
     ("Charlotte",     "0min",    "SouthPark Magazine",
      "https://southparkmagazine.com/feed/",
-     1, ["events", "culture", "arts"]),
+     2, ["events", "culture", "arts"]),
 
     ("Charlotte",     "0min",    "Charlotte Pride",
      "https://charlottepride.org/feed/",
-     1, ["events", "community", "lgbtq"]),
-
-
-
-    ("Charlotte",     "0min",    "Charlotte Parent",
-     "https://www.charlotteparent.com/feed/",
-     2, ["events", "family"]),
+     2, ["events", "community", "lgbtq"]),
 
     ("Charlotte",     "0min",    "CLTtoday (6AM City)",
      "https://clttoday.6amcity.com/index.rss",
@@ -67,22 +70,6 @@ FEEDS = [
     ("Charlotte",     "0min",    "QNotes Carolinas",
      "https://qnotescarolinas.com/feed/",
      2, ["events", "lgbtq", "community"]),
-
-    ("Charlotte",     "0min",    "Mint Museum",
-     "https://mintmuseum.org/feed/",
-     2, ["events", "arts", "culture"]),
-
-    ("Charlotte",     "0min",    "Unpretentious Palate",
-     "https://unpretentiouspalate.com/feed/",
-     2, ["food", "culture"]),
-
-    ("Charlotte",     "0min",    "Charlotte on the Cheap",
-     "https://www.charlotteonthecheap.com/feed/",
-     1, ["events", "free", "community"]),
-
-    ("Charlotte",     "0min",    "Charlotte Is Creative",
-     "https://charlotteiscreative.com/feed/",
-     1, ["events", "arts", "culture"]),
 
     # ── 1H — Piedmont Triad ───────────────────────────────────────────────
     ("Triad",         "1h",      "Triad City Beat (Culture)",
@@ -96,10 +83,6 @@ FEEDS = [
     ("Triad",         "1h",      "Greensboro.com Entertainment",
      "https://greensboro.com/search/?f=rss&t=article&c=entertainment&l=50&s=start_time&sd=desc",
      2, ["events", "entertainment", "culture"]),
-
-    ("Triad",         "1h",      "Reynolda House",
-     "https://reynolda.org/feed/",
-     2, ["events", "arts", "culture"]),
 
     ("Greenville SC", "1h30min", "Greenville Journal (Events)",
      "https://greenvillejournal.com/category/events/feed/",

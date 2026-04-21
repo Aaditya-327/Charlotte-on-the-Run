@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>Charlotte On The Run — Events</title>
-<meta name="description" content="Upcoming events in Charlotte NC and surrounding areas. Updated daily from 20 curated sources."/>
+<meta name="description" content="Upcoming events in Charlotte NC and surrounding areas. Updated daily from 23 curated sources."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
@@ -257,7 +257,7 @@ footer{border-top:1px solid var(--border-faint);padding:20px 24px;text-align:cen
 
 </main>
 
-<footer id="footer">Charlotte On The Run · Built with 20 curated RSS feeds · <a href="https://github.com/Aaditya-327/Charlotte-on-the-Run" style="color:var(--rust-500);text-decoration:none">GitHub</a></footer>
+<footer id="footer">Charlotte On The Run · Built with 23 curated RSS feeds · <a href="https://github.com/Aaditya-327/Charlotte-on-the-Run" style="color:var(--rust-500);text-decoration:none">GitHub</a></footer>
 
 <script src="events_data.js"></script>
 <script src="daily_guide_data.js"></script>
@@ -468,10 +468,17 @@ function buildCard(ev){
   return card;
 }
 
+function buildDDGUrl(ev){
+  const q = [ev.title, ev.location, 'Charlotte NC'].filter(Boolean).join(' ');
+  return 'https://duckduckgo.com/?q=' + encodeURIComponent(q);
+}
+
 function buildAICard(ev){
-  const card = document.createElement('div');
+  const card = document.createElement('a');
   card.className = 'event-card ai-card';
-  card.style.cursor = 'default';
+  card.href = buildDDGUrl(ev);
+  card.target = '_blank';
+  card.rel = 'noopener noreferrer';
 
   const dayLabel    = ev.day === 'today' ? 'Today' : 'Tomorrow';
   const periodEmoji = { morning:'🌅', afternoon:'☀️', evening:'🌆', night:'🌙' }[ev.period] || '🕐';
@@ -496,9 +503,12 @@ function buildAICard(ev){
     <div class="card-desc" style="-webkit-line-clamp:3">${ev.description}</div>
     <div class="card-footer">
       <div style="display:flex;gap:6px;flex-wrap:wrap">${tagsHtml}</div>
-      <div class="card-date no-date">
-        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-        ${dayLabel}
+      <div style="display:flex;align-items:center;gap:8px">
+        <div class="card-date no-date">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          ${dayLabel}
+        </div>
+        <svg class="card-link-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
       </div>
     </div>
   `;
