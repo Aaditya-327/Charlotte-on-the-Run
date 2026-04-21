@@ -1,0 +1,1962 @@
+[
+  {
+    "title": "Nature Escape at USNWC",
+    "description": "Hike the extensive trail system along the river to reset your mental state away from the urban bustle. The natural terrain offers a rugged adventure that showcases the city's access to true wilderness.",
+    "period": "morning",
+    "location": "US National Whitewater Center, Catawba",
+    "cost": "$6–$12",
+    "tags": [
+      "outdoor",
+      "fitness",
+      "nature"
+    ],
+    "category": [
+      "outdoors",
+      "fitness"
+    ],
+    "tier": "affordable",
+    "rank": 5
+  },
+  {
+    "title": "Market Exploration at Optimist Hall",
+    "description": "Navigate this massive, transformed textile mill for an early-morning bite from local artisan vendors. It is a sensory-heavy market experience that perfectly showcases the city's culinary and cultural diversity.",
+    "period": "morning",
+    "location": "Optimist Hall, Optimist Park",
+    "cost": "$12–$20",
+    "tags": [
+      "food",
+      "shopping",
+      "culture"
+    ],
+    "category": [
+      "market",
+      "food"
+    ],
+    "tier": "affordable",
+    "rank": 5
+  },
+  {
+    "title": "Morning Run at Freedom Park",
+    "description": "Jog around the lake at Charlotte's signature urban park before the workday starts. It’s the foundational fitness baseline for the local community, offering scenic views and a highly social atmosphere.",
+    "period": "morning",
+    "location": "Freedom Park, Myers Park",
+    "cost": "Free",
+    "tags": [
+      "outdoor",
+      "fitness",
+      "nature"
+    ],
+    "category": [
+      "outdoors",
+      "fitness"
+    ],
+    "tier": "free",
+    "rank": 5
+  },
+  {
+    "title": "Vietnamese Soul at LangVan",
+    "description": "Experience legendary hospitality at a city staple beloved by the queer community for decades. This essential culinary baseline features a massive menu where the owner treats every regular like family.",
+    "period": "afternoon",
+    "location": "LangVan, Shamrock",
+    "cost": "$15–$25",
+    "tags": [
+      "food",
+      "culture",
+      "queer-friendly"
+    ],
+    "category": [
+      "food"
+    ],
+    "tier": "affordable",
+    "rank": 5
+  },
+  {
+    "title": "Art Immersion at Mint Museum Uptown",
+    "description": "Explore world-class craft, design, and contemporary art in a sleek, architectural gem. It is a sophisticated baseline for an artsy afternoon in the heart of Charlotte's cultural district.",
+    "period": "afternoon",
+    "location": "Mint Museum Uptown, Uptown",
+    "cost": "$15",
+    "tags": [
+      "art",
+      "culture",
+      "queer-friendly"
+    ],
+    "category": [
+      "arts"
+    ],
+    "tier": "affordable",
+    "rank": 5
+  },
+  {
+    "title": "Pints at Olde Mecklenburg Brewery",
+    "description": "Visit the OG Charlotte biergarten for an authentic German-style experience in LoSo. Its massive outdoor space is the city's premier social anchor for weekend brews and bratwurst.",
+    "period": "afternoon",
+    "location": "OMB, LoSo",
+    "cost": "$10–$20",
+    "tags": [
+      "drinks",
+      "outdoor",
+      "culture"
+    ],
+    "category": [
+      "drinks",
+      "outdoors"
+    ],
+    "tier": "affordable",
+    "rank": 5
+  },
+  {
+    "title": "Historic Steaks at Beef 'N Bottle",
+    "description": "Step back in time at this legendary, low-lit steakhouse that has maintained its classic mid-century charm since 1958. It is a foundational, unpretentious piece of Charlotte’s culinary soul.",
+    "period": "night",
+    "location": "Beef 'N Bottle, South Blvd",
+    "cost": "$35–$70",
+    "tags": [
+      "food",
+      "drinks",
+      "culture"
+    ],
+    "category": [
+      "food"
+    ],
+    "tier": "premium",
+    "rank": 5
+  },
+  {
+    "title": "South End Rail Trail Social",
+    "description": "Walk the three-mile urban vein that defines modern Charlotte social life. It is the city's premier high-visibility corridor for a social stroll, offering endless people-watching and spontaneous entries into local bars.",
+    "period": "afternoon",
+    "location": "South End Rail Trail, South End",
+    "cost": "Free",
+    "tags": [
+      "outdoor",
+      "fitness",
+      "queer-friendly"
+    ],
+    "category": [
+      "outdoors"
+    ],
+    "tier": "free",
+    "rank": 4
+  },
+  {
+    "title": "Alternative Vibes at Snug Harbor",
+    "description": "Dive into the heart of Plaza Midwood's underground scene with live music that skews toward the adventurous and authentic. This nautical-themed sanctuary is where the city’s alternative socialites gather for high-energy sets.",
+    "period": "night",
+    "location": "Snug Harbor, Plaza Midwood",
+    "cost": "$10–$20",
+    "tags": [
+      "music",
+      "nightlife",
+      "art"
+    ],
+    "category": [
+      "music",
+      "nightlife"
+    ],
+    "tier": "mid-range",
+    "rank": 4
+  },
+  {
+    "title": "Cocktail Chemistry at Supperland",
+    "description": "Visit the speakeasy-style bar hidden within this restored mid-century church for adventurous, alchemical cocktails. The high-design setting and sophisticated crowd make it the peak of Charlotte’s social scene.",
+    "period": "night",
+    "location": "Supperland, Plaza Midwood",
+    "cost": "$15–$25",
+    "tags": [
+      "food",
+      "drinks",
+      "art"
+    ],
+    "category": [
+      "food"
+    ],
+    "tier": "mid-range",
+    "rank": 4
+  },
+  {
+    "title": "Treasure Hunting at Sleepy Poet",
+    "description": "Navigate a sprawling labyrinth of vintage treasures, retro fashion, and oddities that define the city's quirky undercurrent. It is an adventurous morning excursion perfect for finding unique pieces of Charlotte history.",
+    "period": "morning",
+    "location": "Sleepy Poet Antique Mall, South Blvd",
+    "cost": "Free entry",
+    "tags": [
+      "shopping",
+      "culture",
+      "art"
+    ],
+    "category": [
+      "market",
+      "arts"
+    ],
+    "tier": "free",
+    "rank": 4
+  },
+  {
+    "title": "Custom Spirits at Idlewild",
+    "description": "Describe your preferences and let expert bartenders build a custom drink just for you in this cozy, menu-less NoDa gem. It is the ultimate destination for adventurous drinkers seeking a personal, high-quality social experience.",
+    "period": "night",
+    "location": "Idlewild, NoDa",
+    "cost": "$16–$24",
+    "tags": [
+      "drinks",
+      "culture",
+      "nightlife"
+    ],
+    "category": [
+      "nightlife",
+      "drinks"
+    ],
+    "tier": "mid-range",
+    "rank": 4
+  },
+  {
+    "title": "Refined Southern Dining at Haberdish",
+    "description": "Feast on elevated Southern staples in an airy, industrial-chic space that captures the refined soul of NoDa. The comforting food and social atmosphere make it a baseline essential for an authentic dinner.",
+    "period": "evening",
+    "location": "Haberdish, NoDa",
+    "cost": "$20–$40",
+    "tags": [
+      "food",
+      "drinks",
+      "culture"
+    ],
+    "category": [
+      "food"
+    ],
+    "tier": "mid-range",
+    "rank": 4
+  },
+  {
+    "title": "Acoustic Open Mic at The Evening Muse",
+    "description": "Witness raw local talent in NoDa’s premier listening room. The atmosphere is intimate and focused, making it the perfect spot for a midweek cultural deep-dive without the club noise.",
+    "period": "night",
+    "location": "The Evening Muse, NoDa",
+    "cost": "$5",
+    "tags": [
+      "music",
+      "culture",
+      "queer-friendly"
+    ],
+    "category": [
+      "music",
+      "arts"
+    ],
+    "tier": "affordable",
+    "rank": 4
+  },
+  {
+    "title": "Retro Gaming at Super Abari",
+    "description": "Relive the golden age of arcades with rare cabinets and classic pinball in a massive, high-energy warehouse. It is a social playground for competitive spirits who prefer joysticks over dance floors.",
+    "period": "afternoon",
+    "location": "Super Abari Game Bar, Optimist Park",
+    "cost": "$10–$20",
+    "tags": [
+      "nightlife",
+      "culture",
+      "drinks"
+    ],
+    "category": [
+      "nightlife",
+      "weird"
+    ],
+    "tier": "affordable",
+    "rank": 4
+  },
+  {
+    "title": "Dinner in the Garden at Goodyear House",
+    "description": "Dine under the massive holly tree in this converted historic home that blends high-design with approachable Southern comfort. The social energy here is unmatched, representing the peak of NoDa dining.",
+    "period": "evening",
+    "location": "The Goodyear House, NoDa",
+    "cost": "$25–$50",
+    "tags": [
+      "food",
+      "drinks",
+      "outdoor"
+    ],
+    "category": [
+      "food"
+    ],
+    "tier": "mid-range",
+    "rank": 4
+  },
+  {
+    "title": "Lakeside Escape to Hello, Sailor",
+    "description": "Take a short drive North for a mid-century modern dockside experience featuring fish camp vibes and citrusy cocktails. It is a stylish, adventurous getaway that feels worlds away from the city center.",
+    "period": "afternoon",
+    "location": "Hello, Sailor, Cornelius",
+    "cost": "$20–$40",
+    "tags": [
+      "food",
+      "drinks",
+      "outdoor"
+    ],
+    "category": [
+      "food",
+      "drinks"
+    ],
+    "tier": "mid-range",
+    "rank": 4
+  },
+  {
+    "title": "Pint & Peanuts at Birdsong Brewing",
+    "description": "Lean into the unpretentious NoDa baseline at this solar-powered brewery. It’s the ultimate chill social spot where the inclusive vibe is as consistent as the Higher Ground IPA.",
+    "period": "afternoon",
+    "location": "Birdsong Brewing Co, NoDa",
+    "cost": "$7–$14",
+    "tags": [
+      "drinks",
+      "outdoor",
+      "queer-friendly"
+    ],
+    "category": [
+      "drinks"
+    ],
+    "tier": "affordable",
+    "rank": 4
+  },
+  {
+    "title": "Morning Hike at Crowders Mountain",
+    "description": "Take the short drive for a rugged ascent with a rewarding panoramic view of the Charlotte skyline. It’s the definitive adventurous fitness baseline for locals seeking a vertical challenge.",
+    "period": "morning",
+    "location": "Crowders Mountain, Kings Mountain",
+    "cost": "Free",
+    "tags": [
+      "outdoor",
+      "fitness",
+      "nature"
+    ],
+    "category": [
+      "outdoors",
+      "fitness"
+    ],
+    "tier": "free",
+    "rank": 4
+  },
+  {
+    "title": "Art & Lager at Resident Culture",
+    "description": "Immerse yourself in a brewery that feels like a street-art gallery, known for its world-class hazies and funky atmosphere. It’s a cornerstone of the Plaza Midwood social identity.",
+    "period": "afternoon",
+    "location": "Resident Culture Brewing Co, Plaza Midwood",
+    "cost": "$8–$16",
+    "tags": [
+      "drinks",
+      "art",
+      "queer-friendly"
+    ],
+    "category": [
+      "drinks",
+      "arts"
+    ],
+    "tier": "affordable",
+    "rank": 4
+  },
+  {
+    "title": "Garden Cocktails at Dilworth Tasting Room",
+    "description": "Unwind in one of the most beautiful hidden courtyards in the city. This elevated social baseline in Dilworth is perfect for a sophisticated Tuesday evening with a Mediterranean-inspired menu.",
+    "period": "evening",
+    "location": "Dilworth Tasting Room, Dilworth",
+    "cost": "$15–$40",
+    "tags": [
+      "drinks",
+      "outdoor",
+      "art"
+    ],
+    "category": [
+      "drinks"
+    ],
+    "tier": "premium",
+    "rank": 4
+  },
+  {
+    "title": "Market Vibes at 7th Street Public Market",
+    "description": "Start your Wednesday in the center of Uptown’s culinary hub. It is the definitive urban baseline for grabbing local provisions while soaking in the energy of the city’s professional core.",
+    "period": "morning",
+    "location": "7th Street Public Market, Uptown",
+    "cost": "$10–$20",
+    "tags": [
+      "food",
+      "shopping",
+      "culture"
+    ],
+    "category": [
+      "market",
+      "food"
+    ],
+    "tier": "affordable",
+    "rank": 4
+  },
+  {
+    "title": "Skyline Views at Merchant & Trade",
+    "description": "Sip elevated cocktails nineteen floors up with a panoramic view of the Uptown skyline. This sophisticated baseline is the premier spot for a social night out before exploring the late-night scene.",
+    "period": "evening",
+    "location": "Merchant & Trade, Uptown",
+    "cost": "$18–$30",
+    "tags": [
+      "drinks",
+      "nightlife",
+      "culture"
+    ],
+    "category": [
+      "drinks",
+      "nightlife"
+    ],
+    "tier": "mid-range",
+    "rank": 4
+  },
+  {
+    "title": "Crate Digging at Lunchbox Records",
+    "description": "Navigate the aisles of this world-class independent record store for rare vinyl and local releases. It is a gritty, authentic cultural baseline for music lovers and local collectors alike.",
+    "period": "afternoon",
+    "location": "Lunchbox Records, NoDa",
+    "cost": "Free entry",
+    "tags": [
+      "music",
+      "shopping",
+      "culture"
+    ],
+    "category": [
+      "arts",
+      "market"
+    ],
+    "tier": "free",
+    "rank": 4
+  },
+  {
+    "title": "Speakeasy Sips at Dot Dot Dot",
+    "description": "Enter through a secret back door for a high-end, member-only cocktail experience in a mid-century lounge. It represents the secretive, upscale baseline of Charlotte's sophisticated social hierarchy.",
+    "period": "night",
+    "location": "Dot Dot Dot, Park Road",
+    "cost": "$20–$40",
+    "tags": [
+      "drinks",
+      "culture",
+      "nightlife"
+    ],
+    "category": [
+      "drinks",
+      "nightlife"
+    ],
+    "tier": "premium",
+    "rank": 4
+  },
+  {
+    "title": "Fresh Finds at Regional Farmers Market",
+    "description": "Explore stalls of local produce and artisan goods at one of the largest markets in the state. It is an adventurous morning baseline that connects you with the region's agricultural roots.",
+    "period": "morning",
+    "location": "Charlotte Regional Farmers Market, West Charlotte",
+    "cost": "Free entry",
+    "tags": [
+      "food",
+      "shopping",
+      "nature"
+    ],
+    "category": [
+      "market"
+    ],
+    "tier": "free",
+    "rank": 4
+  },
+  {
+    "title": "Night Cap at Soul Gastrolounge",
+    "description": "Experience the high-energy return of a city legend featuring inventive sushi and fusion small plates. It is a premier social baseline for the city's trendy and adventurous nightlife scene.",
+    "period": "night",
+    "location": "Soul Gastrolounge, NoDa",
+    "cost": "$25–$50",
+    "tags": [
+      "food",
+      "drinks",
+      "nightlife"
+    ],
+    "category": [
+      "food",
+      "nightlife"
+    ],
+    "tier": "mid-range",
+    "rank": 4
+  },
+  {
+    "title": "Burgers at Pinky's Westside Grill",
+    "description": "Grab a Ding Dong Style burger at this quirky, converted automotive shop in FreeMoreWest. It is a quintessential Charlotte staple known for its diverse crowd and high-energy patio.",
+    "period": "afternoon",
+    "location": "Pinky's Westside Grill, West End",
+    "cost": "$12–$20",
+    "tags": [
+      "food",
+      "culture",
+      "queer-friendly"
+    ],
+    "category": [
+      "food"
+    ],
+    "tier": "affordable",
+    "rank": 4
+  },
+  {
+    "title": "Concerts at The Fillmore",
+    "description": "Catch a major touring act in this historic, chandelier-filled music venue. The industrial vibe and high-quality production make it the city's most iconic spot for live performances.",
+    "period": "night",
+    "location": "The Fillmore Charlotte, Music Factory",
+    "cost": "$30–$80",
+    "tags": [
+      "music",
+      "nightlife",
+      "culture"
+    ],
+    "category": [
+      "music",
+      "nightlife"
+    ],
+    "tier": "mid-range",
+    "rank": 4
+  },
+  {
+    "title": "The Firebird at Bechtler Museum",
+    "description": "Take a photo with the iconic 'Disco Chicken' statue before exploring modern art collections inside. This architectural gem is a foundational piece of the Uptown cultural landscape.",
+    "period": "afternoon",
+    "location": "Bechtler Museum of Modern Art, Uptown",
+    "cost": "$15",
+    "tags": [
+      "art",
+      "culture",
+      "queer-friendly"
+    ],
+    "category": [
+      "arts"
+    ],
+    "tier": "affordable",
+    "rank": 4
+  },
+  {
+    "title": "Science on the Rocks",
+    "description": "Attend a themed, adult-only night at the science museum featuring cocktails and hands-on experiments. It’s a weird and adventurous way to experience the city's cultural side after hours.",
+    "period": "night",
+    "location": "Discovery Place Science, Uptown",
+    "cost": "$20–$30",
+    "tags": [
+      "culture",
+      "drinks",
+      "art"
+    ],
+    "category": [
+      "weird",
+      "drinks"
+    ],
+    "tier": "mid-range",
+    "rank": 4
+  },
+  {
+    "title": "Legendary Burgers at Brooks'",
+    "description": "Stand in line at this iconic, no-frills window for one of the best burgers in the Southeast. It is a gritty, essential piece of Charlotte’s culinary history in NoDa.",
+    "period": "morning",
+    "location": "Brooks' Sandwich House, NoDa",
+    "cost": "$10–$15",
+    "tags": [
+      "food",
+      "culture"
+    ],
+    "category": [
+      "food"
+    ],
+    "tier": "affordable",
+    "rank": 4
+  },
+  {
+    "title": "Underground Sets at Visulite",
+    "description": "Enjoy a diverse lineup of bands in this cozy, underground-style theater. It is a legendary Elizabeth landmark known for its great acoustics and unpretentious vibe.",
+    "period": "night",
+    "location": "Visulite Theatre, Elizabeth",
+    "cost": "$15–$30",
+    "tags": [
+      "music",
+      "nightlife",
+      "culture"
+    ],
+    "category": [
+      "music",
+      "nightlife"
+    ],
+    "tier": "mid-range",
+    "rank": 4
+  },
+  {
+    "title": "Hop Drop at NoDa Brewing",
+    "description": "Visit the OG taproom for a flight of their signature local brews in a massive, social warehouse. It’s a foundational piece of the North End's growing craft beer district.",
+    "period": "afternoon",
+    "location": "NoDa Brewing Company, North End",
+    "cost": "$8–$16",
+    "tags": [
+      "drinks",
+      "outdoor",
+      "culture"
+    ],
+    "category": [
+      "drinks",
+      "outdoors"
+    ],
+    "tier": "affordable",
+    "rank": 4
+  },
+  {
+    "title": "Skyline Dining at Fahrenheit",
+    "description": "Take the elevator up for one of the most Instagrammed views of the Charlotte skyline and a high-end cocktail by the outdoor fire pits. It is a quintessential Uptown experience for socialites looking to impress.",
+    "period": "evening",
+    "location": "Fahrenheit, Uptown",
+    "cost": "$20–$50",
+    "tags": [
+      "drinks",
+      "food",
+      "culture"
+    ],
+    "category": [
+      "drinks",
+      "food"
+    ],
+    "tier": "premium",
+    "rank": 4
+  },
+  {
+    "title": "Italian Soul at Ever Andalo",
+    "description": "Experience the warm, elevated atmosphere of this Plaza Midwood staple serving handmade pasta and craft cocktails. It captures the sophisticated but communal spirit of the neighborhood's dining scene.",
+    "period": "evening",
+    "location": "Ever Andalo, Plaza Midwood",
+    "cost": "$25–$50",
+    "tags": [
+      "food",
+      "drinks",
+      "culture"
+    ],
+    "category": [
+      "food"
+    ],
+    "tier": "premium",
+    "rank": 4
+  },
+  {
+    "title": "Historic Bites at 300 East",
+    "description": "Dine in this charming, converted Victorian home that has been a Dilworth social anchor for decades. Its unpretentious but refined menu makes it a reliable staple for an adventurous weekend brunch.",
+    "period": "afternoon",
+    "location": "300 East, Dilworth",
+    "cost": "$15–$35",
+    "tags": [
+      "food",
+      "culture",
+      "queer-friendly"
+    ],
+    "category": [
+      "food"
+    ],
+    "tier": "mid-range",
+    "rank": 4
+  },
+  {
+    "title": "History Deep-Dive at Levine Museum",
+    "description": "Explore the complex, post-Civil War history of the South in this world-class Uptown museum. It is a culturally essential baseline for understanding the growth and identity of the modern city.",
+    "period": "afternoon",
+    "location": "Levine Museum of the New South, Uptown",
+    "cost": "$10",
+    "tags": [
+      "culture",
+      "art",
+      "queer-friendly"
+    ],
+    "category": [
+      "arts"
+    ],
+    "tier": "affordable",
+    "rank": 4
+  },
+  {
+    "title": "Elizabeth Dining at Customshop",
+    "description": "Enjoy a menu of globally-inspired, chef-driven small plates in a sleek, dimly lit space. This Elizabeth staple is a favorite for the city’s food-forward socialites looking for an adventurous meal.",
+    "period": "evening",
+    "location": "Customshop, Elizabeth",
+    "cost": "$30–$60",
+    "tags": [
+      "food",
+      "drinks",
+      "art"
+    ],
+    "category": [
+      "food"
+    ],
+    "tier": "premium",
+    "rank": 4
+  },
+  {
+    "title": "Southern Staples at Dish",
+    "description": "Feast on home-style Southern comfort food in a quirky, vibrant setting that captures the bohemian spirit of Plaza Midwood. It is a long-standing favorite for a casual, high-vibe social lunch.",
+    "period": "afternoon",
+    "location": "Dish, Plaza Midwood",
+    "cost": "$12–$22",
+    "tags": [
+      "food",
+      "culture",
+      "queer-friendly"
+    ],
+    "category": [
+      "food"
+    ],
+    "tier": "affordable",
+    "rank": 4
+  },
+  {
+    "title": "Oysters & Spirits at Sea Level",
+    "description": "Savor locally-sourced North Carolina oysters and craft cocktails in a modern, coastal-inspired space in the Fifth Third Center. It is a premier Uptown social hub for the after-work professional crowd.",
+    "period": "evening",
+    "location": "Sea Level NC, Uptown",
+    "cost": "$20–$45",
+    "tags": [
+      "food",
+      "drinks",
+      "culture"
+    ],
+    "category": [
+      "food",
+      "drinks"
+    ],
+    "tier": "mid-range",
+    "rank": 4
+  },
+  {
+    "title": "Eclectic Hangs at Petty Thieves Brewing",
+    "description": "Step into a maximalist warehouse that feels like a Victorian explorers' club for niche brews and moody lighting. It is a cornerstone for the local creative crowd seeking a high-vibe social atmosphere outside the mainstream.",
+    "period": "evening",
+    "location": "Petty Thieves Brewing Co, LoSo",
+    "cost": "$8–$15",
+    "tags": [
+      "drinks",
+      "art",
+      "queer-friendly"
+    ],
+    "category": [
+      "drinks"
+    ],
+    "tier": "affordable",
+    "rank": 3
+  },
+  {
+    "title": "Records & Pours at Tip Top Daily Market",
+    "description": "Sip a cold drink while browsing rare vinyl and local curios in this hybrid market-bar. It is the definitive 'cool' baseline for Charlotte residents who prefer a low-key, culturally dense social environment.",
+    "period": "evening",
+    "location": "Tip Top Daily Market, Plaza-Shamrock",
+    "cost": "$7–$15",
+    "tags": [
+      "music",
+      "shopping",
+      "drinks"
+    ],
+    "category": [
+      "market"
+    ],
+    "tier": "affordable",
+    "rank": 3
+  },
+  {
+    "title": "Morning Fuel at Common Market",
+    "description": "Experience the gritty, unpretentious soul of the neighborhood at this legendary deli and community hub. It is the best place to witness the city's diverse crowd waking up over coffee and heavy breakfast sandwiches.",
+    "period": "morning",
+    "location": "The Common Market, South End",
+    "cost": "$10–$18",
+    "tags": [
+      "food",
+      "drinks",
+      "culture"
+    ],
+    "category": [
+      "food",
+      "market"
+    ],
+    "tier": "affordable",
+    "rank": 3
+  },
+  {
+    "title": "Sonic Escapism at Vinyl",
+    "description": "Settle into a booth for a curated listening session paired with small plates and meticulously crafted drinks. This sleek venue honors the ritual of music and conversation in an intimate, low-lit South End space.",
+    "period": "afternoon",
+    "location": "Vinyl, South End",
+    "cost": "$12–$22",
+    "tags": [
+      "music",
+      "drinks",
+      "culture"
+    ],
+    "category": [
+      "drinks",
+      "music"
+    ],
+    "tier": "mid-range",
+    "rank": 3
+  },
+  {
+    "title": "Botanical Bliss at Rosie's",
+    "description": "Wander through a blooming botanical garden with a glass of wine for a peaceful, scenic afternoon escape. It is a serene environment that feels worlds away from the nearby urban industrial zones.",
+    "period": "afternoon",
+    "location": "Rosie's Coffee & Wine Garden, North End",
+    "cost": "$10–$18",
+    "tags": [
+      "outdoor",
+      "drinks",
+      "nature"
+    ],
+    "category": [
+      "outdoors",
+      "drinks"
+    ],
+    "tier": "affordable",
+    "rank": 3
+  },
+  {
+    "title": "Plant Shop Pours at Bloom & Bottle",
+    "description": "Combine hobby and happy hour in this hybrid greenery and craft beer shop. It is a quintessential Plaza Midwood experience where the social vibe is as lush as the tropical foliage.",
+    "period": "afternoon",
+    "location": "Bloom & Bottle, Plaza Midwood",
+    "cost": "$7–$15",
+    "tags": [
+      "drinks",
+      "nature",
+      "queer-friendly"
+    ],
+    "category": [
+      "drinks",
+      "outdoors"
+    ],
+    "tier": "affordable",
+    "rank": 3
+  },
+  {
+    "title": "Late Night Cocktails at Humbug",
+    "description": "Settle into this sleek, moody cocktail bar for a masterclass in modern mixology. The intimate space and curated playlist attract a sophisticated, late-night crowd looking for high-quality conversation.",
+    "period": "night",
+    "location": "Humbug, Plaza Midwood",
+    "cost": "$14–$20",
+    "tags": [
+      "drinks",
+      "nightlife",
+      "queer-friendly"
+    ],
+    "category": [
+      "drinks",
+      "nightlife"
+    ],
+    "tier": "mid-range",
+    "rank": 3
+  },
+  {
+    "title": "Skyline Views at Cordelia Park",
+    "description": "Catch the city's most iconic sunset view from the rolling hills of this neighborhood park. It is a low-key, beautiful way to experience the urban landscape as it transitions into the evening glow.",
+    "period": "evening",
+    "location": "Cordelia Park, Villa Heights",
+    "cost": "Free",
+    "tags": [
+      "outdoor",
+      "nature",
+      "fitness"
+    ],
+    "category": [
+      "outdoors"
+    ],
+    "tier": "free",
+    "rank": 3
+  },
+  {
+    "title": "Wood-Fired Social at Vana",
+    "description": "Experience the raw power of open-fire cooking in a rustic-chic space in South End. The communal energy and adventurous small plates make it a top-tier destination for food-focused socialites.",
+    "period": "night",
+    "location": "Vana, South End",
+    "cost": "$30–$60",
+    "tags": [
+      "food",
+      "drinks",
+      "art"
+    ],
+    "category": [
+      "food"
+    ],
+    "tier": "premium",
+    "rank": 3
+  },
+  {
+    "title": "Patio Pints at Workman's Friend",
+    "description": "Lean into the Irish pub vibe at this Plaza Midwood staple known for its impeccable patio and cozy interior. It is a consistent, high-vibe spot for meeting friends old and new over a Guinness.",
+    "period": "evening",
+    "location": "Workman's Friend, Plaza Midwood",
+    "cost": "$10–$20",
+    "tags": [
+      "drinks",
+      "outdoor",
+      "queer-friendly"
+    ],
+    "category": [
+      "drinks"
+    ],
+    "tier": "affordable",
+    "rank": 3
+  },
+  {
+    "title": "Morning Social at Undercurrent Coffee",
+    "description": "Start your day at this light-filled hub known for its technical approach to brewing and its minimalist aesthetic. It is a quiet but central meeting point for the neighborhood’s morning socialites.",
+    "period": "morning",
+    "location": "Undercurrent Coffee, Optimist Park",
+    "cost": "$5–$12",
+    "tags": [
+      "food",
+      "culture",
+      "queer-friendly"
+    ],
+    "category": [
+      "food"
+    ],
+    "tier": "affordable",
+    "rank": 3
+  },
+  {
+    "title": "Community Pours at Free Range Brewing",
+    "description": "Sip on locally-sourced brews in a space that feels like an artist’s loft. This Villa Heights gem prioritizes community and creative collaboration, drawing a diverse, thoughtful crowd.",
+    "period": "evening",
+    "location": "Free Range Brewing, Villa Heights",
+    "cost": "$8–$15",
+    "tags": [
+      "drinks",
+      "art",
+      "culture"
+    ],
+    "category": [
+      "drinks"
+    ],
+    "tier": "affordable",
+    "rank": 3
+  },
+  {
+    "title": "Wine & Small Plates at Paper Plane",
+    "description": "Discover this intimate, design-forward lounge that balances sophistication with a welcoming neighborhood feel. It’s an essential baseline for those who prefer curated wine lists and deep conversation.",
+    "period": "evening",
+    "location": "Paper Plane Deli & Market, Belmont",
+    "cost": "$15–$25",
+    "tags": [
+      "drinks",
+      "food",
+      "queer-friendly"
+    ],
+    "category": [
+      "drinks"
+    ],
+    "tier": "mid-range",
+    "rank": 3
+  },
+  {
+    "title": "Slurp Ramen at Futo Buta",
+    "description": "Snag a seat on the tiny patio overlooking the light rail for inventive ramen and izakaya bites. It’s a cult-favorite social anchor that defines the culinary edge of South End.",
+    "period": "afternoon",
+    "location": "Futo Buta, South End",
+    "cost": "$18–$30",
+    "tags": [
+      "food",
+      "culture",
+      "outdoor"
+    ],
+    "category": [
+      "food"
+    ],
+    "tier": "mid-range",
+    "rank": 3
+  },
+  {
+    "title": "Steak & Social at The Dunavant",
+    "description": "Experience a focused, high-value dining concept that’s become a South End baseline for weekend dinners. The atmosphere is sleek and social, perfectly catering to the city’s young professional crowd.",
+    "period": "night",
+    "location": "The Dunavant, South End",
+    "cost": "$30–$50",
+    "tags": [
+      "food",
+      "drinks",
+      "culture"
+    ],
+    "category": [
+      "food"
+    ],
+    "tier": "premium",
+    "rank": 3
+  },
+  {
+    "title": "Sunrise at Romare Bearden Park",
+    "description": "Watch the city wake up from this manicured green space that offers the best architectural views in Charlotte. It’s a quiet, scenic baseline for a morning run or reflection before the day starts.",
+    "period": "morning",
+    "location": "Romare Bearden Park, Uptown",
+    "cost": "Free",
+    "tags": [
+      "outdoor",
+      "nature",
+      "art"
+    ],
+    "category": [
+      "outdoors"
+    ],
+    "tier": "free",
+    "rank": 3
+  },
+  {
+    "title": "Late Night Fuel at Midnight Diner",
+    "description": "End your adventure at this iconic, chrome-clad diner that serves up classic comfort food 24/7. It’s the ultimate post-social baseline where every corner of the Charlotte scene eventually converges.",
+    "period": "night",
+    "location": "Midnight Diner, South End",
+    "cost": "$12–$20",
+    "tags": [
+      "food",
+      "nightlife",
+      "culture"
+    ],
+    "category": [
+      "food"
+    ],
+    "tier": "affordable",
+    "rank": 3
+  },
+  {
+    "title": "Ping Pong at Thomas Street Tavern",
+    "description": "Lean into the unpretentious history of Plaza Midwood at this local staple. With a massive back patio and outdoor fire pits, it’s the definitive baseline for a casual, high-energy Tuesday night.",
+    "period": "night",
+    "location": "Thomas Street Tavern, Plaza Midwood",
+    "cost": "$5–$15",
+    "tags": [
+      "drinks",
+      "outdoor",
+      "sports"
+    ],
+    "category": [
+      "drinks",
+      "sports"
+    ],
+    "tier": "free",
+    "rank": 3
+  },
+  {
+    "title": "Minimalist Brews at HEX Coffee",
+    "description": "Visit the industrial-chic Camp North End location for a sophisticated morning social. Their progressive approach to coffee and the sprawling urban backdrop provide an adventurous start to your Wednesday.",
+    "period": "morning",
+    "location": "HEX Coffee, Druid Hills",
+    "cost": "$6–$12",
+    "tags": [
+      "food",
+      "art",
+      "culture"
+    ],
+    "category": [
+      "food",
+      "arts"
+    ],
+    "tier": "affordable",
+    "rank": 3
+  },
+  {
+    "title": "Local History at Alexander Michael's",
+    "description": "Step into this cozy, historic Fourth Ward tavern for a taste of authentic Charlotte. It’s a low-lit, legendary social baseline that feels like a private neighborhood secret away from the Uptown hustle.",
+    "period": "night",
+    "location": "Alexander Michael's, Uptown",
+    "cost": "$20–$35",
+    "tags": [
+      "food",
+      "drinks",
+      "culture"
+    ],
+    "category": [
+      "food"
+    ],
+    "tier": "mid-range",
+    "rank": 3
+  },
+  {
+    "title": "Greenway Cruise on Joy Rides",
+    "description": "Rent a bike and navigate the Little Sugar Creek Greenway for a scenic, high-energy tour of the city. This fitness baseline connects multiple social hubs and offers a refreshing outdoor escape.",
+    "period": "morning",
+    "location": "Little Sugar Creek Greenway, Midtown",
+    "cost": "$5–$15",
+    "tags": [
+      "outdoor",
+      "fitness",
+      "nature"
+    ],
+    "category": [
+      "outdoors",
+      "fitness"
+    ],
+    "tier": "affordable",
+    "rank": 3
+  },
+  {
+    "title": "Indie Cinema at Independent Picture House",
+    "description": "Catch a foreign or independent film at this community-run cinema that champions diverse voices. It is a cultural baseline for the city’s film buffs seeking depth outside the megaplex.",
+    "period": "evening",
+    "location": "Independent Picture House, NoDa",
+    "cost": "$12–$15",
+    "tags": [
+      "art",
+      "culture",
+      "queer-friendly"
+    ],
+    "category": [
+      "film",
+      "arts"
+    ],
+    "tier": "affordable",
+    "rank": 3
+  },
+  {
+    "title": "Shopping at Atherton Mill",
+    "description": "Browse through high-end boutiques and artisan shops in this beautifully restored textile mill. It is the sophisticated social hub of South End, perfect for a weekend shopping excursion.",
+    "period": "afternoon",
+    "location": "Atherton Mill, South End",
+    "cost": "Varies",
+    "tags": [
+      "shopping",
+      "culture",
+      "art"
+    ],
+    "category": [
+      "market",
+      "food"
+    ],
+    "tier": "mid-range",
+    "rank": 3
+  },
+  {
+    "title": "Beats at The Music Yard",
+    "description": "Dance under the stars at this beach-themed outdoor venue that hosts top-tier DJs. It’s an adventurous, high-vibe spot that bridges the gap between South End and LoSo.",
+    "period": "night",
+    "location": "The Music Yard, South End",
+    "cost": "$15–$40",
+    "tags": [
+      "music",
+      "nightlife",
+      "outdoor"
+    ],
+    "category": [
+      "music",
+      "nightlife"
+    ],
+    "tier": "mid-range",
+    "rank": 3
+  },
+  {
+    "title": "Historic Dining at Latta Arcade",
+    "description": "Wander through this historic covered walkway to find a collection of intimate eateries and bars. It’s a unique, century-old architectural treasure in the heart of Uptown.",
+    "period": "evening",
+    "location": "Latta Arcade, Uptown",
+    "cost": "$15–$30",
+    "tags": [
+      "food",
+      "drinks",
+      "culture"
+    ],
+    "category": [
+      "food",
+      "drinks"
+    ],
+    "tier": "mid-range",
+    "rank": 3
+  },
+  {
+    "title": "Southern Comfort at Letty’s",
+    "description": "Dine at this cozy, queer-friendly neighborhood restaurant known for its Southern hospitality. The eclectic decor and comfort food make it an essential Plaza Midwood staple.",
+    "period": "evening",
+    "location": "Letty’s on Shamrock, Plaza Midwood",
+    "cost": "$15–$25",
+    "tags": [
+      "food",
+      "queer-friendly",
+      "culture"
+    ],
+    "category": [
+      "food"
+    ],
+    "tier": "affordable",
+    "rank": 3
+  },
+  {
+    "title": "Botanical Oasis at Aura Rooftop",
+    "description": "Lounge by the rooftop pool while sipping botanical cocktails with a fifth-floor view of the city. This botanical-themed oasis is a high-design staple for the social elite.",
+    "period": "afternoon",
+    "location": "Aura Rooftop, Uptown",
+    "cost": "$15–$25",
+    "tags": [
+      "drinks",
+      "nightlife",
+      "art"
+    ],
+    "category": [
+      "drinks",
+      "nightlife"
+    ],
+    "tier": "mid-range",
+    "rank": 3
+  },
+  {
+    "title": "Live Shows at Amos' Southend",
+    "description": "Experience a high-energy show at one of the city's longest-running live music clubs. It remains a foundational anchor for the South End nightlife and entertainment scene.",
+    "period": "night",
+    "location": "Amos' Southend, South End",
+    "cost": "$20–$50",
+    "tags": [
+      "music",
+      "nightlife",
+      "culture"
+    ],
+    "category": [
+      "music",
+      "nightlife"
+    ],
+    "tier": "mid-range",
+    "rank": 3
+  },
+  {
+    "title": "Craft & Charcuterie at Craft Tasting Room",
+    "description": "Enjoy a curated flight of local beers paired with artisan cheeses in a rustic, open-air setting right in the heart of South End. It is a foundational spot for the neighborhood's social craft beer scene.",
+    "period": "afternoon",
+    "location": "Craft Tasting Room and Kitchen, South End",
+    "cost": "$12–$25",
+    "tags": [
+      "drinks",
+      "food",
+      "outdoor"
+    ],
+    "category": [
+      "drinks"
+    ],
+    "tier": "mid-range",
+    "rank": 3
+  },
+  {
+    "title": "Uptown Greenery at First Ward Park",
+    "description": "Relax in this four-acre urban sanctuary featuring interactive fountains and lush lawns framed by the city's architecture. It is a top-tier social spot for a mid-day picnic or a quiet evening reset.",
+    "period": "afternoon",
+    "location": "First Ward Park, Uptown",
+    "cost": "Free",
+    "tags": [
+      "outdoor",
+      "nature",
+      "art"
+    ],
+    "category": [
+      "outdoors"
+    ],
+    "tier": "free",
+    "rank": 3
+  },
+  {
+    "title": "Jazz Sessions at Stage Door Theater",
+    "description": "Experience the intimate, soul-stirring energy of 'The Jazz Room' in the heart of the theater district. It is a premier cultural staple for those seeking high-quality musicianship and a refined night out.",
+    "period": "night",
+    "location": "Stage Door Theater, Uptown",
+    "cost": "$20–$30",
+    "tags": [
+      "music",
+      "culture",
+      "nightlife"
+    ],
+    "category": [
+      "music",
+      "nightlife"
+    ],
+    "tier": "mid-range",
+    "rank": 3
+  },
+  {
+    "title": "Retro Vibes at The Diamond",
+    "description": "Grab a burger or Southern staple at this iconic 1945 diner that remains a Plaza Midwood social anchor. Its neon signs and eclectic crowd provide a raw, authentic baseline for any neighborhood tour.",
+    "period": "afternoon",
+    "location": "The Diamond, Plaza Midwood",
+    "cost": "$10–$20",
+    "tags": [
+      "food",
+      "culture",
+      "queer-friendly"
+    ],
+    "category": [
+      "food"
+    ],
+    "tier": "affordable",
+    "rank": 3
+  },
+  {
+    "title": "Boutique Social at Room Service",
+    "description": "Check into this cocktail lounge at Camp North End for shared plates and a high-design aesthetic. It is a quintessential afternoon transition spot for those who appreciate a well-curated, social environment.",
+    "period": "afternoon",
+    "location": "Room Service, Druid Hills",
+    "cost": "$15–$30",
+    "tags": [
+      "drinks",
+      "food",
+      "art"
+    ],
+    "category": [
+      "drinks"
+    ],
+    "tier": "mid-range",
+    "rank": 2
+  },
+  {
+    "title": "Bike & Brew at The Spoke Easy",
+    "description": "Mingle at this hybrid bicycle shop and bar where the community spirit is as strong as the craft beer selection. It is a laid-back landmark that champions a healthy, mobile, and social urban lifestyle.",
+    "period": "evening",
+    "location": "The Spoke Easy, Elizabeth",
+    "cost": "$8–$14",
+    "tags": [
+      "fitness",
+      "drinks",
+      "culture"
+    ],
+    "category": [
+      "drinks",
+      "fitness"
+    ],
+    "tier": "affordable",
+    "rank": 2
+  },
+  {
+    "title": "Social Sips at Spindle Bar",
+    "description": "Perch at this central island bar within the city’s busiest food hall for high-volume people watching. It is the tactical center of the local social scene, perfect for a quick drink between market finds.",
+    "period": "evening",
+    "location": "Spindle Bar, Optimist Park",
+    "cost": "$12–$18",
+    "tags": [
+      "drinks",
+      "culture",
+      "queer-friendly"
+    ],
+    "category": [
+      "drinks",
+      "market"
+    ],
+    "tier": "affordable",
+    "rank": 2
+  },
+  {
+    "title": "Authentic BBQ at Midwood Smokehouse",
+    "description": "Tackle a plate of the city's most famous brisket in a bustling, high-energy environment. This is the culinary baseline for anyone looking to understand the intersection of Southern tradition and modern social life.",
+    "period": "afternoon",
+    "location": "Midwood Smokehouse, Plaza Midwood",
+    "cost": "$15–$25",
+    "tags": [
+      "food",
+      "culture"
+    ],
+    "category": [
+      "food"
+    ],
+    "tier": "affordable",
+    "rank": 2
+  },
+  {
+    "title": "Craft Fermentory at Trolley Barn",
+    "description": "Explore an industrial fermentation hall that bridges the gap between a brewery and a high-end eatery. Located right on the Rail Trail, it is the beating heart of South End’s contemporary social scene.",
+    "period": "night",
+    "location": "Trolley Barn, South End",
+    "cost": "$15–$30",
+    "tags": [
+      "drinks",
+      "food",
+      "outdoor"
+    ],
+    "category": [
+      "drinks",
+      "food"
+    ],
+    "tier": "mid-range",
+    "rank": 2
+  },
+  {
+    "title": "Grit and Glory at Two Buck Saloon",
+    "description": "Finish your night at this unapologetic dive bar where the pool tables are busy and the drinks are honest. It is a raw, authentic piece of Charlotte history that values character over polish.",
+    "period": "night",
+    "location": "Two Buck Saloon, Plaza Midwood",
+    "cost": "$5–$15",
+    "tags": [
+      "nightlife",
+      "drinks",
+      "queer-friendly"
+    ],
+    "category": [
+      "nightlife"
+    ],
+    "tier": "free",
+    "rank": 2
+  },
+  {
+    "title": "Rooftop Oysters at The Waterman",
+    "description": "Catch the breeze and skyline views at Top of the Hill. This South End staple offers an adventurous seafood menu in a high-energy, social environment that feels like a beach escape.",
+    "period": "evening",
+    "location": "The Waterman Fish Bar, South End",
+    "cost": "$20–$40",
+    "tags": [
+      "food",
+      "drinks",
+      "outdoor"
+    ],
+    "category": [
+      "food",
+      "drinks"
+    ],
+    "tier": "mid-range",
+    "rank": 2
+  },
+  {
+    "title": "Espresso at Not Just Coffee",
+    "description": "Experience the precision of Charlotte’s specialty coffee scene in the heart of Uptown’s market. It’s a fast-paced, urban social hub perfect for a morning spark before exploring the city core.",
+    "period": "morning",
+    "location": "Not Just Coffee, Uptown",
+    "cost": "$5–$10",
+    "tags": [
+      "food",
+      "culture",
+      "queer-friendly"
+    ],
+    "category": [
+      "food"
+    ],
+    "tier": "free",
+    "rank": 2
+  },
+  {
+    "title": "Stroll Through Independence Park",
+    "description": "Walk the winding paths of the city’s oldest park, recently renovated to blend historic charm with modern social spaces. It’s a serene, leafy baseline for a casual afternoon meet-up.",
+    "period": "afternoon",
+    "location": "Independence Park, Elizabeth",
+    "cost": "Free",
+    "tags": [
+      "outdoor",
+      "nature",
+      "fitness"
+    ],
+    "category": [
+      "outdoors"
+    ],
+    "tier": "free",
+    "rank": 2
+  },
+  {
+    "title": "Tacos & Neon at Papi Grande's",
+    "description": "Dive into a high-octane social dinner with coastal Mexican vibes and vibrant decor. It’s a loud, adventurous spot in LoSo that sets the tone for a big night out.",
+    "period": "night",
+    "location": "Papi Grande's, Lower South End",
+    "cost": "$15–$30",
+    "tags": [
+      "food",
+      "drinks",
+      "nightlife"
+    ],
+    "category": [
+      "food",
+      "nightlife"
+    ],
+    "tier": "mid-range",
+    "rank": 2
+  },
+  {
+    "title": "Live Local Sets at The Gin Mill",
+    "description": "Get close to the stage for live acoustic acts and a bustling patio scene right on the Rail Trail. It’s a high-visibility social landmark where the energy stays peaked well into the night.",
+    "period": "night",
+    "location": "The Gin Mill, South End",
+    "cost": "$10–$20",
+    "tags": [
+      "music",
+      "nightlife",
+      "drinks"
+    ],
+    "category": [
+      "music",
+      "nightlife"
+    ],
+    "tier": "affordable",
+    "rank": 2
+  },
+  {
+    "title": "Gaming & Tacos at El Thrifty",
+    "description": "Challenge friends to social games in a polished, upscale cantina setting within Optimist Hall. It’s an adventurous mix of competitive fun and high-quality cocktails in a massive industrial space.",
+    "period": "evening",
+    "location": "El Thrifty Social, Optimist Park",
+    "cost": "$15–$35",
+    "tags": [
+      "drinks",
+      "sports",
+      "food"
+    ],
+    "category": [
+      "nightlife",
+      "sports"
+    ],
+    "tier": "mid-range",
+    "rank": 2
+  },
+  {
+    "title": "Sunset Sips at Sycamore Brewing",
+    "description": "Join the post-work rush at this massive South End anchor. The expansive beer garden and light rail proximity make it the ultimate social baseline for meeting people before the night begins.",
+    "period": "evening",
+    "location": "Sycamore Brewing, South End",
+    "cost": "$8–$15",
+    "tags": [
+      "drinks",
+      "outdoor",
+      "queer-friendly"
+    ],
+    "category": [
+      "drinks"
+    ],
+    "tier": "affordable",
+    "rank": 2
+  },
+  {
+    "title": "Precision Caffeine at Nightflyer Roastworks",
+    "description": "Fuel your Wednesday morning at this roastery known for its technical mastery and community focus. It’s a quiet, high-design space where the city’s creative professionals kick off their day.",
+    "period": "morning",
+    "location": "Nightflyer Roastworks, Plaza Midwood",
+    "cost": "$5–$10",
+    "tags": [
+      "food",
+      "culture",
+      "queer-friendly"
+    ],
+    "category": [
+      "food"
+    ],
+    "tier": "free",
+    "rank": 2
+  },
+  {
+    "title": "Mac & Cheese at JackBeagle's",
+    "description": "Cap off your Tuesday with a legendary bowl of spicy mac and cheese in the heart of NoDa. This gritty, welcoming spot is a baseline late-night sanctuary for locals and industry workers.",
+    "period": "night",
+    "location": "JackBeagle's, NoDa",
+    "cost": "$10–$20",
+    "tags": [
+      "food",
+      "nightlife",
+      "queer-friendly"
+    ],
+    "category": [
+      "food",
+      "nightlife"
+    ],
+    "tier": "affordable",
+    "rank": 2
+  },
+  {
+    "title": "Neighborhood Hang at Rhino Market",
+    "description": "Grab a signature sandwich and a local brew at this authentic urban bodega. It’s a social crossroads for the Wesley Heights community, perfect for a casual Wednesday afternoon transition.",
+    "period": "afternoon",
+    "location": "Rhino Market & Deli, Wesley Heights",
+    "cost": "$12–$18",
+    "tags": [
+      "food",
+      "drinks",
+      "culture"
+    ],
+    "category": [
+      "food",
+      "market"
+    ],
+    "tier": "affordable",
+    "rank": 2
+  },
+  {
+    "title": "Social Gaming at Puttery",
+    "description": "Experience high-design indoor mini-golf paired with curated cocktails. The immersive, lounge-like atmosphere offers an adventurous social baseline for those who want activity with their drinks.",
+    "period": "night",
+    "location": "Puttery, South End",
+    "cost": "$18–$30",
+    "tags": [
+      "drinks",
+      "sports",
+      "nightlife"
+    ],
+    "category": [
+      "sports",
+      "nightlife"
+    ],
+    "tier": "mid-range",
+    "rank": 2
+  },
+  {
+    "title": "Refuel at Flower Child",
+    "description": "Join the South End wellness crowd for a bright, health-conscious Wednesday lunch. The vibrant atmosphere and inclusive vibe make it a baseline social hub for the neighborhood's active residents.",
+    "period": "afternoon",
+    "location": "Flower Child, South End",
+    "cost": "$15–$25",
+    "tags": [
+      "food",
+      "fitness",
+      "queer-friendly"
+    ],
+    "category": [
+      "food"
+    ],
+    "tier": "mid-range",
+    "rank": 2
+  },
+  {
+    "title": "Darts & Drafts at Old Pineville Pub",
+    "description": "Discover the local secret of LoSo at this unpretentious neighborhood bar. It’s a reliable, low-key baseline for a Tuesday night involving local craft beers and a competitive game of darts.",
+    "period": "night",
+    "location": "Old Pineville Premium Pub, Lower South End",
+    "cost": "$10–$20",
+    "tags": [
+      "drinks",
+      "sports",
+      "queer-friendly"
+    ],
+    "category": [
+      "drinks",
+      "sports"
+    ],
+    "tier": "affordable",
+    "rank": 2
+  },
+  {
+    "title": "Patio Pints at Suffolk Punch",
+    "description": "Experience the massive hybrid taphouse and coffee bar right on the Blue Line. It’s a premier Wednesday evening social destination where the Rail Trail community converges for brews and small plates.",
+    "period": "evening",
+    "location": "Suffolk Punch Brewing, South End",
+    "cost": "$15–$25",
+    "tags": [
+      "drinks",
+      "outdoor",
+      "fitness"
+    ],
+    "category": [
+      "drinks",
+      "outdoors"
+    ],
+    "tier": "mid-range",
+    "rank": 2
+  },
+  {
+    "title": "Rooftop Brews at Giddy Goat",
+    "description": "Enjoy a morning roast or an afternoon pint on the expansive rooftop of this eclectic Plaza Midwood coffee house. It is a high-energy social hub perfect for meeting the city's creative class.",
+    "period": "morning",
+    "location": "Giddy Goat Coffee Roasters, Plaza Midwood",
+    "cost": "$6–$12",
+    "tags": [
+      "food",
+      "drinks",
+      "queer-friendly"
+    ],
+    "category": [
+      "food"
+    ],
+    "tier": "affordable",
+    "rank": 2
+  },
+  {
+    "title": "Late Night Pizza at Benny Pennello's",
+    "description": "Grab a massive, legendary slice at this NoDa window as the bars start to clear out. It is the quintessential late-night food baseline for the neighborhood’s adventurous social crowd.",
+    "period": "night",
+    "location": "Benny Pennello's, NoDa",
+    "cost": "$6–$10",
+    "tags": [
+      "food",
+      "nightlife",
+      "culture"
+    ],
+    "category": [
+      "food"
+    ],
+    "tier": "affordable",
+    "rank": 2
+  },
+  {
+    "title": "Social Tennis at Jeff Adams Center",
+    "description": "Join a pick-up match at this massive public tennis facility known for its active and welcoming community. It is a foundational sports baseline for the city's fitness-focused socialites.",
+    "period": "evening",
+    "location": "Jeff Adams Tennis Center, North End",
+    "cost": "$5–$10",
+    "tags": [
+      "sports",
+      "fitness",
+      "outdoor"
+    ],
+    "category": [
+      "sports",
+      "fitness"
+    ],
+    "tier": "free",
+    "rank": 2
+  },
+  {
+    "title": "Patio Pints at Pop the Top",
+    "description": "Settle in with a curated NC craft beer at this cozy, inclusive bottle shop and taproom. It is a welcoming social baseline for a relaxed transition from the afternoon into the evening.",
+    "period": "afternoon",
+    "location": "Pop the Top Craft Beer Shop, South End",
+    "cost": "$8–$15",
+    "tags": [
+      "drinks",
+      "outdoor",
+      "queer-friendly"
+    ],
+    "category": [
+      "drinks"
+    ],
+    "tier": "affordable",
+    "rank": 2
+  },
+  {
+    "title": "Boutique Retail at Moxie Mercantile",
+    "description": "Discover curated home goods and jewelry in this charming historic house turned shop. It is a baseline for finding unique, locally-sourced gifts in the vibrant heart of Plaza Midwood.",
+    "period": "afternoon",
+    "location": "Moxie Mercantile, Plaza Midwood",
+    "cost": "Varies",
+    "tags": [
+      "shopping",
+      "art",
+      "culture"
+    ],
+    "category": [
+      "market"
+    ],
+    "tier": "mid-range",
+    "rank": 2
+  },
+  {
+    "title": "Karaoke & BBQ at Seoul Food",
+    "description": "Feast on Korean-fusion BBQ before heading to a private karaoke room with your social circle. This venue is a South End staple known for its massive, playground-style outdoor patio.",
+    "period": "night",
+    "location": "Seoul Food Meat Co, South End",
+    "cost": "$20–$40",
+    "tags": [
+      "food",
+      "nightlife",
+      "drinks"
+    ],
+    "category": [
+      "food",
+      "nightlife"
+    ],
+    "tier": "mid-range",
+    "rank": 2
+  },
+  {
+    "title": "Social Games at Queen Park Social",
+    "description": "Compete in bowling, shuffleboard, and vintage arcade games in a sprawling warehouse setting. It is the go-to spot in LoSo for large groups seeking high-energy entertainment.",
+    "period": "night",
+    "location": "Queen Park Social, LoSo",
+    "cost": "$15–$30",
+    "tags": [
+      "nightlife",
+      "sports",
+      "drinks"
+    ],
+    "category": [
+      "nightlife",
+      "sports"
+    ],
+    "tier": "mid-range",
+    "rank": 2
+  },
+  {
+    "title": "Juicy Jay's at Legion Brewing",
+    "description": "Settle onto the balcony at this neighborhood brewery for a pint of their famous hazy IPA. It’s a quintessential Plaza Midwood hangout for locals who value high-energy social scenes.",
+    "period": "evening",
+    "location": "Legion Brewing, Plaza Midwood",
+    "cost": "$8–$15",
+    "tags": [
+      "drinks",
+      "food",
+      "culture"
+    ],
+    "category": [
+      "drinks"
+    ],
+    "tier": "affordable",
+    "rank": 2
+  },
+  {
+    "title": "Rooftop Views at Wooden Robot",
+    "description": "Enjoy a Good Morning Vietnam coffee vanilla cream ale while overlooking the South End skyline. This brewery is a staple for its inclusive atmosphere and prime Rail Trail real estate.",
+    "period": "evening",
+    "location": "Wooden Robot Brewery, South End",
+    "cost": "$8–$15",
+    "tags": [
+      "drinks",
+      "outdoor",
+      "queer-friendly"
+    ],
+    "category": [
+      "drinks"
+    ],
+    "tier": "affordable",
+    "rank": 2
+  },
+  {
+    "title": "Tapas at Barcelona Wine Bar",
+    "description": "Experience the high-energy, Mediterranean vibes of this bustling South End wine bar. It is a premier social baseline for sharing small plates and heavy pours on a lively patio.",
+    "period": "evening",
+    "location": "Barcelona Wine Bar, South End",
+    "cost": "$20–$45",
+    "tags": [
+      "food",
+      "drinks",
+      "culture"
+    ],
+    "category": [
+      "food",
+      "drinks"
+    ],
+    "tier": "mid-range",
+    "rank": 2
+  },
+  {
+    "title": "IPAs at Heist Brewery",
+    "description": "Head to this converted industrial space for award-winning IPAs and a full kitchen menu. It’s a staple for NoDa socialites who appreciate a gritty but polished brewery experience.",
+    "period": "evening",
+    "location": "Heist Brewery, NoDa",
+    "cost": "$15–$30",
+    "tags": [
+      "food",
+      "drinks",
+      "culture"
+    ],
+    "category": [
+      "food",
+      "drinks"
+    ],
+    "tier": "mid-range",
+    "rank": 2
+  },
+  {
+    "title": "Gas Station Social at 1501 South Mint",
+    "description": "Lounge at this converted 1930s gas station that has become a premier social hub for the city’s diverse and queer communities. The outdoor patio is the place to be for Sunday Funday or a high-vibe evening.",
+    "period": "night",
+    "location": "1501 South Mint, South End",
+    "cost": "$15–$30",
+    "tags": [
+      "drinks",
+      "nightlife",
+      "queer-friendly"
+    ],
+    "category": [
+      "nightlife",
+      "drinks"
+    ],
+    "tier": "mid-range",
+    "rank": 2
+  },
+  {
+    "title": "Fusion Bites at The Cowfish",
+    "description": "Brave the crowds for the legendary 'Burgushi' in a vibrant, high-energy atmosphere that has been a city staple for over a decade. It is a loud, fun, and adventurous culinary crossroads.",
+    "period": "afternoon",
+    "location": "The Cowfish Sushi Burger Bar, SouthPark",
+    "cost": "$18–$35",
+    "tags": [
+      "food",
+      "culture",
+      "drinks"
+    ],
+    "category": [
+      "food"
+    ],
+    "tier": "mid-range",
+    "rank": 2
+  },
+  {
+    "title": "Literary Walk at The Green",
+    "description": "Wander through this whimsical, 1.5-acre urban park dedicated to literature, featuring sculptures and water features. It is a serene but culturally rich baseline for an afternoon stroll through Uptown.",
+    "period": "morning",
+    "location": "The Green, Uptown",
+    "cost": "Free",
+    "tags": [
+      "outdoor",
+      "art",
+      "culture"
+    ],
+    "category": [
+      "outdoors",
+      "arts"
+    ],
+    "tier": "free",
+    "rank": 2
+  },
+  {
+    "title": "Patio Tacos at RuRu's Tacos & Tequila",
+    "description": "Mingle on one of the city's most beautiful historic patios with a margarita in hand. This Myers Park favorite is a high-visibility social hub for the young professional and creative crowd.",
+    "period": "evening",
+    "location": "RuRu's Tacos & Tequila, Myers Park",
+    "cost": "$15–$30",
+    "tags": [
+      "food",
+      "drinks",
+      "outdoor"
+    ],
+    "category": [
+      "food",
+      "drinks"
+    ],
+    "tier": "mid-range",
+    "rank": 2
+  },
+  {
+    "title": "Bikes & BBQ at Mac's Speed Shop",
+    "description": "Lean into the gritty, high-energy vibe of this South End institution known for its massive patio and extensive beer list. It is a quintessential social crossroads for bikers, locals, and visitors.",
+    "period": "night",
+    "location": "Mac's Speed Shop, South End",
+    "cost": "$15–$25",
+    "tags": [
+      "food",
+      "drinks",
+      "outdoor"
+    ],
+    "category": [
+      "food"
+    ],
+    "tier": "affordable",
+    "rank": 2
+  },
+  {
+    "title": "Light Rail Brews at Triple C",
+    "description": "Sip award-winning beers in this sprawling South End warehouse featuring a high-energy taproom and outdoor space. It is a foundational social spot for the neighborhood’s craft beer enthusiasts.",
+    "period": "evening",
+    "location": "Triple C Brewing Co, South End",
+    "cost": "$8–$15",
+    "tags": [
+      "drinks",
+      "outdoor",
+      "queer-friendly"
+    ],
+    "category": [
+      "drinks"
+    ],
+    "tier": "affordable",
+    "rank": 2
+  },
+  {
+    "title": "Belgian Brews at Sugar Creek",
+    "description": "Explore Belgian-inspired ales in a massive, nautical-themed brewery within the LoSo district. Its social energy and adventurous beer styles make it an essential staple of the local craft scene.",
+    "period": "evening",
+    "location": "Sugar Creek Brewing Co, LoSo",
+    "cost": "$8–$15",
+    "tags": [
+      "drinks",
+      "culture",
+      "outdoor"
+    ],
+    "category": [
+      "drinks"
+    ],
+    "tier": "affordable",
+    "rank": 2
+  },
+  {
+    "title": "Kombucha & Pints at Lenny Boy",
+    "description": "Visit this diverse taproom known for its organic kombucha, traditional beers, and high-energy social events. It’s an inclusive, wellness-adjacent social baseline for the South End community.",
+    "period": "afternoon",
+    "location": "Lenny Boy Brewing Co, South End",
+    "cost": "$8–$15",
+    "tags": [
+      "drinks",
+      "fitness",
+      "queer-friendly"
+    ],
+    "category": [
+      "drinks"
+    ],
+    "tier": "affordable",
+    "rank": 2
+  }
+]

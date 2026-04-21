@@ -86,6 +86,19 @@ main{flex:1;max-width:1100px;margin:0 auto;width:100%;padding:32px 24px 64px}
 .search-input:focus{border-color:var(--rust-500);box-shadow:0 0 0 2px var(--rust-50)}
 .results-count{font-size:11px;color:var(--ink-3);font-family:var(--font-mono)}
 
+/* View toggle (Dynamic / Staples) */
+.view-toggle{
+  display:flex;gap:2px;background:var(--paper-2);border:1px solid var(--border-soft);
+  border-radius:6px;padding:3px;cursor:pointer;font-family:var(--font-sans);flex-shrink:0;
+}
+.vtog-opt{
+  font-size:11px;font-weight:500;padding:4px 10px;border-radius:4px;
+  color:var(--ink-3);transition:all var(--dur-fast) var(--ease-out);white-space:nowrap;user-select:none;
+}
+.vtog-opt.active{
+  background:var(--paper-0);color:var(--ink-0);font-weight:600;box-shadow:0 1px 3px rgba(0,0,0,.5);
+}
+
 /* Mode selector */
 .mode-row{display:flex;gap:4px;flex-wrap:wrap;align-items:center}
 .mode-chip{
@@ -244,6 +257,10 @@ footer{border-top:1px solid var(--border-faint);padding:20px 24px;text-align:cen
     <span class="brand-name">Charlotte On The Run</span>
     <span class="brand-sub">/ events</span>
   </a>
+  <button class="view-toggle" onclick="toggleView()">
+    <span class="vtog-opt active" id="vtog-dynamic">⚡ Dynamic</span>
+    <span class="vtog-opt" id="vtog-staples">📍 Staples</span>
+  </button>
   <span class="header-meta" id="last-updated">Loading…</span>
 </header>
 
@@ -288,10 +305,11 @@ footer{border-top:1px solid var(--border-faint);padding:20px 24px;text-align:cen
     <!-- Row 4: Time + Region -->
     <div class="control-row">
       <div class="chips" id="time-chips">
-        <button class="chip active" data-time="all"     onclick="setTime('all')">All time</button>
-        <button class="chip"        data-time="today"   onclick="setTime('today')">Today</button>
-        <button class="chip"        data-time="weekend" onclick="setTime('weekend')">Weekend</button>
-        <button class="chip"        data-time="week"    onclick="setTime('week')">This week</button>
+        <button class="chip active" data-time="all"      onclick="setTime('all')">All time</button>
+        <button class="chip"        data-time="today"    onclick="setTime('today')">Today</button>
+        <button class="chip"        data-time="tomorrow" onclick="setTime('tomorrow')">Tomorrow</button>
+        <button class="chip"        data-time="weekend"  onclick="setTime('weekend')">Weekend</button>
+        <button class="chip"        data-time="week"     onclick="setTime('week')">This week</button>
       </div>
       <span style="width:1px;height:16px;background:var(--border-soft);flex-shrink:0;margin:0 2px"></span>
       <div class="chips" id="region-chips"></div>
@@ -424,7 +442,8 @@ REGIONS.forEach(r => {
 // ── Tier chips (built once, shown/hidden by mode) ─────────────────────────────
 function initTierChips(){
   const container = document.getElementById('tier-chips');
-  Object.entries(TIER_META).filter(([id]) => id !== 'wildcard').forEach(([id, meta]) => {
+  // exclude wildcard (it has its own Weird mode) and baseline (it has its own toggle)
+  Object.entries(TIER_META).filter(([id]) => id !== 'wildcard' && id !== 'baseline').forEach(([id, meta]) => {
     const b = document.createElement('button');
     b.className = 'tier-chip' + (id === activeTier ? ' active' : '');
     b.dataset.tier = id;
@@ -483,6 +502,8 @@ document.getElementById('search-input').addEventListener('input', e => {
 });
 
 // ── Filter ────────────────────────────────────────────────────────────────────
+const TOMORROW = new Date(TODAY); TOMORROW.setDate(TODAY.getDate() + 1);
+
 function filterEvents(){
   return EVENTS_DATA.filter(ev => {
     if(activeRegion !== 'all' && ev.region !== activeRegion) return false;
@@ -493,6 +514,10 @@ function filterEvents(){
     if(activeTime === 'today'){
       if(!ed) return false;
       return ed.getTime() === TODAY.getTime();
+    }
+    if(activeTime === 'tomorrow'){
+      if(!ed) return false;
+      return ed.getTime() === TOMORROW.getTime();
     }
     if(activeTime === 'weekend'){
       if(!ed) return false;
@@ -505,6 +530,13 @@ function filterEvents(){
     }
     return true;
   });
+}
+
+// AI card time filter — 'today'/'tomorrow' map to day field; weekend/week show both
+function aiTimeOK(c){
+  if(activeTime === 'today')    return c.day === 'today';
+  if(activeTime === 'tomorrow') return c.day === 'tomorrow';
+  return true; // all/weekend/week: AI only has today+tomorrow, show both
 }
 
 // ── Card builder ─────────────────────────────────────────────────────────────
@@ -915,6 +947,20 @@ function makeWildDivider(label){
   return d;
 }
 
+// ── View toggle (Dynamic / Staples) ──────────────────────────────────────────
+let showStaples = false;
+function toggleView(){
+  showStaples = !showStaples;
+  document.getElementById('vtog-dynamic').classList.toggle('active', !showStaples);
+  document.getElementById('vtog-staples').classList.toggle('active', showStaples);
+  // hide mode/tier/cat rows in staples view — they don't apply
+  ['mode-row','tier-row','cat-row'].forEach(id => {
+    const el = document.getElementById(id);
+    if(el) el.style.display = showStaples ? 'none' : (id === 'tier-row' ? (activeMode === 'ai' ? '' : 'none') : '');
+  });
+  render();
+}
+
 // ── Render ────────────────────────────────────────────────────────────────────
 function render(){
   const grid  = document.getElementById('events-grid');
@@ -922,11 +968,32 @@ function render(){
   const count = document.getElementById('results-count');
   grid.innerHTML = '';
 
+  // Apply staple filter globally: staples view shows only baseline, dynamic hides baseline
+  const VIEW = showStaples
+    ? AI_CARDS.filter(c => c.tier === 'baseline')
+    : AI_CARDS.filter(c => c.tier !== 'baseline');
+
   const catOK = c => activeCats.size === 0 || (c.category||[]).some(cat => activeCats.has(cat));
+
+  // ── Staples view — simple today/tomorrow grid, ignores mode selector ───────
+  if(showStaples){
+    const todayS    = VIEW.filter(c => c.day === 'today'    && catOK(c));
+    const tomorrowS = VIEW.filter(c => c.day === 'tomorrow' && catOK(c));
+    if(todayS.length === 0 && tomorrowS.length === 0){
+      grid.style.display='none'; empty.style.display='block';
+      count.textContent = '0 staples';
+      return;
+    }
+    grid.style.display='grid'; empty.style.display='none';
+    if(todayS.length){    grid.appendChild(makeBaselineDivider('Staples · Today'));    todayS.forEach(c    => grid.appendChild(buildAICard(c))); }
+    if(tomorrowS.length){ grid.appendChild(makeBaselineDivider('Staples · Tomorrow')); tomorrowS.forEach(c => grid.appendChild(buildAICard(c))); }
+    count.textContent = `${todayS.length + tomorrowS.length} staple${(todayS.length+tomorrowS.length)===1?'':'s'}`;
+    return;
+  }
 
   // ── AI mode ────────────────────────────────────────────────────────────────
   if(activeMode === 'ai'){
-    const tierCards = AI_CARDS.filter(c =>
+    const tierCards = VIEW.filter(c =>
       c.tier === activeTier && catOK(c)
     );
     if(tierCards.length === 0){
@@ -945,57 +1012,40 @@ function render(){
 
   // ── Weird mode ─────────────────────────────────────────────────────────────
   if(activeMode === 'weird'){
-    const cards = AI_CARDS.filter(c => c.tier === 'wildcard');
+    const cards = VIEW.filter(c => c.tier === 'wildcard' && catOK(c) && aiTimeOK(c));
     if(cards.length === 0){
       grid.style.display='none'; empty.style.display='block';
       count.textContent = '0 weird picks';
       return;
     }
     grid.style.display='grid'; empty.style.display='none';
-    const showAI = c => {
-      if(!catOK(c)) return false;
-      if(activeTime === 'today' && c.day !== 'today') return false;
-      return true;
-    };
-    const t = cards.filter(c => c.day === 'today' && showAI(c));
-    const tm = cards.filter(c => c.day === 'tomorrow' && showAI(c));
-    if(t.length){  grid.appendChild(makeWildDivider('Today'));    t.forEach(c => grid.appendChild(buildAICard(c))); }
+    const t  = cards.filter(c => c.day === 'today');
+    const tm = cards.filter(c => c.day === 'tomorrow');
+    if(t.length){  grid.appendChild(makeWildDivider('Today'));    t.forEach(c  => grid.appendChild(buildAICard(c))); }
     if(tm.length){ grid.appendChild(makeWildDivider('Tomorrow')); tm.forEach(c => grid.appendChild(buildAICard(c))); }
-    count.textContent = `${t.length + tm.length} weird pick${(t.length + tm.length)===1?'':'s'}`;
+    count.textContent = `${cards.length} weird pick${cards.length===1?'':'s'}`;
     return;
   }
 
   // ── Free mode ──────────────────────────────────────────────────────────────
   if(activeMode === 'free'){
-    const filtered   = filterEvents().filter(e => e.price === 'free');
-    const showAI = c => {
-      if(!catOK(c)) return false;
-      if(activeTime === 'today' && c.day !== 'today') return false;
-      return true;
-    };
-    const freeAI_t     = AI_CARDS.filter(c => c.tier === 'free'     && c.day === 'today' && showAI(c));
-    const freeAI_tm    = AI_CARDS.filter(c => c.tier === 'free'     && c.day === 'tomorrow' && showAI(c));
-    const baselineAI_t  = AI_CARDS.filter(c => c.tier === 'baseline' && c.day === 'today' && showAI(c));
-    const baselineAI_tm = AI_CARDS.filter(c => c.tier === 'baseline' && c.day === 'tomorrow' && showAI(c));
-    
-    const dated      = filtered.filter(e => e.event_date);
-    const undated    = filtered.filter(e => !e.event_date);
-    if(filtered.length === 0 && freeAI_t.length === 0 && freeAI_tm.length === 0 && baselineAI_t.length === 0 && baselineAI_tm.length === 0){
+    const filtered  = filterEvents().filter(e => e.price === 'free');
+    const freeAI_t  = VIEW.filter(c => c.tier === 'free' && c.day === 'today'    && catOK(c) && aiTimeOK(c));
+    const freeAI_tm = VIEW.filter(c => c.tier === 'free' && c.day === 'tomorrow' && catOK(c) && aiTimeOK(c));
+
+    const dated   = filtered.filter(e => e.event_date);
+    const undated = filtered.filter(e => !e.event_date);
+    if(filtered.length === 0 && freeAI_t.length === 0 && freeAI_tm.length === 0){
       grid.style.display='none'; empty.style.display='block';
       count.textContent = '0 free events';
       return;
     }
     grid.style.display='grid'; empty.style.display='none';
-    if(dated.length){ grid.appendChild(makeDivider(`${dated.length} confirmed free events`)); dated.forEach(ev => grid.appendChild(buildCard(ev))); }
-    
-    if(freeAI_t.length){ grid.appendChild(makeAIDivider('✦ AI Free Picks · Today')); freeAI_t.forEach(c => grid.appendChild(buildAICard(c))); }
-    if(baselineAI_t.length){ grid.appendChild(makeBaselineDivider('Staples · Today')); baselineAI_t.forEach(c => grid.appendChild(buildAICard(c))); }
-    
-    if(freeAI_tm.length){ grid.appendChild(makeAIDivider('✦ AI Free Picks · Tomorrow')); freeAI_tm.forEach(c => grid.appendChild(buildAICard(c))); }
-    if(baselineAI_tm.length){ grid.appendChild(makeBaselineDivider('Staples · Tomorrow')); baselineAI_tm.forEach(c => grid.appendChild(buildAICard(c))); }
-
-    if(undated.length){ grid.appendChild(makeDivider(`${undated.length} free — date TBD`)); undated.forEach(ev => grid.appendChild(buildCard(ev))); }
-    count.textContent = `${filtered.length + freeAI_t.length + freeAI_tm.length + baselineAI_t.length + baselineAI_tm.length} free`;
+    if(dated.length)    { grid.appendChild(makeDivider(`${dated.length} confirmed free events`)); dated.forEach(ev => grid.appendChild(buildCard(ev))); }
+    if(freeAI_t.length) { grid.appendChild(makeAIDivider('✦ AI Free Picks · Today'));             freeAI_t.forEach(c  => grid.appendChild(buildAICard(c))); }
+    if(freeAI_tm.length){ grid.appendChild(makeAIDivider('✦ AI Free Picks · Tomorrow'));           freeAI_tm.forEach(c => grid.appendChild(buildAICard(c))); }
+    if(undated.length)  { grid.appendChild(makeDivider(`${undated.length} free — date TBD`));     undated.forEach(ev => grid.appendChild(buildCard(ev))); }
+    count.textContent = `${filtered.length + freeAI_t.length + freeAI_tm.length} free`;
     return;
   }
 
@@ -1004,14 +1054,8 @@ function render(){
   const dated    = filtered.filter(e => e.event_date);
   const undated  = filtered.filter(e => !e.event_date);
 
-  const showAI = c => {
-    if(!catOK(c)) return false;
-    if(activeTime === 'today' && c.day !== 'today') return false;
-    // For weekend/week, we show all since AI only has today/tomorrow
-    return true;
-  };
-  const todayAI    = AI_CARDS.filter(c => c.day === 'today' && showAI(c));
-  const tomorrowAI = AI_CARDS.filter(c => c.day === 'tomorrow' && showAI(c));
+  const todayAI    = VIEW.filter(c => c.day === 'today'    && catOK(c) && aiTimeOK(c));
+  const tomorrowAI = VIEW.filter(c => c.day === 'tomorrow' && catOK(c) && aiTimeOK(c));
 
   if(filtered.length === 0 && todayAI.length === 0 && tomorrowAI.length === 0){
     grid.style.display='none'; empty.style.display='block';
