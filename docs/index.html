@@ -4,6 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>Charlotte On The Run — Events</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏃</text></svg>"/>
 <meta name="description" content="Upcoming events in Charlotte NC and surrounding areas. Updated daily from 23 curated sources."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -241,7 +242,7 @@ footer{border-top:1px solid var(--border-faint);padding:20px 24px;text-align:cen
 
   <!-- Stats -->
   <div class="stats-bar" id="stats-bar">
-    <div class="stat-cell"><div class="stat-label">Total Events</div><div class="stat-value" id="stat-total">—</div><div class="stat-sub">across all regions</div></div>
+    <div class="stat-cell"><div class="stat-label">Total Events</div><div class="stat-value" id="stat-total">—</div><div class="stat-sub">RSS + AI cards</div></div>
     <div class="stat-cell"><div class="stat-label">With Dates</div><div class="stat-value" id="stat-dated">—</div><div class="stat-sub">confirmed date</div></div>
     <div class="stat-cell"><div class="stat-label">Free Events</div><div class="stat-value" id="stat-free">—</div><div class="stat-sub">no admission</div></div>
     <div class="stat-cell"><div class="stat-label">Regions</div><div class="stat-value" id="stat-regions">5</div><div class="stat-sub">up to 2.5h away</div></div>
@@ -475,7 +476,6 @@ document.getElementById('search-input').addEventListener('input', e => {
 function filterEvents(){
   return EVENTS_DATA.filter(ev => {
     if(activeRegion !== 'all' && ev.region !== activeRegion) return false;
-    if(freeOnly && ev.price !== 'free') return false;
     if(searchQ && !ev.title.toLowerCase().includes(searchQ) && !(ev.description||'').toLowerCase().includes(searchQ)) return false;
 
     const ed = isoToDate(ev.event_date);
@@ -492,9 +492,6 @@ function filterEvents(){
     if(activeTime === 'week'){
       if(!ed) return false;
       return ed >= TODAY && ed <= getWeekEnd();
-    }
-    if(activeTime === 'dated'){
-      return !!ed;
     }
     return true;
   });
@@ -821,10 +818,11 @@ function render(){
 
 // ── Stats ─────────────────────────────────────────────────────────────────────
 function initStats(){
-  const total  = EVENTS_DATA.length;
-  const dated  = EVENTS_DATA.filter(e=>e.event_date).length;
-  const free   = EVENTS_DATA.filter(e=>e.price==='free').length;
-  const regions= new Set(EVENTS_DATA.map(e=>e.region)).size;
+  const aiCount = (typeof AI_CARDS !== 'undefined') ? AI_CARDS.length : 0;
+  const total   = EVENTS_DATA.length + aiCount;
+  const dated   = EVENTS_DATA.filter(e=>e.event_date).length;
+  const free    = EVENTS_DATA.filter(e=>e.price==='free').length;
+  const regions = new Set(EVENTS_DATA.map(e=>e.region)).size;
 
   document.getElementById('stat-total').textContent   = total;
   document.getElementById('stat-dated').textContent   = dated;
