@@ -32,10 +32,11 @@ API_KEY  = os.getenv("GEMINI_API_KEY")
 OUT_FILE = Path(__file__).parent / "docs" / "daily_guide.json"
 
 TIERS = [
-    {"id": "free",    "label": "Free",       "emoji": "🆓", "max_cost": "Free"},
-    {"id": "under20", "label": "Under $20",  "emoji": "💵", "max_cost": "$20"},
-    {"id": "under50", "label": "Under $50",  "emoji": "🍸", "max_cost": "$50"},
-    {"id": "splurge", "label": "Splurge",    "emoji": "🌟", "max_cost": "no limit"},
+    {"id": "free",     "label": "Free",       "emoji": "🆓", "max_cost": "Free"},
+    {"id": "under20",  "label": "Under $20",  "emoji": "💵", "max_cost": "$20"},
+    {"id": "under50",  "label": "Under $50",  "emoji": "🍸", "max_cost": "$50"},
+    {"id": "splurge",  "label": "Splurge",    "emoji": "🌟", "max_cost": "no limit"},
+    {"id": "wildcard", "label": "Wild Card",  "emoji": "🎪", "max_cost": "any"},
 ]
 
 # ── JSON schema embedded in prompt ────────────────────────────────────────────
@@ -73,25 +74,50 @@ def make_prompt(tier: dict, today_dow: str, today: str,
             "Include: mid-range dining, craft cocktail bars, ticketed music shows, "
             "drag performances, Camp North End events, US National Whitewater Center."
         )
-    else:
+    elif tier_id == "splurge":
         focus = (
             "premium experiences with no budget limit. "
             "Include: high-end dining (reservation required), VIP nightlife, "
             "major concert or theater tickets, upscale cocktail lounges, exclusive pop-ups."
         )
+    else:  # wildcard
+        focus = (
+            "bizarre, unexpected, and one-of-a-kind events — the weirder the better. "
+            "Search specifically for: pro wrestling (WWE, AEW, indie wrestling), "
+            "demolition derbies, monster truck shows, roller derby bouts, "
+            "competitive eating contests, arm wrestling competitions, "
+            "burlesque shows, drag racing, oddities markets, fringe theater, "
+            "murder mystery dinners, paranormal tours, taxidermy workshops, "
+            "ax throwing leagues, goat yoga, adult game shows, hypnotist shows, "
+            "professional wrestling, midget wrestling, comedy roasts, "
+            "anything campy, kitschy, cult-classic, or genuinely surprising. "
+            "DO NOT include normal bars, restaurants, standard live music, or typical city-guide content. "
+            "Every single card must be something a person would say 'wait, that's actually happening?' about."
+        )
 
-    return f"""You are a local city guide for Charlotte, NC, with deep knowledge of the queer social scene.
+    if tier_id == "wildcard":
+        audience = "anyone who wants something genuinely memorable, weird, or surprising — not a typical night out"
+        schema_note = (
+            "Tags can include any descriptive words — e.g. 'wrestling', 'weird', 'comedy', "
+            "'novelty', 'campy', 'experience', 'sports', in addition to the standard list."
+        )
+    else:
+        audience = "27-year-old gay man, social, adventurous, familiar with Charlotte"
+        schema_note = "Use tags from: outdoor, food, drinks, music, art, queer-friendly, nightlife, fitness, culture, shopping, sports, nature"
 
-Search the web for specific events and activities happening in Charlotte on {today_dow} {today} and {tomorrow_dow} {tomorrow}.
+    return f"""You are a local city guide for Charlotte, NC, with deep knowledge of local events across all categories.
+
+Search the web for specific events and activities happening in Charlotte (and within 30 miles) on {today_dow} {today} and {tomorrow_dow} {tomorrow}.
 
 Generate 5–7 activities for EACH day (today and tomorrow), covering morning, afternoon, evening, and night time slots.
 Focus on: {focus}
 
-Target audience: 27-year-old gay man, social, adventurous, familiar with Charlotte.
+Target audience: {audience}.
 
 IMPORTANT: Respond ONLY with a valid JSON array. No explanation, no markdown, no prose — just the raw JSON array.
 Each element must match this exact schema:
 {SCHEMA}
+{schema_note}
 
 Example of the expected output format (shortened):
 [
@@ -173,17 +199,24 @@ def fetch_tier(client: genai.Client, tier: dict, today_dow: str, today: str,
             raw_cards = extract_json(text)
             activities = [c for c in (validate_card(c, tier_id) for c in raw_cards) if c]
 
+            # Token usage
+            um = response.usage_metadata
+            in_tok  = getattr(um, "prompt_token_count",     0) or 0
+            out_tok = getattr(um, "candidates_token_count", 0) or 0
+
             today_n    = sum(1 for c in activities if c["day"] == "today")
             tomorrow_n = sum(1 for c in activities if c["day"] == "tomorrow")
             print(f"    ✓ {len(activities)} cards "
                   f"(today={today_n}, tomorrow={tomorrow_n}) | "
-                  f"{len(sources)} sources")
+                  f"{len(sources)} sources | "
+                  f"{in_tok:,}in {out_tok:,}out tokens")
             return {
                 "id":         tier_id,
                 "label":      tier["label"],
                 "emoji":      tier["emoji"],
                 "activities": activities,
                 "sources":    sources,
+                "usage":      {"input_tokens": in_tok, "output_tokens": out_tok},
                 "error":      None,
             }
 
@@ -202,6 +235,7 @@ def fetch_tier(client: genai.Client, tier: dict, today_dow: str, today: str,
                 "emoji":      tier["emoji"],
                 "activities": [],
                 "sources":    [],
+                "usage":      {"input_tokens": 0, "output_tokens": 0},
                 "error":      msg[:300],
             }
 
@@ -294,6 +328,26 @@ def main():
         )
         results.append(result)
 
+    # ── Cost calculation (Gemini 2.5 Flash + Search grounding) ──────────────────
+    # Prices: $0.075/1M input · $0.30/1M output · $0.035/search call
+    PRICE_IN  = 0.075 / 1_000_000
+    PRICE_OUT = 0.30  / 1_000_000
+    PRICE_SEARCH = 0.035          # per grounding call (one per tier)
+
+    total_in  = sum(r["usage"]["input_tokens"]  for r in results)
+    total_out = sum(r["usage"]["output_tokens"] for r in results)
+    search_calls = len([r for r in results if not r["error"]])
+    approx_usd = (total_in * PRICE_IN) + (total_out * PRICE_OUT) + (search_calls * PRICE_SEARCH)
+
+    run_cost = {
+        "input_tokens":  total_in,
+        "output_tokens": total_out,
+        "search_calls":  search_calls,
+        "approx_usd":    round(approx_usd, 4),
+    }
+    print(f"\nCost: {total_in:,} in + {total_out:,} out tokens | "
+          f"{search_calls} search calls | ~${approx_usd:.4f}")
+
     output = {
         "generated_at": today.isoformat(),
         "today":        today_s,
@@ -301,6 +355,7 @@ def main():
         "tomorrow":     tomorrow_s,
         "tomorrow_dow": tomorrow_dow,
         "tiers":        results,
+        "run_cost":     run_cost,
     }
 
     # Save JSON

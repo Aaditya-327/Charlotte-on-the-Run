@@ -141,6 +141,10 @@ main{flex:1;max-width:1100px;margin:0 auto;width:100%;padding:32px 24px 64px}
 .event-card.ai-card{border-color:rgba(139,92,246,.3);box-shadow:0 0 14px rgba(139,92,246,.07)}
 .event-card.ai-card::before{background:linear-gradient(90deg,var(--rust-500),#a78bfa,transparent);opacity:.5}
 .event-card.ai-card:hover{border-color:rgba(139,92,246,.6);box-shadow:0 8px 28px rgba(139,92,246,.22);transform:translateY(-1px)}
+/* Wild card variant — orange flare */
+.event-card.wild-card{border-color:rgba(251,146,60,.35);box-shadow:0 0 14px rgba(251,146,60,.08)}
+.event-card.wild-card::before{background:linear-gradient(90deg,#fb923c,#fbbf24,transparent);opacity:.5}
+.event-card.wild-card:hover{border-color:rgba(251,146,60,.6);box-shadow:0 8px 28px rgba(251,146,60,.2);transform:translateY(-1px)}
 .ai-tier-bar{grid-column:1/-1;display:flex;align-items:center;gap:8px;padding:4px 0 2px;flex-wrap:wrap}
 .ai-tier-tab{
   font-size:11px;font-weight:500;padding:4px 12px;border-radius:999px;
@@ -257,7 +261,7 @@ footer{border-top:1px solid var(--border-faint);padding:20px 24px;text-align:cen
 
 </main>
 
-<footer id="footer">Charlotte On The Run · Built with 23 curated RSS feeds · <a href="https://github.com/Aaditya-327/Charlotte-on-the-Run" style="color:var(--rust-500);text-decoration:none">GitHub</a></footer>
+<footer id="footer">Charlotte On The Run · Built with 23 curated RSS feeds · <a href="https://github.com/Aaditya-327/Charlotte-on-the-Run" style="color:var(--rust-500);text-decoration:none">GitHub</a><span id="run-cost-display"></span></footer>
 
 <script src="events_data.js"></script>
 <script src="daily_guide_data.js"></script>
@@ -286,10 +290,11 @@ function getWeekEnd(){ const d = new Date(TODAY); d.setDate(TODAY.getDate()+6); 
 
 // ── Parse AI guide cards (structured JSON from Gemini) ─────────────────────
 const TIER_META = {
-  free:    { label: '🆓 Free',      color: 'var(--good-500)' },
-  under20: { label: '💵 Under $20', color: 'var(--warn-500)' },
-  under50: { label: '🍸 Under $50', color: 'var(--rust-600)' },
-  splurge: { label: '🌟 Splurge',   color: '#f472b6' },
+  free:     { label: '🆓 Free',       color: 'var(--good-500)' },
+  under20:  { label: '💵 Under $20',  color: 'var(--warn-500)' },
+  under50:  { label: '🍸 Under $50',  color: 'var(--rust-600)' },
+  splurge:  { label: '🌟 Splurge',    color: '#f472b6' },
+  wildcard: { label: '🎪 Wild Card',  color: '#fb923c' },
 };
 const PERIOD_ORDER = { morning: 0, afternoon: 1, evening: 2, night: 3 };
 
@@ -475,7 +480,7 @@ function buildDDGUrl(ev){
 
 function buildAICard(ev){
   const card = document.createElement('a');
-  card.className = 'event-card ai-card';
+  card.className = 'event-card ai-card' + (ev.tier === 'wildcard' ? ' wild-card' : '');
   card.href = buildDDGUrl(ev);
   card.target = '_blank';
   card.rel = 'noopener noreferrer';
@@ -535,6 +540,18 @@ function makeAIDivider(label){
   return d;
 }
 
+function makeWildDivider(label){
+  const d = document.createElement('div');
+  d.style.cssText = 'grid-column:1/-1;display:flex;align-items:center;gap:10px;padding:6px 0 4px';
+  d.innerHTML = `
+    <span style="font-size:10px;font-weight:600;color:#fb923c;text-transform:uppercase;letter-spacing:.08em;font-family:var(--font-mono);white-space:nowrap;display:flex;align-items:center;gap:5px">
+      <span style="font-size:12px">🎪</span>${label}
+    </span>
+    <span style="flex:1;height:1px;background:linear-gradient(90deg,rgba(251,146,60,.4),transparent)"></span>
+  `;
+  return d;
+}
+
 // ── Render ────────────────────────────────────────────────────────────────────
 function render(){
   const grid  = document.getElementById('events-grid');
@@ -584,11 +601,12 @@ function render(){
   const dated    = filtered.filter(e => e.event_date);
   const undated  = filtered.filter(e => !e.event_date);
 
-  // Pick today's AI cards from cheapest available tier
-  const mixTier = ['free','under20','under50','splurge'].find(t => AI_CARDS.some(c => c.tier === t)) || 'free';
-  const mixAI   = AI_CARDS.filter(c => c.tier === mixTier && c.day === 'today');
+  // Pick today's AI cards from cheapest available tier + wild card
+  const mixTier  = ['free','under20','under50','splurge'].find(t => AI_CARDS.some(c => c.tier === t)) || 'free';
+  const mixAI    = AI_CARDS.filter(c => c.tier === mixTier && c.day === 'today');
+  const mixWild  = AI_CARDS.filter(c => c.tier === 'wildcard' && c.day === 'today');
 
-  if(filtered.length === 0 && mixAI.length === 0){
+  if(filtered.length === 0 && mixAI.length === 0 && mixWild.length === 0){
     grid.style.display='none'; empty.style.display='block';
     count.textContent = '0 events';
     return;
@@ -601,19 +619,26 @@ function render(){
     dated.forEach(ev => grid.appendChild(buildCard(ev)));
   }
 
-  // 2 — AI picks for today (above TBD noise)
+  // 2 — AI picks for today
   if(mixAI.length){
     grid.appendChild(makeAIDivider('AI Picks · Today'));
     mixAI.forEach(c => grid.appendChild(buildAICard(c)));
   }
 
-  // 3 — Undated articles (date TBD)
+  // 3 — Wild card: weird & novel
+  if(mixWild.length){
+    grid.appendChild(makeWildDivider('Wild Card · Weird &amp; Novel'));
+    mixWild.forEach(c => grid.appendChild(buildAICard(c)));
+  }
+
+  // 4 — Undated articles (date TBD)
   if(undated.length){
     grid.appendChild(makeDivider(`${undated.length} article${undated.length===1?'':'s'} — date TBD`));
     undated.forEach(ev => grid.appendChild(buildCard(ev)));
   }
 
-  count.textContent = `${filtered.length} event${filtered.length===1?'':'s'} + ${mixAI.length} AI`;
+  const aiCount = mixAI.length + mixWild.length;
+  count.textContent = `${filtered.length} event${filtered.length===1?'':'s'} + ${aiCount} AI`;
 }
 
 // ── Stats ─────────────────────────────────────────────────────────────────────
@@ -638,8 +663,22 @@ function initStats(){
   }
 }
 
+// ── Run cost display ──────────────────────────────────────────────────────────
+function initRunCost(){
+  if(typeof DAILY_GUIDE_DATA === 'undefined') return;
+  const rc = DAILY_GUIDE_DATA.run_cost;
+  if(!rc) return;
+  const tok   = ((rc.input_tokens + rc.output_tokens) / 1000).toFixed(1);
+  const usd   = rc.approx_usd != null ? `~$${Number(rc.approx_usd).toFixed(3)}` : '';
+  const calls = rc.search_calls != null ? `${rc.search_calls} searches` : '';
+  const parts = [tok + 'K tokens', calls, usd].filter(Boolean);
+  const el = document.getElementById('run-cost-display');
+  if(el && parts.length) el.textContent = ' · AI run: ' + parts.join(' · ');
+}
+
 // ── Init ──────────────────────────────────────────────────────────────────────
 initStats();
+initRunCost();
 render();
 </script>
 </body>
