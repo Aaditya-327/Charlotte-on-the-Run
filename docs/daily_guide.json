@@ -7,201 +7,1053 @@
   "tiers": [
     {
       "id": "free",
-      "content": "Charlotte, NC, offers a vibrant and welcoming atmosphere with numerous free activities perfect for a 27-year-old gay man looking to explore the city today, Tuesday, April 21, 2026, and tomorrow, Wednesday, April 22, 2026. This itinerary focuses on completely free experiences, including queer-friendly spaces, scenic parks, engaging neighborhood walks, and no-cover community events.\n\n**Important Note for Wednesday, April 22, 2026 (Earth Day):** All modes of CATS (Charlotte Area Transit System) public transit will be complimentary, making it an excellent day to explore different parts of the city without transportation costs.\n\n---\n\n### **Tuesday, April 21, 2026: Art, Nature, and Evening Entertainment**\n\n**Morning (9:00 AM - 12:00 PM): Discover Plaza Midwood's Eclectic Charm & Public Art**\n\n*   **Self-Guided Walk Through Plaza Midwood:** Begin your day with a leisurely stroll through Plaza Midwood, a historic neighborhood known for its eclectic vibe, unique businesses, and vibrant street art scene. This area has been historically recognized as one of Charlotte's \"gayest areas\" and is packed with LGBT-friendly stores, antique shops, and diverse architecture, making it a comfortable and interesting place to explore on foot. Keep an eye out for murals and public art installations that contribute to its artistic character. You can find many unique art features without spending a dime.\n*   **Explore Local Murals:** Utilize the ArtWalks CLT guide (available digitally) to create a personalized mural tour. Plaza Midwood is one of the neighborhoods highlighted for its public art, offering a chance to see various captivating pieces.\n\n**Afternoon (1:00 PM - 5:00 PM): Urban Oasis and Botanical Beauty**\n\n*   **Relax at Freedom Park:** Head to Freedom Park, often called Charlotte's \"Central Park.\" This expansive 98-acre urban park features extensive green spaces, a scenic seven-acre lake, and paved walking and biking trails. It's a perfect spot for a relaxing walk, people-watching, or finding a quiet bench by the lake. The park connects directly to the Little Sugar Creek Greenway, offering even more walking opportunities.\n*   **Wander the UNC Charlotte Botanical Gardens:** For a dose of nature and tranquility, visit the UNC Charlotte Botanical Gardens. Admission is always free to the public, and you can peruse the outdoor gardens and natural areas from dusk until dawn. Explore the Van Landingham Glen, which features specially selected plant life for education, conservation, and research.\n\n**Evening (7:00 PM onwards): Free Comedy or Trivia in Queer-Friendly Settings**\n\n*   **Comedy Open Mic at Starlight on 22nd:** Head to Starlight on 22nd for a free Comedy Open Mic, starting at 7:00 PM. Starlight on 22nd is known as a queer-friendly space that often hosts drag shows and other LGBTQ+ events, offering a welcoming environment. Enjoy the local talent and community vibe. While drinks are available for purchase, attendance at the open mic itself is free.\n*   **Alternative: Pub Trivia at Petty Thieves Brewing Co.:** If trivia is more your style, Petty Thieves Brewing Co. hosts Pub Trivia from 7:00 PM to 10:00 PM, which is also free to participate in. Located in a vibrant part of the city, this offers another opportunity for a free, social evening out, with any beverage purchases being optional.\n\n---\n\n### **Wednesday, April 22, 2026: Earth Day with Free Transit, Art, and Culture**\n\n**Morning (9:00 AM - 12:00 PM): Free Transportation & Historical Exploration**\n\n*   **Utilize Free CATS Public Transit:** Today is Earth Day, which means all modes of CATS public transit are complimentary! This is a fantastic opportunity to explore parts of Charlotte you might not otherwise reach without cost. Consider taking the LYNX Blue Line light rail to explore different neighborhoods easily.\n*   **Visit the Billy Graham Library:** Take advantage of the free transit to visit the Billy Graham Library. Admission to the library is always free, offering a look into the life and impact of Billy Graham through memorabilia, photos, and interactive presentations. It's open from 9:30 AM to 5:00 PM.\n\n**Afternoon (1:00 PM - 5:00 PM): Lunchtime Music and Uptown Art**\n\n*   **Uptown Unplugged: Lunchtime Music Series at Romare Bearden Park:** Enjoy a free lunchtime concert at Romare Bearden Park as part of the \"Uptown Unplugged\" series, taking place from 11:30 AM to 1:00 PM. Romare Bearden Park is a beautiful 5.4-acre park in Uptown known for its gardens, fountains, and public art installations, and it frequently hosts free public events.\n*   **Self-Guided Uptown Art Walk:** After the concert, take a self-guided art walk through Uptown Charlotte. The Arts & Science Council offers a public art walking tour featuring distinctive pieces like the \"Firebird\" sculpture in front of the Bechtler Museum of Modern Art. ArtWalks CLT also has several digital Uptown walks and trails that connect you to murals and public art. Explore The Green, a 1.5-acre park with literary-themed sculptures and art.\n\n**Evening (5:00 PM - 9:00 PM): Wednesday Night Live - Free Museum Access**\n\n*   **Wednesday Night Live at Levine Center for the Arts:** This is a major highlight for free cultural engagement! Every Wednesday from 5:00 PM to 9:00 PM, the Mint Museum Uptown, the Bechtler Museum of Modern Art, and the Harvey B. Gantt Center for African-American Arts + Culture all offer free admission.\n    *   **Mint Museum Uptown:** Explore international art, the acclaimed Craft + Design collection, and American, contemporary, and European art.\n    *   **Bechtler Museum of Modern Art:** Discover a collection of mid-20th-century modern art housed in an elegant building.\n    *   **Harvey B. Gantt Center for African-American Arts + Culture:** Experience galleries, and often special entertainment like live music or dance during these free evenings.\n\nThis detailed itinerary provides a comprehensive guide to enjoying Charlotte completely free of charge, with specific consideration for queer-friendly spaces and a diverse range of activities. Enjoy your exploration of the Queen City!",
+      "label": "Free",
+      "emoji": "🆓",
+      "activities": [
+        {
+          "title": "Morning Stroll on Little Sugar Creek Greenway",
+          "description": "Start your day with a refreshing walk or run along a scenic section of the Little Sugar Creek Greenway. This urban oasis offers paved trails, public art, and connects several vibrant neighborhoods, providing a great way to experience Charlotte's natural beauty and get some exercise. It's a popular spot for all, including the queer community.",
+          "day": "today",
+          "period": "morning",
+          "location": "Little Sugar Creek Greenway, Midtown/Dilworth",
+          "cost": "Free",
+          "tags": [
+            "outdoor",
+            "fitness",
+            "nature",
+            "queer-friendly"
+          ],
+          "tier": "free"
+        },
+        {
+          "title": "NoDa Murals & Street Art Exploration",
+          "description": "Immerse yourself in Charlotte's vibrant arts scene with a self-guided tour of the colorful murals and street art throughout the NoDa neighborhood. This eclectic and queer-friendly district is known for its bohemian spirit and artistic expressions, offering endless photo opportunities and a lively atmosphere. Use the ArtWalks CLT guide for a deeper dive into the artwork.",
+          "day": "today",
+          "period": "afternoon",
+          "location": "NoDa (North Davidson)",
+          "cost": "Free",
+          "tags": [
+            "art",
+            "culture",
+            "outdoor",
+            "queer-friendly"
+          ],
+          "tier": "free"
+        },
+        {
+          "title": "Discover Camp North End's Creative Hub",
+          "description": "Spend your afternoon exploring the unique industrial-chic campus of Camp North End, a vibrant district filled with public art, independent shops, and creative businesses. While many shops might tempt you, simply strolling the grounds, admiring the murals, and soaking in the community vibe is completely free and a great way to experience Charlotte's evolving culture.",
+          "day": "today",
+          "period": "afternoon",
+          "location": "Camp North End, North Charlotte",
+          "cost": "Free",
+          "tags": [
+            "art",
+            "culture",
+            "shopping",
+            "queer-friendly"
+          ],
+          "tier": "free"
+        },
+        {
+          "title": "Plaza Midwood Neighborhood Stroll",
+          "description": "Wander through the charming and eclectic streets of Plaza Midwood, a historically inclusive and vibrant neighborhood known for its unique mix of historic homes, independent boutiques, and diverse community. Enjoy the lively atmosphere, discover local street art, and soak in the welcoming energy of this queer-friendly area.",
+          "day": "today",
+          "period": "evening",
+          "location": "Plaza Midwood",
+          "cost": "Free",
+          "tags": [
+            "culture",
+            "outdoor",
+            "queer-friendly",
+            "shopping"
+          ],
+          "tier": "free"
+        },
+        {
+          "title": "Evening Drinks at Hattie's Tap & Tavern",
+          "description": "Unwind at Hattie's Tap & Tavern, a beloved dog-friendly dive bar in the Plaza Midwood area known for its relaxed atmosphere and inclusive crowd. Enjoy the large patio, play some board games, and soak in the friendly, queer-friendly vibes without a cover charge.",
+          "day": "today",
+          "period": "evening",
+          "location": "Hattie's Tap & Tavern, Plaza Midwood",
+          "cost": "Free",
+          "tags": [
+            "drinks",
+            "nightlife",
+            "queer-friendly",
+            "social"
+          ],
+          "tier": "free"
+        },
+        {
+          "title": "Late Night Fun at Sidelines Sports Bar",
+          "description": "Head to Sidelines Sports Bar & Billiards for a casual and welcoming late-night experience. This no-frills gay sports bar offers free pool, dartboards, and a friendly neighborhood crowd, making it a perfect spot to hang out and enjoy some drinks without a cover.",
+          "day": "today",
+          "period": "night",
+          "location": "Sidelines Sports Bar & Billiards, Lower South End",
+          "cost": "Free",
+          "tags": [
+            "drinks",
+            "nightlife",
+            "sports",
+            "queer-friendly"
+          ],
+          "tier": "free"
+        },
+        {
+          "title": "Morning Walk at UNC Charlotte Botanical Gardens",
+          "description": "Enjoy a peaceful morning exploring the diverse plant collections and natural areas of the UNC Charlotte Botanical Gardens. Admission to the outdoor gardens is always free, offering a serene escape and a chance to connect with nature.",
+          "day": "tomorrow",
+          "period": "morning",
+          "location": "UNC Charlotte Botanical Gardens, University City",
+          "cost": "Free",
+          "tags": [
+            "nature",
+            "outdoor",
+            "culture"
+          ],
+          "tier": "free"
+        },
+        {
+          "title": "Earth Day Free Transit & City Views",
+          "description": "Celebrate Earth Day by taking advantage of complimentary public transit on all CATS modes. Use this opportunity to explore different parts of the city for free, enjoy the ride, and appreciate Charlotte's commitment to sustainability.",
+          "day": "tomorrow",
+          "period": "morning",
+          "location": "Various CATS routes across Charlotte",
+          "cost": "Free",
+          "tags": [
+            "culture",
+            "adventure",
+            "outdoor",
+            "community"
+          ],
+          "tier": "free"
+        },
+        {
+          "title": "Wells Fargo History Museum Visit",
+          "description": "Step back in time at the free Wells Fargo History Museum, located in Uptown. Discover North Carolina's gold mining history, view rare coins, and even sit inside a real Concord stagecoach. It's a fascinating and educational experience for history buffs.",
+          "day": "tomorrow",
+          "period": "afternoon",
+          "location": "Wells Fargo History Museum, Uptown",
+          "cost": "Free",
+          "tags": [
+            "culture",
+            "history",
+            "art"
+          ],
+          "tier": "free"
+        },
+        {
+          "title": "Wednesday Night Live at Mint Museum Uptown",
+          "description": "Experience world-class art for free during \"Wednesday Night Live\" at the Mint Museum Uptown. From 5 PM to 9 PM, explore stunning exhibitions of American, contemporary, and craft + design art in a beautifully designed space. This is a fantastic cultural opportunity.",
+          "day": "tomorrow",
+          "period": "evening",
+          "location": "Mint Museum Uptown, Uptown",
+          "cost": "Free",
+          "tags": [
+            "art",
+            "culture",
+            "queer-friendly"
+          ],
+          "tier": "free"
+        },
+        {
+          "title": "Modern Art at Bechtler Museum (Wednesday Night Live)",
+          "description": "Continue your cultural evening at the Bechtler Museum of Modern Art, which also offers free admission from 5 PM to 9 PM as part of \"Wednesday Night Live.\" Discover works from modern masters like Picasso and Warhol in an intimate and inspiring setting.",
+          "day": "tomorrow",
+          "period": "evening",
+          "location": "Bechtler Museum of Modern Art, Uptown",
+          "cost": "Free",
+          "tags": [
+            "art",
+            "culture",
+            "queer-friendly"
+          ],
+          "tier": "free"
+        },
+        {
+          "title": "Karaoke Night at Bar Argon",
+          "description": "Unleash your inner pop star at Bar Argon, Charlotte's only video dance bar and lounge, known for its welcoming LGBTQ+ crowd and strong drinks. Wednesday nights often feature karaoke, offering a fun and free way to enjoy the nightlife and socialize.",
+          "day": "tomorrow",
+          "period": "night",
+          "location": "Bar Argon, Lower South End",
+          "cost": "Free",
+          "tags": [
+            "drinks",
+            "music",
+            "nightlife",
+            "queer-friendly"
+          ],
+          "tier": "free"
+        }
+      ],
       "sources": [
         {
-          "title": "charlottenc.gov",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGHghxNB4YpDYL966vR6Cgnz3VUJI19A0H3Kh0EmQfMV4W8-yNlImeedl8_RvwlKEw7hcrL3FkUX6Q2DUeR7DoXkJBtck1uZOwTfIG3pkzZgy5J3dmaAA4TgF-fCgIAr2tQOEPl8o2rNfWZIepjo6X9uJIWgo2p"
+          "title": "bovenderteam.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGHsNvXjiUSoEfuyFGHJqn0hCcpsgXHE4X0IUlal7_p6hYqUXELTCXIVwTyzrVs8jGdV7S79PjSqFXhXphBY4ogG4OzI_IgQaJTaTld1pf-BRDDadczI0ALXwXqUJsFmg_YQ_Jhmn-vEq6pQLE_kqibVbKZvYkWW_qqRD-Ou0JXOGV9KkU8OsvM2DclesDjF4uTZ2TH"
         },
         {
-          "title": "thinkeverlong.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQESbnVaLgVmdTMEFycNuqa8I7HVJUeS8CWCXzg6bzrBB2j556EmeTA1dF9jH6WJwlh7YwMPsxFEyUhV3aPeAI6BtZMIZNf6BVplKNwV7BO-hKPjPrJYfST4cyaseXgM2MmphOZ4eMBtrlMxqXLnn2UgOsSkK1YC5g=="
-        },
-        {
-          "title": "qnotescarolinas.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGKOWLhMWe-j9BQRnby-MKwYwPrriaRGaB1PG-3cY9tGAhUj_0murxGhB-opg7qg82v8m7v8sogqdECiggBhVUKoGod8LxPtiB476Q51231dzvOPr9XbU2wPofOFmYnxX5QXv39u-hU-57vBFnAcQ=="
+          "title": "axios.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG8CzFPJKSPqgaDLi3kwWiQlwwpKV3HuaiXx5F3dMlrJjjw93aw9GicXiJ4stWWPHqmVMjPQThqQDL5F9PSlM5FM5UyFn5_FaFmzKsc4cF-pL5mb7OgxOqnk8WGfbsF3p4h9qA9HUxLKrIxcOCipKfmIzFanoumKIaqu534a8jcJczosDjuYTMba3r00W66z4iaSJc="
         },
         {
           "title": "charlottesgotalot.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFoPapguoiEMlho9T8HsMLqZrQzJHYOSXI7dlzHs9tE9Oz4s2lVCUGlsjU3nueTBKezbpntHW7la9poqej30xr_AvnZDWIIkzbMHqovGSRE_T5Gy0ScZeB7L83TFXAoDmLHH-VqeOHyeJ8b30jaW08m5gH1WaaMR7Z_Gel_q1w8_g2p3Y06odNEiINy4y3RixnyLXpCfm0bbke3sA=="
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFMjgxdkDQTQ6wwcgBhXDlMC1c_-Df-rWDo8JK3EWD_laD8ilCir9DD2qjciSXMEjhhqgTFSNJLY8aNq480gLZ34WvOjKCXyPPnk2mNZL26748tNwp3kH6veedudqUABdwSmb8gvyNZtVwDMEwCWY4Yu4GYRLk4-7nq50B-UjRBYxJJqHMD2QM6GU4="
         },
         {
-          "title": "artwalksclt.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFWxgzkpPBitIUrnNinFMo4MSDzdSSfpKpK9vH358mN2uO_KwzbedVR1p90OnSnYQJlzUbPbfLBu-ZWM7UovQGVkQGMHZ5G2DNEVDdgTpyE8M2G_g=="
+          "title": "getbellhops.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF-Uezsd7L6xmvIbhmrd5TXTF06fewJAF_vg0Ms1p9sIDsSHp7H-fiCXsp3JEOtbpV8u7qrg9H1NDDIrmst-POnTXyoz11H_GNDtVN27R20-z6B_QzilXMWFeoAYhhmoZUe6810oaxfiC0TQf2xtFv4puYWgwonvw=="
         },
         {
-          "title": "sarahsaidit.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG3O3iPG1VcwhEyYQVktX29SJ5LI8pqXDfzEkhdLpPSOjO8qmFFUHxhnDnvaO7t-_rhe_TiuA0a1a6i0ZLyEF3fgaerv6HB1Xs2WQC9xSJykPd33aF7YnStOAIYKLQPs0FpQLWo6BDfKuDdP-nvbD5q8VhpKso9hdh6ZAoKUjG5YA=="
-        },
-        {
-          "title": "n2backpacking.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWyxlcBukI-66aYtK_iFTMelixGkaXXSuD9VaxXndqI1g_qJmiW1f_dir4z7BaCw0a-KnbdlX9AbKKpNOWlInmiwu8F-JKGfufbcT_w2IpDNDo8IFLl1Ty3qIO06gmECwGB3qZss6-qZtt4kLCjyUwG458-IF0cg=="
-        },
-        {
-          "title": "youtube.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFmARo-99QgoG0mAn-aHEk6gd4FZ57D7m7_TyAsVYUVfjXV3wQaBmCN9f9DCVOyJFn4OJcwAvzTYeJNjGrYaA_A2KQ2X2xt8YrkLIneRCmIE3mq4t0jZdOViQCGot2S4n7ffsDXLVA="
-        },
-        {
-          "title": "charlotteobserver.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHG7j8P9rQpEKqlZH0PNaMjrD8jzrhWMq7orCvtmM6_jnZZHQV8iVNRVjh-pVIoTIxGbD2Y7wIWrjjiGDJ1c693xKKbVUcqj_cxa0GbRTnfKeC7yIqdIxiK_lvF6mG_ZKcIuF9GfGfcprvsX9RaMAb9Yw6NFcnVJWpFJA7N1VYjgFUFomSTIwLUTKhqQB_csMg="
-        },
-        {
-          "title": "uptownsuites.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHAOHTLys1PnkfzKj_Hof7D2I7y75oKgETzvJKl1vSzTqAEEuTrZuFToFEXQOZvRm8AFJVC7jwiDJByP0QsMCQisWpLkfXP-IW2xMnyJEUkChzLXEUavy6pgbNNkYg9wSo_Me829_DzFBldS0VGMtTtlFA_"
-        },
-        {
-          "title": "charlotteonthecheap.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH3Ou0CipLQyiK3wPeDDKIw6C_fjynj2gJUUiPlcQCKhrfZ-Cw-p_jwR3QAHW561HgdVJ_oRtPyRp4swlY4_NQoHWXGzNYfpeElvhpl1mIG0LpGsK3las_E1_eVdI2a0EvYy2pX6eU9uG-BUoqiJw=="
-        },
-        {
-          "title": "reddit.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFkLeE7-Y1JPDaZgsk3M478bddoi4c5OK2CFLVC34rLLbZhw0irQHHFjiU3xcs-H79-DnXtaBQP2ROCIXbc7X9wQGEvHQrlmTAst4O23qHs_Ow7BmK2YIV5-jQJWoYK15HIRmkquFc5xkFsm8uEQU4oA5SfsaPzFUQezbl3LCCEN_Wq0f3E0R4-1g=="
-        },
-        {
-          "title": "charlotteonthecheap.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE_MX2bSv5_GBK4Yg0rJv7fKkZO1hD5cFEIOOACPKw3-0kUYRVHWY-g75XoTryCNo0g8s_2xW-a7lB5Rjjf1tDvU_6vuSI0cbMb-Bq2lTVeugiOrFV4gb_qQCqEA4C29isCByu7ZmW8fUAAvHIn-tYF"
-        },
-        {
-          "title": "6amcity.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1RrlxI3xN4VhMNqacHXpZoUnBZG5KS6T1FlufIcgeDZ4mnK7OjDiQHsHYsD38QRPRI1_P5ZPoBXa72BQJIrfnEqja2hry0CyooGzgYakFzK8YtMnfZpUG3IufXvJ6ypOQYvRZZd3IUGDdDjOV1PRrArA6XmBKURCC"
-        },
-        {
-          "title": "charlottepoi.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF4hEkZIVSXkE_Lz3-PrmySCsFckXHhpPLg5KFeNDUsciySXbC3rRZEeH0fI6h1X0UkhMlUEWOQinKaG_znxYpzArdlTyZa6zg12WEbrjpCMlub8kXd4kvKl8MylWT3THlBVj89aLqdhw=="
+          "title": "itsawinnwinn.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5oSybrK35haso0vUFIfVtIWF1vdlmWNfskwy4knZORj2CkMJYQZu5KGvL-41JbheiOuAimKFEL0ZRnvWZ2Rvp_IJEBGEmBCPO8NXTyswFuQoLk27YaoSSRS1K-TUjOphl50C12Lv6xs73MVONmXwId9xPDPYAc7RQiT4dHBdYFN8QIk4AfGZxw6CSgqAOssBviV82Kf2vmxrle2DWlg=="
         },
         {
           "title": "charlottesgotalot.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUWwOpBEdXILKBOVGxWcraRdVl5inDZCCTMzhsrsmHsOGd7ZYLmBtAwUOEnab3lqA_COzLXi_VAe33r8ZxNZF-qxXwLB2IF1CzAufrAvu5cVcXVTZewQJ6qJGNh80dfMFrupWWCyBPqEjAtBp-Fyrv1_thkVY="
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHFT_i5hkFMRy5X9cuLg0tuKHIKnt5gilVbVK3DEhVF2hCtyDM25lcSVAdsDTfvaEFeKg2JRNbEuztfpUhaTsxBMznHqfhr6tSo8q0s1I23ABmlI2fZex6jKbeB4u2DfYbOC1Y7GBB3IiM6J5wn4RkmeqM9fmPaIbj2ZXT2TdnOGN8eOMoiQ2tUFw5jsKbWN21TdFdPYLjLrqRM"
+        },
+        {
+          "title": "artsandscience.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGxOm-MDFh_O-wtDCpqx19jwEPkefEr_ruPs-jAPhp6IGwA-8gCEXdncaR2N56vEyap7amvmWmu8lX5HuxRtCiKHy5Lh3hZUd3RKuWvIXlfwvONmGUU813Le250zXNKiuq5nMl3kSm_Jf03A22bAyFYwOMTK6LjN6I7-WkGTEF2kEl5OfUVxNgYnA=="
         },
         {
           "title": "uptowncharlotte.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFI0JGudYW3U9L1YM8EcJfLp2fQnN5cSQpMkBW5tTdY8wpVbXFFBPLpLLZc36JyvFiuVFi0hQiZ9tliGPsS6DxRm4LYX0SsIalzJky0HKZBWOaWAUuEfefHJyRJ_jefh0pAjT3bGmijxCP2XUkDkVnt6ONseDs_JqKmnkOuuHsrU9Zl2_bBgmGj2kJMFnOTPPS7Dhxkw6CLmeI="
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEgfscs1a7bXHyoa_e5ZTdPuqssp8txzKPm_lQ3dE_gpHUuziwkaMWOou7I6CDjzybMejvG23lKDeqQ8UWVocdSDdE_CpU2TdMCMCNOltb8DDg1JDjUYHS79K8J3PrPb8e4f_5fmg29knpsBikQHJggxHPwZDJDtKtOAJun"
         },
         {
-          "title": "charlotteonthecheap.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFCurvMzBd2xm0WLmC_L-gdyK15jaWCrMmBlSTVOB492n5jF3frGZ4rKwntAV96o7zcMytUciB5ja9nK7-kmIsmV5dTp6JoGa5NYsbxf01NUM_3VfoiIDT7o5e3OGO2_159CnGeIyvZBolfwDWZhIFM5BSQopLcUYzoDkJeXfg="
+          "title": "artwalksclt.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGdPjCLqdXpkDoqYFCZGlPGXhsju39juwJzqxediQARRlA2mUJONw3JDdBDLJ_R7AFp4aQVPPIkYxntnYixwoRk5vUJFz7UyjxAnNYivs507J0t"
         },
         {
-          "title": "wanderlog.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGdJB43zdT3MH_78HkWLks9nbikN36wSiSfca0TTW47uOU5Tnhr8MxystyJwaBFOEHcNrk5z6FF3qy-s9dUwWLG8OWRMA0XmgBx36k0S06ug1hAzgan-myg347lAKDXPaSBT8EXtut5tNGGUAsKKB_kEl6DJNThRfog9ekX-uK_DJckrBzE0AM="
+          "title": "camp.nc",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG2nYJZM6jrloMY61WDz-hF6C83P1szFpL46a3rQeF0p80ZOe9ep6P5-AOhX1oYdHnfQdw1sTbIF8-Q2krX42XsyweZ7eKH_wpwTjRbOHiNX0Q7SpmTxETTbvuatCtcZq_-EtrlV7IUIvCn80lt-8Tz7WtOxHG7J8IpZ47dGoaZHA=="
         },
         {
-          "title": "mintmuseum.org",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEl_Oy1J3lgayEtOTmESRy5xHKuleZUwniDwI6zlfJeqMspwID1bwpxlQ3pGHeAwYCXVpSWFeOyJ105Mhwzj2mc-P0cJyMt46lHLhOfyU4IMpjvdNoRzg=="
+          "title": "housedigest.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGht2D2RQn-yhMeGCQnTbjy6kEXThIF0tOx9kYPuNTAjc6aGiwjJcl0IaHVodgjYM-biYz-r1789y7nvwJ4C1gteCRV1OFs8RGZwtXhri0dY_61E8cnPfBdE8gQRG8Q6uNCeI7RQq5c1pxihMOxoHsPwRp2XD3mFOk1GmGCTYpbJCKhgfuxdSa7GkxwIlt_X7no0eccnPIcdot_F-WJmuju65q2yLx-aMj4gw=="
         },
         {
-          "title": "mintmuseum.org",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHzEiELIf3LoZgW8WeI1-ZkaW-Y3Yzkb9tJ7yEdmnbs9XJ0nJBOck21sKkJXh5fFeVYw5fxAeZW277nwCi0R6dHYcM5BE-s7NTY4QME7BMdjqWhM28vv1R7BS3QXSfJQsYI04O6uYxP82SNGmDAosicwunGb-4="
-        }
-      ],
-      "error": null,
-      "label": "Free",
-      "emoji": "🆓"
-    },
-    {
-      "id": "under20",
-      "content": "Charlotte welcomes you! As your specialized local guide, I've curated a comprehensive and budget-friendly itinerary for a 27-year-old gay man exploring the Queen City today, Tuesday, April 21, 2026, and tomorrow, Wednesday, April 22, 2026. Get ready to experience Charlotte's vibrant culture, delicious cheap eats, and lively local spots, all while keeping your wallet happy. Please note that while I've searched for specific events, some recurring weekly events are assumed to be consistent. Always double-check with the venues directly for the most up-to-date information, especially closer to the dates, as event schedules can change.\n\nHere’s your detailed itinerary:\n\n### **Tuesday, April 21, 2026**\n\n**Morning (7:00 AM - 12:00 PM): A Caffeinated Start & Historic Stroll**\n\n*   **7:30 AM - Coffee & Pastry at Central Coffee Co. (Plaza Midwood)**\n    *   Start your day in the eclectic Plaza Midwood neighborhood, known for its unique shops and welcoming vibe. Central Coffee Co. is a beloved local spot, perfect for grabbing a quality coffee and a fresh pastry. Enjoy the relaxed atmosphere and people-watching.\n    *   *Estimated Cost: Coffee ($4-5) + Pastry ($3-4) = $7-9*\n*   **9:00 AM - Explore Historic Fourth Ward**\n    *   After your coffee, take a leisurely stroll through the Historic Fourth Ward. This charming neighborhood boasts beautifully preserved Victorian homes, tree-lined streets, and a quiet, residential feel. It's a great way to experience some of Charlotte's architectural heritage for free.\n    *   *Estimated Cost: Free*\n*   **11:00 AM - Walk the Little Sugar Creek Greenway (Midtown Section)**\n    *   Head towards the Midtown section of the Little Sugar Creek Greenway, easily accessible from Fourth Ward. This urban oasis offers paved paths perfect for a walk or jog, connecting various parts of the city. Enjoy the fresh air and green spaces.\n    *   *Estimated Cost: Free*\n\n**Afternoon (12:00 PM - 5:00 PM): Art, Lunch, and Local Flavors**\n\n*   **12:30 PM - Cheap Eats Lunch: Sabor Latin Street Grill (Uptown/Midtown)**\n    *   For a delicious and affordable lunch, head to Sabor Latin Street Grill. Known for its authentic street tacos, burritos, and other Latin American fare, you can easily enjoy a filling meal for under $10. Their tacos are a local favorite.\n    *   *Estimated Cost: $8-12*\n*   **2:00 PM - Explore The Mint Museum Uptown (Free Admission Day/Time)**\n    *   Check if The Mint Museum Uptown has any free admission hours or days, as some museums offer this on specific weekdays. If not, consider visiting the public areas or checking for special exhibitions with low entry fees. The Mint Museum Randolph (their other location) also has a beautiful setting. The Mint Museum Uptown houses a diverse collection of art and craft, often with interesting contemporary exhibits.\n    *   *Estimated Cost: Free (if applicable) or $10-15 (general admission, verify current pricing)*\n*   **4:00 PM - Browse Shops in NoDa (North Davidson Arts District)**\n    *   Take a quick light rail ride or a short drive to NoDa, Charlotte's historic arts and entertainment district. Wander through the colorful streets, browse independent boutiques, and soak in the bohemian atmosphere. Many shops feature local artists and unique finds.\n    *   *Estimated Cost: Free (browsing) to $10-20 (small purchase)*\n\n**Evening (5:00 PM - 11:00 PM+): Brewery Run, Trivia, and Dive Bar Fun**\n\n*   **5:30 PM - Optional: NoDa Brewing Company Run Club**\n    *   NoDa Brewing Company is known for its popular weekly run club, often held on Tuesdays. Join for a casual 1, 3, or 5-mile run, followed by discounted beers. It's a great way to meet locals and get some exercise. Check their website closer to the date for confirmation of Tuesday run club.\n    *   *Estimated Cost: Free (run) + $5-7 (1-2 beers) = $5-7*\n*   **7:00 PM - Dinner: Pizza at Benny Ferrovia's (NoDa)**\n    *   After your run or exploring NoDa, grab a massive slice of New York-style pizza at Benny Ferrovia's. Their slices are enormous and incredibly satisfying, making for a cheap and delicious dinner.\n    *   *Estimated Cost: $5-8 (for a slice or two)*\n*   **8:30 PM - Trivia Night at a Local Brewery/Bar (e.g., OMB or Heist Brewery)**\n    *   Many Charlotte breweries and bars host trivia nights on Tuesdays. Olde Mecklenburg Brewery (OMB) often has a lively atmosphere, or check out Heist Brewery in NoDa for their trivia. It's a fun, low-cost way to spend an evening, often with prizes for winners.\n    *   *Estimated Cost: Free (to play) + $6-8 (for a beer or drink) = $6-8*\n*   **10:00 PM - Dive Bar Experience: The Thirsty Beaver Saloon**\n    *   For an authentic Charlotte dive bar experience, head to The Thirsty Beaver Saloon. This legendary spot is known for its no-frills atmosphere, cheap drinks, and often live music (though check for cover charges on Tuesdays). It's a true local gem.\n    *   *Estimated Cost: $5-10 (for 1-2 drinks)*\n\n### **Wednesday, April 22, 2026**\n\n**Morning (7:00 AM - 12:00 PM): Green Spaces & Market Finds**\n\n*   **8:00 AM - Coffee & Breakfast Burrito at Smelly Cat Coffeehouse (NoDa)**\n    *   Start your Wednesday back in NoDa at Smelly Cat Coffeehouse. This quirky, beloved spot offers excellent coffee and tasty breakfast burritos or pastries in a cozy setting. It's a perfect place to relax and plan your day.\n    *   *Estimated Cost: Coffee ($4-5) + Burrito/Pastry ($5-7) = $9-12*\n*   **9:30 AM - Freedom Park Exploration**\n    *   Head to Freedom Park, one of Charlotte's largest and most popular parks. Enjoy a walk around the pond, explore the various trails, or simply relax on a bench. It’s a beautiful urban park perfect for a morning refresh.\n    *   *Estimated Cost: Free*\n*   **11:00 AM - Atherton Mill and Market (South End)**\n    *   Walk over to Atherton Mill in the South End neighborhood. This revitalized historic mill houses a variety of local vendors, shops, and eateries. Explore the market for unique local goods, fresh produce, and artisanal crafts.\n    *   *Estimated Cost: Free (browsing) to $10-20 (small purchase)*\n\n**Afternoon (12:00 PM - 5:00 PM): South End Charm & Brewery Hopping**\n\n*   **12:30 PM - Cheap Eats Lunch: Phat Burrito (South End)**\n    *   A Charlotte institution, Phat Burrito offers massive, delicious burritos that are incredibly filling and budget-friendly. It's a casual spot perfect for a quick and satisfying lunch in the heart of South End.\n    *   *Estimated Cost: $10-14*\n*   **2:00 PM - South End Mural Walk & Rail Trail Stroll**\n    *   South End is famous for its vibrant street art and murals. Take a self-guided walk along the Charlotte Rail Trail, admiring the colorful murals and public art installations. It's a fantastic way to experience the neighborhood's artistic side for free.\n    *   *Estimated Cost: Free*\n*   **3:30 PM - Brewery Visit: Sycamore Brewing (South End)**\n    *   Sycamore Brewing is a popular spot in South End with a large outdoor patio and a lively atmosphere. Enjoy a craft beer or two. They often have food trucks on-site if you're feeling peckish, but focus on the beer for budget.\n    *   *Estimated Cost: $6-8 (per beer)*\n\n**Evening (5:00 PM - 11:00 PM+): Evening Bites & LGBTQ+ Friendly Fun**\n\n*   **6:00 PM - Dinner: Bang Bang Burgers (Elizabeth Neighborhood)**\n    *   Head to the charming Elizabeth neighborhood for dinner at Bang Bang Burgers. They serve up gourmet burgers with creative toppings in a casual setting. You can get a fantastic burger meal for under $20.\n    *   *Estimated Cost: $12-18*\n*   **7:30 PM - Low-Cover Event/Gallery Show: Shain Gallery or Lark & Key Gallery (Dilworth/Elizabeth)**\n    *   Charlotte has several excellent art galleries, many of which offer free admission or host low-cover events/openings. Check the websites for Shain Gallery (Dilworth) or Lark & Key Gallery (Elizabeth) for any evening events, artist talks, or simply to browse their collections. These neighborhoods are beautiful for an evening stroll.\n    *   *Estimated Cost: Free (browsing) to $5-10 (for specific events/donations)*\n*   **9:00 PM - LGBTQ+ Friendly Dive Bar: The Woodshed Lounge**\n    *   For a relaxed and welcoming LGBTQ+ friendly atmosphere, head to The Woodshed Lounge. It's known as a casual neighborhood bar with friendly staff and affordable drinks, fitting the dive bar vibe perfectly.\n    *   *Estimated Cost: $5-10 (for 1-2 drinks)*\n*   **10:30 PM - Late Night Drinks: Petra's Piano Bar**\n    *   If you're looking for a slightly different vibe, Petra's Piano Bar offers live piano music, often with a sing-along atmosphere, and is known for being LGBTQ+ friendly. It's a cozy spot for a late-night drink and good conversation. Check for any cover charges, which are usually low if applicable.\n    *   *Estimated Cost: $5-10 (for 1-2 drinks) + potential low cover ($5-10 if applicable)*\n\nEnjoy your two days exploring Charlotte, NC!",
-      "sources": [],
-      "error": null,
-      "label": "Under $20",
-      "emoji": "💵"
-    },
-    {
-      "id": "under50",
-      "content": "As your specialized local city guide for Charlotte, NC, I've curated a highly detailed and comprehensive itinerary designed for a 27-year-old gay man, focusing on experiences that are typically available and budget-friendly, keeping your $50 limit for two full days (Tuesday, April 21, 2026, and Wednesday, April 22, 2026).\n\n**Important Note on Specific Events & Budget:**\nPlease note that specific event listings for April 21-22, 2026, are not yet available. This itinerary is based on typical offerings, popular venues, and general availability in Charlotte. Prices are estimates and are subject to change. Given the strict $50 budget for two full days, this itinerary heavily prioritizes free and low-cost activities, happy hour specials, and budget-friendly dining/drink options. Incorporating multiple \"mid-range dining\" experiences, \"craft cocktail bars,\" or \"ticketed local music shows/drag performances\" with entry fees would likely exceed the $50 limit. I recommend choosing one \"splurge\" item and balancing it with otherwise free activities.\n\nHere's your Charlotte adventure:\n\n---\n\n### **Day 1: Tuesday, April 21, 2026**\n\n**Morning (9:00 AM - 12:00 PM): Explore Uptown & The Green**\n\n*   **Activity: Self-Guided Walking Tour of Uptown Charlotte.** Start your day with a free exploration of Charlotte's bustling Uptown district. Wander through the skyscrapers, admire the public art installations, and soak in the city's energy. Don't miss the iconic \"Metalmorphosis\" sculpture by David Černý.\n    *   **Cost:** Free\n*   **Activity: Relax at The Green.** This urban park in the heart of Uptown offers a peaceful oasis with literary-themed sculptures and fountains. It's a great spot for people-watching or enjoying a book.\n    *   **Cost:** Free\n*   **Dining: Grab a Coffee.** Find a local coffee shop like Not Just Coffee (multiple locations, including Uptown) for an affordable morning pick-me-up.\n    *   **Estimated Cost:** $4-6 for a coffee.\n    *   **Running Total:** $4-6\n\n**Afternoon (12:00 PM - 5:00 PM): Camp North End & Creative Vibes**\n\n*   **Activity: Discover Camp North End.** Head to Camp North End, a vibrant adaptive reuse development known for its artistic community, unique shops, and industrial charm. Spend your afternoon browsing the murals, art studios, and small businesses. It's an excellent place for photography and soaking in creative energy. While specific events for April 2026 aren't listed, Camp North End frequently hosts free markets, pop-ups, and open studio days, so check their calendar closer to your visit.\n    *   **Cost:** Free (for browsing)\n*   **Dining: Lunch at Camp North End.** Grab a budget-friendly lunch from one of the food stalls or casual eateries at Camp North End. Places like Saru by Bow Ramen or La Caseta offer delicious and relatively affordable options.\n    *   **Estimated Cost:** $10-15 for a meal.\n    *   **Running Total:** $14-21\n\n**Evening (5:00 PM - 10:00 PM+): Plaza Midwood & Gay-Friendly Fun**\n\n*   **Activity: Explore Plaza Midwood.** This eclectic neighborhood is known for its quirky shops, vibrant murals, and a strong LGBTQ+ presence. Take a stroll along Central Avenue and Commonwealth Avenue.\n    *   **Cost:** Free\n*   **Dining: Casual Dinner in Plaza Midwood.** For a budget-conscious dinner, consider options like Soul Gastrolounge (known for small plates, but happy hour deals can be good) or a slice of pizza from Fuel Pizza. Alternatively, look for happy hour food specials at local bars.\n    *   **Estimated Cost:** $12-18 for a meal.\n    *   **Running Total:** $26-39\n*   **Activity/Drinks: Happy Hour at an LGBTQ+ Friendly Bar.** Charlotte has several welcoming gay bars. On a Tuesday, you might find happy hour specials, karaoke, or trivia nights. Consider **Central Station** (often has weeknight specials) or **The Scorpio** (a Charlotte institution, check for any cover on specific nights, but often free entry for general bar access). Focus on one drink during happy hour to stay within budget. Many bars in Plaza Midwood are generally gay-friendly.\n    *   **Estimated Cost:** $7-10 for one happy hour cocktail/beer.\n    *   **Running Total:** $33-49 (This is pushing the budget for Day 1, leaving very little for Day 2. You might need to choose between a full dinner and a drink, or opt for a cheaper dinner.)\n\n---\n\n### **Day 2: Wednesday, April 22, 2026**\n\n**Morning (9:00 AM - 12:00 PM): Nature & Trails at US National Whitewater Center**\n\n*   **Activity: Explore the US National Whitewater Center (USNWC) Trails.** While whitewater activities typically come with a significant cost, the USNWC offers free access to its extensive network of hiking and biking trails. Enjoy a refreshing morning walk or run along the Catawba River and through the woods. It's a fantastic way to experience nature just outside the city. Parking usually costs $8-10 per vehicle, so if you're taking an Uber/Lyft, factor that in, or consider carpooling if you meet someone. If driving, this will be your main cost for the morning.\n    *   **Estimated Cost:** $8-10 for parking (if driving). Free if dropped off or walking/biking in.\n    *   **Running Total (assuming parking):** $41-59 (This definitely puts us over budget if we hit the high end of Day 1. We need to cut back.)\n    *   **Budget Adjustment:** To stay under $50 total, you'd need to have spent no more than $39 on Day 1. This means a cheaper dinner and only one happy hour drink, or skipping one of those. Let's assume you managed Day 1 around $35.\n    *   **Revised Running Total (Day 1 low end + Day 2 parking):** $35 + $10 = $45. This leaves $5 for the rest of Day 2. This is extremely tight.\n\n**Afternoon (12:00 PM - 5:00 PM): NoDa Arts District & Murals**\n\n*   **Activity: Discover NoDa (North Davidson Street).** Charlotte's historic arts district is brimming with character. Spend your afternoon admiring the vibrant street art and murals, browsing unique boutiques, and soaking in the bohemian atmosphere.\n    *   **Cost:** Free\n*   **Dining: Budget Lunch in NoDa.** Grab a very affordable lunch. Consider a food truck if one is present, or a quick bite from a casual spot. Perhaps a cheap taco or a grab-and-go sandwich.\n    *   **Estimated Cost:** $5-8 for a light lunch.\n    *   **Revised Running Total:** $45 + $8 = $53. We are already over.\n\n**Re-evaluating the $50 budget:** This budget is extremely restrictive for two full days including dining and activities beyond just walking around. To truly stay under $50, you would need to:\n*   Pack your own breakfast and lunch for both days.\n*   Stick to water or free tap water at all times.\n*   Only do free activities.\n*   Limit yourself to *one* very budget-friendly dinner each day, or perhaps just one dinner for the entire trip.\n\nLet's present a revised, ultra-budget itinerary to meet the $50 constraint, explicitly cutting out almost all paid drinks and focusing on very cheap eats.\n\n---\n\n### **Revised Ultra-Budget Itinerary (Strictly $50 Limit)**\n\nThis itinerary assumes you're focused on experiencing Charlotte's vibe without significant spending on food, drinks, or ticketed events.\n\n### **Day 1: Tuesday, April 21, 2026**\n\n**Morning (9:00 AM - 12:00 PM): Uptown & The Green**\n\n*   **Activity:** Self-Guided Walking Tour of Uptown Charlotte & The Green. Enjoy the architecture, public art, and green space.\n    *   **Cost:** Free\n*   **Dining:** Pack a light breakfast/snack (e.g., granola bar, fruit).\n    *   **Cost:** $0 (from home)\n    *   **Running Total:** $0\n\n**Afternoon (12:00 PM - 5:00 PM): Camp North End & Artistic Exploration**\n\n*   **Activity:** Explore Camp North End. Wander through the murals, art studios (many are free to browse), and unique shops. Enjoy the creative atmosphere.\n    *   **Cost:** Free\n*   **Dining:** Pack a light lunch (e.g., sandwich, leftovers). Alternatively, if you want to spend, grab one very cheap item from a food stall (e.g., a single taco).\n    *   **Estimated Cost (if buying one item):** $4-6\n    *   **Running Total:** $4-6\n\n**Evening (5:00 PM - 10:00 PM+): Plaza Midwood & Neighborhood Vibes**\n\n*   **Activity:** Explore Plaza Midwood. Enjoy the vibrant street art, unique shops (window shopping), and lively atmosphere.\n    *   **Cost:** Free\n*   **Dining: Budget Dinner.** Look for a happy hour special that includes food, or grab a very cheap slice of pizza or a small meal from a casual spot. **Tip:** Many gay bars sometimes have free or very cheap weekly events like drag bingo or karaoke where you can enjoy the atmosphere without a cover charge, just be mindful of drink costs.\n    *   **Estimated Cost:** $10-15 for a budget-friendly meal.\n    *   **Drinks:** Stick to water or skip drinks to save money. If you absolutely want one drink, find a happy hour beer/well drink deal ($5-7).\n    *   **Estimated Cost (if buying one drink):** $5-7\n    *   **Running Total (dinner + optional drink):** $19-28 (assuming you packed lunch)\n\n---\n\n### **Day 2: Wednesday, April 22, 2026**\n\n**Morning (9:00 AM - 12:00 PM): US National Whitewater Center (Nature Focus)**\n\n*   **Activity: Hiking Trails at USNWC.** Enjoy the free access to extensive hiking trails. Park your car (if driving) and spend the morning walking along the river and through nature.\n    *   **Estimated Cost:** $8-10 for parking (if driving). If you can get dropped off or bike there, it's free.\n    *   **Running Total (assuming $10 parking + Day 1 high end):** $28 + $10 = $38. Still within budget.\n*   **Dining:** Pack a light breakfast/snack.\n    *   **Cost:** $0 (from home)\n\n**Afternoon (12:00 PM - 5:00 PM): NoDa Arts District & Murals**\n\n*   **Activity: Explore NoDa.** Wander through the arts district, admire the numerous murals, and browse the unique shops.\n    *   **Cost:** Free\n*   **Dining: Budget Lunch.** Pack a lunch, or if you want to spend, grab a very cheap single item from a food truck or a small, inexpensive bite.\n    *   **Estimated Cost (if buying one item):** $4-6\n    *   **Running Total:** $38 + $6 = $44\n\n**Evening (5:00 PM - 10:00 PM+): Evening Stroll & Socializing**\n\n*   **Activity: Evening walk in a vibrant neighborhood.** Consider a return to Plaza Midwood or exploring South End (many breweries, but window shopping/people watching is free).\n    *   **Cost:** Free\n*   **Dining: Final Budget Dinner.** Similar to Day 1, look for a happy hour food special or a very affordable casual meal.\n    *   **Estimated Cost:** $10-15 for a budget-friendly meal.\n    *   **Drinks:** Stick to water. If you have any budget left (unlikely at this point), perhaps one final happy hour beer.\n    *   **Total Estimated Trip Cost:** $44 + $15 = $59 (This is the absolute maximum, assuming you bought one item for lunch both days, one cheap dinner both days, one happy hour drink on Day 1, and paid for parking at USNWC).\n\n**To truly stay under $50:**\nYou would need to pack almost all your food (breakfasts and lunches for both days, and potentially one dinner), and limit your purchased items to one very cheap dinner each day and the USNWC parking fee.\n\n**Example Strict $50 Breakdown:**\n*   Day 1:\n    *   Packed Breakfast/Lunch: $0\n    *   One cheap dinner (pizza slice/taco): $10\n    *   No drinks.\n    *   **Day 1 Total: $10**\n*   Day 2:\n    *   Packed Breakfast/Lunch: $0\n    *   USNWC Parking: $10\n    *   One cheap dinner (another pizza slice/taco): $10\n    *   No drinks.\n    *   **Day 2 Total: $20**\n*   **Grand Total: $30** (This leaves $20 for a couple of coffees or an extra cheap snack/drink if you find good deals).\n\nThis itinerary provides a framework for experiencing Charlotte on a very tight budget, prioritizing free activities and minimal spending on food and drinks. Enjoy your visit to Charlotte!",
-      "sources": [],
-      "error": null,
-      "label": "Under $50",
-      "emoji": "🍸"
-    },
-    {
-      "id": "splurge",
-      "content": "Here is a highly detailed and comprehensive itinerary for a 27-year-old gay man seeking premium activities in Charlotte, NC, for Tuesday, April 21, 2026, and Wednesday, April 22, 2026, with no strict budget limit. This itinerary integrates specific events found for these dates with Charlotte's most exclusive and upscale offerings.\n\n***\n\n### **A Luxurious Charlotte Escape: Premium Itinerary for April 21-22, 2026**\n\nWelcome to Charlotte, the Queen City, where Southern charm meets modern luxury. This bespoke itinerary is crafted to offer an unforgettable premium experience, blending high-end dining, sophisticated nightlife, cultural highlights, and exclusive relaxation, with a focus on gay-friendly and upscale establishments.\n\n---\n\n### **Tuesday, April 21, 2026**\n\n**Morning (9:00 AM - 12:00 PM): Rejuvenation and Relaxation**\n\n*   **Luxury Spa Treatment at The Ritz-Carlton Spa, Charlotte:** Begin your day with unparalleled pampering at Charlotte's premier bi-level penthouse spa. Indulge in a signature \"Pink Himalayan Salt Treatment\" or a personalized organic facial, enjoying the serene escape and dramatic skyline views from the Aqua Lounge. The Ritz-Carlton Spa exclusively uses organic skincare products from premium brands and features a bromine-treated swimming pool for ultimate relaxation.\n    *   *Recommendation:* Book a 90-minute bespoke massage followed by time in the Himalayan salt room and Aqua Lounge.\n    *   *Booking:* Reservations are highly recommended well in advance.\n\n**Afternoon (12:30 PM - 5:00 PM): Upscale Shopping and Art Immersion**\n\n*   **Gourmet Lunch at The Palm (Phillips Place):** After your spa experience, head to Phillips Place, an elegant open-air shopping center designed to evoke a European village. Enjoy a classic American steakhouse lunch at The Palm, known for its prime cuts and traditional fare.\n    *   *Booking:* Make a reservation for 12:30 PM.\n*   **Luxury Retail Therapy at Phillips Place & SouthPark Mall:** Explore the high-end boutiques at Phillips Place, such as Taylor Richards & Conger for renowned men's clothing, or Coplon's for designer apparel. Afterward, arrange for private car service to SouthPark Mall, home to exclusive brands like Louis Vuitton, Burberry, Gucci, and Tiffany & Co., offering a truly luxurious shopping experience. Consider a visit to Capitol, a luxury clothing boutique featuring designs from Valentino, Celine, and Saint Laurent.\n*   **Private Art Tour at the Bechtler Museum of Modern Art:** Arrange a private guided tour of the Bechtler Museum of Modern Art, located in Uptown. This museum houses a collection of works by renowned artists such as Miró, Giacometti, Calder, and Warhol. A private tour allows for a more intimate and tailored exploration of the collection.\n    *   *Booking:* Inquire about private tour availability and pricing with the museum directly.\n\n**Evening (6:00 PM onwards): Fine Dining and Theatrical Splendor**\n\n*   **Pre-Theater Dinner at The Fig Tree Restaurant:** Experience Charlotte's premier fine dining establishment, The Fig Tree Restaurant, located in a charming historic home. Enjoy a seasonal French and Italian-inspired menu, complemented by an award-winning wine list and exceptional service.\n    *   *Booking:* Secure a reservation for 6:00 PM.\n*   **Major Theater Performance: \"Stereophonic\" at Knight Theatre:** Immerse yourself in a captivating theatrical experience with \"Stereophonic\" at the Knight Theatre at Levine Center for the Arts. This performance is scheduled for Tuesday, April 21, 2026, at 7:30 PM.\n    *   *Booking:* Purchase premium tickets (e.g., orchestra seats) well in advance.\n*   **Post-Show Cocktails at Sophia's Lounge:** After the theater, unwind at Sophia's Lounge, an upscale cocktail lounge in Uptown named after Queen Charlotte. Enjoy handcrafted cocktails in a sophisticated setting, perhaps trying their \"Your Highness\" cocktail.\n    *   *Booking:* Reservations are advisable, especially for prime seating.\n\n---\n\n### **Wednesday, April 22, 2026**\n\n**Morning (9:30 AM - 12:30 PM): Wellness and Exclusive Exploration**\n\n*   **Personalized Wellness Session at Spa by JW:** Indulge in another bespoke wellness experience at the Spa by JW, located on the second floor of the JW Marriott Charlotte. This luxury spa focuses on personalized care and results-driven treatments in a serene, intimate environment. Opt for a customized body scrub, a revitalizing facial, or a deep tissue massage.\n    *   *Recommendation:* Arrive 30 minutes prior to your reservation to enjoy their Zen Lounge.\n    *   *Booking:* Book your preferred treatment for 9:30 AM.\n*   **Private City & History Sightseeing Tour by E-Cart:** Discover Charlotte's rich history and vibrant culture with a personalized tour. Book a private \"Guided City & History Sightseeing Tour by E-Cart\" for a comfortable and eco-friendly way to see iconic landmarks like the NASCAR Hall of Fame, Discovery Place, Mint Museum, and Levine Museum of the New South, exploring both historic and modern areas.\n    *   *Booking:* Arrange a private tour for 11:00 AM.\n\n**Afternoon (1:00 PM - 5:00 PM): Culinary Delights and Unique Entertainment**\n\n*   **Exclusive Lunch at Sea Grill:** Experience one of Charlotte's most sought-after fine dining restaurants, Sea Grill, for an exquisite lunch. Known for its elevated cuisine, white-glove service, and memorable presentations, you can indulge in dishes like the Salt-Baked Branzino or Pasta alla Ruota prepared tableside. Consider requesting their second-floor dining space for a VIP-level experience.\n    *   *Booking:* Make a reservation for 1:00 PM, requesting a prime table or the VIP area if available.\n*   **Luxury Cinema Experience with \"Fight Club (4K Remaster)\" at Cinergy Entertainment:** For a unique afternoon activity, enjoy a luxury dine-in cinema experience. Cinergy Entertainment is showing \"Fight Club (4K Remaster)\" as a one-day-only event on April 22. Relax in reclining seats and order gourmet food and drinks from a full-service bar directly to your seat.\n    *   *Booking:* Purchase VIP tickets for an afternoon showing and explore their dining menu.\n\n**Evening (6:30 PM onwards): Vibe Dining, Upscale Cocktails, and Live Music**\n\n*   **\"Vibe Dining\" at STK Charlotte:** For dinner, immerse yourself in the \"VIBE dining experience\" at STK Charlotte. This modern steakhouse blends a chic lounge atmosphere with superior quality steaks and seafood. Enjoy the high-energy dining room, signature STK steaks, seafood towers, and craft cocktails.\n    *   *Booking:* Secure a reservation for 6:30 PM, requesting a vibrant table.\n*   **Upscale Live Jazz at Middle C Jazz (House of Funk):** For an evening of premium live music, head to Middle C Jazz to see \"House of Funk\" perform. This concert is scheduled for Wednesday, April 22, 2026, at 7:00 PM. Enjoy cocktails and a sophisticated atmosphere in this intimate jazz club.\n    *   *Booking:* Purchase VIP or front-row tickets for the 7:00 PM show.\n*   **Late-Night Cocktails with City Views at Nuvole Rooftop TwentyTwo:** Conclude your Charlotte luxury experience at Nuvole Rooftop TwentyTwo, the highest rooftop bar in the city, situated 22 stories up. Enjoy panoramic city views, inventive New American cuisine, and a curated selection of cocktails in a chic, sleek interior. Alternatively, consider Búho Bar at the Grand Bohemian Hotel for handcrafted cocktails, South American-inspired tapas, and live DJ sets in a sophisticated rooftop setting.\n    *   *Booking:* No specific reservations are usually required for lounge access, but arriving earlier can secure a better spot.\n\n---\n\n**Important Notes:**\n\n*   **Reservations are Crucial:** For all high-end dining, spa treatments, and specific events, making reservations as far in advance as possible is strongly recommended, especially given the premium nature and specific dates.\n*   **Transportation:** Consider utilizing luxury ride-sharing services, private car services, or taxis for seamless transitions between venues, particularly for evening activities.\n*   **Dress Code:** Most premium establishments in Charlotte (fine dining, upscale lounges, theater) will have a smart casual to cocktail attire dress code.\n*   **Flexibility:** While this itinerary is comprehensive, feel free to adjust based on personal preferences. Charlotte offers a wealth of luxury experiences, and this is just a curated selection.\n*   **Gay-Friendly Environment:** Charlotte is generally a welcoming city. Establishments in areas like NoDa and Uptown are typically inclusive. The recommended upscale lounges are known for their sophisticated clientele and welcoming ambiance.",
-      "sources": [
-        {
-          "title": "ritzcarlton.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWPUnemhn7Nwl3S653SlzMy9CqOTtyVq_uEYqezYIRK1dApqrqGuEkkrSTSpEjVsmvGsZcRcyGxVlD_q90fkZEFlblZY2MIErPRuwKU932os7ohgd4-hQQZlKWNmlYpfR8sF6ga0on4sZDrYRSHtpVeM8P6mYSxALIgH2Q1_pxHscMXqINnvnkI8Cx"
+          "title": "qnotescarolinas.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHfTFr7wrPhTrRSgLAckHL9C7oMMOwcNlGnbRCcTkENJy5P8nheIKXjIqO0iXtCicTcEqYb7fmkJqdZRtGe7kfDXhIOqX_cyvYUm0-ILj0E5620YPCfB0j5xH7CAobIvaDo14PdyZET0xQDTC8VDKTZkA_mKk7BOPuisUlb7Sj5hGcU6GV5oOu88nGT5kNM7sOTzAiUHxrDM4WeDhEDtQk8"
         },
         {
-          "title": "forbestravelguide.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFkJ_Kc1nyUZfoyw3nCenHsbtTk9zzD6Nev4c8kmuctUvgOBpeCxhKfMgDnOUpckJUQ2l5EH5E09Ul2vRwG9SXhUX7hD4sLxtnZFfVUTNuesdcpavWM4Ae__RON_nQlyiftXiAT80QiXSCeHl6acgIP5dA0cWtYB0ChyDffmbyUTFJt4tERdcbwK_t0BbOGNQuHfazXiHvVz4k="
-        },
-        {
-          "title": "bovenderteam.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHu9Q-x0ky-u0HYbwTSHR366aqAOOAy8PlV__ntiXIo09xb_l2QYv_Z_iUh7gKEmoHQrGxFWQmB1Z7FVOunPd1VxoWbFBq53EubPEf3iyIqHIABDpER0_fBDKI1pRHRw8035GLiSnt57UxGkt5xHTjxcbhfk1J5RidS9sAozrw="
-        },
-        {
-          "title": "charlottemeetings.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGAOaaZM0jzpwIPxTFPadpLnobHSZXDV_QIi7RsMnMYMlN7zQaP5qmjhDYzUvVq3v0g824w1U9MzvI2NhR8zJitzwpBYqlfdCHiGK97U5olT1ytypk091AwbP28QBAoS8qQoAEFuQNqIRpuEooFl1csYQQmrGF8WNig4m8="
-        },
-        {
-          "title": "shop-capitol.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF1t_V6yDRMqAdDrpaig75i8eyGyGf2d0POhGr_Oa0IA-qk-2NxOwG-L_i7I0XkPdgYrB2ERfX4IJ1G8WqUaHAOwZGbDE0_9u7F-sJA0Xhdbu_nMrA="
-        },
-        {
-          "title": "charlottespecialevents.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFCVsAUQf14ePVZ-inIAx1uEQMI92B2piNMxZSbWUrHBhV3puFEdUlNy-fAHkZ3x44Xjju1OFyglb_frjsc6QTs_0iCnGcue39XXIAb3Oj0WJ04VCVKEmljjP_OJ2PWL4G9E7ovSTSXp_9fskB7lxeTR2p4kDsfmw=="
-        },
-        {
-          "title": "charlottefigtree.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBJg7lH9KqeJS65srAdooALP-hJgA414Wpvbhx-XH5r089lPTM3VjtQgaOaa8wQ5JWxSfiuWEQ33WyTjAZoy8aOlp9Xd1ODo16icV9koAKukqjWmmPH-5S"
-        },
-        {
-          "title": "entertainment.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG58AkqsZvtVzEmTaPqzHOt65TCwXTYFxNAe50ONAtQYkU7IjKC36RD795zCb_R8WSf-KzblN9VZLKCNlRQmTsLCFIWk-3831M6_4qEQfq42jABuQGbdpRfYIn51Q87kW2kq5OMW9NX5lcWBX8kImH6zYYGnidMTe3E12Aj-b42l3MvM-2qu-mjIHZqueWAJtL9xOJ2ZyF0J3JOpLScfl3aLc3v9rYlOftFZ7pVCsKQ5Yh42w3qm4x3OuBI-KNyzk4JiA=="
-        },
-        {
-          "title": "seatgeek.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH3pCDZew5VsobqRFfh1KEGCoSKLddsYQqUFAH3eUDBd6-5c2kqumKtXQ39HB14L_9dlT-wBBP-wwpfdMCL-Dcx7zOOWspPTUIPvWtpaU2ZdRJqZvJRC5DMRbxc3Y8ReSgjbG_0BudMjXFLz7lxVVmiZn3Vv-zlqs53kkmEGekaWj6tThzVPdT9vsxp"
-        },
-        {
-          "title": "charlottesgotalot.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTzag3FAZtp3jHoAjj13Ufetalwx7r7aDt0xOFJQJKFYss4tbbp3BQyplu8ODc3DqOcvWeHK-uxeRbNwhuZkEQNvtLdU6iipn74lWZX7HxBDvXsufZxNKPbQkpCIA_SZo4t-m5YnfG7yNIe9VFExe5xhb8B67UN35E32_wsWsM1jez84oFld1Ro4L-FZBbsXS46f39lw=="
-        },
-        {
-          "title": "marriott.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8ybuJteasN2aO0B3189tfDtAW9Z15ln6REXTV3cqLUjhcCpAWou0pVn7QuwSoLs_iUtXppg3TXPASRM5UJ8VbxqttfNMth5Bfv_h2J3WnYhXPFN--ZB_0jEGnYNdzDaUzVh5F368haLpPOgqlTc2-bgTxhkaRXajXmhCVvt7J9w11wNf_rn0UKMJkbr12k7uz8D8="
-        },
-        {
-          "title": "getyourguide.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGWgHbXV6jmThVRtbTFA717ub2S_LtN-IhA9tqtDOcsfPD6DlkuNfC1iv8ySXI2afgFMVf0DkcjHJuq1nDLlTu36n8kBTQivwBiBzadoi1PzWpJN3DsIgLoeioVTomCcohDhXiuaVVnwffTdUusG-lfX-DhKBsN7pKAPPU="
-        },
-        {
-          "title": "viator.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEFNk5KTQ4Azzr4teJEYHn6UsXzY_sEp4ASzZkHRyxOIZQ9HS2yxXJg5nkcXEIg60cwCqHubmrdDM8aVbpFrj1-US1IHejh2-6KCU2-3dspQtjrPn1AhyfyKe0Tvau6UVpwnm-CtXlRYOyh_jDk-QZlsKS0gfPRn9y6skeZbqtzlB4RpTTb-beM"
-        },
-        {
-          "title": "seagrillnc.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEEo7knC6BJyOlziY3F2cgsg6R3BrnrxGlnT7q225jlmXi2a5yRaNk3Y7Rpopbt1ET8pj6ZfWRoGpWb8f1M0DS1kOnk_G7bXfUKsaf0tZirQYhCyToqCQ3D34u9DFFNdTKS-c1OrOMRNIvwMw=="
-        },
-        {
-          "title": "cinergy.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE30Vre_V5lyVYvRyej_w2j5P0Jpzu4vyieCDaIs-1KkSsWwgsvMK9F13kFbRW6D7B9ufMhj5XLhL3QEbx__0Rqnv81ECf0UUE-ys-E7cozyZbbo44o-ZoxQt68kw=="
-        },
-        {
-          "title": "stksteakhouse.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFpEAsBL-mz3je5_M8RFWUxFLOmWkX3416vd_0k_b365bPLVBlAWcuVVWsQo-TL6kvo2qKfTrjQdEQ8SMMb0okvtmG1Zg15Lr4QrHPfgIJrV5t_RClZHN6v35UZ4kh5HfrjU3Lc-HewaUeK80NlkQ=="
-        },
-        {
-          "title": "shazam.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFOoxWc02ys4TdHLVOZjSZXGT5e9pObyXKg0iNtvHlJ4atZIwm4q_NEM53X4HGn-sBa6-8gp8ap7ms9VPy7XSDNdVDwImS_TUFkJUVIF2Gh3lvL3hvDC5hPSGu6eC2KqS3SVYtWQIzaQ5idm77Tb0mh4fBgrjE_QNvp7PAk"
-        },
-        {
-          "title": "wanderlog.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUlHG6ILrAyOnbpb1n00maixPUHJt0N_VHgI58Ik7pfKIWOSzIOTe5eAbDqtOD6fP__cSzl9mqnDsgwTR0-NcLKiET_HW8CSFUUtkTG2UHYivrOVYpSHi12K1mOzJKqH-zjxC-cnidb259OvXSpf03mEZ_riDHPvixwIhkhVt5dhV58ecZp1F7"
+          "title": "reddit.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHc-Ai3AyMZg2_t3bYdcjt1MRw-Qdml01nTBZY1C7YuzuwcXJiATexIz-iBikLAx8knUjnRwSTzKnkuw5Ri0UEM3rji2_6AVuT2slcaYma6hQYqiC8JaUZ6fX4Ugar00FmOcns-pz29IORb_P_NOWcMACoffHh3qmvjjMcbJ0_lwi1NDIimoSkg4lc_xlTVm58c"
         },
         {
           "title": "charlotteobserver.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEFxPFAOGHt-WCc844wADyGOqHgESwKvD4hpicsy4MokzeV1Z_bDUgDxOFzL95QP5djHB8SlQRnozwEJi-7Z4Bm7KX5lgRLvqVUbZrjow8jQCW4Jo6TA9aqdOUIlwv62VRtrfH3qFYE4VGXPBWHC0Z--rY4Ro8sfOw19s-zeksfg1LGbkZS5dPJEjeeft65"
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG_A_za4nt7UVMR9NGUaEwBvgBuoI5GMIoTZyZgY558LZDVGggayrILSLH8pKlq9kLYhsYOgrq6z7Gf-FYN7Tgvki2xsK-pTwlvZ3CfmFeJDTipHrwxPOYEnXBaXsKiX3P26ItYf6CrcHHRk-4K-L6gS_ritF_Nx8QFe4QEEfqnCBuZvU8xc2mWHsdI1kvAnw=="
+        },
+        {
+          "title": "charlottesgotalot.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG2ILX8ElR7E--gdmE3OXbPKBKDoq8CScCXPcNq8SiQDnhQBrS7GBUtoYkdJweqL6_KdA5koOrITbZzvBCbISWxFjY7z8Aah6Os5rkvruf7k9EfHj6_9bNhQjkOznc6pBT8j30zSh--VDRYJHRraT6qIm26X4A1bLuoEE6osIOLrVQ3Ce2cHIVqQw=="
+        },
+        {
+          "title": "reddit.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6uitQOvm7kSczMhL8L3TLHcfinemCnJ2SZ6zixOGkC58Wza_WvzBbD61Nshth_zUG3VeVR5gK5dYN3SC8rKCY9B_GAfNc7APYkqkP5jZfr4QvzhK9fdAFaglANao3Jymv2r_aKvJXbkLLbwfWiiuNRfMLCNjOwCDmWLa-V_QhJDtbc-tsHwoLezAq9YxD4A=="
+        },
+        {
+          "title": "uptownsuites.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGCU7lFIDRnWPhfO9o2NftKgUWUcMfUAZXufkr7IxYqwoUj8-mgBuJmLCq0K0plrA78PHJyy31E_QABlDEq3LmfyO--n9hwU5VgIGQhCk0MNoDKkjXyWH2jeYEQky3ma1Uzv_L0yyWk2uSjqClLBAmS6aw="
+        },
+        {
+          "title": "charlotte.edu",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGeyAOEDfGuDHh7dDC03Pj5SWyIpOcy9RSKplS0COeWSaB-QlQj41aAkJ6zCYOw9m9DLcvgGp2NelMTygZLtOpxziP4mrbORqT8UeIwdtuimiyCzfRrwm7ug291L8cJCONs5kCkOFN_FodVcGFAaSg="
+        },
+        {
+          "title": "charlottenc.gov",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGNykwU4WUAwSlvOxYoHN44CR5sDPGWRoCsmB25zAyZGNL0NQPws-nftruNasV-WSy4C7903HilmyIEdEq5Nac5h89oVsjmFFqKtZWys2R2LgNikcsPdbfxhaKgMrKjgP9glrLgC9g="
+        },
+        {
+          "title": "studenttravel.pro",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_mIrTOHxC8tL85prpTCUTzR10OBV3hsbxINZUOjrVMNCcxopJ3Mmkyipr97dJJ6tCRRLm9zix_QftEN3rxHbFNsHYpIVStDQfBk4uIBmTUD_kJqOxBkCYEF3bqFD6z-4cx22Q1rjVr-uXWoWJCvQAcRDEBcjdTn6_EvUiN1o4EoC9-MIRTNXoDedHI5PeckkDb_2n"
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHIZe1VWJr80VYtor5KHCh0RE5EQ5T-SMdmOvpBLyMo08RPTPoTD5MohF7VNhmXV8hkxXiZ3xS7EY3lWxPRK5zPS5cwnh6eUQqKQ4-chzfccTuXwLhu7eqxtxDnb0PpMvX_X_8-WmvOaEz28CiCTALMKMr74Zp1Z_YGNdepzQ=="
+        },
+        {
+          "title": "cltbucketlist.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF3oXdrzIGOeCZYaqdxbfbl8YZatGBQNX_4z1hWsoej4dgPXccWoZL0mGMWZxMDh7OqhC2zfUi3slpwZcmhIcqk925oNBcHBD_lZT3CcQ0gC-QbVJrIifKDFKBwaycR5bFhax3axp4HgXoJ0tBtDmEq8wWQnZEvYUdR7dKWhL7ZHJkPEb9XWaTcIfcNVp4zpQICwKaIQ34iRCXY4462K_ZqIleLg_1KM7FkD7o9lmOX0D8="
+        },
+        {
+          "title": "lex.lgbt",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGCIvs-SczDkFhIqVttdgV-LNvci2A478J_uOUnqEfwOgok4gitRfOWUn_yBu5oDxrqa1aXhMfh0NktBITitLHagz8rjChH3p_XkPLOU9vhH-rV8or1nGrAR5pzS0ZKTmYsxfKHD-dcVKdPYRwaDxfXNqVtQGv1O4eQJOxFu4UPsho7Tit9KOPv84u9IZDvC1ZvayxAGXY="
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "under20",
+      "label": "Under $20",
+      "emoji": "💵",
+      "activities": [
+        {
+          "title": "Morning Coffee at Central Coffee Co.",
+          "description": "Start your day with a delicious brew at Central Coffee Co., a beloved, queer-friendly spot known for its handcrafted coffee creations. It's a cozy place to relax and people-watch near Plaza Midwood and Elizabeth.",
+          "day": "today",
+          "period": "morning",
+          "location": "Central Coffee Co., Plaza Midwood/Elizabeth",
+          "cost": "$3–$6",
+          "tags": [
+            "food",
+            "drinks",
+            "queer-friendly"
+          ],
+          "tier": "under20"
+        },
+        {
+          "title": "Explore McColl Center for Art + Innovation",
+          "description": "Immerse yourself in contemporary art at the McColl Center, which offers free admission to its galleries and artist studios. This dynamic space in a repurposed historic church building is a hub for creativity in Uptown.",
+          "day": "today",
+          "period": "afternoon",
+          "location": "McColl Center for Art + Innovation, Uptown",
+          "cost": "Free",
+          "tags": [
+            "art",
+            "culture",
+            "queer-friendly"
+          ],
+          "tier": "under20"
+        },
+        {
+          "title": "Happy Hour at QC Pourhouse",
+          "description": "Enjoy affordable drinks during happy hour at QC Pourhouse, known for its $5 local drafts on Tuesdays. It's a great spot to unwind and socialize in a casual setting.",
+          "day": "today",
+          "period": "evening",
+          "location": "QC Pourhouse, South End",
+          "cost": "$5–$15",
+          "tags": [
+            "drinks",
+            "social"
+          ],
+          "tier": "under20"
+        },
+        {
+          "title": "Dinner at Pinky's Westside Grill",
+          "description": "Grab a fun and funky meal at Pinky's Westside Grill, a major step up from your run-of-the-mill diner. You can enjoy delicious burgers and other Southern diner fare for less than $10.",
+          "day": "today",
+          "period": "evening",
+          "location": "Pinky's Westside Grill, West End",
+          "cost": "$10–$15",
+          "tags": [
+            "food",
+            "cheap eats"
+          ],
+          "tier": "under20"
+        },
+        {
+          "title": "Trivia Night at Wooden Robot Brewery",
+          "description": "Test your knowledge at Tuesday night trivia at Wooden Robot Brewery. Gather your friends for a competitive yet fun evening with prizes for winning teams.",
+          "day": "today",
+          "period": "night",
+          "location": "Wooden Robot Brewery, South End",
+          "cost": "Free (for trivia, dr",
+          "tags": [
+            "drinks",
+            "social",
+            "games"
+          ],
+          "tier": "under20"
+        },
+        {
+          "title": "Late Night Drinks at Hattie's Tap & Tavern",
+          "description": "Head to Hattie's Tap & Tavern, a dog-friendly dive sports bar known for its welcoming atmosphere and massive craft beer selection. It's a great low-key spot to hang out and enjoy themed nights.",
+          "day": "today",
+          "period": "night",
+          "location": "Hattie's Tap & Tavern, Plaza Midwood",
+          "cost": "$5–$15",
+          "tags": [
+            "drinks",
+            "nightlife",
+            "queer-friendly",
+            "social"
+          ],
+          "tier": "under20"
+        },
+        {
+          "title": "Morning Run at Freedom Park",
+          "description": "Enjoy an invigorating morning run or walk through Freedom Park, a scenic and expansive green space. It's a perfect way to start your day outdoors and connect with nature.",
+          "day": "tomorrow",
+          "period": "morning",
+          "location": "Freedom Park, Dilworth",
+          "cost": "Free",
+          "tags": [
+            "outdoor",
+            "fitness",
+            "nature"
+          ],
+          "tier": "under20"
+        },
+        {
+          "title": "Coffee & Pastries at Detour Coffeebar",
+          "description": "Grab an artisanal coffee and delectable pastry at Detour Coffeebar, a queer-friendly spot known for its quality brews. It's an excellent place to refuel after your morning activity.",
+          "day": "tomorrow",
+          "period": "morning",
+          "location": "Detour Coffeebar, South End",
+          "cost": "$4–$8",
+          "tags": [
+            "food",
+            "drinks",
+            "queer-friendly"
+          ],
+          "tier": "under20"
+        },
+        {
+          "title": "Free Museum Evening in Uptown",
+          "description": "Take advantage of free admission to the Mint Museum Uptown, Bechtler Museum of Modern Art, and Harvey B. Gantt Center for African-American Arts + Culture every Wednesday evening from 5-9 PM. Explore diverse collections and rotating exhibitions.",
+          "day": "tomorrow",
+          "period": "afternoon",
+          "location": "Levine Center for the Arts (Mint Museum, Bechtler, Gantt Center), Uptown",
+          "cost": "Free",
+          "tags": [
+            "art",
+            "culture",
+            "queer-friendly"
+          ],
+          "tier": "under20"
+        },
+        {
+          "title": "Trivia Night at Lenny Boy Brewing Co.",
+          "description": "Join Mindless Minutia Trivia for three rounds of general knowledge trivia at Lenny Boy Brewing Co., starting at 7 PM. There are prizes for the top three teams, and plenty of food options from their taproom kitchen.",
+          "day": "tomorrow",
+          "period": "evening",
+          "location": "Lenny Boy Brewing Co., South End",
+          "cost": "Free (for trivia, fo",
+          "tags": [
+            "drinks",
+            "food",
+            "games",
+            "social"
+          ],
+          "tier": "under20"
+        },
+        {
+          "title": "Dinner & Drinks at Sabor Latin Street Grill",
+          "description": "Enjoy delicious and affordable Latin street food at Sabor Latin Street Grill. They often have happy hour deals, including $3 Mexican beers on Wednesdays, making it a great budget-friendly dinner option.",
+          "day": "tomorrow",
+          "period": "evening",
+          "location": "Sabor Latin Street Grill (Multiple Locations)",
+          "cost": "$10–$20",
+          "tags": [
+            "food",
+            "drinks",
+            "cheap eats"
+          ],
+          "tier": "under20"
+        },
+        {
+          "title": "Karaoke Night at Petra's",
+          "description": "Unleash your inner rockstar at Petra's, a funky Plaza Midwood bar known for its live music, rotating art exhibits, and Wednesday night karaoke starting at 10 PM. It's a creative and low-key atmosphere.",
+          "day": "tomorrow",
+          "period": "night",
+          "location": "Petra's, Plaza Midwood",
+          "cost": "Low/No Cover (drinks",
+          "tags": [
+            "music",
+            "nightlife",
+            "queer-friendly",
+            "social"
+          ],
+          "tier": "under20"
+        },
+        {
+          "title": "Dance the Night Away at Chasers",
+          "description": "Experience a high-energy night of dancing and daily drink specials at Chasers, one of Charlotte's longest-running gay bars. With a refreshed look and go-go dancers, it's a vibrant spot that opens Wednesday through Sunday.",
+          "day": "tomorrow",
+          "period": "night",
+          "location": "Chasers, NoDa",
+          "cost": "Low Cover (drinks ex",
+          "tags": [
+            "nightlife",
+            "music",
+            "queer-friendly",
+            "social"
+          ],
+          "tier": "under20"
+        }
+      ],
+      "sources": [
+        {
+          "title": "qnotescarolinas.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGk993hiK4v2EJ1k-7fzWSbIDYgbvXIus_ZUVjmKoY-p_AuZVoGTonMQaigwgaLlYzt_sOdbQR0C9RKvt8hyU1AUTM8yJBctbwn0UtYJfRgQEbD84rJ148jAdBzmsrb0T4WMV3O5sShkrK4qf5ZBmiDh8uPJf4Kt_hnnf8LbkT2Mw=="
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHFduoeG5zAYV9ncmvgebsMWdNRNX0doV4137tJgyUSPIZNrOXsVT7oJSfucOTevGEFewHPQBoje6gFHiQPumw1714D98HzOXaYZEypR0Wa0vErPwj15oalufzzt_DyNOAHxc1Mx85SRmctQKDKSnEAo8ziBb_NRgYgUFf3yxk="
+        },
+        {
+          "title": "wonderfulmuseums.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG6zs_E6vF-l2Zf2CRf_bqP2tTWWYLYtU7SqKcYyEiJhWpvnjHanKSOLDxpNDAmO0b0F9C6w5QHpwJkDcR-3rG2FgfmhmWtQWAE4gmy_RlP6-lndNzQ04ZTxV_nrQcK5l_OBG-LGdtmGd2WcH7GLOHGIBJw80c33uXTW80c"
+        },
+        {
+          "title": "cltguide.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUc1IKdlSSLZWWYKJeD1AVnKBuNnhCjILIfd_7BVWRAie0CocPT0DDv83-wMqqdXAHCCOGv3HuyiG_o9IPLNerioBU3yOvdKZduopJshetP4oF-7pvVFSrVZcwW_RO6T5bNQebjmEYOnHRLw=="
+        },
+        {
+          "title": "charlottesgotalot.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFc6U5lOPMnlhCAeGUvIYUhvE4J7iZ2U4R6MjasArP4KBnegg45YQZHfafynKFLALsU2ZA1DtDTnL40lbrZwzCsQ5CU-3Nf1S_qbDvjU7GvGwA7YRFweol_860DpwQEEbKS2sDyfUySK0iqNBq3eH7FqzuJy5ciUoga1kyEW67XpXslnvM9SnEf8Nf1"
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEodGH2WGFDIFpim5Sm--wTZPL5Cy28PIPzdX7qI-99UeUpmhCl-WtN8ZjYuQi_NyZGrEi2AXr3OaTve-F962FaHTg4JDLOEPPf1khVU_OnK5saVy98FcHMd13CzbFrefnkdRhzRcXDI214TeWRzAJN1JSIGz48wuEHcN-3deVxdxBa2FVMAIKq2DFfC39NTx0osjNbyCl0PA=="
+        },
+        {
+          "title": "southendclt.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhjB6dKLoIGTZZdnYhQ_T1g_Eo3sV0lcGPX7GIdjchGlAltsFnx-pbwoV_OzRnlXhH2vFTbSONpPRhrnlvwTBrwbwq03TMSmc1HQDA8ZTDFzY42p7bpaTFD5Bg7dToDob9Igzu8ZPGpzQ="
+        },
+        {
+          "title": "scoopcharlotte.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQElvBe3Nbpyd1Cr2-gWsGOiHc8UV3jQMZUOIvRiS2ri3spTW7uh5AeS-EKrGNvPyHFpuVBZIxhKu8RsZeVKVilfUNrP6SemlAMDVXrxTB2mzf945c7vDNCcszksR1BQGtLO5Vd3jD5WgR5dW5aewpg8Laogv6yrL0rtthS3-XNi5xctXvE3m_TM22wkouhMhuM0mgkt5Q8Y"
+        },
+        {
+          "title": "eventbrite.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFn8a9FR3DEwuzl9TtP9dtnTYvuW16A_SUQwTUGog2nJHiFsLqgRhOzYa6wuePGSD4Ldnh5L_FgXQLOghKBNmMPrrdLsPKpzUF1_K9htm-W2jGLyjlHMd-ylek3hrmkbcSY33IhLMhDc8ppz6XrnJI1xiu4dQ3Um8Udk8mFmXFl84pSS-9Se0rZpprTRSaB3i16_v3OcmMbvmG_LQ=="
+        },
+        {
+          "title": "reddit.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG0Wo_jyFZ8INrAjiaMK6Cg_U30ofmWA41ZCsainQGYMTpCcze4ORamTFi8L8rEn4r7Lt24d33qNUH9pceA5AgTJLUk4PDhAqOCxKlVFklDnhr-I84d9aiNFL4dBWD9AaWDKPYcAYylF2w6w4c2abEEVWhAu4r1gmHP-k6CflIDKDVK85rAzk6azGSAtn2Ias4="
+        },
+        {
+          "title": "charlotteobserver.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHOacuibKqoZvkyaHGVdXsXg-orfKtAfdxlze119nm10DyjVv07LZVTExcnF6fc50f_Y0zDfk39rWSakz98Nusl5e1AUxjPp34GTwGOU8WiBlQ5Juta_M0fjemIjCHqbV5KZZ1cD6upPFyjubkvIqzP6pZCH4BtLXQbOPYVmQwLhEgxigWY8IBymllnPB8rUL8="
+        },
+        {
+          "title": "charlottesgotalot.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFAjoGczzWsoUUB-Na_e-JZn3Sz6-xb6iGtxS4iyOuZg7KkpWP7t1ZmsWXPGcqfscSFs0tCgfX3vPztgfjb6cdvUF_KyHpvOXXK9ZWg7RH9hbnjsz5o27J3e4qwuRg_63xwgLkJbOqmSq5jlS_TxllogpBjCeK5IXAtiP2tecz0ezDsEdQ5Ve2goYs="
+        },
+        {
+          "title": "outtraveler.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE1f1g5pZvTYJ_uw62NgQMqIy6OtQd-jUqaXj-_NfciDkvfaI6LeUPzxjoFRF1iHNo57Wy0DEIYC17idw4u4bmcdzHZXdBkFAnX0MRY1aIFjEB4PwtpF245HYMCMsDMOqbPNDOlDUFB3V3_gMJyBnYbzTInM3CQ5RGYBqcZtSc9EZ0YL1HXqZVrzGuP"
+        },
+        {
+          "title": "livability.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhUH3YdxScipwo70UsakN96ukDv_eg4abifXNO_NrS0FkHJ2GusPcenpCCrpXwt1vyBOjpX_5NfnKbge1yAVzSPpMwzkr1JuK_meW3uEC4gW5qTgZF-IfH8rSXj3wz_sO701Mg_LW7eNOrx0_oWC2waGYncvnK8L7Pq89dT2ehbsIqYtG3teNCqZDyy_UhcQMiJbH0Ilf4Y3OstbECNuBBgF6yMPzhN5JlxKWvB7haNtw2hA=="
+        },
+        {
+          "title": "wanderlog.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGMZvqkZTj1-_UG3lEGGEbGWlRRfYCTGyGOdm_EAyIp-qFdBivlCvH76vCo3kDLqIOrh23xOqg0bm51BCZ3_Zl8Ha4uhpxSSVjCfufjqRfWJUt01ak-bBY8L0WVnITOUPCSRofwl4m1eDAiT9x4Su7ECWuJMibFNZcskt0PPTyHUmn4stqCVf4="
+        },
+        {
+          "title": "uptownsuites.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHQajgkzkaFdzg9MWkzyH2bXT2gFNyYTaHCR7AsFyncFQIWIMPhdN19Pzwqt5849f4m1CJZJ-DS-gqaEFhbjer4pu84-vxtVBDfsjgWLjiWiA77yDWGtWcvzgKglZHyt9MN_lFTAtDJujNFs67N87W-PQSP"
+        },
+        {
+          "title": "cltbucketlist.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEPfAnUnQa0vuRTV0n1KaWjavkPxBCFrSRwJ-nJjMcqJp4bRSsvY_U3pEJA-Wsb5DhnkYokWlLONH_J0RqmOpY_VlvlqXHhykjBIzSW050tRosFkH3Bjjv-o3DcB_yfpp8QiERoUvtkgjKZ97R51T1gx_HDc-BXPMzdk-ohEj4-jbDTJPu_WJytv4OhbFwRJE7w2qciLTixH0j_OSvbxapuVXLRbBFdzsZEbfWEjkDbyQVj"
+        },
+        {
+          "title": "discoverlennyboy.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE6M_hA8hzQ27fdmKkENb6Rhv4_TfqLB_PznDBOkRf_PLPzPgF-eb6jpdzNR3UN_Rt9ZxDCfQyJWj7kLYqBd7TdXH37wKdQ4XS5qD_BLvKHdP2K6CtV5shhAHrKj01RECpw3lLD-mI="
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFg38P0vCfcWfnm7Tc_CMA3RwwzeuT9g-G9l1nLX2YWZRAkCpINuJeJGjYxt1OY8OHszB6g7ocZDGkQMvderNJmbBny75jlZFdLYxcI3pjy65XWkEeUhOsiR-dW2z9H_T0tFbC0njuiLKCLjmmw5aX9"
+        },
+        {
+          "title": "lex.lgbt",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGX9CptVb21pABTWlEMnIQ55ChUC38O1bHqSKJlbsCJXa9Su621z-X6Rjrc7whi_YrcWRNzZ1qxJIU6uMFdNsat602ohEjf_WBLgNuNU2_0y6l5oBWkHZm5o9GC5uRv_bOSnHFG-8Z6ENdA_vM_B_t9VVD9TopEaGgN4LNMTCDG_JEdGShjSEEf3B-stZS0bYLezOSzE6vv"
+        },
+        {
+          "title": "getbellhops.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE4kAJPn2qQwkWPXtszmC4Y6eHuZI3RSu0F5pimYU7DsfH0fCZOblFhFCMbJyqVcLwMDb_R7eLnpW8wvvnCQnQR6b7y1LpNbdRtoeTwVzalsJHM5TZINLICRGRcGap3P5_Gw3fRz_ZFpN1zqfY_myhDcC7QYTl3MrE="
+        },
+        {
+          "title": "charlottesgotalot.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFu8NS8qj_TuYl_op2GgvrAKUNlQ00sts5l6CklqVOmKadZ9YzAeJ9xAhtwxWT606hNoNSRj3bJt86lBInL0gC-9KSScJ5DVrPw7Ph5X6NEZ7R6PI5VZlxmF5tqV88VeWITCsR9gxcvOaygbMIZe_VjFJtIk5QCasLu0pNYfD8MQA=="
+        },
+        {
+          "title": "chaserscharlotte.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGICWEhXjoPeBNpcmA_sTOHG0jbYNyOUDaFEStLWhoiNI5Rq7H7g-OORqmJEmCEHRXb3kzaoMHDLLpC4DIBWzWaQW-zvmYu3gjR6-xlBz7Y9wcuN37E7bMl1DafAQ=="
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "under50",
+      "label": "Under $50",
+      "emoji": "🍸",
+      "activities": [
+        {
+          "title": "Morning Adventure at USNWC",
+          "description": "Start your day with an outdoor adventure at the US National Whitewater Center. Grab a Wildwoods Pass for access to treehouse villages, challenge courses, and boulder gardens, offering a fun way to get active in nature. Don't forget the daily parking fee.",
+          "day": "today",
+          "period": "morning",
+          "location": "US National Whitewater Center, West Charlotte",
+          "cost": "$31 ($18 pass + $13 ",
+          "tags": [
+            "outdoor",
+            "fitness",
+            "nature",
+            "adventure"
+          ],
+          "tier": "under50"
+        },
+        {
+          "title": "Lunch & Explore at Camp North End",
+          "description": "Head to Camp North End for a vibrant afternoon. Grab a casual lunch from one of the diverse food stalls at Optimist Hall, adjacent to Camp North End, then wander through the art studios and unique shops. It's a great spot to soak in Charlotte's creative energy.",
+          "day": "today",
+          "period": "afternoon",
+          "location": "Camp North End & Optimist Hall, North Charlotte",
+          "cost": "$15–$25",
+          "tags": [
+            "food",
+            "art",
+            "culture",
+            "shopping"
+          ],
+          "tier": "under50"
+        },
+        {
+          "title": "Taco Tuesday at Brewers at 4001 Yancey",
+          "description": "Enjoy a delicious and budget-friendly dinner with Taco Tuesday specials at Brewers at 4001 Yancey. They offer $4 tacos and $7 margaritas, alongside a wide selection of craft beers. It's a lively spot in the Lower South End with a great atmosphere.",
+          "day": "today",
+          "period": "evening",
+          "location": "Brewers at 4001 Yancey, Lower South End",
+          "cost": "$20–$40",
+          "tags": [
+            "food",
+            "drinks",
+            "queer-friendly"
+          ],
+          "tier": "under50"
+        },
+        {
+          "title": "Stereophonic at Knight Theater",
+          "description": "Catch an acclaimed play, 'Stereophonic,' at the Knight Theater. This Tony-nominated production drops audiences into a '70s recording studio, exploring artistic ambition and tension. Tickets are available, offering a unique cultural experience for the evening.",
+          "day": "today",
+          "period": "evening",
+          "location": "Knight Theater, Uptown",
+          "cost": "$46.58+",
+          "tags": [
+            "culture",
+            "music",
+            "art"
+          ],
+          "tier": "under50"
+        },
+        {
+          "title": "Craft Cocktails at The Scorpio",
+          "description": "Experience Charlotte's legendary LGBTQ+ nightclub, The Scorpio, in its new South End location. Enjoy expertly crafted cocktails from their developed bar program, featuring unique blends and house-pulled espresso martinis. It's a vibrant spot for a late-night drink and socializing.",
+          "day": "today",
+          "period": "night",
+          "location": "The Scorpio, South End",
+          "cost": "$15–$30",
+          "tags": [
+            "drinks",
+            "nightlife",
+            "queer-friendly"
+          ],
+          "tier": "under50"
+        },
+        {
+          "title": "Morning Stroll at UNC Charlotte Botanical Gardens",
+          "description": "Start your Wednesday with a peaceful and free visit to the UNC Charlotte Botanical Gardens. Explore the diverse plant collections and tranquil outdoor spaces, including the Van Landingham Glen. It's a refreshing way to enjoy nature without leaving the city.",
+          "day": "tomorrow",
+          "period": "morning",
+          "location": "UNC Charlotte Botanical Gardens, University City",
+          "cost": "Free",
+          "tags": [
+            "outdoor",
+            "nature",
+            "culture"
+          ],
+          "tier": "under50"
+        },
+        {
+          "title": "Free Museum Wednesday Evening",
+          "description": "Take advantage of Free Museum Wednesday evenings in Uptown Charlotte. From 5 PM to 9 PM, enjoy complimentary admission to the Mint Museum Uptown, the Bechtler Museum of Modern Art, and the Gantt Center. Immerse yourself in art and culture without the cost.",
+          "day": "tomorrow",
+          "period": "afternoon",
+          "location": "Mint Museum Uptown / Bechtler Museum / Gantt Center, Uptown",
+          "cost": "Free",
+          "tags": [
+            "art",
+            "culture"
+          ],
+          "tier": "under50"
+        },
+        {
+          "title": "Dinner at 300 East",
+          "description": "Savor a mid-range dinner at 300 East, a beloved Dilworth staple known for its fresh, seasonal, and locally sourced ingredients. This queer-friendly allied restaurant offers a cozy and intimate dining experience in a renovated house.",
+          "day": "tomorrow",
+          "period": "evening",
+          "location": "300 East, Dilworth",
+          "cost": "$30–$50",
+          "tags": [
+            "food",
+            "queer-friendly"
+          ],
+          "tier": "under50"
+        },
+        {
+          "title": "Karaoke with Klaytastic at Petra's",
+          "description": "Unleash your inner pop star at Petra's Bar for their popular 'Karaoke with Klaytastic' night, happening every Wednesday. This Plaza Midwood gem offers a fun, low-key, and queer-friendly atmosphere with no cover charge.",
+          "day": "tomorrow",
+          "period": "night",
+          "location": "Petra's Bar, Plaza Midwood",
+          "cost": "Free (drinks extra)",
+          "tags": [
+            "music",
+            "nightlife",
+            "queer-friendly",
+            "drinks"
+          ],
+          "tier": "under50"
+        },
+        {
+          "title": "Midweek Mixtape at Camp North End",
+          "description": "Wind down your Wednesday evening with 'Midweek Mixtape' in the Boileryard at Camp North End. Enjoy a relaxed atmosphere with music and good vibes in this unique industrial-chic setting. Grab a drink from a nearby vendor and enjoy the scene.",
+          "day": "tomorrow",
+          "period": "night",
+          "location": "Camp North End, North Charlotte",
+          "cost": "Free (drinks/food ex",
+          "tags": [
+            "music",
+            "culture",
+            "drinks",
+            "queer-friendly"
+          ],
+          "tier": "under50"
+        }
+      ],
+      "sources": [
+        {
+          "title": "exploreconstantly.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFXv3PpXrO_yaq-SO0UqUI4Ocl5WwphDQBDzVhAuhi6a58-PVaMtjN4TyggT-bW8sc1WNO_cD3hirt25fgmScU23fWX0wiLTbokbw3DJ82ZdcF73dQOS6QlRJVOGVdUs0IzhibUIo3iQ1qWfRnXhaF1reP-T3vyz5RE9Wn1QqATgB_BDeIkb3lMFzJdIgsJtRmawo9qWZI="
+        },
+        {
+          "title": "whitewater.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFFW_rUVz2X5Nv2VthakZJe4so5vdtsQi_6NJLBKhPDYdcBdhJxuNYIi-I-X6NsIX3vhyOlvCOBs0ZmIcvI0Po-fMk2QUuPgRzlBMkRD_zQfv7iYjCUrA=="
+        },
+        {
+          "title": "whitewater.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFiW2RWc7Vk4wUdLpezKot70aHi_KfOgFUyUmdtR9dq7kJkXDm8v5OlpUUAQeTwV60jZY6kvQVCXCqmchjnwCxYKELsDtxGd3bpm2lqBtyoWugvOclZCdxn65w7Q8mQogVqCfBcuIo7lUSmxxdEGbjvrg=="
+        },
+        {
+          "title": "charlottesgotalot.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHxsGomrVGBzK9g0vlYLb-6_p4fIhXSAc5k7spLl9OIbwMT-_sMpdvxa8uSgYpDB9Xf8V6-iIEQyklv3dsH8O_3a6W__yCmK1Zux_2JBGLs0mfOVuDmKOhSoR2VU9ROjkejMnEBL-tkt5PxOgsDH8732Z4M2BCFoWAMKoKjpA2Vi_ZMjuDXV_51EdM="
+        },
+        {
+          "title": "camp.nc",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFNrFuZTui6uoKOB4SBF1qaZMo-kVvxvSTxBMOYAt8FCxAz7yfLYLjlxPiKykJHPfXc1k4vgiS5BKveJYxHh3JfqrnX9y2nqO0NpVjCrYwn4daOVXpgAN56U43vWiM3Yji7JDtux5cgoQ=="
+        },
+        {
+          "title": "charlottesgotalot.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH75mMB5O7hmkYVGKymKeArgd849AKfCPPo_yvUD4xcdemvada8qzUvOqhoqEQEOMmCozbvk1N0y6sOyFhEENfmB-vU8EKU4cfqDOdrAGcpU2hTZ8hhRic5MG7m46ocI6GXjUKAxA0qt3OIxgWCA2aBiCikpdPAEbVgDb9QOYfqFEu46y2tDHJ8F5Wk9FGCjF8="
+        },
+        {
+          "title": "charlottesgotalot.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEPXnq_2AbCkjzTEqrWroNOastX4ikDtj8TMdG9fi2YEllrQyhbIpUjVR37w-sxHR35yzh-PYsz3gA6PnE03rPLfCATbw91LjIC266dOjtS4kwK1nrWckJ7iU00m1Rthdh7pqZ0g4ZHh5jdJ7f3hq6rMCL-F0nRbOvY31-hi3cuch35BdEJvmid-Ygx"
+        },
+        {
+          "title": "brewersat4001yancey.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFJwn92Y8qX0YyBWLZjCIe_I9cnz_9FsJKAOsw7BiD3Vv6kPlkdqPh1koKU3SK4v1Cuf0G5_rgcPVmuu2iHrNZBz8mjGVncipEVnII-aGCzfeWUsaW1QJ0GXvmcMS4XwQ=="
+        },
+        {
+          "title": "clture.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEJa6Zje8wcyUJ48ZeG2ERdPoY0tUa0eP87T7nDPc5ijoylv64KJ7GVOSa4s-_K00zp4IomYp_u0SoGQAAI7rpyB6EmXGS85cSikLUn9fAQpKTsbbvuMRaA2PrmTvqQPYzatdBo9hII96n4OmI="
+        },
+        {
+          "title": "wfae.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEvJctoHsKXRM8VDFctfQuE0T5hhHPdFfbizXwRUlOwV_f3MbzQ79_Avl1yTsH6lUAllA_BP3XbgknENVCQ59Wu1wEhBanR7e0lFrX3dDN0kjgGr9Font5EaJ6Hur-Arl9wHJSUMcvo0dbtiz7xJclaPRvWLm_pIZeohiZuBNARtTG8NxrYPcGFmCoyRivAs0dAWTc9rTzikykXclNF86lE1Um_I1nOct6wykXQnW1fqg=="
+        },
+        {
+          "title": "tixr.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-NFA2xrMJKhoAdoi0jOganFozjLK4UnPpzpeeo3Cdm8cs43fgqoGvRTASCD6S_DhP_Cbj8wB3zUMJkgXXduo7UYu-VLxN5o0m0mAnpST8jLakH9nIKjE5pZjYYkvg"
+        },
+        {
+          "title": "uptownsuites.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGNsD8M0JwPHOJBi-771vVlYygJSiQ-oRM9Uu85gnD7vWmt0gsDkNcYqmK95wHgfHsRpUjbGwm10OoGZ_u3mzHia15OmeW6npvrOxUsZNqZy0M-C24rtCpuszmCXzTmYKAeqoDUsDsJkfhJ_0xnwM849VRs"
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQElan3FhEgKk0zojqS31CVenImHuFE9dWb5CBeK-8ZBDXC9mZunCmkbewdkeH7gblEbhiRPGEOZoVgJDc9TX07fUmhzoDxpVIIuBefAX2qv0JDdCWjUmCIejXxg4HUebtlSL__lC-bKtd7wO2UO0L7iL2AGchSKADTkIt4Bd_k="
+        },
+        {
+          "title": "wonderfulmuseums.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGNtXCZV24ZPgb1cJma62U4Ea-rsRBucLNOqjpToQXRx1xcR9U0-nymaWosyAuHPVuNd914wxeVrG9ol1Gf9nqvr8jAFtD4-1ahbpldfqPdfkAXlBXE48ltnU_jq6XLThqWMC_fqH_oQNF7DGTk0ODsVqYlrzc-2VKMIeh5"
+        },
+        {
+          "title": "cltbucketlist.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTCPkW3Iaft8d6BQEVLM5T6MO0NF7pYQ_zfeYWlUIX5l_RfYZWvmMq9FnaNTgTuqO3oqxjJ-Ycor1CbHtUPz-aOF_XNUacRfZtvI16s5AhA2l9Xh_piarJn_0WCo3XQYs8gLtfjnb-MneAK06vh1Dz6zxLr5eu5jQk3b0DLr9c1gG_aVpa-dTbYZW2O_-QC1Ut6D2kIuNT3d-LrSbFf5WOZ4OW4JP9hYorycrG6fx5UVCL"
+        },
+        {
+          "title": "gaybnbtravel.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG19X9PphmR6kdfWPv2MycObMqUUJKZvgo8Gq5gh2Zcn3i7BQV4_gG-b5uZZzHkbPH1YJsNP3-Sn7Em3tavDYP4mr9VWIB8aEAuXPo02x24GHMJWk73Uc-YztTl918c2XAyBIp2oNJNJ3nYNZ71CZKZjoE="
+        },
+        {
+          "title": "petrasbar.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHiKqOfcEB28YLmZwM5_A99Atv_-GaxH1yU-3sZ7Mz7GUyYsyVX7FekIrL4R5rtNpYyPSGFZiP2J_REPXR6U6KbKNZ0UvpjXSm9-jAElYTHQkuSK4JomDY8"
+        },
+        {
+          "title": "petrasbar.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFL1d0MGavVjiDjy_ytzeQMmf1SvHV-wXHVDj0uzPU322XbKNju6tpGafScMHaQTpFrbktUhgvgz5KnSl4GyfQXFI_aoonU3fabLO2K8Udja14A3z0PKzDMIe82wmMLZ5pecJWlobffbTuc44CawX2GTa8bENybF7fAKAwBct5CGVeP_VH5Wywsw_4hwEVaE52-Dg=="
+        },
+        {
+          "title": "petrasbar.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHFmDbetuPpQqAvO4e4JrngJ3MEiP9gZTzpbdcZARImLAos97y8sxPrFKzJyS4-1_jDNcRNmhD60eJvt5IZAPANDp7pMaNFzMbaPWIlBZXUweVRJU5rbN2X_4VciI7dqzU="
+        },
+        {
+          "title": "lex.lgbt",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHN62wxxhizPGT2YazagcGbHVaWqzMSEqSX1VsCf7DquxpJyRZKzPJ_qVQ0DAsMwIVreqrKyVzaCmgyz4m8hluaPF5THYCh6-8ha-gARWfIsDvhBTQG-Hqsd1dnUmuE2Gk5_f1hBBXHSun74fbKvVzbnF1A3wJ6KmZAfqkcLFPQhBdA1pIV0WViNYoznFdi072f6fqA6SF7"
+        },
+        {
+          "title": "camp.nc",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHzT-4VlvBV2x2ZYUXbpOqwjIGXTtxYGaWDUhIAmk7Er6Wftxo4hyCYkY-7uVA23KN0Lwd155sNB8oqgC2Bkmtr8-DC2EFOouZT1XF7DiEsCNBm"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "splurge",
+      "label": "Splurge",
+      "emoji": "🌟",
+      "activities": [
+        {
+          "title": "Private Spa Suite at The Ritz-Carlton Spa",
+          "description": "Indulge in a bespoke wellness journey at The Ritz-Carlton's bi-level penthouse spa. Enjoy a personalized massage or body treatment in a private suite, followed by access to the exclusive relaxation lounges and aqua lounge. This is a truly opulent start to your day, focusing on organic ingredients and ultimate tranquility.",
+          "day": "today",
+          "period": "morning",
+          "location": "The Ritz-Carlton, Uptown",
+          "cost": "Variable (Luxury)",
+          "tags": [
+            "fitness",
+            "culture",
+            "queer-friendly",
+            "wellness"
+          ],
+          "tier": "splurge"
+        },
+        {
+          "title": "Exclusive Styling at Saks Fifth Avenue Suite",
+          "description": "Experience unparalleled luxury with a private styling session at the Saks Fifth Avenue Suite within The Valentine Hotel. Prior to your arrival, a personal stylist will curate looks tailored to your preferences, offering a truly bespoke and intimate shopping experience with champagne service. Discover high-end designer pieces in a secluded, elegant setting.",
+          "day": "today",
+          "period": "afternoon",
+          "location": "The Valentine Hotel, Uptown",
+          "cost": "Variable (High-end)",
+          "tags": [
+            "shopping",
+            "fashion",
+            "culture",
+            "luxury"
+          ],
+          "tier": "splurge"
+        },
+        {
+          "title": "Fine Dining at The Palm Charlotte",
+          "description": "Savor a classic American steakhouse experience at The Palm, renowned for its prime cuts, fresh seafood, and vibrant atmosphere. Reservations are essential for this upscale establishment, offering impeccable service and a sophisticated setting perfect for a premium dinner. Enjoy a memorable meal in a Charlotte institution.",
+          "day": "today",
+          "period": "evening",
+          "location": "Phillips Place, SouthPark",
+          "cost": "Variable (High-end)",
+          "tags": [
+            "food",
+            "drinks",
+            "luxury",
+            "reservation required"
+          ],
+          "tier": "splurge"
+        },
+        {
+          "title": "Broadway Show: Stereophonic",
+          "description": "Catch the critically acclaimed Broadway hit 'Stereophonic' at the Blumenthal Performing Arts Center's Belk Theater. This compelling play offers a deep dive into the world of a 70s rock band, promising a captivating evening of drama and music. Secure premium seats for an unforgettable theatrical experience.",
+          "day": "today",
+          "period": "evening",
+          "location": "Belk Theater, Uptown",
+          "cost": "Variable (Premium Ti",
+          "tags": [
+            "music",
+            "art",
+            "culture",
+            "theater"
+          ],
+          "tier": "splurge"
+        },
+        {
+          "title": "Craft Cocktails at Idlewild",
+          "description": "Immerse yourself in the bespoke cocktail experience at Idlewild, an intimate NoDa tavern where there's no menu – drinks are crafted to your exact preferences. This unique lounge offers a personalized journey through spirits and flavors, making every visit a discovery. It's the perfect spot for adventurous palates seeking sophisticated drinks.",
+          "day": "today",
+          "period": "night",
+          "location": "Idlewild, NoDa",
+          "cost": "Variable (Upscale)",
+          "tags": [
+            "drinks",
+            "queer-friendly",
+            "nightlife",
+            "social"
+          ],
+          "tier": "splurge"
+        },
+        {
+          "title": "VIP Nightlife at Chasers Noda",
+          "description": "Experience Charlotte's high-energy LGBTQ+ nightlife with a VIP experience at Chasers Noda, a beloved landmark in the historic NoDa neighborhood. Enjoy upgraded VIP areas and an improved dance floor pumping with EDM, go-go dancers, and a friendly crowd. This is the place for late-night fun and an inclusive party atmosphere.",
+          "day": "today",
+          "period": "night",
+          "location": "Chasers Noda Charlotte, NoDa",
+          "cost": "Variable (VIP Entry)",
+          "tags": [
+            "drinks",
+            "music",
+            "queer-friendly",
+            "nightlife"
+          ],
+          "tier": "splurge"
+        },
+        {
+          "title": "Couples Spa Retreat at The Spa at The Ballantyne",
+          "description": "Indulge in a luxurious couples massage and spa treatments at the award-winning Spa at The Ballantyne. Enjoy a tranquil, resort-style setting with access to therapeutic whirlpools and relaxation lounges. Enhance your experience with gourmet spa dining and a private cabana rental by the pool (seasonal).",
+          "day": "tomorrow",
+          "period": "morning",
+          "location": "The Ballantyne, Ballantyne",
+          "cost": "Variable (Luxury)",
+          "tags": [
+            "wellness",
+            "fitness",
+            "luxury",
+            "relaxation"
+          ],
+          "tier": "splurge"
+        },
+        {
+          "title": "Private Gallery Tour: Jerald Melberg Gallery",
+          "description": "Arrange a private viewing at the esteemed Jerald Melberg Gallery, known for its high-caliber American paintings, drawings, and sculptures. Explore the 'Robert Motherwell: Printmaker' exhibition, showcasing prominent artists in an intimate setting. This is a refined cultural experience for art connoisseurs.",
+          "day": "tomorrow",
+          "period": "afternoon",
+          "location": "Jerald Melberg Gallery, Cotswold",
+          "cost": "Variable (Private To",
+          "tags": [
+            "art",
+            "culture",
+            "luxury",
+            "education"
+          ],
+          "tier": "splurge"
+        },
+        {
+          "title": "Immersive Dining at Counter-",
+          "description": "Embark on a unique culinary journey at Counter-, where Chef Sam Hart curates immersive dining experiences that tantalize the senses. This reservation-only establishment offers a multi-course tasting menu with a focus on innovative flavors and artistic presentation. Expect an unforgettable evening of gastronomic delight.",
+          "day": "tomorrow",
+          "period": "evening",
+          "location": "Counter-, West Charlotte",
+          "cost": "Variable (Prix Fixe)",
+          "tags": [
+            "food",
+            "drinks",
+            "luxury",
+            "reservation required"
+          ],
+          "tier": "splurge"
+        },
+        {
+          "title": "Broadway Show: Stereophonic",
+          "description": "Experience the captivating Broadway production 'Stereophonic' at the Blumenthal Performing Arts Center's Belk Theater. Delve into the intricate dynamics of a 1970s rock band as they record an album, offering a powerful and engaging narrative. Secure prime seating for a second chance to see this acclaimed show.",
+          "day": "tomorrow",
+          "period": "evening",
+          "location": "Belk Theater, Uptown",
+          "cost": "Variable (Premium Ti",
+          "tags": [
+            "music",
+            "art",
+            "culture",
+            "theater"
+          ],
+          "tier": "splurge"
+        },
+        {
+          "title": "Rooftop Cocktails at Merchant & Trade",
+          "description": "Ascend to Merchant & Trade, an upscale rooftop bar atop the Kimpton Tryon Park, for sophisticated cocktails and stunning panoramic views of Uptown Charlotte. Enjoy the vibrant atmosphere, fire pits, and chic ambiance. It's the perfect spot for a stylish evening drink with a view.",
+          "day": "tomorrow",
+          "period": "night",
+          "location": "Merchant & Trade, Uptown",
+          "cost": "Variable (Upscale)",
+          "tags": [
+            "drinks",
+            "nightlife",
+            "social",
+            "luxury"
+          ],
+          "tier": "splurge"
+        },
+        {
+          "title": "Drag Show & Dancing at The Scorpio",
+          "description": "Dive into Charlotte's legendary LGBTQ+ nightlife at The Scorpio, the city's oldest LGBTQ nightclub, now with three bars, two rooftops, and a spacious dance floor. Known for its vibrant drag shows and diverse music, The Scorpio offers an electrifying and inclusive party experience. Enjoy a night of entertainment and dancing.",
+          "day": "tomorrow",
+          "period": "night",
+          "location": "The Scorpio, South End",
+          "cost": "Variable (Cover/Drin",
+          "tags": [
+            "music",
+            "drinks",
+            "queer-friendly",
+            "nightlife"
+          ],
+          "tier": "splurge"
+        }
+      ],
+      "sources": [
+        {
+          "title": "ritzcarlton.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG5tl6xYbJD_2P8BJaN0boNFHZMcpcv4GagDvVx_UU1IOHQz9qPaAhoIVBds6zfrRL-NT_bXP2LUE1vxbJs_KfYX29M41aCqGrEZ9VnqIfeKPehBYIR0M8nwDLooIdnyVMSkAdizBf9E_qSo9ddjR938PIxLYlf94HfZa5qOH0UsAPBC6t2WFCmSNaZ7gPA"
+        },
+        {
+          "title": "charlotteobserver.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHhst3epSm-xn9zOj-s8iJnWQIuIeD6rRhELBdQ84xvAKDpyeUuxEnoFiMuOXZDcGyrnU-mCCemxkpViKzZJy4G9z9bFzmZbNmsutZlwKCigNP4SPvlBi8DFQOzMjbUjWbPpYwDXB1B3lrNRsKDvf6m_qh-xQjykDGUixNRX7OK1YySsoVfKVV5hyaHPA=="
+        },
+        {
+          "title": "youtube.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFoJk1VGHVp5uDWghr7hagi1h_mwk4U5FGVYhkMigkNvOpRkIDk69p5N1Fop3-XBaEK8jB16xkVU6-ODoxGgSv5D2WwXKx4rAnshLRIjA-_k0ahO_hmWjw7egKSgiQQbDNsIJ28Zw=="
+        },
+        {
+          "title": "phillipsplacecharlotte.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHAWOctRm0wzev9kyPBdRbseC5ieg3IddtOCQKXntovtAKUdBpM2SFI1XlsC3hHDYYvxCv8VWaehLslGTptm0_y0EluUfLVT7-HQG2BhxnsoD0z6kygb0fpIlqFwarKBS3e"
+        },
+        {
+          "title": "wcnc.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGcJcC-4Wer_qESOemH9D9k71EhcR1XBJraWSgxLLqdXyKiy6l1omh7vJlu2ChAd6I94XbZxVy97wwlQ1eeZnrAQ4_J31MpnmrXWwgtP5fkko8WmnFbl9myMTGTEdW7iZvMYbARqr6H8nOUqCpyi7e3AYnT5HgXTmNfTVqymBDMM_J439DBBQaFaIxpWlYuh58OLFz52mFkGUu-4rDlRdMDnwRjn_Fl2ClC5KxFoQ_FO1uqZ2UJKSKpn2rIBg8djVTKGi4BVRz4"
+        },
+        {
+          "title": "broadway.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGEEn-Vnjoqxs0r8LAqUvGaNJOIbKIbckrY0_S_Ce3fABEUF4okfvgp-N87SUrbTixNqvcj4z8s_UCJTb8wRZHYAm8d_XvCRsuDeHieUfF6_yzPmXBTzCQaugXd-nSuCArUPt8JWyJrGok4JmLLtFVynUV5FXPkcX9KiKFWYXDYT8VbFO4y"
+        },
+        {
+          "title": "charlottesgotalot.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH9yfSZ_OaF-ihkkUbxu8HOcQ2zzUBKWz0t-tA15Koe9nAJx0JwyG6_ULnoY-UjatyoEX87YPaBuYswnIUooZRfC4CLo5k9hsj2N1eAkOJdtIQcfz8aFcPQhJ21htdxRsIsYK_qMdHclqgago42EZuhkwZdnmtozhqeGU0cs4ILit67VeIGiFk4hNr3-n9XHgLpmQgtmQ=="
+        },
+        {
+          "title": "travelgay.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFg5dLYfHFTl_0WVoQBS_WNqJC90oD4b1Bq_2hThZRV5x2kNqFohRIeS3ta5ZDZhQEzMCy-nQGOdIxfHyqWTjL6KzPwAuRuyeev5EIeBELQ_F4A0XHZ1BV8WJC7VqUZLXdG3iclmkOL"
+        },
+        {
+          "title": "theballantynehotel.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEa52uZ2ACad-j_hSrrntl5LkEPClxHyejvmSZoHH_3Y7uR751i-sgLtjEzOblisnhfowTjOVSLhsUFjEpUcQUI7u9V5H4mynGW9O3Sdfx1K08i6P0Ttg6gCMoLXPMDJqOcGaVQzVu9505cBfr_WP91wLxp39dZEg=="
+        },
+        {
+          "title": "visitnc.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5nrtDhYk10yE8LVRlhD8NOLyLur4z5ajDz4zDd3CuJ_u1Q7Uar1zn1hvNQ7S1PVVWfhWDUx2-kxWty5mirMxBtWim_o3bnUejOR2jXpl_EmfGOYrMmDWq8_RIKmOw9CKsp5GDJxfMojBxu26TSVJKttvCAiF330qVy-iyIg3y2bz4"
+        },
+        {
+          "title": "charlottesgotalot.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFz17TGGjBWtUAxpfXldhzSuv5IRSs-HRHP7yiE6vOtcUx7mU5S_cu9COVrtn7RIgq7d3_w052MKml6LWKKJcBPvOW_1pRFq_uZrxb_eJQ2DOcdn_vuA9HgtVCtOAMzRzjThKysWJyF6bPnhHIpoLRHKA997s2gq62edPTLC26WtYUxUZWzXN9EgfIHaWY="
+        },
+        {
+          "title": "jeraldmelberg.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGSiyUFZXX_xd6VfybasIOVGSz7yxBe4Sf0HNSHbgDERymFrpeDauzzZ3aL1y_K3bXTeBKV6PBqlx9M9Ru-xwv8DNWLXXJZu7HKLWHlETgt2cCrp_PJp549WQ=="
+        },
+        {
+          "title": "outtraveler.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJf-8iJG9tj7i6xuHUYSV5LfCsvGif8Ye7fOv_QnBwGAfkONz08ZMaOhLwyJ3cTmdEevXptYzD77DfUwSi6s1T86M8OW-ieKf0ipMoOg6nEPuYG6-a3KeIzzDEWHjRK8xb7KsqKt6nUhxNjDQXkejGRLU0EFL9BV8nMFu1v5Y1mKRT1eWWUGfGMQZk"
         },
         {
           "title": "allbarsapp.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQERMr4sxWQ0eAOW5VkpVpdY2qv78CbNY21W-5zdMZY-iFHFz3PmUaHkz9zQOUp8LNfgIdP8j1GqVQh9t4dBrcx2_9_9JrCkjgqfPehylkx2agkv2O2vBLBdK679QUl9ZxfUXDjo7j1MWmpp1fPBxt9twfwA"
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGRVballWAw_YzClE3yDAaJXqm0WoPpE5z4yY9mGgrquw_vRc9Y7TFbWZGPZ90OlVO7yOeAk5Bt-dxbs80h-1TeyZhUDWrFnSLaBEQFGBCL1TWFeTM9aNKBObJK2X-QvxrYpmJd1oTuCH0Brkz5Nf3p"
+        },
+        {
+          "title": "lex.lgbt",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGoYNyx0yuhIUHu8Qjxi57U6VZVL1nqWuBxzKAkr3iMvoWPeB2WrfmTFPdso0OWemhyxrwQ7h3tZMj948eEK2swgn8OTCye3Li5KWDZ-oX5QSqjVzEZIlWqRpNij-Ir8veK1UmnM5SL4f1Zlx9KCUJBO3bCAPphbbpIcCmeLr0OXMxH-xJNBQKUeG4bkKu8MPaaRuXKJOs2"
         }
       ],
-      "error": null,
-      "label": "Splurge",
-      "emoji": "🌟"
+      "error": null
     }
   ]
 }
