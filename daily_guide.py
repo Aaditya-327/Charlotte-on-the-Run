@@ -54,7 +54,7 @@ CALLS = [
         "tiers": [
             {"id": "under50", "label": "Under $50", "emoji": "🍸", "max_cost": "$50", "focus": "specific ticketed events under $50 on these exact dates — drag shows, live music, comedy nights, Camp North End programming, ticketed USNWC events. Only include a bar or restaurant if there is a specific event happening there on these dates."},
             {"id": "splurge", "label": "Splurge", "emoji": "🌟", "max_cost": "no limit", "focus": "specific premium events on these exact dates — major concerts, theater performances, VIP events, exclusive pop-ups, special dining experiences. Must be a specific event, not a general venue recommendation."},
-            {"id": "wildcard", "label": "Wildcard", "emoji": "🃏", "max_cost": "varies", "focus": "unique, one-off, or highly specific events happening only on these exact dates — festivals, pop-ups, special screenings, rare performances, anything unusual or date-specific. Must not be an evergreen venue recommendation."}
+            {"id": "wildcard", "label": "Wildcard", "emoji": "🃏", "max_cost": "varies", "focus": "genuinely WEIRD, unexpected, or absurd events that would make someone say 'wait, what?' — things that combine two things that don't belong together, or are just strange by nature. Examples of what BELONGS here: wrestling at a brewery, axe throwing tournament, adult spelling bee, drag bingo, competitive eating contest, paranormal walking tour, silent disco, escape room event, cult film midnight screening, adults-only museum night with cocktails, weird themed 5K (zombie run, color run), burlesque show, comedy roast, psychic fair, taxidermy workshop, gothic market. Examples of what does NOT belong here: regular concerts, gallery openings, food truck rallies, farmers markets, pub trivia, outdoor movies (unless truly bizarre), charity galas, community workshops. Must pass the 'wait, that's a thing?' test. Can be any budget."}
         ]
     }
 ]
@@ -97,7 +97,7 @@ Each element must match this exact schema:
   "location":    "string — venue name + neighborhood (e.g. 'Optimist Hall, NoDa')",
   "cost":        "string — e.g. 'Free', '$12', '$8–$15'",
   "tags":        ["array of 2-4 strings from: outdoor, food, drinks, music, art, queer-friendly, nightlife, fitness, culture, shopping, sports, nature"],
-  "category":    ["array of 1-2 strings from: music, food, drinks, arts, outdoors, nightlife, comedy, sports, theater, fitness, market, drag, film, weird, family"],
+  "category":    ["array of 1-2 strings from: music, food, drinks, arts, outdoors, nightlife, comedy, sports, theater, fitness, market, drag, film, weird, family — use 'weird' only if the event is genuinely unusual or absurd"],
   "tier":        "string — the ID of the budget tier this belongs to",
   "rank":        "integer 1–5 — how worth attending is this event? 5=unmissable/rare, 4=highly recommended, 3=solid, 2=niche, 1=filler"
 }
