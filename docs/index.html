@@ -411,6 +411,7 @@ function parseGuideCards() {
         category:    act.category || [],
         day:         act.day,
         period:      act.period,
+        rank:        act.rank || null,
         source:      'AI Guide',
         link:        null,
       });
@@ -610,6 +611,13 @@ function buildDDGUrl(ev){
   return 'https://duckduckgo.com/?q=' + encodeURIComponent(q);
 }
 
+function rankBadge(rank){
+  if(!rank) return '';
+  const color = rank >= 5 ? '#fbbf24' : rank >= 4 ? '#fb923c' : rank >= 3 ? '#a78bfa' : 'var(--ink-3)';
+  const border = rank >= 5 ? 'rgba(251,191,36,.35)' : rank >= 4 ? 'rgba(251,146,60,.35)' : rank >= 3 ? 'rgba(167,139,250,.35)' : 'var(--border-faint)';
+  return `<span class="badge" style="background:var(--paper-2);color:${color};border-color:${border};font-family:var(--font-mono);letter-spacing:.03em">${rank} ★</span>`;
+}
+
 function buildAICard(ev){
   const card = document.createElement('div');
   const isWild     = ev.tier === 'wildcard';
@@ -642,6 +650,7 @@ function buildAICard(ev){
     <div class="card-top">
       <div class="card-source">${sourceLabel}</div>
       <div class="card-badges">
+        ${rankBadge(ev.rank)}
         ${costBadge}
         <span class="badge" style="background:var(--paper-2);color:${ev.tier_color};border-color:var(--border-soft)">${ev.tier_label}</span>
       </div>
@@ -681,6 +690,7 @@ function openCard(ev){
       <div class="card-top">
         <div class="card-source">✦ AI Guide · ${periodEmoji} ${periodLabel}</div>
         <div class="card-badges">
+          ${rankBadge(ev.rank)}
           ${ev.cost ? `<span class="badge" style="background:var(--paper-2);color:var(--ink-2);border-color:var(--border-soft)">${ev.cost}</span>` : ''}
           <span class="badge" style="background:var(--paper-2);color:${ev.tier_color};border-color:var(--border-soft)">${ev.tier_label}</span>
         </div>

@@ -98,11 +98,12 @@ Each element must match this exact schema:
   "cost":        "string — e.g. 'Free', '$12', '$8–$15'",
   "tags":        ["array of 2-4 strings from: outdoor, food, drinks, music, art, queer-friendly, nightlife, fitness, culture, shopping, sports, nature"],
   "category":    ["array of 1-2 strings from: music, food, drinks, arts, outdoors, nightlife, comedy, sports, theater, fitness, market, drag, film, weird, family"],
-  "tier":        "string — the ID of the budget tier this belongs to"
+  "tier":        "string — the ID of the budget tier this belongs to",
+  "rank":        "integer 1–5 — how worth attending is this event? 5=unmissable/rare, 4=highly recommended, 3=solid, 2=niche, 1=filler"
 }
 
 Example of the expected output format (shortened):
-[{"title":"WWE-Style Wrestling at Lenny Boy Brewery","description":"Catch live professional wrestling bouts in the taproom...","day":"today","period":"night","location":"Lenny Boy Brewing Co, LoSo","cost":"$15","tags":["sports","nightlife","drinks"],"tier":"free"}]"""
+[{"title":"WWE-Style Wrestling at Lenny Boy Brewery","description":"Catch live professional wrestling bouts in the taproom...","day":"today","period":"night","location":"Lenny Boy Brewing Co, LoSo","cost":"$15","tags":["sports","nightlife","drinks"],"tier":"free","rank":5}]"""
 
 def make_prompt(call_def: dict, today_dow: str, today: str, tomorrow_dow: str, tomorrow: str) -> str:
     tiers_info = ""
