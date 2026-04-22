@@ -233,6 +233,44 @@ footer{border-top:1px solid var(--border-faint);padding:20px 24px;text-align:cen
   border-radius:3px;
 }
 
+/* ── Timeline ── */
+.tl-day-section{margin-bottom:32px}
+.tl-day-header{
+  display:flex;align-items:center;gap:10px;
+  padding:8px 0 10px;border-bottom:1px solid var(--border-soft);
+  margin-bottom:12px;
+  position:sticky;top:52px;z-index:10;
+  background:var(--paper-0);
+}
+.tl-day-label{
+  font-size:10px;font-weight:700;letter-spacing:.1em;
+  text-transform:uppercase;font-family:var(--font-mono);
+  padding:3px 8px;border-radius:4px;white-space:nowrap;
+  background:var(--paper-3);color:var(--ink-3);
+}
+.tl-day-label.today{background:var(--rust-500);color:#fff}
+.tl-day-label.tomorrow{background:var(--rust-50);color:var(--rust-600);border:1px solid rgba(139,92,246,.3)}
+.tl-day-date{font-size:14px;font-weight:600;color:var(--ink-0)}
+.tl-day-count{font-size:11px;color:var(--ink-3);font-family:var(--font-mono);margin-left:auto;white-space:nowrap}
+.tl-events-list{display:flex;flex-direction:column;gap:8px}
+.tl-item{display:flex;align-items:flex-start;gap:12px}
+.tl-item-time{
+  width:62px;flex-shrink:0;
+  display:flex;flex-direction:column;align-items:center;gap:2px;
+  padding-top:14px;font-size:11px;font-family:var(--font-mono);
+  color:var(--rust-500);text-align:center;line-height:1.3;
+}
+.tl-item-time.no-time{color:var(--ink-4)}
+.tl-item-card{flex:1;min-width:0}
+.tl-item-card .event-card{width:100%}
+.mode-chip[data-mode="timeline"].active{background:#38bdf8;border-color:#38bdf8;color:var(--paper-0)}
+@media(max-width:600px){.tl-item-time{width:42px;font-size:10px}}
+
+/* ── COTC card (amber) — consistent with AI card design language ── */
+.event-card.cotc-card{border-color:rgba(251,191,36,.2);box-shadow:0 0 12px rgba(251,191,36,.04)}
+.event-card.cotc-card::before{background:linear-gradient(90deg,#f59e0b,#fbbf24,transparent);opacity:.4}
+.event-card.cotc-card:hover{border-color:rgba(251,191,36,.45);box-shadow:0 8px 24px rgba(251,191,36,.12);transform:translateY(-1px)}
+
 /* ── Scrollbar ── */
 ::-webkit-scrollbar{width:6px}
 ::-webkit-scrollbar-track{background:var(--paper-0)}
@@ -271,7 +309,7 @@ footer{border-top:1px solid var(--border-faint);padding:20px 24px;text-align:cen
     <div class="stat-cell"><div class="stat-label">Total Events</div><div class="stat-value" id="stat-total">—</div><div class="stat-sub">RSS + AI cards</div></div>
     <div class="stat-cell"><div class="stat-label">With Dates</div><div class="stat-value" id="stat-dated">—</div><div class="stat-sub">confirmed date</div></div>
     <div class="stat-cell"><div class="stat-label">Free Events</div><div class="stat-value" id="stat-free">—</div><div class="stat-sub">no admission</div></div>
-    <div class="stat-cell"><div class="stat-label">Regions</div><div class="stat-value" id="stat-regions">5</div><div class="stat-sub">up to 2.5h away</div></div>
+    <div class="stat-cell"><div class="stat-label">Today</div><div class="stat-value" id="stat-today">—</div><div class="stat-sub">confirmed events</div></div>
   </div>
 
   <!-- Controls -->
@@ -292,7 +330,8 @@ footer{border-top:1px solid var(--border-faint);padding:20px 24px;text-align:cen
         <button class="mode-chip active" data-mode="all"   onclick="setMode('all')">All</button>
         <button class="mode-chip"        data-mode="free"  onclick="setMode('free')">🆓 Free</button>
         <button class="mode-chip"        data-mode="ai"    onclick="setMode('ai')">✦ AI Guide</button>
-        <button class="mode-chip"        data-mode="weird" onclick="setMode('weird')">🎪 Weird</button>
+        <button class="mode-chip"        data-mode="weird"    onclick="setMode('weird')">🎪 Weird</button>
+        <button class="mode-chip"        data-mode="timeline" onclick="setMode('timeline')">📅 Timeline</button>
       </div>
     </div>
 
@@ -302,17 +341,15 @@ footer{border-top:1px solid var(--border-faint);padding:20px 24px;text-align:cen
       <div class="chips" id="tier-chips"></div>
     </div>
 
-    <!-- Row 4: Time + Region -->
+    <!-- Row 4: Time -->
     <div class="control-row">
       <div class="chips" id="time-chips">
-        <button class="chip active" data-time="all"      onclick="setTime('all')">All time</button>
-        <button class="chip"        data-time="today"    onclick="setTime('today')">Today</button>
+        <button class="chip" data-time="all"      onclick="setTime('all')">All time</button>
+        <button class="chip active"        data-time="today"    onclick="setTime('today')">Today</button>
         <button class="chip"        data-time="tomorrow" onclick="setTime('tomorrow')">Tomorrow</button>
         <button class="chip"        data-time="weekend"  onclick="setTime('weekend')">Weekend</button>
         <button class="chip"        data-time="week"     onclick="setTime('week')">This week</button>
       </div>
-      <span style="width:1px;height:16px;background:var(--border-soft);flex-shrink:0;margin:0 2px"></span>
-      <div class="chips" id="region-chips"></div>
     </div>
 
     <!-- Row 5: Category (dynamic, only when AI cards have categories) -->
@@ -336,14 +373,16 @@ footer{border-top:1px solid var(--border-faint);padding:20px 24px;text-align:cen
 <div id="card-overlay" onclick="closeCard()"></div>
 <div id="card-modal" role="dialog" aria-modal="true"></div>
 
-<footer id="footer">Charlotte On The Run · Built with 23 curated RSS feeds · <a href="https://github.com/Aaditya-327/Charlotte-on-the-Run" style="color:var(--rust-500);text-decoration:none">GitHub</a><span id="run-cost-display"></span></footer>
+<footer id="footer">Charlotte On The Run · 🟠 Charlotte on the Cheap + ✦ AI (Gemini 2.5 Flash) · <a href="https://github.com/Aaditya-327/Charlotte-on-the-Run" style="color:var(--rust-500);text-decoration:none">GitHub</a><span id="run-cost-display"></span></footer>
 
 <script src="events_data.js"></script>
 <script src="daily_guide_data.js"></script>
 <script>
+// ── Helpers ───────────────────────────────────────────────────────────────────
+function tryParse(s){ try{ return JSON.parse(s); } catch{ return null; } }
+
 // ── State ─────────────────────────────────────────────────────────────────────
-let activeRegion = 'all';
-let activeTime   = 'all';
+let activeTime   = 'today';
 let activeMode   = 'all';   // 'all' | 'free' | 'ai' | 'weird'
 let activeTier   = 'free';
 let activeCats   = new Set();
@@ -428,17 +467,6 @@ function parseGuideCards() {
 const AI_CARDS = parseGuideCards();
 
 
-// ── Region chips ──────────────────────────────────────────────────────────────
-const REGIONS = ['all','Charlotte','Triad','Greenville SC','Asheville','Triangle NC'];
-const regionChips = document.getElementById('region-chips');
-REGIONS.forEach(r => {
-  const b = document.createElement('button');
-  b.className = 'chip' + (r==='all'?' active':'');
-  b.dataset.region = r;
-  b.textContent = r === 'all' ? 'All regions' : r;
-  b.onclick = () => setRegion(r);
-  regionChips.appendChild(b);
-});
 
 // ── Tier chips (built once, shown/hidden by mode) ─────────────────────────────
 function initTierChips(){
@@ -454,11 +482,6 @@ function initTierChips(){
   });
 }
 
-function setRegion(r){
-  activeRegion = r;
-  document.querySelectorAll('[data-region]').forEach(el => el.classList.toggle('active', el.dataset.region===r));
-  render();
-}
 function setTime(t){
   activeTime = t;
   document.querySelectorAll('[data-time]').forEach(el => el.classList.toggle('active', el.dataset.time===t));
@@ -507,7 +530,6 @@ const TOMORROW = new Date(TODAY); TOMORROW.setDate(TODAY.getDate() + 1);
 
 function filterEvents(){
   return EVENTS_DATA.filter(ev => {
-    if(activeRegion !== 'all' && ev.region !== activeRegion) return false;
     if(searchQ && !ev.title.toLowerCase().includes(searchQ) && !(ev.description||'').toLowerCase().includes(searchQ)) return false;
 
     const ed = isoToDate(ev.event_date);
@@ -571,30 +593,30 @@ function cleanDesc(s){
 function buildCard(ev){
   if(ev._ai) return buildAICard(ev);
   const card = document.createElement('div');
-  card.className = 'event-card';
+  card.className = 'event-card cotc-card';
   card.onclick = () => openCard(ev);
 
-  const dateStr = formatDate(ev);
-  const desc    = cleanDesc(ev.description);
-  const priceBadge = ev.price === 'free'
+  const dateStr  = formatDate(ev);
+  const desc     = cleanDesc(ev.description);
+  const cats     = tryParse(ev.category) || [];
+  const catHtml  = cats.slice(0,3).map(c => {
+    const meta = CAT_MAP[c];
+    return meta ? `<span class="badge" style="background:var(--paper-2);color:var(--ink-3);border-color:var(--border-faint)">${meta.label}</span>` : '';
+  }).filter(Boolean).join('');
+  const isFreeCost = (ev.price||'').toLowerCase() === 'free';
+  const costBadge  = isFreeCost
     ? `<span class="badge badge-free">FREE</span>`
-    : ev.price
-      ? `<span class="badge badge-price">${ev.price}</span>`
-      : '';
-  const regionColor = REGION_COLORS[ev.region] || 'var(--ink-3)';
-  const distLabel = (ev.distance || '').replace('min',' min').replace('h30min','h 30m').replace(/^0min$/,'local');
+    : ev.price ? `<span class="badge badge-price">${ev.price}</span>` : '';
 
   card.innerHTML = `
     <div class="card-top">
-      <div class="card-source">${ev.source}</div>
-      <div class="card-badges">
-        ${priceBadge}
-        <span class="badge badge-dist">${distLabel}</span>
-        <span class="badge badge-region" style="color:${regionColor}">${ev.region}</span>
-      </div>
+      <div class="card-source">🟠 Charlotte on the Cheap</div>
+      <div class="card-badges">${costBadge}</div>
     </div>
+    ${catHtml ? `<div style="display:flex;gap:4px;flex-wrap:wrap;margin:-4px 0 0">${catHtml}</div>` : ''}
     <div class="card-title">${ev.title}</div>
-    ${desc ? `<div class="card-desc">${desc}</div>` : ''}
+    ${ev.venue ? `<div style="font-size:11px;color:var(--ink-3);margin:-2px 0 2px;font-family:var(--font-mono)">📍 ${ev.venue}</div>` : ''}
+    ${desc ? `<div class="card-desc" style="-webkit-line-clamp:3">${desc}</div>` : ''}
     <div class="card-footer">
       <div class="card-date ${dateStr?'':'no-date'}">
         <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
@@ -697,22 +719,26 @@ function openCard(ev){
       </div>
       ${catHtml ? `<div style="display:flex;gap:4px;flex-wrap:wrap">${catHtml}</div>` : ''}`;
   } else {
-    const regionColor = REGION_COLORS[ev.region]||'var(--ink-3)';
-    const distLabel = (ev.distance||'').replace('min',' min').replace('h30min','h 30m').replace(/^0min$/,'local');
+    const cats    = tryParse(ev.category) || [];
+    const catHtml = cats.map(c => {
+      const meta = CAT_MAP[c];
+      return meta ? `<span class="badge" style="background:var(--paper-2);color:var(--ink-3);border-color:var(--border-faint)">${meta.label}</span>` : '';
+    }).filter(Boolean).join('');
+    const isFreeCost = (ev.price||'').toLowerCase() === 'free';
+    const costBadge  = isFreeCost ? '<span class="badge badge-free">FREE</span>'
+                     : ev.price   ? `<span class="badge badge-price">${ev.price}</span>` : '';
     topHtml = `
       <div class="card-top">
-        <div class="card-source">${ev.source}</div>
-        <div class="card-badges">
-          ${ev.price==='free'?'<span class="badge badge-free">FREE</span>':ev.price?`<span class="badge badge-price">${ev.price}</span>`:''}
-          <span class="badge badge-dist">${distLabel}</span>
-          <span class="badge badge-region" style="color:${regionColor}">${ev.region}</span>
-        </div>
-      </div>`;
+        <div class="card-source">🟠 Charlotte on the Cheap</div>
+        <div class="card-badges">${costBadge}</div>
+      </div>
+      ${catHtml ? `<div style="display:flex;gap:4px;flex-wrap:wrap">${catHtml}</div>` : ''}`;
   }
 
   const desc      = ev._ai ? (ev.description||'') : cleanDesc(ev.description);
   const dateStr   = ev._ai ? (ev.day==='today'?'Today':'Tomorrow') : (formatDate(ev)||'Date TBD');
   const tags      = (ev.tags||[]);
+  const loc       = ev._ai ? (ev.location||null) : (ev.venue||null);
   const link      = ev._ai ? buildDDGUrl(ev) : (ev.link||null);
   const linkLabel = ev._ai ? 'Search DuckDuckGo' : 'Open article';
   _currentCard    = ev;
@@ -720,7 +746,7 @@ function openCard(ev){
   modal.innerHTML = `
     ${topHtml}
     <div class="card-title" style="font-size:16px;line-height:1.3">${ev.title||''}</div>
-    ${ev.location ? `<div style="font-size:12px;color:var(--ink-3);font-family:var(--font-mono)">📍 ${ev.location}</div>` : ''}
+    ${loc ? `<div style="font-size:12px;color:var(--ink-3);font-family:var(--font-mono)">📍 ${loc}</div>` : ''}
     <div class="modal-desc">${desc}</div>
     ${tags.length ? `<div style="display:flex;gap:6px;flex-wrap:wrap">${tags.map(t=>`<span style="font-size:11px;color:var(--ink-3);font-family:var(--font-mono)">#${t}</span>`).join('')}</div>` : ''}
     <div style="display:flex;align-items:center;gap:8px;margin-top:4px;flex-wrap:wrap">
@@ -836,11 +862,11 @@ async function shareCard(){
   cx.textBaseline = 'middle';
   const sourceLabel = ev._ai
     ? ('✦ AI Guide' + (ev.period ? ' · ' + ev.period : ''))
-    : (ev.source || '');
+    : '🟠 Charlotte on the Cheap';
   cx.fillText(sourceLabel.toUpperCase(), PAD, cy + 9);
 
   // Cost / tier badge (right-aligned)
-  const badgeText = ev._ai ? (ev.cost||ev.tier_label||'') : (ev.price==='free'?'FREE':(ev.price||ev.region||''));
+  const badgeText = ev._ai ? (ev.cost||ev.tier_label||'') : ((ev.price||'').toLowerCase()==='free'?'FREE':(ev.price||''));
   if(badgeText){
     cx.font = '500 10px system-ui,sans-serif';
     const bw = cx.measureText(badgeText).width + 14;
@@ -971,12 +997,123 @@ function toggleView(){
   render();
 }
 
+// ── Timeline render ───────────────────────────────────────────────────────────
+function renderTimeline(){
+  const grid  = document.getElementById('events-grid');
+  const empty = document.getElementById('empty-state');
+  const count = document.getElementById('results-count');
+  grid.innerHTML = '';
+
+  const TODAY_ISO    = TODAY.toISOString().split('T')[0];
+  const TOMORROW_ISO = TOMORROW.toISOString().split('T')[0];
+  const PERIOD_TIMES = {morning:'07:00',afternoon:'13:00',evening:'18:00',night:'21:00'};
+
+  // Build unified event list: COTC/DB events + AI cards
+  const items = [];
+
+  EVENTS_DATA.forEach(ev => {
+    if(!ev.event_date || ev.event_date < TODAY_ISO) return;
+    items.push({...ev, _ai:false, _dateKey:ev.event_date, _sortTime:ev.event_time||'99:99'});
+  });
+
+  AI_CARDS.filter(c => c.tier !== 'baseline').forEach(c => {
+    const dk = c.day === 'today' ? TODAY_ISO : TOMORROW_ISO;
+    items.push({...c, _dateKey:dk, _sortTime:PERIOD_TIMES[c.period]||'99:99'});
+  });
+
+  // Time filter
+  let dated = items;
+  if(activeTime === 'today')    dated = items.filter(e => e._dateKey === TODAY_ISO);
+  else if(activeTime === 'tomorrow') dated = items.filter(e => e._dateKey === TOMORROW_ISO);
+  else if(activeTime === 'weekend'){ const {start,end}=getWeekend(); dated=items.filter(e=>{const d=isoToDate(e._dateKey);return d&&d>=start&&d<=end;}); }
+  else if(activeTime === 'week')    dated = items.filter(e=>{const d=isoToDate(e._dateKey);return d&&d>=TODAY&&d<=getWeekEnd();});
+
+  // Search filter
+  if(searchQ) dated = dated.filter(e=>(e.title+' '+(e.description||'')+' '+(e.location||'')).toLowerCase().includes(searchQ));
+
+  if(dated.length === 0){
+    grid.style.display='none'; empty.style.display='block';
+    count.textContent='0 events'; return;
+  }
+  empty.style.display='none';
+  grid.style.display='block'; // override CSS grid with block for timeline layout
+
+  // Group by date
+  const byDate = {};
+  dated.forEach(e => { (byDate[e._dateKey]||(byDate[e._dateKey]=[])).push(e); });
+
+  Object.keys(byDate).sort().forEach(dk => {
+    const evs = byDate[dk].sort((a,b) => a._sortTime.localeCompare(b._sortTime));
+    const d         = isoToDate(dk);
+    const isToday   = dk === TODAY_ISO;
+    const isTomorrow= dk === TOMORROW_ISO;
+
+    const section = document.createElement('div');
+    section.className = 'tl-day-section';
+
+    const labelCls  = isToday ? 'today' : isTomorrow ? 'tomorrow' : '';
+    const labelText = isToday ? 'TODAY' : isTomorrow ? 'TOMORROW'
+      : d.toLocaleDateString('en-US',{weekday:'short'}).toUpperCase();
+    const dateText = d.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric'});
+
+    const hdr = document.createElement('div');
+    hdr.className = 'tl-day-header';
+    hdr.innerHTML = `
+      <span class="tl-day-label ${labelCls}">${labelText}</span>
+      <span class="tl-day-date">${dateText}</span>
+      <span class="tl-day-count">${evs.length} event${evs.length===1?'':'s'}</span>`;
+    section.appendChild(hdr);
+
+    const list = document.createElement('div');
+    list.className = 'tl-events-list';
+
+    evs.forEach(ev => {
+      const item = document.createElement('div');
+      item.className = 'tl-item';
+
+      const timeEl = document.createElement('div');
+      if(ev._ai){
+        const pEmoji = {morning:'🌅',afternoon:'☀️',evening:'🌆',night:'🌙'}[ev.period]||'🕐';
+        timeEl.className = 'tl-item-time';
+        timeEl.innerHTML = `<span style="font-size:14px">${pEmoji}</span><span>${ev.period||''}</span>`;
+      } else if(ev.event_time){
+        const [h,m] = ev.event_time.split(':').map(Number);
+        const ap = h>=12?'pm':'am', hh = h%12||12;
+        timeEl.className = 'tl-item-time';
+        timeEl.innerHTML = `<span style="font-size:13px;font-weight:600">${hh}${m?':'+String(m).padStart(2,'0'):''}${ap}</span>`;
+      } else {
+        timeEl.className = 'tl-item-time no-time';
+        timeEl.innerHTML = '<span>—</span>';
+      }
+
+      const cardWrap = document.createElement('div');
+      cardWrap.className = 'tl-item-card';
+      cardWrap.appendChild(ev._ai ? buildAICard(ev) : buildCard(ev));
+
+      item.appendChild(timeEl);
+      item.appendChild(cardWrap);
+      list.appendChild(item);
+    });
+
+    section.appendChild(list);
+    grid.appendChild(section);
+  });
+
+  count.textContent = `${dated.length} event${dated.length===1?'':'s'}`;
+}
+
 // ── Render ────────────────────────────────────────────────────────────────────
 function render(){
   const grid  = document.getElementById('events-grid');
   const empty = document.getElementById('empty-state');
   const count = document.getElementById('results-count');
   grid.innerHTML = '';
+
+  // ── Timeline mode ─────────────────────────────────────────────────────────
+  if(activeMode === 'timeline'){ renderTimeline(); return; }
+
+  // Reset display from possible timeline 'block' override
+  grid.style.display = 'grid';
 
   // Apply staple filter globally: staples view shows only baseline, dynamic hides baseline
   const VIEW = showStaples
@@ -1099,16 +1236,17 @@ function render(){
 
 // ── Stats ─────────────────────────────────────────────────────────────────────
 function initStats(){
-  const aiCount = (typeof AI_CARDS !== 'undefined') ? AI_CARDS.length : 0;
-  const total   = EVENTS_DATA.length + aiCount;
-  const dated   = EVENTS_DATA.filter(e=>e.event_date).length;
-  const free    = EVENTS_DATA.filter(e=>e.price==='free').length;
-  const regions = new Set(EVENTS_DATA.map(e=>e.region)).size;
+  const aiCount  = (typeof AI_CARDS !== 'undefined') ? AI_CARDS.length : 0;
+  const total    = EVENTS_DATA.length + aiCount;
+  const dated    = EVENTS_DATA.filter(e=>e.event_date).length;
+  const free     = EVENTS_DATA.filter(e=>(e.price||'').toLowerCase()==='free').length;
+  const todayISO = TODAY.toISOString().split('T')[0];
+  const todayCt  = EVENTS_DATA.filter(e=>e.event_date===todayISO).length;
 
-  document.getElementById('stat-total').textContent   = total;
-  document.getElementById('stat-dated').textContent   = dated;
-  document.getElementById('stat-free').textContent    = free;
-  document.getElementById('stat-regions').textContent = regions;
+  document.getElementById('stat-total').textContent = total;
+  document.getElementById('stat-dated').textContent = dated;
+  document.getElementById('stat-free').textContent  = free;
+  document.getElementById('stat-today').textContent = todayCt;
 
   // last updated: find latest pub_date
   const dates = EVENTS_DATA.map(e=>e.pub_date).filter(Boolean).sort();

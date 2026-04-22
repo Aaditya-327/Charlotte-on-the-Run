@@ -242,13 +242,22 @@ def export_events_data():
         return
     db = sqlite3.connect(db_path)
     db.row_factory = sqlite3.Row
+    # Ensure venue/category columns exist (added in enrich_cotc.py but may lag)
+    for col, typ in [("venue", "TEXT"), ("category", "TEXT")]:
+        try:
+            db.execute(f"ALTER TABLE events ADD COLUMN {col} {typ}")
+        except Exception:
+            pass
+    db.commit()
     today  = date.today().isoformat()
     cutoff = (date.today() - timedelta(days=30)).isoformat()
     rows = db.execute("""
-        SELECT title, link, description, pub_date, region, distance,
-               source, price, ev_score, event_date, event_time, date_confidence
+        SELECT title, link, description, pub_date,
+               source, price, ev_score, event_date, event_time, date_confidence,
+               venue, category
         FROM events
-        WHERE ev_score >= 4
+        WHERE source = 'Charlotte on the Cheap'
+          AND ev_score >= 4
           AND pub_date >= ?
           AND (event_date IS NULL OR event_date >= ?)
         ORDER BY
@@ -401,13 +410,6 @@ def main():
         print(f"  {r['emoji']} {r['label']:12} {len(r['activities'])} cards "
               f"(today={today_n}, tomorrow={tomorrow_n})"
               + (f" ⚠ {r['error'][:60]}" if r.get("error") else ""))
-
-    print("\nEnriching Charlotte on the Cheap…")
-    try:
-        import enrich_cotc
-        enrich_cotc.main()
-    except Exception as e:
-        print(f"  enrich_cotc error: {e}", file=sys.stderr)
 
     print("\nExporting events_data.js…")
     export_events_data()

@@ -56,6 +56,14 @@ def get_db() -> sqlite3.Connection:
     db.row_factory = sqlite3.Row
     return db
 
+def ensure_columns(db: sqlite3.Connection):
+    for col, typ in [("venue", "TEXT"), ("category", "TEXT")]:
+        try:
+            db.execute(f"ALTER TABLE events ADD COLUMN {col} {typ}")
+        except sqlite3.OperationalError:
+            pass
+    db.commit()
+
 def make_sig(title: str, pub: str) -> str:
     raw = (title.strip().lower() + (pub or "")[:10]).encode()
     return hashlib.sha256(raw).hexdigest()[:16]
@@ -80,8 +88,8 @@ def upsert_events(db: sqlite3.Connection, events: list[dict], now: str):
                 INSERT INTO events
                   (sig,title,link,description,pub_date,region,distance,source,
                    tags,price,ev_score,event_date,event_time,date_confidence,
-                   fetched_at,updated_at)
-                VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+                   venue,category,fetched_at,updated_at)
+                VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
             """, (
                 sig,
                 ev["title"][:200],
@@ -94,7 +102,9 @@ def upsert_events(db: sqlite3.Connection, events: list[dict], now: str):
                 ev.get("ev_score", 5),
                 ev.get("event_date"),
                 ev.get("event_time"),
-                90,   # high confidence — Gemini extracted
+                90,
+                ev.get("venue"),
+                json.dumps(ev.get("category") or []),
                 now, now,
             ))
             inserted += 1
@@ -123,6 +133,7 @@ Each event object must have:
   "neighborhood": "neighborhood or area name or null",
   "cost": "Free / $X / $X–$Y / Varies or null",
   "description": "1–2 sentence summary of the event",
+  "category": ["1-2 strings from: music, food, drinks, arts, outdoors, nightlife, comedy, sports, theater, fitness, market, drag, film, weird, family"],
   "is_recurring": true or false
 }"""
 
@@ -254,6 +265,7 @@ def main():
                 "venue":       result.get("venue"),
                 "neighborhood":result.get("neighborhood"),
                 "cost_raw":    result.get("cost"),
+                "category":    result.get("category") or [],
                 "ev_score":    6,
             }
             extracted.append(ev)
@@ -264,6 +276,7 @@ def main():
 
     # ── Write to DB ───────────────────────────────────────────────────────────
     db = get_db()
+    ensure_columns(db)
     inserted = upsert_events(db, extracted, now_iso)
     db.close()
     print(f"  DB: {inserted} new rows inserted")

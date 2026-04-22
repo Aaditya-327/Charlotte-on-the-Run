@@ -7,8 +7,8 @@
 
     <key>ProgramArguments</key>
     <array>
-        <string>/Users/aadi/Documents/Charlotte On The Run/.venv/bin/python</string>
-        <string>/Users/aadi/Documents/Charlotte On The Run/daily_guide.py</string>
+        <string>/bin/bash</string>
+        <string>/Users/aadi/Documents/Charlotte On The Run/7am_job.command</string>
     </array>
 
     <key>WorkingDirectory</key>
