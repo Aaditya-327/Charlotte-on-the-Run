@@ -1248,11 +1248,9 @@ function initStats(){
   document.getElementById('stat-free').textContent  = free;
   document.getElementById('stat-today').textContent = todayCt;
 
-  // last updated: find latest pub_date
-  const dates = EVENTS_DATA.map(e=>e.pub_date).filter(Boolean).sort();
-  const latest = dates[dates.length-1];
-  if(latest){
-    const d = new Date(latest);
+  // last updated: use the actual pipeline run timestamp
+  if(typeof DAILY_GUIDE_DATA !== 'undefined' && DAILY_GUIDE_DATA.generated_at){
+    const d = new Date(DAILY_GUIDE_DATA.generated_at);
     document.getElementById('last-updated').textContent =
       'Updated ' + d.toLocaleDateString('en-US',{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'});
   }

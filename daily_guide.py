@@ -11,7 +11,7 @@ Baseline: Evergreen events (Zero API cost)
 
 import json, os, re, subprocess, sys, time
 from json_repair import repair_json
-from datetime import date, timedelta
+from datetime import date, timedelta, datetime
 from pathlib import Path
 from dotenv import load_dotenv
 from google import genai
@@ -282,7 +282,7 @@ def git_push(today_iso: str):
     try:
         subprocess.run(
             ["git", "add", "docs/daily_guide.json",
-             "docs/daily_guide_data.js", "docs/events_data.js"],
+             "docs/daily_guide_data.js", "docs/events_data.js", "docs/index.html"],
             cwd=repo, check=True, capture_output=True,
         )
         changed = subprocess.run(
@@ -379,7 +379,7 @@ def main():
         })
 
     output = {
-        "generated_at": today.isoformat(),
+        "generated_at": datetime.now().isoformat(),  # full run timestamp
         "today":        today_s,
         "today_dow":    today_dow,
         "tomorrow":     tomorrow_s,
