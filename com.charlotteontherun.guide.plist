@@ -8,11 +8,11 @@
     <key>ProgramArguments</key>
     <array>
         <string>/bin/bash</string>
-        <string>/Users/aadi/Documents/Charlotte On The Run/7am_job.command</string>
+        <string>/Users/aadimacmini/Documents/Charlotte-on-the-Run/7am_job.command</string>
     </array>
 
     <key>WorkingDirectory</key>
-    <string>/Users/aadi/Documents/Charlotte On The Run</string>
+    <string>/Users/aadimacmini/Documents/Charlotte-on-the-Run</string>
 
     <!-- Run at 7:00 AM every day -->
     <key>StartCalendarInterval</key>
@@ -24,10 +24,10 @@
     </dict>
 
     <key>StandardOutPath</key>
-    <string>/Users/aadi/Documents/Charlotte On The Run/logs/daily_guide.log</string>
+    <string>/Users/aadimacmini/Documents/Charlotte-on-the-Run/logs/daily_guide.log</string>
 
     <key>StandardErrorPath</key>
-    <string>/Users/aadi/Documents/Charlotte On The Run/logs/daily_guide_err.log</string>
+    <string>/Users/aadimacmini/Documents/Charlotte-on-the-Run/logs/daily_guide_err.log</string>
 
     <!-- Run if Mac was asleep/off at scheduled time -->
     <key>RunAtLoad</key>

@@ -1,21 +1,41 @@
-Charlotte On The Run — Daily Guide
-Today: Tuesday, April 21, 2026  |  Tomorrow: Wednesday, April 22, 2026
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Charlotte On The Run  ·  Wed Apr 22 00:13 EDT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  Fetching free…
-    ✓ 6096 chars | 21 sources | Charlotte, NC, offers a vibrant and welcoming atmosphere with numerous free activities perfect for a 27-year-old gay man…
-  Fetching under20…
-    ✓ 8881 chars | 0 sources | Charlotte welcomes you! As your specialized local guide, I've curated a comprehensive and budget-friendly itinerary for …
-  Fetching under50…
-    ✓ 11682 chars | 0 sources | As your specialized local city guide for Charlotte, NC, I've curated a highly detailed and comprehensive itinerary desig…
-  Fetching splurge…
-    ✓ 8639 chars | 20 sources | Here is a highly detailed and comprehensive itinerary for a 27-year-old gay man seeking premium activities in Charlotte,…
-Saved → /Users/aadi/Documents/Charlotte On The Run/docs/daily_guide.json
-Saved → /Users/aadi/Documents/Charlotte On The Run/docs/daily_guide_data.js
+▸ [1/2]  COTC RSS  →  events.db
+─────────────────────────────────────────────────────
+Delta run — fetching items since 2026-04-22 00:31 UTC
+Fetching https://www.charlotteonthecheap.com/feed/…
+  100 total entries in feed
+  0 new items since cutoff
+Nothing new. Done.
+
+▸ [2/2]  AI daily guide  →  daily_guide_data.js + events_data.js
+─────────────────────────────────────────────────────
+Charlotte On The Run — Daily Guide (JSON cards)
+Today: Wednesday April 22, 2026  |  Tomorrow: Thursday April 23, 2026
+
+  Fetching Budget Events…
+    ✓ 29 total cards | 0 sources
+  Fetching Premium Events…
+    ⚠ Malformed JSON — attempting repair…
+    ✓ 0 total cards | 0 sources
+  Added 20 staple activities.
+  Removed 1 duplicate activities.
+
+Saved → /Users/aadimacmini/Documents/Charlotte-on-the-Run/docs/daily_guide.json
+Saved → /Users/aadimacmini/Documents/Charlotte-on-the-Run/docs/daily_guide_data.js
+
+Total activity cards: 48
+  📍 Staples      20 cards (today=10, tomorrow=10)
+  🆓 Free         16 cards (today=8, tomorrow=8)
+  💵 Under $20    12 cards (today=6, tomorrow=6)
 
 Exporting events_data.js…
-  events_data.js: 25 events exported
 
 Pushing to GitHub…
   Git: pushed.
 
 Done.
+
+━━━ Done ━━━

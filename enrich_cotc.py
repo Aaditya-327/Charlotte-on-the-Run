@@ -54,6 +54,32 @@ def save_state(state: dict):
 def get_db() -> sqlite3.Connection:
     db = sqlite3.connect(DB_PATH)
     db.row_factory = sqlite3.Row
+    db.execute("PRAGMA journal_mode=WAL")
+    db.executescript("""
+        CREATE TABLE IF NOT EXISTS events (
+            sig               TEXT PRIMARY KEY,
+            title             TEXT NOT NULL,
+            link              TEXT,
+            description       TEXT,
+            pub_date          TEXT,
+            region            TEXT,
+            distance          TEXT,
+            source            TEXT,
+            tags              TEXT,
+            price             TEXT,
+            ev_score          INTEGER,
+            event_date        TEXT,
+            event_time        TEXT,
+            date_confidence   INTEGER DEFAULT 0,
+            venue             TEXT,
+            category          TEXT,
+            fetched_at        TEXT,
+            updated_at        TEXT
+        );
+        CREATE INDEX IF NOT EXISTS idx_pub_date   ON events (pub_date);
+        CREATE INDEX IF NOT EXISTS idx_event_date ON events (event_date);
+    """)
+    db.commit()
     return db
 
 def ensure_columns(db: sqlite3.Connection):
