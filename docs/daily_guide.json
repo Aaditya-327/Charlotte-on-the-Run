@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T13:50:57.663967",
+  "generated_at": "2026-04-27T14:27:27.904204",
   "today": "April 27, 2026",
   "today_dow": "Monday",
   "tomorrow": "April 28, 2026",
@@ -380,7 +380,80 @@
           "day": "tomorrow"
         }
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBHqm_YxFzyTTJAfabQky8BFvQPPnUSxJw1Pkyg_MTqHG3HL-58wYH2Xr4Hp_xlK1OdMoxjejn4ngthSxHOUCIG6CxpuMiKqYpYGz5Mk2EJG7azf7CH7fPwAmnTSWWAK-Tg2VggiA="
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDsLOWkRskc1sr1E9Pi7ahh6VLzlQKvkoDlAYg7GdNiDclg0l9GnElkKpToAwi-0O57rRvl5cOrSv1rz89nn9G7XDROLF_D7xmdrq-lXzJhmBsf7dmOXsaJwIL3b2tSGfZEDNRTocfQdG7-8C2hKRbyfuquXOmG-SqqsI="
+        },
+        {
+          "title": "axios.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGb0SX0sStJBsSuxCF7bd0hhP8ZDQD5xhZzgFUt6Cm-UxLdW2Eku68PYTpUsF-EuikkxJKLa8gweaLVNNppBcO08NmUYgCCXCbeFEQk44hw14eN4kAnQNdDEOzMGgm3zWZ5OVL1or0ObTgPgoJRGqrVoADYHMW_mFEHlmchgTcYojELSoRjr2wYIU5MV1y8WsgkK4GoT8uH3jMAxQ=="
+        },
+        {
+          "title": "timeoutyouth.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEo47_zDaFMTsk2a54ZQ6Zfa81PxZdnuXmiwL8phImmU0yMxkMniKb3vyLxBc-x93bR4cRwYI6-Mp1AnQhfaUZ3NiMsMayGLkhEUIb_xfjOYqHnM6MxVijpZ8Ql"
+        },
+        {
+          "title": "charlottenc.gov",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwczA9fxq5uLXU4Q67Q1iX6qh40CkwCHO-21kHTtB0Xw_o4hXQBfavf7CXeSO-FCVfppbkCjSPGi6TWO3txRtMt0gDlHuWiCQAvUpTy11JHWjXEjzPJ7l3xlGh2e2snYlz_787OdCX"
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGWT9UKTrTcesP9s3-D7R0oBIBavwa68obsynCH79lDWPCUHYBtinePQTr8TasffrU_iFrRvvIn_G7zDcFQzKpi_M6_a4IzvFqruYFhJZlamK5vZBGwMi1JPq-U2TC_csK0g2a_FwybFtMeni9rY2Ws"
+        },
+        {
+          "title": "clgbtcc.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1qOxHAbjmGpftBTIxVDSg-ccq2SyeEodNIKImM1ZadUOUccXIPqfjK-S815aSyxkxgSPX4fFQQLiDtwL3DOj-ugKi1242KVq3ciUURACc6mtUbyZ-KQzG-szBTUTurWm264BHEw84TjDv"
+        },
+        {
+          "title": "eventbrite.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFNbFp7gSbHQIdjO3c9KlvQ_lcdk_SWnAR5dNyXs4grTDD9MtxCvYZNwWAq6y8mhXcd7iD45BMt4nly_G_yPoEf-4Wvasy5GgOINrFVzKIoNiLNxT2UM1G-oGPYLuiPCjRM3PKWo9x926t7EfHNVaBbPmWTaIuhNfyKd0eCgkZijWrfADg="
+        },
+        {
+          "title": "shazam.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEPBe9SxzcD8t4-49LNPP01lMHBrqO_AnkHnvRuoGk33Ev2C0P6fIlIPnoJCxRsjhbuXWBchdadeFr_JkyetTrNJW08OVqgMhYe3xKdLJ6M7bEy_ZMIZcVx_g0lp2ySmQXoz-LMgrfQQ-mZ6zHyTmjU-ZR5qLTgkw1X1MxC"
+        },
+        {
+          "title": "eventbrite.fi",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZ_njHa3aY9618wg7oICkmI-7AOubX2Lk1oyXHNZonGyWy_L6AtfHI0WfUgDrt3zr-2mCGnkD4LyCh23TLSY6nYZfDZmjti_IbFIM3mVN_CMfZbUZza7o_4xi30ZTJtchAC3NqQZaurFfvFiqmhAqTWpc="
+        },
+        {
+          "title": "charlotterunning.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFgK48LLPiUmepnOXFCCm3yi52F5fgnqWDaJi0fNxH_y4bHJUpc8K6vS3XknJlmfHJ7j5cw17tSvd3GTKx1g_VesTLPyQag6Un7UBjreIly6JaxUzKtSfIaNjJGysok2OpBOA=="
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUmWTkfhIYRqlXofVz8wWur8J9WpXaebpsPXzfXx_J9ywWCyr63uANUcmjddsXtK_Mg-08twU_OwN9MGIdsBvB7CfaDUckS_bnZ6EndbEZvtjOAvjjYL_7bwC5W9RK2Pdxc-68KzAHXVAvm068UP8g3AF7CPfGBMT7na32ISw="
+        },
+        {
+          "title": "southendclt.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6uqNkv2iY58KVGf6a3slzS9aXgrnBml_Sp4-dmDaERzjX4_VaT4K81OSGaZXgbRwbQFdnfz_O8Ew69fujqW71YgZ_woSk8qsDcIgxvOxu_qxlvM48aD2xHIckRcopHl5NkhprCLMDlZju3kiesFpelvcC"
+        },
+        {
+          "title": "eventbrite.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQETJwkC3AZx0S_TEhg3Ers182tqe4onUg4ARTkfbiUHnuAuNTfcTaf0hXql1F1MX4WKLABoej5_5l-Hbg7ENSgWuhIblo6XWMqfzSid1xixDE3h-9IT19jubHLQA_IbXmvUlWCJpmrM-1YVWe0FUGj70o_GezAqBLvffE5Jk1YKPanSaW7DQHkrOF6fvLwGD-MaGao2S7S_Br2aXA=="
+        },
+        {
+          "title": "charlotte.events",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGknlbmSFJw1yE6rJsVExgrk_G0PsXt7drtHVx10Kj0Y-XnUMb8JE9r9Ik_sCzCAWu86WIBGwk1rFHmhHFvcMTBZmGSO0tzeaq3scWEU4zFx046t4s="
+        },
+        {
+          "title": "jeffcookrealestate.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFq3q8y0I44hd_Xbf7skhSZUbcu_JRUDCViqfpWbC2-gsRu_3YA3NMBLEObdFrdAYKB-0Im2QegG_WucLO-PS-Ily71zosDfiNO7fuEs_eS7nVGobVG-1klg-0JYE-0AVYgrAno4e1MxIOyP-FQg4RmE-y4l7z8VUwucJbTUED3CT1G"
+        },
+        {
+          "title": "punchup.live",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRqvmUKEub-dwgAWfDJ7luGS9qMAYZoHQD3tfypBDsazcTyLeyOxILrqbf0V-EOfdUnyshRVrtQg1IobmdrN4adVPpP-Z-R62Q9YHefSbkfHGdutf8B_uJgkYosohXbkx6lvv3MLa3osupQUk65LnCssreo7nx"
+        },
+        {
+          "title": "shazam.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE4J8O_rxr0XClyJijnsPmJMLorTYCCxpPF1G_N1epVrCdvhpUBrpY1lc0TUda8ijG1hggx1O9ltUY0mmzuWyzx_DNREA2_PVQwesfn58HmhldA1Y94QYCvuKua1T1VvfllR7H8kgdxXwvkfPxIb7ZTJYgTLD3eCOLpc_Yx"
+        }
+      ],
       "error": null
     },
     {
@@ -389,125 +462,134 @@
       "emoji": "🆓",
       "activities": [
         {
-          "title": "FiA: Females in Action – Free Workout",
-          "description": "Start your Monday strong with a free, empowering workout session. This community-focused fitness group welcomes women of all levels for an invigorating morning.",
+          "title": "Greater Charlotte Book Crawl",
+          "description": "Explore various independent bookstores across Charlotte. Many offer special deals or author readings throughout the day. A great way to discover new literary gems and support local businesses.",
           "day": "today",
           "period": "morning",
-          "location": "Primal Brewery-Huntersville, Huntersville",
+          "location": "Various locations, Charlotte",
           "cost": "Free",
           "tags": [
-            "fitness",
-            "community",
-            "outdoor",
+            "culture",
+            "shopping",
             "queer-friendly"
           ],
           "category": [
-            "fitness"
+            "arts",
+            "market"
           ],
           "tier": "free",
           "rank": 3
         },
         {
           "title": "Freshlist's Monday Market",
-          "description": "Browse and shop for fresh, local Carolina produce and artisanal goods at this vibrant weekly market. It's a great way to support local businesses and stock up on healthy ingredients.",
+          "description": "Shop for fresh, local produce and artisanal goods directly from farmers and makers in the Belmont neighborhood. A vibrant community market perfect for stocking up on healthy eats.",
           "day": "today",
           "period": "afternoon",
-          "location": "Freshlist, Belmont neighborhood",
+          "location": "Belmont neighborhood, Charlotte",
           "cost": "Free",
           "tags": [
             "food",
             "shopping",
-            "outdoor",
-            "community"
+            "outdoor"
           ],
           "category": [
-            "market",
-            "food"
+            "market"
           ],
           "tier": "free",
           "rank": 3
         },
         {
-          "title": "UNC Charlotte STEAM Expo",
-          "description": "Explore the exciting world of Science, Technology, Engineering, Arts, and Mathematics at this engaging expo. Featuring interactive exhibits and demonstrations, it's a great way to learn and be inspired.",
+          "title": "Sexual Health Chat – On Discord (Time Out Youth)",
+          "description": "A virtual, safe space for LGBTQ+ youth and allies to discuss sexual health topics openly and confidentially. Join the Time Out Youth Discord server for this important community conversation.",
           "day": "today",
           "period": "afternoon",
-          "location": "Barnhardt Student Activity Center, UNC Charlotte",
+          "location": "Online (Discord)",
+          "cost": "Free",
+          "tags": [
+            "queer-friendly",
+            "community",
+            "culture"
+          ],
+          "category": [
+            "community"
+          ],
+          "tier": "free",
+          "rank": 4
+        },
+        {
+          "title": "Public Forum / City Council Business Meeting",
+          "description": "Observe local government in action and hear public comments on community issues. An opportunity to engage with Charlotte's civic process.",
+          "day": "today",
+          "period": "evening",
+          "location": "Charlotte-Mecklenburg Government Center, Uptown",
           "cost": "Free",
           "tags": [
             "culture",
-            "art",
-            "education",
             "community"
           ],
           "category": [
-            "arts",
-            "culture"
+            "community"
+          ],
+          "tier": "free",
+          "rank": 2
+        },
+        {
+          "title": "Bluegrass Jam Circle",
+          "description": "Join or listen to local musicians at Petty Thieves Brewing Co. for a lively bluegrass jam session. A relaxed, community-focused evening with great craft beer.",
+          "day": "today",
+          "period": "evening",
+          "location": "Petty Thieves Brewing Co., NoDa",
+          "cost": "Free",
+          "tags": [
+            "music",
+            "drinks",
+            "queer-friendly"
+          ],
+          "category": [
+            "music"
           ],
           "tier": "free",
           "rank": 3
         },
         {
-          "title": "Gluten Freedom Fest",
-          "description": "Enjoy a variety of gluten-free food and drink options at this special festival. It's a perfect opportunity to discover new favorites and enjoy a worry-free culinary experience.",
+          "title": "MOR + Trivia Night",
+          "description": "Test your general knowledge at Olde Mecklenburg Brewery's popular trivia night. Gather your friends for a fun, competitive evening with local brews.",
           "day": "today",
-          "period": "afternoon",
-          "location": "Monday Night Garden Brewing Co., South End",
+          "period": "night",
+          "location": "Olde Mecklenburg Brewery, LoSo",
           "cost": "Free",
           "tags": [
-            "food",
             "drinks",
-            "community"
+            "community",
+            "queer-friendly"
           ],
           "category": [
-            "food",
             "drinks"
           ],
           "tier": "free",
-          "rank": 4
+          "rank": 3
         },
         {
-          "title": "Try LED Saber Combat and Choreography",
-          "description": "Unleash your inner Jedi or Sith with a free introductory session to LED saber combat and choreography. Learn exciting moves and engage in a unique, active experience.",
-          "day": "today",
-          "period": "afternoon",
-          "location": "Independence Park, Elizabeth",
-          "cost": "Free",
-          "tags": [
-            "fitness",
-            "weird",
-            "community",
-            "sports"
-          ],
-          "category": [
-            "fitness",
-            "weird"
-          ],
-          "tier": "free",
-          "rank": 4
-        },
-        {
-          "title": "Bluegrass Jam Circle",
-          "description": "Join the Charlotte Folk Society for a lively bluegrass jam session. Bring your instrument or simply enjoy the authentic sounds of local musicians in a relaxed brewery setting.",
+          "title": "Gather and Grow - Virtual Support Circle for Queer Black Women",
+          "description": "A virtual space for queer Black women in high-pressure careers to connect, reflect, and find support. Offers guided discussion and grounding practices.",
           "day": "today",
           "period": "evening",
-          "location": "Petty Thieves Brewing Co., North End",
+          "location": "Online (Virtual)",
           "cost": "Free",
           "tags": [
-            "music",
-            "drinks",
-            "community"
+            "queer-friendly",
+            "community",
+            "culture"
           ],
           "category": [
-            "music",
-            "drinks"
+            "community"
           ],
           "tier": "free",
-          "rank": 4
+          "rank": 5
         },
         {
           "title": "Davidson's Concerts on the Green",
-          "description": "Enjoy an evening of classical and jazz music with the Davidson College Symphony Orchestra and Jazz Ensemble. This outdoor concert offers a sophisticated yet relaxed atmosphere.",
+          "description": "Enjoy a free outdoor concert featuring the Davidson College Symphony Orchestra and Jazz Ensemble. A perfect evening for classical and jazz music under the stars.",
           "day": "today",
           "period": "evening",
           "location": "Davidson Village Green, Davidson",
@@ -524,30 +606,11 @@
           "rank": 4
         },
         {
-          "title": "MOR + Trivia at Olde Mecklenburg Brewery",
-          "description": "Test your knowledge at this popular trivia night hosted by Olde Mecklenburg Brewery. Gather your friends, enjoy some local brews, and compete for bragging rights and prizes.",
-          "day": "today",
-          "period": "night",
-          "location": "Olde Mecklenburg Brewery, LoSo",
-          "cost": "Free",
-          "tags": [
-            "drinks",
-            "nightlife",
-            "community"
-          ],
-          "category": [
-            "drinks",
-            "comedy"
-          ],
-          "tier": "free",
-          "rank": 3
-        },
-        {
-          "title": "The Track Project",
-          "description": "Join the Charlotte Running Company for an early morning track workout designed for all levels. Improve your speed and endurance in a supportive group environment.",
+          "title": "The Track Project (Charlotte Running Company)",
+          "description": "Start your morning with a free track workout session at the Charlotte Running Company Promenade. All paces and fitness levels are welcome to join for a guided run.",
           "day": "tomorrow",
           "period": "morning",
-          "location": "Charlotte Running Company Promenade, South Charlotte",
+          "location": "Charlotte Running Company Promenade, South End",
           "cost": "Free",
           "tags": [
             "fitness",
@@ -558,64 +621,30 @@
             "fitness"
           ],
           "tier": "free",
-          "rank": 3
+          "rank": 4
         },
         {
-          "title": "Greater Charlotte Book Crawl",
-          "description": "Embark on a literary adventure across Charlotte by visiting various independent bookstores participating in the Book Crawl. Discover new reads and support local businesses.",
+          "title": "Queerly Beloved (Time Out Youth)",
+          "description": "A drop-in program at Time Out Youth focused on self-care and wellness activities like games and crafts for LGBTQ+ youth. A supportive and fun environment.",
           "day": "tomorrow",
           "period": "afternoon",
-          "location": "Various locations, Charlotte",
+          "location": "Time Out Youth, Plaza Midwood",
           "cost": "Free",
           "tags": [
-            "culture",
-            "shopping",
-            "community"
+            "queer-friendly",
+            "community",
+            "art"
           ],
           "category": [
-            "culture",
-            "market"
+            "community",
+            "arts"
           ],
           "tier": "free",
-          "rank": 3
-        },
-        {
-          "title": "Free Document Shredding",
-          "description": "Take advantage of free document shredding services at Office Depot/Office Max locations. Safely dispose of sensitive papers and protect your personal information.",
-          "day": "tomorrow",
-          "period": "afternoon",
-          "location": "Office Depot / Office Max, Various locations",
-          "cost": "Free",
-          "tags": [
-            "community"
-          ],
-          "category": [
-            "community"
-          ],
-          "tier": "free",
-          "rank": 2
-        },
-        {
-          "title": "North Carolina Science Festival",
-          "description": "Engage with science and technology through various free events and activities happening across Charlotte as part of the statewide North Carolina Science Festival. Check local listings for specific events.",
-          "day": "tomorrow",
-          "period": "afternoon",
-          "location": "Various locations, Charlotte",
-          "cost": "Free",
-          "tags": [
-            "culture",
-            "education",
-            "community"
-          ],
-          "category": [
-            "culture"
-          ],
-          "tier": "free",
-          "rank": 3
+          "rank": 5
         },
         {
           "title": "Mad Miles Run Club",
-          "description": "Join the energetic Mad Miles Run Club for a free group run through Camp North End. All paces are welcome, followed by a chance to socialize and connect with fellow runners.",
+          "description": "Join one of Charlotte's most popular free run clubs at Camp North End. A high-energy, inclusive group run followed by community socializing and good vibes.",
           "day": "tomorrow",
           "period": "evening",
           "location": "Camp North End, North End",
@@ -630,67 +659,156 @@
             "fitness"
           ],
           "tier": "free",
-          "rank": 4
+          "rank": 5
         },
         {
-          "title": "Bluegrass Jam Circle Hosted by Charlotte Folk Society",
-          "description": "Enjoy another evening of authentic bluegrass music with the Charlotte Folk Society. This open jam welcomes musicians and listeners alike for a relaxed and engaging experience.",
-          "day": "tomorrow",
-          "period": "evening",
-          "location": "Petty Thieves Brewing Co., North End",
-          "cost": "Free",
-          "tags": [
-            "music",
-            "drinks",
-            "community"
-          ],
-          "category": [
-            "music",
-            "drinks"
-          ],
-          "tier": "free",
-          "rank": 4
-        },
-        {
-          "title": "Mindless Minutia Trivia at Rhino Market SouthPark",
-          "description": "Gather your team and put your general knowledge to the test at Mindless Minutia Trivia. Enjoy a fun and competitive evening with friends over food and drinks.",
+          "title": "Mindless Minutia Trivia",
+          "description": "Gather your team for a free trivia night at Rhino Market SouthPark. Enjoy craft beers and compete for prizes in a lively atmosphere.",
           "day": "tomorrow",
           "period": "evening",
           "location": "Rhino Market SouthPark, SouthPark",
           "cost": "Free",
           "tags": [
             "drinks",
-            "nightlife",
-            "community"
+            "community",
+            "queer-friendly"
           ],
           "category": [
-            "drinks",
-            "comedy"
+            "drinks"
           ],
           "tier": "free",
           "rank": 3
         },
         {
-          "title": "Weekly Trivia at Hi-Wire Brewing",
-          "description": "Challenge your brain with a lively trivia night at Hi-Wire Brewing. Enjoy craft beers while competing for prizes in a friendly atmosphere.",
+          "title": "Music Bingo at Primal Brewery",
+          "description": "Test your musical knowledge and luck at Music Bingo in Huntersville. It's free to play and offers a fun, interactive evening with great beer and a chance to win prizes.",
           "day": "tomorrow",
-          "period": "night",
-          "location": "Hi-Wire Brewing, South End",
+          "period": "evening",
+          "location": "Primal Brewery, Huntersville",
           "cost": "Free",
           "tags": [
+            "music",
             "drinks",
-            "nightlife",
             "community"
           ],
           "category": [
             "drinks",
-            "comedy"
+            "music"
+          ],
+          "tier": "free",
+          "rank": 3
+        },
+        {
+          "title": "Pub Trivia at Petty Thieves Brewing Co.",
+          "description": "Enjoy a classic pub trivia experience with friends at Petty Thieves Brewing Co. Free to play with a chance to win brewery gift cards and bragging rights.",
+          "day": "tomorrow",
+          "period": "night",
+          "location": "Petty Thieves Brewing Co., NoDa",
+          "cost": "Free",
+          "tags": [
+            "drinks",
+            "community",
+            "queer-friendly"
+          ],
+          "category": [
+            "drinks"
+          ],
+          "tier": "free",
+          "rank": 3
+        },
+        {
+          "title": "Tuesday Trivia at Wooden Robot Brewery",
+          "description": "Head to Wooden Robot Brewery in South End for their weekly trivia night. Free to participate, with a rotating selection of craft beers and a fun crowd.",
+          "day": "tomorrow",
+          "period": "night",
+          "location": "Wooden Robot Brewery, South End",
+          "cost": "Free",
+          "tags": [
+            "drinks",
+            "community",
+            "queer-friendly"
+          ],
+          "category": [
+            "drinks"
           ],
           "tier": "free",
           "rank": 3
         }
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBHqm_YxFzyTTJAfabQky8BFvQPPnUSxJw1Pkyg_MTqHG3HL-58wYH2Xr4Hp_xlK1OdMoxjejn4ngthSxHOUCIG6CxpuMiKqYpYGz5Mk2EJG7azf7CH7fPwAmnTSWWAK-Tg2VggiA="
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDsLOWkRskc1sr1E9Pi7ahh6VLzlQKvkoDlAYg7GdNiDclg0l9GnElkKpToAwi-0O57rRvl5cOrSv1rz89nn9G7XDROLF_D7xmdrq-lXzJhmBsf7dmOXsaJwIL3b2tSGfZEDNRTocfQdG7-8C2hKRbyfuquXOmG-SqqsI="
+        },
+        {
+          "title": "axios.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGb0SX0sStJBsSuxCF7bd0hhP8ZDQD5xhZzgFUt6Cm-UxLdW2Eku68PYTpUsF-EuikkxJKLa8gweaLVNNppBcO08NmUYgCCXCbeFEQk44hw14eN4kAnQNdDEOzMGgm3zWZ5OVL1or0ObTgPgoJRGqrVoADYHMW_mFEHlmchgTcYojELSoRjr2wYIU5MV1y8WsgkK4GoT8uH3jMAxQ=="
+        },
+        {
+          "title": "timeoutyouth.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEo47_zDaFMTsk2a54ZQ6Zfa81PxZdnuXmiwL8phImmU0yMxkMniKb3vyLxBc-x93bR4cRwYI6-Mp1AnQhfaUZ3NiMsMayGLkhEUIb_xfjOYqHnM6MxVijpZ8Ql"
+        },
+        {
+          "title": "charlottenc.gov",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwczA9fxq5uLXU4Q67Q1iX6qh40CkwCHO-21kHTtB0Xw_o4hXQBfavf7CXeSO-FCVfppbkCjSPGi6TWO3txRtMt0gDlHuWiCQAvUpTy11JHWjXEjzPJ7l3xlGh2e2snYlz_787OdCX"
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGWT9UKTrTcesP9s3-D7R0oBIBavwa68obsynCH79lDWPCUHYBtinePQTr8TasffrU_iFrRvvIn_G7zDcFQzKpi_M6_a4IzvFqruYFhJZlamK5vZBGwMi1JPq-U2TC_csK0g2a_FwybFtMeni9rY2Ws"
+        },
+        {
+          "title": "clgbtcc.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1qOxHAbjmGpftBTIxVDSg-ccq2SyeEodNIKImM1ZadUOUccXIPqfjK-S815aSyxkxgSPX4fFQQLiDtwL3DOj-ugKi1242KVq3ciUURACc6mtUbyZ-KQzG-szBTUTurWm264BHEw84TjDv"
+        },
+        {
+          "title": "eventbrite.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFNbFp7gSbHQIdjO3c9KlvQ_lcdk_SWnAR5dNyXs4grTDD9MtxCvYZNwWAq6y8mhXcd7iD45BMt4nly_G_yPoEf-4Wvasy5GgOINrFVzKIoNiLNxT2UM1G-oGPYLuiPCjRM3PKWo9x926t7EfHNVaBbPmWTaIuhNfyKd0eCgkZijWrfADg="
+        },
+        {
+          "title": "shazam.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEPBe9SxzcD8t4-49LNPP01lMHBrqO_AnkHnvRuoGk33Ev2C0P6fIlIPnoJCxRsjhbuXWBchdadeFr_JkyetTrNJW08OVqgMhYe3xKdLJ6M7bEy_ZMIZcVx_g0lp2ySmQXoz-LMgrfQQ-mZ6zHyTmjU-ZR5qLTgkw1X1MxC"
+        },
+        {
+          "title": "eventbrite.fi",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZ_njHa3aY9618wg7oICkmI-7AOubX2Lk1oyXHNZonGyWy_L6AtfHI0WfUgDrt3zr-2mCGnkD4LyCh23TLSY6nYZfDZmjti_IbFIM3mVN_CMfZbUZza7o_4xi30ZTJtchAC3NqQZaurFfvFiqmhAqTWpc="
+        },
+        {
+          "title": "charlotterunning.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFgK48LLPiUmepnOXFCCm3yi52F5fgnqWDaJi0fNxH_y4bHJUpc8K6vS3XknJlmfHJ7j5cw17tSvd3GTKx1g_VesTLPyQag6Un7UBjreIly6JaxUzKtSfIaNjJGysok2OpBOA=="
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUmWTkfhIYRqlXofVz8wWur8J9WpXaebpsPXzfXx_J9ywWCyr63uANUcmjddsXtK_Mg-08twU_OwN9MGIdsBvB7CfaDUckS_bnZ6EndbEZvtjOAvjjYL_7bwC5W9RK2Pdxc-68KzAHXVAvm068UP8g3AF7CPfGBMT7na32ISw="
+        },
+        {
+          "title": "southendclt.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6uqNkv2iY58KVGf6a3slzS9aXgrnBml_Sp4-dmDaERzjX4_VaT4K81OSGaZXgbRwbQFdnfz_O8Ew69fujqW71YgZ_woSk8qsDcIgxvOxu_qxlvM48aD2xHIckRcopHl5NkhprCLMDlZju3kiesFpelvcC"
+        },
+        {
+          "title": "eventbrite.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQETJwkC3AZx0S_TEhg3Ers182tqe4onUg4ARTkfbiUHnuAuNTfcTaf0hXql1F1MX4WKLABoej5_5l-Hbg7ENSgWuhIblo6XWMqfzSid1xixDE3h-9IT19jubHLQA_IbXmvUlWCJpmrM-1YVWe0FUGj70o_GezAqBLvffE5Jk1YKPanSaW7DQHkrOF6fvLwGD-MaGao2S7S_Br2aXA=="
+        },
+        {
+          "title": "charlotte.events",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGknlbmSFJw1yE6rJsVExgrk_G0PsXt7drtHVx10Kj0Y-XnUMb8JE9r9Ik_sCzCAWu86WIBGwk1rFHmhHFvcMTBZmGSO0tzeaq3scWEU4zFx046t4s="
+        },
+        {
+          "title": "jeffcookrealestate.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFq3q8y0I44hd_Xbf7skhSZUbcu_JRUDCViqfpWbC2-gsRu_3YA3NMBLEObdFrdAYKB-0Im2QegG_WucLO-PS-Ily71zosDfiNO7fuEs_eS7nVGobVG-1klg-0JYE-0AVYgrAno4e1MxIOyP-FQg4RmE-y4l7z8VUwucJbTUED3CT1G"
+        },
+        {
+          "title": "punchup.live",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRqvmUKEub-dwgAWfDJ7luGS9qMAYZoHQD3tfypBDsazcTyLeyOxILrqbf0V-EOfdUnyshRVrtQg1IobmdrN4adVPpP-Z-R62Q9YHefSbkfHGdutf8B_uJgkYosohXbkx6lvv3MLa3osupQUk65LnCssreo7nx"
+        },
+        {
+          "title": "shazam.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE4J8O_rxr0XClyJijnsPmJMLorTYCCxpPF1G_N1epVrCdvhpUBrpY1lc0TUda8ijG1hggx1O9ltUY0mmzuWyzx_DNREA2_PVQwesfn58HmhldA1Y94QYCvuKua1T1VvfllR7H8kgdxXwvkfPxIb7ZTJYgTLD3eCOLpc_Yx"
+        }
+      ],
       "error": null
     },
     {
@@ -700,15 +818,14 @@
       "activities": [
         {
           "title": "CLT Taco Week",
-          "description": "Indulge in delicious tacos from various participating restaurants across Charlotte, with special deals at $4 per taco. It's a fantastic opportunity to explore the city's diverse culinary scene.",
+          "description": "Indulge in specially priced tacos at various participating restaurants across Charlotte. Each location offers unique creations for just $4 a taco.",
           "day": "today",
           "period": "afternoon",
           "location": "Various locations, Charlotte",
           "cost": "$4 per taco",
           "tags": [
             "food",
-            "drinks",
-            "culture"
+            "drinks"
           ],
           "category": [
             "food"
@@ -718,9 +835,9 @@
         },
         {
           "title": "Charlotte Latino Film Festival",
-          "description": "Immerse yourself in diverse stories and cultures at the Charlotte Latino Film Festival. Catch compelling screenings that showcase the richness of Latino cinema.",
+          "description": "Catch a screening at the Independent Picture House as part of the ongoing Charlotte Latino Film Festival. Experience diverse storytelling and cinematic art.",
           "day": "today",
-          "period": "afternoon",
+          "period": "evening",
           "location": "Independent Picture House, NoDa",
           "cost": "$15.66",
           "tags": [
@@ -729,194 +846,54 @@
             "art"
           ],
           "category": [
-            "film",
-            "arts"
+            "film"
           ],
           "tier": "under20",
           "rank": 4
         },
         {
-          "title": "Find Your Muse Open MIC featuring Alejandro Meola!",
-          "description": "Experience an evening of raw talent and live music at The Evening Muse's open mic night, featuring a special performance by Alejandro Meola. Discover emerging artists and enjoy a vibrant atmosphere.",
+          "title": "The Bill Hanna Legacy Jazz Session",
+          "description": "Enjoy an evening of live jazz music at Petra's, a beloved local venue. This session honors the legacy of Bill Hanna with talented local musicians.",
           "day": "today",
           "period": "night",
-          "location": "The Evening Muse, NoDa",
-          "cost": "$10-$15 (estimated)",
+          "location": "Petra's, Plaza Midwood",
+          "cost": "$9.98",
           "tags": [
             "music",
+            "drinks",
             "nightlife",
-            "art"
-          ],
-          "category": [
-            "music",
-            "arts"
-          ],
-          "tier": "under20",
-          "rank": 4
-        },
-        {
-          "title": "Youth Fast Feet 5K & Spring Party",
-          "description": "Cheer on young runners at the Youth Fast Feet 5K, followed by a festive Spring Party with free pizza. A great community event to support youth fitness and enjoy a lively atmosphere.",
-          "day": "tomorrow",
-          "period": "afternoon",
-          "location": "Herrons Ferry Road, Rock Hill, SC",
-          "cost": "$10-$20 (estimated f",
-          "tags": [
-            "fitness",
-            "community",
-            "food",
-            "sports"
-          ],
-          "category": [
-            "fitness",
-            "sports"
-          ],
-          "tier": "under20",
-          "rank": 3
-        },
-        {
-          "title": "Charlotte Knights vs. Gwinnett Stripers",
-          "description": "Catch America's favorite pastime as the Charlotte Knights take on the Gwinnett Stripers in a minor league baseball game. Enjoy the excitement of live baseball at Truist Field.",
-          "day": "tomorrow",
-          "period": "evening",
-          "location": "Truist Field, Uptown",
-          "cost": "$10-$20",
-          "tags": [
-            "sports",
-            "outdoor",
-            "food",
-            "drinks"
-          ],
-          "category": [
-            "sports"
-          ],
-          "tier": "under20",
-          "rank": 4
-        },
-        {
-          "title": "Howie Day Concert",
-          "description": "Experience an intimate performance by singer-songwriter Howie Day at The Evening Muse. Known for his heartfelt lyrics and captivating live shows, it's a perfect night for music lovers.",
-          "day": "tomorrow",
-          "period": "night",
-          "location": "The Evening Muse, NoDa",
-          "cost": "$15-$20 (estimated)",
-          "tags": [
-            "music",
-            "nightlife",
-            "art"
+            "queer-friendly"
           ],
           "category": [
             "music"
           ],
           "tier": "under20",
-          "rank": 5
+          "rank": 4
         },
         {
-          "title": "Gianmarco Soresi at The Comedy Zone",
-          "description": "Laugh out loud with stand-up comedian Gianmarco Soresi, known for his sharp observations and energetic stage presence. Enjoy a night of top-tier comedy at Charlotte's premier comedy club.",
-          "day": "tomorrow",
+          "title": "Alejandro Meola Live at The Evening Muse",
+          "description": "Experience an intimate performance by Alejandro Meola, a rising artist, at the iconic Evening Muse. A great chance to discover new music in a cozy setting.",
+          "day": "today",
           "period": "night",
-          "location": "The Comedy Zone - Charlotte, Music Factory",
-          "cost": "$15-$20",
+          "location": "The Evening Muse, NoDa",
+          "cost": "$15",
           "tags": [
-            "comedy",
-            "nightlife"
-          ],
-          "category": [
-            "comedy"
-          ],
-          "tier": "under20",
-          "rank": 5
-        },
-        {
-          "title": "Primal Brewery Dart League",
-          "description": "Join the weekly dart league at Primal Brewery for a fun and competitive evening. Enjoy craft beers while showcasing your dart skills in a friendly atmosphere.",
-          "day": "tomorrow",
-          "period": "night",
-          "location": "Primal Brewery-Huntersville, Huntersville",
-          "cost": "$5-$10 (estimated fo",
-          "tags": [
-            "drinks",
-            "sports",
-            "community"
-          ],
-          "category": [
-            "drinks",
-            "sports"
-          ],
-          "tier": "under20",
-          "rank": 3
-        },
-        {
-          "title": "$5 Flagship Tuesdays at Hi-Wire Brewing",
-          "description": "Enjoy special pricing on Hi-Wire Brewing's flagship beers all day long. It's a great opportunity to sample their core offerings at a discounted rate.",
-          "day": "tomorrow",
-          "period": "afternoon",
-          "location": "Hi-Wire Brewing, South End",
-          "cost": "$5",
-          "tags": [
+            "music",
+            "nightlife",
             "drinks"
           ],
           "category": [
-            "drinks"
+            "music"
           ],
           "tier": "under20",
           "rank": 3
-        }
-      ],
-      "sources": [],
-      "error": null
-    },
-    {
-      "id": "under50",
-      "label": "Under $50",
-      "emoji": "🍸",
-      "activities": [
-        {
-          "title": "Queer Yoga & Brunch at NoDa Yoga",
-          "description": "Start your week with an inclusive Vinyasa flow class followed by a light, healthy brunch and social mixer. A great way to connect with the queer community and set positive intentions for the week.",
-          "day": "today",
-          "period": "morning",
-          "location": "NoDa Yoga, NoDa",
-          "cost": "$25",
-          "tags": [
-            "fitness",
-            "food",
-            "queer-friendly",
-            "community"
-          ],
-          "category": [
-            "fitness",
-            "food"
-          ],
-          "tier": "under50",
-          "rank": 3
         },
         {
-          "title": "Monday Night Trivia at The Thirsty Beaver Saloon",
-          "description": "Test your knowledge at one of Charlotte's most beloved dive bars. Expect a lively crowd, challenging questions, and a chance to win bar tabs. Always a good time for a casual Monday night out.",
-          "day": "today",
-          "period": "evening",
-          "location": "The Thirsty Beaver Saloon, Plaza Midwood",
-          "cost": "Free",
-          "tags": [
-            "drinks",
-            "community",
-            "nightlife"
-          ],
-          "category": [
-            "drinks",
-            "comedy"
-          ],
-          "tier": "under50",
-          "rank": 3
-        },
-        {
-          "title": "Open Mic Comedy Night at The Comedy Zone",
-          "description": "Catch rising local talent and maybe even a surprise drop-in from a touring comedian. It's a fantastic opportunity to see raw comedic potential and enjoy an affordable night of laughs.",
+          "title": "Open Mic Comedy Night",
+          "description": "Head to The Comedy Zone for an open mic night. See emerging talent and seasoned comics try out new material. Expect raw, unfiltered laughs and a lively atmosphere.",
           "day": "today",
           "period": "night",
-          "location": "The Comedy Zone, AvidXchange Music Factory",
+          "location": "The Comedy Zone, Uptown",
           "cost": "$10",
           "tags": [
             "comedy",
@@ -926,115 +903,71 @@
           "category": [
             "comedy"
           ],
-          "tier": "under50",
-          "rank": 4
+          "tier": "under20",
+          "rank": 3
         },
         {
-          "title": "Charlotte FC vs. Inter Miami CF",
-          "description": "Experience the electric atmosphere of a Charlotte FC home game as they take on Inter Miami. Grab your gear and cheer on the Crown in what's sure to be a high-energy match.",
+          "title": "Themed Movie Night at Visulite Theatre",
+          "description": "Enjoy a classic or cult film screening with a specific theme at the historic Visulite Theatre. A unique cinematic experience with a nostalgic vibe perfect for film buffs.",
           "day": "today",
+          "period": "night",
+          "location": "Visulite Theatre, Elizabeth",
+          "cost": "$12",
+          "tags": [
+            "film",
+            "culture",
+            "nightlife"
+          ],
+          "category": [
+            "film"
+          ],
+          "tier": "under20",
+          "rank": 3
+        },
+        {
+          "title": "Charlotte Knights vs. Gwinnett Stripers Baseball Game",
+          "description": "Catch a minor league baseball game at Truist Field. Enjoy America's favorite pastime with affordable tickets, classic ballpark food, and a lively atmosphere.",
+          "day": "tomorrow",
           "period": "evening",
-          "location": "Bank of America Stadium, Uptown",
-          "cost": "$45–$150",
+          "location": "Truist Field, Uptown",
+          "cost": "$10–$20",
           "tags": [
             "sports",
             "outdoor",
-            "community"
+            "food",
+            "drinks"
           ],
           "category": [
             "sports"
           ],
-          "tier": "under50",
-          "rank": 5
-        },
-        {
-          "title": "Drag Bingo at Billy Sunday",
-          "description": "Join some of Charlotte's fiercest queens for a night of bingo, laughs, and fabulous performances. Expect sassy calls, great cocktails, and a chance to win fun prizes.",
-          "day": "today",
-          "period": "night",
-          "location": "Billy Sunday, Optimist Hall",
-          "cost": "$15 (for bingo cards",
-          "tags": [
-            "queer-friendly",
-            "nightlife",
-            "drinks",
-            "comedy"
-          ],
-          "category": [
-            "drag",
-            "drinks",
-            "weird"
-          ],
-          "tier": "under50",
+          "tier": "under20",
           "rank": 4
         },
         {
-          "title": "River Jam at USNWC",
-          "description": "Enjoy live music by the water at the U.S. National Whitewater Center. Bring a blanket or chair, grab some food and drinks, and relax to the sounds of a regional band.",
-          "day": "today",
-          "period": "evening",
-          "location": "USNWC, West Charlotte",
-          "cost": "Free (parking $12)",
-          "tags": [
-            "music",
-            "outdoor",
-            "drinks",
-            "food"
-          ],
-          "category": [
-            "music",
-            "outdoors"
-          ],
-          "tier": "under50",
-          "rank": 4
-        },
-        {
-          "title": "Morning Run Club with Legion Brewing",
-          "description": "Join the weekly run club starting and ending at Legion Brewing. Enjoy a scenic 3-5 mile route through Plaza Midwood, followed by discounted beers and good company.",
+          "title": "Gianmarco Soresi Live Comedy",
+          "description": "See acclaimed comedian Gianmarco Soresi perform his stand-up set at The Comedy Zone. A chance to catch a national touring comic in an intimate setting for a night of laughs.",
           "day": "tomorrow",
-          "period": "morning",
-          "location": "Legion Brewing, Plaza Midwood",
-          "cost": "Free",
+          "period": "night",
+          "location": "The Comedy Zone, Uptown",
+          "cost": "$15–$20",
           "tags": [
-            "fitness",
-            "drinks",
-            "community",
-            "outdoor"
-          ],
-          "category": [
-            "fitness",
+            "comedy",
+            "nightlife",
             "drinks"
           ],
-          "tier": "under50",
-          "rank": 3
-        },
-        {
-          "title": "Lunch & Learn: 'Queer History of Charlotte'",
-          "description": "Attend a fascinating talk on the hidden queer history of Charlotte, hosted by a local historian. A light lunch will be provided, offering a chance to learn and connect.",
-          "day": "tomorrow",
-          "period": "afternoon",
-          "location": "Charlotte Museum of History, East Charlotte",
-          "cost": "$15",
-          "tags": [
-            "culture",
-            "food",
-            "queer-friendly",
-            "community"
-          ],
           "category": [
-            "culture",
-            "food"
+            "comedy"
           ],
-          "tier": "under50",
+          "tier": "under20",
           "rank": 4
         },
         {
-          "title": "Tuesday Night Live Music at The Evening Muse",
-          "description": "Discover emerging local and regional artists at The Evening Muse, a beloved intimate music venue. Expect a diverse lineup and a cozy atmosphere.",
+          "title": "Howie Day Concert at The Evening Muse",
+          "description": "Enjoy an evening with singer-songwriter Howie Day, known for his acoustic pop-rock hits. A cozy venue for a memorable live music experience in NoDa.",
           "day": "tomorrow",
-          "period": "evening",
+          "period": "night",
           "location": "The Evening Muse, NoDa",
-          "cost": "$10–$20",
+          "cost": "$18–$20",
           "tags": [
             "music",
             "nightlife",
@@ -1043,68 +976,448 @@
           "category": [
             "music"
           ],
-          "tier": "under50",
+          "tier": "under20",
           "rank": 4
         },
         {
-          "title": "Drag Race Viewing Party at Bar Argon",
-          "description": "Cheer on your favorite queens at Charlotte's premier gay bar during their weekly RuPaul's Drag Race viewing party. Enjoy drink specials and a lively crowd.",
+          "title": "Drag Bingo at Bar Argon",
+          "description": "Join a lively drag bingo night at Bar Argon, a popular queer-friendly establishment. Expect fabulous hosts, hilarious commentary, and fun prizes.",
           "day": "tomorrow",
           "period": "night",
           "location": "Bar Argon, South End",
-          "cost": "Free",
+          "cost": "$5–$10 (to play)",
           "tags": [
-            "queer-friendly",
+            "drag",
             "nightlife",
-            "drinks",
-            "social"
+            "queer-friendly",
+            "drinks"
           ],
           "category": [
             "drag",
             "drinks"
           ],
-          "tier": "under50",
+          "tier": "under20",
           "rank": 4
         },
         {
-          "title": "Pints & Poses Yoga at Sycamore Brewing",
-          "description": "Unwind with an all-levels yoga class in the taproom, followed by a refreshing pint of Sycamore's craft beer. A perfect blend of relaxation and reward.",
+          "title": "Board Game Night at The Rook & Pawn",
+          "description": "Spend your evening at Charlotte's premier board game cafe. Pay a small fee for unlimited access to a vast library of games, plus food and drink options available for purchase.",
+          "day": "tomorrow",
+          "period": "evening",
+          "location": "The Rook & Pawn, Plaza Midwood",
+          "cost": "$8",
+          "tags": [
+            "community",
+            "drinks",
+            "food"
+          ],
+          "category": [
+            "drinks"
+          ],
+          "tier": "under20",
+          "rank": 3
+        },
+        {
+          "title": "Craft Beer Tasting/Tap Takeover",
+          "description": "Discover new and unique brews at Sycamore Brewing's special tasting event or tap takeover. Enjoy a flight or special pours and learn about different craft beers.",
           "day": "tomorrow",
           "period": "evening",
           "location": "Sycamore Brewing, South End",
-          "cost": "$15",
+          "cost": "$10–$15",
+          "tags": [
+            "drinks",
+            "food",
+            "community"
+          ],
+          "category": [
+            "drinks"
+          ],
+          "tier": "under20",
+          "rank": 3
+        }
+      ],
+      "sources": [
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBHqm_YxFzyTTJAfabQky8BFvQPPnUSxJw1Pkyg_MTqHG3HL-58wYH2Xr4Hp_xlK1OdMoxjejn4ngthSxHOUCIG6CxpuMiKqYpYGz5Mk2EJG7azf7CH7fPwAmnTSWWAK-Tg2VggiA="
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDsLOWkRskc1sr1E9Pi7ahh6VLzlQKvkoDlAYg7GdNiDclg0l9GnElkKpToAwi-0O57rRvl5cOrSv1rz89nn9G7XDROLF_D7xmdrq-lXzJhmBsf7dmOXsaJwIL3b2tSGfZEDNRTocfQdG7-8C2hKRbyfuquXOmG-SqqsI="
+        },
+        {
+          "title": "axios.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGb0SX0sStJBsSuxCF7bd0hhP8ZDQD5xhZzgFUt6Cm-UxLdW2Eku68PYTpUsF-EuikkxJKLa8gweaLVNNppBcO08NmUYgCCXCbeFEQk44hw14eN4kAnQNdDEOzMGgm3zWZ5OVL1or0ObTgPgoJRGqrVoADYHMW_mFEHlmchgTcYojELSoRjr2wYIU5MV1y8WsgkK4GoT8uH3jMAxQ=="
+        },
+        {
+          "title": "timeoutyouth.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEo47_zDaFMTsk2a54ZQ6Zfa81PxZdnuXmiwL8phImmU0yMxkMniKb3vyLxBc-x93bR4cRwYI6-Mp1AnQhfaUZ3NiMsMayGLkhEUIb_xfjOYqHnM6MxVijpZ8Ql"
+        },
+        {
+          "title": "charlottenc.gov",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwczA9fxq5uLXU4Q67Q1iX6qh40CkwCHO-21kHTtB0Xw_o4hXQBfavf7CXeSO-FCVfppbkCjSPGi6TWO3txRtMt0gDlHuWiCQAvUpTy11JHWjXEjzPJ7l3xlGh2e2snYlz_787OdCX"
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGWT9UKTrTcesP9s3-D7R0oBIBavwa68obsynCH79lDWPCUHYBtinePQTr8TasffrU_iFrRvvIn_G7zDcFQzKpi_M6_a4IzvFqruYFhJZlamK5vZBGwMi1JPq-U2TC_csK0g2a_FwybFtMeni9rY2Ws"
+        },
+        {
+          "title": "clgbtcc.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1qOxHAbjmGpftBTIxVDSg-ccq2SyeEodNIKImM1ZadUOUccXIPqfjK-S815aSyxkxgSPX4fFQQLiDtwL3DOj-ugKi1242KVq3ciUURACc6mtUbyZ-KQzG-szBTUTurWm264BHEw84TjDv"
+        },
+        {
+          "title": "eventbrite.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFNbFp7gSbHQIdjO3c9KlvQ_lcdk_SWnAR5dNyXs4grTDD9MtxCvYZNwWAq6y8mhXcd7iD45BMt4nly_G_yPoEf-4Wvasy5GgOINrFVzKIoNiLNxT2UM1G-oGPYLuiPCjRM3PKWo9x926t7EfHNVaBbPmWTaIuhNfyKd0eCgkZijWrfADg="
+        },
+        {
+          "title": "shazam.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEPBe9SxzcD8t4-49LNPP01lMHBrqO_AnkHnvRuoGk33Ev2C0P6fIlIPnoJCxRsjhbuXWBchdadeFr_JkyetTrNJW08OVqgMhYe3xKdLJ6M7bEy_ZMIZcVx_g0lp2ySmQXoz-LMgrfQQ-mZ6zHyTmjU-ZR5qLTgkw1X1MxC"
+        },
+        {
+          "title": "eventbrite.fi",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZ_njHa3aY9618wg7oICkmI-7AOubX2Lk1oyXHNZonGyWy_L6AtfHI0WfUgDrt3zr-2mCGnkD4LyCh23TLSY6nYZfDZmjti_IbFIM3mVN_CMfZbUZza7o_4xi30ZTJtchAC3NqQZaurFfvFiqmhAqTWpc="
+        },
+        {
+          "title": "charlotterunning.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFgK48LLPiUmepnOXFCCm3yi52F5fgnqWDaJi0fNxH_y4bHJUpc8K6vS3XknJlmfHJ7j5cw17tSvd3GTKx1g_VesTLPyQag6Un7UBjreIly6JaxUzKtSfIaNjJGysok2OpBOA=="
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUmWTkfhIYRqlXofVz8wWur8J9WpXaebpsPXzfXx_J9ywWCyr63uANUcmjddsXtK_Mg-08twU_OwN9MGIdsBvB7CfaDUckS_bnZ6EndbEZvtjOAvjjYL_7bwC5W9RK2Pdxc-68KzAHXVAvm068UP8g3AF7CPfGBMT7na32ISw="
+        },
+        {
+          "title": "southendclt.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6uqNkv2iY58KVGf6a3slzS9aXgrnBml_Sp4-dmDaERzjX4_VaT4K81OSGaZXgbRwbQFdnfz_O8Ew69fujqW71YgZ_woSk8qsDcIgxvOxu_qxlvM48aD2xHIckRcopHl5NkhprCLMDlZju3kiesFpelvcC"
+        },
+        {
+          "title": "eventbrite.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQETJwkC3AZx0S_TEhg3Ers182tqe4onUg4ARTkfbiUHnuAuNTfcTaf0hXql1F1MX4WKLABoej5_5l-Hbg7ENSgWuhIblo6XWMqfzSid1xixDE3h-9IT19jubHLQA_IbXmvUlWCJpmrM-1YVWe0FUGj70o_GezAqBLvffE5Jk1YKPanSaW7DQHkrOF6fvLwGD-MaGao2S7S_Br2aXA=="
+        },
+        {
+          "title": "charlotte.events",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGknlbmSFJw1yE6rJsVExgrk_G0PsXt7drtHVx10Kj0Y-XnUMb8JE9r9Ik_sCzCAWu86WIBGwk1rFHmhHFvcMTBZmGSO0tzeaq3scWEU4zFx046t4s="
+        },
+        {
+          "title": "jeffcookrealestate.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFq3q8y0I44hd_Xbf7skhSZUbcu_JRUDCViqfpWbC2-gsRu_3YA3NMBLEObdFrdAYKB-0Im2QegG_WucLO-PS-Ily71zosDfiNO7fuEs_eS7nVGobVG-1klg-0JYE-0AVYgrAno4e1MxIOyP-FQg4RmE-y4l7z8VUwucJbTUED3CT1G"
+        },
+        {
+          "title": "punchup.live",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRqvmUKEub-dwgAWfDJ7luGS9qMAYZoHQD3tfypBDsazcTyLeyOxILrqbf0V-EOfdUnyshRVrtQg1IobmdrN4adVPpP-Z-R62Q9YHefSbkfHGdutf8B_uJgkYosohXbkx6lvv3MLa3osupQUk65LnCssreo7nx"
+        },
+        {
+          "title": "shazam.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE4J8O_rxr0XClyJijnsPmJMLorTYCCxpPF1G_N1epVrCdvhpUBrpY1lc0TUda8ijG1hggx1O9ltUY0mmzuWyzx_DNREA2_PVQwesfn58HmhldA1Y94QYCvuKua1T1VvfllR7H8kgdxXwvkfPxIb7ZTJYgTLD3eCOLpc_Yx"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "under50",
+      "label": "Under $50",
+      "emoji": "🍸",
+      "activities": [
+        {
+          "title": "FiA: Females in Action Workout",
+          "description": "Start your Monday with an empowering outdoor workout. This free fitness group offers high-energy sessions designed for women of all fitness levels, fostering community and strength. It's a great way to kickstart your week with positive vibes and connect with other active women.",
+          "day": "today",
+          "period": "morning",
+          "location": "Various Parks (check FiA website), Charlotte Area",
+          "cost": "Free",
           "tags": [
             "fitness",
-            "drinks",
-            "outdoor"
+            "outdoor",
+            "community"
           ],
           "category": [
             "fitness",
+            "outdoors"
+          ],
+          "tier": "under50",
+          "rank": 3
+        },
+        {
+          "title": "Freshlist's Monday Market",
+          "description": "Explore a vibrant selection of local produce, artisanal goods, and fresh ingredients at this weekly market. It's a fantastic opportunity to support local farmers and producers while stocking up on high-quality food. Perfect for a relaxed afternoon stroll and discovering unique Charlotte flavors.",
+          "day": "today",
+          "period": "afternoon",
+          "location": "Freshlist, Belmont",
+          "cost": "Free to attend",
+          "tags": [
+            "food",
+            "shopping",
+            "outdoor"
+          ],
+          "category": [
+            "market",
+            "food"
+          ],
+          "tier": "under50",
+          "rank": 3
+        },
+        {
+          "title": "$5 Mug Mondays",
+          "description": "Enjoy discounted pours on flagship beers all evening with a special $5 mug deal. Hi-Wire Brewing offers a lively atmosphere, perfect for unwinding after work or catching up with friends. Grab a brew and enjoy the start of the week.",
+          "day": "today",
+          "period": "evening",
+          "location": "Hi-Wire Brewing, South End",
+          "cost": "$5 per mug",
+          "tags": [
+            "drinks",
+            "social",
+            "queer-friendly"
+          ],
+          "category": [
             "drinks"
           ],
           "tier": "under50",
           "rank": 3
         },
         {
-          "title": "Charlotte Knights Baseball Game",
-          "description": "Catch America's favorite pastime as the Charlotte Knights play a home game at Truist Field. Enjoy the game, ballpark food, and stunning Uptown views.",
-          "day": "tomorrow",
+          "title": "Mindless Minutia Trivia",
+          "description": "Dive into a night of general knowledge trivia at Monday Night Garden Brewing Co. This popular weekly event promises a fun challenge for your brain and a great atmosphere for hanging out. Grab a beer and see if your team can take home the win.",
+          "day": "today",
           "period": "evening",
-          "location": "Truist Field, Uptown",
-          "cost": "$18–$40",
+          "location": "Monday Night Garden Brewing Co., South End",
+          "cost": "Free",
           "tags": [
-            "sports",
-            "outdoor",
-            "food"
+            "drinks",
+            "social",
+            "trivia"
           ],
           "category": [
-            "sports"
+            "drinks",
+            "comedy"
+          ],
+          "tier": "under50",
+          "rank": 3
+        },
+        {
+          "title": "Alejandro Meola Live",
+          "description": "Catch an intimate performance by Alejandro Meola at The Evening Muse, a beloved venue for live music. Known for its cozy atmosphere and supporting emerging artists, this is a perfect spot to discover new sounds. Enjoy a night of authentic musical talent.",
+          "day": "today",
+          "period": "night",
+          "location": "The Evening Muse, NoDa",
+          "cost": "$15-$25",
+          "tags": [
+            "music",
+            "nightlife",
+            "culture"
+          ],
+          "category": [
+            "music"
+          ],
+          "tier": "under50",
+          "rank": 4
+        },
+        {
+          "title": "Mindless Minutia Trivia at Birdsong",
+          "description": "Join the weekly Mindless Minutia Trivia at Birdsong Brewing Co. for a night of brain-teasing fun. Enjoy craft beers in a relaxed setting while competing with friends for bragging rights and prizes. It's a local favorite for a reason.",
+          "day": "today",
+          "period": "night",
+          "location": "Birdsong Brewing Co., NoDa",
+          "cost": "Free",
+          "tags": [
+            "drinks",
+            "social",
+            "trivia"
+          ],
+          "category": [
+            "drinks",
+            "comedy"
+          ],
+          "tier": "under50",
+          "rank": 3
+        },
+        {
+          "title": "Run with Mad Miles Run Club",
+          "description": "Join the Mad Miles Run Club for their weekly community run. It's a fantastic way to stay fit, explore Camp North End, and connect with a diverse and welcoming group of people. All paces are welcome, making it a great start to your Tuesday.",
+          "day": "tomorrow",
+          "period": "morning",
+          "location": "Camp North End, North End",
+          "cost": "Free",
+          "tags": [
+            "fitness",
+            "outdoor",
+            "community",
+            "queer-friendly"
+          ],
+          "category": [
+            "fitness",
+            "outdoors"
+          ],
+          "tier": "under50",
+          "rank": 4
+        },
+        {
+          "title": "$5 Flagship Tuesdays",
+          "description": "Take advantage of $5 flagship beers all day at Hi-Wire Brewing. It's a perfect opportunity to sample their core lineup or enjoy your favorites at a great price. A relaxed and budget-friendly option for a Tuesday afternoon or evening.",
+          "day": "tomorrow",
+          "period": "afternoon",
+          "location": "Hi-Wire Brewing, South End",
+          "cost": "$5 per beer",
+          "tags": [
+            "drinks",
+            "social",
+            "queer-friendly"
+          ],
+          "category": [
+            "drinks"
+          ],
+          "tier": "under50",
+          "rank": 3
+        },
+        {
+          "title": "Weekly Trivia at Hi-Wire Brewing",
+          "description": "Gather your team for a competitive and fun trivia night at Hi-Wire Brewing. Enjoy their craft beers while putting your knowledge to the test across various categories. Prizes are up for grabs, and the atmosphere is always lively.",
+          "day": "tomorrow",
+          "period": "evening",
+          "location": "Hi-Wire Brewing, South End",
+          "cost": "Free",
+          "tags": [
+            "drinks",
+            "social",
+            "trivia"
+          ],
+          "category": [
+            "drinks",
+            "comedy"
+          ],
+          "tier": "under50",
+          "rank": 3
+        },
+        {
+          "title": "Mindless Minutia Trivia at Rhino Market",
+          "description": "Challenge your brain at Mindless Minutia Trivia, a popular weekly event at Rhino Market SouthPark. Enjoy delicious food and drinks while competing with friends. It's a casual and engaging way to spend your Tuesday evening.",
+          "day": "tomorrow",
+          "period": "evening",
+          "location": "Rhino Market SouthPark, SouthPark",
+          "cost": "Free",
+          "tags": [
+            "food",
+            "drinks",
+            "social",
+            "trivia"
+          ],
+          "category": [
+            "food",
+            "drinks",
+            "comedy"
+          ],
+          "tier": "under50",
+          "rank": 3
+        },
+        {
+          "title": "Comedy Open Mic Night",
+          "description": "Discover Charlotte's rising comedic talent at the weekly open mic night. It's a raw and unfiltered look at local stand-up, where you might just catch the next big star. Grab a drink and prepare for some laughs.",
+          "day": "tomorrow",
+          "period": "night",
+          "location": "Starlight on 22nd, NoDa",
+          "cost": "Free",
+          "tags": [
+            "comedy",
+            "nightlife",
+            "social"
+          ],
+          "category": [
+            "comedy"
+          ],
+          "tier": "under50",
+          "rank": 3
+        },
+        {
+          "title": "Howie Day Live",
+          "description": "Enjoy an intimate concert by singer-songwriter Howie Day at The Evening Muse. Known for his heartfelt lyrics and acoustic melodies, it's a perfect night for fans of indie and folk music. A great opportunity to see a renowned artist in a cozy setting.",
+          "day": "tomorrow",
+          "period": "night",
+          "location": "The Evening Muse, NoDa",
+          "cost": "$25-$40",
+          "tags": [
+            "music",
+            "nightlife",
+            "culture"
+          ],
+          "category": [
+            "music"
           ],
           "tier": "under50",
           "rank": 4
         }
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBHqm_YxFzyTTJAfabQky8BFvQPPnUSxJw1Pkyg_MTqHG3HL-58wYH2Xr4Hp_xlK1OdMoxjejn4ngthSxHOUCIG6CxpuMiKqYpYGz5Mk2EJG7azf7CH7fPwAmnTSWWAK-Tg2VggiA="
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDsLOWkRskc1sr1E9Pi7ahh6VLzlQKvkoDlAYg7GdNiDclg0l9GnElkKpToAwi-0O57rRvl5cOrSv1rz89nn9G7XDROLF_D7xmdrq-lXzJhmBsf7dmOXsaJwIL3b2tSGfZEDNRTocfQdG7-8C2hKRbyfuquXOmG-SqqsI="
+        },
+        {
+          "title": "axios.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGb0SX0sStJBsSuxCF7bd0hhP8ZDQD5xhZzgFUt6Cm-UxLdW2Eku68PYTpUsF-EuikkxJKLa8gweaLVNNppBcO08NmUYgCCXCbeFEQk44hw14eN4kAnQNdDEOzMGgm3zWZ5OVL1or0ObTgPgoJRGqrVoADYHMW_mFEHlmchgTcYojELSoRjr2wYIU5MV1y8WsgkK4GoT8uH3jMAxQ=="
+        },
+        {
+          "title": "timeoutyouth.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEo47_zDaFMTsk2a54ZQ6Zfa81PxZdnuXmiwL8phImmU0yMxkMniKb3vyLxBc-x93bR4cRwYI6-Mp1AnQhfaUZ3NiMsMayGLkhEUIb_xfjOYqHnM6MxVijpZ8Ql"
+        },
+        {
+          "title": "charlottenc.gov",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwczA9fxq5uLXU4Q67Q1iX6qh40CkwCHO-21kHTtB0Xw_o4hXQBfavf7CXeSO-FCVfppbkCjSPGi6TWO3txRtMt0gDlHuWiCQAvUpTy11JHWjXEjzPJ7l3xlGh2e2snYlz_787OdCX"
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGWT9UKTrTcesP9s3-D7R0oBIBavwa68obsynCH79lDWPCUHYBtinePQTr8TasffrU_iFrRvvIn_G7zDcFQzKpi_M6_a4IzvFqruYFhJZlamK5vZBGwMi1JPq-U2TC_csK0g2a_FwybFtMeni9rY2Ws"
+        },
+        {
+          "title": "clgbtcc.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1qOxHAbjmGpftBTIxVDSg-ccq2SyeEodNIKImM1ZadUOUccXIPqfjK-S815aSyxkxgSPX4fFQQLiDtwL3DOj-ugKi1242KVq3ciUURACc6mtUbyZ-KQzG-szBTUTurWm264BHEw84TjDv"
+        },
+        {
+          "title": "eventbrite.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFNbFp7gSbHQIdjO3c9KlvQ_lcdk_SWnAR5dNyXs4grTDD9MtxCvYZNwWAq6y8mhXcd7iD45BMt4nly_G_yPoEf-4Wvasy5GgOINrFVzKIoNiLNxT2UM1G-oGPYLuiPCjRM3PKWo9x926t7EfHNVaBbPmWTaIuhNfyKd0eCgkZijWrfADg="
+        },
+        {
+          "title": "shazam.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEPBe9SxzcD8t4-49LNPP01lMHBrqO_AnkHnvRuoGk33Ev2C0P6fIlIPnoJCxRsjhbuXWBchdadeFr_JkyetTrNJW08OVqgMhYe3xKdLJ6M7bEy_ZMIZcVx_g0lp2ySmQXoz-LMgrfQQ-mZ6zHyTmjU-ZR5qLTgkw1X1MxC"
+        },
+        {
+          "title": "eventbrite.fi",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZ_njHa3aY9618wg7oICkmI-7AOubX2Lk1oyXHNZonGyWy_L6AtfHI0WfUgDrt3zr-2mCGnkD4LyCh23TLSY6nYZfDZmjti_IbFIM3mVN_CMfZbUZza7o_4xi30ZTJtchAC3NqQZaurFfvFiqmhAqTWpc="
+        },
+        {
+          "title": "charlotterunning.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFgK48LLPiUmepnOXFCCm3yi52F5fgnqWDaJi0fNxH_y4bHJUpc8K6vS3XknJlmfHJ7j5cw17tSvd3GTKx1g_VesTLPyQag6Un7UBjreIly6JaxUzKtSfIaNjJGysok2OpBOA=="
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUmWTkfhIYRqlXofVz8wWur8J9WpXaebpsPXzfXx_J9ywWCyr63uANUcmjddsXtK_Mg-08twU_OwN9MGIdsBvB7CfaDUckS_bnZ6EndbEZvtjOAvjjYL_7bwC5W9RK2Pdxc-68KzAHXVAvm068UP8g3AF7CPfGBMT7na32ISw="
+        },
+        {
+          "title": "southendclt.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6uqNkv2iY58KVGf6a3slzS9aXgrnBml_Sp4-dmDaERzjX4_VaT4K81OSGaZXgbRwbQFdnfz_O8Ew69fujqW71YgZ_woSk8qsDcIgxvOxu_qxlvM48aD2xHIckRcopHl5NkhprCLMDlZju3kiesFpelvcC"
+        },
+        {
+          "title": "eventbrite.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQETJwkC3AZx0S_TEhg3Ers182tqe4onUg4ARTkfbiUHnuAuNTfcTaf0hXql1F1MX4WKLABoej5_5l-Hbg7ENSgWuhIblo6XWMqfzSid1xixDE3h-9IT19jubHLQA_IbXmvUlWCJpmrM-1YVWe0FUGj70o_GezAqBLvffE5Jk1YKPanSaW7DQHkrOF6fvLwGD-MaGao2S7S_Br2aXA=="
+        },
+        {
+          "title": "charlotte.events",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGknlbmSFJw1yE6rJsVExgrk_G0PsXt7drtHVx10Kj0Y-XnUMb8JE9r9Ik_sCzCAWu86WIBGwk1rFHmhHFvcMTBZmGSO0tzeaq3scWEU4zFx046t4s="
+        },
+        {
+          "title": "jeffcookrealestate.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFq3q8y0I44hd_Xbf7skhSZUbcu_JRUDCViqfpWbC2-gsRu_3YA3NMBLEObdFrdAYKB-0Im2QegG_WucLO-PS-Ily71zosDfiNO7fuEs_eS7nVGobVG-1klg-0JYE-0AVYgrAno4e1MxIOyP-FQg4RmE-y4l7z8VUwucJbTUED3CT1G"
+        },
+        {
+          "title": "punchup.live",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRqvmUKEub-dwgAWfDJ7luGS9qMAYZoHQD3tfypBDsazcTyLeyOxILrqbf0V-EOfdUnyshRVrtQg1IobmdrN4adVPpP-Z-R62Q9YHefSbkfHGdutf8B_uJgkYosohXbkx6lvv3MLa3osupQUk65LnCssreo7nx"
+        },
+        {
+          "title": "shazam.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE4J8O_rxr0XClyJijnsPmJMLorTYCCxpPF1G_N1epVrCdvhpUBrpY1lc0TUda8ijG1hggx1O9ltUY0mmzuWyzx_DNREA2_PVQwesfn58HmhldA1Y94QYCvuKua1T1VvfllR7H8kgdxXwvkfPxIb7ZTJYgTLD3eCOLpc_Yx"
+        }
+      ],
       "error": null
     },
     {
@@ -1113,107 +1426,30 @@
       "emoji": "🌟",
       "activities": [
         {
-          "title": "Chef's Tasting Menu at The Fig Tree Restaurant",
-          "description": "Indulge in an exquisite multi-course tasting menu curated by Chef Greg Zanitsch. This upscale dining experience promises innovative dishes and impeccable wine pairings in a refined setting.",
+          "title": "Gourmet Cooking Class: Italian Classics",
+          "description": "Indulge in a hands-on gourmet cooking class focusing on classic Italian dishes. Learn techniques from a renowned local chef and enjoy a multi-course meal you helped prepare, paired with fine wines. This exclusive experience is perfect for foodies looking to elevate their culinary skills.",
           "day": "today",
           "period": "evening",
-          "location": "The Fig Tree Restaurant, Elizabeth",
-          "cost": "$120 (wine pairing a",
+          "location": "Chef Alyssa's Kitchen, South End",
+          "cost": "$125",
           "tags": [
             "food",
-            "drinks",
-            "culture"
-          ],
-          "category": [
-            "food",
-            "drinks"
-          ],
-          "tier": "splurge",
-          "rank": 5
-        },
-        {
-          "title": "Broadway at Blumenthal: 'Hamilton'",
-          "description": "Don't miss the critically acclaimed musical 'Hamilton' live on stage. This is a rare opportunity to see the cultural phenomenon with its revolutionary blend of hip-hop, jazz, R&B, and Broadway.",
-          "day": "today",
-          "period": "evening",
-          "location": "Belk Theater at Blumenthal Performing Arts Center, Uptown",
-          "cost": "$90–$250",
-          "tags": [
-            "culture",
-            "theater",
-            "music"
-          ],
-          "category": [
-            "theater",
-            "music"
-          ],
-          "tier": "splurge",
-          "rank": 5
-        },
-        {
-          "title": "VIP Art Preview at The Mint Museum Uptown",
-          "description": "Attend an exclusive preview of a new contemporary art exhibition before it opens to the public. Enjoy cocktails, hors d'oeuvres, and a chance to meet the artists and curators.",
-          "day": "today",
-          "period": "evening",
-          "location": "The Mint Museum Uptown, Uptown",
-          "cost": "$75",
-          "tags": [
-            "art",
-            "culture",
-            "drinks",
-            "social"
-          ],
-          "category": [
-            "arts",
-            "drinks"
-          ],
-          "tier": "splurge",
-          "rank": 4
-        },
-        {
-          "title": "Exclusive Bourbon & Cigar Pairing Event",
-          "description": "Savor rare bourbons expertly paired with premium cigars in a sophisticated lounge setting. Limited tickets available for this connoisseur's experience.",
-          "day": "today",
-          "period": "night",
-          "location": "Dot Dot Dot, Montford Park",
-          "cost": "$85",
-          "tags": [
-            "drinks",
             "culture",
             "social"
           ],
           "category": [
-            "drinks"
+            "food"
           ],
           "tier": "splurge",
           "rank": 4
-        },
-        {
-          "title": "Private Chef's Table Experience at Stoke Charlotte",
-          "description": "Enjoy a bespoke culinary journey at Stoke's Chef's Table. Work with the chef to design a personalized menu for an intimate and unforgettable dining experience.",
-          "day": "today",
-          "period": "evening",
-          "location": "Stoke Charlotte, Uptown",
-          "cost": "$150+ per person",
-          "tags": [
-            "food",
-            "drinks",
-            "culture"
-          ],
-          "category": [
-            "food",
-            "drinks"
-          ],
-          "tier": "splurge",
-          "rank": 5
         },
         {
           "title": "Charlotte Symphony Orchestra: Masterworks Series",
-          "description": "Immerse yourself in classical music with the Charlotte Symphony Orchestra's Masterworks Series. Tonight features a renowned guest soloist performing a beloved concerto.",
+          "description": "Experience the grandeur of the Charlotte Symphony Orchestra as they perform a selection from their Masterworks Series. Enjoy an evening of classical music in the elegant Belk Theater, showcasing world-class talent. A sophisticated cultural outing for music aficionados.",
           "day": "today",
           "period": "evening",
-          "location": "Knight Theater, Uptown",
-          "cost": "$65–$100",
+          "location": "Belk Theater, Uptown",
+          "cost": "$75-$150",
           "tags": [
             "music",
             "culture",
@@ -1227,90 +1463,16 @@
           "rank": 4
         },
         {
-          "title": "Concert: Major Touring Artist at Spectrum Center",
-          "description": "See a chart-topping artist perform live at the Spectrum Center. Expect a high-energy show with incredible production and a massive crowd. Check local listings for specific artist.",
-          "day": "tomorrow",
+          "title": "Exclusive Wine Tasting & Pairing",
+          "description": "Savor an evening of exquisite wines and expertly paired small bites at a private tasting event. Led by a certified sommelier, you'll explore rare vintages and learn about different regions and varietals. An intimate and educational experience for wine enthusiasts.",
+          "day": "today",
           "period": "night",
-          "location": "Spectrum Center, Uptown",
-          "cost": "$70–$300+",
-          "tags": [
-            "music",
-            "nightlife",
-            "culture"
-          ],
-          "category": [
-            "music"
-          ],
-          "tier": "splurge",
-          "rank": 5
-        },
-        {
-          "title": "Omakase Experience at O-Ku Sushi",
-          "description": "Indulge in a chef's choice omakase experience at O-Ku, featuring the freshest seasonal ingredients and expertly crafted sushi and sashimi. A true culinary adventure.",
-          "day": "tomorrow",
-          "period": "evening",
-          "location": "O-Ku Sushi, South End",
-          "cost": "$100–$150",
-          "tags": [
-            "food",
-            "drinks",
-            "culture"
-          ],
-          "category": [
-            "food",
-            "drinks"
-          ],
-          "tier": "splurge",
-          "rank": 5
-        },
-        {
-          "title": "Charlotte Ballet Performance: 'Innovative Works'",
-          "description": "Witness the Charlotte Ballet's 'Innovative Works' series, showcasing cutting-edge contemporary dance pieces by renowned choreographers. A sophisticated and thought-provoking evening.",
-          "day": "tomorrow",
-          "period": "evening",
-          "location": "Patricia McBride and Jean-Pierre Bonnefoux Center for Dance, Uptown",
-          "cost": "$55–$85",
-          "tags": [
-            "theater",
-            "art",
-            "culture"
-          ],
-          "category": [
-            "theater",
-            "arts"
-          ],
-          "tier": "splurge",
-          "rank": 4
-        },
-        {
-          "title": "Luxury Spa & Wellness Retreat Day Pass",
-          "description": "Treat yourself to a full day of relaxation and rejuvenation at a premier Charlotte spa. Enjoy access to pools, saunas, steam rooms, and a complimentary massage or facial.",
-          "day": "tomorrow",
-          "period": "afternoon",
-          "location": "The Ritz-Carlton Spa, Uptown",
-          "cost": "$150+",
-          "tags": [
-            "fitness",
-            "wellness",
-            "culture"
-          ],
-          "category": [
-            "fitness"
-          ],
-          "tier": "splurge",
-          "rank": 4
-        },
-        {
-          "title": "Wine Tasting & Pairing Dinner at Corkbuzz Restaurant & Wine Bar",
-          "description": "Join a sommelier-led wine tasting featuring rare vintages, perfectly paired with a multi-course gourmet dinner. Expand your palate in an elegant setting.",
-          "day": "tomorrow",
-          "period": "evening",
-          "location": "Corkbuzz Restaurant & Wine Bar, SouthPark",
+          "location": "Corkbuzz Wine Studio, SouthPark",
           "cost": "$95",
           "tags": [
             "drinks",
             "food",
-            "culture"
+            "social"
           ],
           "category": [
             "drinks",
@@ -1320,25 +1482,172 @@
           "rank": 4
         },
         {
-          "title": "Private Gallery Tour & Artist Meet-and-Greet",
-          "description": "Experience an exclusive, intimate tour of a prominent art gallery with the gallery director, followed by a private reception with a featured artist.",
+          "title": "Charlotte Knights vs. Gwinnett Stripers",
+          "description": "Catch America's favorite pastime with the Charlotte Knights at Truist Field. Enjoy a lively baseball game with stunning Uptown skyline views, delicious ballpark food, and a fantastic atmosphere. A classic Charlotte experience for sports fans.",
           "day": "tomorrow",
-          "period": "afternoon",
-          "location": "Lark & Key Gallery, South End",
-          "cost": "$75",
+          "period": "evening",
+          "location": "Truist Field, Uptown",
+          "cost": "$15-$45",
           "tags": [
-            "art",
-            "culture",
+            "sports",
+            "outdoor",
+            "food",
+            "drinks"
+          ],
+          "category": [
+            "sports"
+          ],
+          "tier": "splurge",
+          "rank": 4
+        },
+        {
+          "title": "Charlotte FC vs Atlanta United (US Open Cup)",
+          "description": "Witness intense soccer action as Charlotte FC takes on Atlanta United in the US Open Cup Round of 16. Experience the passionate energy of Charlotte's soccer fans in a high-stakes match. A must-attend for local sports enthusiasts.",
+          "day": "tomorrow",
+          "period": "evening",
+          "location": "Sportsplex at Matthews, Matthews",
+          "cost": "$25-$60",
+          "tags": [
+            "sports",
+            "outdoor",
+            "community"
+          ],
+          "category": [
+            "sports"
+          ],
+          "tier": "splurge",
+          "rank": 5
+        },
+        {
+          "title": "Gianmarco Soresi Live",
+          "description": "Laugh out loud with comedian Gianmarco Soresi, known for his animated style and dark comedic beats. Performing at The Comedy Zone, this is a chance to see a nationally recognized stand-up artist. Expect a night of sharp wit and relatable humor.",
+          "day": "tomorrow",
+          "period": "night",
+          "location": "The Comedy Zone, Uptown",
+          "cost": "$30-$50",
+          "tags": [
+            "comedy",
+            "nightlife",
             "social"
           ],
           "category": [
-            "arts"
+            "comedy"
+          ],
+          "tier": "splurge",
+          "rank": 4
+        },
+        {
+          "title": "Broadway at Belk: 'Hamilton'",
+          "description": "Immerse yourself in the cultural phenomenon that is 'Hamilton' at the Belk Theater. This Tony Award-winning musical brings history to life with its groundbreaking score and captivating storytelling. A truly unmissable theatrical experience.",
+          "day": "tomorrow",
+          "period": "evening",
+          "location": "Belk Theater, Uptown",
+          "cost": "$80-$250+",
+          "tags": [
+            "theater",
+            "music",
+            "culture"
+          ],
+          "category": [
+            "theater",
+            "music"
+          ],
+          "tier": "splurge",
+          "rank": 5
+        },
+        {
+          "title": "VIP Cocktail Experience at The Punch Room",
+          "description": "Indulge in an exclusive cocktail experience at The Punch Room, one of Charlotte's most sophisticated rooftop bars. Enjoy handcrafted cocktails, breathtaking city views, and impeccable service in an upscale setting. Perfect for a luxurious night out.",
+          "day": "tomorrow",
+          "period": "night",
+          "location": "The Punch Room (Ritz-Carlton), Uptown",
+          "cost": "$50-$100+",
+          "tags": [
+            "drinks",
+            "nightlife",
+            "social"
+          ],
+          "category": [
+            "drinks"
           ],
           "tier": "splurge",
           "rank": 4
         }
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBHqm_YxFzyTTJAfabQky8BFvQPPnUSxJw1Pkyg_MTqHG3HL-58wYH2Xr4Hp_xlK1OdMoxjejn4ngthSxHOUCIG6CxpuMiKqYpYGz5Mk2EJG7azf7CH7fPwAmnTSWWAK-Tg2VggiA="
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDsLOWkRskc1sr1E9Pi7ahh6VLzlQKvkoDlAYg7GdNiDclg0l9GnElkKpToAwi-0O57rRvl5cOrSv1rz89nn9G7XDROLF_D7xmdrq-lXzJhmBsf7dmOXsaJwIL3b2tSGfZEDNRTocfQdG7-8C2hKRbyfuquXOmG-SqqsI="
+        },
+        {
+          "title": "axios.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGb0SX0sStJBsSuxCF7bd0hhP8ZDQD5xhZzgFUt6Cm-UxLdW2Eku68PYTpUsF-EuikkxJKLa8gweaLVNNppBcO08NmUYgCCXCbeFEQk44hw14eN4kAnQNdDEOzMGgm3zWZ5OVL1or0ObTgPgoJRGqrVoADYHMW_mFEHlmchgTcYojELSoRjr2wYIU5MV1y8WsgkK4GoT8uH3jMAxQ=="
+        },
+        {
+          "title": "timeoutyouth.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEo47_zDaFMTsk2a54ZQ6Zfa81PxZdnuXmiwL8phImmU0yMxkMniKb3vyLxBc-x93bR4cRwYI6-Mp1AnQhfaUZ3NiMsMayGLkhEUIb_xfjOYqHnM6MxVijpZ8Ql"
+        },
+        {
+          "title": "charlottenc.gov",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwczA9fxq5uLXU4Q67Q1iX6qh40CkwCHO-21kHTtB0Xw_o4hXQBfavf7CXeSO-FCVfppbkCjSPGi6TWO3txRtMt0gDlHuWiCQAvUpTy11JHWjXEjzPJ7l3xlGh2e2snYlz_787OdCX"
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGWT9UKTrTcesP9s3-D7R0oBIBavwa68obsynCH79lDWPCUHYBtinePQTr8TasffrU_iFrRvvIn_G7zDcFQzKpi_M6_a4IzvFqruYFhJZlamK5vZBGwMi1JPq-U2TC_csK0g2a_FwybFtMeni9rY2Ws"
+        },
+        {
+          "title": "clgbtcc.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1qOxHAbjmGpftBTIxVDSg-ccq2SyeEodNIKImM1ZadUOUccXIPqfjK-S815aSyxkxgSPX4fFQQLiDtwL3DOj-ugKi1242KVq3ciUURACc6mtUbyZ-KQzG-szBTUTurWm264BHEw84TjDv"
+        },
+        {
+          "title": "eventbrite.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFNbFp7gSbHQIdjO3c9KlvQ_lcdk_SWnAR5dNyXs4grTDD9MtxCvYZNwWAq6y8mhXcd7iD45BMt4nly_G_yPoEf-4Wvasy5GgOINrFVzKIoNiLNxT2UM1G-oGPYLuiPCjRM3PKWo9x926t7EfHNVaBbPmWTaIuhNfyKd0eCgkZijWrfADg="
+        },
+        {
+          "title": "shazam.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEPBe9SxzcD8t4-49LNPP01lMHBrqO_AnkHnvRuoGk33Ev2C0P6fIlIPnoJCxRsjhbuXWBchdadeFr_JkyetTrNJW08OVqgMhYe3xKdLJ6M7bEy_ZMIZcVx_g0lp2ySmQXoz-LMgrfQQ-mZ6zHyTmjU-ZR5qLTgkw1X1MxC"
+        },
+        {
+          "title": "eventbrite.fi",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZ_njHa3aY9618wg7oICkmI-7AOubX2Lk1oyXHNZonGyWy_L6AtfHI0WfUgDrt3zr-2mCGnkD4LyCh23TLSY6nYZfDZmjti_IbFIM3mVN_CMfZbUZza7o_4xi30ZTJtchAC3NqQZaurFfvFiqmhAqTWpc="
+        },
+        {
+          "title": "charlotterunning.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFgK48LLPiUmepnOXFCCm3yi52F5fgnqWDaJi0fNxH_y4bHJUpc8K6vS3XknJlmfHJ7j5cw17tSvd3GTKx1g_VesTLPyQag6Un7UBjreIly6JaxUzKtSfIaNjJGysok2OpBOA=="
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUmWTkfhIYRqlXofVz8wWur8J9WpXaebpsPXzfXx_J9ywWCyr63uANUcmjddsXtK_Mg-08twU_OwN9MGIdsBvB7CfaDUckS_bnZ6EndbEZvtjOAvjjYL_7bwC5W9RK2Pdxc-68KzAHXVAvm068UP8g3AF7CPfGBMT7na32ISw="
+        },
+        {
+          "title": "southendclt.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6uqNkv2iY58KVGf6a3slzS9aXgrnBml_Sp4-dmDaERzjX4_VaT4K81OSGaZXgbRwbQFdnfz_O8Ew69fujqW71YgZ_woSk8qsDcIgxvOxu_qxlvM48aD2xHIckRcopHl5NkhprCLMDlZju3kiesFpelvcC"
+        },
+        {
+          "title": "eventbrite.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQETJwkC3AZx0S_TEhg3Ers182tqe4onUg4ARTkfbiUHnuAuNTfcTaf0hXql1F1MX4WKLABoej5_5l-Hbg7ENSgWuhIblo6XWMqfzSid1xixDE3h-9IT19jubHLQA_IbXmvUlWCJpmrM-1YVWe0FUGj70o_GezAqBLvffE5Jk1YKPanSaW7DQHkrOF6fvLwGD-MaGao2S7S_Br2aXA=="
+        },
+        {
+          "title": "charlotte.events",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGknlbmSFJw1yE6rJsVExgrk_G0PsXt7drtHVx10Kj0Y-XnUMb8JE9r9Ik_sCzCAWu86WIBGwk1rFHmhHFvcMTBZmGSO0tzeaq3scWEU4zFx046t4s="
+        },
+        {
+          "title": "jeffcookrealestate.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFq3q8y0I44hd_Xbf7skhSZUbcu_JRUDCViqfpWbC2-gsRu_3YA3NMBLEObdFrdAYKB-0Im2QegG_WucLO-PS-Ily71zosDfiNO7fuEs_eS7nVGobVG-1klg-0JYE-0AVYgrAno4e1MxIOyP-FQg4RmE-y4l7z8VUwucJbTUED3CT1G"
+        },
+        {
+          "title": "punchup.live",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRqvmUKEub-dwgAWfDJ7luGS9qMAYZoHQD3tfypBDsazcTyLeyOxILrqbf0V-EOfdUnyshRVrtQg1IobmdrN4adVPpP-Z-R62Q9YHefSbkfHGdutf8B_uJgkYosohXbkx6lvv3MLa3osupQUk65LnCssreo7nx"
+        },
+        {
+          "title": "shazam.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE4J8O_rxr0XClyJijnsPmJMLorTYCCxpPF1G_N1epVrCdvhpUBrpY1lc0TUda8ijG1hggx1O9ltUY0mmzuWyzx_DNREA2_PVQwesfn58HmhldA1Y94QYCvuKua1T1VvfllR7H8kgdxXwvkfPxIb7ZTJYgTLD3eCOLpc_Yx"
+        }
+      ],
       "error": null
     },
     {
@@ -1347,72 +1656,112 @@
       "emoji": "🃏",
       "activities": [
         {
-          "title": "Drag Wrestling Extravaganza at Petra's",
-          "description": "Witness the most fabulous and fierce wrestling event in Charlotte! Local drag queens battle it out in the ring with hilarious commentary and over-the-top costumes. Expect glitter, glamour, and body slams.",
+          "title": "Adults-Only Science on the Rocks: Cosmic Cocktails",
+          "description": "Explore the universe with a twist at Discovery Place Science's adults-only 'Science on the Rocks' event. Enjoy themed cocktails, interactive exhibits, and a planetarium show, all with a cosmic theme. It's a unique and educational night out for the curious mind.",
           "day": "today",
           "period": "night",
-          "location": "Petra's, Plaza Midwood",
-          "cost": "$20",
+          "location": "Discovery Place Science, Uptown",
+          "cost": "$30",
           "tags": [
-            "queer-friendly",
-            "nightlife",
-            "comedy",
+            "culture",
+            "drinks",
             "weird"
           ],
           "category": [
+            "weird",
+            "drinks",
+            "arts"
+          ],
+          "tier": "wildcard",
+          "rank": 4
+        },
+        {
+          "title": "Drag Bingo Night",
+          "description": "Get ready for a riotous evening of bingo hosted by Charlotte's fiercest drag queens. Expect hilarious commentary, dazzling performances, and fantastic prizes in a high-energy, queer-friendly environment. It's an unforgettable night of laughter and entertainment.",
+          "day": "today",
+          "period": "night",
+          "location": "The Scorpio, Plaza Midwood",
+          "cost": "$10 (for bingo cards",
+          "tags": [
             "drag",
-            "sports",
+            "nightlife",
+            "queer-friendly",
+            "social"
+          ],
+          "category": [
+            "drag",
+            "nightlife",
             "weird"
           ],
           "tier": "wildcard",
           "rank": 5
         },
         {
-          "title": "Paranormal Walking Tour of Historic Fourth Ward",
-          "description": "Explore the spooky side of Charlotte's oldest neighborhood on a guided ghost tour. Hear chilling tales of resident spirits and unexplained phenomena. Not for the faint of heart!",
+          "title": "Silent Disco Dance Party",
+          "description": "Dance the night away to your own beat at a silent disco. Grab a pair of headphones and choose from multiple DJ channels, creating a unique and immersive party experience. It's a fun, quirky way to let loose and enjoy the music.",
           "day": "today",
           "period": "night",
-          "location": "Historic Fourth Ward, Uptown",
-          "cost": "$25",
+          "location": "The Music Yard, South End",
+          "cost": "$15-$20",
           "tags": [
-            "culture",
-            "weird",
-            "outdoor"
+            "music",
+            "nightlife",
+            "social",
+            "weird"
           ],
           "category": [
+            "music",
+            "nightlife",
             "weird"
           ],
           "tier": "wildcard",
           "rank": 4
         },
         {
-          "title": "Adult Spelling Bee & Cocktail Competition",
-          "description": "Prove your linguistic prowess while enjoying creative cocktails. This isn't your elementary school spelling bee – expect challenging words, a lively atmosphere, and plenty of liquid courage.",
+          "title": "Axe Throwing League Night",
+          "description": "Unleash your inner lumberjack at this competitive axe throwing league night. Whether you're a seasoned pro or a beginner, it's a thrilling and unconventional way to spend your evening. Join a team or just watch the action unfold.",
           "day": "today",
           "period": "evening",
-          "location": "Suffolk Punch Brewing, LoSo",
-          "cost": "$10 (entry fee)",
+          "location": "Bad Axe Throwing, LoSo",
+          "cost": "$25-$40",
           "tags": [
-            "drinks",
-            "comedy",
+            "sports",
             "social",
             "weird"
           ],
           "category": [
-            "drinks",
-            "comedy",
+            "sports",
             "weird"
           ],
           "tier": "wildcard",
           "rank": 3
         },
         {
-          "title": "Midnight Cult Film Screening: 'Rocky Horror Picture Show'",
-          "description": "Join the interactive madness of a midnight screening of 'The Rocky Horror Picture Show.' Dress up, shout lines, and throw props in this iconic audience participation event.",
+          "title": "Taxidermy Workshop for Beginners",
+          "description": "Learn the fascinating (and slightly macabre) art of taxidermy in this hands-on workshop. Guided by an expert, you'll create your own preserved specimen to take home. It's definitely a conversation starter and a truly unique skill to acquire.",
+          "day": "today",
+          "period": "afternoon",
+          "location": "The Peculiar Rabbit (Pop-up), Plaza Midwood",
+          "cost": "$75-$150",
+          "tags": [
+            "art",
+            "culture",
+            "weird"
+          ],
+          "category": [
+            "weird",
+            "arts"
+          ],
+          "tier": "wildcard",
+          "rank": 5
+        },
+        {
+          "title": "Midnight Cult Film Screening",
+          "description": "Experience a classic cult film on the big screen, complete with audience participation and themed concessions. This late-night screening offers a nostalgic and quirky cinematic experience. Perfect for film buffs looking for something out of the ordinary.",
           "day": "today",
           "period": "night",
-          "location": "Visulite Theatre, Elizabeth",
-          "cost": "$12",
+          "location": "Independent Picture House, NoDa",
+          "cost": "$10",
           "tags": [
             "film",
             "nightlife",
@@ -1426,12 +1775,12 @@
           "rank": 4
         },
         {
-          "title": "Axe Throwing Tournament at Bad Axe Throwing",
-          "description": "Compete for glory (and bragging rights) in a thrilling axe throwing tournament. Perfect for a group of friends looking for an adrenaline rush and some friendly competition.",
-          "day": "today",
+          "title": "Primal Brewery Dart League Night",
+          "description": "Join the Primal Brewery Dart League for a night of competitive dart throwing. Whether you're a seasoned player or just looking for a unique social activity, it's a fun way to engage with the community. Enjoy craft beers while aiming for the bullseye.",
+          "day": "tomorrow",
           "period": "evening",
-          "location": "Bad Axe Throwing, Lower South End",
-          "cost": "$35",
+          "location": "Primal Brewery, Huntersville",
+          "cost": "Free to play (drinks",
           "tags": [
             "sports",
             "social",
@@ -1446,12 +1795,90 @@
           "rank": 3
         },
         {
-          "title": "Gothic & Oddities Market Pop-Up",
-          "description": "Discover unique and macabre treasures at this pop-up market featuring local artists and vendors specializing in gothic art, taxidermy, dark fashion, and peculiar curiosities.",
-          "day": "today",
+          "title": "Paranormal Walking Tour of Historic Fourth Ward",
+          "description": "Embark on a spooky journey through Charlotte's Historic Fourth Ward, known for its Victorian architecture and ghostly tales. A local guide will share chilling stories and historical facts, making for an eerie and intriguing night. Not for the faint of heart!",
+          "day": "tomorrow",
+          "period": "night",
+          "location": "Historic Fourth Ward, Uptown",
+          "cost": "$25-$35",
+          "tags": [
+            "culture",
+            "weird",
+            "nightlife"
+          ],
+          "category": [
+            "weird"
+          ],
+          "tier": "wildcard",
+          "rank": 4
+        },
+        {
+          "title": "Cult Film Screening & Themed Party",
+          "description": "Dive into the bizarre world of cult cinema with a special screening and themed party. Dress up, quote along, and enjoy interactive elements that make these screenings legendary. It's a wild and unconventional movie night experience.",
+          "day": "tomorrow",
+          "period": "night",
+          "location": "Visulite Theatre, Elizabeth",
+          "cost": "$15-$20",
+          "tags": [
+            "film",
+            "nightlife",
+            "weird",
+            "social"
+          ],
+          "category": [
+            "film",
+            "weird"
+          ],
+          "tier": "wildcard",
+          "rank": 4
+        },
+        {
+          "title": "Drag Queen Story Hour (Adult Edition)",
+          "description": "Experience story time like never before with a hilarious and uncensored adult-themed Drag Queen Story Hour. Expect witty readings, fabulous performances, and plenty of laughs in a vibrant, inclusive atmosphere. It's a playful and queer-friendly twist on a classic.",
+          "day": "tomorrow",
+          "period": "evening",
+          "location": "Petra's, Plaza Midwood",
+          "cost": "$10-$15",
+          "tags": [
+            "drag",
+            "comedy",
+            "queer-friendly",
+            "weird"
+          ],
+          "category": [
+            "drag",
+            "comedy",
+            "weird"
+          ],
+          "tier": "wildcard",
+          "rank": 5
+        },
+        {
+          "title": "Competitive Eating Contest: Taco Tuesday",
+          "description": "Witness or participate in a truly absurd spectacle: a competitive eating contest for Taco Tuesday! Watch as contestants devour tacos against the clock for glory and prizes. It's messy, hilarious, and definitely a 'wait, what?' kind of event.",
+          "day": "tomorrow",
+          "period": "evening",
+          "location": "Paco's Tacos & Tequila, SouthPark",
+          "cost": "Free to watch, $20 t",
+          "tags": [
+            "food",
+            "weird",
+            "social"
+          ],
+          "category": [
+            "food",
+            "weird"
+          ],
+          "tier": "wildcard",
+          "rank": 4
+        },
+        {
+          "title": "Gothic Market & Oddities Pop-Up",
+          "description": "Explore a unique pop-up market featuring gothic fashion, dark art, peculiar curiosities, and handcrafted oddities. Discover one-of-a-kind items from local vendors in a wonderfully macabre atmosphere. Perfect for those with an appreciation for the unconventional.",
+          "day": "tomorrow",
           "period": "afternoon",
-          "location": "Snug Harbor, Plaza Midwood",
-          "cost": "Free (shopping extra",
+          "location": "The Thirsty Beaver Saloon (Pop-up), Plaza Midwood",
+          "cost": "Free to attend",
           "tags": [
             "shopping",
             "art",
@@ -1459,130 +1886,107 @@
           ],
           "category": [
             "market",
-            "arts",
-            "weird"
+            "weird",
+            "arts"
           ],
           "tier": "wildcard",
           "rank": 4
         },
         {
-          "title": "Silent Disco at Rooftop 210",
-          "description": "Dance the night away under the stars with a silent disco party. Choose your channel and groove to different DJs through wireless headphones, creating a unique and energetic atmosphere.",
-          "day": "tomorrow",
-          "period": "night",
-          "location": "Rooftop 210, EpiCentre",
-          "cost": "$20",
-          "tags": [
-            "nightlife",
-            "music",
-            "drinks",
-            "weird"
-          ],
-          "category": [
-            "music",
-            "drinks",
-            "weird"
-          ],
-          "tier": "wildcard",
-          "rank": 4
-        },
-        {
-          "title": "Zombie Apocalypse Escape Room Challenge",
-          "description": "Team up with friends to solve puzzles and escape a zombie-infested room before time runs out. A thrilling and immersive experience for those who love a good scare and a challenge.",
+          "title": "Adult Spelling Bee & Cocktail Night",
+          "description": "Put your spelling skills to the test in a lively adult spelling bee, complete with craft cocktails to calm your nerves (or fuel your genius). Compete for bragging rights and prizes in a fun, slightly tipsy, and intellectually stimulating environment.",
           "day": "tomorrow",
           "period": "evening",
-          "location": "Exit Strategy, South End",
-          "cost": "$30",
+          "location": "Free Range Brewing, NoDa",
+          "cost": "$5 to enter",
           "tags": [
-            "weird",
             "social",
-            "games"
-          ],
-          "category": [
-            "weird"
-          ],
-          "tier": "wildcard",
-          "rank": 3
-        },
-        {
-          "title": "Burlesque & Variety Show at The Rabbit Hole",
-          "description": "Step into a world of glamour and intrigue with a captivating burlesque and variety show. Expect dazzling costumes, seductive performances, and unique acts.",
-          "day": "tomorrow",
-          "period": "night",
-          "location": "The Rabbit Hole, Plaza Midwood",
-          "cost": "$25",
-          "tags": [
-            "nightlife",
-            "art",
-            "weird",
-            "queer-friendly"
-          ],
-          "category": [
-            "theater",
-            "weird"
-          ],
-          "tier": "wildcard",
-          "rank": 4
-        },
-        {
-          "title": "Adults-Only Science on the Rocks: 'Space Oddity'",
-          "description": "Explore Discovery Place Science after hours with cocktails, music, and interactive exhibits themed around space. It's a fun, educational, and decidedly adult take on the museum experience.",
-          "day": "tomorrow",
-          "period": "evening",
-          "location": "Discovery Place Science, Uptown",
-          "cost": "$28",
-          "tags": [
-            "culture",
             "drinks",
-            "weird",
-            "social"
-          ],
-          "category": [
-            "weird",
-            "drinks"
-          ],
-          "tier": "wildcard",
-          "rank": 5
-        },
-        {
-          "title": "Competitive Eating Contest: Hot Dog Challenge",
-          "description": "Witness or participate in a stomach-churning hot dog eating contest. Prizes for the top eaters and plenty of spectacle for the audience.",
-          "day": "tomorrow",
-          "period": "afternoon",
-          "location": "Lucky Dog Bark & Brew, Steele Creek",
-          "cost": "Free (entry fee for ",
-          "tags": [
-            "food",
-            "weird",
-            "social"
-          ],
-          "category": [
-            "food",
             "weird"
           ],
-          "tier": "wildcard",
-          "rank": 3
-        },
-        {
-          "title": "Tarot Card Readings & Psychic Fair Pop-Up",
-          "description": "Explore the mystical side with a pop-up psychic fair offering tarot card readings, aura photography, and spiritual guidance from local practitioners.",
-          "day": "tomorrow",
-          "period": "afternoon",
-          "location": "The Artisan's Palate, NoDa",
-          "cost": "$20–$50 (per reading",
-          "tags": [
-            "weird",
-            "culture",
-            "social"
-          ],
           "category": [
+            "comedy",
+            "drinks",
             "weird"
           ],
           "tier": "wildcard",
           "rank": 3
         }
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBHqm_YxFzyTTJAfabQky8BFvQPPnUSxJw1Pkyg_MTqHG3HL-58wYH2Xr4Hp_xlK1OdMoxjejn4ngthSxHOUCIG6CxpuMiKqYpYGz5Mk2EJG7azf7CH7fPwAmnTSWWAK-Tg2VggiA="
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDsLOWkRskc1sr1E9Pi7ahh6VLzlQKvkoDlAYg7GdNiDclg0l9GnElkKpToAwi-0O57rRvl5cOrSv1rz89nn9G7XDROLF_D7xmdrq-lXzJhmBsf7dmOXsaJwIL3b2tSGfZEDNRTocfQdG7-8C2hKRbyfuquXOmG-SqqsI="
+        },
+        {
+          "title": "axios.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGb0SX0sStJBsSuxCF7bd0hhP8ZDQD5xhZzgFUt6Cm-UxLdW2Eku68PYTpUsF-EuikkxJKLa8gweaLVNNppBcO08NmUYgCCXCbeFEQk44hw14eN4kAnQNdDEOzMGgm3zWZ5OVL1or0ObTgPgoJRGqrVoADYHMW_mFEHlmchgTcYojELSoRjr2wYIU5MV1y8WsgkK4GoT8uH3jMAxQ=="
+        },
+        {
+          "title": "timeoutyouth.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEo47_zDaFMTsk2a54ZQ6Zfa81PxZdnuXmiwL8phImmU0yMxkMniKb3vyLxBc-x93bR4cRwYI6-Mp1AnQhfaUZ3NiMsMayGLkhEUIb_xfjOYqHnM6MxVijpZ8Ql"
+        },
+        {
+          "title": "charlottenc.gov",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwczA9fxq5uLXU4Q67Q1iX6qh40CkwCHO-21kHTtB0Xw_o4hXQBfavf7CXeSO-FCVfppbkCjSPGi6TWO3txRtMt0gDlHuWiCQAvUpTy11JHWjXEjzPJ7l3xlGh2e2snYlz_787OdCX"
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGWT9UKTrTcesP9s3-D7R0oBIBavwa68obsynCH79lDWPCUHYBtinePQTr8TasffrU_iFrRvvIn_G7zDcFQzKpi_M6_a4IzvFqruYFhJZlamK5vZBGwMi1JPq-U2TC_csK0g2a_FwybFtMeni9rY2Ws"
+        },
+        {
+          "title": "clgbtcc.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1qOxHAbjmGpftBTIxVDSg-ccq2SyeEodNIKImM1ZadUOUccXIPqfjK-S815aSyxkxgSPX4fFQQLiDtwL3DOj-ugKi1242KVq3ciUURACc6mtUbyZ-KQzG-szBTUTurWm264BHEw84TjDv"
+        },
+        {
+          "title": "eventbrite.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFNbFp7gSbHQIdjO3c9KlvQ_lcdk_SWnAR5dNyXs4grTDD9MtxCvYZNwWAq6y8mhXcd7iD45BMt4nly_G_yPoEf-4Wvasy5GgOINrFVzKIoNiLNxT2UM1G-oGPYLuiPCjRM3PKWo9x926t7EfHNVaBbPmWTaIuhNfyKd0eCgkZijWrfADg="
+        },
+        {
+          "title": "shazam.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEPBe9SxzcD8t4-49LNPP01lMHBrqO_AnkHnvRuoGk33Ev2C0P6fIlIPnoJCxRsjhbuXWBchdadeFr_JkyetTrNJW08OVqgMhYe3xKdLJ6M7bEy_ZMIZcVx_g0lp2ySmQXoz-LMgrfQQ-mZ6zHyTmjU-ZR5qLTgkw1X1MxC"
+        },
+        {
+          "title": "eventbrite.fi",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZ_njHa3aY9618wg7oICkmI-7AOubX2Lk1oyXHNZonGyWy_L6AtfHI0WfUgDrt3zr-2mCGnkD4LyCh23TLSY6nYZfDZmjti_IbFIM3mVN_CMfZbUZza7o_4xi30ZTJtchAC3NqQZaurFfvFiqmhAqTWpc="
+        },
+        {
+          "title": "charlotterunning.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFgK48LLPiUmepnOXFCCm3yi52F5fgnqWDaJi0fNxH_y4bHJUpc8K6vS3XknJlmfHJ7j5cw17tSvd3GTKx1g_VesTLPyQag6Un7UBjreIly6JaxUzKtSfIaNjJGysok2OpBOA=="
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUmWTkfhIYRqlXofVz8wWur8J9WpXaebpsPXzfXx_J9ywWCyr63uANUcmjddsXtK_Mg-08twU_OwN9MGIdsBvB7CfaDUckS_bnZ6EndbEZvtjOAvjjYL_7bwC5W9RK2Pdxc-68KzAHXVAvm068UP8g3AF7CPfGBMT7na32ISw="
+        },
+        {
+          "title": "southendclt.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6uqNkv2iY58KVGf6a3slzS9aXgrnBml_Sp4-dmDaERzjX4_VaT4K81OSGaZXgbRwbQFdnfz_O8Ew69fujqW71YgZ_woSk8qsDcIgxvOxu_qxlvM48aD2xHIckRcopHl5NkhprCLMDlZju3kiesFpelvcC"
+        },
+        {
+          "title": "eventbrite.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQETJwkC3AZx0S_TEhg3Ers182tqe4onUg4ARTkfbiUHnuAuNTfcTaf0hXql1F1MX4WKLABoej5_5l-Hbg7ENSgWuhIblo6XWMqfzSid1xixDE3h-9IT19jubHLQA_IbXmvUlWCJpmrM-1YVWe0FUGj70o_GezAqBLvffE5Jk1YKPanSaW7DQHkrOF6fvLwGD-MaGao2S7S_Br2aXA=="
+        },
+        {
+          "title": "charlotte.events",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGknlbmSFJw1yE6rJsVExgrk_G0PsXt7drtHVx10Kj0Y-XnUMb8JE9r9Ik_sCzCAWu86WIBGwk1rFHmhHFvcMTBZmGSO0tzeaq3scWEU4zFx046t4s="
+        },
+        {
+          "title": "jeffcookrealestate.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFq3q8y0I44hd_Xbf7skhSZUbcu_JRUDCViqfpWbC2-gsRu_3YA3NMBLEObdFrdAYKB-0Im2QegG_WucLO-PS-Ily71zosDfiNO7fuEs_eS7nVGobVG-1klg-0JYE-0AVYgrAno4e1MxIOyP-FQg4RmE-y4l7z8VUwucJbTUED3CT1G"
+        },
+        {
+          "title": "punchup.live",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRqvmUKEub-dwgAWfDJ7luGS9qMAYZoHQD3tfypBDsazcTyLeyOxILrqbf0V-EOfdUnyshRVrtQg1IobmdrN4adVPpP-Z-R62Q9YHefSbkfHGdutf8B_uJgkYosohXbkx6lvv3MLa3osupQUk65LnCssreo7nx"
+        },
+        {
+          "title": "shazam.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE4J8O_rxr0XClyJijnsPmJMLorTYCCxpPF1G_N1epVrCdvhpUBrpY1lc0TUda8ijG1hggx1O9ltUY0mmzuWyzx_DNREA2_PVQwesfn58HmhldA1Y94QYCvuKua1T1VvfllR7H8kgdxXwvkfPxIb7ZTJYgTLD3eCOLpc_Yx"
+        }
+      ],
       "error": null
     }
   ]
