@@ -350,6 +350,20 @@ const EVENTS_DATA = [
     "category": "[\"market\", \"family\"]"
   },
   {
+    "title": "Crafter\u2019s Market at Historic Rosedale",
+    "link": "https://www.charlotteonthecheap.com/market-historic-rosedale/",
+    "description": "Historic Rosedale is hosting a Crafter\u2019s Market featuring hand-made items for sale by local artists and craftspeople in an open-air pavilion. Entrance to the market is free.",
+    "pub_date": "2026-04-29T22:03:30+00:00",
+    "source": "Charlotte on the Cheap",
+    "price": "Free",
+    "ev_score": 6,
+    "event_date": "2026-05-02",
+    "event_time": "10:00",
+    "date_confidence": 90,
+    "venue": "Historic Rosedale",
+    "category": "[\"market\", \"arts\"]"
+  },
+  {
     "title": "Book Swap at That\u2019s Novel Books",
     "link": "https://www.charlotteonthecheap.com/thats-novel-books-camp-north-end/",
     "description": "That's Novel Books, a used bookstore in Camp North End, hosts a book swap event. This event is for both adults and kids, offering a chance to exchange books.",
@@ -838,5 +852,19 @@ const EVENTS_DATA = [
     "date_confidence": 90,
     "venue": "Various local breweries",
     "category": "[\"drinks\", \"family\"]"
+  },
+  {
+    "title": "Movies in the Park at Fourth Ward Park",
+    "link": "https://www.charlotteonthecheap.com/movies-in-park-uptown/",
+    "description": "Head to Fourth Ward Park for free Movies in the Park on Saturdays in June. The movies start at 7:30 p.m. and feature a specific lineup.",
+    "pub_date": "2026-04-29T21:20:00+00:00",
+    "source": "Charlotte on the Cheap",
+    "price": "Free",
+    "ev_score": 6,
+    "event_date": null,
+    "event_time": "19:30",
+    "date_confidence": 90,
+    "venue": "Fourth Ward Park",
+    "category": "[\"film\", \"family\", \"outdoors\"]"
   }
 ];
