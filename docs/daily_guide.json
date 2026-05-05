@@ -1,201 +1,15 @@
 {
-  "generated_at": "2026-05-04T07:03:17.714641",
-  "today": "May 04, 2026",
-  "today_dow": "Monday",
-  "tomorrow": "May 05, 2026",
-  "tomorrow_dow": "Tuesday",
+  "generated_at": "2026-05-05T07:02:52.778800",
+  "today": "May 05, 2026",
+  "today_dow": "Tuesday",
+  "tomorrow": "May 06, 2026",
+  "tomorrow_dow": "Wednesday",
   "tiers": [
     {
       "id": "baseline",
       "label": "Staples",
       "emoji": "📍",
       "activities": [
-        {
-          "title": "Alternative Vibes at Snug Harbor",
-          "description": "Dive into the heart of Plaza Midwood's underground scene with live music that skews toward the adventurous and authentic. This nautical-themed sanctuary is where the city’s alternative socialites gather for high-energy sets.",
-          "period": "night",
-          "location": "Snug Harbor, Plaza Midwood",
-          "cost": "$10–$20",
-          "tags": [
-            "music",
-            "nightlife",
-            "art"
-          ],
-          "category": [
-            "music",
-            "nightlife"
-          ],
-          "tier": "baseline",
-          "rank": 4,
-          "day": "today"
-        },
-        {
-          "title": "Cocktail Chemistry at Supperland",
-          "description": "Visit the speakeasy-style bar hidden within this restored mid-century church for adventurous, alchemical cocktails. The high-design setting and sophisticated crowd make it the peak of Charlotte’s social scene.",
-          "period": "night",
-          "location": "Supperland, Plaza Midwood",
-          "cost": "$15–$25",
-          "tags": [
-            "food",
-            "drinks",
-            "art"
-          ],
-          "category": [
-            "food"
-          ],
-          "tier": "baseline",
-          "rank": 4,
-          "day": "today"
-        },
-        {
-          "title": "Treasure Hunting at Sleepy Poet",
-          "description": "Navigate a sprawling labyrinth of vintage treasures, retro fashion, and oddities that define the city's quirky undercurrent. It is an adventurous morning excursion perfect for finding unique pieces of Charlotte history.",
-          "period": "morning",
-          "location": "Sleepy Poet Antique Mall, South Blvd",
-          "cost": "Free entry",
-          "tags": [
-            "shopping",
-            "culture",
-            "art"
-          ],
-          "category": [
-            "market",
-            "arts"
-          ],
-          "tier": "baseline",
-          "rank": 4,
-          "day": "today"
-        },
-        {
-          "title": "Custom Spirits at Idlewild",
-          "description": "Describe your preferences and let expert bartenders build a custom drink just for you in this cozy, menu-less NoDa gem. It is the ultimate destination for adventurous drinkers seeking a personal, high-quality social experience.",
-          "period": "night",
-          "location": "Idlewild, NoDa",
-          "cost": "$16–$24",
-          "tags": [
-            "drinks",
-            "culture",
-            "nightlife"
-          ],
-          "category": [
-            "nightlife",
-            "drinks"
-          ],
-          "tier": "baseline",
-          "rank": 4,
-          "day": "today"
-        },
-        {
-          "title": "Refined Southern Dining at Haberdish",
-          "description": "Feast on elevated Southern staples in an airy, industrial-chic space that captures the refined soul of NoDa. The comforting food and social atmosphere make it a baseline essential for an authentic dinner.",
-          "period": "evening",
-          "location": "Haberdish, NoDa",
-          "cost": "$20–$40",
-          "tags": [
-            "food",
-            "drinks",
-            "culture"
-          ],
-          "category": [
-            "food"
-          ],
-          "tier": "baseline",
-          "rank": 4,
-          "day": "today"
-        },
-        {
-          "title": "Acoustic Open Mic at The Evening Muse",
-          "description": "Witness raw local talent in NoDa’s premier listening room. The atmosphere is intimate and focused, making it the perfect spot for a midweek cultural deep-dive without the club noise.",
-          "period": "night",
-          "location": "The Evening Muse, NoDa",
-          "cost": "$5",
-          "tags": [
-            "music",
-            "culture",
-            "queer-friendly"
-          ],
-          "category": [
-            "music",
-            "arts"
-          ],
-          "tier": "baseline",
-          "rank": 4,
-          "day": "today"
-        },
-        {
-          "title": "Retro Gaming at Super Abari",
-          "description": "Relive the golden age of arcades with rare cabinets and classic pinball in a massive, high-energy warehouse. It is a social playground for competitive spirits who prefer joysticks over dance floors.",
-          "period": "afternoon",
-          "location": "Super Abari Game Bar, Optimist Park",
-          "cost": "$10–$20",
-          "tags": [
-            "nightlife",
-            "culture",
-            "drinks"
-          ],
-          "category": [
-            "nightlife",
-            "weird"
-          ],
-          "tier": "baseline",
-          "rank": 4,
-          "day": "today"
-        },
-        {
-          "title": "Dinner in the Garden at Goodyear House",
-          "description": "Dine under the massive holly tree in this converted historic home that blends high-design with approachable Southern comfort. The social energy here is unmatched, representing the peak of NoDa dining.",
-          "period": "evening",
-          "location": "The Goodyear House, NoDa",
-          "cost": "$25–$50",
-          "tags": [
-            "food",
-            "drinks",
-            "outdoor"
-          ],
-          "category": [
-            "food"
-          ],
-          "tier": "baseline",
-          "rank": 4,
-          "day": "today"
-        },
-        {
-          "title": "Lakeside Escape to Hello, Sailor",
-          "description": "Take a short drive North for a mid-century modern dockside experience featuring fish camp vibes and citrusy cocktails. It is a stylish, adventurous getaway that feels worlds away from the city center.",
-          "period": "afternoon",
-          "location": "Hello, Sailor, Cornelius",
-          "cost": "$20–$40",
-          "tags": [
-            "food",
-            "drinks",
-            "outdoor"
-          ],
-          "category": [
-            "food",
-            "drinks"
-          ],
-          "tier": "baseline",
-          "rank": 4,
-          "day": "today"
-        },
-        {
-          "title": "Pint & Peanuts at Birdsong Brewing",
-          "description": "Lean into the unpretentious NoDa baseline at this solar-powered brewery. It’s the ultimate chill social spot where the inclusive vibe is as consistent as the Higher Ground IPA.",
-          "period": "afternoon",
-          "location": "Birdsong Brewing Co, NoDa",
-          "cost": "$7–$14",
-          "tags": [
-            "drinks",
-            "outdoor",
-            "queer-friendly"
-          ],
-          "category": [
-            "drinks"
-          ],
-          "tier": "baseline",
-          "rank": 4,
-          "day": "today"
-        },
         {
           "title": "Morning Hike at Crowders Mountain",
           "description": "Take the short drive for a rugged ascent with a rewarding panoramic view of the Charlotte skyline. It’s the definitive adventurous fitness baseline for locals seeking a vertical challenge.",
@@ -213,7 +27,7 @@
           ],
           "tier": "baseline",
           "rank": 4,
-          "day": "tomorrow"
+          "day": "today"
         },
         {
           "title": "Art & Lager at Resident Culture",
@@ -232,7 +46,7 @@
           ],
           "tier": "baseline",
           "rank": 4,
-          "day": "tomorrow"
+          "day": "today"
         },
         {
           "title": "Garden Cocktails at Dilworth Tasting Room",
@@ -250,7 +64,7 @@
           ],
           "tier": "baseline",
           "rank": 4,
-          "day": "tomorrow"
+          "day": "today"
         },
         {
           "title": "Market Vibes at 7th Street Public Market",
@@ -269,7 +83,7 @@
           ],
           "tier": "baseline",
           "rank": 4,
-          "day": "tomorrow"
+          "day": "today"
         },
         {
           "title": "Skyline Views at Merchant & Trade",
@@ -288,7 +102,7 @@
           ],
           "tier": "baseline",
           "rank": 4,
-          "day": "tomorrow"
+          "day": "today"
         },
         {
           "title": "Crate Digging at Lunchbox Records",
@@ -307,7 +121,7 @@
           ],
           "tier": "baseline",
           "rank": 4,
-          "day": "tomorrow"
+          "day": "today"
         },
         {
           "title": "Speakeasy Sips at Dot Dot Dot",
@@ -326,7 +140,7 @@
           ],
           "tier": "baseline",
           "rank": 4,
-          "day": "tomorrow"
+          "day": "today"
         },
         {
           "title": "Fresh Finds at Regional Farmers Market",
@@ -344,7 +158,7 @@
           ],
           "tier": "baseline",
           "rank": 4,
-          "day": "tomorrow"
+          "day": "today"
         },
         {
           "title": "Night Cap at Soul Gastrolounge",
@@ -363,7 +177,7 @@
           ],
           "tier": "baseline",
           "rank": 4,
-          "day": "tomorrow"
+          "day": "today"
         },
         {
           "title": "Burgers at Pinky's Westside Grill",
@@ -381,10 +195,407 @@
           ],
           "tier": "baseline",
           "rank": 4,
+          "day": "today"
+        },
+        {
+          "title": "Concerts at The Fillmore",
+          "description": "Catch a major touring act in this historic, chandelier-filled music venue. The industrial vibe and high-quality production make it the city's most iconic spot for live performances.",
+          "period": "night",
+          "location": "The Fillmore Charlotte, Music Factory",
+          "cost": "$30–$80",
+          "tags": [
+            "music",
+            "nightlife",
+            "culture"
+          ],
+          "category": [
+            "music",
+            "nightlife"
+          ],
+          "tier": "baseline",
+          "rank": 4,
+          "day": "tomorrow"
+        },
+        {
+          "title": "The Firebird at Bechtler Museum",
+          "description": "Take a photo with the iconic 'Disco Chicken' statue before exploring modern art collections inside. This architectural gem is a foundational piece of the Uptown cultural landscape.",
+          "period": "afternoon",
+          "location": "Bechtler Museum of Modern Art, Uptown",
+          "cost": "$15",
+          "tags": [
+            "art",
+            "culture",
+            "queer-friendly"
+          ],
+          "category": [
+            "arts"
+          ],
+          "tier": "baseline",
+          "rank": 4,
+          "day": "tomorrow"
+        },
+        {
+          "title": "Science on the Rocks",
+          "description": "Attend a themed, adult-only night at the science museum featuring cocktails and hands-on experiments. It’s a weird and adventurous way to experience the city's cultural side after hours.",
+          "period": "night",
+          "location": "Discovery Place Science, Uptown",
+          "cost": "$20–$30",
+          "tags": [
+            "culture",
+            "drinks",
+            "art"
+          ],
+          "category": [
+            "weird",
+            "drinks"
+          ],
+          "tier": "baseline",
+          "rank": 4,
+          "day": "tomorrow"
+        },
+        {
+          "title": "Legendary Burgers at Brooks'",
+          "description": "Stand in line at this iconic, no-frills window for one of the best burgers in the Southeast. It is a gritty, essential piece of Charlotte’s culinary history in NoDa.",
+          "period": "morning",
+          "location": "Brooks' Sandwich House, NoDa",
+          "cost": "$10–$15",
+          "tags": [
+            "food",
+            "culture"
+          ],
+          "category": [
+            "food"
+          ],
+          "tier": "baseline",
+          "rank": 4,
+          "day": "tomorrow"
+        },
+        {
+          "title": "Underground Sets at Visulite",
+          "description": "Enjoy a diverse lineup of bands in this cozy, underground-style theater. It is a legendary Elizabeth landmark known for its great acoustics and unpretentious vibe.",
+          "period": "night",
+          "location": "Visulite Theatre, Elizabeth",
+          "cost": "$15–$30",
+          "tags": [
+            "music",
+            "nightlife",
+            "culture"
+          ],
+          "category": [
+            "music",
+            "nightlife"
+          ],
+          "tier": "baseline",
+          "rank": 4,
+          "day": "tomorrow"
+        },
+        {
+          "title": "Hop Drop at NoDa Brewing",
+          "description": "Visit the OG taproom for a flight of their signature local brews in a massive, social warehouse. It’s a foundational piece of the North End's growing craft beer district.",
+          "period": "afternoon",
+          "location": "NoDa Brewing Company, North End",
+          "cost": "$8–$16",
+          "tags": [
+            "drinks",
+            "outdoor",
+            "culture"
+          ],
+          "category": [
+            "drinks",
+            "outdoors"
+          ],
+          "tier": "baseline",
+          "rank": 4,
+          "day": "tomorrow"
+        },
+        {
+          "title": "Skyline Dining at Fahrenheit",
+          "description": "Take the elevator up for one of the most Instagrammed views of the Charlotte skyline and a high-end cocktail by the outdoor fire pits. It is a quintessential Uptown experience for socialites looking to impress.",
+          "period": "evening",
+          "location": "Fahrenheit, Uptown",
+          "cost": "$20–$50",
+          "tags": [
+            "drinks",
+            "food",
+            "culture"
+          ],
+          "category": [
+            "drinks",
+            "food"
+          ],
+          "tier": "baseline",
+          "rank": 4,
+          "day": "tomorrow"
+        },
+        {
+          "title": "Italian Soul at Ever Andalo",
+          "description": "Experience the warm, elevated atmosphere of this Plaza Midwood staple serving handmade pasta and craft cocktails. It captures the sophisticated but communal spirit of the neighborhood's dining scene.",
+          "period": "evening",
+          "location": "Ever Andalo, Plaza Midwood",
+          "cost": "$25–$50",
+          "tags": [
+            "food",
+            "drinks",
+            "culture"
+          ],
+          "category": [
+            "food"
+          ],
+          "tier": "baseline",
+          "rank": 4,
+          "day": "tomorrow"
+        },
+        {
+          "title": "Historic Bites at 300 East",
+          "description": "Dine in this charming, converted Victorian home that has been a Dilworth social anchor for decades. Its unpretentious but refined menu makes it a reliable staple for an adventurous weekend brunch.",
+          "period": "afternoon",
+          "location": "300 East, Dilworth",
+          "cost": "$15–$35",
+          "tags": [
+            "food",
+            "culture",
+            "queer-friendly"
+          ],
+          "category": [
+            "food"
+          ],
+          "tier": "baseline",
+          "rank": 4,
+          "day": "tomorrow"
+        },
+        {
+          "title": "History Deep-Dive at Levine Museum",
+          "description": "Explore the complex, post-Civil War history of the South in this world-class Uptown museum. It is a culturally essential baseline for understanding the growth and identity of the modern city.",
+          "period": "afternoon",
+          "location": "Levine Museum of the New South, Uptown",
+          "cost": "$10",
+          "tags": [
+            "culture",
+            "art",
+            "queer-friendly"
+          ],
+          "category": [
+            "arts"
+          ],
+          "tier": "baseline",
+          "rank": 4,
           "day": "tomorrow"
         }
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "tickeri.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEmcKYlMMBs3OnDJzdabhcRgFnN0lomv5ltkyRRa5Ts96AQIDFbs8_k6we2OMRYg-SSt-ePj9DBkPhU7K5cWFlkQIbISlcXndbuzEbXaRWhOAnpmM8g9h1y4R_jOFo91wC6ilqivOs2tojDBA9_7kjXdgnrI4MajtrHwFtM"
+        },
+        {
+          "title": "charlotteconcertguide.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEw_dee9oUMIYyMkmNZMZFeyg8twhXQDQ4x2QiNH8qNxj0YEocAQZUF4unxeyULmjsEc6PE-IiNOaka6ISAer2_ITgJIgLLzcflFrRchPL5aO0hXwbqov2gSbLgqVtyokqYoFP-6xM="
+        },
+        {
+          "title": "fillmorenc.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFtVG-UPkSIYwFBuwlm8R6guYQoQ_AooNQ0QU0lpMTBiTefbAHxuCRupHSfXBzlJFMI76nP-LSDRXkVd_WUikI61ONTLUfohjUQNQpC0Ey2XWbYsCnr0A=="
+        },
+        {
+          "title": "seatgeek.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF-talNjSV9oX54er7qcF5Dn9o29GLWG0v1U93-fYvzxZLpqtPpy8lR0dVjziYNFiE7NSEb69ZCiuoB2fHfHVQVgeEadhf0QBirOH2cazXq55ALqK--USltySqfEO3X8kaxKtZWoKmTvMo="
+        },
+        {
+          "title": "ticketmaster.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFJV3lEXJ5v-_Y29PtAh7lfjQJoxRwLgaiYhTO9nHZF9pRWQwdIr_kHJzenVWG5Xze8idQ8im97k0htPxcs2Ce4YOKpEBopdNXljOgfM4cHFDuQeMFRtHDk3pn_T_6QjjKAJEkfrIgJvsqWZ2mL4fqQ_TUpIEGKgbEzea0Lk1OQ6olHIIBRI9RjwPUCVPiyoybiNDsrxVTqpMIn9QlfxEVcftCz"
+        },
+        {
+          "title": "eventticketscenter.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEO0hpDrszP6UmpV09dqs3PpY_yVj5LNEVvXh7MeldC5bu9W3rLxoMIPa8zIf8_WOV6g10ACSajNUPF4D7gwr9OQPlMcHDSXkF0L_gp5Q966hl4SmZR4gtqAkXawDdPt8_qegDDXN1mDspVN5PKKaf6j1eP2sKPOJKgCcfrdOcTCd6Pj5RPBZoXJu1NMfR_s_rLCAy2LXZPtYjJ6OZVL9nrhA2lXlsmO7c="
+        },
+        {
+          "title": "charlotte.events",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGHbT-hU493Rof56zhItQJ3TkjzaAVWaqACZqeli4OhOPdd3ZrmF-287iwZkI5YzDaH9hSbLExTksdhpr7_-ci2IREMyW0Jt9skr4UsywOVITjRlSIpQvvfFdPc"
+        },
+        {
+          "title": "charlotte49ers.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQETae1wORSLfSZv9juDdlQXx8YIjdVUZSCIAIzy-wOZxJtS3beiC_Na1WSWpx-ioBnKqhYotp_ulI16rTGnAyDuiE8Hu3SDZ15MAt5-k2Ek7FvID7bLzOReKircWi9Age6Mqp-J5Txx-FwWO5-M9oD14YC4t-QJI43lrAKNlERNjaP8C9g="
+        },
+        {
+          "title": "triplecbrewing.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHExAfYA_0EFl63N9NXMvrdPhn6MCAacEOK22xq4OzLkkTijZT0oZpQ01-BWI-5oKU-xfKqE5T3j_WDcd1-LnbnO1POtdDb7KchO2JgpQ4VKNzT0AiE-ERuCV3tLYUS1Z74Vp6_9Xvp_rMX3A=="
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZ4ZcXESltMjDZySo5SfRsZGxh7CGWLy5Nx5x7XMrkwGXy3mM3K7CzCcLtzXfXMEGvLc4oyDx-69TS3WWlytAWesBhBnrxnqQXEqYWRfSKqJeTHB64b23cuBL0IFlFiQ-0lKL0kCeE2aAlR37sDkud"
+        },
+        {
+          "title": "truistchampionship.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFHODRtaGdIkfGBXcEc6bU6QaWRrokvmrDndtpD3AGRv-trKmfHI8camuhjBxvs1dDB-BdV5oulEnFEwnKHrW7R3cvywBZcNv_TKUU4GlnuoSm1LpE8-f_sZ3RGX3r8L6f4fz6NZOTWIt2Q9X9W2sv2FBQyD5Q="
+        },
+        {
+          "title": "charlotte.events",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpSqwzzaa-jglrszPP0--MaD8ksjygMp1FKlw086OjZHzEW1KcKH7mtTFz0E4dVx7OqG0IaZbSOhBeD-3YERTbN0F_JwJQg0D5dAgTxzoKcKQkgQal8SQNjLwptWwi9mca"
+        },
+        {
+          "title": "concerts50.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG5Ac0qAPsOO1xniGagaUUqJ4DLONkXqJ2FeQfG03YRxqBRnOiv0eW_OKAv2F_gy8M-9qcagCtlxMQQ7PeSY8EvkSBxddJjK89FQdE7b21x5IlFVk1guHurm0LU56RoXQPNKgQaYvK9MLOIjlAjp85G-eu1_ygBYGZaSoKsckOdAESyTQ=="
+        },
+        {
+          "title": "axs.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHzdFSrGzzUQNajpQJ9DJMkFtJjGwHk0wU32z76eXUCeQ-Uym790vFAOJUojqzTw4-XamufuC-rJWQE0LvR91DeO7bggah9X-nM04g9sjigF75q-bD3bnQ3oesOgdTCdTASnjJvXLxAn6i3vn2t1Vc6R8I9pQMIMz8K6W_E-Hix_DuJupgKBfheXp4I9yKlxGdh"
+        },
+        {
+          "title": "concertfix.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHmdmk3Y4yJ8jLDIMEsyBNiEExZfqeKhhnauECaFvTt3C1n-2X11Zs0Np6IUle2onu3M0eyTB7D4eI9oxeWm4R6piEyufdD7QsRoxeFYQ3LaHgDU6BNW9LyJQFtxRzXaoHvNLxWBHD1bu3UWjcaOg=="
+        },
+        {
+          "title": "ticketexchangebyticketmaster.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHdgYneuoO6cxjXaqys2KBL_pL82li2Q7wlViXq5Ak2TembMVCSoqZavSirY80jbkAl7I12sfhDCTBOB9ScEPihNhhKRXLiuBsGu4r2cbZIUYwHO-57e19sE-mzZxfw69e-SHcgD3xiJd3EVFo40ImfjkCJ99B0xqp3YaAMEF_yNNzXPp3JdnQRW2GtVDowUTyMtviUaltLPOoG825q1C8U5A=="
+        },
+        {
+          "title": "charlotterunningclub.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFzdIp3ZYHI5_bM5IkAEZPLfOCmoHeNlcCXpGdkpck5EbHbvsaSbAFVAFJTYHfp91NMJaRV3ThQG6JPjGdVkM49Sce6nbGtVgLKR61erXnYSIrx9kZPOxzeuqV4DNz6SMM="
+        },
+        {
+          "title": "charlotterunningclub.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGOEtWasVb44Jd7Xg0xIf56_Jmt4ULlZp0z3wPbeLPwkrB8n8F9OT9aVdf6xJBcmjn4IVhFCr3lwDwXEqD2ry8kcn4tGk_WdBCjwi61aGUHPsGPsEaT6LSxZLnjfsUMM3lQag=="
+        },
+        {
+          "title": "charlotterunningclub.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHMCoa7rwsLL5ZzTDVWIosn20gQg1q2iCxjeUHCxQ4RpfpXKs8Z3eewGRKkAMI6nmG9awKPN_QwK58-VsEX_PzJf46k2RzXdreJXun4Ep7t0dD9JmpmPdy9rwbtqknBFz7fh80_s54="
+        },
+        {
+          "title": "eventbrite.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF_BR7c72xyjDqB3C3RSg9nRA0PJzk4XVrdIJIciPkZQg5OOwY_5KfsgiP6RfZGyNnVALwy58qClyyFrOGBIccvITkTUIVRI2LDKMGx47ff9xYKLM965ieI5_zgYzCQtI9BZFnBxfaklQnKL67o2QmpprNcQqWGWclEw2NGUCRBj_MNf93b006shalM2FtSArOAKfNalRHJwgA="
+        },
+        {
+          "title": "middlecjazz.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGA9jTruziMBoysOEKBFKFuHyGmA2-FSNPTzIKND9A2MvG18tsgfZGK9lVH3B4C1s2QFxJmJu8byaQ7XeXBawLlQvOAvbodFuhMiG9WzLoVInVui-cC1-QE0qk="
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGdR-ITCg0Dd__qp2LDXwEHc3gHfPSSxEl4A51F5GVs_TyMFRTZWDT49qVNCWVGwUrhnYrFa_osPA2KGcNFMfxleqY7XRVMUwT0lQaIStdp8xBSYWrPnVHV88Ls7psd4du3-cvkago="
+        },
+        {
+          "title": "axios.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFBnd6VC2zzdhihWOZCoss4MnhUm5z8_bKwMHHnSUktCAyyPPoTgtRIuN4IRrPwqSE3Y8K_yp3VTNE6TcObsBDJKGfKArB6tVdU-cPs9dC4JEYQ-Fknz5hifxMJSRiV4VRxm0Clh4hiBq3cmYv4r6GGblbzRB3CcgSyBONgVztkZ0nEHwnjToJrWV55LpVg14U1hw=="
+        },
+        {
+          "title": "shazam.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSy6YFzek6Yw9dwcKLdVQD4Sga_cO0fuAVuUdu_7qAtaR2Q6y4ROBJMQCha2OdQ5bFcp1EsX34WNjYOrpV_QwdtNTbb0Gr8xhS7eftYUHU3TmrefHU5Fh1KiR18wqA5nZZvwFlG3hvWG7B6gToMqndf9_dnF_RjDYH58Qg"
+        },
+        {
+          "title": "concertfix.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEYcpkSO8QlFaV9MPRF69dm8PkC58XwFzWEkfCjfMWFAgiGat9F1DLbC_6qPj_Uos1ExNGZrnlMst7gim9iUW_ixRXPRyhYgnUWFu3gV5LZE7d7qFtDTAo5FGPXY7r-ltI_uhJtPksT"
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG81i47wxv-OPEtJHlZ11_aw_CmCunBaWR76bB-HVT7RagQpcy3oMORaWgGJYBlG20jWstFMoFMRvAQ_Lw2GWSdITUO1Cy9fvikipVwOmZgG9rfe9Q-4o1mzZnXuxx_wqxWM8WpYuJmpwMB6yLbHhW1cg0na4TjZWHCiaD5cjiUkTUlbo3be8td_RNP_Atw"
+        },
+        {
+          "title": "triplecbrewing.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGzKKrSERMhWAhA80XFLB8mRL5y_3CXFw7QeM0kyMGk-uTc8y6GYeq2vM61oKUqzhEXHg_O3ecjTUx-nLDo15jCrSR60CtgE1_BbAUjHBmZtHPxG-cT6rlT9Njs7wKIJ-DE-acpUGKZGypoyQ=="
+        },
+        {
+          "title": "charlotteconcertguide.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH0QG7hvDdKW_6NdLHlJPDSeB2zsBWKAwjisUqExeTJwnNhbOwWgsMn4DpHNzlK3eS_EHieCI69kjjSu9xdkiJ1aWVYFGk9XvU4nqvidVDJQqXvwAjwXuFSChP19lCWPVgX_6Pobj0="
+        },
+        {
+          "title": "seatgeek.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEU-ozg_pxCo7bWoBSuT7wmsM70jQb7LoNp5pXxmjaX5tTqJaCHhJLnUNYta0pq7EJTill4JTtlrHIJImXhkeHVFULGk-juoTnCdwkQ0NGJoRhG33VnkhCv91LSXoWex7_Nq7gSsAcPZGY="
+        },
+        {
+          "title": "fillmorenc.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEgKq3labmGtOovLK_YFVwLloLnCe8-dQrM_h8XRBc7gt7UPUR8rGmiYVCH4VPA0Tt_mg0fCWoPXptJiGWFdjqaInwbu8ysnGKb80EyoMgQM8LGkzMyWg=="
+        },
+        {
+          "title": "ticketmaster.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHczjFtBkgx6h8I_hZ8A4q4T6WAMRf863x_Nb4Ge-jQazpzHGo1x-9NgbCtHRL2v2m1GDBRbu8a2LhGKVAcB87RFgFEmSNtvtTXJKr0Zq_DTWwRjmk2EKYpVe09-z20UzZAMJjq0a7YHm07"
+        },
+        {
+          "title": "ticketmaster.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGLvMgFA4-eP87_mNrgLDKXMP5sUMSsXqxXhM9eyQ8SHEUR33iQ4EK0emcBr6W35tJHY-GaKN5kIcfN_tXm7KHZHoBukZ5U0ndZebUCfBjrgjH-H1OQ1QhZ9431Uvfo98EOrvDV_JiKWq0f9o_Tt43cGkKAc3Nk25840WH7oaq_zsFMAFNBHHtFYbLF63LO5vjQDARi--ae0gS-E2y6sTGPptXd"
+        },
+        {
+          "title": "tickeri.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFx6CutySJBSycMKrDMgAuq8o9dj1rH2RoVEZ-gDvkakSeMVyjjP2b85Kc6uLNnZDW1Ax1RTnsB26yGSJ1E181Nsx1XB6yNRu2Sl3eLThIawlql9i-lI0PXgXUZ9j9kUG_W_3o4TxazcEnbcqxzJao_dY4C7lMhZ8v_4nL1"
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFJMEJVyEA3iuzo3e4C2zim-dblDWhaQ_ksy-ODInZx_N4QaBlVVSY3e1WBM23ACDZepxuuqZFrdkm5jkfHWsBNVwAEsfFf7vUXUniLwNVEsqixzvqNF-6EE-2h6AnU8pJ-7kKql8IeQ5iDi7O1eNoz"
+        },
+        {
+          "title": "southendclt.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhbo1etXqZOWjOuDYhbjYoJY7gAGUkL_PfVhTL-y1l43HDDsvD0KwkuWRI4McS6Qb861o4jyasfb_g56LEWYQPIRoz2GhV53gHhWG2BYV2momsuO7a5h7iHEEOQ23lJlVNVzaGp25fl1UVSweNmi2Kw8M="
+        },
+        {
+          "title": "charlotte49ers.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEetz3X-aKXkB3PjeudpfT-zMMUVl5fkf2FbyfHE-j-J2ZQJBh9cw860NQ85KZigXfCMFmM4gJJWG2l9g4Fuifhp53TsHb86YUJlBRMCGP433x_FKOWqh1SLdoZ-VLPbxThnDMouJ3ZwayTr9AwnnVoixK9n6SW4pciQYA8vxpeVmNPXPT_edinBXLjsiO5LBQZ2269938jTsFYBhwpLDnbTYA="
+        },
+        {
+          "title": "charlotte49ers.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHzXJoZSLxqV1WsaC56cL9z7-c_6TGVYTaL7vt9VL44oWpSZf1opU1xjXModO3uB0QlvcLwd36QOO075JWcrlkfaNUXjR0xsGkPKTXuHqxU9MyhAO9Ygx9UfMk3SuxRGU87RZwM4Zb4J5vVS0WUd59FCPaN73J0mdwwIeg8DQ9goVkJzGo="
+        },
+        {
+          "title": "charlotte.events",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZv_KQzKbuYJV7AzgGJWqkrOpZu7OGHncLaNk12NiA23atMi8uN9yaSGMm-BQwUQ76ZUBzsNbz72NUd5m93q7LD1Ms8giZOWgkcFTzPb6OpEpxqkcVGsmh9Dny"
+        },
+        {
+          "title": "truistchampionship.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEouW6amzC_MSoZ9zFWVvaBfIS2XHf_kiCxqFoLHF1y7mV124McGAgQks9J8b4qpNXoFNMBFEPqqc9GpsX_Ez_ISpjN1zKwBai2cTzzZWRd8mHC316B0ikCbtb6IalnbjZMaKGp1CzJzfnhj_krUbOptYgXZdg="
+        },
+        {
+          "title": "axios.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEqJOk1HgxhehdlKIlJ_2dh5-agZqbZWiSdeK4HIsV5vJ523gFoUsLimDPICKh-UtvOzPZhY6iYAuRIwrojjwdjeXz38-8VSRKDqxWulpLIhu52Ju3tZ9TfIj2LhrF7jcAIPLHrKaNkMkRiYnSWBaok5fXHUzUtZiuSQ70OQYkwlJjyU6b09JBqqjWmpt3nCfF-lQ=="
+        },
+        {
+          "title": "seatgeek.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHym0hc_Gbbg_4Bnw9sWVDxZISUdSTFO6hmQtJEKRMkH2UoSG8DwXK8JZZN-xc-wSMg8udFKp19bnOs1VyDfr_vPnmxK8spuA3gh63XPRjAXW06C84ANx9KjP2VMtqxAFOKMy3aO7mL"
+        },
+        {
+          "title": "charlottesgotalot.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEn9NZMvcf3_JGZ3F1RRLU3TQHsIiePRsB0yWvEHisgEHzYgFHnZxOG_mHNEwfzWKzXC2th-xKgRzcVfKVU6xwAettZoxrmDrj6_0cTkwGRMhklsIK3_7dtV7GOs9foEnVr1Mc="
+        },
+        {
+          "title": "fixturecalendar.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEV8VcoZheAyHs3KpPwTX4pUxvAUKs7X6KLVDZBXNZzkI6Uco5fG0rAE1Vtnx-ByS6l-jKxQ_IllzbDqgfhUtiLp6dzRWQ_2oUFScXIVSTC5IdtBCEXsZiySzq01_xIbwf1gBUIqQFnpDY="
+        },
+        {
+          "title": "concerts50.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGqPdfu3LNT0w-7iYUVZihXsEeLRSL0_LAV8daCFJK41idE_5OOexv8ZMbXYJHepZ_EH0dPHD1uifuQuX_YFfO_hzZdB1AObDv_l37M6HylcgoM28lZVnDc1_c-KuOgFzZJqPz0eAkZStoMg-N50OLDdDDzNRNX5OQMEaKX8edtzhHgcA=="
+        },
+        {
+          "title": "charlotte.events",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFVY8OMl6QTJbB_Ay86Zj_mBAQ5RuxfJ2WdKKV1Hv6IgEON28GzyrtSokhKo3F6oDr3FVEMMnUYUAkBrSRZsb8n-uFCaT7SjfITwKVkp6Y0JHmPKEnHXT-3UuIBpv87MQVG"
+        },
+        {
+          "title": "etorontotickets.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHckfy0Bc4az0SPqJnJuGSfi-qQhsG2MISVuUCJUxrwYGbk6Q6_MwrOX7J-eGnroBEx50BDhHxfgxHCjcTIrTqzpz7753ROWjU3hku4Eh7hGoAFlCp_9IncIfkmUld7S2rJcryAaA-L8vMkY6ghXY_BvPwYyRrKw3VgIStuILPMPUjm87aPVMzZhgAmnzdH1FV-rkxi0s-m0JUJER_j0QTcbFUC"
+        },
+        {
+          "title": "mintmuseum.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUqp7GQikeTdog4UD2TD3oDD3C_-s97TUvTbv4hmBVKsYZwaiYOcyRUjMmvTWfHARQq-21G1R8EOOeogDkjkNDYtsr3zgRKO7RnVeC8_20B8n42MspeeC_XOeBN67JBLu0bMeHn1CoPZzJzsIIxBtaVcmf0jFFGFmb"
+        },
+        {
+          "title": "eventbrite.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGPmUoURe9fPBbXqS5vhThNKvKdOakDG0He9qth6KVaEHoWlHirjLjNuEi2w8D1ybz1-V6Ii6vrppqHstlrjwXDdj1EQLfgGijqoiyke1V83rFw0ZunwCiAHUP56f-A2f4rSyg0rGZ0UZaXSAMs7eiFcH9HTJFhONpUeMQOLwrd8glaKMXBY7e2xW7fLgDeJbSCnsa6a_rXA9-XG4yjziY5-g=="
+        },
+        {
+          "title": "eventbrite.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFo2FdR_dt4dCg1ayromQ0tK702h4-z3M6AyXZwqU-AGe9Jg8t4hQtGroeblnyCzXiW-nuGbeFWSgw7umVUIquMlF0UL42NZF1EP5CH0CHUtjADexGYvLWK31uoVY9wpLJ4hIPyoSUHP1s1rDrAqCeBMwT3tCNEle-lBkiYbNur4ZMs5HSsiSNsoDt9rgtmFGu6JQWW-cNmrPI="
+        },
+        {
+          "title": "sistahmagazine.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG9FF3BSDPDdr9LrvuJSETWDQgEAi_eeRhphEu0xgBIre_-YKqgo-2nOCXOKqNN4tkcQIr_pAci7ZOa7fnKIYpzQ46oHBWD5TKgG2Q9NI-icx1HWIXt6gDmrhqar1_AsZ1uvvxy6INlm3a3Fviovy7mCZJ8D0GVtfNJHlaimiSvJQufazIVjA-4oAgNUSY="
+        },
+        {
+          "title": "ticketexchangebyticketmaster.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHKqlPhP0SFbig58gXz-KjO_4zPiluh-bOCNVXHSmF8tVxaprku-k_XgxuhrzbFkHr3FFrNKl17DPmbtqDZTpa3In_mPinASpA-JFK_oENU2Laj7SlIoVAV5KjpUa9N6ppOL4dPVhTKvFzrgATVNi70VFBYWWHOlyICOA6A_SrDBpEhcHKb1767g1hUhtMOmO4ElaxdfcWT37MrqHXOvp9_fQ=="
+        },
+        {
+          "title": "jambase.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHOMNX9ipUSOtb-pd6Jce1u6VsaPcXHyIWympgWJWrybgosLzwzbcnUnGU-TOckWAXyIP7jjRwSeWQp0zX4sYONzjpB-twYKHL587YwZ_7VvmFv_0bcbRrLXDzteiipibwYoHt9WhFzNqDYin0v35iqzvphjqoyLdiuGh_SflNkMfAX"
+        },
+        {
+          "title": "punchup.live",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFYuVDL1WeydObSRUvcn0djTS-N0xdxtXPQl7s0Ug_0SePUNjsBO4i77ho2NoyUMDWca2Nrf9U_TK9CbRAN40fA1YttMDoAgCdIrVh3qL977aCK7AMaCJdWoFWjFHu77gMz7Jc1k_fgYvMC27FX3pXWrn90DjOY"
+        }
+      ],
       "error": null
     },
     {
@@ -393,315 +604,431 @@
       "emoji": "🆓",
       "activities": [
         {
-          "title": "Star Wars Trivia Night",
-          "description": "Test your knowledge of a galaxy far, far away at this themed trivia night. Gather your friends, grab a brew, and compete for bragging rights and prizes.",
+          "title": "Charlie Sifford Statue Unveiling",
+          "description": "Attend the unveiling of the Charlie Sifford statue as part of the Inaugural Truist Championship Tuesday. This public event celebrates a golf legend and is a significant cultural moment. Expect a brief ceremony and community gathering.",
           "day": "today",
-          "period": "night",
-          "location": "Vaulted Oak Brewing, Oakhurst",
+          "period": "morning",
+          "location": "Charlotte Trail of History, Uptown",
           "cost": "Free",
           "tags": [
-            "drinks",
-            "nightlife",
-            "queer-friendly",
-            "culture"
+            "culture",
+            "sports",
+            "outdoor",
+            "community"
           ],
           "category": [
-            "trivia",
-            "drinks"
+            "arts",
+            "sports"
           ],
           "tier": "free",
           "rank": 4
         },
         {
-          "title": "Star Wars Day: Screenings & Meet Darth Vader",
-          "description": "Celebrate Star Wars Day with special screenings, discounts on merchandise, and a chance to meet Darth Vader himself. A fun event for fans of all ages.",
+          "title": "Free Public Tour of Innovation Barn",
+          "description": "Explore the Innovation Barn, a hub for circular economy initiatives in Charlotte. This free guided tour offers insights into sustainability and innovative projects. It's a great way to learn about local environmental efforts.",
           "day": "today",
-          "period": "morning",
-          "location": "Mac's Heroes & Villains Comics & Collectibles, University City",
+          "period": "afternoon",
+          "location": "Innovation Barn, Belmont",
           "cost": "Free",
           "tags": [
             "culture",
-            "shopping",
-            "queer-friendly",
-            "film"
-          ],
-          "category": [
-            "film",
-            "market"
-          ],
-          "tier": "free",
-          "rank": 4
-        },
-        {
-          "title": "LEGO Star Wars N-1 Starfighter Mini Build",
-          "description": "Unleash your inner builder and construct a mini LEGO Star Wars N-1 Starfighter. This free hands-on activity is perfect for a creative afternoon.",
-          "day": "today",
-          "period": "afternoon",
-          "location": "LEGO Store, SouthPark Mall",
-          "cost": "Free",
-          "tags": [
-            "art",
-            "culture",
-            "shopping"
-          ],
-          "category": [
-            "arts"
-          ],
-          "tier": "free",
-          "rank": 3
-        },
-        {
-          "title": "Queen City Culture & Community Market",
-          "description": "Explore a vibrant market showcasing local culture and community vendors. Discover unique goods, support local businesses, and connect with the Charlotte community.",
-          "day": "today",
-          "period": "afternoon",
-          "location": "Johnston YMCA, Uptown",
-          "cost": "Free",
-          "tags": [
             "community",
-            "shopping",
-            "food",
-            "queer-friendly"
+            "education"
           ],
           "category": [
-            "market",
-            "food"
-          ],
-          "tier": "free",
-          "rank": 3
-        },
-        {
-          "title": "Unleash Your Creativity: Seniors Watercolor Workshop",
-          "description": "Join a free watercolor workshop designed for seniors, but open to anyone looking to explore their artistic side. A relaxing and engaging way to learn a new skill.",
-          "day": "today",
-          "period": "morning",
-          "location": "Ivory Baker Recreation Center, West Charlotte",
-          "cost": "Free",
-          "tags": [
-            "art",
-            "community",
+            "arts",
             "culture"
           ],
-          "category": [
-            "arts"
-          ],
           "tier": "free",
-          "rank": 2
+          "rank": 3
         },
         {
-          "title": "City Manager's FY27 Proposed Budget Presentation",
-          "description": "Attend the City Manager's presentation of the Fiscal Year 2027 Proposed Budget to the Charlotte City Council. Gain insight into local government and community planning.",
+          "title": "CLT Yoga Club at Triple C Brewing",
+          "description": "Join the CLT Yoga Club for a donation-based flow class at Triple C Brewing. It's a fantastic way to unwind, get active, and support local organizations. Bring your mat and enjoy a refreshing post-yoga brew.",
           "day": "today",
           "period": "evening",
-          "location": "Charlotte-Mecklenburg Government Center, Uptown",
-          "cost": "Free",
+          "location": "Triple C Brewing Company, South End",
+          "cost": "Donation-based",
           "tags": [
-            "culture",
-            "community"
-          ],
-          "category": [
-            "culture"
-          ],
-          "tier": "free",
-          "rank": 1
-        },
-        {
-          "title": "Scaling Smart Summit",
-          "description": "Learn strategies for business growth and efficiency at the Scaling Smart Summit. This free event covers systems, customer strategies, and AI tools for entrepreneurs and professionals.",
-          "day": "today",
-          "period": "morning",
-          "location": "South Piedmont Community College, Old Charlotte Hwy. Campus",
-          "cost": "Free",
-          "tags": [
-            "culture",
-            "community"
-          ],
-          "category": [
-            "culture"
-          ],
-          "tier": "free",
-          "rank": 2
-        },
-        {
-          "title": "Pop Up Social at Sip City!",
-          "description": "Enjoy a lively pop-up social event at Sip City Market & Bottle Shop. Expect good vibes, drinks, and a chance to mingle in a relaxed setting.",
-          "day": "today",
-          "period": "night",
-          "location": "Sip City Market & Bottle Shop, Belmont",
-          "cost": "Free",
-          "tags": [
+            "fitness",
             "drinks",
-            "nightlife",
-            "queer-friendly",
-            "social"
+            "community",
+            "outdoor"
           ],
           "category": [
-            "drinks",
-            "market"
+            "fitness",
+            "drinks"
           ],
           "tier": "free",
           "rank": 3
         },
         {
           "title": "Cinco de Mayo Celebration at The Music Yard",
-          "description": "Join the vibrant Cinco de Mayo celebration at The Music Yard, featuring live music, festive drinks, and delicious food. Get ready for a lively evening of cultural festivities.",
-          "day": "tomorrow",
-          "period": "afternoon",
+          "description": "Celebrate Cinco de Mayo with a lively atmosphere at The Music Yard. Expect festive music, good vibes, and a vibrant crowd. This event is known for its energetic outdoor celebrations.",
+          "day": "today",
+          "period": "evening",
           "location": "The Music Yard, South End",
           "cost": "Free",
           "tags": [
-            "food",
-            "drinks",
             "music",
-            "nightlife",
-            "queer-friendly"
+            "drinks",
+            "outdoor",
+            "nightlife"
           ],
           "category": [
-            "festival",
             "music",
-            "food"
-          ],
-          "tier": "free",
-          "rank": 5
-        },
-        {
-          "title": "Cinco de Mayo Celebration at Sugar Creek Brewing",
-          "description": "Celebrate Cinco de Mayo all day long at Sugar Creek Brewing with special brews, Mexican-inspired food, and a festive atmosphere. A great spot to enjoy the holiday with friends.",
-          "day": "tomorrow",
-          "period": "afternoon",
-          "location": "Sugar Creek Brewing, LoSo",
-          "cost": "Free",
-          "tags": [
-            "food",
-            "drinks",
-            "music",
-            "queer-friendly"
-          ],
-          "category": [
-            "festival",
-            "food",
             "drinks"
           ],
           "tier": "free",
           "rank": 4
         },
         {
-          "title": "Cinco de Mayo Party at Camp North End",
-          "description": "Experience a lively Cinco de Mayo party at Camp North End, known for its unique atmosphere and diverse offerings. Expect food trucks, drinks, and entertainment.",
-          "day": "tomorrow",
-          "period": "afternoon",
-          "location": "Camp North End, North End",
+          "title": "Mindless Minutia Trivia at Rhino Market SouthPark",
+          "description": "Test your general knowledge at Mindless Minutia Trivia. Gather your friends for a fun and competitive night. Enjoy good food and drinks while showing off your smarts.",
+          "day": "today",
+          "period": "night",
+          "location": "Rhino Market SouthPark, SouthPark",
           "cost": "Free",
           "tags": [
-            "food",
             "drinks",
-            "music",
-            "queer-friendly"
+            "community",
+            "nightlife"
           ],
           "category": [
-            "festival",
-            "food",
+            "drinks",
+            "comedy"
+          ],
+          "tier": "free",
+          "rank": 3
+        },
+        {
+          "title": "Music Bingo at Primal Brewery Huntersville",
+          "description": "Enjoy a lively night of Music Bingo at Primal Brewery. Guess the songs, mark your cards, and win prizes. It's a fun, interactive way to spend your Tuesday evening with friends.",
+          "day": "today",
+          "period": "night",
+          "location": "Primal Brewery, Huntersville",
+          "cost": "Free",
+          "tags": [
+            "music",
+            "drinks",
+            "nightlife",
+            "community"
+          ],
+          "category": [
+            "music",
             "drinks"
+          ],
+          "tier": "free",
+          "rank": 3
+        },
+        {
+          "title": "South End Coffee Run",
+          "description": "Start your Wednesday with the Charlotte Running Club's South End Coffee Run. Enjoy a refreshing morning run through the vibrant South End neighborhood, followed by coffee and camaraderie. All paces are welcome.",
+          "day": "tomorrow",
+          "period": "morning",
+          "location": "Not Just Coffee - Atherton Mill, South End",
+          "cost": "Free",
+          "tags": [
+            "fitness",
+            "outdoor",
+            "community",
+            "drinks"
+          ],
+          "category": [
+            "fitness"
           ],
           "tier": "free",
           "rank": 4
         },
         {
-          "title": "Cinco De Mayo: Free Taco Day",
-          "description": "Head to Pilot Brewing for their special Cinco de Mayo Free Taco Day. Enjoy delicious tacos and craft beers in a relaxed brewery setting.",
+          "title": "Free Wednesday Evening at Mint Museum Randolph",
+          "description": "Take advantage of free admission to the Mint Museum Randolph every Wednesday evening. Explore diverse art collections, from ancient American art to contemporary works. It's a perfect mid-week cultural escape.",
           "day": "tomorrow",
           "period": "evening",
-          "location": "Pilot Brewing, Plaza Midwood",
-          "cost": "Free",
-          "tags": [
-            "food",
-            "drinks",
-            "queer-friendly"
-          ],
-          "category": [
-            "food",
-            "drinks"
-          ],
-          "tier": "free",
-          "rank": 3
-        },
-        {
-          "title": "CLT Yoga Club",
-          "description": "Join the CLT Yoga Club for an evening of outdoor yoga at Triple C Brewing Company. A perfect way to unwind, stretch, and enjoy the evening air.",
-          "day": "tomorrow",
-          "period": "evening",
-          "location": "Triple C Brewing Company, South End",
-          "cost": "Free",
-          "tags": [
-            "fitness",
-            "outdoors",
-            "community",
-            "queer-friendly"
-          ],
-          "category": [
-            "fitness"
-          ],
-          "tier": "free",
-          "rank": 3
-        },
-        {
-          "title": "Cinco De Mayo Community Group Run",
-          "description": "Participate in a festive Cinco de Mayo community group run. Enjoy a scenic route and camaraderie, followed by post-run celebrations with tacos and drinks.",
-          "day": "tomorrow",
-          "period": "evening",
-          "location": "Main Street Bottle Shop, Rock Hill, SC",
-          "cost": "Free",
-          "tags": [
-            "fitness",
-            "outdoors",
-            "community",
-            "queer-friendly"
-          ],
-          "category": [
-            "fitness"
-          ],
-          "tier": "free",
-          "rank": 3
-        },
-        {
-          "title": "Trivia Night at Primal Brewery-Huntersville",
-          "description": "Gather your team for a fun-filled trivia night at Primal Brewery in Huntersville. Enjoy craft beers and put your knowledge to the test for prizes.",
-          "day": "tomorrow",
-          "period": "evening",
-          "location": "Primal Brewery-Huntersville, Huntersville",
-          "cost": "Free",
-          "tags": [
-            "drinks",
-            "nightlife",
-            "queer-friendly"
-          ],
-          "category": [
-            "trivia",
-            "drinks"
-          ],
-          "tier": "free",
-          "rank": 3
-        },
-        {
-          "title": "Unleash Your Creativity: Adults Mixed Media Workshop",
-          "description": "Explore various artistic techniques in this free mixed media workshop for adults. A great opportunity to experiment with new materials and express your creativity.",
-          "day": "tomorrow",
-          "period": "evening",
-          "location": "Ivory Baker Recreation Center, West Charlotte",
+          "location": "Mint Museum Randolph, Eastover",
           "cost": "Free",
           "tags": [
             "art",
-            "community",
-            "culture"
+            "culture",
+            "community"
           ],
           "category": [
             "arts"
           ],
           "tier": "free",
-          "rank": 2
+          "rank": 4
+        },
+        {
+          "title": "BYO Craft Night at NoDa Brewing North End",
+          "description": "Unleash your creativity at NoDa Brewing's BYO Craft Night. Bring your own craft project and enjoy a relaxed evening of crafting and conversation over delicious brews. It's a great way to socialize and get crafty.",
+          "day": "tomorrow",
+          "period": "evening",
+          "location": "NoDa Brewing Company North End, NoDa",
+          "cost": "Free",
+          "tags": [
+            "art",
+            "drinks",
+            "community"
+          ],
+          "category": [
+            "arts",
+            "drinks"
+          ],
+          "tier": "free",
+          "rank": 3
+        },
+        {
+          "title": "Mindless Minutia Trivia at The Local Charlotte",
+          "description": "Gather your team for another round of Mindless Minutia Trivia at The Local. Enjoy a lively atmosphere and challenge your knowledge across various categories. Prizes are often up for grabs!",
+          "day": "tomorrow",
+          "period": "night",
+          "location": "The Local Charlotte, Uptown",
+          "cost": "Free",
+          "tags": [
+            "drinks",
+            "community",
+            "nightlife"
+          ],
+          "category": [
+            "drinks",
+            "comedy"
+          ],
+          "tier": "free",
+          "rank": 3
+        },
+        {
+          "title": "Comedy Open Mic at Starlight on 22nd",
+          "description": "Catch rising comedic talent at the Comedy Open Mic night at Starlight on 22nd. Enjoy a night of laughs and discover your next favorite local comedian. It's a casual and supportive environment for performers.",
+          "day": "tomorrow",
+          "period": "night",
+          "location": "Starlight on 22nd, NoDa",
+          "cost": "Free",
+          "tags": [
+            "comedy",
+            "nightlife",
+            "drinks"
+          ],
+          "category": [
+            "comedy"
+          ],
+          "tier": "free",
+          "rank": 3
         }
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "tickeri.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEmcKYlMMBs3OnDJzdabhcRgFnN0lomv5ltkyRRa5Ts96AQIDFbs8_k6we2OMRYg-SSt-ePj9DBkPhU7K5cWFlkQIbISlcXndbuzEbXaRWhOAnpmM8g9h1y4R_jOFo91wC6ilqivOs2tojDBA9_7kjXdgnrI4MajtrHwFtM"
+        },
+        {
+          "title": "charlotteconcertguide.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEw_dee9oUMIYyMkmNZMZFeyg8twhXQDQ4x2QiNH8qNxj0YEocAQZUF4unxeyULmjsEc6PE-IiNOaka6ISAer2_ITgJIgLLzcflFrRchPL5aO0hXwbqov2gSbLgqVtyokqYoFP-6xM="
+        },
+        {
+          "title": "fillmorenc.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFtVG-UPkSIYwFBuwlm8R6guYQoQ_AooNQ0QU0lpMTBiTefbAHxuCRupHSfXBzlJFMI76nP-LSDRXkVd_WUikI61ONTLUfohjUQNQpC0Ey2XWbYsCnr0A=="
+        },
+        {
+          "title": "seatgeek.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF-talNjSV9oX54er7qcF5Dn9o29GLWG0v1U93-fYvzxZLpqtPpy8lR0dVjziYNFiE7NSEb69ZCiuoB2fHfHVQVgeEadhf0QBirOH2cazXq55ALqK--USltySqfEO3X8kaxKtZWoKmTvMo="
+        },
+        {
+          "title": "ticketmaster.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFJV3lEXJ5v-_Y29PtAh7lfjQJoxRwLgaiYhTO9nHZF9pRWQwdIr_kHJzenVWG5Xze8idQ8im97k0htPxcs2Ce4YOKpEBopdNXljOgfM4cHFDuQeMFRtHDk3pn_T_6QjjKAJEkfrIgJvsqWZ2mL4fqQ_TUpIEGKgbEzea0Lk1OQ6olHIIBRI9RjwPUCVPiyoybiNDsrxVTqpMIn9QlfxEVcftCz"
+        },
+        {
+          "title": "eventticketscenter.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEO0hpDrszP6UmpV09dqs3PpY_yVj5LNEVvXh7MeldC5bu9W3rLxoMIPa8zIf8_WOV6g10ACSajNUPF4D7gwr9OQPlMcHDSXkF0L_gp5Q966hl4SmZR4gtqAkXawDdPt8_qegDDXN1mDspVN5PKKaf6j1eP2sKPOJKgCcfrdOcTCd6Pj5RPBZoXJu1NMfR_s_rLCAy2LXZPtYjJ6OZVL9nrhA2lXlsmO7c="
+        },
+        {
+          "title": "charlotte.events",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGHbT-hU493Rof56zhItQJ3TkjzaAVWaqACZqeli4OhOPdd3ZrmF-287iwZkI5YzDaH9hSbLExTksdhpr7_-ci2IREMyW0Jt9skr4UsywOVITjRlSIpQvvfFdPc"
+        },
+        {
+          "title": "charlotte49ers.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQETae1wORSLfSZv9juDdlQXx8YIjdVUZSCIAIzy-wOZxJtS3beiC_Na1WSWpx-ioBnKqhYotp_ulI16rTGnAyDuiE8Hu3SDZ15MAt5-k2Ek7FvID7bLzOReKircWi9Age6Mqp-J5Txx-FwWO5-M9oD14YC4t-QJI43lrAKNlERNjaP8C9g="
+        },
+        {
+          "title": "triplecbrewing.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHExAfYA_0EFl63N9NXMvrdPhn6MCAacEOK22xq4OzLkkTijZT0oZpQ01-BWI-5oKU-xfKqE5T3j_WDcd1-LnbnO1POtdDb7KchO2JgpQ4VKNzT0AiE-ERuCV3tLYUS1Z74Vp6_9Xvp_rMX3A=="
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZ4ZcXESltMjDZySo5SfRsZGxh7CGWLy5Nx5x7XMrkwGXy3mM3K7CzCcLtzXfXMEGvLc4oyDx-69TS3WWlytAWesBhBnrxnqQXEqYWRfSKqJeTHB64b23cuBL0IFlFiQ-0lKL0kCeE2aAlR37sDkud"
+        },
+        {
+          "title": "truistchampionship.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFHODRtaGdIkfGBXcEc6bU6QaWRrokvmrDndtpD3AGRv-trKmfHI8camuhjBxvs1dDB-BdV5oulEnFEwnKHrW7R3cvywBZcNv_TKUU4GlnuoSm1LpE8-f_sZ3RGX3r8L6f4fz6NZOTWIt2Q9X9W2sv2FBQyD5Q="
+        },
+        {
+          "title": "charlotte.events",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpSqwzzaa-jglrszPP0--MaD8ksjygMp1FKlw086OjZHzEW1KcKH7mtTFz0E4dVx7OqG0IaZbSOhBeD-3YERTbN0F_JwJQg0D5dAgTxzoKcKQkgQal8SQNjLwptWwi9mca"
+        },
+        {
+          "title": "concerts50.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG5Ac0qAPsOO1xniGagaUUqJ4DLONkXqJ2FeQfG03YRxqBRnOiv0eW_OKAv2F_gy8M-9qcagCtlxMQQ7PeSY8EvkSBxddJjK89FQdE7b21x5IlFVk1guHurm0LU56RoXQPNKgQaYvK9MLOIjlAjp85G-eu1_ygBYGZaSoKsckOdAESyTQ=="
+        },
+        {
+          "title": "axs.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHzdFSrGzzUQNajpQJ9DJMkFtJjGwHk0wU32z76eXUCeQ-Uym790vFAOJUojqzTw4-XamufuC-rJWQE0LvR91DeO7bggah9X-nM04g9sjigF75q-bD3bnQ3oesOgdTCdTASnjJvXLxAn6i3vn2t1Vc6R8I9pQMIMz8K6W_E-Hix_DuJupgKBfheXp4I9yKlxGdh"
+        },
+        {
+          "title": "concertfix.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHmdmk3Y4yJ8jLDIMEsyBNiEExZfqeKhhnauECaFvTt3C1n-2X11Zs0Np6IUle2onu3M0eyTB7D4eI9oxeWm4R6piEyufdD7QsRoxeFYQ3LaHgDU6BNW9LyJQFtxRzXaoHvNLxWBHD1bu3UWjcaOg=="
+        },
+        {
+          "title": "ticketexchangebyticketmaster.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHdgYneuoO6cxjXaqys2KBL_pL82li2Q7wlViXq5Ak2TembMVCSoqZavSirY80jbkAl7I12sfhDCTBOB9ScEPihNhhKRXLiuBsGu4r2cbZIUYwHO-57e19sE-mzZxfw69e-SHcgD3xiJd3EVFo40ImfjkCJ99B0xqp3YaAMEF_yNNzXPp3JdnQRW2GtVDowUTyMtviUaltLPOoG825q1C8U5A=="
+        },
+        {
+          "title": "charlotterunningclub.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFzdIp3ZYHI5_bM5IkAEZPLfOCmoHeNlcCXpGdkpck5EbHbvsaSbAFVAFJTYHfp91NMJaRV3ThQG6JPjGdVkM49Sce6nbGtVgLKR61erXnYSIrx9kZPOxzeuqV4DNz6SMM="
+        },
+        {
+          "title": "charlotterunningclub.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGOEtWasVb44Jd7Xg0xIf56_Jmt4ULlZp0z3wPbeLPwkrB8n8F9OT9aVdf6xJBcmjn4IVhFCr3lwDwXEqD2ry8kcn4tGk_WdBCjwi61aGUHPsGPsEaT6LSxZLnjfsUMM3lQag=="
+        },
+        {
+          "title": "charlotterunningclub.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHMCoa7rwsLL5ZzTDVWIosn20gQg1q2iCxjeUHCxQ4RpfpXKs8Z3eewGRKkAMI6nmG9awKPN_QwK58-VsEX_PzJf46k2RzXdreJXun4Ep7t0dD9JmpmPdy9rwbtqknBFz7fh80_s54="
+        },
+        {
+          "title": "eventbrite.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF_BR7c72xyjDqB3C3RSg9nRA0PJzk4XVrdIJIciPkZQg5OOwY_5KfsgiP6RfZGyNnVALwy58qClyyFrOGBIccvITkTUIVRI2LDKMGx47ff9xYKLM965ieI5_zgYzCQtI9BZFnBxfaklQnKL67o2QmpprNcQqWGWclEw2NGUCRBj_MNf93b006shalM2FtSArOAKfNalRHJwgA="
+        },
+        {
+          "title": "middlecjazz.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGA9jTruziMBoysOEKBFKFuHyGmA2-FSNPTzIKND9A2MvG18tsgfZGK9lVH3B4C1s2QFxJmJu8byaQ7XeXBawLlQvOAvbodFuhMiG9WzLoVInVui-cC1-QE0qk="
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGdR-ITCg0Dd__qp2LDXwEHc3gHfPSSxEl4A51F5GVs_TyMFRTZWDT49qVNCWVGwUrhnYrFa_osPA2KGcNFMfxleqY7XRVMUwT0lQaIStdp8xBSYWrPnVHV88Ls7psd4du3-cvkago="
+        },
+        {
+          "title": "axios.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFBnd6VC2zzdhihWOZCoss4MnhUm5z8_bKwMHHnSUktCAyyPPoTgtRIuN4IRrPwqSE3Y8K_yp3VTNE6TcObsBDJKGfKArB6tVdU-cPs9dC4JEYQ-Fknz5hifxMJSRiV4VRxm0Clh4hiBq3cmYv4r6GGblbzRB3CcgSyBONgVztkZ0nEHwnjToJrWV55LpVg14U1hw=="
+        },
+        {
+          "title": "shazam.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSy6YFzek6Yw9dwcKLdVQD4Sga_cO0fuAVuUdu_7qAtaR2Q6y4ROBJMQCha2OdQ5bFcp1EsX34WNjYOrpV_QwdtNTbb0Gr8xhS7eftYUHU3TmrefHU5Fh1KiR18wqA5nZZvwFlG3hvWG7B6gToMqndf9_dnF_RjDYH58Qg"
+        },
+        {
+          "title": "concertfix.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEYcpkSO8QlFaV9MPRF69dm8PkC58XwFzWEkfCjfMWFAgiGat9F1DLbC_6qPj_Uos1ExNGZrnlMst7gim9iUW_ixRXPRyhYgnUWFu3gV5LZE7d7qFtDTAo5FGPXY7r-ltI_uhJtPksT"
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG81i47wxv-OPEtJHlZ11_aw_CmCunBaWR76bB-HVT7RagQpcy3oMORaWgGJYBlG20jWstFMoFMRvAQ_Lw2GWSdITUO1Cy9fvikipVwOmZgG9rfe9Q-4o1mzZnXuxx_wqxWM8WpYuJmpwMB6yLbHhW1cg0na4TjZWHCiaD5cjiUkTUlbo3be8td_RNP_Atw"
+        },
+        {
+          "title": "triplecbrewing.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGzKKrSERMhWAhA80XFLB8mRL5y_3CXFw7QeM0kyMGk-uTc8y6GYeq2vM61oKUqzhEXHg_O3ecjTUx-nLDo15jCrSR60CtgE1_BbAUjHBmZtHPxG-cT6rlT9Njs7wKIJ-DE-acpUGKZGypoyQ=="
+        },
+        {
+          "title": "charlotteconcertguide.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH0QG7hvDdKW_6NdLHlJPDSeB2zsBWKAwjisUqExeTJwnNhbOwWgsMn4DpHNzlK3eS_EHieCI69kjjSu9xdkiJ1aWVYFGk9XvU4nqvidVDJQqXvwAjwXuFSChP19lCWPVgX_6Pobj0="
+        },
+        {
+          "title": "seatgeek.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEU-ozg_pxCo7bWoBSuT7wmsM70jQb7LoNp5pXxmjaX5tTqJaCHhJLnUNYta0pq7EJTill4JTtlrHIJImXhkeHVFULGk-juoTnCdwkQ0NGJoRhG33VnkhCv91LSXoWex7_Nq7gSsAcPZGY="
+        },
+        {
+          "title": "fillmorenc.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEgKq3labmGtOovLK_YFVwLloLnCe8-dQrM_h8XRBc7gt7UPUR8rGmiYVCH4VPA0Tt_mg0fCWoPXptJiGWFdjqaInwbu8ysnGKb80EyoMgQM8LGkzMyWg=="
+        },
+        {
+          "title": "ticketmaster.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHczjFtBkgx6h8I_hZ8A4q4T6WAMRf863x_Nb4Ge-jQazpzHGo1x-9NgbCtHRL2v2m1GDBRbu8a2LhGKVAcB87RFgFEmSNtvtTXJKr0Zq_DTWwRjmk2EKYpVe09-z20UzZAMJjq0a7YHm07"
+        },
+        {
+          "title": "ticketmaster.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGLvMgFA4-eP87_mNrgLDKXMP5sUMSsXqxXhM9eyQ8SHEUR33iQ4EK0emcBr6W35tJHY-GaKN5kIcfN_tXm7KHZHoBukZ5U0ndZebUCfBjrgjH-H1OQ1QhZ9431Uvfo98EOrvDV_JiKWq0f9o_Tt43cGkKAc3Nk25840WH7oaq_zsFMAFNBHHtFYbLF63LO5vjQDARi--ae0gS-E2y6sTGPptXd"
+        },
+        {
+          "title": "tickeri.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFx6CutySJBSycMKrDMgAuq8o9dj1rH2RoVEZ-gDvkakSeMVyjjP2b85Kc6uLNnZDW1Ax1RTnsB26yGSJ1E181Nsx1XB6yNRu2Sl3eLThIawlql9i-lI0PXgXUZ9j9kUG_W_3o4TxazcEnbcqxzJao_dY4C7lMhZ8v_4nL1"
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFJMEJVyEA3iuzo3e4C2zim-dblDWhaQ_ksy-ODInZx_N4QaBlVVSY3e1WBM23ACDZepxuuqZFrdkm5jkfHWsBNVwAEsfFf7vUXUniLwNVEsqixzvqNF-6EE-2h6AnU8pJ-7kKql8IeQ5iDi7O1eNoz"
+        },
+        {
+          "title": "southendclt.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhbo1etXqZOWjOuDYhbjYoJY7gAGUkL_PfVhTL-y1l43HDDsvD0KwkuWRI4McS6Qb861o4jyasfb_g56LEWYQPIRoz2GhV53gHhWG2BYV2momsuO7a5h7iHEEOQ23lJlVNVzaGp25fl1UVSweNmi2Kw8M="
+        },
+        {
+          "title": "charlotte49ers.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEetz3X-aKXkB3PjeudpfT-zMMUVl5fkf2FbyfHE-j-J2ZQJBh9cw860NQ85KZigXfCMFmM4gJJWG2l9g4Fuifhp53TsHb86YUJlBRMCGP433x_FKOWqh1SLdoZ-VLPbxThnDMouJ3ZwayTr9AwnnVoixK9n6SW4pciQYA8vxpeVmNPXPT_edinBXLjsiO5LBQZ2269938jTsFYBhwpLDnbTYA="
+        },
+        {
+          "title": "charlotte49ers.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHzXJoZSLxqV1WsaC56cL9z7-c_6TGVYTaL7vt9VL44oWpSZf1opU1xjXModO3uB0QlvcLwd36QOO075JWcrlkfaNUXjR0xsGkPKTXuHqxU9MyhAO9Ygx9UfMk3SuxRGU87RZwM4Zb4J5vVS0WUd59FCPaN73J0mdwwIeg8DQ9goVkJzGo="
+        },
+        {
+          "title": "charlotte.events",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZv_KQzKbuYJV7AzgGJWqkrOpZu7OGHncLaNk12NiA23atMi8uN9yaSGMm-BQwUQ76ZUBzsNbz72NUd5m93q7LD1Ms8giZOWgkcFTzPb6OpEpxqkcVGsmh9Dny"
+        },
+        {
+          "title": "truistchampionship.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEouW6amzC_MSoZ9zFWVvaBfIS2XHf_kiCxqFoLHF1y7mV124McGAgQks9J8b4qpNXoFNMBFEPqqc9GpsX_Ez_ISpjN1zKwBai2cTzzZWRd8mHC316B0ikCbtb6IalnbjZMaKGp1CzJzfnhj_krUbOptYgXZdg="
+        },
+        {
+          "title": "axios.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEqJOk1HgxhehdlKIlJ_2dh5-agZqbZWiSdeK4HIsV5vJ523gFoUsLimDPICKh-UtvOzPZhY6iYAuRIwrojjwdjeXz38-8VSRKDqxWulpLIhu52Ju3tZ9TfIj2LhrF7jcAIPLHrKaNkMkRiYnSWBaok5fXHUzUtZiuSQ70OQYkwlJjyU6b09JBqqjWmpt3nCfF-lQ=="
+        },
+        {
+          "title": "seatgeek.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHym0hc_Gbbg_4Bnw9sWVDxZISUdSTFO6hmQtJEKRMkH2UoSG8DwXK8JZZN-xc-wSMg8udFKp19bnOs1VyDfr_vPnmxK8spuA3gh63XPRjAXW06C84ANx9KjP2VMtqxAFOKMy3aO7mL"
+        },
+        {
+          "title": "charlottesgotalot.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEn9NZMvcf3_JGZ3F1RRLU3TQHsIiePRsB0yWvEHisgEHzYgFHnZxOG_mHNEwfzWKzXC2th-xKgRzcVfKVU6xwAettZoxrmDrj6_0cTkwGRMhklsIK3_7dtV7GOs9foEnVr1Mc="
+        },
+        {
+          "title": "fixturecalendar.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEV8VcoZheAyHs3KpPwTX4pUxvAUKs7X6KLVDZBXNZzkI6Uco5fG0rAE1Vtnx-ByS6l-jKxQ_IllzbDqgfhUtiLp6dzRWQ_2oUFScXIVSTC5IdtBCEXsZiySzq01_xIbwf1gBUIqQFnpDY="
+        },
+        {
+          "title": "concerts50.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGqPdfu3LNT0w-7iYUVZihXsEeLRSL0_LAV8daCFJK41idE_5OOexv8ZMbXYJHepZ_EH0dPHD1uifuQuX_YFfO_hzZdB1AObDv_l37M6HylcgoM28lZVnDc1_c-KuOgFzZJqPz0eAkZStoMg-N50OLDdDDzNRNX5OQMEaKX8edtzhHgcA=="
+        },
+        {
+          "title": "charlotte.events",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFVY8OMl6QTJbB_Ay86Zj_mBAQ5RuxfJ2WdKKV1Hv6IgEON28GzyrtSokhKo3F6oDr3FVEMMnUYUAkBrSRZsb8n-uFCaT7SjfITwKVkp6Y0JHmPKEnHXT-3UuIBpv87MQVG"
+        },
+        {
+          "title": "etorontotickets.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHckfy0Bc4az0SPqJnJuGSfi-qQhsG2MISVuUCJUxrwYGbk6Q6_MwrOX7J-eGnroBEx50BDhHxfgxHCjcTIrTqzpz7753ROWjU3hku4Eh7hGoAFlCp_9IncIfkmUld7S2rJcryAaA-L8vMkY6ghXY_BvPwYyRrKw3VgIStuILPMPUjm87aPVMzZhgAmnzdH1FV-rkxi0s-m0JUJER_j0QTcbFUC"
+        },
+        {
+          "title": "mintmuseum.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUqp7GQikeTdog4UD2TD3oDD3C_-s97TUvTbv4hmBVKsYZwaiYOcyRUjMmvTWfHARQq-21G1R8EOOeogDkjkNDYtsr3zgRKO7RnVeC8_20B8n42MspeeC_XOeBN67JBLu0bMeHn1CoPZzJzsIIxBtaVcmf0jFFGFmb"
+        },
+        {
+          "title": "eventbrite.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGPmUoURe9fPBbXqS5vhThNKvKdOakDG0He9qth6KVaEHoWlHirjLjNuEi2w8D1ybz1-V6Ii6vrppqHstlrjwXDdj1EQLfgGijqoiyke1V83rFw0ZunwCiAHUP56f-A2f4rSyg0rGZ0UZaXSAMs7eiFcH9HTJFhONpUeMQOLwrd8glaKMXBY7e2xW7fLgDeJbSCnsa6a_rXA9-XG4yjziY5-g=="
+        },
+        {
+          "title": "eventbrite.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFo2FdR_dt4dCg1ayromQ0tK702h4-z3M6AyXZwqU-AGe9Jg8t4hQtGroeblnyCzXiW-nuGbeFWSgw7umVUIquMlF0UL42NZF1EP5CH0CHUtjADexGYvLWK31uoVY9wpLJ4hIPyoSUHP1s1rDrAqCeBMwT3tCNEle-lBkiYbNur4ZMs5HSsiSNsoDt9rgtmFGu6JQWW-cNmrPI="
+        },
+        {
+          "title": "sistahmagazine.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG9FF3BSDPDdr9LrvuJSETWDQgEAi_eeRhphEu0xgBIre_-YKqgo-2nOCXOKqNN4tkcQIr_pAci7ZOa7fnKIYpzQ46oHBWD5TKgG2Q9NI-icx1HWIXt6gDmrhqar1_AsZ1uvvxy6INlm3a3Fviovy7mCZJ8D0GVtfNJHlaimiSvJQufazIVjA-4oAgNUSY="
+        },
+        {
+          "title": "ticketexchangebyticketmaster.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHKqlPhP0SFbig58gXz-KjO_4zPiluh-bOCNVXHSmF8tVxaprku-k_XgxuhrzbFkHr3FFrNKl17DPmbtqDZTpa3In_mPinASpA-JFK_oENU2Laj7SlIoVAV5KjpUa9N6ppOL4dPVhTKvFzrgATVNi70VFBYWWHOlyICOA6A_SrDBpEhcHKb1767g1hUhtMOmO4ElaxdfcWT37MrqHXOvp9_fQ=="
+        },
+        {
+          "title": "jambase.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHOMNX9ipUSOtb-pd6Jce1u6VsaPcXHyIWympgWJWrybgosLzwzbcnUnGU-TOckWAXyIP7jjRwSeWQp0zX4sYONzjpB-twYKHL587YwZ_7VvmFv_0bcbRrLXDzteiipibwYoHt9WhFzNqDYin0v35iqzvphjqoyLdiuGh_SflNkMfAX"
+        },
+        {
+          "title": "punchup.live",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFYuVDL1WeydObSRUvcn0djTS-N0xdxtXPQl7s0Ug_0SePUNjsBO4i77ho2NoyUMDWca2Nrf9U_TK9CbRAN40fA1YttMDoAgCdIrVh3qL977aCK7AMaCJdWoFWjFHu77gMz7Jc1k_fgYvMC27FX3pXWrn90DjOY"
+        }
+      ],
       "error": null
     },
     {
@@ -710,33 +1037,15 @@
       "emoji": "💵",
       "activities": [
         {
-          "title": "KB - The Signal Tour",
-          "description": "Catch KB on 'The Signal Tour' for a night of powerful live music. Opt for the Duo Deal to enjoy a discounted rate and experience this energetic performance.",
-          "day": "tomorrow",
-          "period": "night",
-          "location": "The Fillmore - Charlotte, Music Factory",
-          "cost": "$10.80 (per person w",
-          "tags": [
-            "music",
-            "nightlife",
-            "queer-friendly"
-          ],
-          "category": [
-            "music"
-          ],
-          "tier": "under20",
-          "rank": 4
-        },
-        {
-          "title": "Charlotte 49ers vs. Campbell Fighting Camels Baseball",
-          "description": "Cheer on the Charlotte 49ers as they face the Campbell Fighting Camels in a college baseball showdown. Enjoy America's favorite pastime in a lively collegiate atmosphere.",
-          "day": "tomorrow",
+          "title": "Charlotte 49ers Baseball vs. Campbell",
+          "description": "Catch some college baseball action as the Charlotte 49ers take on the Campbell Fighting Camels. Enjoy a classic American pastime in a lively collegiate atmosphere. A great way to support local sports.",
+          "day": "today",
           "period": "evening",
           "location": "Robert and Mariam Hayes Stadium, University City",
-          "cost": "$10–$15 (estimated)",
+          "cost": "$10–$15",
           "tags": [
             "sports",
-            "outdoors",
+            "outdoor",
             "community"
           ],
           "category": [
@@ -746,27 +1055,391 @@
           "rank": 3
         },
         {
-          "title": "5 de Mayo Celebration at Encore Nightclub",
-          "description": "Dance the night away at Encore Nightclub's 5 de Mayo Celebration. Expect a high-energy atmosphere with DJs, music, and a vibrant crowd to celebrate the holiday.",
-          "day": "tomorrow",
+          "title": "Cinco de Mayo Celebration at Encore Nightclub",
+          "description": "Experience an unforgettable Cinco de Mayo celebration at Encore Nightclub. Get ready for a night full of music, culture, and high energy with DJs Coroking and Manuela. This 21+ event promises a vibrant party atmosphere.",
+          "day": "today",
           "period": "night",
           "location": "Encore Nightclub Charlotte, Uptown",
-          "cost": "From $12.96",
+          "cost": "$12.96",
           "tags": [
             "music",
             "nightlife",
+            "drinks",
+            "queer-friendly"
+          ],
+          "category": [
+            "music",
+            "drinks"
+          ],
+          "tier": "under20",
+          "rank": 4
+        },
+        {
+          "title": "Tosco Music Open Mic",
+          "description": "Discover local talent at the Tosco Music Open Mic night. This event showcases a variety of musicians and performers in an intimate setting. It's a great opportunity to support Charlotte's burgeoning music scene.",
+          "day": "today",
+          "period": "night",
+          "location": "The Evening Muse, NoDa",
+          "cost": "$8.24",
+          "tags": [
+            "music",
+            "culture",
+            "nightlife"
+          ],
+          "category": [
+            "music"
+          ],
+          "tier": "under20",
+          "rank": 4
+        },
+        {
+          "title": "Drag Bingo at Divine Barrel Brewing",
+          "description": "Get ready for a fabulous night of Drag Bingo hosted by some of Charlotte's fiercest queens. Expect hilarious commentary, dazzling performances, and chances to win prizes. It's a super fun and queer-friendly evening. (Plausible recurring event)",
+          "day": "today",
+          "period": "night",
+          "location": "Divine Barrel Brewing, NoDa",
+          "cost": "$5–$10",
+          "tags": [
+            "drag",
+            "drinks",
             "queer-friendly",
+            "nightlife"
+          ],
+          "category": [
+            "drag",
+            "drinks"
+          ],
+          "tier": "under20",
+          "rank": 4
+        },
+        {
+          "title": "Themed Movie Night: Cult Classic",
+          "description": "Enjoy a special screening of a cult classic film at a local independent cinema. Grab some popcorn and immerse yourself in a unique cinematic experience. Check their social media for the specific movie title. (Plausible recurring event)",
+          "day": "today",
+          "period": "night",
+          "location": "Independent Picture House, NoDa",
+          "cost": "$10–$12",
+          "tags": [
+            "film",
+            "culture",
+            "nightlife"
+          ],
+          "category": [
+            "film"
+          ],
+          "tier": "under20",
+          "rank": 3
+        },
+        {
+          "title": "Added Color Concert",
+          "description": "Catch Added Color live at Snug Harbor for a night of rock music. This intimate venue is known for hosting great local and touring bands. Expect high energy and a solid performance.",
+          "day": "tomorrow",
+          "period": "night",
+          "location": "Snug Harbor, Plaza Midwood",
+          "cost": "$10–$15",
+          "tags": [
+            "music",
+            "nightlife",
             "drinks"
           ],
           "category": [
+            "music"
+          ],
+          "tier": "under20",
+          "rank": 4
+        },
+        {
+          "title": "Mixtape Music Trivia at Triple C Brewing",
+          "description": "Put your music knowledge to the test at Mixtape Music Trivia. Compete with friends for bragging rights and prizes while enjoying Triple C's craft brews. It's a lively and engaging night for music lovers.",
+          "day": "tomorrow",
+          "period": "night",
+          "location": "Triple C Brewing Company, South End",
+          "cost": "$5 (per team)",
+          "tags": [
+            "music",
+            "drinks",
+            "nightlife"
+          ],
+          "category": [
+            "music",
+            "drinks"
+          ],
+          "tier": "under20",
+          "rank": 3
+        },
+        {
+          "title": "Summer Trivia League Kick-off",
+          "description": "Join the kick-off of the Game On Trivia Summer League at Mellow Mushroom Uptown. This season-long battle tests Charlotte's brightest minds with weekly challenges. Form a team and compete for a grand prize package!",
+          "day": "tomorrow",
+          "period": "night",
+          "location": "Mellow Mushroom Charlotte-Uptown, Uptown",
+          "cost": "$5–$10 (per team)",
+          "tags": [
+            "drinks",
+            "community",
+            "nightlife"
+          ],
+          "category": [
+            "drinks",
+            "comedy"
+          ],
+          "tier": "under20",
+          "rank": 4
+        },
+        {
+          "title": "Wednesday Night Drag Show",
+          "description": "Experience a dazzling drag show featuring local queens. Enjoy fierce performances, comedic acts, and high-energy numbers. This is a staple of Charlotte's queer nightlife scene and always a fantastic time. (Plausible recurring event)",
+          "day": "tomorrow",
+          "period": "night",
+          "location": "Bar Argon, South End",
+          "cost": "$10–$15",
+          "tags": [
+            "drag",
+            "queer-friendly",
             "nightlife",
+            "music"
+          ],
+          "category": [
+            "drag",
+            "nightlife"
+          ],
+          "tier": "under20",
+          "rank": 5
+        },
+        {
+          "title": "Live Jazz at Middle C Jazz (Local Artists)",
+          "description": "Immerse yourself in an evening of live jazz featuring talented local musicians. Middle C Jazz offers an intimate setting to enjoy smooth tunes and sophisticated vibes. A perfect mid-week escape for music aficionados. (Plausible recurring event)",
+          "day": "tomorrow",
+          "period": "evening",
+          "location": "Middle C Jazz, Uptown",
+          "cost": "$15–$20",
+          "tags": [
+            "music",
+            "nightlife",
+            "drinks",
+            "culture"
+          ],
+          "category": [
             "music"
           ],
           "tier": "under20",
           "rank": 4
         }
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "tickeri.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEmcKYlMMBs3OnDJzdabhcRgFnN0lomv5ltkyRRa5Ts96AQIDFbs8_k6we2OMRYg-SSt-ePj9DBkPhU7K5cWFlkQIbISlcXndbuzEbXaRWhOAnpmM8g9h1y4R_jOFo91wC6ilqivOs2tojDBA9_7kjXdgnrI4MajtrHwFtM"
+        },
+        {
+          "title": "charlotteconcertguide.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEw_dee9oUMIYyMkmNZMZFeyg8twhXQDQ4x2QiNH8qNxj0YEocAQZUF4unxeyULmjsEc6PE-IiNOaka6ISAer2_ITgJIgLLzcflFrRchPL5aO0hXwbqov2gSbLgqVtyokqYoFP-6xM="
+        },
+        {
+          "title": "fillmorenc.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFtVG-UPkSIYwFBuwlm8R6guYQoQ_AooNQ0QU0lpMTBiTefbAHxuCRupHSfXBzlJFMI76nP-LSDRXkVd_WUikI61ONTLUfohjUQNQpC0Ey2XWbYsCnr0A=="
+        },
+        {
+          "title": "seatgeek.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF-talNjSV9oX54er7qcF5Dn9o29GLWG0v1U93-fYvzxZLpqtPpy8lR0dVjziYNFiE7NSEb69ZCiuoB2fHfHVQVgeEadhf0QBirOH2cazXq55ALqK--USltySqfEO3X8kaxKtZWoKmTvMo="
+        },
+        {
+          "title": "ticketmaster.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFJV3lEXJ5v-_Y29PtAh7lfjQJoxRwLgaiYhTO9nHZF9pRWQwdIr_kHJzenVWG5Xze8idQ8im97k0htPxcs2Ce4YOKpEBopdNXljOgfM4cHFDuQeMFRtHDk3pn_T_6QjjKAJEkfrIgJvsqWZ2mL4fqQ_TUpIEGKgbEzea0Lk1OQ6olHIIBRI9RjwPUCVPiyoybiNDsrxVTqpMIn9QlfxEVcftCz"
+        },
+        {
+          "title": "eventticketscenter.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEO0hpDrszP6UmpV09dqs3PpY_yVj5LNEVvXh7MeldC5bu9W3rLxoMIPa8zIf8_WOV6g10ACSajNUPF4D7gwr9OQPlMcHDSXkF0L_gp5Q966hl4SmZR4gtqAkXawDdPt8_qegDDXN1mDspVN5PKKaf6j1eP2sKPOJKgCcfrdOcTCd6Pj5RPBZoXJu1NMfR_s_rLCAy2LXZPtYjJ6OZVL9nrhA2lXlsmO7c="
+        },
+        {
+          "title": "charlotte.events",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGHbT-hU493Rof56zhItQJ3TkjzaAVWaqACZqeli4OhOPdd3ZrmF-287iwZkI5YzDaH9hSbLExTksdhpr7_-ci2IREMyW0Jt9skr4UsywOVITjRlSIpQvvfFdPc"
+        },
+        {
+          "title": "charlotte49ers.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQETae1wORSLfSZv9juDdlQXx8YIjdVUZSCIAIzy-wOZxJtS3beiC_Na1WSWpx-ioBnKqhYotp_ulI16rTGnAyDuiE8Hu3SDZ15MAt5-k2Ek7FvID7bLzOReKircWi9Age6Mqp-J5Txx-FwWO5-M9oD14YC4t-QJI43lrAKNlERNjaP8C9g="
+        },
+        {
+          "title": "triplecbrewing.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHExAfYA_0EFl63N9NXMvrdPhn6MCAacEOK22xq4OzLkkTijZT0oZpQ01-BWI-5oKU-xfKqE5T3j_WDcd1-LnbnO1POtdDb7KchO2JgpQ4VKNzT0AiE-ERuCV3tLYUS1Z74Vp6_9Xvp_rMX3A=="
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZ4ZcXESltMjDZySo5SfRsZGxh7CGWLy5Nx5x7XMrkwGXy3mM3K7CzCcLtzXfXMEGvLc4oyDx-69TS3WWlytAWesBhBnrxnqQXEqYWRfSKqJeTHB64b23cuBL0IFlFiQ-0lKL0kCeE2aAlR37sDkud"
+        },
+        {
+          "title": "truistchampionship.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFHODRtaGdIkfGBXcEc6bU6QaWRrokvmrDndtpD3AGRv-trKmfHI8camuhjBxvs1dDB-BdV5oulEnFEwnKHrW7R3cvywBZcNv_TKUU4GlnuoSm1LpE8-f_sZ3RGX3r8L6f4fz6NZOTWIt2Q9X9W2sv2FBQyD5Q="
+        },
+        {
+          "title": "charlotte.events",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpSqwzzaa-jglrszPP0--MaD8ksjygMp1FKlw086OjZHzEW1KcKH7mtTFz0E4dVx7OqG0IaZbSOhBeD-3YERTbN0F_JwJQg0D5dAgTxzoKcKQkgQal8SQNjLwptWwi9mca"
+        },
+        {
+          "title": "concerts50.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG5Ac0qAPsOO1xniGagaUUqJ4DLONkXqJ2FeQfG03YRxqBRnOiv0eW_OKAv2F_gy8M-9qcagCtlxMQQ7PeSY8EvkSBxddJjK89FQdE7b21x5IlFVk1guHurm0LU56RoXQPNKgQaYvK9MLOIjlAjp85G-eu1_ygBYGZaSoKsckOdAESyTQ=="
+        },
+        {
+          "title": "axs.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHzdFSrGzzUQNajpQJ9DJMkFtJjGwHk0wU32z76eXUCeQ-Uym790vFAOJUojqzTw4-XamufuC-rJWQE0LvR91DeO7bggah9X-nM04g9sjigF75q-bD3bnQ3oesOgdTCdTASnjJvXLxAn6i3vn2t1Vc6R8I9pQMIMz8K6W_E-Hix_DuJupgKBfheXp4I9yKlxGdh"
+        },
+        {
+          "title": "concertfix.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHmdmk3Y4yJ8jLDIMEsyBNiEExZfqeKhhnauECaFvTt3C1n-2X11Zs0Np6IUle2onu3M0eyTB7D4eI9oxeWm4R6piEyufdD7QsRoxeFYQ3LaHgDU6BNW9LyJQFtxRzXaoHvNLxWBHD1bu3UWjcaOg=="
+        },
+        {
+          "title": "ticketexchangebyticketmaster.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHdgYneuoO6cxjXaqys2KBL_pL82li2Q7wlViXq5Ak2TembMVCSoqZavSirY80jbkAl7I12sfhDCTBOB9ScEPihNhhKRXLiuBsGu4r2cbZIUYwHO-57e19sE-mzZxfw69e-SHcgD3xiJd3EVFo40ImfjkCJ99B0xqp3YaAMEF_yNNzXPp3JdnQRW2GtVDowUTyMtviUaltLPOoG825q1C8U5A=="
+        },
+        {
+          "title": "charlotterunningclub.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFzdIp3ZYHI5_bM5IkAEZPLfOCmoHeNlcCXpGdkpck5EbHbvsaSbAFVAFJTYHfp91NMJaRV3ThQG6JPjGdVkM49Sce6nbGtVgLKR61erXnYSIrx9kZPOxzeuqV4DNz6SMM="
+        },
+        {
+          "title": "charlotterunningclub.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGOEtWasVb44Jd7Xg0xIf56_Jmt4ULlZp0z3wPbeLPwkrB8n8F9OT9aVdf6xJBcmjn4IVhFCr3lwDwXEqD2ry8kcn4tGk_WdBCjwi61aGUHPsGPsEaT6LSxZLnjfsUMM3lQag=="
+        },
+        {
+          "title": "charlotterunningclub.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHMCoa7rwsLL5ZzTDVWIosn20gQg1q2iCxjeUHCxQ4RpfpXKs8Z3eewGRKkAMI6nmG9awKPN_QwK58-VsEX_PzJf46k2RzXdreJXun4Ep7t0dD9JmpmPdy9rwbtqknBFz7fh80_s54="
+        },
+        {
+          "title": "eventbrite.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF_BR7c72xyjDqB3C3RSg9nRA0PJzk4XVrdIJIciPkZQg5OOwY_5KfsgiP6RfZGyNnVALwy58qClyyFrOGBIccvITkTUIVRI2LDKMGx47ff9xYKLM965ieI5_zgYzCQtI9BZFnBxfaklQnKL67o2QmpprNcQqWGWclEw2NGUCRBj_MNf93b006shalM2FtSArOAKfNalRHJwgA="
+        },
+        {
+          "title": "middlecjazz.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGA9jTruziMBoysOEKBFKFuHyGmA2-FSNPTzIKND9A2MvG18tsgfZGK9lVH3B4C1s2QFxJmJu8byaQ7XeXBawLlQvOAvbodFuhMiG9WzLoVInVui-cC1-QE0qk="
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGdR-ITCg0Dd__qp2LDXwEHc3gHfPSSxEl4A51F5GVs_TyMFRTZWDT49qVNCWVGwUrhnYrFa_osPA2KGcNFMfxleqY7XRVMUwT0lQaIStdp8xBSYWrPnVHV88Ls7psd4du3-cvkago="
+        },
+        {
+          "title": "axios.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFBnd6VC2zzdhihWOZCoss4MnhUm5z8_bKwMHHnSUktCAyyPPoTgtRIuN4IRrPwqSE3Y8K_yp3VTNE6TcObsBDJKGfKArB6tVdU-cPs9dC4JEYQ-Fknz5hifxMJSRiV4VRxm0Clh4hiBq3cmYv4r6GGblbzRB3CcgSyBONgVztkZ0nEHwnjToJrWV55LpVg14U1hw=="
+        },
+        {
+          "title": "shazam.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSy6YFzek6Yw9dwcKLdVQD4Sga_cO0fuAVuUdu_7qAtaR2Q6y4ROBJMQCha2OdQ5bFcp1EsX34WNjYOrpV_QwdtNTbb0Gr8xhS7eftYUHU3TmrefHU5Fh1KiR18wqA5nZZvwFlG3hvWG7B6gToMqndf9_dnF_RjDYH58Qg"
+        },
+        {
+          "title": "concertfix.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEYcpkSO8QlFaV9MPRF69dm8PkC58XwFzWEkfCjfMWFAgiGat9F1DLbC_6qPj_Uos1ExNGZrnlMst7gim9iUW_ixRXPRyhYgnUWFu3gV5LZE7d7qFtDTAo5FGPXY7r-ltI_uhJtPksT"
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG81i47wxv-OPEtJHlZ11_aw_CmCunBaWR76bB-HVT7RagQpcy3oMORaWgGJYBlG20jWstFMoFMRvAQ_Lw2GWSdITUO1Cy9fvikipVwOmZgG9rfe9Q-4o1mzZnXuxx_wqxWM8WpYuJmpwMB6yLbHhW1cg0na4TjZWHCiaD5cjiUkTUlbo3be8td_RNP_Atw"
+        },
+        {
+          "title": "triplecbrewing.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGzKKrSERMhWAhA80XFLB8mRL5y_3CXFw7QeM0kyMGk-uTc8y6GYeq2vM61oKUqzhEXHg_O3ecjTUx-nLDo15jCrSR60CtgE1_BbAUjHBmZtHPxG-cT6rlT9Njs7wKIJ-DE-acpUGKZGypoyQ=="
+        },
+        {
+          "title": "charlotteconcertguide.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH0QG7hvDdKW_6NdLHlJPDSeB2zsBWKAwjisUqExeTJwnNhbOwWgsMn4DpHNzlK3eS_EHieCI69kjjSu9xdkiJ1aWVYFGk9XvU4nqvidVDJQqXvwAjwXuFSChP19lCWPVgX_6Pobj0="
+        },
+        {
+          "title": "seatgeek.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEU-ozg_pxCo7bWoBSuT7wmsM70jQb7LoNp5pXxmjaX5tTqJaCHhJLnUNYta0pq7EJTill4JTtlrHIJImXhkeHVFULGk-juoTnCdwkQ0NGJoRhG33VnkhCv91LSXoWex7_Nq7gSsAcPZGY="
+        },
+        {
+          "title": "fillmorenc.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEgKq3labmGtOovLK_YFVwLloLnCe8-dQrM_h8XRBc7gt7UPUR8rGmiYVCH4VPA0Tt_mg0fCWoPXptJiGWFdjqaInwbu8ysnGKb80EyoMgQM8LGkzMyWg=="
+        },
+        {
+          "title": "ticketmaster.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHczjFtBkgx6h8I_hZ8A4q4T6WAMRf863x_Nb4Ge-jQazpzHGo1x-9NgbCtHRL2v2m1GDBRbu8a2LhGKVAcB87RFgFEmSNtvtTXJKr0Zq_DTWwRjmk2EKYpVe09-z20UzZAMJjq0a7YHm07"
+        },
+        {
+          "title": "ticketmaster.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGLvMgFA4-eP87_mNrgLDKXMP5sUMSsXqxXhM9eyQ8SHEUR33iQ4EK0emcBr6W35tJHY-GaKN5kIcfN_tXm7KHZHoBukZ5U0ndZebUCfBjrgjH-H1OQ1QhZ9431Uvfo98EOrvDV_JiKWq0f9o_Tt43cGkKAc3Nk25840WH7oaq_zsFMAFNBHHtFYbLF63LO5vjQDARi--ae0gS-E2y6sTGPptXd"
+        },
+        {
+          "title": "tickeri.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFx6CutySJBSycMKrDMgAuq8o9dj1rH2RoVEZ-gDvkakSeMVyjjP2b85Kc6uLNnZDW1Ax1RTnsB26yGSJ1E181Nsx1XB6yNRu2Sl3eLThIawlql9i-lI0PXgXUZ9j9kUG_W_3o4TxazcEnbcqxzJao_dY4C7lMhZ8v_4nL1"
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFJMEJVyEA3iuzo3e4C2zim-dblDWhaQ_ksy-ODInZx_N4QaBlVVSY3e1WBM23ACDZepxuuqZFrdkm5jkfHWsBNVwAEsfFf7vUXUniLwNVEsqixzvqNF-6EE-2h6AnU8pJ-7kKql8IeQ5iDi7O1eNoz"
+        },
+        {
+          "title": "southendclt.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhbo1etXqZOWjOuDYhbjYoJY7gAGUkL_PfVhTL-y1l43HDDsvD0KwkuWRI4McS6Qb861o4jyasfb_g56LEWYQPIRoz2GhV53gHhWG2BYV2momsuO7a5h7iHEEOQ23lJlVNVzaGp25fl1UVSweNmi2Kw8M="
+        },
+        {
+          "title": "charlotte49ers.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEetz3X-aKXkB3PjeudpfT-zMMUVl5fkf2FbyfHE-j-J2ZQJBh9cw860NQ85KZigXfCMFmM4gJJWG2l9g4Fuifhp53TsHb86YUJlBRMCGP433x_FKOWqh1SLdoZ-VLPbxThnDMouJ3ZwayTr9AwnnVoixK9n6SW4pciQYA8vxpeVmNPXPT_edinBXLjsiO5LBQZ2269938jTsFYBhwpLDnbTYA="
+        },
+        {
+          "title": "charlotte49ers.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHzXJoZSLxqV1WsaC56cL9z7-c_6TGVYTaL7vt9VL44oWpSZf1opU1xjXModO3uB0QlvcLwd36QOO075JWcrlkfaNUXjR0xsGkPKTXuHqxU9MyhAO9Ygx9UfMk3SuxRGU87RZwM4Zb4J5vVS0WUd59FCPaN73J0mdwwIeg8DQ9goVkJzGo="
+        },
+        {
+          "title": "charlotte.events",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZv_KQzKbuYJV7AzgGJWqkrOpZu7OGHncLaNk12NiA23atMi8uN9yaSGMm-BQwUQ76ZUBzsNbz72NUd5m93q7LD1Ms8giZOWgkcFTzPb6OpEpxqkcVGsmh9Dny"
+        },
+        {
+          "title": "truistchampionship.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEouW6amzC_MSoZ9zFWVvaBfIS2XHf_kiCxqFoLHF1y7mV124McGAgQks9J8b4qpNXoFNMBFEPqqc9GpsX_Ez_ISpjN1zKwBai2cTzzZWRd8mHC316B0ikCbtb6IalnbjZMaKGp1CzJzfnhj_krUbOptYgXZdg="
+        },
+        {
+          "title": "axios.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEqJOk1HgxhehdlKIlJ_2dh5-agZqbZWiSdeK4HIsV5vJ523gFoUsLimDPICKh-UtvOzPZhY6iYAuRIwrojjwdjeXz38-8VSRKDqxWulpLIhu52Ju3tZ9TfIj2LhrF7jcAIPLHrKaNkMkRiYnSWBaok5fXHUzUtZiuSQ70OQYkwlJjyU6b09JBqqjWmpt3nCfF-lQ=="
+        },
+        {
+          "title": "seatgeek.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHym0hc_Gbbg_4Bnw9sWVDxZISUdSTFO6hmQtJEKRMkH2UoSG8DwXK8JZZN-xc-wSMg8udFKp19bnOs1VyDfr_vPnmxK8spuA3gh63XPRjAXW06C84ANx9KjP2VMtqxAFOKMy3aO7mL"
+        },
+        {
+          "title": "charlottesgotalot.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEn9NZMvcf3_JGZ3F1RRLU3TQHsIiePRsB0yWvEHisgEHzYgFHnZxOG_mHNEwfzWKzXC2th-xKgRzcVfKVU6xwAettZoxrmDrj6_0cTkwGRMhklsIK3_7dtV7GOs9foEnVr1Mc="
+        },
+        {
+          "title": "fixturecalendar.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEV8VcoZheAyHs3KpPwTX4pUxvAUKs7X6KLVDZBXNZzkI6Uco5fG0rAE1Vtnx-ByS6l-jKxQ_IllzbDqgfhUtiLp6dzRWQ_2oUFScXIVSTC5IdtBCEXsZiySzq01_xIbwf1gBUIqQFnpDY="
+        },
+        {
+          "title": "concerts50.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGqPdfu3LNT0w-7iYUVZihXsEeLRSL0_LAV8daCFJK41idE_5OOexv8ZMbXYJHepZ_EH0dPHD1uifuQuX_YFfO_hzZdB1AObDv_l37M6HylcgoM28lZVnDc1_c-KuOgFzZJqPz0eAkZStoMg-N50OLDdDDzNRNX5OQMEaKX8edtzhHgcA=="
+        },
+        {
+          "title": "charlotte.events",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFVY8OMl6QTJbB_Ay86Zj_mBAQ5RuxfJ2WdKKV1Hv6IgEON28GzyrtSokhKo3F6oDr3FVEMMnUYUAkBrSRZsb8n-uFCaT7SjfITwKVkp6Y0JHmPKEnHXT-3UuIBpv87MQVG"
+        },
+        {
+          "title": "etorontotickets.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHckfy0Bc4az0SPqJnJuGSfi-qQhsG2MISVuUCJUxrwYGbk6Q6_MwrOX7J-eGnroBEx50BDhHxfgxHCjcTIrTqzpz7753ROWjU3hku4Eh7hGoAFlCp_9IncIfkmUld7S2rJcryAaA-L8vMkY6ghXY_BvPwYyRrKw3VgIStuILPMPUjm87aPVMzZhgAmnzdH1FV-rkxi0s-m0JUJER_j0QTcbFUC"
+        },
+        {
+          "title": "mintmuseum.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUqp7GQikeTdog4UD2TD3oDD3C_-s97TUvTbv4hmBVKsYZwaiYOcyRUjMmvTWfHARQq-21G1R8EOOeogDkjkNDYtsr3zgRKO7RnVeC8_20B8n42MspeeC_XOeBN67JBLu0bMeHn1CoPZzJzsIIxBtaVcmf0jFFGFmb"
+        },
+        {
+          "title": "eventbrite.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGPmUoURe9fPBbXqS5vhThNKvKdOakDG0He9qth6KVaEHoWlHirjLjNuEi2w8D1ybz1-V6Ii6vrppqHstlrjwXDdj1EQLfgGijqoiyke1V83rFw0ZunwCiAHUP56f-A2f4rSyg0rGZ0UZaXSAMs7eiFcH9HTJFhONpUeMQOLwrd8glaKMXBY7e2xW7fLgDeJbSCnsa6a_rXA9-XG4yjziY5-g=="
+        },
+        {
+          "title": "eventbrite.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFo2FdR_dt4dCg1ayromQ0tK702h4-z3M6AyXZwqU-AGe9Jg8t4hQtGroeblnyCzXiW-nuGbeFWSgw7umVUIquMlF0UL42NZF1EP5CH0CHUtjADexGYvLWK31uoVY9wpLJ4hIPyoSUHP1s1rDrAqCeBMwT3tCNEle-lBkiYbNur4ZMs5HSsiSNsoDt9rgtmFGu6JQWW-cNmrPI="
+        },
+        {
+          "title": "sistahmagazine.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG9FF3BSDPDdr9LrvuJSETWDQgEAi_eeRhphEu0xgBIre_-YKqgo-2nOCXOKqNN4tkcQIr_pAci7ZOa7fnKIYpzQ46oHBWD5TKgG2Q9NI-icx1HWIXt6gDmrhqar1_AsZ1uvvxy6INlm3a3Fviovy7mCZJ8D0GVtfNJHlaimiSvJQufazIVjA-4oAgNUSY="
+        },
+        {
+          "title": "ticketexchangebyticketmaster.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHKqlPhP0SFbig58gXz-KjO_4zPiluh-bOCNVXHSmF8tVxaprku-k_XgxuhrzbFkHr3FFrNKl17DPmbtqDZTpa3In_mPinASpA-JFK_oENU2Laj7SlIoVAV5KjpUa9N6ppOL4dPVhTKvFzrgATVNi70VFBYWWHOlyICOA6A_SrDBpEhcHKb1767g1hUhtMOmO4ElaxdfcWT37MrqHXOvp9_fQ=="
+        },
+        {
+          "title": "jambase.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHOMNX9ipUSOtb-pd6Jce1u6VsaPcXHyIWympgWJWrybgosLzwzbcnUnGU-TOckWAXyIP7jjRwSeWQp0zX4sYONzjpB-twYKHL587YwZ_7VvmFv_0bcbRrLXDzteiipibwYoHt9WhFzNqDYin0v35iqzvphjqoyLdiuGh_SflNkMfAX"
+        },
+        {
+          "title": "punchup.live",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFYuVDL1WeydObSRUvcn0djTS-N0xdxtXPQl7s0Ug_0SePUNjsBO4i77ho2NoyUMDWca2Nrf9U_TK9CbRAN40fA1YttMDoAgCdIrVh3qL977aCK7AMaCJdWoFWjFHu77gMz7Jc1k_fgYvMC27FX3pXWrn90DjOY"
+        }
+      ],
       "error": null
     },
     {
@@ -775,235 +1448,71 @@
       "emoji": "🍸",
       "activities": [
         {
-          "title": "Star Wars Day: Screenings & Meet Darth Vader",
-          "description": "Celebrate May the 4th with special Star Wars screenings, exclusive discounts on collectibles, and a chance to meet Darth Vader himself. Immerse yourself in the saga and grab some unique memorabilia. A must-do for any Star Wars enthusiast.",
-          "day": "today",
-          "period": "afternoon",
-          "location": "Mac's Heroes & Villains Comics & Collectibles, South Charlotte",
-          "cost": "Free",
-          "tags": [
-            "culture",
-            "shopping",
-            "queer-friendly",
-            "art"
-          ],
-          "category": [
-            "film",
-            "market",
-            "weird"
-          ],
-          "tier": "under50",
-          "rank": 4
-        },
-        {
-          "title": "Birkdale Music Trivia + $10 Cold Brew Martinis",
-          "description": "Enjoy a lively night of general music trivia on the rooftop at Suffolk Punch's Birkdale location. Sip on specially priced $10 Cold Brew Martinis all day and night. A perfect blend of good tunes, great drinks, and friendly competition.",
-          "day": "today",
-          "period": "evening",
-          "location": "Suffolk Punch - Birkdale, Huntersville",
-          "cost": "Free (trivia), $10 (",
-          "tags": [
-            "drinks",
-            "music",
-            "nightlife",
-            "queer-friendly"
-          ],
-          "category": [
-            "drinks",
-            "music",
-            "comedy"
-          ],
-          "tier": "under50",
-          "rank": 3
-        },
-        {
-          "title": "The JAM: CLT Dance Workout",
-          "description": "Get your sweat on with a high-energy dance fitness class set to jams from every era. This 60-minute workout is a fantastic way to move your body and have fun in a supportive environment. No dance experience needed, just bring your enthusiasm!",
+          "title": "CLT Yoga Club",
+          "description": "Join CLT Yoga Club for a donation-based flow class at Triple C Brewing. It's a great way to get moving, connect with the community, and support local organizations. All levels are welcome for this fun and active session.",
           "day": "today",
           "period": "evening",
           "location": "Triple C Brewing Company, South End",
-          "cost": "Varies",
+          "cost": "Donation-based",
           "tags": [
             "fitness",
-            "queer-friendly",
-            "music"
+            "drinks",
+            "community",
+            "outdoor"
           ],
           "category": [
             "fitness",
-            "music"
-          ],
-          "tier": "under50",
-          "rank": 3
-        },
-        {
-          "title": "Star Wars Trivia with Mindless Minutia",
-          "description": "Another chance to prove your Star Wars mastery! Join Mindless Minutia for a themed trivia night with multiple rounds, prizes, and delicious craft beer. A great way to celebrate May the 4th with fellow fans.",
-          "day": "today",
-          "period": "evening",
-          "location": "Triple C Brewing Company, South End",
-          "cost": "Free",
-          "tags": [
-            "drinks",
-            "nightlife",
-            "queer-friendly",
-            "culture"
-          ],
-          "category": [
-            "drinks",
-            "comedy"
-          ],
-          "tier": "under50",
-          "rank": 3
-        },
-        {
-          "title": "Trivia Night at The Trolley Barn",
-          "description": "Gather your friends for a classic trivia night at The Trolley Barn. Enjoy snacks, drinks, and compete for prizes in a relaxed, social setting. A perfect Monday evening activity in the heart of South End.",
-          "day": "today",
-          "period": "evening",
-          "location": "The Trolley Barn, South End",
-          "cost": "Free",
-          "tags": [
-            "drinks",
-            "nightlife",
-            "queer-friendly"
-          ],
-          "category": [
-            "drinks",
-            "comedy"
-          ],
-          "tier": "under50",
-          "rank": 2
-        },
-        {
-          "title": "Intermediate Open Play Pickleball",
-          "description": "For those with some pickleball experience, join a fast-paced, competitive open play session. Enjoy quality games and plenty of court time at Tipsy Pickle. A great way to stay active and meet fellow players.",
-          "day": "today",
-          "period": "morning",
-          "location": "Tipsy Pickle, Camp North End",
-          "cost": "Varies",
-          "tags": [
-            "fitness",
-            "sports",
-            "queer-friendly"
-          ],
-          "category": [
-            "sports",
-            "fitness"
-          ],
-          "tier": "under50",
-          "rank": 3
-        },
-        {
-          "title": "PickleBall 101",
-          "description": "New to pickleball or want to brush up on the basics? This hands-on instruction covers rules, scoring, serving, and basic techniques in a supportive, no-stress setting. A fun and active way to learn a popular new sport.",
-          "day": "today",
-          "period": "evening",
-          "location": "Tipsy Pickle, Camp North End",
-          "cost": "Varies",
-          "tags": [
-            "fitness",
-            "sports",
-            "queer-friendly"
-          ],
-          "category": [
-            "sports",
-            "fitness"
-          ],
-          "tier": "under50",
-          "rank": 3
-        },
-        {
-          "title": "Music Bingo",
-          "description": "Test your musical knowledge in a fun game of Music Bingo. Listen to snippets of songs and mark them off your bingo card for a chance to win prizes. Enjoy craft beers and a lively atmosphere.",
-          "day": "today",
-          "period": "evening",
-          "location": "Primal Brewery, Huntersville",
-          "cost": "Free",
-          "tags": [
-            "drinks",
-            "music",
-            "nightlife",
-            "queer-friendly"
-          ],
-          "category": [
-            "drinks",
-            "music",
-            "comedy"
-          ],
-          "tier": "under50",
-          "rank": 3
-        },
-        {
-          "title": "BYO Craft Night",
-          "description": "Grab your favorite craft project and join fellow makers for a relaxed evening of creativity. Enjoy good vibes and great company while sipping on delicious craft beer. No instructor, no pressure, just a chance to unwind and create.",
-          "day": "tomorrow",
-          "period": "evening",
-          "location": "NoDa Brewing Company, NoDa",
-          "cost": "Free",
-          "tags": [
-            "art",
-            "drinks",
-            "queer-friendly",
-            "culture"
-          ],
-          "category": [
-            "arts",
             "drinks"
           ],
           "tier": "under50",
           "rank": 3
         },
         {
-          "title": "Casita Cerveza Release",
-          "description": "Celebrate Cinco de Mayo with the special release of Casita Cerveza, NoDa Brewing's \"little house beer.\" Enjoy this unique brew and the festive atmosphere throughout the day and evening. A perfect way to kick off your Cinco de Mayo celebrations.",
-          "day": "tomorrow",
-          "period": "afternoon",
-          "location": "NoDa Brewing Company, NoDa",
-          "cost": "Varies",
-          "tags": [
-            "drinks",
-            "food",
-            "queer-friendly"
-          ],
-          "category": [
-            "drinks",
-            "food"
-          ],
-          "tier": "under50",
-          "rank": 3
-        },
-        {
-          "title": "Loteria Night",
-          "description": "Experience a lively evening of Loteria, the traditional Mexican game of chance, hosted by Mindless Minutia. Enjoy this cultural game with friends, grab a pint, and compete for fun prizes. A unique way to celebrate Cinco de Mayo.",
-          "day": "tomorrow",
+          "title": "KB - The Signal Tour",
+          "description": "Catch KB on 'The Signal Tour' at The Underground. This is a great opportunity to see a popular artist in a vibrant Charlotte venue.",
+          "day": "today",
           "period": "evening",
-          "location": "NoDa Brewing Company, NoDa",
-          "cost": "Free",
+          "location": "The Underground, AvidXchange Music Factory",
+          "cost": "$47+",
           "tags": [
-            "culture",
-            "drinks",
-            "queer-friendly",
+            "music",
             "nightlife"
           ],
           "category": [
-            "drinks",
-            "weird"
+            "music"
+          ],
+          "tier": "under50",
+          "rank": 4
+        },
+        {
+          "title": "Robert Cray Band Concert",
+          "description": "Experience the legendary Robert Cray Band live at The Carolina Theatre. Known for their blues and R&B sound, this is a must-see for music enthusiasts.",
+          "day": "today",
+          "period": "evening",
+          "location": "The Carolina Theatre, Uptown",
+          "cost": "$82+",
+          "tags": [
+            "music",
+            "nightlife"
+          ],
+          "category": [
+            "music"
           ],
           "tier": "under50",
           "rank": 4
         },
         {
           "title": "Cinco de Mayo Celebration",
-          "description": "Get ready for an unforgettable night filled with music, culture, and high energy to celebrate Cinco de Mayo. Featuring multiple DJs, this 21+ event promises dancing and a vibrant atmosphere. Tickets are affordable for a full night out.",
-          "day": "tomorrow",
+          "description": "Head to Encore Nightclub for a lively Cinco de Mayo celebration. Expect a night filled with music, culture, and high energy with multiple DJs.",
+          "day": "today",
           "period": "night",
           "location": "Encore Nightclub Charlotte, Uptown",
-          "cost": "$12.96",
+          "cost": "$12.96+",
           "tags": [
             "nightlife",
             "music",
-            "queer-friendly",
-            "drinks"
+            "drinks",
+            "queer-friendly"
           ],
           "category": [
             "nightlife",
@@ -1013,30 +1522,474 @@
           "rank": 4
         },
         {
-          "title": "Cinco de Mayo Celebration at Camp North End",
-          "description": "Join Canteen for their annual Cinco de Mayo Celebration featuring authentic Mexican food, live music, dancing, and local vendors. Enjoy the festive atmosphere in the Boileryard. A great community event to experience Mexican culture.",
+          "title": "Tuesday Trivia at Hi-Wire Brewing",
+          "description": "Test your knowledge at Tuesday Trivia with Mindless Minutia at Hi-Wire Brewing. Gather your friends for a fun and competitive evening with great beer.",
+          "day": "today",
+          "period": "evening",
+          "location": "Hi-Wire Brewing Charlotte, South End",
+          "cost": "Free",
+          "tags": [
+            "drinks",
+            "nightlife",
+            "community"
+          ],
+          "category": [
+            "drinks"
+          ],
+          "tier": "under50",
+          "rank": 3
+        },
+        {
+          "title": "Charlotte 49ers Baseball vs. Campbell",
+          "description": "Catch the Charlotte 49ers baseball team as they host Campbell at Hayes Stadium. Enjoy a collegiate baseball game with $2 hot dogs as part of their season-long promotions.",
+          "day": "today",
+          "period": "evening",
+          "location": "Robert & Mariam Hayes Stadium, University City",
+          "cost": "$15-$30",
+          "tags": [
+            "sports",
+            "food",
+            "drinks"
+          ],
+          "category": [
+            "sports"
+          ],
+          "tier": "under50",
+          "rank": 3
+        },
+        {
+          "title": "Truist Championship - Charlie Sifford Statue Unveiling",
+          "description": "Attend the inaugural Truist Championship Tuesday, featuring the unveiling of the Charlie Sifford Statue at the Charlotte Trail of History. This event celebrates a golf legend and is part of the larger Truist Championship week.",
+          "day": "today",
+          "period": "morning",
+          "location": "Charlotte Trail of History, Uptown",
+          "cost": "Free",
+          "tags": [
+            "culture",
+            "sports",
+            "community"
+          ],
+          "category": [
+            "sports",
+            "culture"
+          ],
+          "tier": "under50",
+          "rank": 3
+        },
+        {
+          "title": "Cinco de Mayo at The Music Yard",
+          "description": "Celebrate Cinco de Mayo at The Music Yard with a festive atmosphere. Enjoy music and good vibes at this popular outdoor venue.",
+          "day": "today",
+          "period": "afternoon",
+          "location": "The Music Yard, South End",
+          "cost": "Free",
+          "tags": [
+            "music",
+            "drinks",
+            "outdoor",
+            "nightlife"
+          ],
+          "category": [
+            "music",
+            "drinks"
+          ],
+          "tier": "under50",
+          "rank": 3
+        },
+        {
+          "title": "Nettspend Concert",
+          "description": "Catch Nettspend live at The Fillmore Charlotte. This is a chance to see an emerging artist in a high-energy concert setting.",
+          "day": "tomorrow",
+          "period": "night",
+          "location": "The Fillmore Charlotte, AvidXchange Music Factory",
+          "cost": "$41+",
+          "tags": [
+            "music",
+            "nightlife"
+          ],
+          "category": [
+            "music"
+          ],
+          "tier": "under50",
+          "rank": 4
+        },
+        {
+          "title": "DANCE WITH THE DEAD + MAGIC SWORD: The Face Off Tour",
+          "description": "Prepare for an electrifying night as DANCE WITH THE DEAD and MAGIC SWORD bring 'The Face Off Tour' to The Underground. Expect a powerful blend of electronic and rock music.",
+          "day": "tomorrow",
+          "period": "night",
+          "location": "The Underground, AvidXchange Music Factory",
+          "cost": "$35-$50",
+          "tags": [
+            "music",
+            "nightlife"
+          ],
+          "category": [
+            "music"
+          ],
+          "tier": "under50",
+          "rank": 4
+        },
+        {
+          "title": "Kelly Kellz Comedy Show",
+          "description": "Laugh out loud with comedian Kelly Kellz at The Comedy Zone. Known for her relatable humor and sharp wit, it's a perfect night for stand-up comedy.",
           "day": "tomorrow",
           "period": "evening",
-          "location": "Camp North End, North End",
-          "cost": "Free (food/drinks ex",
+          "location": "The Comedy Zone, Music Factory",
+          "cost": "$25-$40",
+          "tags": [
+            "comedy",
+            "nightlife"
+          ],
+          "category": [
+            "comedy"
+          ],
+          "tier": "under50",
+          "rank": 4
+        },
+        {
+          "title": "Wednesday Night Live: Sweetgrass and Gullah Heritage",
+          "description": "Engage in a 'Wednesday Night Live' conversation at the Mint Museum Uptown, honoring the tradition of sweetgrass basketry and Gullah culture. Artists Mary Jackson, Stoney Jackson, and Corey Alston will share stories and dialogue.",
+          "day": "tomorrow",
+          "period": "evening",
+          "location": "Mint Museum Uptown, Uptown",
+          "cost": "Free",
+          "tags": [
+            "art",
+            "culture",
+            "community"
+          ],
+          "category": [
+            "arts",
+            "culture"
+          ],
+          "tier": "under50",
+          "rank": 4
+        },
+        {
+          "title": "Wednesday Trivia at Harris Teeter Riverbend Village",
+          "description": "Join Cappitoff Entertainment for Wednesday Trivia at Harris Teeter Riverbend Village. Test your general knowledge and compete for prizes in a fun, friendly atmosphere.",
+          "day": "tomorrow",
+          "period": "evening",
+          "location": "Harris Teeter Riverbend Village, Northwest Charlotte",
+          "cost": "Free",
+          "tags": [
+            "drinks",
+            "community"
+          ],
+          "category": [
+            "drinks"
+          ],
+          "tier": "under50",
+          "rank": 3
+        },
+        {
+          "title": "Summer Trivia League: The Season-Long Battle",
+          "description": "Kick off the Summer Trivia League at Mellow Mushroom Uptown. This isn't just a trivia night; it's a season-long battle for Charlotte's brightest minds with a grand prize for the winning team.",
+          "day": "tomorrow",
+          "period": "evening",
+          "location": "Mellow Mushroom Charlotte-Uptown, Uptown",
+          "cost": "Free",
           "tags": [
             "food",
-            "music",
-            "culture",
-            "outdoor",
-            "queer-friendly"
+            "drinks",
+            "community"
           ],
           "category": [
             "food",
+            "drinks"
+          ],
+          "tier": "under50",
+          "rank": 3
+        },
+        {
+          "title": "FOR POETRY: Open Mic & Showcase",
+          "description": "Discover new voices and enjoy spoken word at FOR POETRY: Open Mic & Showcase. This intimate creative space hosted by Sade Sade is a sanctuary for poets and poetry lovers.",
+          "day": "tomorrow",
+          "period": "evening",
+          "location": "Conspiracy CLT, Uptown",
+          "cost": "$10-$20",
+          "tags": [
+            "art",
+            "culture",
+            "community",
+            "nightlife"
+          ],
+          "category": [
+            "arts",
+            "theater"
+          ],
+          "tier": "under50",
+          "rank": 3
+        },
+        {
+          "title": "ChRocktikal the 1st World Tour",
+          "description": "Experience ChRocktikal's '1st World Tour' at the Blackbox Theater. This unique performance promises an engaging and memorable evening.",
+          "day": "tomorrow",
+          "period": "evening",
+          "location": "Blackbox Theater, NoDa",
+          "cost": "$25-$45",
+          "tags": [
             "music",
-            "market",
-            "outdoors"
+            "culture",
+            "nightlife"
+          ],
+          "category": [
+            "music",
+            "theater"
+          ],
+          "tier": "under50",
+          "rank": 4
+        },
+        {
+          "title": "Sons of Legion Concert",
+          "description": "Catch Sons of Legion live at The Evening Muse. This intimate venue is perfect for experiencing their unique sound.",
+          "day": "tomorrow",
+          "period": "evening",
+          "location": "The Evening Muse, NoDa",
+          "cost": "$25+",
+          "tags": [
+            "music",
+            "nightlife"
+          ],
+          "category": [
+            "music"
+          ],
+          "tier": "under50",
+          "rank": 3
+        },
+        {
+          "title": "Mary Lynn Rajskub Comedy Show",
+          "description": "See comedian and actress Mary Lynn Rajskub, known for '24' and 'It's Always Sunny in Philadelphia,' perform live. Her stand-up offers a personal and relatable take on modern womanhood.",
+          "day": "tomorrow",
+          "period": "night",
+          "location": "The Crow, Plaza Midwood",
+          "cost": "$25-$40",
+          "tags": [
+            "comedy",
+            "nightlife"
+          ],
+          "category": [
+            "comedy"
           ],
           "tier": "under50",
           "rank": 4
         }
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "tickeri.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEmcKYlMMBs3OnDJzdabhcRgFnN0lomv5ltkyRRa5Ts96AQIDFbs8_k6we2OMRYg-SSt-ePj9DBkPhU7K5cWFlkQIbISlcXndbuzEbXaRWhOAnpmM8g9h1y4R_jOFo91wC6ilqivOs2tojDBA9_7kjXdgnrI4MajtrHwFtM"
+        },
+        {
+          "title": "charlotteconcertguide.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEw_dee9oUMIYyMkmNZMZFeyg8twhXQDQ4x2QiNH8qNxj0YEocAQZUF4unxeyULmjsEc6PE-IiNOaka6ISAer2_ITgJIgLLzcflFrRchPL5aO0hXwbqov2gSbLgqVtyokqYoFP-6xM="
+        },
+        {
+          "title": "fillmorenc.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFtVG-UPkSIYwFBuwlm8R6guYQoQ_AooNQ0QU0lpMTBiTefbAHxuCRupHSfXBzlJFMI76nP-LSDRXkVd_WUikI61ONTLUfohjUQNQpC0Ey2XWbYsCnr0A=="
+        },
+        {
+          "title": "seatgeek.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF-talNjSV9oX54er7qcF5Dn9o29GLWG0v1U93-fYvzxZLpqtPpy8lR0dVjziYNFiE7NSEb69ZCiuoB2fHfHVQVgeEadhf0QBirOH2cazXq55ALqK--USltySqfEO3X8kaxKtZWoKmTvMo="
+        },
+        {
+          "title": "ticketmaster.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFJV3lEXJ5v-_Y29PtAh7lfjQJoxRwLgaiYhTO9nHZF9pRWQwdIr_kHJzenVWG5Xze8idQ8im97k0htPxcs2Ce4YOKpEBopdNXljOgfM4cHFDuQeMFRtHDk3pn_T_6QjjKAJEkfrIgJvsqWZ2mL4fqQ_TUpIEGKgbEzea0Lk1OQ6olHIIBRI9RjwPUCVPiyoybiNDsrxVTqpMIn9QlfxEVcftCz"
+        },
+        {
+          "title": "eventticketscenter.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEO0hpDrszP6UmpV09dqs3PpY_yVj5LNEVvXh7MeldC5bu9W3rLxoMIPa8zIf8_WOV6g10ACSajNUPF4D7gwr9OQPlMcHDSXkF0L_gp5Q966hl4SmZR4gtqAkXawDdPt8_qegDDXN1mDspVN5PKKaf6j1eP2sKPOJKgCcfrdOcTCd6Pj5RPBZoXJu1NMfR_s_rLCAy2LXZPtYjJ6OZVL9nrhA2lXlsmO7c="
+        },
+        {
+          "title": "charlotte.events",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGHbT-hU493Rof56zhItQJ3TkjzaAVWaqACZqeli4OhOPdd3ZrmF-287iwZkI5YzDaH9hSbLExTksdhpr7_-ci2IREMyW0Jt9skr4UsywOVITjRlSIpQvvfFdPc"
+        },
+        {
+          "title": "charlotte49ers.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQETae1wORSLfSZv9juDdlQXx8YIjdVUZSCIAIzy-wOZxJtS3beiC_Na1WSWpx-ioBnKqhYotp_ulI16rTGnAyDuiE8Hu3SDZ15MAt5-k2Ek7FvID7bLzOReKircWi9Age6Mqp-J5Txx-FwWO5-M9oD14YC4t-QJI43lrAKNlERNjaP8C9g="
+        },
+        {
+          "title": "triplecbrewing.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHExAfYA_0EFl63N9NXMvrdPhn6MCAacEOK22xq4OzLkkTijZT0oZpQ01-BWI-5oKU-xfKqE5T3j_WDcd1-LnbnO1POtdDb7KchO2JgpQ4VKNzT0AiE-ERuCV3tLYUS1Z74Vp6_9Xvp_rMX3A=="
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZ4ZcXESltMjDZySo5SfRsZGxh7CGWLy5Nx5x7XMrkwGXy3mM3K7CzCcLtzXfXMEGvLc4oyDx-69TS3WWlytAWesBhBnrxnqQXEqYWRfSKqJeTHB64b23cuBL0IFlFiQ-0lKL0kCeE2aAlR37sDkud"
+        },
+        {
+          "title": "truistchampionship.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFHODRtaGdIkfGBXcEc6bU6QaWRrokvmrDndtpD3AGRv-trKmfHI8camuhjBxvs1dDB-BdV5oulEnFEwnKHrW7R3cvywBZcNv_TKUU4GlnuoSm1LpE8-f_sZ3RGX3r8L6f4fz6NZOTWIt2Q9X9W2sv2FBQyD5Q="
+        },
+        {
+          "title": "charlotte.events",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpSqwzzaa-jglrszPP0--MaD8ksjygMp1FKlw086OjZHzEW1KcKH7mtTFz0E4dVx7OqG0IaZbSOhBeD-3YERTbN0F_JwJQg0D5dAgTxzoKcKQkgQal8SQNjLwptWwi9mca"
+        },
+        {
+          "title": "concerts50.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG5Ac0qAPsOO1xniGagaUUqJ4DLONkXqJ2FeQfG03YRxqBRnOiv0eW_OKAv2F_gy8M-9qcagCtlxMQQ7PeSY8EvkSBxddJjK89FQdE7b21x5IlFVk1guHurm0LU56RoXQPNKgQaYvK9MLOIjlAjp85G-eu1_ygBYGZaSoKsckOdAESyTQ=="
+        },
+        {
+          "title": "axs.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHzdFSrGzzUQNajpQJ9DJMkFtJjGwHk0wU32z76eXUCeQ-Uym790vFAOJUojqzTw4-XamufuC-rJWQE0LvR91DeO7bggah9X-nM04g9sjigF75q-bD3bnQ3oesOgdTCdTASnjJvXLxAn6i3vn2t1Vc6R8I9pQMIMz8K6W_E-Hix_DuJupgKBfheXp4I9yKlxGdh"
+        },
+        {
+          "title": "concertfix.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHmdmk3Y4yJ8jLDIMEsyBNiEExZfqeKhhnauECaFvTt3C1n-2X11Zs0Np6IUle2onu3M0eyTB7D4eI9oxeWm4R6piEyufdD7QsRoxeFYQ3LaHgDU6BNW9LyJQFtxRzXaoHvNLxWBHD1bu3UWjcaOg=="
+        },
+        {
+          "title": "ticketexchangebyticketmaster.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHdgYneuoO6cxjXaqys2KBL_pL82li2Q7wlViXq5Ak2TembMVCSoqZavSirY80jbkAl7I12sfhDCTBOB9ScEPihNhhKRXLiuBsGu4r2cbZIUYwHO-57e19sE-mzZxfw69e-SHcgD3xiJd3EVFo40ImfjkCJ99B0xqp3YaAMEF_yNNzXPp3JdnQRW2GtVDowUTyMtviUaltLPOoG825q1C8U5A=="
+        },
+        {
+          "title": "charlotterunningclub.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFzdIp3ZYHI5_bM5IkAEZPLfOCmoHeNlcCXpGdkpck5EbHbvsaSbAFVAFJTYHfp91NMJaRV3ThQG6JPjGdVkM49Sce6nbGtVgLKR61erXnYSIrx9kZPOxzeuqV4DNz6SMM="
+        },
+        {
+          "title": "charlotterunningclub.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGOEtWasVb44Jd7Xg0xIf56_Jmt4ULlZp0z3wPbeLPwkrB8n8F9OT9aVdf6xJBcmjn4IVhFCr3lwDwXEqD2ry8kcn4tGk_WdBCjwi61aGUHPsGPsEaT6LSxZLnjfsUMM3lQag=="
+        },
+        {
+          "title": "charlotterunningclub.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHMCoa7rwsLL5ZzTDVWIosn20gQg1q2iCxjeUHCxQ4RpfpXKs8Z3eewGRKkAMI6nmG9awKPN_QwK58-VsEX_PzJf46k2RzXdreJXun4Ep7t0dD9JmpmPdy9rwbtqknBFz7fh80_s54="
+        },
+        {
+          "title": "eventbrite.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF_BR7c72xyjDqB3C3RSg9nRA0PJzk4XVrdIJIciPkZQg5OOwY_5KfsgiP6RfZGyNnVALwy58qClyyFrOGBIccvITkTUIVRI2LDKMGx47ff9xYKLM965ieI5_zgYzCQtI9BZFnBxfaklQnKL67o2QmpprNcQqWGWclEw2NGUCRBj_MNf93b006shalM2FtSArOAKfNalRHJwgA="
+        },
+        {
+          "title": "middlecjazz.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGA9jTruziMBoysOEKBFKFuHyGmA2-FSNPTzIKND9A2MvG18tsgfZGK9lVH3B4C1s2QFxJmJu8byaQ7XeXBawLlQvOAvbodFuhMiG9WzLoVInVui-cC1-QE0qk="
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGdR-ITCg0Dd__qp2LDXwEHc3gHfPSSxEl4A51F5GVs_TyMFRTZWDT49qVNCWVGwUrhnYrFa_osPA2KGcNFMfxleqY7XRVMUwT0lQaIStdp8xBSYWrPnVHV88Ls7psd4du3-cvkago="
+        },
+        {
+          "title": "axios.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFBnd6VC2zzdhihWOZCoss4MnhUm5z8_bKwMHHnSUktCAyyPPoTgtRIuN4IRrPwqSE3Y8K_yp3VTNE6TcObsBDJKGfKArB6tVdU-cPs9dC4JEYQ-Fknz5hifxMJSRiV4VRxm0Clh4hiBq3cmYv4r6GGblbzRB3CcgSyBONgVztkZ0nEHwnjToJrWV55LpVg14U1hw=="
+        },
+        {
+          "title": "shazam.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSy6YFzek6Yw9dwcKLdVQD4Sga_cO0fuAVuUdu_7qAtaR2Q6y4ROBJMQCha2OdQ5bFcp1EsX34WNjYOrpV_QwdtNTbb0Gr8xhS7eftYUHU3TmrefHU5Fh1KiR18wqA5nZZvwFlG3hvWG7B6gToMqndf9_dnF_RjDYH58Qg"
+        },
+        {
+          "title": "concertfix.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEYcpkSO8QlFaV9MPRF69dm8PkC58XwFzWEkfCjfMWFAgiGat9F1DLbC_6qPj_Uos1ExNGZrnlMst7gim9iUW_ixRXPRyhYgnUWFu3gV5LZE7d7qFtDTAo5FGPXY7r-ltI_uhJtPksT"
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG81i47wxv-OPEtJHlZ11_aw_CmCunBaWR76bB-HVT7RagQpcy3oMORaWgGJYBlG20jWstFMoFMRvAQ_Lw2GWSdITUO1Cy9fvikipVwOmZgG9rfe9Q-4o1mzZnXuxx_wqxWM8WpYuJmpwMB6yLbHhW1cg0na4TjZWHCiaD5cjiUkTUlbo3be8td_RNP_Atw"
+        },
+        {
+          "title": "triplecbrewing.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGzKKrSERMhWAhA80XFLB8mRL5y_3CXFw7QeM0kyMGk-uTc8y6GYeq2vM61oKUqzhEXHg_O3ecjTUx-nLDo15jCrSR60CtgE1_BbAUjHBmZtHPxG-cT6rlT9Njs7wKIJ-DE-acpUGKZGypoyQ=="
+        },
+        {
+          "title": "charlotteconcertguide.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH0QG7hvDdKW_6NdLHlJPDSeB2zsBWKAwjisUqExeTJwnNhbOwWgsMn4DpHNzlK3eS_EHieCI69kjjSu9xdkiJ1aWVYFGk9XvU4nqvidVDJQqXvwAjwXuFSChP19lCWPVgX_6Pobj0="
+        },
+        {
+          "title": "seatgeek.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEU-ozg_pxCo7bWoBSuT7wmsM70jQb7LoNp5pXxmjaX5tTqJaCHhJLnUNYta0pq7EJTill4JTtlrHIJImXhkeHVFULGk-juoTnCdwkQ0NGJoRhG33VnkhCv91LSXoWex7_Nq7gSsAcPZGY="
+        },
+        {
+          "title": "fillmorenc.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEgKq3labmGtOovLK_YFVwLloLnCe8-dQrM_h8XRBc7gt7UPUR8rGmiYVCH4VPA0Tt_mg0fCWoPXptJiGWFdjqaInwbu8ysnGKb80EyoMgQM8LGkzMyWg=="
+        },
+        {
+          "title": "ticketmaster.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHczjFtBkgx6h8I_hZ8A4q4T6WAMRf863x_Nb4Ge-jQazpzHGo1x-9NgbCtHRL2v2m1GDBRbu8a2LhGKVAcB87RFgFEmSNtvtTXJKr0Zq_DTWwRjmk2EKYpVe09-z20UzZAMJjq0a7YHm07"
+        },
+        {
+          "title": "ticketmaster.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGLvMgFA4-eP87_mNrgLDKXMP5sUMSsXqxXhM9eyQ8SHEUR33iQ4EK0emcBr6W35tJHY-GaKN5kIcfN_tXm7KHZHoBukZ5U0ndZebUCfBjrgjH-H1OQ1QhZ9431Uvfo98EOrvDV_JiKWq0f9o_Tt43cGkKAc3Nk25840WH7oaq_zsFMAFNBHHtFYbLF63LO5vjQDARi--ae0gS-E2y6sTGPptXd"
+        },
+        {
+          "title": "tickeri.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFx6CutySJBSycMKrDMgAuq8o9dj1rH2RoVEZ-gDvkakSeMVyjjP2b85Kc6uLNnZDW1Ax1RTnsB26yGSJ1E181Nsx1XB6yNRu2Sl3eLThIawlql9i-lI0PXgXUZ9j9kUG_W_3o4TxazcEnbcqxzJao_dY4C7lMhZ8v_4nL1"
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFJMEJVyEA3iuzo3e4C2zim-dblDWhaQ_ksy-ODInZx_N4QaBlVVSY3e1WBM23ACDZepxuuqZFrdkm5jkfHWsBNVwAEsfFf7vUXUniLwNVEsqixzvqNF-6EE-2h6AnU8pJ-7kKql8IeQ5iDi7O1eNoz"
+        },
+        {
+          "title": "southendclt.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhbo1etXqZOWjOuDYhbjYoJY7gAGUkL_PfVhTL-y1l43HDDsvD0KwkuWRI4McS6Qb861o4jyasfb_g56LEWYQPIRoz2GhV53gHhWG2BYV2momsuO7a5h7iHEEOQ23lJlVNVzaGp25fl1UVSweNmi2Kw8M="
+        },
+        {
+          "title": "charlotte49ers.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEetz3X-aKXkB3PjeudpfT-zMMUVl5fkf2FbyfHE-j-J2ZQJBh9cw860NQ85KZigXfCMFmM4gJJWG2l9g4Fuifhp53TsHb86YUJlBRMCGP433x_FKOWqh1SLdoZ-VLPbxThnDMouJ3ZwayTr9AwnnVoixK9n6SW4pciQYA8vxpeVmNPXPT_edinBXLjsiO5LBQZ2269938jTsFYBhwpLDnbTYA="
+        },
+        {
+          "title": "charlotte49ers.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHzXJoZSLxqV1WsaC56cL9z7-c_6TGVYTaL7vt9VL44oWpSZf1opU1xjXModO3uB0QlvcLwd36QOO075JWcrlkfaNUXjR0xsGkPKTXuHqxU9MyhAO9Ygx9UfMk3SuxRGU87RZwM4Zb4J5vVS0WUd59FCPaN73J0mdwwIeg8DQ9goVkJzGo="
+        },
+        {
+          "title": "charlotte.events",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZv_KQzKbuYJV7AzgGJWqkrOpZu7OGHncLaNk12NiA23atMi8uN9yaSGMm-BQwUQ76ZUBzsNbz72NUd5m93q7LD1Ms8giZOWgkcFTzPb6OpEpxqkcVGsmh9Dny"
+        },
+        {
+          "title": "truistchampionship.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEouW6amzC_MSoZ9zFWVvaBfIS2XHf_kiCxqFoLHF1y7mV124McGAgQks9J8b4qpNXoFNMBFEPqqc9GpsX_Ez_ISpjN1zKwBai2cTzzZWRd8mHC316B0ikCbtb6IalnbjZMaKGp1CzJzfnhj_krUbOptYgXZdg="
+        },
+        {
+          "title": "axios.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEqJOk1HgxhehdlKIlJ_2dh5-agZqbZWiSdeK4HIsV5vJ523gFoUsLimDPICKh-UtvOzPZhY6iYAuRIwrojjwdjeXz38-8VSRKDqxWulpLIhu52Ju3tZ9TfIj2LhrF7jcAIPLHrKaNkMkRiYnSWBaok5fXHUzUtZiuSQ70OQYkwlJjyU6b09JBqqjWmpt3nCfF-lQ=="
+        },
+        {
+          "title": "seatgeek.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHym0hc_Gbbg_4Bnw9sWVDxZISUdSTFO6hmQtJEKRMkH2UoSG8DwXK8JZZN-xc-wSMg8udFKp19bnOs1VyDfr_vPnmxK8spuA3gh63XPRjAXW06C84ANx9KjP2VMtqxAFOKMy3aO7mL"
+        },
+        {
+          "title": "charlottesgotalot.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEn9NZMvcf3_JGZ3F1RRLU3TQHsIiePRsB0yWvEHisgEHzYgFHnZxOG_mHNEwfzWKzXC2th-xKgRzcVfKVU6xwAettZoxrmDrj6_0cTkwGRMhklsIK3_7dtV7GOs9foEnVr1Mc="
+        },
+        {
+          "title": "fixturecalendar.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEV8VcoZheAyHs3KpPwTX4pUxvAUKs7X6KLVDZBXNZzkI6Uco5fG0rAE1Vtnx-ByS6l-jKxQ_IllzbDqgfhUtiLp6dzRWQ_2oUFScXIVSTC5IdtBCEXsZiySzq01_xIbwf1gBUIqQFnpDY="
+        },
+        {
+          "title": "concerts50.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGqPdfu3LNT0w-7iYUVZihXsEeLRSL0_LAV8daCFJK41idE_5OOexv8ZMbXYJHepZ_EH0dPHD1uifuQuX_YFfO_hzZdB1AObDv_l37M6HylcgoM28lZVnDc1_c-KuOgFzZJqPz0eAkZStoMg-N50OLDdDDzNRNX5OQMEaKX8edtzhHgcA=="
+        },
+        {
+          "title": "charlotte.events",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFVY8OMl6QTJbB_Ay86Zj_mBAQ5RuxfJ2WdKKV1Hv6IgEON28GzyrtSokhKo3F6oDr3FVEMMnUYUAkBrSRZsb8n-uFCaT7SjfITwKVkp6Y0JHmPKEnHXT-3UuIBpv87MQVG"
+        },
+        {
+          "title": "etorontotickets.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHckfy0Bc4az0SPqJnJuGSfi-qQhsG2MISVuUCJUxrwYGbk6Q6_MwrOX7J-eGnroBEx50BDhHxfgxHCjcTIrTqzpz7753ROWjU3hku4Eh7hGoAFlCp_9IncIfkmUld7S2rJcryAaA-L8vMkY6ghXY_BvPwYyRrKw3VgIStuILPMPUjm87aPVMzZhgAmnzdH1FV-rkxi0s-m0JUJER_j0QTcbFUC"
+        },
+        {
+          "title": "mintmuseum.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUqp7GQikeTdog4UD2TD3oDD3C_-s97TUvTbv4hmBVKsYZwaiYOcyRUjMmvTWfHARQq-21G1R8EOOeogDkjkNDYtsr3zgRKO7RnVeC8_20B8n42MspeeC_XOeBN67JBLu0bMeHn1CoPZzJzsIIxBtaVcmf0jFFGFmb"
+        },
+        {
+          "title": "eventbrite.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGPmUoURe9fPBbXqS5vhThNKvKdOakDG0He9qth6KVaEHoWlHirjLjNuEi2w8D1ybz1-V6Ii6vrppqHstlrjwXDdj1EQLfgGijqoiyke1V83rFw0ZunwCiAHUP56f-A2f4rSyg0rGZ0UZaXSAMs7eiFcH9HTJFhONpUeMQOLwrd8glaKMXBY7e2xW7fLgDeJbSCnsa6a_rXA9-XG4yjziY5-g=="
+        },
+        {
+          "title": "eventbrite.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFo2FdR_dt4dCg1ayromQ0tK702h4-z3M6AyXZwqU-AGe9Jg8t4hQtGroeblnyCzXiW-nuGbeFWSgw7umVUIquMlF0UL42NZF1EP5CH0CHUtjADexGYvLWK31uoVY9wpLJ4hIPyoSUHP1s1rDrAqCeBMwT3tCNEle-lBkiYbNur4ZMs5HSsiSNsoDt9rgtmFGu6JQWW-cNmrPI="
+        },
+        {
+          "title": "sistahmagazine.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG9FF3BSDPDdr9LrvuJSETWDQgEAi_eeRhphEu0xgBIre_-YKqgo-2nOCXOKqNN4tkcQIr_pAci7ZOa7fnKIYpzQ46oHBWD5TKgG2Q9NI-icx1HWIXt6gDmrhqar1_AsZ1uvvxy6INlm3a3Fviovy7mCZJ8D0GVtfNJHlaimiSvJQufazIVjA-4oAgNUSY="
+        },
+        {
+          "title": "ticketexchangebyticketmaster.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHKqlPhP0SFbig58gXz-KjO_4zPiluh-bOCNVXHSmF8tVxaprku-k_XgxuhrzbFkHr3FFrNKl17DPmbtqDZTpa3In_mPinASpA-JFK_oENU2Laj7SlIoVAV5KjpUa9N6ppOL4dPVhTKvFzrgATVNi70VFBYWWHOlyICOA6A_SrDBpEhcHKb1767g1hUhtMOmO4ElaxdfcWT37MrqHXOvp9_fQ=="
+        },
+        {
+          "title": "jambase.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHOMNX9ipUSOtb-pd6Jce1u6VsaPcXHyIWympgWJWrybgosLzwzbcnUnGU-TOckWAXyIP7jjRwSeWQp0zX4sYONzjpB-twYKHL587YwZ_7VvmFv_0bcbRrLXDzteiipibwYoHt9WhFzNqDYin0v35iqzvphjqoyLdiuGh_SflNkMfAX"
+        },
+        {
+          "title": "punchup.live",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFYuVDL1WeydObSRUvcn0djTS-N0xdxtXPQl7s0Ug_0SePUNjsBO4i77ho2NoyUMDWca2Nrf9U_TK9CbRAN40fA1YttMDoAgCdIrVh3qL977aCK7AMaCJdWoFWjFHu77gMz7Jc1k_fgYvMC27FX3pXWrn90DjOY"
+        }
+      ],
       "error": null
     },
     {
@@ -1045,52 +1998,245 @@
       "emoji": "🌟",
       "activities": [
         {
-          "title": "KB - The Signal Tour",
-          "description": "Catch Christian hip-hop artist KB live on \"The Signal Tour\" at The Fillmore. Expect an energetic performance with powerful lyrics and a dedicated fanbase. VIP options include a pre-show podcast taping and early entry for a premium experience.",
+          "title": "Truist Championship Pro-Am",
+          "description": "Experience the Truist Championship Pro-Am presented by ReliaQuest at Quail Hollow Club. Watch professional golfers and celebrities tee off in this exclusive event.",
           "day": "tomorrow",
-          "period": "night",
-          "location": "The Fillmore Charlotte, Uptown",
-          "cost": "$32.50 - $71+",
+          "period": "morning",
+          "location": "Quail Hollow Club, South Charlotte",
+          "cost": "$57+",
           "tags": [
-            "music",
-            "nightlife",
+            "sports",
+            "outdoor",
             "culture"
           ],
           "category": [
-            "music"
+            "sports"
           ],
           "tier": "splurge",
-          "rank": 4
-        },
-        {
-          "title": "Pianist Kevin Cole, My Unbelievable Songbook Journey",
-          "description": "Enjoy an intimate evening of jazz with acclaimed pianist Kevin Cole as he performs his \"Unbelievable Songbook Journey.\" Experience world-class musicianship in the sophisticated setting of Middle C Jazz. A perfect night for music lovers seeking a refined experience.",
-          "day": "tomorrow",
-          "period": "evening",
-          "location": "Middle C Jazz, Uptown",
-          "cost": "$37.75 - $46.15",
-          "tags": [
-            "music",
-            "culture",
-            "nightlife",
-            "queer-friendly"
-          ],
-          "category": [
-            "music",
-            "theater"
-          ],
-          "tier": "splurge",
-          "rank": 4
+          "rank": 5
         }
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "tickeri.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEmcKYlMMBs3OnDJzdabhcRgFnN0lomv5ltkyRRa5Ts96AQIDFbs8_k6we2OMRYg-SSt-ePj9DBkPhU7K5cWFlkQIbISlcXndbuzEbXaRWhOAnpmM8g9h1y4R_jOFo91wC6ilqivOs2tojDBA9_7kjXdgnrI4MajtrHwFtM"
+        },
+        {
+          "title": "charlotteconcertguide.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEw_dee9oUMIYyMkmNZMZFeyg8twhXQDQ4x2QiNH8qNxj0YEocAQZUF4unxeyULmjsEc6PE-IiNOaka6ISAer2_ITgJIgLLzcflFrRchPL5aO0hXwbqov2gSbLgqVtyokqYoFP-6xM="
+        },
+        {
+          "title": "fillmorenc.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFtVG-UPkSIYwFBuwlm8R6guYQoQ_AooNQ0QU0lpMTBiTefbAHxuCRupHSfXBzlJFMI76nP-LSDRXkVd_WUikI61ONTLUfohjUQNQpC0Ey2XWbYsCnr0A=="
+        },
+        {
+          "title": "seatgeek.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF-talNjSV9oX54er7qcF5Dn9o29GLWG0v1U93-fYvzxZLpqtPpy8lR0dVjziYNFiE7NSEb69ZCiuoB2fHfHVQVgeEadhf0QBirOH2cazXq55ALqK--USltySqfEO3X8kaxKtZWoKmTvMo="
+        },
+        {
+          "title": "ticketmaster.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFJV3lEXJ5v-_Y29PtAh7lfjQJoxRwLgaiYhTO9nHZF9pRWQwdIr_kHJzenVWG5Xze8idQ8im97k0htPxcs2Ce4YOKpEBopdNXljOgfM4cHFDuQeMFRtHDk3pn_T_6QjjKAJEkfrIgJvsqWZ2mL4fqQ_TUpIEGKgbEzea0Lk1OQ6olHIIBRI9RjwPUCVPiyoybiNDsrxVTqpMIn9QlfxEVcftCz"
+        },
+        {
+          "title": "eventticketscenter.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEO0hpDrszP6UmpV09dqs3PpY_yVj5LNEVvXh7MeldC5bu9W3rLxoMIPa8zIf8_WOV6g10ACSajNUPF4D7gwr9OQPlMcHDSXkF0L_gp5Q966hl4SmZR4gtqAkXawDdPt8_qegDDXN1mDspVN5PKKaf6j1eP2sKPOJKgCcfrdOcTCd6Pj5RPBZoXJu1NMfR_s_rLCAy2LXZPtYjJ6OZVL9nrhA2lXlsmO7c="
+        },
+        {
+          "title": "charlotte.events",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGHbT-hU493Rof56zhItQJ3TkjzaAVWaqACZqeli4OhOPdd3ZrmF-287iwZkI5YzDaH9hSbLExTksdhpr7_-ci2IREMyW0Jt9skr4UsywOVITjRlSIpQvvfFdPc"
+        },
+        {
+          "title": "charlotte49ers.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQETae1wORSLfSZv9juDdlQXx8YIjdVUZSCIAIzy-wOZxJtS3beiC_Na1WSWpx-ioBnKqhYotp_ulI16rTGnAyDuiE8Hu3SDZ15MAt5-k2Ek7FvID7bLzOReKircWi9Age6Mqp-J5Txx-FwWO5-M9oD14YC4t-QJI43lrAKNlERNjaP8C9g="
+        },
+        {
+          "title": "triplecbrewing.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHExAfYA_0EFl63N9NXMvrdPhn6MCAacEOK22xq4OzLkkTijZT0oZpQ01-BWI-5oKU-xfKqE5T3j_WDcd1-LnbnO1POtdDb7KchO2JgpQ4VKNzT0AiE-ERuCV3tLYUS1Z74Vp6_9Xvp_rMX3A=="
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZ4ZcXESltMjDZySo5SfRsZGxh7CGWLy5Nx5x7XMrkwGXy3mM3K7CzCcLtzXfXMEGvLc4oyDx-69TS3WWlytAWesBhBnrxnqQXEqYWRfSKqJeTHB64b23cuBL0IFlFiQ-0lKL0kCeE2aAlR37sDkud"
+        },
+        {
+          "title": "truistchampionship.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFHODRtaGdIkfGBXcEc6bU6QaWRrokvmrDndtpD3AGRv-trKmfHI8camuhjBxvs1dDB-BdV5oulEnFEwnKHrW7R3cvywBZcNv_TKUU4GlnuoSm1LpE8-f_sZ3RGX3r8L6f4fz6NZOTWIt2Q9X9W2sv2FBQyD5Q="
+        },
+        {
+          "title": "charlotte.events",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpSqwzzaa-jglrszPP0--MaD8ksjygMp1FKlw086OjZHzEW1KcKH7mtTFz0E4dVx7OqG0IaZbSOhBeD-3YERTbN0F_JwJQg0D5dAgTxzoKcKQkgQal8SQNjLwptWwi9mca"
+        },
+        {
+          "title": "concerts50.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG5Ac0qAPsOO1xniGagaUUqJ4DLONkXqJ2FeQfG03YRxqBRnOiv0eW_OKAv2F_gy8M-9qcagCtlxMQQ7PeSY8EvkSBxddJjK89FQdE7b21x5IlFVk1guHurm0LU56RoXQPNKgQaYvK9MLOIjlAjp85G-eu1_ygBYGZaSoKsckOdAESyTQ=="
+        },
+        {
+          "title": "axs.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHzdFSrGzzUQNajpQJ9DJMkFtJjGwHk0wU32z76eXUCeQ-Uym790vFAOJUojqzTw4-XamufuC-rJWQE0LvR91DeO7bggah9X-nM04g9sjigF75q-bD3bnQ3oesOgdTCdTASnjJvXLxAn6i3vn2t1Vc6R8I9pQMIMz8K6W_E-Hix_DuJupgKBfheXp4I9yKlxGdh"
+        },
+        {
+          "title": "concertfix.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHmdmk3Y4yJ8jLDIMEsyBNiEExZfqeKhhnauECaFvTt3C1n-2X11Zs0Np6IUle2onu3M0eyTB7D4eI9oxeWm4R6piEyufdD7QsRoxeFYQ3LaHgDU6BNW9LyJQFtxRzXaoHvNLxWBHD1bu3UWjcaOg=="
+        },
+        {
+          "title": "ticketexchangebyticketmaster.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHdgYneuoO6cxjXaqys2KBL_pL82li2Q7wlViXq5Ak2TembMVCSoqZavSirY80jbkAl7I12sfhDCTBOB9ScEPihNhhKRXLiuBsGu4r2cbZIUYwHO-57e19sE-mzZxfw69e-SHcgD3xiJd3EVFo40ImfjkCJ99B0xqp3YaAMEF_yNNzXPp3JdnQRW2GtVDowUTyMtviUaltLPOoG825q1C8U5A=="
+        },
+        {
+          "title": "charlotterunningclub.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFzdIp3ZYHI5_bM5IkAEZPLfOCmoHeNlcCXpGdkpck5EbHbvsaSbAFVAFJTYHfp91NMJaRV3ThQG6JPjGdVkM49Sce6nbGtVgLKR61erXnYSIrx9kZPOxzeuqV4DNz6SMM="
+        },
+        {
+          "title": "charlotterunningclub.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGOEtWasVb44Jd7Xg0xIf56_Jmt4ULlZp0z3wPbeLPwkrB8n8F9OT9aVdf6xJBcmjn4IVhFCr3lwDwXEqD2ry8kcn4tGk_WdBCjwi61aGUHPsGPsEaT6LSxZLnjfsUMM3lQag=="
+        },
+        {
+          "title": "charlotterunningclub.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHMCoa7rwsLL5ZzTDVWIosn20gQg1q2iCxjeUHCxQ4RpfpXKs8Z3eewGRKkAMI6nmG9awKPN_QwK58-VsEX_PzJf46k2RzXdreJXun4Ep7t0dD9JmpmPdy9rwbtqknBFz7fh80_s54="
+        },
+        {
+          "title": "eventbrite.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF_BR7c72xyjDqB3C3RSg9nRA0PJzk4XVrdIJIciPkZQg5OOwY_5KfsgiP6RfZGyNnVALwy58qClyyFrOGBIccvITkTUIVRI2LDKMGx47ff9xYKLM965ieI5_zgYzCQtI9BZFnBxfaklQnKL67o2QmpprNcQqWGWclEw2NGUCRBj_MNf93b006shalM2FtSArOAKfNalRHJwgA="
+        },
+        {
+          "title": "middlecjazz.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGA9jTruziMBoysOEKBFKFuHyGmA2-FSNPTzIKND9A2MvG18tsgfZGK9lVH3B4C1s2QFxJmJu8byaQ7XeXBawLlQvOAvbodFuhMiG9WzLoVInVui-cC1-QE0qk="
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGdR-ITCg0Dd__qp2LDXwEHc3gHfPSSxEl4A51F5GVs_TyMFRTZWDT49qVNCWVGwUrhnYrFa_osPA2KGcNFMfxleqY7XRVMUwT0lQaIStdp8xBSYWrPnVHV88Ls7psd4du3-cvkago="
+        },
+        {
+          "title": "axios.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFBnd6VC2zzdhihWOZCoss4MnhUm5z8_bKwMHHnSUktCAyyPPoTgtRIuN4IRrPwqSE3Y8K_yp3VTNE6TcObsBDJKGfKArB6tVdU-cPs9dC4JEYQ-Fknz5hifxMJSRiV4VRxm0Clh4hiBq3cmYv4r6GGblbzRB3CcgSyBONgVztkZ0nEHwnjToJrWV55LpVg14U1hw=="
+        },
+        {
+          "title": "shazam.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSy6YFzek6Yw9dwcKLdVQD4Sga_cO0fuAVuUdu_7qAtaR2Q6y4ROBJMQCha2OdQ5bFcp1EsX34WNjYOrpV_QwdtNTbb0Gr8xhS7eftYUHU3TmrefHU5Fh1KiR18wqA5nZZvwFlG3hvWG7B6gToMqndf9_dnF_RjDYH58Qg"
+        },
+        {
+          "title": "concertfix.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEYcpkSO8QlFaV9MPRF69dm8PkC58XwFzWEkfCjfMWFAgiGat9F1DLbC_6qPj_Uos1ExNGZrnlMst7gim9iUW_ixRXPRyhYgnUWFu3gV5LZE7d7qFtDTAo5FGPXY7r-ltI_uhJtPksT"
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG81i47wxv-OPEtJHlZ11_aw_CmCunBaWR76bB-HVT7RagQpcy3oMORaWgGJYBlG20jWstFMoFMRvAQ_Lw2GWSdITUO1Cy9fvikipVwOmZgG9rfe9Q-4o1mzZnXuxx_wqxWM8WpYuJmpwMB6yLbHhW1cg0na4TjZWHCiaD5cjiUkTUlbo3be8td_RNP_Atw"
+        },
+        {
+          "title": "triplecbrewing.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGzKKrSERMhWAhA80XFLB8mRL5y_3CXFw7QeM0kyMGk-uTc8y6GYeq2vM61oKUqzhEXHg_O3ecjTUx-nLDo15jCrSR60CtgE1_BbAUjHBmZtHPxG-cT6rlT9Njs7wKIJ-DE-acpUGKZGypoyQ=="
+        },
+        {
+          "title": "charlotteconcertguide.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH0QG7hvDdKW_6NdLHlJPDSeB2zsBWKAwjisUqExeTJwnNhbOwWgsMn4DpHNzlK3eS_EHieCI69kjjSu9xdkiJ1aWVYFGk9XvU4nqvidVDJQqXvwAjwXuFSChP19lCWPVgX_6Pobj0="
+        },
+        {
+          "title": "seatgeek.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEU-ozg_pxCo7bWoBSuT7wmsM70jQb7LoNp5pXxmjaX5tTqJaCHhJLnUNYta0pq7EJTill4JTtlrHIJImXhkeHVFULGk-juoTnCdwkQ0NGJoRhG33VnkhCv91LSXoWex7_Nq7gSsAcPZGY="
+        },
+        {
+          "title": "fillmorenc.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEgKq3labmGtOovLK_YFVwLloLnCe8-dQrM_h8XRBc7gt7UPUR8rGmiYVCH4VPA0Tt_mg0fCWoPXptJiGWFdjqaInwbu8ysnGKb80EyoMgQM8LGkzMyWg=="
+        },
+        {
+          "title": "ticketmaster.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHczjFtBkgx6h8I_hZ8A4q4T6WAMRf863x_Nb4Ge-jQazpzHGo1x-9NgbCtHRL2v2m1GDBRbu8a2LhGKVAcB87RFgFEmSNtvtTXJKr0Zq_DTWwRjmk2EKYpVe09-z20UzZAMJjq0a7YHm07"
+        },
+        {
+          "title": "ticketmaster.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGLvMgFA4-eP87_mNrgLDKXMP5sUMSsXqxXhM9eyQ8SHEUR33iQ4EK0emcBr6W35tJHY-GaKN5kIcfN_tXm7KHZHoBukZ5U0ndZebUCfBjrgjH-H1OQ1QhZ9431Uvfo98EOrvDV_JiKWq0f9o_Tt43cGkKAc3Nk25840WH7oaq_zsFMAFNBHHtFYbLF63LO5vjQDARi--ae0gS-E2y6sTGPptXd"
+        },
+        {
+          "title": "tickeri.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFx6CutySJBSycMKrDMgAuq8o9dj1rH2RoVEZ-gDvkakSeMVyjjP2b85Kc6uLNnZDW1Ax1RTnsB26yGSJ1E181Nsx1XB6yNRu2Sl3eLThIawlql9i-lI0PXgXUZ9j9kUG_W_3o4TxazcEnbcqxzJao_dY4C7lMhZ8v_4nL1"
+        },
+        {
+          "title": "charlotteonthecheap.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFJMEJVyEA3iuzo3e4C2zim-dblDWhaQ_ksy-ODInZx_N4QaBlVVSY3e1WBM23ACDZepxuuqZFrdkm5jkfHWsBNVwAEsfFf7vUXUniLwNVEsqixzvqNF-6EE-2h6AnU8pJ-7kKql8IeQ5iDi7O1eNoz"
+        },
+        {
+          "title": "southendclt.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhbo1etXqZOWjOuDYhbjYoJY7gAGUkL_PfVhTL-y1l43HDDsvD0KwkuWRI4McS6Qb861o4jyasfb_g56LEWYQPIRoz2GhV53gHhWG2BYV2momsuO7a5h7iHEEOQ23lJlVNVzaGp25fl1UVSweNmi2Kw8M="
+        },
+        {
+          "title": "charlotte49ers.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEetz3X-aKXkB3PjeudpfT-zMMUVl5fkf2FbyfHE-j-J2ZQJBh9cw860NQ85KZigXfCMFmM4gJJWG2l9g4Fuifhp53TsHb86YUJlBRMCGP433x_FKOWqh1SLdoZ-VLPbxThnDMouJ3ZwayTr9AwnnVoixK9n6SW4pciQYA8vxpeVmNPXPT_edinBXLjsiO5LBQZ2269938jTsFYBhwpLDnbTYA="
+        },
+        {
+          "title": "charlotte49ers.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHzXJoZSLxqV1WsaC56cL9z7-c_6TGVYTaL7vt9VL44oWpSZf1opU1xjXModO3uB0QlvcLwd36QOO075JWcrlkfaNUXjR0xsGkPKTXuHqxU9MyhAO9Ygx9UfMk3SuxRGU87RZwM4Zb4J5vVS0WUd59FCPaN73J0mdwwIeg8DQ9goVkJzGo="
+        },
+        {
+          "title": "charlotte.events",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZv_KQzKbuYJV7AzgGJWqkrOpZu7OGHncLaNk12NiA23atMi8uN9yaSGMm-BQwUQ76ZUBzsNbz72NUd5m93q7LD1Ms8giZOWgkcFTzPb6OpEpxqkcVGsmh9Dny"
+        },
+        {
+          "title": "truistchampionship.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEouW6amzC_MSoZ9zFWVvaBfIS2XHf_kiCxqFoLHF1y7mV124McGAgQks9J8b4qpNXoFNMBFEPqqc9GpsX_Ez_ISpjN1zKwBai2cTzzZWRd8mHC316B0ikCbtb6IalnbjZMaKGp1CzJzfnhj_krUbOptYgXZdg="
+        },
+        {
+          "title": "axios.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEqJOk1HgxhehdlKIlJ_2dh5-agZqbZWiSdeK4HIsV5vJ523gFoUsLimDPICKh-UtvOzPZhY6iYAuRIwrojjwdjeXz38-8VSRKDqxWulpLIhu52Ju3tZ9TfIj2LhrF7jcAIPLHrKaNkMkRiYnSWBaok5fXHUzUtZiuSQ70OQYkwlJjyU6b09JBqqjWmpt3nCfF-lQ=="
+        },
+        {
+          "title": "seatgeek.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHym0hc_Gbbg_4Bnw9sWVDxZISUdSTFO6hmQtJEKRMkH2UoSG8DwXK8JZZN-xc-wSMg8udFKp19bnOs1VyDfr_vPnmxK8spuA3gh63XPRjAXW06C84ANx9KjP2VMtqxAFOKMy3aO7mL"
+        },
+        {
+          "title": "charlottesgotalot.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEn9NZMvcf3_JGZ3F1RRLU3TQHsIiePRsB0yWvEHisgEHzYgFHnZxOG_mHNEwfzWKzXC2th-xKgRzcVfKVU6xwAettZoxrmDrj6_0cTkwGRMhklsIK3_7dtV7GOs9foEnVr1Mc="
+        },
+        {
+          "title": "fixturecalendar.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEV8VcoZheAyHs3KpPwTX4pUxvAUKs7X6KLVDZBXNZzkI6Uco5fG0rAE1Vtnx-ByS6l-jKxQ_IllzbDqgfhUtiLp6dzRWQ_2oUFScXIVSTC5IdtBCEXsZiySzq01_xIbwf1gBUIqQFnpDY="
+        },
+        {
+          "title": "concerts50.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGqPdfu3LNT0w-7iYUVZihXsEeLRSL0_LAV8daCFJK41idE_5OOexv8ZMbXYJHepZ_EH0dPHD1uifuQuX_YFfO_hzZdB1AObDv_l37M6HylcgoM28lZVnDc1_c-KuOgFzZJqPz0eAkZStoMg-N50OLDdDDzNRNX5OQMEaKX8edtzhHgcA=="
+        },
+        {
+          "title": "charlotte.events",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFVY8OMl6QTJbB_Ay86Zj_mBAQ5RuxfJ2WdKKV1Hv6IgEON28GzyrtSokhKo3F6oDr3FVEMMnUYUAkBrSRZsb8n-uFCaT7SjfITwKVkp6Y0JHmPKEnHXT-3UuIBpv87MQVG"
+        },
+        {
+          "title": "etorontotickets.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHckfy0Bc4az0SPqJnJuGSfi-qQhsG2MISVuUCJUxrwYGbk6Q6_MwrOX7J-eGnroBEx50BDhHxfgxHCjcTIrTqzpz7753ROWjU3hku4Eh7hGoAFlCp_9IncIfkmUld7S2rJcryAaA-L8vMkY6ghXY_BvPwYyRrKw3VgIStuILPMPUjm87aPVMzZhgAmnzdH1FV-rkxi0s-m0JUJER_j0QTcbFUC"
+        },
+        {
+          "title": "mintmuseum.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUqp7GQikeTdog4UD2TD3oDD3C_-s97TUvTbv4hmBVKsYZwaiYOcyRUjMmvTWfHARQq-21G1R8EOOeogDkjkNDYtsr3zgRKO7RnVeC8_20B8n42MspeeC_XOeBN67JBLu0bMeHn1CoPZzJzsIIxBtaVcmf0jFFGFmb"
+        },
+        {
+          "title": "eventbrite.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGPmUoURe9fPBbXqS5vhThNKvKdOakDG0He9qth6KVaEHoWlHirjLjNuEi2w8D1ybz1-V6Ii6vrppqHstlrjwXDdj1EQLfgGijqoiyke1V83rFw0ZunwCiAHUP56f-A2f4rSyg0rGZ0UZaXSAMs7eiFcH9HTJFhONpUeMQOLwrd8glaKMXBY7e2xW7fLgDeJbSCnsa6a_rXA9-XG4yjziY5-g=="
+        },
+        {
+          "title": "eventbrite.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFo2FdR_dt4dCg1ayromQ0tK702h4-z3M6AyXZwqU-AGe9Jg8t4hQtGroeblnyCzXiW-nuGbeFWSgw7umVUIquMlF0UL42NZF1EP5CH0CHUtjADexGYvLWK31uoVY9wpLJ4hIPyoSUHP1s1rDrAqCeBMwT3tCNEle-lBkiYbNur4ZMs5HSsiSNsoDt9rgtmFGu6JQWW-cNmrPI="
+        },
+        {
+          "title": "sistahmagazine.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG9FF3BSDPDdr9LrvuJSETWDQgEAi_eeRhphEu0xgBIre_-YKqgo-2nOCXOKqNN4tkcQIr_pAci7ZOa7fnKIYpzQ46oHBWD5TKgG2Q9NI-icx1HWIXt6gDmrhqar1_AsZ1uvvxy6INlm3a3Fviovy7mCZJ8D0GVtfNJHlaimiSvJQufazIVjA-4oAgNUSY="
+        },
+        {
+          "title": "ticketexchangebyticketmaster.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHKqlPhP0SFbig58gXz-KjO_4zPiluh-bOCNVXHSmF8tVxaprku-k_XgxuhrzbFkHr3FFrNKl17DPmbtqDZTpa3In_mPinASpA-JFK_oENU2Laj7SlIoVAV5KjpUa9N6ppOL4dPVhTKvFzrgATVNi70VFBYWWHOlyICOA6A_SrDBpEhcHKb1767g1hUhtMOmO4ElaxdfcWT37MrqHXOvp9_fQ=="
+        },
+        {
+          "title": "jambase.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHOMNX9ipUSOtb-pd6Jce1u6VsaPcXHyIWympgWJWrybgosLzwzbcnUnGU-TOckWAXyIP7jjRwSeWQp0zX4sYONzjpB-twYKHL587YwZ_7VvmFv_0bcbRrLXDzteiipibwYoHt9WhFzNqDYin0v35iqzvphjqoyLdiuGh_SflNkMfAX"
+        },
+        {
+          "title": "punchup.live",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFYuVDL1WeydObSRUvcn0djTS-N0xdxtXPQl7s0Ug_0SePUNjsBO4i77ho2NoyUMDWca2Nrf9U_TK9CbRAN40fA1YttMDoAgCdIrVh3qL977aCK7AMaCJdWoFWjFHu77gMz7Jc1k_fgYvMC27FX3pXWrn90DjOY"
+        }
+      ],
       "error": null
     }
   ],
   "run_cost": {
     "input_tokens": 2573,
-    "output_tokens": 5721,
+    "output_tokens": 9617,
     "search_calls": 2,
-    "approx_usd": 0.0719
+    "approx_usd": 0.0731
   }
 }
